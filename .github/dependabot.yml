@@ -1,0 +1,44 @@
+version: 2
+updates:
+  # NPM / Bun dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "03:00"
+      timezone: "Europe/Berlin"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "security"
+    groups:
+      # Patch + minor updates → auto-merge safe
+      non-breaking:
+        update-types:
+          - "minor"
+          - "patch"
+      # Major updates → manual review required
+      major-upgrades:
+        update-types:
+          - "major"
+    ignore:
+      # Never auto-update these — review manually
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "vite"
+        update-types: ["version-update:semver-major"]
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "03:00"
+      timezone: "Europe/Berlin"
+    labels:
+      - "dependencies"
+      - "github-actions"
