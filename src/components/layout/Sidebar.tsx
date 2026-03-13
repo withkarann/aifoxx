@@ -1,27 +1,41 @@
 import { CATEGORIES } from "@/types/category";
 import { allTools } from "@/lib/tools";
+import { useToolFilters } from "@/hooks/useToolFilters";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { cn } from "@/lib/utils";
 
 interface SidebarProps {
-  selectedCategory: string | null;
-  selectedSubcategory: string | null;
-  onSelect: (category: string | null, subcategory?: string | null) => void;
+  onMobileClose?: () => void;
 }
 
-export function Sidebar({ selectedCategory, selectedSubcategory, onSelect }: SidebarProps) {
+export function Sidebar({ onMobileClose }: SidebarProps) {
+  const { filters, setFilter } = useToolFilters();
+
+  const handleSelect = (category: string, subcategory?: string) => {
+    if (subcategory) {
+      setFilter("category", category);
+      setFilter("subcategory", subcategory);
+    } else if (category) {
+      setFilter("category", category);
+      setFilter("subcategory", "");
+    } else {
+      setFilter("category", "");
+      setFilter("subcategory", "");
+    }
+    onMobileClose?.();
+  };
+
   return (
     <nav className="w-full">
       <p className="font-mono text-xs tracking-widest text-text-muted mb-4">
         // CATEGORIES
       </p>
 
-      {/* ALL TOOLS */}
       <button
-        onClick={() => onSelect(null, null)}
+        onClick={() => handleSelect("")}
         className={cn(
           "w-full text-left font-display text-sm font-black uppercase py-2 px-2 mb-1 rounded-[4px] transition-colors duration-150",
-          selectedCategory === null
+          !filters.category
             ? "border-l-2 border-accent-green text-accent-green"
             : "text-text-secondary hover:text-text-primary"
         )}
@@ -29,16 +43,15 @@ export function Sidebar({ selectedCategory, selectedSubcategory, onSelect }: Sid
         ALL TOOLS
       </button>
 
-      {/* Category groups */}
       {CATEGORIES.map((cat) => {
         const count = allTools.filter((t) => t.category === cat.name).length;
-        const isActive = selectedCategory === cat.name;
+        const isActive = filters.category === cat.name;
 
         return (
           <Collapsible key={cat.name} defaultOpen={isActive}>
             <CollapsibleTrigger asChild>
               <button
-                onClick={() => onSelect(cat.name, null)}
+                onClick={() => handleSelect(cat.name)}
                 className={cn(
                   "w-full flex items-center justify-between py-2 px-2 rounded-[4px] transition-colors duration-150",
                   isActive
@@ -59,10 +72,10 @@ export function Sidebar({ selectedCategory, selectedSubcategory, onSelect }: Sid
                 {cat.subcategories.map((sub) => (
                   <button
                     key={sub}
-                    onClick={() => onSelect(cat.name, sub)}
+                    onClick={() => handleSelect(cat.name, sub)}
                     className={cn(
                       "block w-full text-left text-sm font-mono pl-4 py-1.5 transition-colors duration-150 cursor-pointer",
-                      selectedSubcategory === sub && selectedCategory === cat.name
+                      filters.subcategory === sub && filters.category === cat.name
                         ? "text-accent-green"
                         : "text-text-secondary hover:text-text-primary"
                     )}
