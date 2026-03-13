@@ -93,13 +93,13 @@
   },
   {
     "id": "9",
-    "name": "Copy.ai",
-    "slug": "copy-ai",
+    "name": "Writesonic",
+    "slug": "writesonic",
     "category": "Content Creation",
     "subcategory": "Copywriting",
-    "description": "AI copywriting tool for generating marketing copy, blog posts, and social media content.",
-    "url": "https://copy.ai",
-    "tags": ["copywriting", "marketing", "content", "automation"],
+    "description": "AI writing platform for generating SEO-optimized blog posts, ads, and marketing copy at scale.",
+    "url": "https://writesonic.com",
+    "tags": ["copywriting", "marketing", "SEO", "content"],
     "pricing": "Freemium"
   },
   {
@@ -134,5 +134,141 @@
     "url": "https://durable.co",
     "tags": ["website-builder", "business", "CRM", "automation"],
     "pricing": "Paid"
+  },
+  {
+    "id": "13",
+    "name": "Gemini",
+    "slug": "gemini",
+    "category": "Research",
+    "subcategory": "Search",
+    "description": "Google's multimodal AI model for research, reasoning, and conversational search across text and images.",
+    "url": "https://gemini.google.com",
+    "tags": ["search", "multimodal", "research", "Google"],
+    "pricing": "Freemium",
+    "featured": true
+  },
+  {
+    "id": "14",
+    "name": "Claude",
+    "slug": "claude",
+    "category": "Content Creation",
+    "subcategory": "Writing",
+    "description": "Anthropic's AI assistant excelling at long-form writing, analysis, and nuanced conversation.",
+    "url": "https://claude.ai",
+    "tags": ["writing", "analysis", "chatbot", "Anthropic"],
+    "pricing": "Freemium",
+    "featured": true
+  },
+  {
+    "id": "15",
+    "name": "Stable Diffusion",
+    "slug": "stable-diffusion",
+    "category": "Design",
+    "subcategory": "Image Generation",
+    "description": "Open-source text-to-image model for generating high-quality artwork and photorealistic images locally.",
+    "url": "https://stability.ai",
+    "tags": ["image-generation", "open-source", "art", "local"],
+    "pricing": "Open Source",
+    "featured": true
+  },
+  {
+    "id": "16",
+    "name": "Tabnine",
+    "slug": "tabnine",
+    "category": "Coding",
+    "subcategory": "Code Generation",
+    "description": "AI code completion tool that runs locally and integrates with all major IDEs for private codebases.",
+    "url": "https://tabnine.com",
+    "tags": ["coding", "autocomplete", "privacy", "IDE"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "17",
+    "name": "Loom AI",
+    "slug": "loom-ai",
+    "category": "Productivity",
+    "subcategory": "Automation",
+    "description": "AI-powered video messaging platform that auto-generates titles, summaries, and chapters for recordings.",
+    "url": "https://loom.com",
+    "tags": ["video-messaging", "summaries", "productivity", "async"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "18",
+    "name": "Descript",
+    "slug": "descript",
+    "category": "Video",
+    "subcategory": "Editing",
+    "description": "AI video and podcast editor that lets you edit media by editing text transcripts.",
+    "url": "https://descript.com",
+    "tags": ["video-editing", "podcast", "transcription", "creative"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "19",
+    "name": "Synthesia",
+    "slug": "synthesia",
+    "category": "Video",
+    "subcategory": "Generation",
+    "description": "AI video generation platform that creates professional videos with realistic AI avatars and voiceovers.",
+    "url": "https://synthesia.io",
+    "tags": ["video-generation", "avatars", "enterprise", "training"],
+    "pricing": "Paid"
+  },
+  {
+    "id": "20",
+    "name": "SurferSEO",
+    "slug": "surferseo",
+    "category": "Marketing",
+    "subcategory": "SEO",
+    "description": "AI-driven SEO tool for content optimization, keyword research, and SERP analysis to boost rankings.",
+    "url": "https://surferseo.com",
+    "tags": ["SEO", "content-optimization", "keywords", "marketing"],
+    "pricing": "Paid"
+  },
+  {
+    "id": "21",
+    "name": "Zapier AI",
+    "slug": "zapier-ai",
+    "category": "Productivity",
+    "subcategory": "Automation",
+    "description": "AI-powered automation platform connecting 6000+ apps with natural language workflow creation.",
+    "url": "https://zapier.com/ai",
+    "tags": ["automation", "workflows", "integrations", "no-code"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "22",
+    "name": "HeyGen",
+    "slug": "heygen",
+    "category": "Video",
+    "subcategory": "Generation",
+    "description": "AI video creation platform with customizable avatars for marketing, training, and social content.",
+    "url": "https://heygen.com",
+    "tags": ["video-generation", "avatars", "marketing", "personalization"],
+    "pricing": "Freemium",
+    "featured": true
+  },
+  {
+    "id": "23",
+    "name": "Beautiful.ai",
+    "slug": "beautiful-ai",
+    "category": "Design",
+    "subcategory": "UI/UX",
+    "description": "AI presentation tool that automatically applies design rules to create polished slide decks instantly.",
+    "url": "https://beautiful.ai",
+    "tags": ["presentations", "design", "slides", "automation"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "24",
+    "name": "Copy.ai",
+    "slug": "copy-ai",
+    "category": "Marketing",
+    "subcategory": "Email",
+    "description": "AI-powered go-to-market platform for generating sales copy, email sequences, and marketing workflows.",
+    "url": "https://copy.ai",
+    "tags": ["copywriting", "email", "sales", "marketing"],
+    "pricing": "Freemium"
   }
 ]
