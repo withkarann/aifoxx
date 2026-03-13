@@ -6,6 +6,8 @@ const pricingStyles: Record<Pricing, string> = {
   Freemium: "text-accent-amber bg-accent-amber/10 border-accent-amber/30",
   Paid: "text-accent-red bg-accent-red/10 border-accent-red/30",
   "Open Source": "text-accent-purple bg-accent-purple/10 border-accent-purple/30",
+  "Usage Based": "text-accent-blue bg-accent-blue/10 border-accent-blue/30",
+  "Contact Sales": "text-text-muted bg-text-muted/10 border-text-muted/30",
 };
 
 interface PricingBadgeProps {
