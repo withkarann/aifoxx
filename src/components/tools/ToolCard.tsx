@@ -12,11 +12,11 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
   return (
     <div
       className={cn(
-        "bg-bg-surface border border-border-default rounded-[6px] p-4 transition-all duration-150 hover:border-border-active hover:shadow-glow",
+        "relative overflow-hidden bg-bg-surface border border-border-default rounded-[6px] p-4 flex flex-col min-w-0 hover:border-border-active hover:shadow-glow transition-all duration-150 cursor-pointer",
         tool.featured && "border-t-2 border-t-accent-green"
       )}
     >
-      <Link to={`/ai/${tool.slug}`} className="block no-underline cursor-pointer">
+      <Link to={`/ai/${tool.slug}`} className="block no-underline cursor-pointer min-w-0">
         {/* Top row */}
         <div className="flex justify-between items-start gap-2">
           <div className="flex items-center min-w-0">
@@ -27,34 +27,46 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
                 <span className="font-display font-black text-accent-green text-sm">{tool.name.charAt(0)}</span>
               </div>
             )}
-            <h3 className="font-display font-black text-text-primary text-base ml-3 truncate">{tool.name}</h3>
+            <span className="font-display font-black text-text-primary text-base truncate min-w-0 flex-1 ml-3 block">{tool.name}</span>
           </div>
           <PricingBadge pricing={tool.pricing} />
         </div>
 
         {/* Description */}
         {variant === "default" && (
-          <p className="font-mono text-sm text-text-secondary mt-3 line-clamp-2">{tool.description}</p>
+          <p className="font-mono text-sm text-text-secondary mt-3 line-clamp-2 break-words min-w-0">{tool.description}</p>
         )}
       </Link>
 
       {/* Footer */}
-      <div className="flex justify-between items-center mt-3 pt-3 border-t border-border-dim">
-        <div className="flex items-center gap-1.5">
-          <span className="bg-bg-overlay text-accent-blue text-xs font-mono px-2 py-0.5 rounded-[3px] border border-border-default">
+      <div className="mt-3 pt-3 border-t border-border-dim flex flex-col gap-2 min-w-0">
+        {/* Row 1: Category + Subcategory */}
+        <div className="flex flex-wrap gap-1.5 min-w-0">
+          <span className="inline-flex items-center bg-bg-overlay border border-border-default text-accent-blue text-[10px] font-mono px-2 py-0.5 rounded-[3px] shrink-0 max-w-full truncate">
             {tool.category}
           </span>
-          <span className="bg-bg-overlay text-accent-blue text-xs font-mono px-2 py-0.5 rounded-[3px] border border-border-default">
+          <span className="inline-flex items-center bg-bg-overlay border border-border-default text-accent-blue text-[10px] font-mono px-2 py-0.5 rounded-[3px] shrink-0 max-w-full truncate">
             {tool.subcategory}
           </span>
         </div>
-        <div className="flex items-center gap-1.5 text-text-muted text-xs font-mono">
-          {tool.tags.slice(0, 2).map((tag) => (
-            <Link key={tag} to={`/tag/${tag}`} className="hover:text-accent-blue transition-colors duration-150">
+
+        {/* Row 2: Tags — max 3 visible */}
+        <div className="flex flex-wrap gap-1 min-w-0 overflow-hidden" style={{ maxHeight: '44px' }}>
+          {tool.tags.slice(0, 3).map((tag) => (
+            <Link
+              key={tag}
+              to={`/tag/${tag}`}
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center shrink-0 bg-transparent border border-border-dim text-text-muted hover:text-accent-green hover:border-accent-green text-[10px] font-mono px-1.5 py-0.5 rounded-[3px] transition-colors duration-150 whitespace-nowrap max-w-[120px] truncate"
+            >
               #{tag}
             </Link>
           ))}
-          {tool.tags.length > 2 && <span>+{tool.tags.length - 2}</span>}
+          {tool.tags.length > 3 && (
+            <span className="inline-flex items-center shrink-0 text-text-muted text-[10px] font-mono px-1.5 py-0.5">
+              +{tool.tags.length - 3}
+            </span>
+          )}
         </div>
       </div>
     </div>

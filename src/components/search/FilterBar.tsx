@@ -20,7 +20,7 @@ export function FilterBar({
     <div className="flex items-center gap-3 flex-wrap">
       <span className="font-mono text-xs text-text-muted shrink-0">PRICING:</span>
 
-      <div className="flex items-center gap-1.5 scroll-x">
+      <div className="flex flex-wrap gap-1.5 min-w-0">
         {PRICING_OPTIONS.map((p) => {
           const isActive = activePricing === p;
           return (
