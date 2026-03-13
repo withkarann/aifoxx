@@ -5,6 +5,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { RootLayout } from "@/components/layout/RootLayout";
 import HomePage from "./pages/HomePage";
 import ToolDetailPage from "./pages/ToolDetailPage";
+import CategoryPage from "./pages/CategoryPage";
+import TagPage from "./pages/TagPage";
 import SubmitPage from "./pages/SubmitPage";
 import NotFound from "./pages/NotFound";
 
@@ -17,6 +19,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/ai/:slug" element={<ToolDetailPage />} />
+          <Route path="/category/:category" element={<CategoryPage />} />
+          <Route path="/tag/:tag" element={<TagPage />} />
           <Route path="/submit" element={<SubmitPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

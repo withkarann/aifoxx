@@ -92,9 +92,9 @@ export default function ToolDetailPage() {
         {/* Tags */}
         <div className="flex flex-wrap gap-2">
           {tool.tags.map((tag) => (
-            <span key={tag} className="bg-bg-overlay border border-border-default text-accent-blue text-xs font-mono px-2 py-1 rounded-[3px]">
+            <Link key={tag} to={`/tag/${tag}`} className="bg-bg-overlay border border-border-default text-accent-blue text-xs font-mono px-2 py-1 rounded-[3px] hover:border-border-active transition-colors duration-150">
               #{tag}
-            </span>
+            </Link>
           ))}
         </div>
 
