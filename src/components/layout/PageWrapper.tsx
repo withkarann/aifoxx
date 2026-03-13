@@ -18,7 +18,7 @@ export function PageWrapper({ children }: PageWrapperProps) {
       </aside>
 
       {/* Main content */}
-      <div className="flex-1 min-w-0">
+      <div className="flex-1 min-w-0 overflow-x-hidden">
         {/* Mobile filter button */}
         <div className="md:hidden p-4 pb-0">
           <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>

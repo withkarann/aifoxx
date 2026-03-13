@@ -49,7 +49,7 @@ export default function CategoryPage() {
             <p className="font-mono text-xs text-text-muted mt-1">{total} tools in this category</p>
           </div>
 
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
+          <div className="flex items-center gap-1.5 scroll-x pb-1">
             <button onClick={() => handleSubChange("")} className={cn("font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150", !activeSub ? "bg-accent-green text-primary-foreground font-semibold" : "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary")}>ALL</button>
             {cat.subcategories.map((sub) => (
               <button key={sub} onClick={() => handleSubChange(sub)} className={cn("font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150", activeSub === sub ? "bg-accent-green text-primary-foreground font-semibold" : "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary")}>{sub}</button>

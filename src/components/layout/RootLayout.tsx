@@ -9,7 +9,7 @@ interface RootLayoutProps {
 
 export function RootLayout({ children }: RootLayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col bg-bg-base text-text-primary">
+    <div className="min-h-screen flex flex-col bg-bg-base text-text-primary overflow-x-hidden">
       <NavBar />
       <main className="flex-1 flex flex-col">
         {children}

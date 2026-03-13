@@ -160,6 +160,61 @@ body::after {
   );
 }
 
+/* ── WEBKIT SCROLLBARS ── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--bg-base));
+  border-left: 1px solid hsl(var(--border-dim));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border-default));
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent-green));
+  box-shadow: 0 0 6px rgba(0, 255, 156, 0.5);
+}
+::-webkit-scrollbar-corner {
+  background: hsl(var(--bg-base));
+}
+
+/* ── FIREFOX SCROLLBARS ── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border-default)) hsl(var(--bg-base));
+}
+*:hover {
+  scrollbar-color: hsl(var(--accent-green)) hsl(var(--bg-base));
+}
+
+/* ── PREVENT HORIZONTAL OVERFLOW ── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* ── HORIZONTAL SCROLL CONTAINERS ── */
+.scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border-default)) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-x::-webkit-scrollbar {
+  height: 3px;
+}
+.scroll-x::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-x::-webkit-scrollbar-thumb {
+  background: hsl(var(--border-default));
+  border-radius: 0;
+}
+
 /* Keyframes */
 @keyframes blink {
   0%, 100% { opacity: 1; }
