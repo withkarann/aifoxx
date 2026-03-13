@@ -1,0 +1,138 @@
+[
+  {
+    "id": "1",
+    "name": "ChatGPT",
+    "slug": "chatgpt",
+    "category": "Content Creation",
+    "subcategory": "Writing",
+    "description": "AI-powered conversational assistant for writing, brainstorming, and problem-solving across domains.",
+    "url": "https://chat.openai.com",
+    "tags": ["chatbot", "writing", "general-purpose", "GPT-4"],
+    "pricing": "Freemium",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "name": "GitHub Copilot",
+    "slug": "github-copilot",
+    "category": "Coding",
+    "subcategory": "Code Generation",
+    "description": "AI pair programmer that suggests code completions and entire functions in your editor.",
+    "url": "https://github.com/features/copilot",
+    "tags": ["coding", "autocomplete", "IDE", "pair-programming"],
+    "pricing": "Paid",
+    "featured": true
+  },
+  {
+    "id": "3",
+    "name": "Midjourney",
+    "slug": "midjourney",
+    "category": "Design",
+    "subcategory": "Image Generation",
+    "description": "AI image generation tool that creates stunning visuals from text prompts via Discord.",
+    "url": "https://midjourney.com",
+    "tags": ["image-generation", "art", "design", "creative"],
+    "pricing": "Paid",
+    "featured": true
+  },
+  {
+    "id": "4",
+    "name": "Perplexity",
+    "slug": "perplexity",
+    "category": "Research",
+    "subcategory": "Search",
+    "description": "AI-powered search engine that provides cited, conversational answers to complex queries.",
+    "url": "https://perplexity.ai",
+    "tags": ["search", "research", "citations", "knowledge"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "5",
+    "name": "Notion AI",
+    "slug": "notion-ai",
+    "category": "Productivity",
+    "subcategory": "Notes",
+    "description": "AI writing and organization assistant built into the Notion workspace platform.",
+    "url": "https://notion.so/product/ai",
+    "tags": ["notes", "productivity", "writing", "workspace"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "6",
+    "name": "Runway",
+    "slug": "runway",
+    "category": "Video",
+    "subcategory": "Generation",
+    "description": "AI-powered creative suite for video generation, editing, and visual effects.",
+    "url": "https://runwayml.com",
+    "tags": ["video", "generation", "editing", "creative"],
+    "pricing": "Freemium",
+    "featured": true
+  },
+  {
+    "id": "7",
+    "name": "Jasper",
+    "slug": "jasper",
+    "category": "Marketing",
+    "subcategory": "SEO",
+    "description": "Enterprise AI platform for marketing content creation, SEO optimization, and brand voice.",
+    "url": "https://jasper.ai",
+    "tags": ["marketing", "SEO", "content", "enterprise"],
+    "pricing": "Paid"
+  },
+  {
+    "id": "8",
+    "name": "Cursor",
+    "slug": "cursor",
+    "category": "Coding",
+    "subcategory": "Code Generation",
+    "description": "AI-first code editor built for pair programming with intelligent code generation and editing.",
+    "url": "https://cursor.sh",
+    "tags": ["coding", "editor", "AI-first", "pair-programming"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "9",
+    "name": "Copy.ai",
+    "slug": "copy-ai",
+    "category": "Content Creation",
+    "subcategory": "Copywriting",
+    "description": "AI copywriting tool for generating marketing copy, blog posts, and social media content.",
+    "url": "https://copy.ai",
+    "tags": ["copywriting", "marketing", "content", "automation"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "10",
+    "name": "ElevenLabs",
+    "slug": "elevenlabs",
+    "category": "Video",
+    "subcategory": "Subtitles",
+    "description": "AI voice synthesis and cloning platform for realistic text-to-speech and dubbing.",
+    "url": "https://elevenlabs.io",
+    "tags": ["voice", "text-to-speech", "cloning", "audio"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "11",
+    "name": "Otter.ai",
+    "slug": "otter-ai",
+    "category": "Productivity",
+    "subcategory": "Automation",
+    "description": "AI meeting assistant that records, transcribes, and summarizes meetings in real-time.",
+    "url": "https://otter.ai",
+    "tags": ["transcription", "meetings", "notes", "automation"],
+    "pricing": "Freemium"
+  },
+  {
+    "id": "12",
+    "name": "Durable",
+    "slug": "durable",
+    "category": "Business",
+    "subcategory": "Sales",
+    "description": "AI website builder and business tools platform that generates sites and CRM in seconds.",
+    "url": "https://durable.co",
+    "tags": ["website-builder", "business", "CRM", "automation"],
+    "pricing": "Paid"
+  }
+]
