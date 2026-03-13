@@ -35,7 +35,14 @@ export function getToolsByCategory(category: string): Tool[] {
 export function getRelatedTools(slug: string, limit = 4): Tool[] {
   const tool = getToolBySlug(slug);
   if (!tool) return [];
-  return allTools
-    .filter((t) => t.slug !== slug && t.category === tool.category)
-    .slice(0, limit);
+  // First: same subcategory
+  const sameSubcat = allTools.filter(
+    (t) => t.slug !== slug && t.subcategory === tool.subcategory
+  );
+  if (sameSubcat.length >= limit) return sameSubcat.slice(0, limit);
+  // Fill with same category (different subcategory)
+  const sameCat = allTools.filter(
+    (t) => t.slug !== slug && t.category === tool.category && t.subcategory !== tool.subcategory
+  );
+  return [...sameSubcat, ...sameCat].slice(0, limit);
 }
