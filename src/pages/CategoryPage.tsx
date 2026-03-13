@@ -7,6 +7,7 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { FilterBar } from "@/components/search/FilterBar";
 import { ToolCard } from "@/components/tools/ToolCard";
 import { PageMeta } from "@/components/seo/PageMeta";
+import { getCategoryColor } from "@/lib/categoryColors";
 import { cn } from "@/lib/utils";
 
 export default function CategoryPage() {
@@ -25,6 +26,7 @@ export default function CategoryPage() {
 
   if (!cat) return <Navigate to="/" replace />;
 
+  const color = getCategoryColor(cat.name);
   const activeSub = filters.subcategory || "";
 
   const handleSubChange = (sub: string) => {
@@ -45,14 +47,30 @@ export default function CategoryPage() {
       <PageWrapper>
         <div className="space-y-5">
           <div>
-            <h1 className="font-display font-black text-3xl text-accent-green">&gt; {cat.name.toUpperCase()}</h1>
+            <h1 className="font-display font-black text-3xl" style={{ color: color.accent }}>
+              {color.emoji} &gt; {cat.name.toUpperCase()}
+            </h1>
             <p className="font-mono text-xs text-text-muted mt-1">{total} tools in this category</p>
+            <div className="h-[2px] w-24 mt-2 rounded-full" style={{ background: color.accent, boxShadow: color.glow }} />
           </div>
 
           <div className="flex items-center gap-1.5 scroll-x pb-1">
-            <button onClick={() => handleSubChange("")} className={cn("font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150", !activeSub ? "bg-accent-green text-primary-foreground font-semibold" : "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary")}>ALL</button>
+            <button
+              onClick={() => handleSubChange("")}
+              className={cn("font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150", !activeSub ? "font-semibold" : "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary")}
+              style={!activeSub ? { color: color.text, background: color.bg, border: `1px solid ${color.border}` } : undefined}
+            >
+              ALL
+            </button>
             {cat.subcategories.map((sub) => (
-              <button key={sub} onClick={() => handleSubChange(sub)} className={cn("font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150", activeSub === sub ? "bg-accent-green text-primary-foreground font-semibold" : "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary")}>{sub}</button>
+              <button
+                key={sub}
+                onClick={() => handleSubChange(sub)}
+                className={cn("font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150", activeSub !== sub && "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary")}
+                style={activeSub === sub ? { color: color.text, background: color.bg, border: `1px solid ${color.border}` } : undefined}
+              >
+                {sub}
+              </button>
             ))}
           </div>
 
@@ -60,7 +78,7 @@ export default function CategoryPage() {
 
           {isEmpty ? (
             <div className="bg-bg-elevated border border-border-default rounded-[6px] p-8 text-center">
-              <p className="font-display text-accent-green font-black">&gt; NO_RESULTS_FOUND</p>
+              <p className="font-display font-black" style={{ color: color.accent }}>&gt; NO_RESULTS_FOUND</p>
               <p className="font-mono text-text-secondary text-sm mt-2">No tools match these filters</p>
             </div>
           ) : (
