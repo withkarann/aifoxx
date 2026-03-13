@@ -5,6 +5,7 @@ on: pull_request
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 
 jobs:
   auto-merge:
@@ -16,6 +17,17 @@ jobs:
         uses: dependabot/fetch-metadata@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Ensure labels exist before using them (idempotent)
+      - name: Ensure labels exist
+        run: |
+          gh label create "major-upgrade" --color "D93F0B" --description "Breaking major version update" --repo "$REPO" 2>/dev/null || true
+          gh label create "needs-review"  --color "0075CA" --description "Requires manual review before merge" --repo "$REPO" 2>/dev/null || true
+          gh label create "dependencies"  --color "0366D6" --description "Dependency update" --repo "$REPO" 2>/dev/null || true
+          gh label create "security"      --color "E4E669" --description "Security fix or vulnerability patch" --repo "$REPO" 2>/dev/null || true
+        env:
+          REPO:         ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Auto-merge ONLY patch + minor updates
       - name: Auto-approve patch and minor
@@ -36,10 +48,12 @@ jobs:
           PR_URL:       ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Major updates → add label and assign for manual review
+      # Major updates → label + assign for manual review
       - name: Flag major update for manual review
         if: steps.meta.outputs.update-type == 'version-update:semver-major'
-        run: gh pr edit "$PR_URL" --add-label "major-upgrade,needs-review"
+        run: |
+          gh pr edit "$PR_URL" --add-label "major-upgrade" --add-label "needs-review"
+          gh pr comment "$PR_URL" --body "⚠️ **Major version update** — auto-merge skipped. Manual review required before merging."
         env:
           PR_URL:       ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
