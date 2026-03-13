@@ -26,7 +26,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
   };
 
   return (
-    <nav className="w-full">
+    <nav className="w-full overflow-x-hidden">
       <p className="font-mono text-xs tracking-widest text-text-muted mb-4">
         // CATEGORIES
       </p>
