@@ -83,9 +83,9 @@ export default function ToolDetailPage() {
             ))}
           </div>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mt-4">
             {tool.tags.map((tag) => (
-              <Link key={tag} to={`/tag/${tag}`} className="bg-bg-overlay border border-border-default text-accent-blue text-xs font-mono px-2 py-1 rounded-[3px] hover:border-border-active transition-colors duration-150">#{tag}</Link>
+              <Link key={tag} to={`/tag/${tag}`} className="inline-flex items-center bg-bg-overlay border border-border-default text-accent-blue hover:text-accent-green hover:border-accent-green text-xs font-mono px-2.5 py-1 rounded-[3px] transition-colors duration-150 whitespace-nowrap">#{tag}</Link>
             ))}
           </div>
 
