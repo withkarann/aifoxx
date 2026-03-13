@@ -5,20 +5,13 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 import { Sidebar } from "./Sidebar";
 import { useState } from "react";
 
-interface NavBarProps {
-  selectedCategory: string | null;
-  selectedSubcategory: string | null;
-  onSelect: (category: string | null, subcategory?: string | null) => void;
-}
-
-export function NavBar({ selectedCategory, selectedSubcategory, onSelect }: NavBarProps) {
+export function NavBar() {
   const { theme, toggleTheme } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 bg-bg-surface border-b border-border-default">
       <div className="flex items-center justify-between px-4 h-14">
-        {/* Left: Logo + mobile menu */}
         <div className="flex items-center gap-3">
           <div className="md:hidden">
             <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
@@ -30,14 +23,7 @@ export function NavBar({ selectedCategory, selectedSubcategory, onSelect }: NavB
               <SheetContent side="left" className="w-[280px] bg-bg-surface p-0">
                 <SheetTitle className="sr-only">Categories</SheetTitle>
                 <div className="p-4">
-                  <Sidebar
-                    selectedCategory={selectedCategory}
-                    selectedSubcategory={selectedSubcategory}
-                    onSelect={(cat, sub) => {
-                      onSelect(cat, sub);
-                      setMobileOpen(false);
-                    }}
-                  />
+                  <Sidebar onMobileClose={() => setMobileOpen(false)} />
                 </div>
               </SheetContent>
             </Sheet>
@@ -51,7 +37,6 @@ export function NavBar({ selectedCategory, selectedSubcategory, onSelect }: NavB
           </Link>
         </div>
 
-        {/* Right: Theme toggle + Submit link */}
         <div className="flex items-center gap-4">
           <button
             onClick={toggleTheme}
