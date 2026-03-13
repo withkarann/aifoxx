@@ -17,6 +17,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/ai/:slug" element={<ToolDetailPage />} />
+          <Route path="/submit" element={<SubmitPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </RootLayout>
