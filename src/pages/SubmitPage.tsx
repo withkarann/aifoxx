@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { Copy, Check } from "lucide-react";
+import { PageMeta } from "@/components/seo/PageMeta";
 
 function CodeBlock({ children }: { children: string }) {
   const [copied, setCopied] = useState(false);
