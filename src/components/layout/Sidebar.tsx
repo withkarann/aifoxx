@@ -1,3 +1,4 @@
+import { useNavigate, useLocation } from "react-router-dom";
 import { CATEGORIES } from "@/types/category";
 import { allTools } from "@/lib/tools";
 import { useToolFilters } from "@/hooks/useToolFilters";
@@ -11,9 +12,17 @@ interface SidebarProps {
 
 export function Sidebar({ onMobileClose }: SidebarProps) {
   const { filters, setFilter } = useToolFilters();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   const handleSelect = (category: string, subcategory?: string) => {
-    if (subcategory) {
+    if (!isHome) {
+      const params = new URLSearchParams();
+      if (category) params.set("category", category);
+      if (subcategory) params.set("subcategory", subcategory);
+      navigate(`/?${params.toString()}`);
+    } else if (subcategory) {
       setFilter("category", category);
       setFilter("subcategory", subcategory);
     } else if (category) {
