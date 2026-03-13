@@ -1,0 +1,58 @@
+{
+  "_version": "1.0.0",
+  "_last_updated": "2026-03-13",
+  "product": {
+    "name":         "ToolsAI",
+    "name_styled":  "TOOLS_AI",
+    "tagline":      "Find the right AI tool. Know the real cost. Trust the data.",
+    "tagline_short":"The AI Tools Decision Engine",
+    "description":  "Open-source directory of AI tools with real pricing, compliance data, and access method comparison.",
+    "domain":       "toolsai.dev",
+    "repo":         "https://github.com/withkarann/retro-ai-tools-hub",
+    "version":      "1.0.0"
+  },
+  "contact": {
+    "email":          "hello@toolsai.dev",
+    "security_email": "security@toolsai.dev",
+    "github":         "https://github.com/withkarann/retro-ai-tools-hub",
+    "twitter":        "@toolsai_dev"
+  },
+  "seo": {
+    "title_template":    "{page} | ToolsAI",
+    "default_title":     "ToolsAI — Find the Right AI Tool",
+    "default_description": "Browse AI tools. Compare real pricing, compliance certifications, and access methods.",
+    "og_image":          "/og-image.png",
+    "twitter_card":      "summary_large_image"
+  },
+  "nav": {
+    "logo_text": "TOOLS_AI",
+    "links": [
+      { "label": "TOOLS",     "url": "/"          },
+      { "label": "COMPARE",   "url": "/compare"   },
+      { "label": "CHANGELOG", "url": "/changelog" },
+      { "label": "SUBMIT",    "url": "/submit"    }
+    ],
+    "cta_label": "SUBMIT_TOOL",
+    "cta_url":   "/submit"
+  },
+  "hero": {
+    "pretitle":  "// OPEN SOURCE AI TOOLS DIRECTORY",
+    "heading":   "DISCOVER AI TOOLS",
+    "subtitle":  "Real pricing. Real compliance. Every access method.",
+    "prefix":    "> "
+  },
+  "copy": {
+    "empty_state":     "> NO_RESULTS_FOUND",
+    "loading":         "> LOADING...",
+    "not_available":   "// not yet verified",
+    "coming_soon":     "// coming soon",
+    "verified_label":  "✓ VERIFIED",
+    "footer_line":     "TOOLS_AI // OPEN SOURCE // MIT"
+  },
+  "legal": {
+    "license":     "MIT",
+    "founded":     "2026",
+    "privacy_url": "/privacy",
+    "terms_url":   "/terms"
+  }
+}
