@@ -7,11 +7,12 @@ import { FilterBar } from "@/components/search/FilterBar";
 import { ToolCard } from "@/components/tools/ToolCard";
 import { ToolCardSkeleton } from "@/components/ui/ToolCardSkeleton";
 import { PageWrapper } from "@/components/layout/PageWrapper";
+import { PageMeta } from "@/components/seo/PageMeta";
 
 const featuredTools = allTools.filter((t) => t.featured);
 
 const STATS = [
-  { value: "12+", label: "Tools" },
+  { value: `${allTools.length}+`, label: "Tools" },
   { value: "8", label: "Categories" },
   { value: "100%", label: "Free" },
 ];
@@ -27,13 +28,14 @@ export default function HomePage() {
     return () => clearTimeout(t);
   }, []);
 
-  useEffect(() => {
-    document.title = `ToolsAI — ${allTools.length} AI Tools Directory`;
-    return () => { document.title = "ToolsAI"; };
-  }, []);
-
   return (
     <>
+      <PageMeta
+        title={`ToolsAI — ${allTools.length} AI Tools Directory`}
+        description={`Browse ${allTools.length} AI tools by category, use case, and pricing. Open source directory.`}
+        url="https://toolsai.dev"
+      />
+
       {/* HERO */}
       <section className="py-16 text-center px-4">
         <p className="font-mono text-xs text-text-muted tracking-widest">

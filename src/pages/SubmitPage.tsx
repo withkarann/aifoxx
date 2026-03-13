@@ -73,6 +73,11 @@ const RULES = [
 export default function SubmitPage() {
   return (
     <div className="max-w-2xl mx-auto py-16 px-4">
+      <PageMeta
+        title="Submit a Tool | ToolsAI"
+        description="Add your AI tool to ToolsAI. Open source contribution guide with step-by-step instructions."
+        url="https://toolsai.dev/submit"
+      />
       {/* Header */}
       <h1 className="font-display font-black text-4xl text-accent-green">
         &gt; SUBMIT_A_TOOL
