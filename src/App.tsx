@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { RootLayout } from "@/components/layout/RootLayout";
 import HomePage from "./pages/HomePage";
 import ToolDetailPage from "./pages/ToolDetailPage";
+import SubmitPage from "./pages/SubmitPage";
 import NotFound from "./pages/NotFound";
 
 const App = () => (
