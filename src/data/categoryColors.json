@@ -1,83 +1,17 @@
 {
-  "Marketing": {
-    "label": "Marketing",
-    "accent": "#FF2D55",
-    "bg": "rgba(255,45,85,0.08)",
-    "border": "rgba(255,45,85,0.35)",
-    "glow": "0 0 14px rgba(255,45,85,0.45)",
-    "text": "#FF2D55",
-    "emoji": "📡"
-  },
-  "Content Creation": {
-    "label": "Content Creation",
-    "accent": "#00FF9C",
-    "bg": "rgba(0,255,156,0.08)",
-    "border": "rgba(0,255,156,0.35)",
-    "glow": "0 0 14px rgba(0,255,156,0.45)",
-    "text": "#00FF9C",
-    "emoji": "📝"
-  },
-  "Coding": {
-    "label": "Coding",
-    "accent": "#00BFFF",
-    "bg": "rgba(0,191,255,0.08)",
-    "border": "rgba(0,191,255,0.35)",
-    "glow": "0 0 14px rgba(0,191,255,0.45)",
-    "text": "#00BFFF",
-    "emoji": "💾"
-  },
-  "Design": {
-    "label": "Design",
-    "accent": "#BF5FFF",
-    "bg": "rgba(191,95,255,0.08)",
-    "border": "rgba(191,95,255,0.35)",
-    "glow": "0 0 14px rgba(191,95,255,0.45)",
-    "text": "#BF5FFF",
-    "emoji": "🎨"
-  },
-  "Video": {
-    "label": "Video",
-    "accent": "#FF6600",
-    "bg": "rgba(255,102,0,0.08)",
-    "border": "rgba(255,102,0,0.35)",
-    "glow": "0 0 14px rgba(255,102,0,0.45)",
-    "text": "#FF6600",
-    "emoji": "📼"
-  },
-  "Productivity": {
-    "label": "Productivity",
-    "accent": "#FFD700",
-    "bg": "rgba(255,215,0,0.08)",
-    "border": "rgba(255,215,0,0.35)",
-    "glow": "0 0 14px rgba(255,215,0,0.45)",
-    "text": "#FFD700",
-    "emoji": "⚡"
-  },
-  "Research": {
-    "label": "Research",
-    "accent": "#00FFFF",
-    "bg": "rgba(0,255,255,0.08)",
-    "border": "rgba(0,255,255,0.35)",
-    "glow": "0 0 14px rgba(0,255,255,0.45)",
-    "text": "#00FFFF",
-    "emoji": "🔬"
-  },
-  "Business": {
-    "label": "Business",
-    "accent": "#39FF14",
-    "bg": "rgba(57,255,20,0.08)",
-    "border": "rgba(57,255,20,0.35)",
-    "glow": "0 0 14px rgba(57,255,20,0.45)",
-    "text": "#39FF14",
-    "emoji": "📊"
-  },
-  "__default__": {
-    "label": "Unknown",
-    "accent": "#8B949E",
-    "bg": "rgba(139,148,158,0.08)",
-    "border": "rgba(139,148,158,0.30)",
-    "glow": "0 0 10px rgba(139,148,158,0.3)",
-    "text": "#8B949E",
-    "emoji": "🔧"
-  }
+  "AI Assistants":          { "accent": "#BC8CFF", "bg": "rgba(188,140,255,0.08)", "border": "rgba(188,140,255,0.35)", "glow": "0 0 14px rgba(188,140,255,0.45)", "text": "#BC8CFF", "emoji": "🤖" },
+  "Coding & Dev":           { "accent": "#00BFFF", "bg": "rgba(0,191,255,0.08)",   "border": "rgba(0,191,255,0.35)",   "glow": "0 0 14px rgba(0,191,255,0.45)",   "text": "#00BFFF", "emoji": "💾" },
+  "Content & Writing":      { "accent": "#00FF9C", "bg": "rgba(0,255,156,0.08)",   "border": "rgba(0,255,156,0.35)",   "glow": "0 0 14px rgba(0,255,156,0.45)",   "text": "#00FF9C", "emoji": "📝" },
+  "Design & Creative":      { "accent": "#BF5FFF", "bg": "rgba(191,95,255,0.08)",  "border": "rgba(191,95,255,0.35)",  "glow": "0 0 14px rgba(191,95,255,0.45)",  "text": "#BF5FFF", "emoji": "🎨" },
+  "Video & Audio":          { "accent": "#FF6600", "bg": "rgba(255,102,0,0.08)",   "border": "rgba(255,102,0,0.35)",   "glow": "0 0 14px rgba(255,102,0,0.45)",   "text": "#FF6600", "emoji": "📼" },
+  "Marketing":              { "accent": "#FF2D55", "bg": "rgba(255,45,85,0.08)",   "border": "rgba(255,45,85,0.35)",   "glow": "0 0 14px rgba(255,45,85,0.45)",   "text": "#FF2D55", "emoji": "📡" },
+  "Productivity":           { "accent": "#FFD700", "bg": "rgba(255,215,0,0.08)",   "border": "rgba(255,215,0,0.35)",   "glow": "0 0 14px rgba(255,215,0,0.45)",   "text": "#FFD700", "emoji": "⚡" },
+  "Research & Data":        { "accent": "#00FFFF", "bg": "rgba(0,255,255,0.08)",   "border": "rgba(0,255,255,0.35)",   "glow": "0 0 14px rgba(0,255,255,0.45)",   "text": "#00FFFF", "emoji": "🔬" },
+  "Business & Finance":     { "accent": "#39FF14", "bg": "rgba(57,255,20,0.08)",   "border": "rgba(57,255,20,0.35)",   "glow": "0 0 14px rgba(57,255,20,0.45)",   "text": "#39FF14", "emoji": "📊" },
+  "Security & DevSecOps":   { "accent": "#FF2D55", "bg": "rgba(255,45,85,0.08)",   "border": "rgba(255,45,85,0.35)",   "glow": "0 0 14px rgba(255,45,85,0.45)",   "text": "#FF2D55", "emoji": "🔐" },
+  "Healthcare & Science":   { "accent": "#26C6DA", "bg": "rgba(38,198,218,0.08)",  "border": "rgba(38,198,218,0.35)",  "glow": "0 0 14px rgba(38,198,218,0.45)",  "text": "#26C6DA", "emoji": "🏥" },
+  "Education & Learning":   { "accent": "#F0C040", "bg": "rgba(240,192,64,0.08)",  "border": "rgba(240,192,64,0.35)",  "glow": "0 0 14px rgba(240,192,64,0.45)",  "text": "#F0C040", "emoji": "📚" },
+  "Agentic & Automation":   { "accent": "#58A6FF", "bg": "rgba(88,166,255,0.08)",  "border": "rgba(88,166,255,0.35)",  "glow": "0 0 14px rgba(88,166,255,0.45)",  "text": "#58A6FF", "emoji": "⚙️" },
+  "Physical AI & Robotics": { "accent": "#FF9F43", "bg": "rgba(255,159,67,0.08)",  "border": "rgba(255,159,67,0.35)",  "glow": "0 0 14px rgba(255,159,67,0.45)",  "text": "#FF9F43", "emoji": "🦾" },
+  "__default__":            { "accent": "#8B949E", "bg": "rgba(139,148,158,0.08)", "border": "rgba(139,148,158,0.30)", "glow": "0 0 10px rgba(139,148,158,0.3)",  "text": "#8B949E", "emoji": "🔧" }
 }
