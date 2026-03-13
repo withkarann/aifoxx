@@ -9,7 +9,16 @@
     "url": "https://chat.openai.com",
     "tags": ["chatbot", "writing", "general-purpose", "GPT-4"],
     "pricing": "Freemium",
-    "featured": true
+    "featured": true,
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "iOS App", "Android App", "API"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "GPT-3.5 free", "paid_plans": "Plus $20/mo, Team $25/user/mo", "api_cost": null },
+    "use_cases": ["Writing assistance", "Brainstorming", "Code help", "Research"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "2",
@@ -21,7 +30,16 @@
     "url": "https://github.com/features/copilot",
     "tags": ["coding", "autocomplete", "IDE", "pair-programming"],
     "pricing": "Paid",
-    "featured": true
+    "featured": true,
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["IDE Extension", "CLI"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": null, "paid_plans": "Individual $10/mo, Business $19/user/mo", "api_cost": null },
+    "use_cases": ["Code completion", "Pair programming", "Boilerplate generation"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "3",
@@ -33,7 +51,16 @@
     "url": "https://midjourney.com",
     "tags": ["image-generation", "art", "design", "creative"],
     "pricing": "Paid",
-    "featured": true
+    "featured": true,
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Discord Bot", "Web App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": null, "paid_plans": "Basic $10/mo, Standard $30/mo, Pro $60/mo", "api_cost": null },
+    "use_cases": ["Concept art", "Marketing visuals", "Creative exploration"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "4",
@@ -44,7 +71,16 @@
     "description": "AI-powered search engine that provides cited, conversational answers to complex queries.",
     "url": "https://perplexity.ai",
     "tags": ["search", "research", "citations", "knowledge"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "iOS App", "Android App", "API"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "Basic search free", "paid_plans": "Pro $20/mo", "api_cost": null },
+    "use_cases": ["Research", "Fact-checking", "Literature review"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "5",
@@ -55,7 +91,16 @@
     "description": "AI writing and organization assistant built into the Notion workspace platform.",
     "url": "https://notion.so/product/ai",
     "tags": ["notes", "productivity", "writing", "workspace"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "Desktop App", "iOS App", "Android App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "Limited AI queries", "paid_plans": "AI add-on $10/member/mo", "api_cost": null },
+    "use_cases": ["Note-taking", "Documentation", "Project management"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "6",
@@ -67,7 +112,16 @@
     "url": "https://runwayml.com",
     "tags": ["video", "generation", "editing", "creative"],
     "pricing": "Freemium",
-    "featured": true
+    "featured": true,
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "125 credits free", "paid_plans": "Standard $12/mo, Pro $28/mo", "api_cost": null },
+    "use_cases": ["Video generation", "VFX", "Creative prototyping"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "7",
@@ -78,7 +132,16 @@
     "description": "Enterprise AI platform for marketing content creation, SEO optimization, and brand voice.",
     "url": "https://jasper.ai",
     "tags": ["marketing", "SEO", "content", "enterprise"],
-    "pricing": "Paid"
+    "pricing": "Paid",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "Browser Extension"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": null, "paid_plans": "Creator $49/mo, Pro $69/mo", "api_cost": null },
+    "use_cases": ["Marketing copy", "SEO content", "Brand voice"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "8",
@@ -89,7 +152,16 @@
     "description": "AI-first code editor built for pair programming with intelligent code generation and editing.",
     "url": "https://cursor.sh",
     "tags": ["coding", "editor", "AI-first", "pair-programming"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Desktop App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "Limited completions", "paid_plans": "Pro $20/mo, Business $40/user/mo", "api_cost": null },
+    "use_cases": ["Code generation", "Refactoring", "Codebase Q&A"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "9",
@@ -100,7 +172,16 @@
     "description": "AI writing platform for generating SEO-optimized blog posts, ads, and marketing copy at scale.",
     "url": "https://writesonic.com",
     "tags": ["copywriting", "marketing", "SEO", "content"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "10k words/mo free", "paid_plans": "Pro from $19/mo", "api_cost": null },
+    "use_cases": ["Blog writing", "Ad copy", "Landing pages"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "10",
@@ -111,7 +192,16 @@
     "description": "AI voice synthesis and cloning platform for realistic text-to-speech and dubbing.",
     "url": "https://elevenlabs.io",
     "tags": ["voice", "text-to-speech", "cloning", "audio"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "API"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "10k chars/mo free", "paid_plans": "Starter $5/mo, Creator $22/mo", "api_cost": null },
+    "use_cases": ["Voiceovers", "Dubbing", "Audiobooks"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "11",
@@ -122,7 +212,16 @@
     "description": "AI meeting assistant that records, transcribes, and summarizes meetings in real-time.",
     "url": "https://otter.ai",
     "tags": ["transcription", "meetings", "notes", "automation"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "iOS App", "Android App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "300 min/mo free", "paid_plans": "Pro $16.99/mo", "api_cost": null },
+    "use_cases": ["Meeting transcription", "Note-taking", "Action items"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "12",
@@ -133,7 +232,16 @@
     "description": "AI website builder and business tools platform that generates sites and CRM in seconds.",
     "url": "https://durable.co",
     "tags": ["website-builder", "business", "CRM", "automation"],
-    "pricing": "Paid"
+    "pricing": "Paid",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": null, "paid_plans": "Starter $12/mo, Business $20/mo", "api_cost": null },
+    "use_cases": ["Website building", "CRM", "Invoicing"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "13",
@@ -145,7 +253,16 @@
     "url": "https://gemini.google.com",
     "tags": ["search", "multimodal", "research", "Google"],
     "pricing": "Freemium",
-    "featured": true
+    "featured": true,
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "iOS App", "Android App", "API"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "Gemini free tier", "paid_plans": "Advanced $19.99/mo", "api_cost": null },
+    "use_cases": ["Research", "Multimodal analysis", "Conversational search"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "14",
@@ -157,7 +274,16 @@
     "url": "https://claude.ai",
     "tags": ["writing", "analysis", "chatbot", "Anthropic"],
     "pricing": "Freemium",
-    "featured": true
+    "featured": true,
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "iOS App", "API"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "Limited free usage", "paid_plans": "Pro $20/mo", "api_cost": null },
+    "use_cases": ["Long-form writing", "Analysis", "Coding assistance"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "15",
@@ -169,7 +295,16 @@
     "url": "https://stability.ai",
     "tags": ["image-generation", "open-source", "art", "local"],
     "pricing": "Open Source",
-    "featured": true
+    "featured": true,
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Self-hosted", "API", "Web App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": true },
+    "pricing_detail": { "free_tier": "Fully free self-hosted", "paid_plans": null, "api_cost": null },
+    "use_cases": ["Image generation", "Art creation", "Research"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "16",
@@ -180,7 +315,16 @@
     "description": "AI code completion tool that runs locally and integrates with all major IDEs for private codebases.",
     "url": "https://tabnine.com",
     "tags": ["coding", "autocomplete", "privacy", "IDE"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["IDE Extension"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": true },
+    "pricing_detail": { "free_tier": "Basic completions free", "paid_plans": "Pro $12/mo", "api_cost": null },
+    "use_cases": ["Code completion", "Private codebase assistance"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "17",
@@ -191,7 +335,16 @@
     "description": "AI-powered video messaging platform that auto-generates titles, summaries, and chapters for recordings.",
     "url": "https://loom.com",
     "tags": ["video-messaging", "summaries", "productivity", "async"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "Desktop App", "Browser Extension"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "25 videos/person free", "paid_plans": "Business $12.50/user/mo", "api_cost": null },
+    "use_cases": ["Async communication", "Video messaging", "Documentation"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "18",
@@ -202,7 +355,16 @@
     "description": "AI video and podcast editor that lets you edit media by editing text transcripts.",
     "url": "https://descript.com",
     "tags": ["video-editing", "podcast", "transcription", "creative"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Desktop App", "Web App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "1 hr transcription free", "paid_plans": "Hobbyist $24/mo, Pro $33/mo", "api_cost": null },
+    "use_cases": ["Video editing", "Podcast editing", "Transcription"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "19",
@@ -213,7 +375,16 @@
     "description": "AI video generation platform that creates professional videos with realistic AI avatars and voiceovers.",
     "url": "https://synthesia.io",
     "tags": ["video-generation", "avatars", "enterprise", "training"],
-    "pricing": "Paid"
+    "pricing": "Paid",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "API"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": null, "paid_plans": "Starter $22/mo, Creator $67/mo", "api_cost": null },
+    "use_cases": ["Training videos", "Marketing videos", "Personalized outreach"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "20",
@@ -224,7 +395,16 @@
     "description": "AI-driven SEO tool for content optimization, keyword research, and SERP analysis to boost rankings.",
     "url": "https://surferseo.com",
     "tags": ["SEO", "content-optimization", "keywords", "marketing"],
-    "pricing": "Paid"
+    "pricing": "Paid",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "Browser Extension"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": null, "paid_plans": "Essential $89/mo, Scale $129/mo", "api_cost": null },
+    "use_cases": ["SEO optimization", "Content audits", "Keyword research"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "21",
@@ -235,7 +415,16 @@
     "description": "AI-powered automation platform connecting 6000+ apps with natural language workflow creation.",
     "url": "https://zapier.com/ai",
     "tags": ["automation", "workflows", "integrations", "no-code"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "100 tasks/mo free", "paid_plans": "Starter $19.99/mo, Pro $49/mo", "api_cost": null },
+    "use_cases": ["Workflow automation", "App integration", "No-code automation"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "22",
@@ -247,7 +436,16 @@
     "url": "https://heygen.com",
     "tags": ["video-generation", "avatars", "marketing", "personalization"],
     "pricing": "Freemium",
-    "featured": true
+    "featured": true,
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App", "API"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "1 free credit", "paid_plans": "Creator $24/mo, Business $72/mo", "api_cost": null },
+    "use_cases": ["Marketing videos", "Training content", "Personalized outreach"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "23",
@@ -258,7 +456,16 @@
     "description": "AI presentation tool that automatically applies design rules to create polished slide decks instantly.",
     "url": "https://beautiful.ai",
     "tags": ["presentations", "design", "slides", "automation"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "Limited free tier", "paid_plans": "Pro $12/mo, Team $40/user/mo", "api_cost": null },
+    "use_cases": ["Presentations", "Pitch decks", "Reports"],
+    "not_good_for": [],
+    "industries": []
   },
   {
     "id": "24",
@@ -269,6 +476,15 @@
     "description": "AI-powered go-to-market platform for generating sales copy, email sequences, and marketing workflows.",
     "url": "https://copy.ai",
     "tags": ["copywriting", "email", "sales", "marketing"],
-    "pricing": "Freemium"
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-03-13",
+    "access_methods": ["Web App"],
+    "compliance": { "soc2": null, "iso27001": null, "gdpr": null, "hipaa": null },
+    "data_storage": { "region": null, "trains_on_data": null, "self_hostable": false },
+    "pricing_detail": { "free_tier": "2k words/mo free", "paid_plans": "Pro $49/mo, Enterprise custom", "api_cost": null },
+    "use_cases": ["Sales copy", "Email sequences", "Marketing workflows"],
+    "not_good_for": [],
+    "industries": []
   }
 ]
