@@ -234,3 +234,30 @@ html, body {
   80% { transform: translate(2px, -2px); }
   100% { transform: translate(0); }
 }
+
+/* ── TOOL CARD (category-colored via CSS vars) ── */
+.tool-card {
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+  border-color: hsl(var(--border-default));
+}
+.tool-card:hover {
+  border-color: var(--cat-accent) !important;
+  box-shadow: var(--cat-glow);
+}
+.tool-card .cat-chip {
+  color:            var(--cat-text);
+  background-color: var(--cat-bg);
+  border:           1px solid var(--cat-border);
+}
+.tool-card .subcat-chip {
+  color:            var(--cat-text);
+  background-color: var(--cat-bg);
+  border:           1px solid var(--cat-border);
+  opacity: 0.7;
+}
+.tool-card .letter-avatar {
+  color: var(--cat-accent);
+}
+.tool-card .featured-bar {
+  background: var(--cat-accent);
+}

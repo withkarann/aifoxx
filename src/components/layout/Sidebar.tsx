@@ -1,6 +1,7 @@
 import { CATEGORIES } from "@/types/category";
 import { allTools } from "@/lib/tools";
 import { useToolFilters } from "@/hooks/useToolFilters";
+import { getCategoryColor } from "@/lib/categoryColors";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { cn } from "@/lib/utils";
 
@@ -46,6 +47,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
       {CATEGORIES.map((cat) => {
         const count = allTools.filter((t) => t.category === cat.name).length;
         const isActive = filters.category === cat.name;
+        const color = getCategoryColor(cat.name);
 
         return (
           <Collapsible key={cat.name} defaultOpen={isActive}>
@@ -54,15 +56,25 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
                 onClick={() => handleSelect(cat.name)}
                 className={cn(
                   "w-full flex items-center justify-between py-2 px-2 rounded-[4px] transition-colors duration-150",
-                  isActive
-                    ? "border-l-2 border-accent-green text-accent-green"
-                    : "text-text-secondary hover:text-text-primary"
+                  !isActive && "text-text-secondary hover:text-text-primary"
                 )}
+                style={{
+                  borderLeft: isActive ? `2px solid ${color.accent}` : '2px solid transparent',
+                  color: isActive ? color.accent : undefined,
+                  textShadow: isActive ? `0 0 8px ${color.accent}66` : 'none',
+                }}
               >
                 <span className="font-display text-sm font-black uppercase">
-                  {cat.name}
+                  {color.emoji} {cat.name}
                 </span>
-                <span className="bg-bg-overlay text-text-muted text-xs px-1.5 py-0.5 rounded-[4px] font-mono">
+                <span
+                  className="text-xs px-1.5 py-0.5 rounded-[4px] font-mono"
+                  style={{
+                    color: color.text,
+                    background: color.bg,
+                    border: `1px solid ${color.border}`,
+                  }}
+                >
                   {count}
                 </span>
               </button>
@@ -76,9 +88,14 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
                     className={cn(
                       "block w-full text-left text-sm font-mono pl-4 py-1.5 transition-colors duration-150 cursor-pointer",
                       filters.subcategory === sub && filters.category === cat.name
-                        ? "text-accent-green"
+                        ? ""
                         : "text-text-secondary hover:text-text-primary"
                     )}
+                    style={
+                      filters.subcategory === sub && filters.category === cat.name
+                        ? { color: color.accent }
+                        : undefined
+                    }
                   >
                     {sub}
                   </button>
