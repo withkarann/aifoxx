@@ -106,6 +106,24 @@ export default function SubmitPage() {
           ))}
         </ul>
       </div>
+
+      {/* Badge */}
+      <div className="mt-8 bg-bg-surface border border-border-default rounded-[6px] p-5">
+        <p className="font-display font-black text-text-primary">
+          05 <span className="text-text-muted">//</span> ADD A BADGE
+        </p>
+        <p className="font-mono text-sm text-text-secondary mt-2">
+          Show that your tool is listed on ToolsAI:
+        </p>
+        <div className="mt-3 mb-2">
+          <img
+            src="https://img.shields.io/badge/Listed_on-ToolsAI-00FF9C?style=for-the-badge"
+            alt="Listed on ToolsAI"
+            className="h-7"
+          />
+        </div>
+        <CodeBlock>{`[![ToolsAI](https://img.shields.io/badge/Listed_on-ToolsAI-00FF9C?style=for-the-badge)](https://toolsai.dev)`}</CodeBlock>
+      </div>
     </div>
   );
 }

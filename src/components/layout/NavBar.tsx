@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Sun, Moon, Menu } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Sidebar } from "./Sidebar";
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 export function NavBar() {
   const { theme, toggleTheme } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { pathname } = useLocation();
 
   return (
     <header className="sticky top-0 z-40 bg-bg-surface border-b border-border-default">
@@ -48,7 +50,12 @@ export function NavBar() {
 
           <Link
             to="/submit"
-            className="hidden sm:inline-flex font-mono text-xs tracking-widest border border-accent-green text-accent-green px-3 py-1.5 rounded-[4px] hover:bg-accent-green hover:text-primary-foreground transition-colors duration-150"
+            className={cn(
+              "hidden sm:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150",
+              pathname === "/submit"
+                ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
+                : "border-accent-green text-accent-green hover:bg-accent-green hover:text-primary-foreground"
+            )}
           >
             SUBMIT_TOOL
           </Link>
