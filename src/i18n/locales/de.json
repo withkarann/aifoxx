@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "submitTool": "TOOL EINREICHEN",
+    "themeNext": {
+      "softLight": "Weiches Licht",
+      "notebook": "Notizbuch",
+      "darkTerminal": "Dunkles Terminal"
+    }
+  },
+  "home": {
+    "featured": "// EMPFOHLEN",
+    "showing": "// ZEIGE {{start}}-{{end}} VON {{total}} ERGEBNISSEN",
+    "errorTitle": "[! FEHLER: KEINE_TOOLS_GEFUNDEN]",
+    "errorDesc": "Keine Tools entsprechen deiner aktuellen Suche und den Filtern. Versuche ein anderes Stichwort oder setze die Filter zurück.",
+    "errorSub": "Keine passenden Tools gefunden.",
+    "resetFilters": "> FILTER_ZURÜCKSETZEN (ALLE TOOLS ANZEIGEN)",
+    "prev": "ZURÜCK",
+    "next": "WEITER"
+  },
+  "category": {
+    "toolsCount": "{{count}} Tools in dieser Kategorie",
+    "all": "ALLE",
+    "noResultsTitle": "> KEINE_ERGEBNISSE_GEFUNDEN",
+    "noResultsDesc": "Keine Tools entsprechen diesen Filtern"
+  },
+  "submit": {
+    "title": "> TOOL_EINREICHEN",
+    "subtitle": "{{brand}} ist Open Source. Füge Tools hinzu, indem du eine JSON-Datei bearbeitest und einen Pull Request öffnest.",
+    "steps": {
+      "01": {
+        "title": "REPO FORKEN",
+        "desc": "Klone das Repository und richte deine lokale Umgebung ein."
+      },
+      "02": {
+        "title": "tools.json BEARBEITEN",
+        "desc": "Öffne src/data/tools.json und füge deinen Eintrag hinzu:"
+      },
+      "03": {
+        "title": "VALIDIEREN (KEINE DUPLIKATE)",
+        "desc": "Dies überprüft auf doppelte Tool-Namen und Schema-Fehler. Es schlägt laut fehl, wenn etwas falsch ist."
+      },
+      "04": {
+        "title": "PULL REQUEST ÖFFNEN",
+        "desc": "Pushe zu deinem Fork und öffne einen PR. CI führt die Validierung automatisch erneut aus."
+      },
+      "05": {
+        "title": "BADGE HINZUFÜGEN",
+        "desc": "Zeige, dass dein Tool auf {{brand}} gelistet ist:"
+      }
+    },
+    "rulesTitle": "// BEITRAGSREGELN",
+    "rules": {
+      "unique": "Tool-Name muss eindeutig sein (wird vom Validator erzwungen)",
+      "noAffiliate": "Keine Affiliate-Links",
+      "maxDesc": "Beschreibung maximal 200 Zeichen",
+      "pricing": "pricing muss exakt sein: Free, Freemium, Paid oder Open Source",
+      "url": "URL muss ein gültiger https://-Link sein"
+    },
+    "copied": "KOPIERT!"
+  },
+  "filter": {
+    "allPricing": "ALLE",
+    "free": "KOSTENLOS",
+    "freemium": "FREEMIUM",
+    "paid": "KOSTENPFLICHTIG",
+    "openSource": "OPEN SOURCE",
+    "clearAll": "FILTER LÖSCHEN",
+    "activeFilters": "{{count}} AKTIV"
+  }
+}

@@ -35,6 +35,12 @@ dist-ssr
 # Vercel local project metadata
 .vercel
 
+# Backup files
+*.bak
+
+# Claude Code local-only settings
+.claude/settings.local.json
+
 # Local cert/key material
 *.pem
 *.key
