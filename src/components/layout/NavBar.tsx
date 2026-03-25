@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Moon, Sun, Menu, BookOpen } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
+import { useAuth } from "@/hooks/useAuth";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Sidebar } from "./Sidebar";
 import { useState } from "react";
@@ -9,6 +10,7 @@ import Brand from "@/lib/brand";
 
 export function NavBar() {
   const { theme, cycleTheme } = useTheme();
+  const { user, signOut } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
   const { pathname } = useLocation();
 
@@ -93,6 +95,22 @@ export function NavBar() {
           >
             MCP
           </Link>
+
+          {user ? (
+            <button
+              onClick={() => signOut()}
+              className="hidden sm:inline-flex font-mono text-xs tracking-widest border border-border-default px-3 py-1.5 rounded-[4px] text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-colors duration-150"
+            >
+              SIGN OUT
+            </button>
+          ) : (
+            <Link
+              to="/sign-in"
+              className="hidden sm:inline-flex font-mono text-xs tracking-widest border border-border-default px-3 py-1.5 rounded-[4px] text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-colors duration-150"
+            >
+              SIGN IN
+            </Link>
+          )}
 
           <Link
             to="/submit"
