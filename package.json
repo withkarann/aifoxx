@@ -90,7 +90,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^15.15.0",
-    "happy-dom": "^20.8.4",
+    "happy-dom": "^20.8.8",
     "husky": "^9.1.7",
     "jsdom": "^28.1.0",
     "postcss": "^8.5.6",
