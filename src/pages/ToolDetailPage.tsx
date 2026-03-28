@@ -8,7 +8,6 @@ import { ToolCard } from "@/components/tools/ToolCard";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { DataStatus } from "@/components/ui/DataStatus";
-import { CommentSection } from "@/components/comments/CommentSection";
 import Brand from "@/lib/brand";
 
 function ComplianceBadge({ value }: { value: boolean | null | undefined }) {
@@ -306,9 +305,6 @@ export default function ToolDetailPage() {
               </Link>
             </section>
           )}
-
-          {/* Comments */}
-          <CommentSection toolSlug={tool.slug} />
 
           {/* Related */}
           {related.length > 0 && (

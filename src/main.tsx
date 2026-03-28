@@ -5,7 +5,6 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import "@fontsource/jetbrains-mono/latin.css";
 import { queryClient } from "./lib/queryClient";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { AuthProvider } from "./contexts/AuthContext";
 import { validateTools } from "./lib/tools";
 import App from "./App";
 import "./index.css";
@@ -16,11 +15,9 @@ validateTools();
 createRoot(document.getElementById("root")!).render(
   <QueryClientProvider client={queryClient}>
     <ThemeProvider>
-      <AuthProvider>
-        <App />
-        <Analytics />
-        <SpeedInsights />
-      </AuthProvider>
+      <App />
+      <Analytics />
+      <SpeedInsights />
     </ThemeProvider>
   </QueryClientProvider>
 );
