@@ -1,22 +1,56 @@
 import { useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { allNews, getNewsByCategory, NEWS_COUNTS } from "@/lib/news";
-import { type NewsCategory, type NewsSource } from "@/types/news";
+import { type NewsCategory } from "@/types/news";
 import { PageMeta } from "@/components/seo/PageMeta";
 import Brand from "@/lib/brand";
 import { cn } from "@/lib/utils";
 
-const SOURCE_LABELS: Record<NewsSource, string> = {
+const PAGE_SIZE = 20;
+
+// Display labels for known sources; unknown sources fall back to capitalised id
+const SOURCE_LABELS: Record<string, string> = {
   hn: "HN",
   producthunt: "Product Hunt",
   techcrunch: "TechCrunch",
+  venturebeat: "VentureBeat",
+  "mit-techreview": "MIT Tech Review",
+  wired: "Wired",
+  zdnet: "ZDNet",
+  infoq: "InfoQ",
+  deepmind: "DeepMind",
+  huggingface: "Hugging Face",
+  theverge: "The Verge",
+  arstechnica: "Ars Technica",
+  "tldr-ai": "TLDR AI",
+  "reddit-ml": "r/MachineLearning",
+  "reddit-artificial": "r/artificial",
+  analyticsvidhya: "Analytics Vidhya",
+  betalist: "BetaList",
 };
 
-const SOURCE_COLORS: Record<NewsSource, string> = {
+const SOURCE_COLORS: Record<string, string> = {
   hn: "text-orange-400",
   producthunt: "text-rose-400",
+  betalist: "text-purple-400",
   techcrunch: "text-accent-green",
+  venturebeat: "text-blue-400",
+  "mit-techreview": "text-red-400",
+  wired: "text-yellow-400",
+  deepmind: "text-cyan-400",
+  huggingface: "text-amber-400",
+  "tldr-ai": "text-indigo-400",
+  "reddit-ml": "text-orange-300",
+  "reddit-artificial": "text-orange-300",
 };
+
+function sourceLabel(id: string) {
+  return SOURCE_LABELS[id] ?? id.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+function sourceColor(id: string) {
+  return SOURCE_COLORS[id] ?? "text-text-muted";
+}
 
 type Tab = "all" | NewsCategory;
 
@@ -28,14 +62,22 @@ const TABS: { id: Tab; label: string }[] = [
 
 export default function NewsPage() {
   const [tab, setTab] = useState<Tab>("all");
+  const [visible, setVisible] = useState(PAGE_SIZE);
 
   const items = getNewsByCategory(tab === "all" ? "all" : tab);
+  const shown = items.slice(0, visible);
+  const hasMore = visible < items.length;
+
+  function handleTabChange(next: Tab) {
+    setTab(next);
+    setVisible(PAGE_SIZE);
+  }
 
   return (
     <>
       <PageMeta
         title={`AI News — Today in AI | ${Brand.product.name_styled}`}
-        description={`Latest AI news and new tool releases. Curated daily from Hacker News, Product Hunt, and TechCrunch.`}
+        description={`Latest AI news and new tool releases. Curated daily from ${NEWS_COUNTS.total} stories across HN, VentureBeat, TechCrunch, Wired and more.`}
         url={`https://${Brand.product.domain}/news`}
       />
 
@@ -49,7 +91,7 @@ export default function NewsPage() {
             Today in AI
           </h1>
           <p className="font-mono text-sm text-text-secondary max-w-lg">
-            {NEWS_COUNTS.total} stories — curated daily from HN, Product Hunt &amp; TechCrunch.
+            {NEWS_COUNTS.total} stories — curated daily from HN, VentureBeat, TechCrunch, Wired&nbsp;&amp;&nbsp;more.
           </p>
         </div>
       </section>
@@ -60,7 +102,7 @@ export default function NewsPage() {
           {TABS.map(({ id, label }) => (
             <button
               key={id}
-              onClick={() => setTab(id)}
+              onClick={() => handleTabChange(id)}
               className={cn(
                 "font-mono text-xs tracking-widest px-4 py-2 -mb-px border-b-2 transition-colors duration-150",
                 tab === id
@@ -69,6 +111,11 @@ export default function NewsPage() {
               )}
             >
               {label}
+              {id !== "all" && (
+                <span className="ml-1.5 opacity-50">
+                  ({id === "news" ? NEWS_COUNTS.news : NEWS_COUNTS.newTools})
+                </span>
+              )}
             </button>
           ))}
         </div>
@@ -84,60 +131,77 @@ export default function NewsPage() {
             </p>
           </div>
         ) : (
-          <ol className="space-y-0">
-            {items.map((item, idx) => (
-              <li
-                key={item.id}
-                className="flex items-baseline gap-3 py-2.5 border-b border-border-dim/50 group"
-              >
-                {/* Number */}
-                <span className="font-mono text-xs text-text-muted w-6 shrink-0 text-right select-none">
-                  {idx + 1}.
-                </span>
-
-                {/* Content */}
-                <div className="min-w-0 flex-1">
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-sm text-text-primary hover:text-accent-green transition-colors duration-100 leading-snug inline"
-                  >
-                    {item.title}
-                  </a>
-                  <span className="font-mono text-xs text-text-muted ml-1.5 whitespace-nowrap">
-                    ({item.domain})
+          <>
+            <ol className="space-y-0">
+              {shown.map((item, idx) => (
+                <li
+                  key={item.id}
+                  className="flex items-baseline gap-3 py-2.5 border-b border-border-dim/50 group"
+                >
+                  {/* Number */}
+                  <span className="font-mono text-xs text-text-muted w-6 shrink-0 text-right select-none">
+                    {idx + 1}.
                   </span>
 
-                  {/* Metadata row */}
-                  <div className="flex items-center gap-2 mt-0.5">
-                    <span className={cn("font-mono text-[10px]", SOURCE_COLORS[item.source])}>
-                      {SOURCE_LABELS[item.source]}
-                    </span>
-                    <span className="font-mono text-[10px] text-text-muted">·</span>
-                    <span className="font-mono text-[10px] text-text-muted">{item.age}</span>
-                    {item.points !== undefined && (
-                      <>
-                        <span className="font-mono text-[10px] text-text-muted">·</span>
-                        <span className="font-mono text-[10px] text-text-muted">
-                          {item.points} pts
-                        </span>
-                      </>
-                    )}
+                  {/* Content */}
+                  <div className="min-w-0 flex-1">
                     <a
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-100 text-text-muted hover:text-accent-green"
-                      aria-label="Open link"
+                      className="font-mono text-sm text-text-primary hover:text-accent-green transition-colors duration-100 leading-snug inline"
                     >
-                      <ExternalLink size={11} />
+                      {item.title}
                     </a>
+                    <span className="font-mono text-xs text-text-muted ml-1.5">
+                      ({item.domain})
+                    </span>
+
+                    {/* Metadata row */}
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <span className={cn("font-mono text-[10px]", sourceColor(item.source))}>
+                        {sourceLabel(item.source)}
+                      </span>
+                      <span className="font-mono text-[10px] text-text-muted">·</span>
+                      <span className="font-mono text-[10px] text-text-muted">{item.age}</span>
+                      {item.points !== undefined && (
+                        <>
+                          <span className="font-mono text-[10px] text-text-muted">·</span>
+                          <span className="font-mono text-[10px] text-text-muted">
+                            {item.points} pts
+                          </span>
+                        </>
+                      )}
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-100 text-text-muted hover:text-accent-green"
+                        aria-label="Open link"
+                      >
+                        <ExternalLink size={11} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </li>
-            ))}
-          </ol>
+                </li>
+              ))}
+            </ol>
+
+            {/* Show more / count */}
+            <div className="mt-6 flex items-center justify-between">
+              <span className="font-mono text-xs text-text-muted">
+                Showing {shown.length} of {items.length}
+              </span>
+              {hasMore && (
+                <button
+                  onClick={() => setVisible((v) => v + PAGE_SIZE)}
+                  className="font-mono text-xs text-accent-green hover:bg-accent-green hover:text-primary-foreground border border-accent-green px-4 py-1.5 rounded-[4px] transition-all duration-150"
+                >
+                  SHOW MORE
+                </button>
+              )}
+            </div>
+          </>
         )}
       </div>
     </>

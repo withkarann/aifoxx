@@ -1,6 +1,1586 @@
 [
   {
-    "id": "tc-0-1774719928938",
+    "id": "reddit-artificial-5-1774720370517",
+    "title": "Non-technical people deploying software by describing it. Run Lobster (OpenClaw) is the first time it felt real to me.",
+    "url": "https://www.reddit.com/r/artificial/comments/1s6736o/nontechnical_people_deploying_software_by/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T17:51:22.000Z",
+    "age": "1m ago"
+  },
+  {
+    "id": "zdnet-0-1774720369912",
+    "title": "Amazon Spring Sale live blog 2026: Breaking discounts on Apple, Dyson, and more",
+    "url": "https://www.zdnet.com/article/amazon-spring-sale-live-blog-03-28-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T17:37:00.000Z",
+    "age": "15m ago"
+  },
+  {
+    "id": "reddit-artificial-6-1774720370517",
+    "title": "I cut Claude Code's token usage by 68.5% by giving agents their own OS",
+    "url": "https://www.reddit.com/r/artificial/comments/1s66kt0/i_cut_claude_codes_token_usage_by_685_by_giving/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T17:31:26.000Z",
+    "age": "21m ago"
+  },
+  {
+    "id": "towardsdatascience-0-1774720370127",
+    "title": "Using OpenClaw as a Force Multiplier: What One Person Can Ship with Autonomous Agents",
+    "url": "https://towardsdatascience.com/using-openclaw-as-a-force-multiplier-what-one-person-can-ship-with-autonomous-agents/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-28T16:30:00.000Z",
+    "age": "1h ago"
+  },
+  {
+    "id": "zdnet-1-1774720369912",
+    "title": "You can get a free iPhone 17e at Visible for a limited time - no trade-in required",
+    "url": "https://www.zdnet.com/article/iphone-17e-deal-visible/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T16:00:40.000Z",
+    "age": "1h ago"
+  },
+  {
+    "id": "reddit-artificial-2-1774720370517",
+    "title": "Geolocate any picture down to its exact coordinates (web version)",
+    "url": "https://www.reddit.com/r/artificial/comments/1s63yde/geolocate_any_picture_down_to_its_exact/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T15:51:13.000Z",
+    "age": "2h ago"
+  },
+  {
+    "id": "reddit-artificial-3-1774720370517",
+    "title": "HALO - Hierarchical Autonomous Learning Organism",
+    "url": "https://www.reddit.com/r/artificial/comments/1s63mtm/halo_hierarchical_autonomous_learning_organism/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T15:39:01.000Z",
+    "age": "2h ago"
+  },
+  {
+    "id": "reddit-ml-3-1774720370700",
+    "title": "[P] TurboQuant for weights: near‑optimal 4‑bit LLM quantization with lossless 8‑bit residual – 3.2× memory savings",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s634wk/p_turboquant_for_weights_nearoptimal_4bit_llm/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-28T15:19:49.000Z",
+    "age": "2h ago"
+  },
+  {
+    "id": "reddit-ml-2-1774720370700",
+    "title": "[D] Litellm supply chain attack and what it means for api key management",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s62taq/d_litellm_supply_chain_attack_and_what_it_means/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-28T15:07:16.000Z",
+    "age": "2h ago"
+  },
+  {
+    "id": "zdnet-2-1774720369912",
+    "title": "Best Amazon Spring Sale Apple deals 2026",
+    "url": "https://www.zdnet.com/article/best-amazon-spring-sale-2026-apple-deals/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T14:52:55.000Z",
+    "age": "2h ago"
+  },
+  {
+    "id": "zdnet-3-1774720369912",
+    "title": "Best Amazon Spring Sale 2026 smartwatch and smart ring deals",
+    "url": "https://www.zdnet.com/article/best-amazon-spring-sale-2026-smart-ring-smartwatch-deals/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T14:47:03.000Z",
+    "age": "3h ago"
+  },
+  {
+    "id": "zdnet-4-1774720369912",
+    "title": "Best Amazon Big Spring Sale headphone deals 2026",
+    "url": "https://www.zdnet.com/article/best-amazon-spring-sale-2026-headphones-deals/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T14:39:17.000Z",
+    "age": "3h ago"
+  },
+  {
+    "id": "zdnet-5-1774720369912",
+    "title": "Save big on Switch 2 consoles, SSDs, and more with these anti-Amazon Spring Sale deals",
+    "url": "https://www.zdnet.com/article/best-buy-gaming-deals-amazon-spring-sale-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T14:33:38.000Z",
+    "age": "3h ago"
+  },
+  {
+    "id": "zdnet-6-1774720369912",
+    "title": "Best Amazon Spring Sale robot vacuum deals 2026",
+    "url": "https://www.zdnet.com/article/best-amazon-spring-sale-2026-robot-vacuum-deals/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T14:24:53.000Z",
+    "age": "3h ago"
+  },
+  {
+    "id": "zdnet-7-1774720369912",
+    "title": "Best Amazon Spring Sale tablet deals 2026",
+    "url": "https://www.zdnet.com/article/best-amazon-spring-sale-2026-tablet-deals/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T14:07:07.000Z",
+    "age": "3h ago"
+  },
+  {
+    "id": "zdnet-8-1774720369912",
+    "title": "Best Amazon Spring Sale phone deals 2026: 25+ sales out now",
+    "url": "https://www.zdnet.com/article/best-amazon-big-spring-sale-2026-phone-deals/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T14:01:09.000Z",
+    "age": "3h ago"
+  },
+  {
+    "id": "reddit-ml-8-1774720370700",
+    "title": "[R] Lag state in citation graphs: a systematic indexing blind spot with implications for lit review automation",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s611t3/r_lag_state_in_citation_graphs_a_systematic/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-28T13:57:22.000Z",
+    "age": "3h ago"
+  },
+  {
+    "id": "zdnet-9-1774720369912",
+    "title": "Best Amazon Spring Sale laptop deals 2026",
+    "url": "https://www.zdnet.com/article/best-amazon-spring-sale-2026-laptop-deals/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T13:53:41.000Z",
+    "age": "3h ago"
+  },
+  {
+    "id": "reddit-artificial-14-1774720370517",
+    "title": "I built a single platform integrating GPT-5.2, Grok 4, Claude 3.5, Gemini 3.1 Pro, Luma, Kling, ElevenLabs, OpenAI WebRTC and 50+ tools with shared persistent memory - is this the future of AI or have I over-engineered a mess?",
+    "url": "https://www.reddit.com/r/artificial/comments/1s60djl/i_built_a_single_platform_integrating_gpt52_grok/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T13:29:16.000Z",
+    "age": "4h ago"
+  },
+  {
+    "id": "zdnet-10-1774720369912",
+    "title": "Best Amazon Spring Sale deals under $25",
+    "url": "https://www.zdnet.com/article/best-amazon-spring-sale-2026-deals-under-25/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-28T13:16:14.000Z",
+    "age": "4h ago"
+  },
+  {
+    "id": "reddit-artificial-17-1774720370517",
+    "title": "US presidential debates should run a parallel AI bot debate alongside the human one — complement not replace. Good idea or not?",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5x7v8/us_presidential_debates_should_run_a_parallel_ai/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T10:53:22.000Z",
+    "age": "6h ago"
+  },
+  {
+    "id": "reddit-artificial-1-1774720370517",
+    "title": "Is anyone else watching what Qubic is doing with distributed compute and AI training? Seems underreported in AI cirles",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5x2wo/is_anyone_else_watching_what_qubic_is_doing_with/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T10:45:27.000Z",
+    "age": "7h ago"
+  },
+  {
+    "id": "reddit-artificial-4-1774720370517",
+    "title": "Looking for a solid ChatGPT alternative for daily work",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5v317/looking_for_a_solid_chatgpt_alternative_for_daily/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T08:43:11.000Z",
+    "age": "9h ago"
+  },
+  {
+    "id": "reddit-artificial-18-1774720370517",
+    "title": "We need to teach AI the essence of being human to reduce the risk of misalignment",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5v1kn/we_need_to_teach_ai_the_essence_of_being_human_to/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T08:40:27.000Z",
+    "age": "9h ago"
+  },
+  {
+    "id": "analyticsvidhya-0-1774720370819",
+    "title": "Building Custom Claude Skills For Repeatable AI Workflows",
+    "url": "https://www.analyticsvidhya.com/blog/2026/03/custom-claude-skills-for-repeatable-ai-workflows/",
+    "domain": "analyticsvidhya.com",
+    "source": "analyticsvidhya",
+    "category": "news",
+    "date": "2026-03-28T05:40:28.000Z",
+    "age": "12h ago"
+  },
+  {
+    "id": "reddit-artificial-8-1774720370517",
+    "title": "Nobody’s talking about what Pixar’s Hoppers is actually saying about AI",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5rlc5/nobodys_talking_about_what_pixars_hoppers_is/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T05:15:12.000Z",
+    "age": "12h ago"
+  },
+  {
+    "id": "reddit-artificial-11-1774720370517",
+    "title": "I have created a biologically based AI model",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5phn4/i_have_created_a_biologically_based_ai_model/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T03:26:57.000Z",
+    "age": "14h ago"
+  },
+  {
+    "id": "reddit-artificial-0-1774720370517",
+    "title": "Say No to Congress using AI to mass surveil US Citizens and oppose the extension of the FISA Act",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5onmr/say_no_to_congress_using_ai_to_mass_surveil_us/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-28T02:46:53.000Z",
+    "age": "15h ago"
+  },
+  {
+    "id": "reddit-ml-5-1774720370700",
+    "title": "[D] Thinking about augmentation as invariance assumptions",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s5nxwc/d_thinking_about_augmentation_as_invariance/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-28T02:12:26.000Z",
+    "age": "15h ago"
+  },
+  {
+    "id": "reddit-ml-6-1774720370700",
+    "title": "[Project] PentaNet: Pushing beyond BitNet with Native Pentanary {-2, -1, 0, 1, 2} Quantization (124M, zero-multiplier inference)",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s5l5l2/project_pentanet_pushing_beyond_bitnet_with/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-28T00:05:50.000Z",
+    "age": "17h ago"
+  },
+  {
+    "id": "reddit-ml-7-1774720370700",
+    "title": "[R] Controlled experiment: giving an LLM agent access to CS papers during automated hyperparameter search improves results by 3.2%",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s5jpgz/r_controlled_experiment_giving_an_llm_agent/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T23:05:45.000Z",
+    "age": "18h ago"
+  },
+  {
+    "id": "reddit-artificial-10-1774720370517",
+    "title": "Tracker for people who quit AI companies due to safety concerns",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5jop3/tracker_for_people_who_quit_ai_companies_due_to/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-27T23:04:50.000Z",
+    "age": "18h ago"
+  },
+  {
+    "id": "zdnet-11-1774720369912",
+    "title": "5 kitchen tech splurges that I've found to be worth every penny (and are on sale now)",
+    "url": "https://www.zdnet.com/article/kitchen-splurges-amazon-spring-sale-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-27T22:46:50.000Z",
+    "age": "19h ago"
+  },
+  {
+    "id": "reddit-ml-4-1774720370700",
+    "title": "[D] Many times I feel additional experiments during the rebuttal make my paper worse",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s5j8bg/d_many_times_i_feel_additional_experiments_during/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T22:46:11.000Z",
+    "age": "19h ago"
+  },
+  {
+    "id": "zdnet-12-1774720369912",
+    "title": "Stop falling for scams when Norton's antivirus software is 70% off right now",
+    "url": "https://www.zdnet.com/article/norton-antivirus-deal-amazon-big-spring-sale-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-27T22:30:44.000Z",
+    "age": "19h ago"
+  },
+  {
+    "id": "reddit-artificial-12-1774720370517",
+    "title": "Quality in AI precipitating a 'tipping point'",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5irfg/quality_in_ai_precipitating_a_tipping_point/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-27T22:27:05.000Z",
+    "age": "19h ago"
+  },
+  {
+    "id": "zdnet-13-1774720369912",
+    "title": "Get Kindle Unlimited for $1 a month with this Amazon Spring Sale deal - how to qualify",
+    "url": "https://www.zdnet.com/article/kindle-unlimited-deal-amazon-spring-sale-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-27T22:16:49.000Z",
+    "age": "19h ago"
+  },
+  {
+    "id": "zdnet-14-1774720369912",
+    "title": "These RayNeo XR glasses effectively replaced my TV with HDR support - and they're on sale",
+    "url": "https://www.zdnet.com/article/rayneo-air-4-pro-glasses-amazon-spring-sale-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-27T22:00:49.000Z",
+    "age": "19h ago"
+  },
+  {
+    "id": "zdnet-15-1774720369912",
+    "title": "This massive 8TB WD-Black SSD is 67% off at Best Buy right now",
+    "url": "https://www.zdnet.com/article/wd-black-sn850p-ssd-best-buy-deal-amazon-spring-sale-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-27T21:56:00.000Z",
+    "age": "19h ago"
+  },
+  {
+    "id": "arstechnica-0-1774720369719",
+    "title": "With new plugins feature, OpenAI officially takes Codex beyond coding",
+    "url": "https://arstechnica.com/ai/2026/03/openai-brings-plugins-to-codex-closing-some-of-the-gap-with-claude-code/",
+    "domain": "arstechnica.com",
+    "source": "arstechnica",
+    "category": "news",
+    "date": "2026-03-27T21:53:45.000Z",
+    "age": "19h ago"
+  },
+  {
+    "id": "zdnet-16-1774720369912",
+    "title": "This popular Android Auto wireless adapter just hit its lowest price - and I highly recommend it",
+    "url": "https://www.zdnet.com/article/motorola-sound-ma1-deal-amazon-spring-sale-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-27T21:51:00.000Z",
+    "age": "20h ago"
+  },
+  {
+    "id": "zdnet-17-1774720369912",
+    "title": "These XR glasses effectively replaced my dual monitors for work - and they're $170 off",
+    "url": "https://www.zdnet.com/article/xreal-one-pro-ar-glasses-amazon-spring-sale-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-27T21:46:49.000Z",
+    "age": "20h ago"
+  },
+  {
+    "id": "zdnet-18-1774720369912",
+    "title": "I'm seriously considering buying another Fire TV Stick if it's 50% off right now",
+    "url": "https://www.zdnet.com/article/fire-tv-stick-deals-amazon-big-spring-sale-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-27T21:42:00.000Z",
+    "age": "20h ago"
+  },
+  {
+    "id": "zdnet-19-1774720369912",
+    "title": "This is the lowest price on a 64GB RAM kit I've seen in months",
+    "url": "https://www.zdnet.com/article/kingston-fury-beast-ddr5-ram-deal-amazon-spring-sale-2026/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-03-27T21:39:00.000Z",
+    "age": "20h ago"
+  },
+  {
+    "id": "reddit-artificial-7-1774720370517",
+    "title": "Meet Claude Mythos: Leaked Anthropic post reveals the powerful upcoming model",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5hejt/meet_claude_mythos_leaked_anthropic_post_reveals/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-27T21:35:26.000Z",
+    "age": "20h ago"
+  },
+  {
+    "id": "reddit-ml-13-1774720370700",
+    "title": "[P] Create datasets from TikTok videos",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s5g7xj/p_create_datasets_from_tiktok_videos/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T20:50:02.000Z",
+    "age": "21h ago"
+  },
+  {
+    "id": "arstechnica-1-1774720369719",
+    "title": "Hegseth, Trump had no authority to order Anthropic to be blacklisted, judge says",
+    "url": "https://arstechnica.com/tech-policy/2026/03/hegseth-trump-had-no-authority-to-order-anthropic-to-be-blacklisted-judge-says/",
+    "domain": "arstechnica.com",
+    "source": "arstechnica",
+    "category": "news",
+    "date": "2026-03-27T19:49:18.000Z",
+    "age": "22h ago"
+  },
+  {
+    "id": "reddit-artificial-15-1774720370517",
+    "title": "Right now AI made people work more. When you think people will work less if that will ever happen.",
+    "url": "https://www.reddit.com/r/artificial/comments/1s5cmca/right_now_ai_made_people_work_more_when_you_think/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-27T18:35:54.000Z",
+    "age": "23h ago"
+  },
+  {
+    "id": "reddit-artificial-13-1774720370517",
+    "title": "Is AI misalignment actually a real problem or are we overthinking it?",
+    "url": "https://www.reddit.com/r/artificial/comments/1s591jb/is_ai_misalignment_actually_a_real_problem_or_are/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-27T16:28:03.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-ml-17-1774720370700",
+    "title": "[D] Real-time Student Attention Detection: ResNet vs Facial Landmarks - Which approach for resource-constrained deployment?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s56ljk/d_realtime_student_attention_detection_resnet_vs/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T15:01:38.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "analyticsvidhya-1-1774720370819",
+    "title": "Build an AI Meeting Summarizer & Action Planner with Claude Code + MCP",
+    "url": "https://www.analyticsvidhya.com/blog/2026/03/ai-meeting-summarizer-with-claude-code-mcp/",
+    "domain": "analyticsvidhya.com",
+    "source": "analyticsvidhya",
+    "category": "news",
+    "date": "2026-03-27T14:09:13.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "analyticsvidhya-2-1774720370819",
+    "title": "Build a Full-Stack App in Minutes with Google’s New AI Studio Tools",
+    "url": "https://www.analyticsvidhya.com/blog/2026/03/google-ai-studio-tools-build-a-full-stack-app-in-minutes/",
+    "domain": "analyticsvidhya.com",
+    "source": "analyticsvidhya",
+    "category": "news",
+    "date": "2026-03-27T14:07:34.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-ml-12-1774720370700",
+    "title": "[R] ACL ARR review desk rejected",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s54zw3/r_acl_arr_review_desk_rejected/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T14:03:18.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-ml-9-1774720370700",
+    "title": "[D] We audited LoCoMo: 6.4% of the answer key is wrong and the judge accepts up to 63% of intentionally wrong answers",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s54cvg/d_we_audited_locomo_64_of_the_answer_key_is_wrong/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T13:38:50.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-ml-14-1774720370700",
+    "title": "[D] Building a demand forecasting system for multi-location retail with no POS integration, architecture feedback wanted",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s53w67/d_building_a_demand_forecasting_system_for/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T13:19:54.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-artificial-16-1774720370517",
+    "title": "AI wrote a scientific paper that passed peer review",
+    "url": "https://www.reddit.com/r/artificial/comments/1s53qr5/ai_wrote_a_scientific_paper_that_passed_peer/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-27T13:13:35.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-ml-11-1774720370700",
+    "title": "[P] Deezer showed CNN detection fails on compressed audio, here's a dual-engine approach that survives MP3",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s51amm/p_deezer_showed_cnn_detection_fails_on_compressed/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T11:21:40.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "towardsdatascience-1-1774720370127",
+    "title": "How ElevenLabs Voice AI Is Replacing Screens in Warehouse and Manufacturing Operations",
+    "url": "https://towardsdatascience.com/how-elevenlabs-voice-ai-is-replacing-screens-in-warehouse-and-manufacturing-operations/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-27T10:48:00.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-ml-18-1774720370700",
+    "title": "[D] Looking for definition of open-world ish learning problem",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s503nd/d_looking_for_definition_of_openworld_ish/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T10:17:29.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-ml-10-1774720370700",
+    "title": "[D] On conferences and page limitations",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s4yyyi/d_on_conferences_and_page_limitations/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T09:09:35.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-artificial-9-1774720370517",
+    "title": "Judge rejects Pentagon's attempt to 'cripple' Anthropic",
+    "url": "https://www.reddit.com/r/artificial/comments/1s4vsib/judge_rejects_pentagons_attempt_to_cripple/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-27T05:51:58.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-ml-15-1774720370700",
+    "title": "[R] Which place should I commit to ACL SRW or ICML workshop or AACL?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s4vrxq/r_which_place_should_i_commit_to_acl_srw_or_icml/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T05:51:03.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-ml-16-1774720370700",
+    "title": "Retraining vs Fine-tuning or Transfer Learning? [D]",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s4uzmy/retraining_vs_finetuning_or_transfer_learning_d/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-27T05:07:40.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-artificial-19-1774720370517",
+    "title": "Ridiculous. Anthropic is behaving exactly like OpenAI.",
+    "url": "https://www.reddit.com/r/artificial/comments/1s4okij/ridiculous_anthropic_is_behaving_exactly_like/",
+    "domain": "reddit.com",
+    "source": "reddit-artificial",
+    "category": "news",
+    "date": "2026-03-27T00:10:09.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "huggingface-0-1774720369774",
+    "title": "Liberate your OpenClaw",
+    "url": "https://huggingface.co/blog/liberate-your-openclaw",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-27T00:00:00.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "tldr-ai-0-1774720369953",
+    "title": "Anthropic weighs October IPO 💰, Gemini 3.1 Flash Live 🎙️, Cursor real-time RL 🔄",
+    "url": "https://tldr.tech/ai/2026-03-27",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-27T00:00:00.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "reddit-ml-19-1774720370700",
+    "title": "[D] OOD and Spandrels, or What you should know about EBM.",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1s4gp7d/d_ood_and_spandrels_or_what_you_should_know_about/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-26T19:06:11.000Z",
+    "age": "1d ago"
+  },
+  {
+    "id": "analyticsvidhya-3-1774720370819",
+    "title": "How Transformers Power LLMs: Step-by-Step Guide",
+    "url": "https://www.analyticsvidhya.com/blog/2026/03/how-transformers-power-llm/",
+    "domain": "analyticsvidhya.com",
+    "source": "analyticsvidhya",
+    "category": "news",
+    "date": "2026-03-26T16:53:46.000Z",
+    "age": "2d ago"
+  },
+  {
+    "id": "towardsdatascience-2-1774720370127",
+    "title": "How to Make Your AI App Faster and More Interactive with Response Streaming",
+    "url": "https://towardsdatascience.com/how-to-make-your-ai-app-faster-and-more-interactive-with-response-streaming/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-26T15:22:00.000Z",
+    "age": "2d ago"
+  },
+  {
+    "id": "towardsdatascience-3-1774720370127",
+    "title": "Beyond Code Generation: AI for the Full Data Science Workflow",
+    "url": "https://towardsdatascience.com/beyond-code-generation-ai-for-the-full-data-science-workflow/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-26T12:00:00.000Z",
+    "age": "2d ago"
+  },
+  {
+    "id": "analyticsvidhya-4-1774720370819",
+    "title": "20+ Solved AI Projects to Build Your Portfolio and Boost Your Resume",
+    "url": "https://www.analyticsvidhya.com/blog/2026/03/solved-ai-projects/",
+    "domain": "analyticsvidhya.com",
+    "source": "analyticsvidhya",
+    "category": "news",
+    "date": "2026-03-26T11:27:25.000Z",
+    "age": "2d ago"
+  },
+  {
+    "id": "thesequence-0-1774720369769",
+    "title": "The Sequence Opinion #831: NVIDIA Is Quietly Building the Operating System of AI",
+    "url": "https://thesequence.substack.com/p/the-sequence-opinion-831-nvidia-is",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-26T11:03:05.000Z",
+    "age": "2d ago"
+  },
+  {
+    "id": "towardsdatascience-4-1774720370127",
+    "title": "What the Bits-over-Random Metric Changed in How I Think About RAG and Agents",
+    "url": "https://towardsdatascience.com/what-the-bits-over-random-metric-changed-in-how-i-think-about-rag-and-agents/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-26T10:31:00.000Z",
+    "age": "2d ago"
+  },
+  {
+    "id": "tldr-ai-1-1774720369953",
+    "title": "Google Turboquant ⚡, ARC-AGI-3 🧩, Manus founders detained 👮🏼",
+    "url": "https://tldr.tech/ai/2026-03-26",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-26T00:00:00.000Z",
+    "age": "2d ago"
+  },
+  {
+    "id": "mit-techreview-0-1774720369736",
+    "title": "This startup wants to change how mathematicians do math",
+    "url": "https://www.technologyreview.com/2026/03/25/1134642/this-startup-wants-to-change-how-mathematicians-do-math/",
+    "domain": "technologyreview.com",
+    "source": "mit-techreview",
+    "category": "news",
+    "date": "2026-03-25T13:59:17.000Z",
+    "age": "3d ago"
+  },
+  {
+    "id": "towardsdatascience-5-1774720370128",
+    "title": "The Machine Learning Lessons I’ve Learned This Month",
+    "url": "https://towardsdatascience.com/the-machine-learning-lessons-ive-learned-this-month-5/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-25T13:30:00.000Z",
+    "age": "3d ago"
+  },
+  {
+    "id": "analyticsvidhya-5-1774720370819",
+    "title": "Claude Dispatch: How to Use It for Remote AI Automation",
+    "url": "https://www.analyticsvidhya.com/blog/2026/03/claude-cowork-dispatch/",
+    "domain": "analyticsvidhya.com",
+    "source": "analyticsvidhya",
+    "category": "news",
+    "date": "2026-03-25T13:29:24.000Z",
+    "age": "3d ago"
+  },
+  {
+    "id": "towardsdatascience-6-1774720370128",
+    "title": "Building Human-In-The-Loop Agentic Workflows",
+    "url": "https://towardsdatascience.com/building-human-in-the-loop-agentic-workflows/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-25T12:00:00.000Z",
+    "age": "3d ago"
+  },
+  {
+    "id": "mit-techreview-1-1774720369736",
+    "title": "Agentic commerce runs on truth and context",
+    "url": "https://www.technologyreview.com/2026/03/25/1134516/agentic-commerce-runs-on-truth-and-context/",
+    "domain": "technologyreview.com",
+    "source": "mit-techreview",
+    "category": "news",
+    "date": "2026-03-25T11:48:13.000Z",
+    "age": "3d ago"
+  },
+  {
+    "id": "thesequence-1-1774720369769",
+    "title": "The Sequence AI of the Week #830: The Quiet Ambush: Inside the Amazing MiMo-V2-Pro aka Hunter Alpha",
+    "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-830-the",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-25T11:03:38.000Z",
+    "age": "3d ago"
+  },
+  {
+    "id": "mit-techreview-2-1774720369736",
+    "title": "The AI Hype Index: AI goes to war",
+    "url": "https://www.technologyreview.com/2026/03/25/1134571/the-ai-hype-index-ai-goes-to-war/",
+    "domain": "technologyreview.com",
+    "source": "mit-techreview",
+    "category": "news",
+    "date": "2026-03-25T09:00:00.000Z",
+    "age": "3d ago"
+  },
+  {
+    "id": "analyticsvidhya-6-1774720370819",
+    "title": "Top 46 AI Tools in 2026 You Must Use",
+    "url": "https://www.analyticsvidhya.com/blog/2026/03/top-ai-tools-to-use/",
+    "domain": "analyticsvidhya.com",
+    "source": "analyticsvidhya",
+    "category": "news",
+    "date": "2026-03-25T05:31:13.000Z",
+    "age": "3d ago"
+  },
+  {
+    "id": "tldr-ai-2-1774720369953",
+    "title": "Claude Auto Mode 🤖, ChatGPT product discovery 🛒, long running harnesses 👨‍💻",
+    "url": "https://tldr.tech/ai/2026-03-25",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-25T00:00:00.000Z",
+    "age": "3d ago"
+  },
+  {
+    "id": "towardsdatascience-7-1774720370128",
+    "title": "How to Make Claude Code Improve from its Own Mistakes",
+    "url": "https://towardsdatascience.com/how-to-make-claude-code-improve-from-its-mistakes/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-24T16:30:00.000Z",
+    "age": "4d ago"
+  },
+  {
+    "id": "towardsdatascience-8-1774720370128",
+    "title": "From Dashboards to Decisions: Rethinking Data & Analytics in the Age of AI",
+    "url": "https://towardsdatascience.com/from-dashboards-to-decisions-rethinking-data-analytics-in-the-age-of-ai/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-24T15:00:00.000Z",
+    "age": "4d ago"
+  },
+  {
+    "id": "towardsdatascience-9-1774720370128",
+    "title": "Production-Ready LLM Agents: A Comprehensive Framework for Offline Evaluation",
+    "url": "https://towardsdatascience.com/production-ready-llm-agents-a-comprehensive-framework-for-offline-evaluation/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-24T13:30:00.000Z",
+    "age": "4d ago"
+  },
+  {
+    "id": "towardsdatascience-10-1774720370128",
+    "title": "The Complete Guide to AI Implementation for Chief Data & AI Officers in 2026",
+    "url": "https://towardsdatascience.com/the-complete-guide-to-ai-implementation-for-chief-data-ai-officers-in-2026/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-24T12:00:00.000Z",
+    "age": "4d ago"
+  },
+  {
+    "id": "thesequence-2-1774720369769",
+    "title": "The Sequence Knowledge #829: World Models and Physical AI",
+    "url": "https://thesequence.substack.com/p/the-sequence-knowledge-829-world",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-24T10:57:19.000Z",
+    "age": "4d ago"
+  },
+  {
+    "id": "huggingface-1-1774720369774",
+    "title": "A New Framework for Evaluating Voice Agents (EVA)",
+    "url": "https://huggingface.co/blog/ServiceNow-AI/eva",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-24T02:01:52.000Z",
+    "age": "4d ago"
+  },
+  {
+    "id": "tldr-ai-3-1774720369953",
+    "title": "OpenAI PE deal terms 💰, ChatGPT Library 💾, building an AI chip ⚡",
+    "url": "https://tldr.tech/ai/2026-03-24",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-24T00:00:00.000Z",
+    "age": "4d ago"
+  },
+  {
+    "id": "mit-techreview-3-1774720369736",
+    "title": "The hardest question to answer about AI-fueled delusions",
+    "url": "https://www.technologyreview.com/2026/03/23/1134527/the-hardest-question-to-answer-about-ai-fueled-delusions/",
+    "domain": "technologyreview.com",
+    "source": "mit-techreview",
+    "category": "news",
+    "date": "2026-03-23T16:31:20.000Z",
+    "age": "5d ago"
+  },
+  {
+    "id": "towardsdatascience-11-1774720370128",
+    "title": "Causal Inference Is Eating Machine Learning",
+    "url": "https://towardsdatascience.com/causal-inference-is-eating-machine-learning/",
+    "domain": "towardsdatascience.com",
+    "source": "towardsdatascience",
+    "category": "news",
+    "date": "2026-03-23T15:00:00.000Z",
+    "age": "5d ago"
+  },
+  {
+    "id": "mit-techreview-4-1774720369736",
+    "title": "The Bay Area’s animal welfare movement wants to recruit AI",
+    "url": "https://www.technologyreview.com/2026/03/23/1134491/the-bay-areas-animal-welfare-movement-wants-to-recruit-ai/",
+    "domain": "technologyreview.com",
+    "source": "mit-techreview",
+    "category": "news",
+    "date": "2026-03-23T09:00:00.000Z",
+    "age": "5d ago"
+  },
+  {
+    "id": "tldr-ai-4-1774720369953",
+    "title": "OpenAI’s automated researcher 🤖, Cursor + Kimi 2.5 💻, Musk's $20B Terafab 🏗️",
+    "url": "https://tldr.tech/ai/2026-03-23",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-23T00:00:00.000Z",
+    "age": "5d ago"
+  },
+  {
+    "id": "thesequence-3-1774720369769",
+    "title": "The Sequence Radar #828: NVIDIA’s GTM Releases, Bezos’s $100B Bet, Xiaomi’s Ambush, and the Fracturing of OpenAI",
+    "url": "https://thesequence.substack.com/p/the-sequence-radar-828-nvidias-gtm",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-22T11:00:49.000Z",
+    "age": "6d ago"
+  },
+  {
+    "id": "huggingface-2-1774720369774",
+    "title": "Build a Domain-Specific Embedding Model in Under a Day",
+    "url": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-20T19:38:16.000Z",
+    "age": "7d ago"
+  },
+  {
+    "id": "huggingface-3-1774720369774",
+    "title": "What's New in Mellea 0.4.0 + Granite Libraries Release",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-libraries",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-20T14:14:46.000Z",
+    "age": "8d ago"
+  },
+  {
+    "id": "mit-techreview-5-1774720369736",
+    "title": "OpenAI is throwing everything into building a fully automated researcher",
+    "url": "https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/",
+    "domain": "technologyreview.com",
+    "source": "mit-techreview",
+    "category": "news",
+    "date": "2026-03-20T11:57:16.000Z",
+    "age": "8d ago"
+  },
+  {
+    "id": "tldr-ai-5-1774720369953",
+    "title": "Cursor’s frontier model 👨‍💻, OpenAI buys Astral ⚡, Perplexity Health 🏥",
+    "url": "https://tldr.tech/ai/2026-03-20",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-20T00:00:00.000Z",
+    "age": "8d ago"
+  },
+  {
+    "id": "thesequence-4-1774720369769",
+    "title": "The Sequence Opinion #827: Taming the Agentic Lobster: Learning from OpenClaw",
+    "url": "https://thesequence.substack.com/p/the-sequence-opinion-827-taming-the",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-19T11:35:39.000Z",
+    "age": "9d ago"
+  },
+  {
+    "id": "tldr-ai-6-1774720369953",
+    "title": "Xiaomi & Minimax models 🤖, China’s OpenClaw obsession 🦞, Anthropic 81k study 📊",
+    "url": "https://tldr.tech/ai/2026-03-19",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-19T00:00:00.000Z",
+    "age": "9d ago"
+  },
+  {
+    "id": "thesequence-5-1774720369769",
+    "title": "The Sequence AI of the Week #826: Sleep While it Computes: Inside Karpathy’s AutoResearch",
+    "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-826-sleep",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-18T11:02:46.000Z",
+    "age": "10d ago"
+  },
+  {
+    "id": "tldr-ai-7-1774720369953",
+    "title": "GPT-5.4 mini & nano ⚡, Cursor self-summarization 📝, Harmonic’s AI mathematician ♾️",
+    "url": "https://tldr.tech/ai/2026-03-18",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-18T00:00:00.000Z",
+    "age": "10d ago"
+  },
+  {
+    "id": "mit-techreview-6-1774720369736",
+    "title": "The Pentagon is planning for AI companies to train on classified data, defense official says",
+    "url": "https://www.technologyreview.com/2026/03/17/1134351/the-pentagon-is-planning-for-ai-companies-to-train-on-classified-data-defense-official-says/",
+    "domain": "technologyreview.com",
+    "source": "mit-techreview",
+    "category": "news",
+    "date": "2026-03-17T22:30:46.000Z",
+    "age": "10d ago"
+  },
+  {
+    "id": "huggingface-4-1774720369774",
+    "title": "State of Open Source on Hugging Face: Spring 2026",
+    "url": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-17T16:37:55.000Z",
+    "age": "11d ago"
+  },
+  {
+    "id": "huggingface-5-1774720369774",
+    "title": "Holotron-12B - High Throughput Computer Use Agent",
+    "url": "https://huggingface.co/blog/Hcompany/holotron-12b",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-17T12:33:39.000Z",
+    "age": "11d ago"
+  },
+  {
+    "id": "thesequence-6-1774720369769",
+    "title": "The Sequence Knowledge #825: Inside World Labs Marble",
+    "url": "https://thesequence.substack.com/p/the-sequence-knowledge-825-inside",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-17T10:58:28.000Z",
+    "age": "11d ago"
+  },
+  {
+    "id": "tldr-ai-8-1774720369953",
+    "title": "NVIDIA GTC 🤖, OpenAI’s new infra chief ⚡, Alibaba & OpenAI pivot 🧠",
+    "url": "https://tldr.tech/ai/2026-03-17",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-17T00:00:00.000Z",
+    "age": "11d ago"
+  },
+  {
+    "id": "mit-techreview-7-1774720369736",
+    "title": "Where OpenAI’s technology could show up in Iran",
+    "url": "https://www.technologyreview.com/2026/03/16/1134315/where-openais-technology-could-show-up-in-iran/",
+    "domain": "technologyreview.com",
+    "source": "mit-techreview",
+    "category": "news",
+    "date": "2026-03-16T17:06:21.000Z",
+    "age": "12d ago"
+  },
+  {
+    "id": "mit-techreview-8-1774720369736",
+    "title": "Nurturing agentic AI beyond the toddler stage",
+    "url": "https://www.technologyreview.com/2026/03/16/1133979/nurturing-agentic-ai-beyond-the-toddler-stage/",
+    "domain": "technologyreview.com",
+    "source": "mit-techreview",
+    "category": "news",
+    "date": "2026-03-16T13:00:00.000Z",
+    "age": "12d ago"
+  },
+  {
+    "id": "mit-techreview-9-1774720369736",
+    "title": "Securing digital assets against future threats",
+    "url": "https://www.technologyreview.com/2026/03/16/1134287/securing-digital-assets-against-future-threats/",
+    "domain": "technologyreview.com",
+    "source": "mit-techreview",
+    "category": "news",
+    "date": "2026-03-16T11:00:00.000Z",
+    "age": "12d ago"
+  },
+  {
+    "id": "tldr-ai-9-1774720369953",
+    "title": "Claude 1M Context 🧠, OpenAI adult mode 🤖, GLM-5-Turbo ⚡",
+    "url": "https://tldr.tech/ai/2026-03-16",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-16T00:00:00.000Z",
+    "age": "12d ago"
+  },
+  {
+    "id": "thesequence-7-1774720369769",
+    "title": "The Sequence Radar #824: Last Week in AI: Sovereign Lobsters, Self-Coding Agents, and Gigawatt Factories",
+    "url": "https://thesequence.substack.com/p/the-sequence-radar-824-last-week",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-15T11:02:26.000Z",
+    "age": "13d ago"
+  },
+  {
+    "id": "tldr-ai-10-1774720369953",
+    "title": "Claude Visuals 💻, xAI poaches Cursor leads 💼, CursorBench 🧑‍💻",
+    "url": "https://tldr.tech/ai/2026-03-13",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-13T00:00:00.000Z",
+    "age": "15d ago"
+  },
+  {
+    "id": "thesequence-8-1774720369769",
+    "title": "The Sequence Opinion #823: SaaSmagedon, Is SaaS Dead?: Vibe Coding, Agentic Engineering, and the Collapse of the Code Moat",
+    "url": "https://thesequence.substack.com/p/the-sequence-opinion-823-saasmagedon",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-12T11:00:27.000Z",
+    "age": "16d ago"
+  },
+  {
+    "id": "tldr-ai-11-1774720369953",
+    "title": "Replit Agent 4 🤖, Cursor eyes $50B valuation 💰, Meta AI chips ⚡",
+    "url": "https://tldr.tech/ai/2026-03-12",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-12T00:00:00.000Z",
+    "age": "16d ago"
+  },
+  {
+    "id": "thesequence-9-1774720369769",
+    "title": "The Sequence AI of the Week #822: Inside GPT-5.4: When Language Models Start Acting Like Operating Systems",
+    "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-822-inside",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-11T11:10:15.000Z",
+    "age": "17d ago"
+  },
+  {
+    "id": "tldr-ai-12-1774720369953",
+    "title": "Gemini Embedding 2 🧩, Meta acquires Moltbook 🤖, Nvidia + Thinky ⚡",
+    "url": "https://tldr.tech/ai/2026-03-11",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-11T00:00:00.000Z",
+    "age": "17d ago"
+  },
+  {
+    "id": "thesequence-10-1774720369769",
+    "title": "The Sequence Knowledge #821: 4D and World Models and the Amazing DeepMind D4RT",
+    "url": "https://thesequence.substack.com/p/the-sequence-knowledge-821-4d-and",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-10T11:02:47.000Z",
+    "age": "18d ago"
+  },
+  {
+    "id": "huggingface-6-1774720369774",
+    "title": "Introducing Storage Buckets on the Hugging Face Hub",
+    "url": "https://huggingface.co/blog/storage-buckets",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-10T00:00:00.000Z",
+    "age": "18d ago"
+  },
+  {
+    "id": "huggingface-7-1774720369774",
+    "title": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries",
+    "url": "https://huggingface.co/blog/async-rl-training-landscape",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-10T00:00:00.000Z",
+    "age": "18d ago"
+  },
+  {
+    "id": "tldr-ai-13-1774720369953",
+    "title": "OpenAI acquires Promptfoo 💰, Copilot Cowork launch 🤝, AI search metrics 🔎",
+    "url": "https://tldr.tech/ai/2026-03-10",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-10T00:00:00.000Z",
+    "age": "18d ago"
+  },
+  {
+    "id": "huggingface-8-1774720369774",
+    "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+    "url": "https://huggingface.co/blog/ulysses-sp",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-09T00:00:00.000Z",
+    "age": "19d ago"
+  },
+  {
+    "id": "huggingface-9-1774720369774",
+    "title": "LeRobot v0.5.0: Scaling Every Dimension",
+    "url": "https://huggingface.co/blog/lerobot-release-v050",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-09T00:00:00.000Z",
+    "age": "19d ago"
+  },
+  {
+    "id": "tldr-ai-14-1774720369953",
+    "title": "Claude finds Firefox bugs 🐛, Claude Marketplace 🤝, Codex Security 🤖",
+    "url": "https://tldr.tech/ai/2026-03-09",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-09T00:00:00.000Z",
+    "age": "19d ago"
+  },
+  {
+    "id": "thesequence-11-1774720369769",
+    "title": "The Sequence Radar #820: GPT-5.4, Cursor, and the New Desktop",
+    "url": "https://thesequence.substack.com/p/the-sequence-radar-820-gpt-54-cursor",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-08T11:02:14.000Z",
+    "age": "20d ago"
+  },
+  {
+    "id": "tldr-ai-15-1774720369953",
+    "title": "GPT-5.4 launch 🚀, Anthropic’s compute advantage ⚡, Cursor Automations 🤖",
+    "url": "https://tldr.tech/ai/2026-03-06",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-06T00:00:00.000Z",
+    "age": "22d ago"
+  },
+  {
+    "id": "huggingface-10-1774720369774",
+    "title": "Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning, and On‑Device Optimizations",
+    "url": "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-05T14:16:49.000Z",
+    "age": "23d ago"
+  },
+  {
+    "id": "thesequence-12-1774720369769",
+    "title": "The Sequence Opinion #819: How AI Chips are Made?",
+    "url": "https://thesequence.substack.com/p/the-sequence-opinion-819-how-ai-chips",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-05T12:03:18.000Z",
+    "age": "23d ago"
+  },
+  {
+    "id": "huggingface-11-1774720369774",
+    "title": "Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines",
+    "url": "https://huggingface.co/blog/modular-diffusers",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-05T00:00:00.000Z",
+    "age": "23d ago"
+  },
+  {
+    "id": "tldr-ai-16-1774720369953",
+    "title": "GPT 5.4 rumors 🤖, Qwen team exodus 👋, AI safety’s deadline ⏱️",
+    "url": "https://tldr.tech/ai/2026-03-05",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-05T00:00:00.000Z",
+    "age": "23d ago"
+  },
+  {
+    "id": "thesequence-13-1774720369769",
+    "title": "The Sequence AI of the Week #818: You Cannot Miss Qwen 3.5",
+    "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-818-you",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-04T12:02:50.000Z",
+    "age": "24d ago"
+  },
+  {
+    "id": "tldr-ai-17-1774720369953",
+    "title": "GPT-5.3 Instant ⚡, Gemini 3.1 Flash-Lite 💸, Anthropic $20B ARR 📈",
+    "url": "https://tldr.tech/ai/2026-03-04",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-04T00:00:00.000Z",
+    "age": "24d ago"
+  },
+  {
+    "id": "huggingface-12-1774720369774",
+    "title": "PRX Part 3 — Training a Text-to-Image Model in 24h!",
+    "url": "https://huggingface.co/blog/Photoroom/prx-part3",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-03-03T16:50:49.000Z",
+    "age": "25d ago"
+  },
+  {
+    "id": "thesequence-14-1774720369769",
+    "title": "The Sequence Knowledge #817: DeepMind Genie and Interactive World Models",
+    "url": "https://thesequence.substack.com/p/the-sequence-knowledge-817-deepmind",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-03T11:59:39.000Z",
+    "age": "25d ago"
+  },
+  {
+    "id": "tldr-ai-18-1774720369953",
+    "title": "Cursor revenue leaks 📈, Anthropic risks $60B round 💰, Claude outage 💻",
+    "url": "https://tldr.tech/ai/2026-03-03",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-03T00:00:00.000Z",
+    "age": "25d ago"
+  },
+  {
+    "id": "reddit-ml-0-1774720370700",
+    "title": "[D] Self-Promotion Thread",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1rihows/d_selfpromotion_thread/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-03-02T03:15:30.000Z",
+    "age": "26d ago"
+  },
+  {
+    "id": "tldr-ai-19-1774720369953",
+    "title": "OpenAI $110B mega-round 💰, OpenAI-Pentagon red lines 🛑, Google goal-based agents 🎯",
+    "url": "https://tldr.tech/ai/2026-03-02",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-03-02T00:00:00.000Z",
+    "age": "26d ago"
+  },
+  {
+    "id": "thesequence-15-1774720369769",
+    "title": "The Sequence Radar #816: Last Week in AI: $110B Bets, Nano Banana 2, and the New Economic Reality",
+    "url": "https://thesequence.substack.com/p/the-sequence-radar-816-last-week",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-01T12:02:52.000Z",
+    "age": "27d ago"
+  },
+  {
+    "id": "thesequence-16-1774720369769",
+    "title": "The Sequence Opinion #815: The End of RLHF? The Rise of Verifiable Rewards",
+    "url": "https://thesequence.substack.com/p/the-sequence-opinion-815-the-end",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-02-27T12:02:53.000Z",
+    "age": "29d ago"
+  },
+  {
+    "id": "thesequence-17-1774720369769",
+    "title": "The Sequence Chat #814: Z.ai's Zixuan Li Talks About GLM",
+    "url": "https://thesequence.substack.com/p/the-sequence-chat-814-zais-zixuan",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-02-26T11:47:40.000Z",
+    "age": "30d ago"
+  },
+  {
+    "id": "huggingface-13-1774720369774",
+    "title": "Mixture of Experts (MoEs) in Transformers",
+    "url": "https://huggingface.co/blog/moe-transformers",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-02-26T00:00:00.000Z",
+    "age": "30d ago"
+  },
+  {
+    "id": "thesequence-18-1774720369769",
+    "title": "The Sequence AI of the Week #813: Deep Diving Into the Amazing GLM-5",
+    "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-813-deep",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-02-25T11:50:29.000Z",
+    "age": "31d ago"
+  },
+  {
+    "id": "aisnakeoil-0-1774720369910",
+    "title": "New Paper: Towards a science of AI agent reliability",
+    "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2026-02-24T13:07:19.000Z",
+    "age": "32d ago"
+  },
+  {
+    "id": "thesequence-19-1774720369769",
+    "title": "The Sequence Knowledge #812: The Sora Moment: When Video Models Became Physics Engines",
+    "url": "https://thesequence.substack.com/p/the-sequence-knowledge-812-the-sora",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-02-24T11:49:57.000Z",
+    "age": "32d ago"
+  },
+  {
+    "id": "huggingface-14-1774720369774",
+    "title": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
+    "url": "https://huggingface.co/blog/ggml-joins-hf",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-02-20T00:00:00.000Z",
+    "age": "36d ago"
+  },
+  {
+    "id": "huggingface-15-1774720369774",
+    "title": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
+    "url": "https://huggingface.co/blog/unsloth-jobs",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-02-20T00:00:00.000Z",
+    "age": "36d ago"
+  },
+  {
+    "id": "huggingface-16-1774720369774",
+    "title": "IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and MAST",
+    "url": "https://huggingface.co/blog/ibm-research/itbenchandmast",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-02-18T16:15:45.000Z",
+    "age": "38d ago"
+  },
+  {
+    "id": "huggingface-17-1774720369774",
+    "title": "One-Shot Any Web App with Gradio's gr.HTML",
+    "url": "https://huggingface.co/blog/gradio-html-one-shot-apps",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-02-18T00:00:00.000Z",
+    "age": "38d ago"
+  },
+  {
+    "id": "huggingface-18-1774720369774",
+    "title": "Custom Kernels for All from Codex and Claude",
+    "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-02-13T00:00:00.000Z",
+    "age": "43d ago"
+  },
+  {
+    "id": "aisnakeoil-1-1774720369910",
+    "title": "AI Won’t Automatically Make Legal Services Cheaper",
+    "url": "https://www.normaltech.ai/p/ai-wont-automatically-make-legal",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2026-02-12T19:26:05.000Z",
+    "age": "43d ago"
+  },
+  {
+    "id": "huggingface-19-1774720369774",
+    "title": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments",
+    "url": "https://huggingface.co/blog/openenv-turing",
+    "domain": "huggingface.co",
+    "source": "huggingface",
+    "category": "news",
+    "date": "2026-02-12T00:00:00.000Z",
+    "age": "44d ago"
+  },
+  {
+    "id": "reddit-ml-1-1774720370700",
+    "title": "[D] Monthly Who's Hiring and Who wants to be Hired?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1qrrayn/d_monthly_whos_hiring_and_who_wants_to_be_hired/",
+    "domain": "reddit.com",
+    "source": "reddit-ml",
+    "category": "news",
+    "date": "2026-01-31T03:30:32.000Z",
+    "age": "56d ago"
+  },
+  {
+    "id": "aisnakeoil-2-1774720369910",
+    "title": "Fact checking Moravec's paradox",
+    "url": "https://www.normaltech.ai/p/fact-checking-moravecs-paradox",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2026-01-29T22:35:47.000Z",
+    "age": "57d ago"
+  },
+  {
+    "id": "venturebeat-0-1774720369776",
+    "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+    "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+    "domain": "venturebeat.com",
+    "source": "venturebeat",
+    "category": "news",
+    "date": "2026-01-22T14:00:00.000Z",
+    "age": "65d ago"
+  },
+  {
+    "id": "venturebeat-1-1774720369776",
+    "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+    "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+    "domain": "venturebeat.com",
+    "source": "venturebeat",
+    "category": "news",
+    "date": "2026-01-19T14:00:00.000Z",
+    "age": "68d ago"
+  },
+  {
+    "id": "venturebeat-2-1774720369776",
+    "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+    "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+    "domain": "venturebeat.com",
+    "source": "venturebeat",
+    "category": "news",
+    "date": "2026-01-16T14:01:00.000Z",
+    "age": "71d ago"
+  },
+  {
+    "id": "venturebeat-3-1774720369776",
+    "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+    "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+    "domain": "venturebeat.com",
+    "source": "venturebeat",
+    "category": "news",
+    "date": "2026-01-13T13:00:00.000Z",
+    "age": "74d ago"
+  },
+  {
+    "id": "techcrunch-0-1774720369639",
     "title": "Converge Bio raises $25M, backed by Bessemer and execs from Meta, OpenAI, Wiz",
     "url": "https://techcrunch.com/2026/01/13/ai-drug-discovery-startup-converge-bio-pulls-in-25m-from-bessemer-and-execs-from-meta-openai-and-wiz/",
     "domain": "techcrunch.com",
@@ -10,7 +1590,37 @@
     "age": "74d ago"
   },
   {
-    "id": "tc-1-1774719928938",
+    "id": "venturebeat-4-1774720369776",
+    "title": "Anthropic launches Cowork, a Claude Desktop agent that works in your files — no coding required",
+    "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+    "domain": "venturebeat.com",
+    "source": "venturebeat",
+    "category": "news",
+    "date": "2026-01-12T11:30:00.000Z",
+    "age": "75d ago"
+  },
+  {
+    "id": "venturebeat-5-1774720369776",
+    "title": "Nous Research's NousCoder-14B is an open-source coding model landing right in the Claude Code moment",
+    "url": "https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in",
+    "domain": "venturebeat.com",
+    "source": "venturebeat",
+    "category": "news",
+    "date": "2026-01-07T20:00:00.000Z",
+    "age": "79d ago"
+  },
+  {
+    "id": "venturebeat-6-1774720369776",
+    "title": "The creator of Claude Code just revealed his workflow, and developers are losing their minds",
+    "url": "https://venturebeat.com/technology/the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are",
+    "domain": "venturebeat.com",
+    "source": "venturebeat",
+    "category": "news",
+    "date": "2026-01-05T07:45:00.000Z",
+    "age": "82d ago"
+  },
+  {
+    "id": "techcrunch-1-1774720369639",
     "title": "Meta bought 1 GW of solar this week",
     "url": "https://techcrunch.com/2025/10/31/meta-bought-1-gw-of-solar-this-week/",
     "domain": "techcrunch.com",
@@ -20,7 +1630,17 @@
     "age": "147d ago"
   },
   {
-    "id": "tc-2-1774719928938",
+    "id": "aisnakeoil-3-1774720369910",
+    "title": "A guide to understanding AI as normal technology",
+    "url": "https://www.normaltech.ai/p/a-guide-to-understanding-ai-as-normal",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2025-09-09T13:00:40.000Z",
+    "age": "200d ago"
+  },
+  {
+    "id": "techcrunch-2-1774720369639",
     "title": "How one AI startup is helping rice farmers battle climate change",
     "url": "https://techcrunch.com/2025/08/26/how-one-ai-startup-is-helping-rice-farmers-battle-climate-change/",
     "domain": "techcrunch.com",
@@ -30,7 +1650,7 @@
     "age": "214d ago"
   },
   {
-    "id": "tc-3-1774719928938",
+    "id": "techcrunch-3-1774720369639",
     "title": "Harvard dropouts to launch ‘always on’ AI smart glasses that listen and record every conversation",
     "url": "https://techcrunch.com/2025/08/20/harvard-dropouts-to-launch-always-on-ai-smart-glasses-that-listen-and-record-every-conversation/",
     "domain": "techcrunch.com",
@@ -40,7 +1660,7 @@
     "age": "220d ago"
   },
   {
-    "id": "tc-4-1774719928938",
+    "id": "techcrunch-4-1774720369639",
     "title": "Meta to add 100MW of solar power from US gear",
     "url": "https://techcrunch.com/2025/08/20/meta-to-add-100-mw-of-solar-power-from-u-s-gear/",
     "domain": "techcrunch.com",
@@ -50,7 +1670,7 @@
     "age": "220d ago"
   },
   {
-    "id": "tc-5-1774719928938",
+    "id": "techcrunch-5-1774720369639",
     "title": "Perplexity accused of scraping websites that explicitly blocked AI scraping",
     "url": "https://techcrunch.com/2025/08/04/perplexity-accused-of-scraping-websites-that-explicitly-blocked-ai-scraping/",
     "domain": "techcrunch.com",
@@ -60,7 +1680,17 @@
     "age": "236d ago"
   },
   {
-    "id": "tc-6-1774719928938",
+    "id": "aisnakeoil-4-1774720369910",
+    "title": "Could AI slow science?",
+    "url": "https://www.normaltech.ai/p/could-ai-slow-science",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2025-07-16T21:35:56.000Z",
+    "age": "254d ago"
+  },
+  {
+    "id": "techcrunch-6-1774720369639",
     "title": "Obvio’s stop sign cameras use AI to root out unsafe drivers",
     "url": "https://techcrunch.com/2025/06/04/obvios-stop-sign-cameras-use-ai-to-root-out-unsafe-drivers/",
     "domain": "techcrunch.com",
@@ -70,7 +1700,7 @@
     "age": "297d ago"
   },
   {
-    "id": "tc-7-1774719928938",
+    "id": "techcrunch-7-1774720369639",
     "title": "Breakneck data center growth challenges Microsoft’s sustainability goals",
     "url": "https://techcrunch.com/2025/06/02/breakneck-data-center-growth-challenges-microsofts-sustainability-goals/",
     "domain": "techcrunch.com",
@@ -80,7 +1710,7 @@
     "age": "298d ago"
   },
   {
-    "id": "tc-8-1774719928938",
+    "id": "techcrunch-8-1774720369639",
     "title": "Gridcare thinks more than 100 GW of data center capacity is hiding in the grid",
     "url": "https://techcrunch.com/2025/05/27/gridcare-thinks-more-than-100-gw-of-data-center-capacity-is-hiding-in-the-grid/",
     "domain": "techcrunch.com",
@@ -90,7 +1720,7 @@
     "age": "305d ago"
   },
   {
-    "id": "tc-9-1774719928938",
+    "id": "techcrunch-9-1774720369640",
     "title": "Meta adds another 650 MW of solar power to its AI push",
     "url": "https://techcrunch.com/2025/05/22/meta-adds-another-650-mw-of-solar-power-to-its-ai-push/",
     "domain": "techcrunch.com",
@@ -100,7 +1730,27 @@
     "age": "310d ago"
   },
   {
-    "id": "tc-10-1774719928938",
+    "id": "aisnakeoil-5-1774720369910",
+    "title": "AGI is not a milestone",
+    "url": "https://www.normaltech.ai/p/agi-is-not-a-milestone",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2025-05-01T11:47:59.000Z",
+    "age": "331d ago"
+  },
+  {
+    "id": "aisnakeoil-6-1774720369910",
+    "title": "AI as Normal Technology",
+    "url": "https://www.normaltech.ai/p/ai-as-normal-technology",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2025-04-15T14:53:59.000Z",
+    "age": "347d ago"
+  },
+  {
+    "id": "techcrunch-10-1774720369640",
     "title": "Who are climate-conscious consumers? Not who you’d expect, says Northwind Climate",
     "url": "https://techcrunch.com/2025/04/01/who-are-climate-conscious-consumers-not-who-youd-expect-says-northwind-climate/",
     "domain": "techcrunch.com",
@@ -110,7 +1760,7 @@
     "age": "360d ago"
   },
   {
-    "id": "tc-11-1774719928938",
+    "id": "techcrunch-11-1774720369640",
     "title": "Data centers love solar: Here’s a comprehensive guide to deals over 100 megawatts",
     "url": "https://techcrunch.com/2025/03/30/data-centers-love-solar-heres-a-comprehensive-guide-to-deals-over-100-megawatts/",
     "domain": "techcrunch.com",
@@ -120,7 +1770,7 @@
     "age": "363d ago"
   },
   {
-    "id": "tc-12-1774719928939",
+    "id": "techcrunch-12-1774720369640",
     "title": "Nvidia thinks AI can solve electrical grid problems caused by AI",
     "url": "https://techcrunch.com/2025/03/20/nvidia-thinks-ai-can-solve-electrical-grid-problems-caused-by-ai/",
     "domain": "techcrunch.com",
@@ -130,7 +1780,7 @@
     "age": "373d ago"
   },
   {
-    "id": "tc-13-1774719928939",
+    "id": "techcrunch-13-1774720369640",
     "title": "Solar notches another win as Microsoft adds 475 MW to power its AI data centers",
     "url": "https://techcrunch.com/2025/03/20/solar-notches-another-win-as-microsoft-adds-475-mw-to-power-its-ai-data-centers/",
     "domain": "techcrunch.com",
@@ -140,7 +1790,7 @@
     "age": "373d ago"
   },
   {
-    "id": "tc-14-1774719928939",
+    "id": "techcrunch-14-1774720369640",
     "title": "Geothermal could power nearly all new data centers through 2030",
     "url": "https://techcrunch.com/2025/03/11/geothermal-could-power-nearly-all-new-data-centers-through-2030/",
     "domain": "techcrunch.com",
@@ -161,7 +1811,7 @@
     "age": "383d ago"
   },
   {
-    "id": "tc-15-1774719928939",
+    "id": "techcrunch-15-1774720369640",
     "title": "ElevenLabs now lets authors create and publish audiobooks on its own platform",
     "url": "https://techcrunch.com/2025/02/25/elevenlabs-is-now-letting-authors-create-and-publish-audiobooks-on-its-own-platform/",
     "domain": "techcrunch.com",
@@ -171,7 +1821,7 @@
     "age": "395d ago"
   },
   {
-    "id": "tc-16-1774719928939",
+    "id": "techcrunch-16-1774720369640",
     "title": "Data center tweaks could unlock 76 GW of new power capacity in the US",
     "url": "https://techcrunch.com/2025/02/13/data-center-tweaks-could-unlock-76-gw-of-new-power-capacity-in-the-u-s/",
     "domain": "techcrunch.com",
@@ -181,7 +1831,7 @@
     "age": "408d ago"
   },
   {
-    "id": "tc-17-1774719928939",
+    "id": "techcrunch-17-1774720369640",
     "title": "YouTube AI updates include auto dubbing expansion, age ID tech, and more",
     "url": "https://techcrunch.com/2025/02/11/youtube-ai-updates-to-include-expansion-of-auto-dubbing-age-identifying-tech-and-more/",
     "domain": "techcrunch.com",
@@ -191,7 +1841,7 @@
     "age": "410d ago"
   },
   {
-    "id": "tc-18-1774719928939",
+    "id": "techcrunch-18-1774720369640",
     "title": "Self Inspection raises $3M for its AI-powered vehicle inspections",
     "url": "https://techcrunch.com/2025/02/07/self-inspection-raises-3m-for-its-ai-powered-vehicle-inspections/",
     "domain": "techcrunch.com",
@@ -201,7 +1851,7 @@
     "age": "413d ago"
   },
   {
-    "id": "tc-19-1774719928939",
+    "id": "techcrunch-19-1774720369640",
     "title": "Meta turns to solar — again — in its data center-building boom",
     "url": "https://techcrunch.com/2025/01/31/meta-turns-to-solar-again-in-its-data-center-building-boom/",
     "domain": "techcrunch.com",
@@ -209,6 +1859,66 @@
     "category": "news",
     "date": "2025-01-31T19:38:51.000Z",
     "age": "420d ago"
+  },
+  {
+    "id": "aisnakeoil-7-1774720369910",
+    "title": "Is AI progress slowing down?",
+    "url": "https://www.normaltech.ai/p/is-ai-progress-slowing-down",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2024-12-18T16:47:58.000Z",
+    "age": "465d ago"
+  },
+  {
+    "id": "aisnakeoil-8-1774720369910",
+    "title": "We Looked at 78 Election Deepfakes. Political Misinformation is not an AI Problem.",
+    "url": "https://www.normaltech.ai/p/we-looked-at-78-election-deepfakes",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2024-12-13T20:51:29.000Z",
+    "age": "469d ago"
+  },
+  {
+    "id": "aisnakeoil-9-1774720369910",
+    "title": "Does the UK’s liver transplant matching algorithm systematically exclude younger patients?",
+    "url": "https://www.normaltech.ai/p/does-the-uks-liver-transplant-matching",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2024-11-11T19:57:25.000Z",
+    "age": "501d ago"
+  },
+  {
+    "id": "aisnakeoil-10-1774720369910",
+    "title": "FAQ about the book and our writing process",
+    "url": "https://www.normaltech.ai/p/faq-about-the-book-and-our-writing",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2024-10-04T15:55:33.000Z",
+    "age": "540d ago"
+  },
+  {
+    "id": "aisnakeoil-11-1774720369910",
+    "title": "Can AI automate computational reproducibility?",
+    "url": "https://www.normaltech.ai/p/can-ai-automate-computational-reproducibility",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2024-09-18T14:32:47.000Z",
+    "age": "556d ago"
+  },
+  {
+    "id": "aisnakeoil-12-1774720369910",
+    "title": "Start reading the AI Snake Oil book online",
+    "url": "https://www.normaltech.ai/p/starting-reading-the-ai-snake-oil",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
+    "category": "news",
+    "date": "2024-09-10T20:55:03.000Z",
+    "age": "563d ago"
   },
   {
     "id": "hn-41295923",
@@ -222,300 +1932,73 @@
     "age": "585d ago"
   },
   {
-    "id": "hn-39059897",
-    "title": "Yann LeCun: Human-level artificial intelligence is going to take a long time",
-    "url": "https://english.elpais.com/technology/2024-01-19/yann-lecun-chief-ai-scientist-at-meta-human-level-artificial-intelligence-is-going-to-take-a-long-time.html",
-    "domain": "english.elpais.com",
-    "source": "hn",
+    "id": "aisnakeoil-13-1774720369910",
+    "title": "AI companies are pivoting from creating gods to building products. Good.",
+    "url": "https://www.normaltech.ai/p/ai-companies-are-pivoting-from-creating",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
     "category": "news",
-    "points": 228,
-    "date": "2024-01-19T19:28:16.000Z",
-    "age": "798d ago"
+    "date": "2024-08-19T20:57:05.000Z",
+    "age": "585d ago"
   },
   {
-    "id": "hn-38067314",
-    "title": "Executive Order on Safe, Secure, and Trustworthy Artificial Intelligence",
-    "url": "https://www.whitehouse.gov/briefing-room/statements-releases/2023/10/30/fact-sheet-president-biden-issues-executive-order-on-safe-secure-and-trustworthy-artificial-intelligence/",
-    "domain": "whitehouse.gov",
-    "source": "hn",
+    "id": "aisnakeoil-14-1774720369910",
+    "title": "AI existential risk probabilities are too unreliable to inform policy",
+    "url": "https://www.normaltech.ai/p/ai-existential-risk-probabilities",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
     "category": "news",
-    "points": 241,
-    "date": "2023-10-30T09:35:29.000Z",
-    "age": "880d ago"
+    "date": "2024-07-26T11:29:25.000Z",
+    "age": "610d ago"
   },
   {
-    "id": "hn-37086308",
-    "title": "Artificial General Intelligence – A gentle introduction",
-    "url": "https://cis.temple.edu/~pwang/AGI-Intro.html",
-    "domain": "cis.temple.edu",
-    "source": "hn",
+    "id": "aisnakeoil-15-1774720369910",
+    "title": "New paper: AI agents that matter",
+    "url": "https://www.normaltech.ai/p/new-paper-ai-agents-that-matter",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
     "category": "news",
-    "points": 282,
-    "date": "2023-08-11T08:15:43.000Z",
-    "age": "960d ago"
+    "date": "2024-07-03T16:00:56.000Z",
+    "age": "633d ago"
   },
   {
-    "id": "hn-34637650",
-    "title": "John Carmack’s ‘Different Path’ to Artificial General Intelligence",
-    "url": "https://dallasinnovates.com/exclusive-qa-john-carmacks-different-path-to-artificial-general-intelligence/",
-    "domain": "dallasinnovates.com",
-    "source": "hn",
+    "id": "aisnakeoil-16-1774720369910",
+    "title": "AI scaling myths",
+    "url": "https://www.normaltech.ai/p/ai-scaling-myths",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
     "category": "news",
-    "points": 378,
-    "date": "2023-02-03T06:01:47.000Z",
-    "age": "1149d ago"
+    "date": "2024-06-27T18:16:55.000Z",
+    "age": "638d ago"
   },
   {
-    "id": "hn-32458048",
-    "title": "Paradigms of Artificial Intelligence Programming (1992)",
-    "url": "https://github.com/norvig/paip-lisp",
-    "domain": "github.com",
-    "source": "hn",
+    "id": "aisnakeoil-17-1774720369910",
+    "title": "Scientists should use AI as a tool, not an oracle",
+    "url": "https://www.normaltech.ai/p/scientists-should-use-ai-as-a-tool",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
     "category": "news",
-    "points": 283,
-    "date": "2022-08-14T10:16:34.000Z",
-    "age": "1322d ago"
+    "date": "2024-06-03T18:34:13.000Z",
+    "age": "662d ago"
   },
   {
-    "id": "hn-28394834",
-    "title": "Use of artificial intelligence for image analysis in breast cancer screening",
-    "url": "https://www.bmj.com/content/374/bmj.n1872",
-    "domain": "bmj.com",
-    "source": "hn",
+    "id": "aisnakeoil-18-1774720369910",
+    "title": "AI leaderboards are no longer useful. It's time to switch to Pareto curves.",
+    "url": "https://www.normaltech.ai/p/ai-leaderboards-are-no-longer-useful",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
     "category": "news",
-    "points": 439,
-    "date": "2021-09-02T17:26:09.000Z",
-    "age": "1668d ago"
+    "date": "2024-04-30T14:03:42.000Z",
+    "age": "697d ago"
   },
   {
-    "id": "hn-25530178",
-    "title": "Artificial Intelligence – The Revolution Hasn’t Happened Yet (2018)",
-    "url": "https://medium.com/@mijordan3/artificial-intelligence-the-revolution-hasnt-happened-yet-5e1d5812e1e7",
-    "domain": "medium.com",
-    "source": "hn",
+    "id": "aisnakeoil-19-1774720369910",
+    "title": "AI Snake Oil is now available to preorder",
+    "url": "https://www.normaltech.ai/p/ai-snake-oil-is-now-available-to",
+    "domain": "normaltech.ai",
+    "source": "aisnakeoil",
     "category": "news",
-    "points": 278,
-    "date": "2020-12-24T18:47:27.000Z",
-    "age": "1919d ago"
-  },
-  {
-    "id": "hn-21979391",
-    "title": "Our field isn't quite “artificial intelligence” – it's “cognitive automation”",
-    "url": "https://twitter.com/fchollet/status/1214392496375025664",
-    "domain": "twitter.com",
-    "source": "hn",
-    "category": "news",
-    "points": 294,
-    "date": "2020-01-07T12:43:21.000Z",
-    "age": "2272d ago"
-  },
-  {
-    "id": "hn-21953593",
-    "title": "U.S. government limits exports of artificial intelligence software",
-    "url": "https://www.reuters.com/article/us-usa-artificial-intelligence/u-s-government-limits-exports-of-artificial-intelligence-software-idUSKBN1Z21PT",
-    "domain": "reuters.com",
-    "source": "hn",
-    "category": "news",
-    "points": 595,
-    "date": "2020-01-04T08:02:49.000Z",
-    "age": "2275d ago"
-  },
-  {
-    "id": "hn-21530860",
-    "title": "John Carmack: I’m going to work on artificial general intelligence",
-    "url": "https://www.facebook.com/100006735798590/posts/2547632585471243/",
-    "domain": "facebook.com",
-    "source": "hn",
-    "category": "news",
-    "points": 1574,
-    "date": "2019-11-13T23:17:23.000Z",
-    "age": "2326d ago"
-  },
-  {
-    "id": "hn-18761907",
-    "title": "Artificial Intelligence Creates Realistic Pictures of People",
-    "url": "http://www.openculture.com/2018/12/artificial-intelligence-creates-realistic-photos-of-people-none-of-whom-actually-exist.html",
-    "domain": "openculture.com",
-    "source": "hn",
-    "category": "news",
-    "points": 337,
-    "date": "2018-12-26T12:54:13.000Z",
-    "age": "2649d ago"
-  },
-  {
-    "id": "hn-18219444",
-    "title": "M.I.T. Plans College for Artificial Intelligence, Backed by $1B",
-    "url": "https://www.nytimes.com/2018/10/15/technology/mit-college-artificial-intelligence.html",
-    "domain": "nytimes.com",
-    "source": "hn",
-    "category": "news",
-    "points": 560,
-    "date": "2018-10-15T13:26:14.000Z",
-    "age": "2721d ago"
-  },
-  {
-    "id": "hn-17047285",
-    "title": "Warriorjs – An exciting game of programming and artificial intelligence",
-    "url": "https://github.com/olistic/warriorjs",
-    "domain": "github.com",
-    "source": "hn",
-    "category": "news",
-    "points": 293,
-    "date": "2018-05-11T13:55:09.000Z",
-    "age": "2878d ago"
-  },
-  {
-    "id": "hn-17040368",
-    "title": "Carnegie Mellon Launches Undergraduate Degree in Artificial Intelligence",
-    "url": "https://www.cs.cmu.edu/news/carnegie-mellon-launches-undergraduate-degree-artificial-intelligence",
-    "domain": "cs.cmu.edu",
-    "source": "hn",
-    "category": "news",
-    "points": 502,
-    "date": "2018-05-10T16:28:03.000Z",
-    "age": "2879d ago"
-  },
-  {
-    "id": "hn-16895559",
-    "title": "Artificial intelligence accelerates discovery of metallic glass",
-    "url": "https://news.northwestern.edu/stories/2018/april/artificial-intelligence-accelerates-discovery-of-metallic-glass/",
-    "domain": "news.northwestern.edu",
-    "source": "hn",
-    "category": "news",
-    "points": 237,
-    "date": "2018-04-22T10:33:07.000Z",
-    "age": "2897d ago"
-  },
-  {
-    "id": "hn-16226495",
-    "title": "Fake celebrity porn is blowing up on Reddit, thanks to artificial intelligence",
-    "url": "https://www.theverge.com/2018/1/24/16929148/fake-celebrity-porn-ai-deepfake-face-swapping-artificial-intelligence-reddit",
-    "domain": "theverge.com",
-    "source": "hn",
-    "category": "news",
-    "points": 226,
-    "date": "2018-01-24T21:28:11.000Z",
-    "age": "2984d ago"
-  },
-  {
-    "id": "hn-15850254",
-    "title": "Using Artificial Intelligence to Augment Human Intelligence",
-    "url": "https://distill.pub/2017/aia/",
-    "domain": "distill.pub",
-    "source": "hn",
-    "category": "news",
-    "points": 254,
-    "date": "2017-12-05T06:56:57.000Z",
-    "age": "3035d ago"
-  },
-  {
-    "id": "hn-15242934",
-    "title": "Artificial Intelligence Uses Videogame Footage to Recreate Game Engine",
-    "url": "https://gvu.gatech.edu/ai-uses-less-two-minutes-videogame-footage-recreate-game-engine",
-    "domain": "gvu.gatech.edu",
-    "source": "hn",
-    "category": "news",
-    "points": 254,
-    "date": "2017-09-13T21:34:43.000Z",
-    "age": "3117d ago"
-  },
-  {
-    "id": "hn-15155609",
-    "title": "Where will artificial general intelligence come from?",
-    "url": "https://docs.google.com/presentation/d/119VW6ueBGLQXsw-jGMboGP2-WuOnyMAOYLgd44SL6xM/edit#slide=id.p",
-    "domain": "docs.google.com",
-    "source": "hn",
-    "category": "news",
-    "points": 389,
-    "date": "2017-09-02T12:24:35.000Z",
-    "age": "3129d ago"
-  },
-  {
-    "id": "hn-13737426",
-    "title": "Will Democracy Survive Big Data and Artificial Intelligence?",
-    "url": "https://www.scientificamerican.com/article/will-democracy-survive-big-data-and-artificial-intelligence/",
-    "domain": "scientificamerican.com",
-    "source": "hn",
-    "category": "news",
-    "points": 269,
-    "date": "2017-02-26T14:46:07.000Z",
-    "age": "3317d ago"
-  },
-  {
-    "id": "hn-13536221",
-    "title": "Artificial Intelligence Graduate Certificate",
-    "url": "http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1226717",
-    "domain": "scpd.stanford.edu",
-    "source": "hn",
-    "category": "news",
-    "points": 224,
-    "date": "2017-01-31T22:56:43.000Z",
-    "age": "3342d ago"
-  },
-  {
-    "id": "hn-12683902",
-    "title": "OpenAI is Using Reddit to Teach An Artificial Intelligence How to Speak",
-    "url": "http://futurism.com/elon-musks-openai-is-using-reddit-to-teach-an-artificial-intelligence-how-to-speak/",
-    "domain": "futurism.com",
-    "source": "hn",
-    "category": "news",
-    "points": 260,
-    "date": "2016-10-11T12:56:35.000Z",
-    "age": "3455d ago"
-  },
-  {
-    "id": "hn-12667761",
-    "title": "Artificial Intelligence Lecture Videos",
-    "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/lecture-videos/",
-    "domain": "ocw.mit.edu",
-    "source": "hn",
-    "category": "news",
-    "points": 540,
-    "date": "2016-10-08T17:27:17.000Z",
-    "age": "3458d ago"
-  },
-  {
-    "id": "hn-10928020",
-    "title": "Video games are essential for inventing artificial intelligence",
-    "url": "http://togelius.blogspot.com/2016/01/why-video-games-are-essential-for.html",
-    "domain": "togelius.blogspot.com",
-    "source": "hn",
-    "category": "news",
-    "points": 247,
-    "date": "2016-01-19T00:14:17.000Z",
-    "age": "3721d ago"
-  },
-  {
-    "id": "hn-9484224",
-    "title": "Artificial-Intelligence Experts Are in High Demand",
-    "url": "http://www.wsj.com/article_email/artificial-intelligence-experts-are-in-high-demand-1430472782-lMyQjAxMTA1MzA2MTMwNTEyWj",
-    "domain": "wsj.com",
-    "source": "hn",
-    "category": "news",
-    "points": 224,
-    "date": "2015-05-04T03:57:49.000Z",
-    "age": "3981d ago"
-  },
-  {
-    "id": "hn-9386004",
-    "title": "Show HN: I'm a 14 year-old dev who has programmed an artificial intelligence bot",
-    "url": "http://acuman.us/",
-    "domain": "acuman.us",
-    "source": "hn",
-    "category": "news",
-    "points": 430,
-    "date": "2015-04-16T05:21:03.000Z",
-    "age": "3999d ago"
-  },
-  {
-    "id": "hn-7127938",
-    "title": "Google to Buy Artificial Intelligence Startup DeepMind for $400M",
-    "url": "http://recode.net/2014/01/26/exclusive-google-to-buy-artificial-intelligence-startup-deepmind-for-400m/",
-    "domain": "recode.net",
-    "source": "hn",
-    "category": "news",
-    "points": 352,
-    "date": "2014-01-27T00:40:54.000Z",
-    "age": "4443d ago"
+    "date": "2024-04-10T12:55:34.000Z",
+    "age": "717d ago"
   }
 ]
