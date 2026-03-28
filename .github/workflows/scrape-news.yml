@@ -25,6 +25,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore: daily news scrape [skip ci]'
-          file_pattern: 'src/data/news.json'
+          file_pattern: 'src/data/news.json src/data/new-tools.json'
           commit_user_name: 'AIFoxx Bot'
           commit_user_email: 'bot@aifox.com'
