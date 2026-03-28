@@ -11,6 +11,7 @@ import { dirname, join } from 'node:path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const OUTPUT_PATH = join(__dirname, '..', 'src', 'data', 'news.json')
+const NEW_TOOLS_PATH = join(__dirname, '..', 'src', 'data', 'new-tools.json')
 const MAX_ITEMS = 200
 const MAX_PER_SOURCE = 20  // prevent any one source from dominating
 
@@ -231,6 +232,43 @@ async function fetchHN() {
     }))
 }
 
+// Fetches "Show HN" posts — these are new tool/project launches by builders
+async function fetchShowHN() {
+  const queries = [
+    'Show+HN+AI',
+    'Show+HN+LLM',
+    'Show+HN+GPT',
+    'Show+HN+assistant',
+    'Show+HN+tool',
+  ]
+  const all = []
+  for (const q of queries) {
+    const url = `https://hn.algolia.com/api/v1/search?tags=show_hn,story&query=${q}&hitsPerPage=10`
+    try {
+      const data = JSON.parse(await fetchText(url))
+      all.push(...(data.hits || []).filter((h) => h.url && h.title))
+    } catch {
+      // skip failed query
+    }
+  }
+  // deduplicate within Show HN results
+  const seen = new Set()
+  return all
+    .filter((h) => { if (seen.has(h.objectID)) return false; seen.add(h.objectID); return true })
+    .slice(0, MAX_PER_SOURCE * 2)
+    .map((h) => ({
+      id: `show-hn-${h.objectID}`,
+      title: h.title.replace(/^Show HN:\s*/i, '').trim(),
+      url: h.url,
+      domain: extractDomain(h.url),
+      source: 'show-hn',
+      category: 'new-tool',
+      points: h.points ?? undefined,
+      date: new Date(h.created_at_i * 1000).toISOString(),
+      age: computeAge(new Date(h.created_at_i * 1000).toISOString()),
+    }))
+}
+
 async function fetchRSSSource(source) {
   const xml = await fetchText(source.url)
   const items = source.atom ? parseAtom(xml) : parseRSS(xml)
@@ -254,41 +292,73 @@ async function fetchRSSSource(source) {
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
-async function main() {
-  console.log('Scraping AI news...')
-
-  const allSources = [
-    { id: 'hn', label: 'HN (Algolia)', fetch: fetchHN },
-    ...RSS_SOURCES.map((s) => ({ id: s.id, label: s.label, fetch: () => fetchRSSSource(s) })),
-  ]
-
-  const results = await Promise.allSettled(allSources.map((s) => s.fetch()))
-
-  const allItems = []
-  for (let i = 0; i < results.length; i++) {
-    const r = results[i]
-    if (r.status === 'fulfilled') {
-      console.log(`  ✓ ${allSources[i].label}: ${r.value.length} items`)
-      allItems.push(...r.value)
-    } else {
-      console.warn(`  ✗ ${allSources[i].label}: ${r.reason?.message}`)
-    }
-  }
-
-  // Deduplicate by URL
+function dedup(items) {
   const seen = new Set()
-  const unique = allItems.filter((item) => {
+  return items.filter((item) => {
     if (seen.has(item.url)) return false
     seen.add(item.url)
     return true
   })
+}
 
-  // Sort newest first, keep top MAX_ITEMS
-  unique.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-  const final = unique.slice(0, MAX_ITEMS)
+async function main() {
+  console.log('── News sources ──────────────────────────────')
 
-  writeFileSync(OUTPUT_PATH, JSON.stringify(final, null, 2) + '\n')
-  console.log(`\nDone. Wrote ${final.length} items to src/data/news.json`)
+  const newsSources = [
+    { id: 'hn', label: 'HN (Algolia)', fetch: fetchHN },
+    ...RSS_SOURCES.filter((s) => s.category === 'news').map((s) => ({
+      id: s.id, label: s.label, fetch: () => fetchRSSSource(s),
+    })),
+  ]
+
+  const toolSources = [
+    { id: 'show-hn', label: 'Show HN (new launches)', fetch: fetchShowHN },
+    ...RSS_SOURCES.filter((s) => s.category === 'new-tool').map((s) => ({
+      id: s.id, label: s.label, fetch: () => fetchRSSSource(s),
+    })),
+  ]
+
+  // Fetch news
+  const newsResults = await Promise.allSettled(newsSources.map((s) => s.fetch()))
+  const newsItems = []
+  for (let i = 0; i < newsResults.length; i++) {
+    const r = newsResults[i]
+    if (r.status === 'fulfilled') {
+      console.log(`  ✓ ${newsSources[i].label}: ${r.value.length} items`)
+      newsItems.push(...r.value)
+    } else {
+      console.warn(`  ✗ ${newsSources[i].label}: ${r.reason?.message}`)
+    }
+  }
+
+  console.log('\n── New tool sources ──────────────────────────')
+
+  // Fetch new tools
+  const toolResults = await Promise.allSettled(toolSources.map((s) => s.fetch()))
+  const toolItems = []
+  for (let i = 0; i < toolResults.length; i++) {
+    const r = toolResults[i]
+    if (r.status === 'fulfilled') {
+      console.log(`  ✓ ${toolSources[i].label}: ${r.value.length} items`)
+      toolItems.push(...r.value)
+    } else {
+      console.warn(`  ✗ ${toolSources[i].label}: ${r.reason?.message}`)
+    }
+  }
+
+  // Sort + dedup + write news.json
+  const finalNews = dedup(newsItems)
+  finalNews.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  writeFileSync(OUTPUT_PATH, JSON.stringify(finalNews.slice(0, MAX_ITEMS), null, 2) + '\n')
+
+  // Sort + dedup + write new-tools.json
+  const finalTools = dedup(toolItems)
+  finalTools.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  writeFileSync(NEW_TOOLS_PATH, JSON.stringify(finalTools.slice(0, MAX_ITEMS), null, 2) + '\n')
+
+  console.log(`\nDone.`)
+  console.log(`  news.json:      ${Math.min(finalNews.length, MAX_ITEMS)} items`)
+  console.log(`  new-tools.json: ${Math.min(finalTools.length, MAX_ITEMS)} items`)
 }
 
 main().catch((err) => {
