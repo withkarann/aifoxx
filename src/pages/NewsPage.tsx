@@ -56,6 +56,16 @@ function sourceColor(id: string) {
   return SOURCE_COLORS[id] ?? "text-text-muted";
 }
 
+// Only allow http/https URLs — prevents javascript: protocol XSS via RSS feed data
+function safeUrl(url: string): string {
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === "https:" || parsed.protocol === "http:" ? url : "#";
+  } catch {
+    return "#";
+  }
+}
+
 type Tab = "all" | NewsCategory;
 
 const TABS: { id: Tab; label: string }[] = [
@@ -150,7 +160,7 @@ export default function NewsPage() {
                   {/* Content */}
                   <div className="min-w-0 flex-1">
                     <a
-                      href={item.url}
+                      href={safeUrl(item.url)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-mono text-sm text-text-primary hover:text-accent-green transition-colors duration-100 leading-snug inline"
@@ -177,7 +187,7 @@ export default function NewsPage() {
                         </>
                       )}
                       <a
-                        href={item.url}
+                        href={safeUrl(item.url)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-100 text-text-muted hover:text-accent-green"
