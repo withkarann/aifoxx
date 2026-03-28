@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "submitTool": "SOUMETTRE UN OUTIL",
+    "themeNext": {
+      "softLight": "Lumière douce",
+      "notebook": "Cahier",
+      "darkTerminal": "Terminal sombre"
+    }
+  },
+  "home": {
+    "featured": "// MIS EN AVANT",
+    "showing": "// AFFICHAGE {{start}}-{{end}} SUR {{total}} RÉSULTATS",
+    "errorTitle": "[! ERREUR : AUCUN_OUTIL_TROUVÉ]",
+    "errorDesc": "Aucun outil ne correspond à votre recherche et vos filtres actuels. Essayez un autre mot-clé ou réinitialisez les filtres.",
+    "errorSub": "Aucun outil correspondant trouvé.",
+    "resetFilters": "> RÉINITIALISER_FILTRES (AFFICHER TOUS LES OUTILS)",
+    "prev": "PRÉCÉDENT",
+    "next": "SUIVANT"
+  },
+  "category": {
+    "toolsCount": "{{count}} outils dans cette catégorie",
+    "all": "TOUS",
+    "noResultsTitle": "> AUCUN_RÉSULTAT_TROUVÉ",
+    "noResultsDesc": "Aucun outil ne correspond à ces filtres"
+  },
+  "submit": {
+    "title": "> SOUMETTRE_UN_OUTIL",
+    "subtitle": "{{brand}} est open source. Ajoutez des outils en modifiant un fichier JSON et en ouvrant une Pull Request.",
+    "steps": {
+      "01": {
+        "title": "FORKER LE DÉPÔT",
+        "desc": "Clonez le dépôt et configurez votre environnement local."
+      },
+      "02": {
+        "title": "MODIFIER tools.json",
+        "desc": "Ouvrez src/data/tools.json et ajoutez votre entrée :"
+      },
+      "03": {
+        "title": "VALIDER (PAS DE DOUBLONS)",
+        "desc": "Vérifie les noms d'outils en double et les erreurs de schéma. Échouera bruyamment si quelque chose ne va pas."
+      },
+      "04": {
+        "title": "OUVRIR UNE PULL REQUEST",
+        "desc": "Poussez vers votre fork et ouvrez une PR. La CI relancera la validation automatiquement."
+      },
+      "05": {
+        "title": "AJOUTER UN BADGE",
+        "desc": "Montrez que votre outil est répertorié sur {{brand}} :"
+      }
+    },
+    "rulesTitle": "// RÈGLES DE CONTRIBUTION",
+    "rules": {
+      "unique": "Le nom de l'outil doit être unique (appliqué par le validateur)",
+      "noAffiliate": "Pas de liens d'affiliation",
+      "maxDesc": "Description max 200 caractères",
+      "pricing": "pricing doit être exactement : Free, Freemium, Paid ou Open Source",
+      "url": "L'URL doit être un lien https:// valide"
+    },
+    "copied": "COPIÉ !"
+  },
+  "filter": {
+    "allPricing": "TOUS",
+    "free": "GRATUIT",
+    "freemium": "FREEMIUM",
+    "paid": "PAYANT",
+    "openSource": "OPEN SOURCE",
+    "clearAll": "EFFACER LES FILTRES",
+    "activeFilters": "{{count}} ACTIFS"
+  }
+}

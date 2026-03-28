@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "submitTool": "SUBMIT_TOOL",
+    "themeNext": {
+      "softLight": "Soft Light",
+      "notebook": "Notebook",
+      "darkTerminal": "Dark Terminal"
+    }
+  },
+  "home": {
+    "featured": "// FEATURED",
+    "showing": "// SHOWING {{start}}-{{end}} OF {{total}} RESULTS",
+    "errorTitle": "[! ERROR: NO_TOOLS_FOUND]",
+    "errorDesc": "No tools match your current search and filters. Try another keyword or reset filters to view all tools.",
+    "errorSub": "No matching tools found.",
+    "resetFilters": "> RESET_FILTERS (SHOW ALL TOOLS)",
+    "prev": "PREV",
+    "next": "NEXT"
+  },
+  "category": {
+    "toolsCount": "{{count}} tools in this category",
+    "all": "ALL",
+    "noResultsTitle": "> NO_RESULTS_FOUND",
+    "noResultsDesc": "No tools match these filters"
+  },
+  "submit": {
+    "title": "> SUBMIT_A_TOOL",
+    "subtitle": "{{brand}} is open source. Add tools by editing a JSON file and opening a Pull Request.",
+    "steps": {
+      "01": {
+        "title": "FORK THE REPO",
+        "desc": "Clone the repository and set up your local environment."
+      },
+      "02": {
+        "title": "EDIT tools.json",
+        "desc": "Open src/data/tools.json and add your entry:"
+      },
+      "03": {
+        "title": "VALIDATE (NO DUPLICATES)",
+        "desc": "This checks for duplicate tool names and schema errors. It will fail loudly if anything is wrong."
+      },
+      "04": {
+        "title": "OPEN A PULL REQUEST",
+        "desc": "Push to your fork and open a PR. CI will re-run validation automatically."
+      },
+      "05": {
+        "title": "ADD A BADGE",
+        "desc": "Show that your tool is listed on {{brand}}:"
+      }
+    },
+    "rulesTitle": "// CONTRIBUTION RULES",
+    "rules": {
+      "unique": "Tool name must be unique (enforced by validator)",
+      "noAffiliate": "No affiliate links",
+      "maxDesc": "Description max 200 characters",
+      "pricing": "pricing must be exactly: Free, Freemium, Paid, or Open Source",
+      "url": "URL must be a valid https:// link"
+    },
+    "copied": "COPIED!"
+  },
+  "filter": {
+    "allPricing": "ALL",
+    "free": "FREE",
+    "freemium": "FREEMIUM",
+    "paid": "PAID",
+    "openSource": "OPEN SOURCE",
+    "clearAll": "CLEAR FILTERS",
+    "activeFilters": "{{count}} ACTIVE"
+  }
+}

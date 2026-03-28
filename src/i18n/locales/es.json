@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "submitTool": "ENVIAR HERRAMIENTA",
+    "themeNext": {
+      "softLight": "Luz suave",
+      "notebook": "Cuaderno",
+      "darkTerminal": "Terminal oscuro"
+    }
+  },
+  "home": {
+    "featured": "// DESTACADOS",
+    "showing": "// MOSTRANDO {{start}}-{{end}} DE {{total}} RESULTADOS",
+    "errorTitle": "[! ERROR: NO_SE_ENCONTRARON_HERRAMIENTAS]",
+    "errorDesc": "Ninguna herramienta coincide con tu búsqueda y filtros actuales. Prueba otra palabra clave o restablece los filtros.",
+    "errorSub": "No se encontraron herramientas coincidentes.",
+    "resetFilters": "> RESTABLECER_FILTROS (MOSTRAR TODAS LAS HERRAMIENTAS)",
+    "prev": "ANTERIOR",
+    "next": "SIGUIENTE"
+  },
+  "category": {
+    "toolsCount": "{{count}} herramientas en esta categoría",
+    "all": "TODAS",
+    "noResultsTitle": "> NO_SE_ENCONTRARON_RESULTADOS",
+    "noResultsDesc": "Ninguna herramienta coincide con estos filtros"
+  },
+  "submit": {
+    "title": "> ENVIAR_UNA_HERRAMIENTA",
+    "subtitle": "{{brand}} es de código abierto. Agrega herramientas editando un archivo JSON y abriendo un Pull Request.",
+    "steps": {
+      "01": {
+        "title": "HACER FORK DEL REPOSITORIO",
+        "desc": "Clona el repositorio y configura tu entorno local."
+      },
+      "02": {
+        "title": "EDITAR tools.json",
+        "desc": "Abre src/data/tools.json y agrega tu entrada:"
+      },
+      "03": {
+        "title": "VALIDAR (SIN DUPLICADOS)",
+        "desc": "Verifica nombres de herramientas duplicados y errores de esquema. Fallará ruidosamente si algo está mal."
+      },
+      "04": {
+        "title": "ABRIR UN PULL REQUEST",
+        "desc": "Envía a tu fork y abre un PR. La CI volverá a ejecutar la validación automáticamente."
+      },
+      "05": {
+        "title": "AGREGAR UN BADGE",
+        "desc": "Muestra que tu herramienta está listada en {{brand}}:"
+      }
+    },
+    "rulesTitle": "// REGLAS DE CONTRIBUCIÓN",
+    "rules": {
+      "unique": "El nombre de la herramienta debe ser único (aplicado por el validador)",
+      "noAffiliate": "Sin enlaces de afiliados",
+      "maxDesc": "Descripción máx. 200 caracteres",
+      "pricing": "pricing debe ser exactamente: Free, Freemium, Paid u Open Source",
+      "url": "La URL debe ser un enlace https:// válido"
+    },
+    "copied": "¡COPIADO!"
+  },
+  "filter": {
+    "allPricing": "TODOS",
+    "free": "GRATIS",
+    "freemium": "FREEMIUM",
+    "paid": "DE PAGO",
+    "openSource": "CÓDIGO ABIERTO",
+    "clearAll": "LIMPIAR FILTROS",
+    "activeFilters": "{{count}} ACTIVOS"
+  }
+}

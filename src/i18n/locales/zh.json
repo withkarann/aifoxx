@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "submitTool": "提交工具",
+    "themeNext": {
+      "softLight": "柔和光线",
+      "notebook": "笔记本",
+      "darkTerminal": "深色终端"
+    }
+  },
+  "home": {
+    "featured": "// 精选",
+    "showing": "// 显示 {{start}}-{{end}}，共 {{total}} 个结果",
+    "errorTitle": "[! 错误：未找到工具]",
+    "errorDesc": "没有工具与您当前的搜索和筛选条件匹配。请尝试其他关键词或重置筛选器。",
+    "errorSub": "未找到匹配的工具。",
+    "resetFilters": "> 重置筛选器（显示全部工具）",
+    "prev": "上一页",
+    "next": "下一页"
+  },
+  "category": {
+    "toolsCount": "该分类有 {{count}} 个工具",
+    "all": "全部",
+    "noResultsTitle": "> 未找到结果",
+    "noResultsDesc": "没有工具与这些筛选条件匹配"
+  },
+  "submit": {
+    "title": "> 提交工具",
+    "subtitle": "{{brand}} 是开源项目。通过编辑 JSON 文件并提交 Pull Request 来添加工具。",
+    "steps": {
+      "01": {
+        "title": "FORK 仓库",
+        "desc": "克隆仓库并设置本地环境。"
+      },
+      "02": {
+        "title": "编辑 tools.json",
+        "desc": "打开 src/data/tools.json 并添加您的条目："
+      },
+      "03": {
+        "title": "验证（无重复）",
+        "desc": "检查重复的工具名称和架构错误。如有问题将报错。"
+      },
+      "04": {
+        "title": "提交 PULL REQUEST",
+        "desc": "推送到您的 fork 并提交 PR。CI 将自动重新运行验证。"
+      },
+      "05": {
+        "title": "添加徽章",
+        "desc": "显示您的工具已在 {{brand}} 上列出："
+      }
+    },
+    "rulesTitle": "// 贡献规则",
+    "rules": {
+      "unique": "工具名称必须唯一（由验证器强制执行）",
+      "noAffiliate": "不允许联盟链接",
+      "maxDesc": "描述最多 200 个字符",
+      "pricing": "pricing 必须是：Free、Freemium、Paid 或 Open Source",
+      "url": "URL 必须是有效的 https:// 链接"
+    },
+    "copied": "已复制！"
+  },
+  "filter": {
+    "allPricing": "全部",
+    "free": "免费",
+    "freemium": "免费增值",
+    "paid": "付费",
+    "openSource": "开源",
+    "clearAll": "清除筛选",
+    "activeFilters": "{{count}} 个筛选"
+  }
+}
