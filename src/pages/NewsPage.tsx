@@ -10,38 +10,42 @@ const PAGE_SIZE = 20;
 
 // Display labels for known sources; unknown sources fall back to capitalised id
 const SOURCE_LABELS: Record<string, string> = {
+  // news
   hn: "HN",
-  producthunt: "Product Hunt",
   techcrunch: "TechCrunch",
   venturebeat: "VentureBeat",
   "mit-techreview": "MIT Tech Review",
-  wired: "Wired",
   zdnet: "ZDNet",
-  infoq: "InfoQ",
-  deepmind: "DeepMind",
   huggingface: "Hugging Face",
   theverge: "The Verge",
   arstechnica: "Ars Technica",
   "tldr-ai": "TLDR AI",
-  "reddit-ml": "r/MachineLearning",
-  "reddit-artificial": "r/artificial",
   analyticsvidhya: "Analytics Vidhya",
-  betalist: "BetaList",
+  towardsdatascience: "Towards Data Science",
+  thesequence: "The Sequence",
+  aisnakeoil: "AI Snake Oil",
+  // new tools
+  "rundown-ai": "The Rundown AI",
+  neuron: "The Neuron",
+  "import-ai": "Import AI",
+  lastweekinai: "Last Week in AI",
+  "launch-hn": "Launch HN",
 };
 
 const SOURCE_COLORS: Record<string, string> = {
   hn: "text-orange-400",
-  producthunt: "text-rose-400",
-  betalist: "text-purple-400",
   techcrunch: "text-accent-green",
   venturebeat: "text-blue-400",
   "mit-techreview": "text-red-400",
-  wired: "text-yellow-400",
-  deepmind: "text-cyan-400",
   huggingface: "text-amber-400",
   "tldr-ai": "text-indigo-400",
-  "reddit-ml": "text-orange-300",
-  "reddit-artificial": "text-orange-300",
+  thesequence: "text-violet-400",
+  // new tools
+  "rundown-ai": "text-cyan-400",
+  neuron: "text-pink-400",
+  "import-ai": "text-purple-400",
+  lastweekinai: "text-blue-400",
+  "launch-hn": "text-orange-400",
 };
 
 function sourceLabel(id: string) {

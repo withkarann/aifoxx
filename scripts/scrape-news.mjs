@@ -74,20 +74,6 @@ const RSS_SOURCES = [
     category: 'news',
   },
   {
-    id: 'reddit-ml',
-    label: 'r/MachineLearning',
-    url: 'https://www.reddit.com/r/MachineLearning.rss',
-    category: 'news',
-    atom: true,
-  },
-  {
-    id: 'reddit-artificial',
-    label: 'r/artificial',
-    url: 'https://www.reddit.com/r/artificial.rss',
-    category: 'news',
-    atom: true,
-  },
-  {
     id: 'analyticsvidhya',
     label: 'Analytics Vidhya',
     url: 'https://www.analyticsvidhya.com/feed/',
@@ -113,20 +99,31 @@ const RSS_SOURCES = [
     url: 'https://www.aisnakeoil.com/feed',
     category: 'news',
   },
-  // ── New Tools ─────────────────────────────────────────────────────────────
+  // ── New Tools (AI newsletters + launch boards) ────────────────────────────
   {
-    id: 'producthunt',
-    label: 'Product Hunt',
-    url: 'https://www.producthunt.com/feed',
+    id: 'rundown-ai',
+    label: 'The Rundown AI',
+    url: 'https://therundown.substack.com/feed',
     category: 'new-tool',
-    // no filter — PH feed is already curated product launches
+    // curated AI newsletter — keep all items
   },
   {
-    id: 'theresanaiforthat',
-    label: "There's An AI For That",
-    url: 'https://theresanaiforthat.com/rss/',
+    id: 'neuron',
+    label: 'The Neuron',
+    url: 'https://theneuron.substack.com/feed',
     category: 'new-tool',
-    atom: true,  // try Atom parsing
+  },
+  {
+    id: 'import-ai',
+    label: 'Import AI',
+    url: 'https://importai.substack.com/feed',
+    category: 'new-tool',
+  },
+  {
+    id: 'lastweekinai',
+    label: 'Last Week in AI',
+    url: 'https://lastweekinai.substack.com/feed',
+    category: 'new-tool',
   },
 ]
 
@@ -232,36 +229,18 @@ async function fetchHN() {
     }))
 }
 
-// Fetches "Show HN" posts — these are new tool/project launches by builders
-async function fetchShowHN() {
-  const queries = [
-    'Show+HN+AI',
-    'Show+HN+LLM',
-    'Show+HN+GPT',
-    'Show+HN+assistant',
-    'Show+HN+tool',
-  ]
-  const all = []
-  for (const q of queries) {
-    const url = `https://hn.algolia.com/api/v1/search?tags=show_hn,story&query=${q}&hitsPerPage=10`
-    try {
-      const data = JSON.parse(await fetchText(url))
-      all.push(...(data.hits || []).filter((h) => h.url && h.title))
-    } catch {
-      // skip failed query
-    }
-  }
-  // deduplicate within Show HN results
-  const seen = new Set()
-  return all
-    .filter((h) => { if (seen.has(h.objectID)) return false; seen.add(h.objectID); return true })
-    .slice(0, MAX_PER_SOURCE * 2)
+// "Launch HN" posts — official product launch announcements on Hacker News
+async function fetchLaunchHN() {
+  const url = `https://hn.algolia.com/api/v1/search?tags=story&query=%22Launch+HN%22&hitsPerPage=${MAX_PER_SOURCE}`
+  const data = JSON.parse(await fetchText(url))
+  return (data.hits || [])
+    .filter((h) => h.url && h.title && /^Launch HN:/i.test(h.title))
     .map((h) => ({
-      id: `show-hn-${h.objectID}`,
-      title: h.title.replace(/^Show HN:\s*/i, '').trim(),
+      id: `launch-hn-${h.objectID}`,
+      title: h.title.replace(/^Launch HN:\s*/i, '').trim(),
       url: h.url,
       domain: extractDomain(h.url),
-      source: 'show-hn',
+      source: 'launch-hn',
       category: 'new-tool',
       points: h.points ?? undefined,
       date: new Date(h.created_at_i * 1000).toISOString(),
@@ -312,7 +291,7 @@ async function main() {
   ]
 
   const toolSources = [
-    { id: 'show-hn', label: 'Show HN (new launches)', fetch: fetchShowHN },
+    { id: 'launch-hn', label: 'Launch HN', fetch: fetchLaunchHN },
     ...RSS_SOURCES.filter((s) => s.category === 'new-tool').map((s) => ({
       id: s.id, label: s.label, fetch: () => fetchRSSSource(s),
     })),
