@@ -1,0 +1,30 @@
+name: Scrape AI News
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 6am UTC daily
+  workflow_dispatch:        # allow manual trigger from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # needed to commit news.json back
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run news scraper
+        run: node scripts/scrape-news.mjs
+
+      - name: Commit updated news.json (if changed)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: daily news scrape [skip ci]'
+          file_pattern: 'src/data/news.json'
+          commit_user_name: 'AIFoxx Bot'
+          commit_user_email: 'bot@aifox.com'
