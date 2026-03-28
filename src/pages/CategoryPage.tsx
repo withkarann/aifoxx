@@ -6,6 +6,7 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { FilterBar } from "@/components/search/FilterBar";
 import { ToolCard } from "@/components/tools/ToolCard";
 import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { getCategoryIcon } from "@/lib/categoryIcons";
 import { CATEGORIES, matchesTaxonomyValue, normalizeTaxonomyValue } from "@/lib/tools";
@@ -46,6 +47,16 @@ export default function CategoryPage() {
         title={`${cat.name} AI Tools | ${Brand.product.name_styled}`}
         description={`Browse ${total} AI tools in the ${cat.name} category. Filter by subcategory and pricing.`}
         url={`https://${Brand.product.domain}/category/${category}`}
+      />
+      <JsonLd
+        id="collection-page"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": `${cat.name} AI Tools`,
+          "description": `Browse ${total} AI tools in the ${cat.name} category on AIFOXX.`,
+          "url": `https://${Brand.product.domain}/category/${category}`,
+        }}
       />
       <PageWrapper>
         <div className="space-y-5">

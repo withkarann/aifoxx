@@ -30,7 +30,7 @@
     "title_template":    "{page} | AIFOXX",
     "default_title":     "AIFOXX — Find the Right AI Tool",
     "default_description": "Browse 1000+ AI tools. Compare real pricing, compliance certifications, and access methods.",
-    "og_image":          "/og-image.png",
+    "og_image":          "/aifoxx.png",
     "twitter_card":      "summary_large_image"
   },
   "nav": {

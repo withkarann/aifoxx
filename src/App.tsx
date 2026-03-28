@@ -1,46 +1,36 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { RootLayout } from "@/components/layout/RootLayout";
+import { ThemeProvider } from "@/contexts/ThemeContext";
+import { queryClient } from "@/lib/queryClient";
 import { useScrollToTop } from "@/hooks/useScrollToTop";
-import HomePage from "./pages/HomePage";
-import ToolDetailPage from "./pages/ToolDetailPage";
-import CategoryPage from "./pages/CategoryPage";
-import TagPage from "./pages/TagPage";
-import SubmitPage from "./pages/SubmitPage";
-import SkillsPage from "./pages/SkillsPage";
-import McpServersPage from "./pages/McpServersPage";
-import NewsPage from "./pages/NewsPage";
-import NotFoundPage from "./pages/NotFoundPage";
 
-function AppRoutes() {
+function AppContent() {
   useScrollToTop();
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/ai/:slug" element={<ToolDetailPage />} />
-      <Route path="/category/:category" element={<CategoryPage />} />
-      <Route path="/tag/:tag" element={<TagPage />} />
-      <Route path="/submit" element={<SubmitPage />} />
-      <Route path="/skills" element={<SkillsPage />} />
-      <Route path="/mcp" element={<McpServersPage />} />
-      <Route path="/news" element={<NewsPage />} />
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
+    <RootLayout>
+      <Outlet />
+    </RootLayout>
   );
 }
 
-const App = () => (
-  <TooltipProvider>
-    <Toaster />
-    <Sonner />
-    <BrowserRouter>
-      <RootLayout>
-        <AppRoutes />
-      </RootLayout>
-    </BrowserRouter>
-  </TooltipProvider>
-);
-
-export default App;
+export default function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <AppContent />
+          <Analytics />
+          <SpeedInsights />
+        </TooltipProvider>
+      </ThemeProvider>
+    </QueryClientProvider>
+  );
+}

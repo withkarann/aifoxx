@@ -10,7 +10,21 @@ import { ToolCard } from "@/components/tools/ToolCard";
 import { ToolCardSkeleton } from "@/components/ui/ToolCardSkeleton";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AIFOXX",
+  "url": `https://${Brand.product.domain}`,
+  "description": Brand.product.description,
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": `https://${Brand.product.domain}/?search={search_term_string}`,
+    "query-input": "required name=search_term_string",
+  },
+};
 
 const featuredTools = allTools.filter((t) => t.featured);
 const TOOLS_PER_PAGE = 12;
@@ -155,6 +169,7 @@ export default function HomePage() {
         description={`Browse 1000+ AI tools by category, use case, and pricing. Open source directory.`}
         url={`https://${Brand.product.domain}`}
       />
+      <JsonLd schema={websiteSchema} id="website" />
 
       {/* HERO */}
       <section

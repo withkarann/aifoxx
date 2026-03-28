@@ -6,6 +6,8 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PricingBadge } from "@/components/tools/PricingBadge";
 import { ToolCard } from "@/components/tools/ToolCard";
 import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { normalizeTaxonomyValue } from "@/lib/tools";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { DataStatus } from "@/components/ui/DataStatus";
 import Brand from "@/lib/brand";
@@ -53,6 +55,33 @@ export default function ToolDetailPage() {
         title={`${tool.name} | ${Brand.product.name_styled}`}
         description={tool.description}
         url={`https://${Brand.product.domain}/ai/${tool.slug}`}
+      />
+      <JsonLd
+        id="software-app"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": tool.name,
+          "description": tool.description,
+          "url": tool.url,
+          "applicationCategory": tool.category,
+          "operatingSystem": "Web",
+          ...(tool.pricing !== "Paid" && {
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          }),
+        }}
+      />
+      <JsonLd
+        id="breadcrumb"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://${Brand.product.domain}` },
+            { "@type": "ListItem", "position": 2, "name": tool.category, "item": `https://${Brand.product.domain}/category/${normalizeTaxonomyValue(tool.category)}` },
+            { "@type": "ListItem", "position": 3, "name": tool.name, "item": `https://${Brand.product.domain}/ai/${tool.slug}` },
+          ],
+        }}
       />
       <PageWrapper>
         <div className="space-y-6">

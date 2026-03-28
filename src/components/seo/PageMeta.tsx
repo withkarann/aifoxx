@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import Brand from "@/lib/brand";
+import { Head } from "vite-react-ssg";
 
 interface PageMetaProps {
   title: string;
@@ -9,45 +8,18 @@ interface PageMetaProps {
 }
 
 export function PageMeta({ title, description, url, image }: PageMetaProps) {
-  useEffect(() => {
-    document.title = title;
-
-    const setMeta = (attr: string, key: string, content: string) => {
-      let el = document.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement | null;
-      if (!el) {
-        el = document.createElement("meta");
-        el.setAttribute(attr, key);
-        document.head.appendChild(el);
-      }
-      el.setAttribute("content", content);
-    };
-
-    setMeta("name", "description", description);
-    setMeta("property", "og:title", title);
-    setMeta("property", "og:description", description);
-    setMeta("property", "og:type", "website");
-    setMeta("name", "twitter:card", "summary_large_image");
-
-    if (url) {
-      setMeta("property", "og:url", url);
-      let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-      if (!canonical) {
-        canonical = document.createElement("link");
-        canonical.setAttribute("rel", "canonical");
-        document.head.appendChild(canonical);
-      }
-      canonical.setAttribute("href", url);
-    }
-
-    if (image) {
-      setMeta("property", "og:image", image);
-      setMeta("name", "twitter:image", image);
-    }
-
-    return () => {
-      document.title = Brand.product.name_styled;
-    };
-  }, [title, description, url, image]);
-
-  return null;
+  return (
+    <Head>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      {url && <link rel="canonical" href={url} />}
+      {url && <meta property="og:url" content={url} />}
+      {image && <meta property="og:image" content={image} />}
+      {image && <meta name="twitter:image" content={image} />}
+    </Head>
+  );
 }
