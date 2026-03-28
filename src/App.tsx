@@ -11,6 +11,7 @@ import TagPage from "./pages/TagPage";
 import SubmitPage from "./pages/SubmitPage";
 import SkillsPage from "./pages/SkillsPage";
 import McpServersPage from "./pages/McpServersPage";
+import NewsPage from "./pages/NewsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 function AppRoutes() {
@@ -24,6 +25,7 @@ function AppRoutes() {
       <Route path="/submit" element={<SubmitPage />} />
       <Route path="/skills" element={<SkillsPage />} />
       <Route path="/mcp" element={<McpServersPage />} />
+      <Route path="/news" element={<NewsPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

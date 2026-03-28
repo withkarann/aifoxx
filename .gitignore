@@ -40,6 +40,7 @@ dist-ssr
 
 # Claude Code local-only settings
 .claude/settings.local.json
+.mcp.json
 
 # Local cert/key material
 *.pem
