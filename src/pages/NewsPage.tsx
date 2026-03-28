@@ -105,7 +105,7 @@ export default function NewsPage() {
             Today in AI
           </h1>
           <p className="font-mono text-sm text-text-secondary max-w-lg">
-            {NEWS_COUNTS.total} stories — curated daily from HN, VentureBeat, TechCrunch, Wired&nbsp;&amp;&nbsp;more.
+            AI news updates and AI tool releases.
           </p>
         </div>
       </section>
