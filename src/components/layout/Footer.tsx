@@ -1,5 +1,6 @@
 import { Github } from "lucide-react";
 import Brand from "@/lib/brand";
+import { CRTOverlay } from "@/components/ui/CRTOverlay";
 
 export function Footer() {
   return (
@@ -69,6 +70,7 @@ export function Footer() {
           </a>
           <span>MIT License</span>
           <span>v{Brand.product.version}</span>
+          <CRTOverlay />
         </div>
       </div>
     </footer>

@@ -2,7 +2,6 @@ import { type ReactNode } from "react";
 import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
 import { MobileTabBar } from "./MobileTabBar";
-import { CRTOverlay } from "@/components/ui/CRTOverlay";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -17,7 +16,6 @@ export function RootLayout({ children }: RootLayoutProps) {
       </main>
       <Footer />
       <MobileTabBar />
-      <CRTOverlay />
     </div>
   );
 }
