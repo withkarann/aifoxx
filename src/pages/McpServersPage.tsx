@@ -4,6 +4,7 @@ import { Github, Star, ExternalLink } from "lucide-react";
 import { allMcpServers, searchMcpServers, SKILL_COUNTS } from "@/lib/skills";
 import { type Skill } from "@/types/skill";
 import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
 
 const SKILLS_PER_PAGE = 18;
@@ -74,6 +75,23 @@ export default function McpServersPage() {
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
 
+  const schema = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "MCP Servers",
+    "description": `Browse ${SKILL_COUNTS.mcpServers} Model Context Protocol servers on AIFOXX.`,
+    "url": `https://${Brand.product.domain}/mcp`,
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": allMcpServers.slice(0, 30).map((skill, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": skill.name,
+        "url": skill.github_url,
+      })),
+    },
+  }), []);
+
   const filtered = useMemo(() => {
     return query.trim() ? searchMcpServers(query) : allMcpServers;
   }, [query]);
@@ -93,7 +111,9 @@ export default function McpServersPage() {
         title={`MCP Servers — Model Context Protocol Integrations | ${Brand.product.name_styled}`}
         description={`Browse ${SKILL_COUNTS.mcpServers} MCP servers: connect Claude to tools, APIs, and data sources via Model Context Protocol.`}
         url={`https://${Brand.product.domain}/mcp`}
+        keywords={["MCP servers", "Model Context Protocol", "Claude MCP", "AI tool integrations"]}
       />
+      <JsonLd schema={schema} id="mcp-collection" />
 
       {/* Hero */}
       <section className="py-14 text-center px-4 border-b border-border-muted/30 bg-bg-surface">
@@ -105,7 +125,7 @@ export default function McpServersPage() {
             MCP Servers
           </h1>
           <p className="font-mono text-sm text-text-secondary max-w-lg">
-            {SKILL_COUNTS.mcpServers} GitHub repos — connect Claude to tools, APIs, and data sources via Model Context Protocol. Ranked by stars.
+            Connect Claude to any tool, API, or data source via Model Context Protocol. Ranked by stars.
           </p>
         </div>
 

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Head } from "vite-react-ssg";
 import Brand from "@/lib/brand";
 
 interface PageMetaProps {
@@ -6,48 +6,45 @@ interface PageMetaProps {
   description: string;
   url?: string;
   image?: string;
+  type?: "website" | "article";
+  robots?: string;
+  keywords?: string[];
 }
 
-export function PageMeta({ title, description, url, image }: PageMetaProps) {
-  useEffect(() => {
-    document.title = title;
+function toAbsoluteUrl(input: string) {
+  if (/^https?:\/\//i.test(input)) {
+    return input;
+  }
 
-    const setMeta = (attr: string, key: string, content: string) => {
-      let el = document.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement | null;
-      if (!el) {
-        el = document.createElement("meta");
-        el.setAttribute(attr, key);
-        document.head.appendChild(el);
-      }
-      el.setAttribute("content", content);
-    };
+  const path = input.startsWith("/") ? input : `/${input}`;
+  return `https://${Brand.product.domain}${path}`;
+}
 
-    setMeta("name", "description", description);
-    setMeta("property", "og:title", title);
-    setMeta("property", "og:description", description);
-    setMeta("property", "og:type", "website");
-    setMeta("name", "twitter:card", "summary_large_image");
+export function PageMeta({ title, description, url, image, type = "website", robots, keywords }: PageMetaProps) {
+  const canonicalUrl = url ? toAbsoluteUrl(url) : undefined;
+  const socialImage = toAbsoluteUrl(image ?? Brand.seo?.og_image ?? "/aifoxx.png");
 
-    if (url) {
-      setMeta("property", "og:url", url);
-      let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-      if (!canonical) {
-        canonical = document.createElement("link");
-        canonical.setAttribute("rel", "canonical");
-        document.head.appendChild(canonical);
-      }
-      canonical.setAttribute("href", url);
-    }
+  return (
+    <Head>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      {keywords && keywords.length > 0 && <meta name="keywords" content={keywords.join(", ")} />}
+      {robots && <meta name="robots" content={robots} />}
 
-    if (image) {
-      setMeta("property", "og:image", image);
-      setMeta("name", "twitter:image", image);
-    }
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content={type} />
+      <meta property="og:site_name" content={Brand.product.name_styled} />
+      <meta property="og:locale" content="en_US" />
 
-    return () => {
-      document.title = Brand.product.name_styled;
-    };
-  }, [title, description, url, image]);
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
 
-  return null;
+      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+      <meta property="og:image" content={socialImage} />
+      <meta name="twitter:image" content={socialImage} />
+    </Head>
+  );
 }

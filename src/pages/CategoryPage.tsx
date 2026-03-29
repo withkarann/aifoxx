@@ -6,6 +6,7 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { FilterBar } from "@/components/search/FilterBar";
 import { ToolCard } from "@/components/tools/ToolCard";
 import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { getCategoryIcon } from "@/lib/categoryIcons";
 import { CATEGORIES, matchesTaxonomyValue, normalizeTaxonomyValue } from "@/lib/tools";
@@ -18,7 +19,7 @@ export default function CategoryPage() {
   const cat = CATEGORIES.find((c) => matchesTaxonomyValue(c.name, categoryKey));
 
   const { filters, setFilter, clearFilters, activeFilterCount } = useToolFilters();
-  const [, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const filtersWithCategory = useMemo(() => ({
     ...filters,
@@ -31,6 +32,7 @@ export default function CategoryPage() {
 
   const color = getCategoryColor(cat.name);
   const activeSub = filters.subcategory || "";
+  const hasSeoQueryParams = searchParams.toString().length > 0;
 
   const handleSubChange = (sub: string) => {
     setSearchParams((prev) => {
@@ -45,7 +47,18 @@ export default function CategoryPage() {
       <PageMeta
         title={`${cat.name} AI Tools | ${Brand.product.name_styled}`}
         description={`Browse ${total} AI tools in the ${cat.name} category. Filter by subcategory and pricing.`}
-        url={`https://${Brand.product.domain}/category/${category}`}
+        url={`https://${Brand.product.domain}/category/${categoryKey}`}
+        robots={hasSeoQueryParams ? "noindex, follow" : undefined}
+      />
+      <JsonLd
+        id="collection-page"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": `${cat.name} AI Tools`,
+          "description": `Browse ${total} AI tools in the ${cat.name} category on AIFOXX.`,
+          "url": `https://${Brand.product.domain}/category/${categoryKey}`,
+        }}
       />
       <PageWrapper>
         <div className="space-y-5">

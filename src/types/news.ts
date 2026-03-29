@@ -9,6 +9,7 @@ export interface NewsItem {
   source: NewsSource
   category: NewsCategory
   points?: number
-  date: string  // ISO 8601
-  age: string   // pre-computed at scrape time, e.g. "3h ago"
+  date: string    // ISO 8601
+  age: string     // pre-computed at scrape time, e.g. "3h ago"
+  score?: number  // relevance score (higher = more AI-relevant)
 }

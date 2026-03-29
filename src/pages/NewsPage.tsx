@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { ExternalLink } from "lucide-react";
-import { allNews, getNewsByCategory, NEWS_COUNTS } from "@/lib/news";
+import { getNewsByCategory, NEWS_COUNTS } from "@/lib/news";
 import { type NewsCategory } from "@/types/news";
 import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
 import { cn } from "@/lib/utils";
 
@@ -77,6 +78,24 @@ const TABS: { id: Tab; label: string }[] = [
 export default function NewsPage() {
   const [tab, setTab] = useState<Tab>("all");
   const [visible, setVisible] = useState(PAGE_SIZE);
+  const allItems = useMemo(() => getNewsByCategory("all"), []);
+
+  const newsSchema = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Today in AI",
+    "description": `Latest AI news and new tools from ${NEWS_COUNTS.total} curated stories on AIFOXX.`,
+    "url": `https://${Brand.product.domain}/news`,
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": allItems.slice(0, 30).map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": item.title,
+        "url": item.url,
+      })),
+    },
+  }), [allItems]);
 
   const items = getNewsByCategory(tab === "all" ? "all" : tab);
   const shown = items.slice(0, visible);
@@ -93,13 +112,15 @@ export default function NewsPage() {
         title={`AI News — Today in AI | ${Brand.product.name_styled}`}
         description={`Latest AI news and new tool releases. Curated daily from ${NEWS_COUNTS.total} stories across HN, VentureBeat, TechCrunch, Wired and more.`}
         url={`https://${Brand.product.domain}/news`}
+        keywords={["AI news", "new AI tools", "AI releases", "today in AI"]}
       />
+      <JsonLd schema={newsSchema} id="news-collection" />
 
       {/* Hero */}
       <section className="py-14 text-center px-4 border-b border-border-muted/30 bg-bg-surface">
         <div className="flex flex-col items-center gap-3">
           <span className="font-mono text-[10px] tracking-widest text-accent-green border border-accent-green/30 px-3 py-1 rounded-[3px]">
-            AI NEWS
+            AI UPDATES
           </span>
           <h1 className="font-display font-black text-4xl md:text-5xl text-text-primary tracking-tight">
             Today in AI
@@ -125,11 +146,6 @@ export default function NewsPage() {
               )}
             >
               {label}
-              {id !== "all" && (
-                <span className="ml-1.5 opacity-50">
-                  ({id === "news" ? NEWS_COUNTS.news : NEWS_COUNTS.newTools})
-                </span>
-              )}
             </button>
           ))}
         </div>

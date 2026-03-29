@@ -10,7 +10,29 @@ import { ToolCard } from "@/components/tools/ToolCard";
 import { ToolCardSkeleton } from "@/components/ui/ToolCardSkeleton";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AIFOXX",
+  "url": `https://${Brand.product.domain}`,
+  "description": Brand.product.description,
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": `https://${Brand.product.domain}/?search={search_term_string}`,
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": Brand.product.name_styled,
+  "url": `https://${Brand.product.domain}`,
+  "sameAs": [Brand.product.repo],
+};
 
 const featuredTools = allTools.filter((t) => t.featured);
 const TOOLS_PER_PAGE = 12;
@@ -42,6 +64,11 @@ export default function HomePage() {
   }, [searchParams]);
 
   const totalPages = Math.max(1, Math.ceil(total / TOOLS_PER_PAGE));
+
+  const hasSeoQueryParams = useMemo(() => {
+    const seoParams = ["search", "category", "subcategory", "pricing", "tag", "page"];
+    return seoParams.some((key) => searchParams.has(key));
+  }, [searchParams]);
 
   const setPage = useCallback(
     (page: number) => {
@@ -154,7 +181,17 @@ export default function HomePage() {
         title={`${Brand.product.name_styled} — 1000+ AI Tools Directory`}
         description={`Browse 1000+ AI tools by category, use case, and pricing. Open source directory.`}
         url={`https://${Brand.product.domain}`}
+        robots={hasSeoQueryParams ? "noindex, follow" : undefined}
+        keywords={[
+          "AI tools directory",
+          "best AI tools",
+          "AI software comparison",
+          "AI tools pricing",
+          "AI compliance",
+        ]}
       />
+      <JsonLd schema={websiteSchema} id="website" />
+      <JsonLd schema={organizationSchema} id="organization" />
 
       {/* HERO */}
       <section

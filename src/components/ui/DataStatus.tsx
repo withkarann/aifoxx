@@ -38,8 +38,6 @@ export function DataStatus({ value, type = "badge" }: DataStatusProps) {
   }
 
   return (
-    <span className="font-mono text-[10px] text-[var(--text-muted)] border border-dashed border-[var(--border-dim)] px-1.5 py-0.5 rounded-[3px]">
-      // not yet
-    </span>
+    <span className="font-mono text-sm text-[var(--text-muted)]">—</span>
   );
 }

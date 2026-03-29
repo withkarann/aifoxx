@@ -145,4 +145,4 @@ Found a vulnerability? See [SECURITY.md](SECURITY.md). **Don't open a public iss
 
 ## 📜 License
 
-[MIT](LICENSE) © 2026 [Karan Rajeshbhai Mungara](https://github.com/withkarann) & [Aanjaneya Singh Dhoni](https://github.com/dhoniaanjaneya)
+[MIT](LICENSE) © 2026 [Karan Rajeshbhai Mungara](https://github.com/withkarann) & [Aanjaneya Singh Dhoni](https://github.com/aanjaneyasinghdhoni)
