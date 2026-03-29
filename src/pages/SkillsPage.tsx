@@ -4,6 +4,7 @@ import { Github, Star, ExternalLink } from "lucide-react";
 import { allClaudeCodeSkills, searchClaudeCodeSkills, SKILL_COUNTS } from "@/lib/skills";
 import { type Skill } from "@/types/skill";
 import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
 
 const SKILLS_PER_PAGE = 18;
@@ -74,6 +75,23 @@ export default function SkillsPage() {
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
 
+  const schema = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Claude Code Skills",
+    "description": `Browse ${SKILL_COUNTS.claudeCodeSkills} Claude Code skills and GitHub integrations on AIFOXX.`,
+    "url": `https://${Brand.product.domain}/skills`,
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": allClaudeCodeSkills.slice(0, 30).map((skill, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": skill.name,
+        "url": skill.github_url,
+      })),
+    },
+  }), []);
+
   const filtered = useMemo(() => {
     return query.trim() ? searchClaudeCodeSkills(query) : allClaudeCodeSkills;
   }, [query]);
@@ -90,22 +108,24 @@ export default function SkillsPage() {
   return (
     <>
       <PageMeta
-        title={`Claude Code Skills — GitHub Integrations | ${Brand.product.name_styled}`}
+        title={`Skills — Claude Code Integrations | ${Brand.product.name_styled}`}
         description={`Browse ${SKILL_COUNTS.claudeCodeSkills} Claude Code skills: hooks, commands, and GitHub integrations ranked by stars.`}
         url={`https://${Brand.product.domain}/skills`}
+        keywords={["Claude Code skills", "Claude integrations", "AI coding workflows", "GitHub AI tools"]}
       />
+      <JsonLd schema={schema} id="skills-collection" />
 
       {/* Hero */}
       <section className="py-14 text-center px-4 border-b border-border-muted/30 bg-bg-surface">
         <div className="flex flex-col items-center gap-3">
           <span className="font-mono text-[10px] tracking-widest text-accent-green border border-accent-green/30 px-3 py-1 rounded-[3px]">
-            CLAUDE CODE SKILLS
+            CLAUDE SKILLS
           </span>
           <h1 className="font-display font-black text-4xl md:text-5xl text-text-primary tracking-tight">
-            Claude Code Skills
+            Skills
           </h1>
           <p className="font-mono text-sm text-text-secondary max-w-lg">
-            {SKILL_COUNTS.claudeCodeSkills} GitHub repos — hooks, slash commands, and Claude Code integrations. Ranked by stars.
+            Extend Claude with community-built hooks, slash commands, and integrations. Ranked by stars.
           </p>
         </div>
 

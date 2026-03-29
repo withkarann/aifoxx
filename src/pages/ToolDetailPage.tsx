@@ -11,16 +11,59 @@ import { normalizeTaxonomyValue } from "@/lib/tools";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { DataStatus } from "@/components/ui/DataStatus";
 import Brand from "@/lib/brand";
+import type { Skill } from "@/types/skill";
 
-function ComplianceBadge({ value }: { value: boolean | null | undefined }) {
-  if (value === null || value === undefined) {
-    return <span className="font-mono text-[10px] text-[var(--text-muted)] border border-dashed border-[var(--border-dim)] px-1.5 py-0.5 rounded-[3px]">?</span>;
-  }
-  if (value) {
-    return <span className="font-mono text-[10px] text-[var(--accent-green)] border border-[var(--accent-green)]/30 bg-[var(--accent-green)]/10 px-1.5 py-0.5 rounded-[3px]">✓</span>;
-  }
-  return <span className="font-mono text-[10px] text-[var(--accent-red)] border border-[var(--accent-red)]/30 bg-[var(--accent-red)]/10 px-1.5 py-0.5 rounded-[3px]">✗</span>;
+const SKILLS_PER_PAGE = 6;
+
+function SkillsSection({ skills }: { skills: Skill[] }) {
+  const shown = skills.slice(0, SKILLS_PER_PAGE);
+
+  return (
+    <section className="mt-8 space-y-3">
+      <div className="h-px w-full" style={{ background: `linear-gradient(to right, var(--accent-green), transparent)` }} />
+      <p className="font-mono text-xs text-text-muted tracking-widest">// CLAUDE SKILLS</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {shown.map((skill) => (
+          <div key={skill.id} className="relative overflow-hidden bg-bg-surface border border-border-default rounded-[6px] p-3 flex flex-col gap-2 hover:border-accent-green/50 transition-all duration-150">
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-accent-green opacity-40" />
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2 min-w-0">
+                <Github size={12} className="text-text-muted shrink-0" />
+                <span className="font-display font-black text-sm text-text-primary truncate">{skill.name}</span>
+              </div>
+              <div className="flex items-center gap-1 shrink-0 font-mono text-[10px] text-accent-green border border-accent-green/40 px-1.5 py-0.5 rounded-[3px]">
+                <Star size={9} className="fill-accent-green" />
+                {skill.stars.toLocaleString()}
+              </div>
+            </div>
+            {skill.description && (
+              <p className="font-mono text-xs text-text-secondary line-clamp-2">{skill.description}</p>
+            )}
+            <div className="flex items-center justify-between pt-1 border-t border-border-dim">
+              <span className="font-mono text-[10px] text-text-muted border border-border-dim px-1.5 py-0.5 rounded-[3px]">
+                {skill.skill_type === "mcp-server" ? "MCP Server" : "Claude Code"}
+              </span>
+              <a
+                href={skill.github_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 font-mono text-[10px] text-accent-green hover:underline"
+              >
+                <ExternalLink size={10} />
+                GitHub
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <Link to="/skills" className="font-mono text-xs text-text-muted hover:text-accent-green transition-colors">
+        &gt; Browse all Claude skills →
+      </Link>
+    </section>
+  );
 }
+
 
 export default function ToolDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -29,7 +72,11 @@ export default function ToolDetailPage() {
   if (!tool) {
     return (
       <>
-        <PageMeta title={`Tool Not Found | ${Brand.product.name_styled}`} description="The requested AI tool was not found." />
+        <PageMeta
+          title={`Tool Not Found | ${Brand.product.name_styled}`}
+          description="The requested AI tool was not found. Browse verified AI tools by category on AIFOXX."
+          robots="noindex, nofollow"
+        />
         <div className="flex-1 flex items-start justify-center px-4">
           <div className="bg-bg-elevated border border-border-default rounded-[6px] p-8 max-w-lg w-full mt-16 font-mono space-y-2">
             <p className="text-accent-red font-black">&gt; ERROR_404: TOOL_NOT_FOUND</p>
@@ -48,13 +95,69 @@ export default function ToolDetailPage() {
   const compliance = tool.compliance;
   const dataStorage = tool.data_storage;
   const pricingDetail = tool.pricing_detail;
+  const pageUrl = `https://${Brand.product.domain}/ai/${tool.slug}`;
+
+  const verifiedCompliance = (["soc2", "iso27001", "gdpr", "hipaa"] as const)
+    .filter((key) => compliance?.[key])
+    .map((key) => key.toUpperCase());
+
+  const hasApiAccess = tool.access_methods?.some((method) => method.toLowerCase().includes("api"));
+  const hasFreeOffer = tool.pricing === "Free" || tool.pricing === "Freemium" || tool.pricing === "Open Source";
+
+  const seoDescription = `${tool.description} Pricing: ${tool.pricing}. Category: ${tool.category}.`;
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `Is ${tool.name} free?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": tool.pricing === "Free" || tool.pricing === "Freemium"
+            ? `${tool.name} has ${tool.pricing.toLowerCase()} pricing.`
+            : `${tool.name} is listed with ${tool.pricing.toLowerCase()} pricing.`,
+        },
+      },
+      {
+        "@type": "Question",
+        "name": `Does ${tool.name} offer API access?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": hasApiAccess
+            ? `${tool.name} includes API access.`
+            : `${tool.name} does not list API access in its current access methods.`,
+        },
+      },
+      {
+        "@type": "Question",
+        "name": `What compliance standards does ${tool.name} support?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": verifiedCompliance.length > 0
+            ? `${tool.name} is marked as compliant with ${verifiedCompliance.join(", ")}.`
+            : `${tool.name} does not currently list verified compliance certifications in this directory entry.`,
+        },
+      },
+    ],
+  };
 
   return (
     <>
       <PageMeta
-        title={`${tool.name} | ${Brand.product.name_styled}`}
-        description={tool.description}
-        url={`https://${Brand.product.domain}/ai/${tool.slug}`}
+        title={`${tool.name} Pricing, Compliance & Use Cases | ${Brand.product.name_styled}`}
+        description={seoDescription}
+        url={pageUrl}
+        type="article"
+        image={tool.logo_url}
+        keywords={[
+          `${tool.name} pricing`,
+          `${tool.name} compliance`,
+          `${tool.name} use cases`,
+          tool.category,
+          tool.subcategory,
+        ]}
       />
       <JsonLd
         id="software-app"
@@ -62,11 +165,13 @@ export default function ToolDetailPage() {
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
           "name": tool.name,
-          "description": tool.description,
-          "url": tool.url,
+          "description": seoDescription,
+          "url": pageUrl,
+          "sameAs": tool.url,
           "applicationCategory": tool.category,
           "operatingSystem": "Web",
-          ...(tool.pricing !== "Paid" && {
+          "keywords": tool.tags.join(", "),
+          ...(hasFreeOffer && {
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
           }),
         }}
@@ -79,10 +184,11 @@ export default function ToolDetailPage() {
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://${Brand.product.domain}` },
             { "@type": "ListItem", "position": 2, "name": tool.category, "item": `https://${Brand.product.domain}/category/${normalizeTaxonomyValue(tool.category)}` },
-            { "@type": "ListItem", "position": 3, "name": tool.name, "item": `https://${Brand.product.domain}/ai/${tool.slug}` },
+            { "@type": "ListItem", "position": 3, "name": tool.name, "item": pageUrl },
           ],
         }}
       />
+      <JsonLd id="tool-faq" schema={faqSchema} />
       <PageWrapper>
         <div className="space-y-6">
           {/* Breadcrumbs */}
@@ -153,7 +259,6 @@ export default function ToolDetailPage() {
             {[
               { label: "Category", value: tool.category, colored: true },
               { label: "Subcategory", value: tool.subcategory, colored: false },
-              { label: "Pricing", value: tool.pricing, colored: false },
             ].map((cell) => (
               <div key={cell.label} className="bg-bg-surface border border-border-default rounded-[6px] p-3">
                 <p className="font-mono text-xs text-text-muted uppercase tracking-widest">{cell.label}</p>
@@ -186,14 +291,26 @@ export default function ToolDetailPage() {
           {/* Compliance */}
           <section className="space-y-2">
             <p className="font-mono text-xs text-text-muted tracking-widest">// COMPLIANCE</p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {(["soc2", "iso27001", "gdpr", "hipaa"] as const).map((key) => (
-                <div key={key} className="bg-bg-surface border border-border-default rounded-[6px] p-3 flex items-center justify-between">
-                  <span className="font-mono text-xs text-text-muted uppercase">{key}</span>
-                  <ComplianceBadge value={compliance?.[key] ?? null} />
-                </div>
-              ))}
+            <div className="flex flex-wrap gap-2">
+              {(["soc2", "iso27001", "gdpr", "hipaa"] as const).map((key) => {
+                const val = compliance?.[key] ?? null;
+                const certified = val === true;
+                return (
+                  <span
+                    key={key}
+                    className={`inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1 rounded-full border transition-colors duration-150 ${
+                      certified
+                        ? "bg-accent-green/10 border-accent-green/35 text-accent-green"
+                        : "bg-transparent border-dashed border-border-dim text-text-muted opacity-40"
+                    }`}
+                  >
+                    <span className="text-[10px]">{certified ? "●" : "○"}</span>
+                    {key.toUpperCase()}
+                  </span>
+                );
+              })}
             </div>
+            <p className="font-mono text-[10px] text-text-muted">● certified · ○ not verified</p>
           </section>
 
           {/* Data Storage */}
@@ -202,25 +319,19 @@ export default function ToolDetailPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div className="bg-bg-surface border border-border-default rounded-[6px] p-3">
                 <p className="font-mono text-xs text-text-muted">Region</p>
-                <div className="mt-1">{dataStorage?.region ? <span className="font-mono text-sm text-text-primary">{dataStorage.region}</span> : <DataStatus value={dataStorage?.region} />}</div>
+                <p className="font-mono text-sm text-text-primary mt-1">{dataStorage?.region ?? <DataStatus value={null} />}</p>
               </div>
-              <div className="bg-bg-surface border border-border-default rounded-[6px] p-3">
+              <div className={`border rounded-[6px] p-3 ${dataStorage?.trains_on_data === true ? "bg-accent-red/5 border-accent-red/30" : dataStorage?.trains_on_data === false ? "bg-accent-green/5 border-accent-green/30" : "bg-bg-surface border-border-default"}`}>
                 <p className="font-mono text-xs text-text-muted">Trains on Data</p>
-                <div className="mt-1">
-                  {dataStorage?.trains_on_data === null || dataStorage?.trains_on_data === undefined
-                    ? <DataStatus value={dataStorage?.trains_on_data} />
-                    : <span className={`font-mono text-sm ${dataStorage.trains_on_data ? "text-[var(--accent-red)]" : "text-[var(--accent-green)]"}`}>{dataStorage.trains_on_data ? "Yes" : "No"}</span>
-                  }
-                </div>
+                <p className={`font-mono text-sm mt-1 ${dataStorage?.trains_on_data === true ? "text-accent-red" : dataStorage?.trains_on_data === false ? "text-accent-green" : "text-text-primary"}`}>
+                  {dataStorage?.trains_on_data === null || dataStorage?.trains_on_data === undefined ? <DataStatus value={null} /> : dataStorage.trains_on_data ? "Yes" : "No"}
+                </p>
               </div>
-              <div className="bg-bg-surface border border-border-default rounded-[6px] p-3">
+              <div className={`border rounded-[6px] p-3 ${dataStorage?.self_hostable === true ? "bg-accent-green/5 border-accent-green/30" : "bg-bg-surface border-border-default"}`}>
                 <p className="font-mono text-xs text-text-muted">Self-hostable</p>
-                <div className="mt-1">
-                  {dataStorage?.self_hostable === null || dataStorage?.self_hostable === undefined
-                    ? <DataStatus value={dataStorage?.self_hostable} />
-                    : <span className={`font-mono text-sm ${dataStorage.self_hostable ? "text-[var(--accent-green)]" : "text-[var(--text-muted)]"}`}>{dataStorage.self_hostable ? "Yes" : "No"}</span>
-                  }
-                </div>
+                <p className={`font-mono text-sm mt-1 ${dataStorage?.self_hostable === true ? "text-accent-green" : "text-text-primary"}`}>
+                  {dataStorage?.self_hostable === null || dataStorage?.self_hostable === undefined ? <DataStatus value={null} /> : dataStorage.self_hostable ? "Yes" : "No"}
+                </p>
               </div>
             </div>
           </section>
@@ -247,36 +358,6 @@ export default function ToolDetailPage() {
             </div>
           </section>
 
-          {/* Use Cases */}
-          <section className="space-y-2">
-            <p className="font-mono text-xs text-text-muted tracking-widest">// USE CASES</p>
-            {!tool.use_cases || tool.use_cases.length === 0 ? (
-              <DataStatus value={tool.use_cases} type="block" />
-            ) : (
-              <div className="flex flex-wrap gap-2">
-                {tool.use_cases.map((uc) => (
-                  <span key={uc} className="font-mono text-xs px-2.5 py-1 rounded-[3px] border border-[var(--border-default)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">
-                    {uc}
-                  </span>
-                ))}
-              </div>
-            )}
-          </section>
-
-          {/* Tags */}
-          <div className="flex flex-wrap gap-2 mt-4">
-            {tool.tags.map((tag) => (
-              <Link
-                key={tag}
-                to={`/tag/${tag}`}
-                className="tag-pill-link inline-flex items-center text-xs font-mono px-2.5 py-1 rounded-[3px] transition-colors duration-150 whitespace-nowrap"
-                style={{ "--cat-accent": color.accent, "--cat-text": color.text } as React.CSSProperties}
-              >
-                #{tag}
-              </Link>
-            ))}
-          </div>
-
           {/* CTA */}
           <a
             href={tool.url}
@@ -291,49 +372,7 @@ export default function ToolDetailPage() {
           </a>
 
           {/* Claude Skills */}
-          {skills.length > 0 && (
-            <section className="mt-8 space-y-3">
-              <div className="h-px w-full" style={{ background: `linear-gradient(to right, var(--accent-green), transparent)` }} />
-              <p className="font-mono text-xs text-text-muted tracking-widest">// CLAUDE SKILLS</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {skills.map((skill) => (
-                  <div key={skill.id} className="relative overflow-hidden bg-bg-surface border border-border-default rounded-[6px] p-3 flex flex-col gap-2 hover:border-accent-green/50 transition-all duration-150">
-                    <div className="absolute top-0 left-0 right-0 h-[2px] bg-accent-green opacity-40" />
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-2 min-w-0">
-                        <Github size={12} className="text-text-muted shrink-0" />
-                        <span className="font-display font-black text-sm text-text-primary truncate">{skill.name}</span>
-                      </div>
-                      <div className="flex items-center gap-1 shrink-0 font-mono text-[10px] text-accent-green border border-accent-green/40 px-1.5 py-0.5 rounded-[3px]">
-                        <Star size={9} className="fill-accent-green" />
-                        {skill.stars.toLocaleString()}
-                      </div>
-                    </div>
-                    {skill.description && (
-                      <p className="font-mono text-xs text-text-secondary line-clamp-2">{skill.description}</p>
-                    )}
-                    <div className="flex items-center justify-between pt-1 border-t border-border-dim">
-                      <span className="font-mono text-[10px] text-text-muted border border-border-dim px-1.5 py-0.5 rounded-[3px]">
-                        {skill.skill_type === "mcp-server" ? "MCP Server" : "Claude Code"}
-                      </span>
-                      <a
-                        href={skill.github_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1 font-mono text-[10px] text-accent-green hover:underline"
-                      >
-                        <ExternalLink size={10} />
-                        GitHub
-                      </a>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <Link to="/skills" className="font-mono text-xs text-text-muted hover:text-accent-green transition-colors">
-                &gt; Browse all Claude skills →
-              </Link>
-            </section>
-          )}
+          {skills.length > 0 && <SkillsSection skills={skills} />}
 
           {/* Related */}
           {related.length > 0 && (
@@ -344,6 +383,36 @@ export default function ToolDetailPage() {
                 {related.map((r) => (<ToolCard key={r.id} tool={r} variant="compact" />))}
               </div>
             </section>
+          )}
+
+          {/* Use Cases */}
+          {tool.use_cases && tool.use_cases.length > 0 && (
+            <section className="space-y-2">
+              <p className="font-mono text-xs text-text-muted tracking-widest">// USE CASES</p>
+              <div className="flex flex-wrap gap-2">
+                {tool.use_cases.map((uc) => (
+                  <span key={uc} className="font-mono text-xs px-2.5 py-1 rounded-[3px] border border-[var(--border-default)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">
+                    {uc}
+                  </span>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Tags */}
+          {tool.tags.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {tool.tags.map((tag) => (
+                <Link
+                  key={tag}
+                  to={`/tag/${tag}`}
+                  className="tag-pill-link inline-flex items-center text-xs font-mono px-2.5 py-1 rounded-[3px] transition-colors duration-150 whitespace-nowrap"
+                  style={{ "--cat-accent": color.accent, "--cat-text": color.text } as React.CSSProperties}
+                >
+                  #{tag}
+                </Link>
+              ))}
+            </div>
           )}
         </div>
       </PageWrapper>
