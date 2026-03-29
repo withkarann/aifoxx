@@ -13,19 +13,46 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const OUTPUT_PATH = join(__dirname, '..', 'src', 'data', 'news.json')
 const NEW_TOOLS_PATH = join(__dirname, '..', 'src', 'data', 'new-tools.json')
 const MAX_ITEMS = 200
-const MAX_PER_SOURCE = 20  // prevent any one source from dominating
+const MAX_PER_SOURCE = 20
 
-// ─── Source config ───────────────────────────────────────────────────────────
-// Add or remove sources here. filter = regex applied to title (undefined = keep all).
+// ─── Relevance scoring ────────────────────────────────────────────────────────
+// Each keyword match adds its weight to the item's score.
+// Items from dedicated AI sources (no filter) get a base score of 2.
+// Items from general sources need score >= 1 to be included.
 
-const AI_FILTER = /\bai\b|artificial intelligence|openai|anthropic|llm|chatgpt|machine learning|deep learning|neural|gpt|claude|gemini|automation|agent/i
-const TOOL_FILTER = /ai|assistant|automation|llm|gpt|model|intelligence|smart|agent|tool|productivity|generate|copilot|workflow/i
+const SCORE_KEYWORDS = [
+  { re: /\bopenai\b/i,                    w: 3 },
+  { re: /\banthropic\b/i,                 w: 3 },
+  { re: /\bgpt[-\s]?\d|gpt-4|gpt-5/i,    w: 3 },
+  { re: /\bclaude\b/i,                    w: 3 },
+  { re: /\bchatgpt\b/i,                   w: 3 },
+  { re: /\bgemini\b/i,                    w: 2 },
+  { re: /\bllm\b|\bllms\b/i,             w: 2 },
+  { re: /\bagent\b|\bagentic\b/i,         w: 2 },
+  { re: /artificial intelligence/i,       w: 2 },
+  { re: /machine learning/i,              w: 2 },
+  { re: /\bdeep learning\b/i,             w: 2 },
+  { re: /\bfoundation model/i,            w: 2 },
+  { re: /\bai\b/i,                        w: 1 },
+  { re: /\bneural\b/i,                    w: 1 },
+  { re: /\bautomation\b/i,               w: 1 },
+  { re: /\bcopilot\b/i,                   w: 1 },
+  { re: /\bgenerative\b/i,               w: 1 },
+  { re: /\bmistral\b|\bmeta ai\b|\bllama\b/i, w: 2 },
+  { re: /\bperplexity\b|\bhuggingface\b/i, w: 2 },
+]
+
+function scoreTitle(title) {
+  return SCORE_KEYWORDS.reduce((sum, { re, w }) => sum + (re.test(title) ? w : 0), 0)
+}
+
+// ─── Source config ────────────────────────────────────────────────────────────
 
 const RSS_SOURCES = [
-  // ── News ──────────────────────────────────────────────────────────────────
+  // ── Dedicated AI news (no filter needed) ─────────────────────────────────
   {
     id: 'techcrunch',
-    label: 'TechCrunch',
+    label: 'TechCrunch AI',
     url: 'https://techcrunch.com/tag/artificial-intelligence/feed/',
     category: 'news',
   },
@@ -42,30 +69,10 @@ const RSS_SOURCES = [
     category: 'news',
   },
   {
-    id: 'zdnet',
-    label: 'ZDNet',
-    url: 'https://www.zdnet.com/topic/artificial-intelligence/rss.xml',
-    category: 'news',
-  },
-  {
     id: 'huggingface',
-    label: 'Hugging Face',
+    label: 'Hugging Face Blog',
     url: 'https://huggingface.co/blog/feed.xml',
     category: 'news',
-  },
-  {
-    id: 'theverge',
-    label: 'The Verge',
-    url: 'https://www.theverge.com/rss/index.xml',
-    category: 'news',
-    filter: AI_FILTER,
-  },
-  {
-    id: 'arstechnica',
-    label: 'Ars Technica',
-    url: 'https://feeds.arstechnica.com/arstechnica/index',
-    category: 'news',
-    filter: AI_FILTER,
   },
   {
     id: 'tldr-ai',
@@ -74,18 +81,10 @@ const RSS_SOURCES = [
     category: 'news',
   },
   {
-    id: 'analyticsvidhya',
-    label: 'Analytics Vidhya',
-    url: 'https://www.analyticsvidhya.com/feed/',
+    id: 'aisnakeoil',
+    label: 'AI Snake Oil',
+    url: 'https://www.aisnakeoil.com/feed',
     category: 'news',
-    filter: AI_FILTER,
-  },
-  {
-    id: 'towardsdatascience',
-    label: 'Towards Data Science',
-    url: 'https://towardsdatascience.com/feed',
-    category: 'news',
-    filter: AI_FILTER,
   },
   {
     id: 'thesequence',
@@ -93,19 +92,48 @@ const RSS_SOURCES = [
     url: 'https://thesequence.substack.com/feed',
     category: 'news',
   },
+  // ── General tech (filter by score) ───────────────────────────────────────
   {
-    id: 'aisnakeoil',
-    label: 'AI Snake Oil',
-    url: 'https://www.aisnakeoil.com/feed',
+    id: 'zdnet',
+    label: 'ZDNet',
+    url: 'https://www.zdnet.com/topic/artificial-intelligence/rss.xml',
     category: 'news',
+    needsScore: true,
   },
-  // ── New Tools (AI newsletters + launch boards) ────────────────────────────
+  {
+    id: 'theverge',
+    label: 'The Verge',
+    url: 'https://www.theverge.com/rss/index.xml',
+    category: 'news',
+    needsScore: true,
+  },
+  {
+    id: 'arstechnica',
+    label: 'Ars Technica',
+    url: 'https://feeds.arstechnica.com/arstechnica/index',
+    category: 'news',
+    needsScore: true,
+  },
+  {
+    id: 'analyticsvidhya',
+    label: 'Analytics Vidhya',
+    url: 'https://www.analyticsvidhya.com/feed/',
+    category: 'news',
+    needsScore: true,
+  },
+  {
+    id: 'towardsdatascience',
+    label: 'Towards Data Science',
+    url: 'https://towardsdatascience.com/feed',
+    category: 'news',
+    needsScore: true,
+  },
+  // ── AI newsletters → new tool candidates ─────────────────────────────────
   {
     id: 'rundown-ai',
     label: 'The Rundown AI',
     url: 'https://therundown.substack.com/feed',
     category: 'new-tool',
-    // curated AI newsletter — keep all items
   },
   {
     id: 'neuron',
@@ -127,7 +155,7 @@ const RSS_SOURCES = [
   },
 ]
 
-// ─── Helpers ─────────────────────────────────────────────────────────────────
+// ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function extractDomain(url) {
   try {
@@ -183,7 +211,6 @@ function parseRSS(xml) {
   return items
 }
 
-// Atom feeds use <entry> instead of <item>, and <link href="..."/> for the URL
 function parseAtom(xml) {
   const items = []
   for (const m of xml.matchAll(/<entry>([\s\S]*?)<\/entry>/gi)) {
@@ -200,7 +227,7 @@ function parseAtom(xml) {
 async function fetchText(url) {
   const res = await fetch(url, {
     headers: {
-      'User-Agent': 'AIFoxx-NewsBot/1.0 (https://aifox.com)',
+      'User-Agent': 'AIFoxx-NewsBot/1.0 (https://aifoxx.com)',
       Accept: 'application/rss+xml, application/xml, text/xml, */*',
     },
     signal: AbortSignal.timeout(12_000),
@@ -216,69 +243,92 @@ async function fetchHN() {
   const data = JSON.parse(await fetchText(url))
   return (data.hits || [])
     .filter((h) => h.url && h.title)
-    .map((h) => ({
-      id: `hn-${h.objectID}`,
-      title: h.title,
-      url: h.url,
-      domain: extractDomain(h.url),
-      source: 'hn',
-      category: 'news',
-      points: h.points ?? undefined,
-      date: new Date(h.created_at_i * 1000).toISOString(),
-      age: computeAge(new Date(h.created_at_i * 1000).toISOString()),
-    }))
+    .map((h) => {
+      const title = h.title
+      const date = new Date(h.created_at_i * 1000).toISOString()
+      return {
+        id: `hn-${h.objectID}`,
+        title,
+        url: h.url,
+        domain: extractDomain(h.url),
+        source: 'hn',
+        category: 'news',
+        points: h.points ?? undefined,
+        date,
+        age: computeAge(date),
+        score: scoreTitle(title),
+      }
+    })
 }
 
-// "Launch HN" posts — official product launch announcements on Hacker News
 async function fetchLaunchHN() {
   const url = `https://hn.algolia.com/api/v1/search?tags=story&query=%22Launch+HN%22&hitsPerPage=${MAX_PER_SOURCE}`
   const data = JSON.parse(await fetchText(url))
   return (data.hits || [])
     .filter((h) => h.url && h.title && /^Launch HN:/i.test(h.title))
-    .map((h) => ({
-      id: `launch-hn-${h.objectID}`,
-      title: h.title.replace(/^Launch HN:\s*/i, '').trim(),
-      url: h.url,
-      domain: extractDomain(h.url),
-      source: 'launch-hn',
-      category: 'new-tool',
-      points: h.points ?? undefined,
-      date: new Date(h.created_at_i * 1000).toISOString(),
-      age: computeAge(new Date(h.created_at_i * 1000).toISOString()),
-    }))
+    .map((h) => {
+      const title = h.title.replace(/^Launch HN:\s*/i, '').trim()
+      const date = new Date(h.created_at_i * 1000).toISOString()
+      return {
+        id: `launch-hn-${h.objectID}`,
+        title,
+        url: h.url,
+        domain: extractDomain(h.url),
+        source: 'launch-hn',
+        category: 'new-tool',
+        points: h.points ?? undefined,
+        date,
+        age: computeAge(date),
+        score: scoreTitle(title),
+      }
+    })
 }
 
 async function fetchRSSSource(source) {
   const xml = await fetchText(source.url)
   const items = source.atom ? parseAtom(xml) : parseRSS(xml)
-  return items
-    .filter((i) => !source.filter || source.filter.test(i.title))
-    .slice(0, MAX_PER_SOURCE)
-    .map((i, idx) => {
-      const date = i.pubDate ? new Date(i.pubDate).toISOString() : new Date().toISOString()
-      return {
-        id: `${source.id}-${idx}-${Date.now()}`,
-        title: i.title,
-        url: i.link,
-        domain: extractDomain(i.link),
-        source: source.id,
-        category: source.category,
-        date,
-        age: computeAge(date),
-      }
+  const results = []
+  for (const i of items.slice(0, MAX_PER_SOURCE)) {
+    const title = i.title
+    const score = scoreTitle(title)
+    // For general sources (needsScore), skip items with zero AI relevance
+    if (source.needsScore && score === 0) continue
+    const date = i.pubDate ? new Date(i.pubDate).toISOString() : new Date().toISOString()
+    results.push({
+      id: `${source.id}-${Date.now()}-${results.length}`,
+      title,
+      url: i.link,
+      domain: extractDomain(i.link),
+      source: source.id,
+      category: source.category,
+      date,
+      age: computeAge(date),
+      score,
     })
+  }
+  return results
 }
 
-// ─── Main ─────────────────────────────────────────────────────────────────────
+// ─── Deduplication ────────────────────────────────────────────────────────────
+// Deduplicate by URL and by normalized title to catch cross-posted articles.
+
+function normalizeTitle(title) {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
+}
 
 function dedup(items) {
-  const seen = new Set()
+  const seenUrls = new Set()
+  const seenTitles = new Set()
   return items.filter((item) => {
-    if (seen.has(item.url)) return false
-    seen.add(item.url)
+    const normTitle = normalizeTitle(item.title)
+    if (seenUrls.has(item.url) || seenTitles.has(normTitle)) return false
+    seenUrls.add(item.url)
+    seenTitles.add(normTitle)
     return true
   })
 }
+
+// ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
   console.log('── News sources ──────────────────────────────')
@@ -325,12 +375,12 @@ async function main() {
     }
   }
 
-  // Sort + dedup + write news.json
+  // Sort by date, dedup, write news.json
   const finalNews = dedup(newsItems)
   finalNews.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   writeFileSync(OUTPUT_PATH, JSON.stringify(finalNews.slice(0, MAX_ITEMS), null, 2) + '\n')
 
-  // Sort + dedup + write new-tools.json
+  // Sort by date, dedup, write new-tools.json
   const finalTools = dedup(toolItems)
   finalTools.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   writeFileSync(NEW_TOOLS_PATH, JSON.stringify(finalTools.slice(0, MAX_ITEMS), null, 2) + '\n')

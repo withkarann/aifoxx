@@ -19,7 +19,7 @@ export default function CategoryPage() {
   const cat = CATEGORIES.find((c) => matchesTaxonomyValue(c.name, categoryKey));
 
   const { filters, setFilter, clearFilters, activeFilterCount } = useToolFilters();
-  const [, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const filtersWithCategory = useMemo(() => ({
     ...filters,
@@ -32,6 +32,7 @@ export default function CategoryPage() {
 
   const color = getCategoryColor(cat.name);
   const activeSub = filters.subcategory || "";
+  const hasSeoQueryParams = searchParams.toString().length > 0;
 
   const handleSubChange = (sub: string) => {
     setSearchParams((prev) => {
@@ -46,7 +47,8 @@ export default function CategoryPage() {
       <PageMeta
         title={`${cat.name} AI Tools | ${Brand.product.name_styled}`}
         description={`Browse ${total} AI tools in the ${cat.name} category. Filter by subcategory and pricing.`}
-        url={`https://${Brand.product.domain}/category/${category}`}
+        url={`https://${Brand.product.domain}/category/${categoryKey}`}
+        robots={hasSeoQueryParams ? "noindex, follow" : undefined}
       />
       <JsonLd
         id="collection-page"
@@ -55,7 +57,7 @@ export default function CategoryPage() {
           "@type": "CollectionPage",
           "name": `${cat.name} AI Tools`,
           "description": `Browse ${total} AI tools in the ${cat.name} category on AIFOXX.`,
-          "url": `https://${Brand.product.domain}/category/${category}`,
+          "url": `https://${Brand.product.domain}/category/${categoryKey}`,
         }}
       />
       <PageWrapper>

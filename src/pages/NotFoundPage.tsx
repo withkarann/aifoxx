@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { PageMeta } from "@/components/seo/PageMeta";
+import Brand from "@/lib/brand";
 
 export default function NotFoundPage() {
   return (
@@ -7,6 +8,8 @@ export default function NotFoundPage() {
       <PageMeta
         title="404 — Page Not Found | AIFOXX"
         description="The page you're looking for doesn't exist. Browse 1000+ AI tools at AIFOXX."
+        url={`https://${Brand.product.domain}/404`}
+        robots="noindex, nofollow"
       />
       <div className="flex-1 flex items-center justify-center px-4">
         <div className="text-center">

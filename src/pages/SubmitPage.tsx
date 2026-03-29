@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { Copy, Check } from "lucide-react";
 import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
 
 function CodeBlock({ children }: { children: string }) {
@@ -71,6 +72,20 @@ const RULES = [
   "URL must be a valid https:// link",
 ];
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": `How to submit an AI tool to ${Brand.product.name_styled}`,
+  "description": `Step-by-step open-source contribution guide for adding a tool to ${Brand.product.name_styled}.`,
+  "url": `https://${Brand.product.domain}/submit`,
+  "step": STEPS.map((step, index) => ({
+    "@type": "HowToStep",
+    "position": index + 1,
+    "name": step.title,
+    "text": step.desc,
+  })),
+};
+
 export default function SubmitPage() {
   const brandName = Brand.product.name_styled;
   const brandDomain = Brand.product.domain;
@@ -81,7 +96,9 @@ export default function SubmitPage() {
         title={`Submit a Tool | ${brandName}`}
         description={`Add your AI tool to ${brandName}. Open source contribution guide with step-by-step instructions.`}
         url={`https://${brandDomain}/submit`}
+        keywords={["submit AI tool", "AIFOXX contribution", "add tool directory", "open source AI directory"]}
       />
+      <JsonLd schema={howToSchema} id="submit-howto" />
       {/* Header */}
       <h1 className="font-display font-black text-4xl text-accent-green">
         &gt; SUBMIT_A_TOOL
