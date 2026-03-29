@@ -65,10 +65,11 @@ export function CRTOverlay() {
         </div>
       )}
       <button
+        id="crt-toggle"
         onClick={() => setEnabled((v) => !v)}
-        className="fixed bottom-4 right-4 z-[10000] font-mono text-[10px] uppercase tracking-tighter px-2 py-1 rounded-[2px] border border-border-default/50 bg-bg-surface/80 text-text-muted hover:text-text-primary hover:border-accent-green hover:shadow-glow transition-all duration-150 backdrop-blur-sm"
+        className="font-mono text-[10px] uppercase tracking-tighter text-text-muted hover:text-accent-green transition-colors duration-150"
       >
-        CRT_LINK {enabled ? "ENABLED" : "DISABLED"}
+        CRT {enabled ? "ON" : "OFF"}
       </button>
     </>
   );
