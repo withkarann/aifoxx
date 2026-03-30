@@ -22,7 +22,7 @@ jobs:
         run: node scripts/scrape-news.mjs
 
       - name: Commit updated news.json (if changed)
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'chore: daily news scrape [skip ci]'
           file_pattern: 'src/data/news.json src/data/new-tools.json'
