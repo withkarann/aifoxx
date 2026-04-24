@@ -33,6 +33,17 @@ export function useFilteredTools(filters: ToolFilters) {
           const inherentlyFree = tool.pricing === "Free" || tool.pricing === "Open Source";
 
           if (!inherentlyFree && !hasFreeTier) return false;
+        } else if (filters.pricing === "Paid") {
+          // "Paid" matches any tool that costs money somewhere — Paid, Freemium
+          // (has paid tiers), Usage Based, Pay-as-you-go, Contact Sales.
+          // Exclude only purely-free options.
+          if (tool.pricing === "Free" || tool.pricing === "Open Source") return false;
+          if (tool.pricing === "Freemium") {
+            const paidText = tool.pricing_detail?.paid_plans?.trim() ?? "";
+            const hasPaidPlans =
+              paidText.length > 0 && !/^(none|no paid|n\/a)$/i.test(paidText);
+            if (!hasPaidPlans) return false;
+          }
         } else if (tool.pricing !== filters.pricing) {
           return false;
         }
