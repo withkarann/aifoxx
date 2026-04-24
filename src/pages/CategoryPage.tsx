@@ -58,6 +58,27 @@ export default function CategoryPage() {
           "name": `${cat.name} AI Tools`,
           "description": `Browse ${total} AI tools in the ${cat.name} category on AIFOXX.`,
           "url": `https://${Brand.product.domain}/category/${categoryKey}`,
+          "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": tools.length,
+            "itemListElement": tools.slice(0, 50).map((tool, idx) => ({
+              "@type": "ListItem",
+              "position": idx + 1,
+              "url": `https://${Brand.product.domain}/ai/${tool.slug}`,
+              "name": tool.name,
+            })),
+          },
+        }}
+      />
+      <JsonLd
+        id="breadcrumb"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://${Brand.product.domain}` },
+            { "@type": "ListItem", "position": 2, "name": cat.name, "item": `https://${Brand.product.domain}/category/${categoryKey}` },
+          ],
         }}
       />
       <PageWrapper>

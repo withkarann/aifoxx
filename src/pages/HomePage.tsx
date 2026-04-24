@@ -13,26 +13,7 @@ import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
 
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "AIFOXX",
-  "url": `https://${Brand.product.domain}`,
-  "description": Brand.product.description,
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": `https://${Brand.product.domain}/?search={search_term_string}`,
-    "query-input": "required name=search_term_string",
-  },
-};
-
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": Brand.product.name_styled,
-  "url": `https://${Brand.product.domain}`,
-  "sameAs": [Brand.product.repo],
-};
+// Organization + WebSite JSON-LD are emitted globally from index.html so every SSG'd page carries them.
 
 const featuredTools = allTools.filter((t) => t.featured);
 const TOOLS_PER_PAGE = 12;
@@ -190,9 +171,6 @@ export default function HomePage() {
           "AI compliance",
         ]}
       />
-      <JsonLd schema={websiteSchema} id="website" />
-      <JsonLd schema={organizationSchema} id="organization" />
-
       {/* HERO */}
       <section
         className="hero-shell py-20 text-center px-4 border-b border-border-muted/30 relative overflow-hidden"
