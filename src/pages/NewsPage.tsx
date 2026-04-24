@@ -1,9 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { ExternalLink } from "lucide-react";
 import {
   getNewsByCategory,
   NEWS_COUNTS,
-  formatAge,
   formatAbsoluteDate,
   getLatestNewsDate,
 } from "@/lib/news";
@@ -86,12 +85,6 @@ export default function NewsPage() {
   const [visible, setVisible] = useState(PAGE_SIZE);
   const allItems = useMemo(() => getNewsByCategory("all"), []);
   const latestDate = useMemo(() => getLatestNewsDate(), []);
-  // Re-render every minute so relative ages stay fresh while the tab is open.
-  const [nowTick, setNowTick] = useState(() => Date.now());
-  useEffect(() => {
-    const id = setInterval(() => setNowTick(Date.now()), 60_000);
-    return () => clearInterval(id);
-  }, []);
 
   const newsSchema = useMemo(() => ({
     "@context": "https://schema.org",
@@ -143,7 +136,7 @@ export default function NewsPage() {
           </p>
           {latestDate && (
             <p className="font-mono text-[10px] text-text-muted tracking-widest uppercase mt-1">
-              Last updated {formatAbsoluteDate(latestDate)} · {formatAge(latestDate, nowTick)}
+              Last updated {formatAbsoluteDate(latestDate)}
             </p>
           )}
         </div>
@@ -215,7 +208,7 @@ export default function NewsPage() {
                         className="font-mono text-[10px] text-text-muted"
                         title={formatAbsoluteDate(item.date)}
                       >
-                        {formatAbsoluteDate(item.date)} · {formatAge(item.date, nowTick)}
+                        {formatAbsoluteDate(item.date)}
                       </span>
                       {item.points !== undefined && (
                         <>
