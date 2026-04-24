@@ -2,6 +2,7 @@ import { useParams, Navigate, useSearchParams } from "react-router-dom";
 import { useMemo } from "react";
 import { useToolFilters } from "@/hooks/useToolFilters";
 import { useFilteredTools } from "@/hooks/useFilteredTools";
+import { allTools } from "@/lib/tools";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { FilterBar } from "@/components/search/FilterBar";
 import { ToolCard } from "@/components/tools/ToolCard";
@@ -27,6 +28,20 @@ export default function CategoryPage() {
   }), [filters, cat]);
 
   const { tools, total, isEmpty } = useFilteredTools(filtersWithCategory);
+
+  const pricingBreakdown = useMemo(() => {
+    if (!cat) return [] as { pricing: string; count: number }[];
+    const inCategory = allTools.filter((t) => {
+      if (t.category !== cat.name) return false;
+      if (filters.subcategory && !matchesTaxonomyValue(t.subcategory, filters.subcategory)) return false;
+      return true;
+    });
+    const buckets = new Map<string, number>();
+    for (const t of inCategory) buckets.set(t.pricing, (buckets.get(t.pricing) ?? 0) + 1);
+    return [...buckets.entries()]
+      .map(([pricing, count]) => ({ pricing, count }))
+      .sort((a, b) => b.count - a.count);
+  }, [cat, filters.subcategory]);
 
   if (!cat) return <Navigate to="/" replace />;
 
@@ -105,7 +120,34 @@ export default function CategoryPage() {
           {isEmpty ? (
             <div className="bg-bg-elevated border border-border-default rounded-[6px] p-8 text-center">
               <p className="font-display font-black" style={{ color: color.accent }}>&gt; NO_RESULTS_FOUND</p>
-              <p className="font-mono text-text-secondary text-sm mt-2">No tools match these filters</p>
+              <p className="font-mono text-text-secondary text-sm mt-2">
+                {filters.pricing && pricingBreakdown.length > 0
+                  ? `No ${filters.pricing} tools in ${cat.name}${activeSub ? ` / ${activeSub}` : ""}.`
+                  : "No tools match these filters"}
+              </p>
+              {filters.pricing && pricingBreakdown.length > 0 && (
+                <>
+                  <p className="font-mono text-xs text-text-muted mt-4 tracking-widest">AVAILABLE PRICING</p>
+                  <div className="flex flex-wrap justify-center gap-2 mt-2">
+                    {pricingBreakdown.map(({ pricing, count }) => (
+                      <button
+                        key={pricing}
+                        onClick={() => setFilter("pricing", pricing)}
+                        className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default bg-bg-surface text-text-secondary hover:text-text-primary hover:border-[var(--cat-accent)] transition-colors duration-150"
+                        style={{ "--cat-accent": color.accent } as React.CSSProperties}
+                      >
+                        {pricing} <span className="text-text-muted">· {count}</span>
+                      </button>
+                    ))}
+                    <button
+                      onClick={() => setFilter("pricing", "")}
+                      className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-dashed border-border-dim text-text-muted hover:text-text-primary hover:border-border-default transition-colors duration-150"
+                    >
+                      Clear filter
+                    </button>
+                  </div>
+                </>
+              )}
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
