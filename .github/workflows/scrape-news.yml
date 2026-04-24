@@ -9,7 +9,8 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     permissions:
-      contents: write       # needed to commit news.json back
+      contents: write
+      pull-requests: write
 
     steps:
       - uses: actions/checkout@v4
@@ -21,10 +22,17 @@ jobs:
       - name: Run news scraper
         run: node scripts/scrape-news.mjs
 
-      - name: Commit updated news.json (if changed)
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Create PR with updated data (if changed)
+        uses: peter-evans/create-pull-request@v6
         with:
-          commit_message: 'chore: daily news scrape [skip ci]'
-          file_pattern: 'src/data/news.json src/data/new-tools.json'
-          commit_user_name: 'AIFoxx Bot'
-          commit_user_email: 'bot@aifox.com'
+          commit-message: 'chore: daily news scrape'
+          branch: chore/daily-news-scrape
+          delete-branch: true
+          title: 'chore: daily news scrape'
+          body: |
+            Automated daily scrape of src/data/news.json and src/data/new-tools.json.
+          add-paths: |
+            src/data/news.json
+            src/data/new-tools.json
+          author: 'AIFoxx Bot <bot@aifox.com>'
+          committer: 'AIFoxx Bot <bot@aifox.com>'
