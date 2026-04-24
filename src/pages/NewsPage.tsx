@@ -1,6 +1,12 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ExternalLink } from "lucide-react";
-import { getNewsByCategory, NEWS_COUNTS } from "@/lib/news";
+import {
+  getNewsByCategory,
+  NEWS_COUNTS,
+  formatAge,
+  formatAbsoluteDate,
+  getLatestNewsDate,
+} from "@/lib/news";
 import { type NewsCategory } from "@/types/news";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -79,6 +85,13 @@ export default function NewsPage() {
   const [tab, setTab] = useState<Tab>("all");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const allItems = useMemo(() => getNewsByCategory("all"), []);
+  const latestDate = useMemo(() => getLatestNewsDate(), []);
+  // Re-render every minute so relative ages stay fresh while the tab is open.
+  const [nowTick, setNowTick] = useState(() => Date.now());
+  useEffect(() => {
+    const id = setInterval(() => setNowTick(Date.now()), 60_000);
+    return () => clearInterval(id);
+  }, []);
 
   const newsSchema = useMemo(() => ({
     "@context": "https://schema.org",
@@ -128,6 +141,11 @@ export default function NewsPage() {
           <p className="font-mono text-sm text-text-secondary max-w-lg">
             AI news updates and AI tool releases.
           </p>
+          {latestDate && (
+            <p className="font-mono text-[10px] text-text-muted tracking-widest uppercase mt-1">
+              Last updated {formatAbsoluteDate(latestDate)} · {formatAge(latestDate, nowTick)}
+            </p>
+          )}
         </div>
       </section>
 
@@ -193,7 +211,12 @@ export default function NewsPage() {
                         {sourceLabel(item.source)}
                       </span>
                       <span className="font-mono text-[10px] text-text-muted">·</span>
-                      <span className="font-mono text-[10px] text-text-muted">{item.age}</span>
+                      <span
+                        className="font-mono text-[10px] text-text-muted"
+                        title={formatAbsoluteDate(item.date)}
+                      >
+                        {formatAbsoluteDate(item.date)} · {formatAge(item.date, nowTick)}
+                      </span>
                       {item.points !== undefined && (
                         <>
                           <span className="font-mono text-[10px] text-text-muted">·</span>
