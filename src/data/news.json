@@ -1,17 +1,40 @@
 [
   {
-    "id": "zdnet-1777035262660-0",
+    "id": "hn-47889976",
+    "title": "Sony AI Announces Real-World Artificial Intelligence and Robotics",
+    "url": "https://ai.sony/news/sony-ai-announces-breakthrough-research-in-real-world-artificial-intelligence-and-robotics",
+    "domain": "ai.sony",
+    "source": "hn",
+    "category": "news",
+    "points": 1,
+    "date": "2026-04-24T13:28:27.000Z",
+    "age": "0m ago",
+    "score": 3
+  },
+  {
+    "id": "zdnet-1777037353584-0",
+    "title": "I tried ChatGPT Images 2.0: A fun, huge leap - and surprisingly useful for real work",
+    "url": "https://www.zdnet.com/article/chatgpt-images-2-0-hands-on-test-fun-huge-useful-leap/",
+    "domain": "zdnet.com",
+    "source": "zdnet",
+    "category": "news",
+    "date": "2026-04-24T13:19:02.000Z",
+    "age": "10m ago",
+    "score": 3
+  },
+  {
+    "id": "zdnet-1777037353584-1",
     "title": "I put GPT-5.5 through a 10-round test: It scored 93/100, losing points only for exuberance",
     "url": "https://www.zdnet.com/article/i-put-openai-gpt-5-5-through-a-10-round-test/",
     "domain": "zdnet.com",
     "source": "zdnet",
     "category": "news",
-    "date": "2026-04-24T12:21:07.000Z",
-    "age": "33m ago",
+    "date": "2026-04-24T12:21:00.000Z",
+    "age": "1h ago",
     "score": 3
   },
   {
-    "id": "analyticsvidhya-1777035263376-0",
+    "id": "analyticsvidhya-1777037354447-0",
     "title": "I Tried The New GPT 5.5 And I’m Never Going Back",
     "url": "https://www.analyticsvidhya.com/blog/2026/04/i-tried-the-new-gpt-5-5-and-im-never-going-back/",
     "domain": "analyticsvidhya.com",
@@ -22,51 +45,122 @@
     "score": 3
   },
   {
-    "id": "arstechnica-1777035262542-0",
+    "id": "arstechnica-1777037353313-0",
     "title": "Rocket Report: Artemis III rocket getting ready; SpaceX is now an AI company",
     "url": "https://arstechnica.com/space/2026/04/rocket-report-some-canadians-dont-want-a-spaceport-falcon-hits-600-landings/",
     "domain": "arstechnica.com",
     "source": "arstechnica",
     "category": "news",
     "date": "2026-04-24T11:00:36.000Z",
-    "age": "1h ago",
+    "age": "2h ago",
     "score": 1
   },
   {
-    "id": "zdnet-1777035262660-1",
+    "id": "hn-47888250",
+    "title": "AI agent designs a complete RISC-V CPU from a 219-word spec sheet in 12 hours",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-designs-a-complete-risc-v-cpu-from-a-219-word-spec-in-just-12-hours",
+    "domain": "tomshardware.com",
+    "source": "hn",
+    "category": "news",
+    "points": 1,
+    "date": "2026-04-24T10:30:44.000Z",
+    "age": "2h ago",
+    "score": 3
+  },
+  {
+    "id": "hn-47888142",
+    "title": "Wikipedia's AI Policy",
+    "url": "https://en.wikipedia.org/wiki/Wikipedia:Artificial_intelligence",
+    "domain": "en.wikipedia.org",
+    "source": "hn",
+    "category": "news",
+    "points": 13,
+    "date": "2026-04-24T10:16:01.000Z",
+    "age": "3h ago",
+    "score": 1
+  },
+  {
+    "id": "hn-47888078",
+    "title": "Artificial intelligence is creeping into American lawmaking",
+    "url": "https://www.economist.com/united-states/2026/04/23/artificial-intelligence-is-creeping-into-american-lawmaking",
+    "domain": "economist.com",
+    "source": "hn",
+    "category": "news",
+    "points": 1,
+    "date": "2026-04-24T10:08:16.000Z",
+    "age": "3h ago",
+    "score": 2
+  },
+  {
+    "id": "hn-47887069",
+    "title": "You're about to feel the AI money squeeze",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/917380/ai-monetization-anthropic-openai-token-economics-revenue",
+    "domain": "theverge.com",
+    "source": "hn",
+    "category": "news",
+    "points": 2,
+    "date": "2026-04-24T07:55:40.000Z",
+    "age": "5h ago",
+    "score": 1
+  },
+  {
+    "id": "zdnet-1777037353584-2",
     "title": "Government adoption of AI agents could outpace the private sector",
     "url": "https://www.zdnet.com/article/government-adoption-of-ai-agents-may-outpace-the-private-sector/",
     "domain": "zdnet.com",
     "source": "zdnet",
     "category": "news",
     "date": "2026-04-24T07:00:36.000Z",
-    "age": "5h ago",
+    "age": "6h ago",
     "score": 1
   },
   {
-    "id": "zdnet-1777035262660-2",
+    "id": "zdnet-1777037353584-3",
     "title": "How indirect prompt injection attacks on AI work - and 6 ways to shut them down",
     "url": "https://www.zdnet.com/article/how-indirect-prompt-injection-attacks-on-ai-work-and-6-ways-to-shut-them-down/",
     "domain": "zdnet.com",
     "source": "zdnet",
     "category": "news",
     "date": "2026-04-24T00:00:45.000Z",
-    "age": "12h ago",
+    "age": "13h ago",
     "score": 1
   },
   {
-    "id": "huggingface-1777035262340-0",
+    "id": "huggingface-1777037353360-0",
     "title": "DeepSeek-V4: a million-token context that agents can actually use",
     "url": "https://huggingface.co/blog/deepseekv4",
     "domain": "huggingface.co",
     "source": "huggingface",
     "category": "news",
     "date": "2026-04-24T00:00:00.000Z",
-    "age": "12h ago",
+    "age": "13h ago",
     "score": 0
   },
   {
-    "id": "arstechnica-1777035262542-1",
+    "id": "tldr-ai-1777037353448-0",
+    "title": "GPT-5.5 release 🚀, Anthropic $1T valuation 💰, DeepSeek v4",
+    "url": "https://tldr.tech/ai/2026-04-24",
+    "domain": "tldr.tech",
+    "source": "tldr-ai",
+    "category": "news",
+    "date": "2026-04-24T00:00:00.000Z",
+    "age": "13h ago",
+    "score": 6
+  },
+  {
+    "id": "hn-47883609",
+    "title": "Microsoft Targets About 7% of Its U.S. Workers with Buyout Offer",
+    "url": "https://www.nytimes.com/2026/04/23/business/microsoft-layoffs-artificial-intelligence.html",
+    "domain": "nytimes.com",
+    "source": "hn",
+    "category": "news",
+    "points": 1,
+    "date": "2026-04-23T23:31:16.000Z",
+    "age": "13h ago",
+    "score": 0
+  },
+  {
+    "id": "arstechnica-1777037353313-1",
     "title": "US accuses China of “industrial-scale” AI theft. China says it’s “slander.”",
     "url": "https://arstechnica.com/tech-policy/2026/04/us-accuses-china-of-industrial-scale-ai-theft-china-says-its-slander/",
     "domain": "arstechnica.com",
@@ -77,7 +171,7 @@
     "score": 1
   },
   {
-    "id": "towardsdatascience-1777035262847-0",
+    "id": "towardsdatascience-1777037353722-0",
     "title": "Using a Local LLM as a Zero-Shot Classifier",
     "url": "https://towardsdatascience.com/using-a-local-llm-as-a-zero-shot-classifier/",
     "domain": "towardsdatascience.com",
@@ -88,7 +182,42 @@
     "score": 2
   },
   {
-    "id": "huggingface-1777035262340-1",
+    "id": "thesequence-1777037353660-0",
+    "title": "The Sequence Opinion #848: The Agent’s Hands: CLI or MCP?",
+    "url": "https://thesequence.substack.com/p/the-sequence-opinion-848-the-agents",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-23T11:03:49.000Z",
+    "age": "1d ago",
+    "score": 2
+  },
+  {
+    "id": "hn-47874106",
+    "title": "Congressman Introduces Bill to Ban AI Chatbots in Children's Toys",
+    "url": "https://blakemoore.house.gov/media/press-releases/congressman-blake-moore-introduces-bill-to-ban-artificial-intelligence-chatbots-in-childrens-toys",
+    "domain": "blakemoore.house.gov",
+    "source": "hn",
+    "category": "news",
+    "points": 27,
+    "date": "2026-04-23T10:35:04.000Z",
+    "age": "1d ago",
+    "score": 1
+  },
+  {
+    "id": "hn-47873391",
+    "title": "OWASP Artificial Intelligence Security Verification Standard (Aisvs)",
+    "url": "https://owasp.org/www-project-artificial-intelligence-security-verification-standard-aisvs-docs/",
+    "domain": "owasp.org",
+    "source": "hn",
+    "category": "news",
+    "points": 3,
+    "date": "2026-04-23T08:20:22.000Z",
+    "age": "1d ago",
+    "score": 2
+  },
+  {
+    "id": "huggingface-1777037353360-1",
     "title": "How to Use Transformers.js in a Chrome Extension",
     "url": "https://huggingface.co/blog/transformersjs-chrome-extension",
     "domain": "huggingface.co",
@@ -99,7 +228,7 @@
     "score": 0
   },
   {
-    "id": "tldr-ai-1777035262422-0",
+    "id": "tldr-ai-1777037353448-1",
     "title": "OpenAI workspace agents 🤝, Google Workspace Intelligence 🌐, Qwen3.6-27B 🤖",
     "url": "https://tldr.tech/ai/2026-04-23",
     "domain": "tldr.tech",
@@ -110,7 +239,7 @@
     "score": 3
   },
   {
-    "id": "arstechnica-1777035262542-2",
+    "id": "arstechnica-1777037353313-2",
     "title": "Our newsroom AI policy",
     "url": "https://arstechnica.com/staff/2026/04/our-newsroom-ai-policy/",
     "domain": "arstechnica.com",
@@ -121,7 +250,55 @@
     "score": 1
   },
   {
-    "id": "huggingface-1777035262340-2",
+    "id": "hn-47868860",
+    "title": "OpenAI now lets teams make custom bots that can do work on their own",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/917065/openai-chatgpt-workspace-agents-custom-teams-bots",
+    "domain": "theverge.com",
+    "source": "hn",
+    "category": "news",
+    "points": 3,
+    "date": "2026-04-22T20:27:02.000Z",
+    "age": "1d ago",
+    "score": 3
+  },
+  {
+    "id": "hn-47868391",
+    "title": "Biohacker claims to have sequenced their own genome with M3 Ultra Mac Studio",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/biohacker-claims-to-have-sequenced-their-own-genome-at-the-kitchen-table-with-m3-ultra-mac-studio-claude-and-a-usd3-200-sequencer-diy-project-requires-100gb-of-data-storage-per-run-oodles-of-ram",
+    "domain": "tomshardware.com",
+    "source": "hn",
+    "category": "news",
+    "points": 3,
+    "date": "2026-04-22T19:50:03.000Z",
+    "age": "1d ago",
+    "score": 0
+  },
+  {
+    "id": "hn-47867823",
+    "title": "Allbirds goes soleless and pivots to AI",
+    "url": "https://mashable.com/article/allbirds-ai-pivot-shoes-artificial-intelligence",
+    "domain": "mashable.com",
+    "source": "hn",
+    "category": "news",
+    "points": 3,
+    "date": "2026-04-22T19:02:24.000Z",
+    "age": "1d ago",
+    "score": 1
+  },
+  {
+    "id": "hn-47866293",
+    "title": "Google Cloud customer wakes up to $18,000 bill despite $7 budget",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-cloud-customer-wakes-up-to-usd18-000-bill-despite-usd7-budget-thanks-to-forgotten-public-api-key-attacker-put-in-60-000-requests-and-blasted-through-usd1-400-spending-cap",
+    "domain": "tomshardware.com",
+    "source": "hn",
+    "category": "news",
+    "points": 93,
+    "date": "2026-04-22T17:05:11.000Z",
+    "age": "1d ago",
+    "score": 0
+  },
+  {
+    "id": "huggingface-1777037353360-2",
     "title": "Gemma 4 VLA Demo on Jetson Orin Nano Super",
     "url": "https://huggingface.co/blog/nvidia/gemma4",
     "domain": "huggingface.co",
@@ -132,7 +309,7 @@
     "score": 0
   },
   {
-    "id": "towardsdatascience-1777035262847-1",
+    "id": "towardsdatascience-1777037353722-1",
     "title": "From Ad Hoc Prompting to Repeatable AI Workflows with Claude Code Skills",
     "url": "https://towardsdatascience.com/from-ad-hoc-prompting-to-repeatable-ai-workflows-with-claude-code-skills/",
     "domain": "towardsdatascience.com",
@@ -143,7 +320,7 @@
     "score": 4
   },
   {
-    "id": "analyticsvidhya-1777035263376-1",
+    "id": "analyticsvidhya-1777037354447-1",
     "title": "Token Economics: Why AI is Getting “Cheaper”",
     "url": "https://www.analyticsvidhya.com/blog/2026/04/why-ai-is-getting-cheaper/",
     "domain": "analyticsvidhya.com",
@@ -154,7 +331,7 @@
     "score": 1
   },
   {
-    "id": "analyticsvidhya-1777035263376-2",
+    "id": "analyticsvidhya-1777037354447-2",
     "title": "From Idea to Output: Claude Does the Design Work",
     "url": "https://www.analyticsvidhya.com/blog/2026/04/from-idea-to-output-claude-design/",
     "domain": "analyticsvidhya.com",
@@ -165,7 +342,30 @@
     "score": 3
   },
   {
-    "id": "mit-techreview-1777035262348-0",
+    "id": "hn-47862241",
+    "title": "Mythos Falls into the Wrong Hands",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security",
+    "domain": "theverge.com",
+    "source": "hn",
+    "category": "news",
+    "points": 11,
+    "date": "2026-04-22T11:48:58.000Z",
+    "age": "2d ago",
+    "score": 0
+  },
+  {
+    "id": "thesequence-1777037353661-1",
+    "title": "The Sequence AI of the Week #847: Everything You Need to Know About Claude Opus 4.7",
+    "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-847-everything",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-22T11:00:06.000Z",
+    "age": "2d ago",
+    "score": 4
+  },
+  {
+    "id": "mit-techreview-1777037353228-0",
     "title": "AI needs a strong data fabric to deliver business value",
     "url": "https://www.technologyreview.com/2026/04/22/1135295/ai-needs-a-strong-data-fabric-to-deliver-business-value/",
     "domain": "technologyreview.com",
@@ -176,7 +376,19 @@
     "score": 1
   },
   {
-    "id": "tldr-ai-1777035262422-1",
+    "id": "hn-47857107",
+    "title": "Weaponized Deepfakes",
+    "url": "https://www.technologyreview.com/2026/04/21/1135652/weaponized-deepfakes-ai-artificial-intelligence/",
+    "domain": "technologyreview.com",
+    "source": "hn",
+    "category": "news",
+    "points": 1,
+    "date": "2026-04-22T00:42:32.000Z",
+    "age": "2d ago",
+    "score": 0
+  },
+  {
+    "id": "tldr-ai-1777037353448-2",
     "title": "ChatGPT images 2.0 🎨, Qwen3.5-Omni 🧠, always-on ChatGPT agents 🤖",
     "url": "https://tldr.tech/ai/2026-04-22",
     "domain": "tldr.tech",
@@ -187,7 +399,19 @@
     "score": 3
   },
   {
-    "id": "mit-techreview-1777035262348-1",
+    "id": "hn-47855132",
+    "title": "Content Scraping Issue: Risks and Dangers of Artificial Intelligence",
+    "url": "https://sites.google.com/view/amenintare-gemini/",
+    "domain": "sites.google.com",
+    "source": "hn",
+    "category": "news",
+    "points": 1,
+    "date": "2026-04-21T22:01:18.000Z",
+    "age": "2d ago",
+    "score": 2
+  },
+  {
+    "id": "mit-techreview-1777037353228-1",
     "title": "10 Things That Matter in AI Right Now",
     "url": "https://www.technologyreview.com/2026/04/21/1135643/10-ai-artificial-intelligence-trends-technologies-research-2026/",
     "domain": "technologyreview.com",
@@ -198,7 +422,7 @@
     "score": 1
   },
   {
-    "id": "mit-techreview-1777035262348-2",
+    "id": "mit-techreview-1777037353228-2",
     "title": "LLMs+",
     "url": "https://www.technologyreview.com/2026/04/21/1135645/llm-large-language-models-ai/",
     "domain": "technologyreview.com",
@@ -209,7 +433,7 @@
     "score": 2
   },
   {
-    "id": "mit-techreview-1777035262348-3",
+    "id": "mit-techreview-1777037353228-3",
     "title": "Supercharged scams",
     "url": "https://www.technologyreview.com/2026/04/21/1135647/supercharged-scams-ai-artificial-intelligence/",
     "domain": "technologyreview.com",
@@ -220,7 +444,7 @@
     "score": 0
   },
   {
-    "id": "mit-techreview-1777035262348-4",
+    "id": "mit-techreview-1777037353228-4",
     "title": "World models",
     "url": "https://www.technologyreview.com/2026/04/21/1135650/world-models-ai-artificial-intelligence/",
     "domain": "technologyreview.com",
@@ -231,18 +455,7 @@
     "score": 0
   },
   {
-    "id": "mit-techreview-1777035262348-5",
-    "title": "Weaponized deepfakes",
-    "url": "https://www.technologyreview.com/2026/04/21/1135652/weaponized-deepfakes-ai-artificial-intelligence/",
-    "domain": "technologyreview.com",
-    "source": "mit-techreview",
-    "category": "news",
-    "date": "2026-04-21T20:45:00.000Z",
-    "age": "2d ago",
-    "score": 0
-  },
-  {
-    "id": "mit-techreview-1777035262348-6",
+    "id": "mit-techreview-1777037353228-6",
     "title": "Agent orchestration",
     "url": "https://www.technologyreview.com/2026/04/21/1135654/agent-orchestration-ai-artificial-intelligence/",
     "domain": "technologyreview.com",
@@ -253,7 +466,7 @@
     "score": 2
   },
   {
-    "id": "mit-techreview-1777035262348-7",
+    "id": "mit-techreview-1777037353228-7",
     "title": "Humanoid data",
     "url": "https://www.technologyreview.com/2026/04/21/1135656/humanoid-data-robot-training-ai-artificial-intelligence/",
     "domain": "technologyreview.com",
@@ -264,7 +477,7 @@
     "score": 0
   },
   {
-    "id": "mit-techreview-1777035262348-8",
+    "id": "mit-techreview-1777037353228-8",
     "title": "China’s open-source bet",
     "url": "https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/",
     "domain": "technologyreview.com",
@@ -275,7 +488,7 @@
     "score": 0
   },
   {
-    "id": "mit-techreview-1777035262348-9",
+    "id": "mit-techreview-1777037353228-9",
     "title": "Artificial scientists",
     "url": "https://www.technologyreview.com/2026/04/21/1135663/artificial-scientists-ai-artificial-intelligence/",
     "domain": "technologyreview.com",
@@ -286,7 +499,7 @@
     "score": 0
   },
   {
-    "id": "towardsdatascience-1777035262847-2",
+    "id": "towardsdatascience-1777037353722-2",
     "title": "DIY AI & ML: Solving The Multi-Armed Bandit Problem with Thompson Sampling",
     "url": "https://towardsdatascience.com/diy-ai-ml-solving-the-multi-armed-bandit-problem-with-thompson-sampling/",
     "domain": "towardsdatascience.com",
@@ -297,7 +510,19 @@
     "score": 1
   },
   {
-    "id": "towardsdatascience-1777035262848-3",
+    "id": "hn-47851555",
+    "title": "Ordering with the Starbucks ChatGPT app was a true coffee nightmare",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/915821/starbucks-chatgpt-app-testing",
+    "domain": "theverge.com",
+    "source": "hn",
+    "category": "news",
+    "points": 3,
+    "date": "2026-04-21T17:08:48.000Z",
+    "age": "2d ago",
+    "score": 3
+  },
+  {
+    "id": "towardsdatascience-1777037353722-3",
     "title": "I Replaced GPT-4 with a Local SLM and My CI/CD Pipeline Stopped Failing",
     "url": "https://towardsdatascience.com/i-replaced-gpt-4-with-a-local-slm-and-my-ci-cd-pipeline-stopped-failing/",
     "domain": "towardsdatascience.com",
@@ -308,7 +533,18 @@
     "score": 3
   },
   {
-    "id": "huggingface-1777035262340-3",
+    "id": "thesequence-1777037353661-2",
+    "title": "The Sequence Knowledge #846: Beyond Transformer: A New Series",
+    "url": "https://thesequence.substack.com/p/the-sequence-knowledge-846-beyond",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-21T10:57:40.000Z",
+    "age": "3d ago",
+    "score": 0
+  },
+  {
+    "id": "huggingface-1777037353360-3",
     "title": "QIMMA قِمّة ⛰: A Quality-First Arabic LLM Leaderboard",
     "url": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
     "domain": "huggingface.co",
@@ -319,7 +555,7 @@
     "score": 2
   },
   {
-    "id": "huggingface-1777035262340-4",
+    "id": "huggingface-1777037353360-4",
     "title": "AI and the Future of Cybersecurity: Why Openness Matters",
     "url": "https://huggingface.co/blog/cybersecurity-openness",
     "domain": "huggingface.co",
@@ -330,7 +566,7 @@
     "score": 1
   },
   {
-    "id": "tldr-ai-1777035262422-2",
+    "id": "tldr-ai-1777037353448-3",
     "title": "Kimi K2.6 🚀, Codex Chronicle 🤖, Bezos’ $10B AI fundraise 💰",
     "url": "https://tldr.tech/ai/2026-04-21",
     "domain": "tldr.tech",
@@ -341,7 +577,19 @@
     "score": 1
   },
   {
-    "id": "towardsdatascience-1777035262848-4",
+    "id": "hn-47839951",
+    "title": "AI Resistance: some recent anti-AI stuff that’s worth discussing",
+    "url": "https://stephvee.ca/blog/artificial%20intelligence/ai-resistance-is-growing/",
+    "domain": "stephvee.ca",
+    "source": "hn",
+    "category": "news",
+    "points": 387,
+    "date": "2026-04-20T20:19:13.000Z",
+    "age": "3d ago",
+    "score": 1
+  },
+  {
+    "id": "towardsdatascience-1777037353722-4",
     "title": "Context Payload Optimization for ICL-Based Tabular Foundation Models",
     "url": "https://towardsdatascience.com/context-payload-optimization-for-icl-based-tabular-foundation-models/",
     "domain": "towardsdatascience.com",
@@ -352,7 +600,7 @@
     "score": 2
   },
   {
-    "id": "towardsdatascience-1777035262848-5",
+    "id": "towardsdatascience-1777037353722-5",
     "title": "The LLM Gamble",
     "url": "https://towardsdatascience.com/the-llm-gamble/",
     "domain": "towardsdatascience.com",
@@ -363,18 +611,18 @@
     "score": 2
   },
   {
-    "id": "analyticsvidhya-1777035263376-3",
+    "id": "analyticsvidhya-1777037354447-3",
     "title": "Build Human-Like AI Voice App with Gemini 3.1 Flash TTS",
     "url": "https://www.analyticsvidhya.com/blog/2026/04/ai-voice-app-with-gemini-3-1-flash-tts/",
     "domain": "analyticsvidhya.com",
     "source": "analyticsvidhya",
     "category": "news",
     "date": "2026-04-20T13:01:16.000Z",
-    "age": "3d ago",
+    "age": "4d ago",
     "score": 3
   },
   {
-    "id": "tldr-ai-1777035262422-3",
+    "id": "tldr-ai-1777037353448-4",
     "title": "Cursor nears $50B 💸, Claude Design Launch 🎨, rising agent costs 💰",
     "url": "https://tldr.tech/ai/2026-04-20",
     "domain": "tldr.tech",
@@ -385,7 +633,18 @@
     "score": 5
   },
   {
-    "id": "analyticsvidhya-1777035263376-4",
+    "id": "thesequence-1777037353661-3",
+    "title": "The Sequence Radar #845: Last Week in AI: Anthropic and OpenAI Enter a New Phase",
+    "url": "https://thesequence.substack.com/p/the-sequence-radar-845-last-week",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-19T11:01:21.000Z",
+    "age": "5d ago",
+    "score": 7
+  },
+  {
+    "id": "analyticsvidhya-1777037354447-4",
     "title": "How to Structure a Claude Code Project that Thinks Like an Engineer",
     "url": "https://www.analyticsvidhya.com/blog/2026/04/claude-code-project-structure/",
     "domain": "analyticsvidhya.com",
@@ -396,7 +655,7 @@
     "score": 3
   },
   {
-    "id": "analyticsvidhya-1777035263376-5",
+    "id": "analyticsvidhya-1777037354447-5",
     "title": "Gemma 4 Tool Calling Explained: Build AI Agents with Function Calling (Step-by-Step Guide)",
     "url": "https://www.analyticsvidhya.com/blog/2026/04/gemma-4-tool-calling/",
     "domain": "analyticsvidhya.com",
@@ -407,7 +666,7 @@
     "score": 1
   },
   {
-    "id": "analyticsvidhya-1777035263376-6",
+    "id": "analyticsvidhya-1777037354447-6",
     "title": "Anthropic Launches Claude Opus 4.7 For “Most Difficult Tasks”",
     "url": "https://www.analyticsvidhya.com/blog/2026/04/claude-opus-4-7/",
     "domain": "analyticsvidhya.com",
@@ -418,18 +677,7 @@
     "score": 6
   },
   {
-    "id": "analyticsvidhya-1777035263376-7",
-    "title": "Top 28 Claude Shortcuts that will 10X your Speed",
-    "url": "https://www.analyticsvidhya.com/blog/2026/04/top-claude-shortcuts/",
-    "domain": "analyticsvidhya.com",
-    "source": "analyticsvidhya",
-    "category": "news",
-    "date": "2026-04-17T08:12:02.000Z",
-    "age": "7d ago",
-    "score": 3
-  },
-  {
-    "id": "tldr-ai-1777035262422-4",
+    "id": "tldr-ai-1777037353448-5",
     "title": "Claude Opus 4.7 🎭, OpenAI's GPT Rosalind 🧬, Perplexity Personal Computer 💻",
     "url": "https://tldr.tech/ai/2026-04-17",
     "domain": "tldr.tech",
@@ -440,7 +688,7 @@
     "score": 8
   },
   {
-    "id": "aisnakeoil-1777035262656-0",
+    "id": "aisnakeoil-1777037353744-0",
     "title": "Open-world evaluations for measuring frontier AI capabilities",
     "url": "https://www.normaltech.ai/p/open-world-evaluations-for-measuring",
     "domain": "normaltech.ai",
@@ -451,7 +699,18 @@
     "score": 1
   },
   {
-    "id": "huggingface-1777035262340-5",
+    "id": "thesequence-1777037353661-4",
+    "title": "The Sequence Opinion #844: Harness Engineering: The Operating System for Agentic Software",
+    "url": "https://thesequence.substack.com/p/the-sequence-opinion-844-harness",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-16T11:02:51.000Z",
+    "age": "8d ago",
+    "score": 2
+  },
+  {
+    "id": "huggingface-1777037353360-5",
     "title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
     "url": "https://huggingface.co/blog/ecom-rlve",
     "domain": "huggingface.co",
@@ -462,7 +721,7 @@
     "score": 0
   },
   {
-    "id": "huggingface-1777035262340-6",
+    "id": "huggingface-1777037353360-6",
     "title": "The PR you would have opened yourself",
     "url": "https://huggingface.co/blog/transformers-to-mlx",
     "domain": "huggingface.co",
@@ -473,7 +732,7 @@
     "score": 0
   },
   {
-    "id": "huggingface-1777035262340-7",
+    "id": "huggingface-1777037353360-7",
     "title": "Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers",
     "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
     "domain": "huggingface.co",
@@ -484,7 +743,7 @@
     "score": 0
   },
   {
-    "id": "tldr-ai-1777035262422-5",
+    "id": "tldr-ai-1777037353448-6",
     "title": "Gemini 3.1 Flash TTS 🎙️, Agent-to-Person marketplace 🤝, OpenAI Agents SDK 🛠️",
     "url": "https://tldr.tech/ai/2026-04-16",
     "domain": "tldr.tech",
@@ -495,7 +754,7 @@
     "score": 7
   },
   {
-    "id": "huggingface-1777035262340-8",
+    "id": "huggingface-1777037353360-8",
     "title": "Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents",
     "url": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
     "domain": "huggingface.co",
@@ -506,7 +765,18 @@
     "score": 0
   },
   {
-    "id": "huggingface-1777035262340-9",
+    "id": "thesequence-1777037353661-5",
+    "title": "The Sequence AI of the Week #843: The AI We Built But Can't Release: A Practical View Into the Claude Mythos Preview",
+    "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-843-the",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-15T11:11:51.000Z",
+    "age": "9d ago",
+    "score": 4
+  },
+  {
+    "id": "huggingface-1777037353360-9",
     "title": "Meet HoloTab by HCompany. Your AI browser companion.",
     "url": "https://huggingface.co/blog/Hcompany/holotab",
     "domain": "huggingface.co",
@@ -517,7 +787,7 @@
     "score": 1
   },
   {
-    "id": "tldr-ai-1777035262422-6",
+    "id": "tldr-ai-1777037353448-7",
     "title": "GPT-5.4-Cyber 🛡️, Google Chrome Skills 🛠️, Claude Code Routines 👨‍💻",
     "url": "https://tldr.tech/ai/2026-04-15",
     "domain": "tldr.tech",
@@ -528,7 +798,18 @@
     "score": 6
   },
   {
-    "id": "tldr-ai-1777035262422-7",
+    "id": "thesequence-1777037353661-6",
+    "title": "The Sequence Knowledge #842: Everything You Need to Know About World Models",
+    "url": "https://thesequence.substack.com/p/the-sequence-knowledge-842-everything",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-14T10:02:53.000Z",
+    "age": "10d ago",
+    "score": 0
+  },
+  {
+    "id": "tldr-ai-1777037353448-8",
     "title": "Google’s Cowork competitor 🖥️, Lovable Payments 💳, Codex web browsing 🌎",
     "url": "https://tldr.tech/ai/2026-04-14",
     "domain": "tldr.tech",
@@ -539,7 +820,7 @@
     "score": 0
   },
   {
-    "id": "tldr-ai-1777035262422-8",
+    "id": "tldr-ai-1777037353448-9",
     "title": "Claude Code’s new UI 👨‍💻, Codex Scratchpad 📝, multi-agent coordination 🤖",
     "url": "https://tldr.tech/ai/2026-04-13",
     "domain": "tldr.tech",
@@ -550,7 +831,18 @@
     "score": 5
   },
   {
-    "id": "tldr-ai-1777035262422-9",
+    "id": "thesequence-1777037353661-7",
+    "title": "The Sequence Radar #841: Three Model Releases, Three Futures",
+    "url": "https://thesequence.substack.com/p/the-sequence-radar-841-three-model",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-12T11:02:39.000Z",
+    "age": "12d ago",
+    "score": 0
+  },
+  {
+    "id": "tldr-ai-1777037353448-10",
     "title": "OpenAI $100 plan 💳, Claude Cowork GA 🏢, Perplexity x Plaid 💸",
     "url": "https://tldr.tech/ai/2026-04-10",
     "domain": "tldr.tech",
@@ -561,7 +853,18 @@
     "score": 8
   },
   {
-    "id": "huggingface-1777035262340-10",
+    "id": "thesequence-1777037353661-8",
+    "title": "The Sequence Opinion #840: The Agent-Native Rewrite: Why Every Piece of Software Infrastructure Needs to be Reimagined for AI Agents",
+    "url": "https://thesequence.substack.com/p/the-seqeunce-opinion-840-the-agent",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-09T11:02:55.000Z",
+    "age": "15d ago",
+    "score": 3
+  },
+  {
+    "id": "huggingface-1777037353360-10",
     "title": "Waypoint-1.5: Higher-Fidelity Interactive Worlds for Everyday GPUs",
     "url": "https://huggingface.co/blog/waypoint-1-5",
     "domain": "huggingface.co",
@@ -572,7 +875,7 @@
     "score": 0
   },
   {
-    "id": "huggingface-1777035262340-11",
+    "id": "huggingface-1777037353360-11",
     "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
     "url": "https://huggingface.co/blog/multimodal-sentence-transformers",
     "domain": "huggingface.co",
@@ -583,7 +886,7 @@
     "score": 0
   },
   {
-    "id": "tldr-ai-1777035262422-10",
+    "id": "tldr-ai-1777037353449-11",
     "title": "Meta's Muse Spark 🤖, Anthropic's Managed Agents 🧠, Claude + Notion 📝",
     "url": "https://tldr.tech/ai/2026-04-09",
     "domain": "tldr.tech",
@@ -594,7 +897,18 @@
     "score": 6
   },
   {
-    "id": "huggingface-1777035262340-12",
+    "id": "thesequence-1777037353661-9",
+    "title": "The Sequence AI of the Week #839: Gemma 4 and the Compression of Intelligence",
+    "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-839-gemma",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-08T10:54:59.000Z",
+    "age": "16d ago",
+    "score": 1
+  },
+  {
+    "id": "huggingface-1777037353360-12",
     "title": "Safetensors is Joining the PyTorch Foundation",
     "url": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation",
     "domain": "huggingface.co",
@@ -605,7 +919,7 @@
     "score": 0
   },
   {
-    "id": "tldr-ai-1777035262422-11",
+    "id": "tldr-ai-1777037353449-12",
     "title": "Claude Mythos 🛡️, GLM-5.1 🤖, warp decode ⚡",
     "url": "https://tldr.tech/ai/2026-04-08",
     "domain": "tldr.tech",
@@ -616,7 +930,18 @@
     "score": 3
   },
   {
-    "id": "tldr-ai-1777035262422-12",
+    "id": "thesequence-1777037353661-10",
+    "title": "The Sequence Knowledge #838: Project GENIE: Building Playable Worlds from Pixels",
+    "url": "https://thesequence.substack.com/p/the-sequence-knowledge-838-project",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-07T11:03:29.000Z",
+    "age": "17d ago",
+    "score": 0
+  },
+  {
+    "id": "tldr-ai-1777037353449-13",
     "title": "OpenAI tests Image V2 🖼️, Google debuts Jules V2 🤖, analyzing OpenAI’s $122B raise 💰",
     "url": "https://tldr.tech/ai/2026-04-07",
     "domain": "tldr.tech",
@@ -627,7 +952,7 @@
     "score": 3
   },
   {
-    "id": "tldr-ai-1777035262422-13",
+    "id": "tldr-ai-1777037353449-14",
     "title": "Claude Code blocks OpenClaw 🛑, Anthropic buys biotech 🧬, LLM Wiki 📁",
     "url": "https://tldr.tech/ai/2026-04-06",
     "domain": "tldr.tech",
@@ -638,7 +963,29 @@
     "score": 8
   },
   {
-    "id": "tldr-ai-1777035262422-14",
+    "id": "thesequence-1777037353661-11",
+    "title": "The Sequence Radar #837: Last Week in AI: From Model Releases to Market Structure",
+    "url": "https://thesequence.substack.com/p/the-sequence-radar-837-last-week",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-05T11:01:20.000Z",
+    "age": "19d ago",
+    "score": 1
+  },
+  {
+    "id": "thesequence-1777037353661-12",
+    "title": "The Sequence Opinion #836: Insurance for AI Agents ? Not as Crazy as You Think",
+    "url": "https://thesequence.substack.com/p/the-sequence-opinion-836-insurance",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-03T11:02:44.000Z",
+    "age": "21d ago",
+    "score": 1
+  },
+  {
+    "id": "tldr-ai-1777037353449-15",
     "title": "Cursor 3 💻, Gemma 4 🔬, Codex pay-as-you-go 💸",
     "url": "https://tldr.tech/ai/2026-04-03",
     "domain": "tldr.tech",
@@ -649,7 +996,18 @@
     "score": 0
   },
   {
-    "id": "huggingface-1777035262340-13",
+    "id": "thesequence-1777037353661-13",
+    "title": "The Sequence Chat #835: Illia Polosukhin on NEAR AI, Authoring the Transformer Paper and Decentralized and Private AI",
+    "url": "https://thesequence.substack.com/p/the-sequence-chat-835-illia-polosukhin",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-02T11:03:41.000Z",
+    "age": "22d ago",
+    "score": 1
+  },
+  {
+    "id": "huggingface-1777037353360-13",
     "title": "Welcome Gemma 4: Frontier multimodal intelligence on device",
     "url": "https://huggingface.co/blog/gemma4",
     "domain": "huggingface.co",
@@ -660,7 +1018,7 @@
     "score": 0
   },
   {
-    "id": "tldr-ai-1777035262422-15",
+    "id": "tldr-ai-1777037353449-16",
     "title": "Inside Kimi 🤖, training mRNA models 🧬, Claude Code leak analysis 🔓",
     "url": "https://tldr.tech/ai/2026-04-02",
     "domain": "tldr.tech",
@@ -671,7 +1029,18 @@
     "score": 3
   },
   {
-    "id": "huggingface-1777035262340-14",
+    "id": "thesequence-1777037353661-14",
+    "title": "The Sequence AI of the Week #834: Google's AMAZING TurboQuant for Building More Efficient AI",
+    "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-googles",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-04-01T11:03:16.000Z",
+    "age": "23d ago",
+    "score": 1
+  },
+  {
+    "id": "huggingface-1777037353360-14",
     "title": "Falcon Perception",
     "url": "https://huggingface.co/blog/tiiuae/falcon-perception",
     "domain": "huggingface.co",
@@ -682,7 +1051,7 @@
     "score": 0
   },
   {
-    "id": "huggingface-1777035262340-15",
+    "id": "huggingface-1777037353360-15",
     "title": "Any Custom Frontend with Gradio's Backend",
     "url": "https://huggingface.co/blog/introducing-gradio-server",
     "domain": "huggingface.co",
@@ -693,7 +1062,7 @@
     "score": 0
   },
   {
-    "id": "tldr-ai-1777035262422-16",
+    "id": "tldr-ai-1777037353449-17",
     "title": "Claude Code leak 🔓, Veo 3.1 Lite ⚡, 1-bit models 🤏",
     "url": "https://tldr.tech/ai/2026-04-01",
     "domain": "tldr.tech",
@@ -704,7 +1073,7 @@
     "score": 3
   },
   {
-    "id": "huggingface-1777035262340-16",
+    "id": "huggingface-1777037353360-16",
     "title": "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents",
     "url": "https://huggingface.co/blog/ibm-granite/granite-4-vision",
     "domain": "huggingface.co",
@@ -715,7 +1084,18 @@
     "score": 0
   },
   {
-    "id": "huggingface-1777035262340-17",
+    "id": "thesequence-1777037353661-15",
+    "title": "The Sequence Knowledge #833: How to Build a World Model",
+    "url": "https://thesequence.substack.com/p/the-sequence-knowledge-833-how-to",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-31T11:06:15.000Z",
+    "age": "24d ago",
+    "score": 0
+  },
+  {
+    "id": "huggingface-1777037353360-17",
     "title": "Training mRNA Language Models Across 25 Species for $165",
     "url": "https://huggingface.co/blog/OpenMed/training-mrna-models-25-species",
     "domain": "huggingface.co",
@@ -726,7 +1106,7 @@
     "score": 0
   },
   {
-    "id": "huggingface-1777035262340-18",
+    "id": "huggingface-1777037353360-18",
     "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
     "url": "https://huggingface.co/blog/trl-v1",
     "domain": "huggingface.co",
@@ -737,7 +1117,7 @@
     "score": 0
   },
   {
-    "id": "tldr-ai-1777035262422-17",
+    "id": "tldr-ai-1777037353449-18",
     "title": "Codex Plugin for Claude Code 💻, Qwen3.5-Omni 🤖, workload harness fit 🧑‍💻",
     "url": "https://tldr.tech/ai/2026-03-31",
     "domain": "tldr.tech",
@@ -748,7 +1128,7 @@
     "score": 3
   },
   {
-    "id": "tldr-ai-1777035262422-18",
+    "id": "tldr-ai-1777037353449-19",
     "title": "Claude Mythos leaks 🤖, last xAI cofounder exits 👋, lessons from OpenAI 💡",
     "url": "https://tldr.tech/ai/2026-03-30",
     "domain": "tldr.tech",
@@ -759,7 +1139,18 @@
     "score": 6
   },
   {
-    "id": "huggingface-1777035262340-19",
+    "id": "thesequence-1777037353661-16",
+    "title": "The Sequence Radar #832: Last Week in AI: Compression, Voice, and Why It All Matters",
+    "url": "https://thesequence.substack.com/p/the-sequence-radar-832-last-week",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
+    "category": "news",
+    "date": "2026-03-29T11:03:19.000Z",
+    "age": "26d ago",
+    "score": 1
+  },
+  {
+    "id": "huggingface-1777037353361-19",
     "title": "Liberate your OpenClaw",
     "url": "https://huggingface.co/blog/liberate-your-openclaw",
     "domain": "huggingface.co",
@@ -770,748 +1161,14 @@
     "score": 0
   },
   {
-    "id": "tldr-ai-1777035262422-19",
-    "title": "Anthropic weighs October IPO 💰, Gemini 3.1 Flash Live 🎙️, Cursor real-time RL 🔄",
-    "url": "https://tldr.tech/ai/2026-03-27",
-    "domain": "tldr.tech",
-    "source": "tldr-ai",
+    "id": "thesequence-1777037353661-17",
+    "title": "The Sequence Opinion #831: NVIDIA Is Quietly Building the Operating System of AI",
+    "url": "https://thesequence.substack.com/p/the-sequence-opinion-831-nvidia-is",
+    "domain": "thesequence.substack.com",
+    "source": "thesequence",
     "category": "news",
-    "date": "2026-03-27T00:00:00.000Z",
-    "age": "28d ago",
-    "score": 5
-  },
-  {
-    "id": "aisnakeoil-1777035262656-1",
-    "title": "New Paper: Towards a science of AI agent reliability",
-    "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2026-02-24T13:07:19.000Z",
-    "age": "58d ago",
-    "score": 3
-  },
-  {
-    "id": "aisnakeoil-1777035262657-2",
-    "title": "AI Won’t Automatically Make Legal Services Cheaper",
-    "url": "https://www.normaltech.ai/p/ai-wont-automatically-make-legal",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2026-02-12T19:26:05.000Z",
-    "age": "70d ago",
+    "date": "2026-03-26T11:03:05.000Z",
+    "age": "29d ago",
     "score": 1
-  },
-  {
-    "id": "aisnakeoil-1777035262657-3",
-    "title": "Fact checking Moravec's paradox",
-    "url": "https://www.normaltech.ai/p/fact-checking-moravecs-paradox",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2026-01-29T22:35:47.000Z",
-    "age": "84d ago",
-    "score": 0
-  },
-  {
-    "id": "venturebeat-1777035262631-0",
-    "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
-    "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-    "domain": "venturebeat.com",
-    "source": "venturebeat",
-    "category": "news",
-    "date": "2026-01-22T14:00:00.000Z",
-    "age": "91d ago",
-    "score": 1
-  },
-  {
-    "id": "venturebeat-1777035262631-1",
-    "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
-    "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
-    "domain": "venturebeat.com",
-    "source": "venturebeat",
-    "category": "news",
-    "date": "2026-01-19T14:00:00.000Z",
-    "age": "94d ago",
-    "score": 3
-  },
-  {
-    "id": "venturebeat-1777035262631-2",
-    "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
-    "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
-    "domain": "venturebeat.com",
-    "source": "venturebeat",
-    "category": "news",
-    "date": "2026-01-16T14:01:00.000Z",
-    "age": "97d ago",
-    "score": 1
-  },
-  {
-    "id": "venturebeat-1777035262631-3",
-    "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
-    "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
-    "domain": "venturebeat.com",
-    "source": "venturebeat",
-    "category": "news",
-    "date": "2026-01-13T13:00:00.000Z",
-    "age": "100d ago",
-    "score": 3
-  },
-  {
-    "id": "techcrunch-1777035262209-0",
-    "title": "Converge Bio raises $25M, backed by Bessemer and execs from Meta, OpenAI, Wiz",
-    "url": "https://techcrunch.com/2026/01/13/ai-drug-discovery-startup-converge-bio-pulls-in-25m-from-bessemer-and-execs-from-meta-openai-and-wiz/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2026-01-13T11:30:00.000Z",
-    "age": "101d ago",
-    "score": 3
-  },
-  {
-    "id": "venturebeat-1777035262631-4",
-    "title": "Anthropic launches Cowork, a Claude Desktop agent that works in your files — no coding required",
-    "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
-    "domain": "venturebeat.com",
-    "source": "venturebeat",
-    "category": "news",
-    "date": "2026-01-12T11:30:00.000Z",
-    "age": "102d ago",
-    "score": 8
-  },
-  {
-    "id": "venturebeat-1777035262631-5",
-    "title": "Nous Research's NousCoder-14B is an open-source coding model landing right in the Claude Code moment",
-    "url": "https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in",
-    "domain": "venturebeat.com",
-    "source": "venturebeat",
-    "category": "news",
-    "date": "2026-01-07T20:00:00.000Z",
-    "age": "106d ago",
-    "score": 3
-  },
-  {
-    "id": "venturebeat-1777035262631-6",
-    "title": "The creator of Claude Code just revealed his workflow, and developers are losing their minds",
-    "url": "https://venturebeat.com/technology/the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are",
-    "domain": "venturebeat.com",
-    "source": "venturebeat",
-    "category": "news",
-    "date": "2026-01-05T07:45:00.000Z",
-    "age": "109d ago",
-    "score": 3
-  },
-  {
-    "id": "techcrunch-1777035262209-1",
-    "title": "Meta bought 1 GW of solar this week",
-    "url": "https://techcrunch.com/2025/10/31/meta-bought-1-gw-of-solar-this-week/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-10-31T19:26:30.000Z",
-    "age": "174d ago",
-    "score": 0
-  },
-  {
-    "id": "aisnakeoil-1777035262657-4",
-    "title": "A guide to understanding AI as normal technology",
-    "url": "https://www.normaltech.ai/p/a-guide-to-understanding-ai-as-normal",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2025-09-09T13:00:40.000Z",
-    "age": "226d ago",
-    "score": 1
-  },
-  {
-    "id": "techcrunch-1777035262209-2",
-    "title": "How one AI startup is helping rice farmers battle climate change",
-    "url": "https://techcrunch.com/2025/08/26/how-one-ai-startup-is-helping-rice-farmers-battle-climate-change/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-08-26T15:21:19.000Z",
-    "age": "240d ago",
-    "score": 1
-  },
-  {
-    "id": "techcrunch-1777035262209-3",
-    "title": "Harvard dropouts to launch ‘always on’ AI smart glasses that listen and record every conversation",
-    "url": "https://techcrunch.com/2025/08/20/harvard-dropouts-to-launch-always-on-ai-smart-glasses-that-listen-and-record-every-conversation/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-08-20T16:00:00.000Z",
-    "age": "246d ago",
-    "score": 1
-  },
-  {
-    "id": "techcrunch-1777035262209-4",
-    "title": "Meta to add 100MW of solar power from US gear",
-    "url": "https://techcrunch.com/2025/08/20/meta-to-add-100-mw-of-solar-power-from-u-s-gear/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-08-20T15:56:53.000Z",
-    "age": "246d ago",
-    "score": 0
-  },
-  {
-    "id": "techcrunch-1777035262209-5",
-    "title": "Perplexity accused of scraping websites that explicitly blocked AI scraping",
-    "url": "https://techcrunch.com/2025/08/04/perplexity-accused-of-scraping-websites-that-explicitly-blocked-ai-scraping/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-08-04T15:41:39.000Z",
-    "age": "262d ago",
-    "score": 3
-  },
-  {
-    "id": "aisnakeoil-1777035262657-5",
-    "title": "Could AI slow science?",
-    "url": "https://www.normaltech.ai/p/could-ai-slow-science",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2025-07-16T21:35:56.000Z",
-    "age": "281d ago",
-    "score": 1
-  },
-  {
-    "id": "techcrunch-1777035262209-6",
-    "title": "Obvio’s stop sign cameras use AI to root out unsafe drivers",
-    "url": "https://techcrunch.com/2025/06/04/obvios-stop-sign-cameras-use-ai-to-root-out-unsafe-drivers/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-06-04T14:00:00.000Z",
-    "age": "323d ago",
-    "score": 1
-  },
-  {
-    "id": "techcrunch-1777035262209-7",
-    "title": "Breakneck data center growth challenges Microsoft’s sustainability goals",
-    "url": "https://techcrunch.com/2025/06/02/breakneck-data-center-growth-challenges-microsofts-sustainability-goals/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-06-02T18:07:05.000Z",
-    "age": "325d ago",
-    "score": 0
-  },
-  {
-    "id": "techcrunch-1777035262209-8",
-    "title": "Gridcare thinks more than 100 GW of data center capacity is hiding in the grid",
-    "url": "https://techcrunch.com/2025/05/27/gridcare-thinks-more-than-100-gw-of-data-center-capacity-is-hiding-in-the-grid/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-05-27T12:00:00.000Z",
-    "age": "332d ago",
-    "score": 0
-  },
-  {
-    "id": "techcrunch-1777035262209-9",
-    "title": "Meta adds another 650 MW of solar power to its AI push",
-    "url": "https://techcrunch.com/2025/05/22/meta-adds-another-650-mw-of-solar-power-to-its-ai-push/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-05-22T16:49:53.000Z",
-    "age": "336d ago",
-    "score": 1
-  },
-  {
-    "id": "aisnakeoil-1777035262657-6",
-    "title": "AGI is not a milestone",
-    "url": "https://www.normaltech.ai/p/agi-is-not-a-milestone",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2025-05-01T11:47:59.000Z",
-    "age": "358d ago",
-    "score": 0
-  },
-  {
-    "id": "aisnakeoil-1777035262657-7",
-    "title": "AI as Normal Technology",
-    "url": "https://www.normaltech.ai/p/ai-as-normal-technology",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2025-04-15T14:53:59.000Z",
-    "age": "373d ago",
-    "score": 1
-  },
-  {
-    "id": "techcrunch-1777035262209-10",
-    "title": "Who are climate-conscious consumers? Not who you’d expect, says Northwind Climate",
-    "url": "https://techcrunch.com/2025/04/01/who-are-climate-conscious-consumers-not-who-youd-expect-says-northwind-climate/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-04-01T19:52:59.000Z",
-    "age": "387d ago",
-    "score": 0
-  },
-  {
-    "id": "techcrunch-1777035262209-11",
-    "title": "Data centers love solar: Here’s a comprehensive guide to deals over 100 megawatts",
-    "url": "https://techcrunch.com/2025/03/30/data-centers-love-solar-heres-a-comprehensive-guide-to-deals-over-100-megawatts/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-03-30T14:00:00.000Z",
-    "age": "389d ago",
-    "score": 0
-  },
-  {
-    "id": "techcrunch-1777035262209-12",
-    "title": "Nvidia thinks AI can solve electrical grid problems caused by AI",
-    "url": "https://techcrunch.com/2025/03/20/nvidia-thinks-ai-can-solve-electrical-grid-problems-caused-by-ai/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-03-20T16:41:12.000Z",
-    "age": "399d ago",
-    "score": 1
-  },
-  {
-    "id": "techcrunch-1777035262210-13",
-    "title": "Solar notches another win as Microsoft adds 475 MW to power its AI data centers",
-    "url": "https://techcrunch.com/2025/03/20/solar-notches-another-win-as-microsoft-adds-475-mw-to-power-its-ai-data-centers/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-03-20T14:57:11.000Z",
-    "age": "399d ago",
-    "score": 1
-  },
-  {
-    "id": "techcrunch-1777035262210-14",
-    "title": "Geothermal could power nearly all new data centers through 2030",
-    "url": "https://techcrunch.com/2025/03/11/geothermal-could-power-nearly-all-new-data-centers-through-2030/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-03-11T17:43:52.000Z",
-    "age": "408d ago",
-    "score": 0
-  },
-  {
-    "id": "hn-43318624",
-    "title": "Probabilistic Artificial Intelligence",
-    "url": "https://arxiv.org/abs/2502.05244",
-    "domain": "arxiv.org",
-    "source": "hn",
-    "category": "news",
-    "points": 352,
-    "date": "2025-03-10T09:50:33.000Z",
-    "age": "410d ago",
-    "score": 2
-  },
-  {
-    "id": "techcrunch-1777035262210-15",
-    "title": "ElevenLabs now lets authors create and publish audiobooks on its own platform",
-    "url": "https://techcrunch.com/2025/02/25/elevenlabs-is-now-letting-authors-create-and-publish-audiobooks-on-its-own-platform/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-02-26T03:45:45.000Z",
-    "age": "422d ago",
-    "score": 0
-  },
-  {
-    "id": "techcrunch-1777035262210-16",
-    "title": "Data center tweaks could unlock 76 GW of new power capacity in the US",
-    "url": "https://techcrunch.com/2025/02/13/data-center-tweaks-could-unlock-76-gw-of-new-power-capacity-in-the-u-s/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-02-13T14:00:00.000Z",
-    "age": "434d ago",
-    "score": 0
-  },
-  {
-    "id": "techcrunch-1777035262210-17",
-    "title": "YouTube AI updates include auto dubbing expansion, age ID tech, and more",
-    "url": "https://techcrunch.com/2025/02/11/youtube-ai-updates-to-include-expansion-of-auto-dubbing-age-identifying-tech-and-more/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-02-11T14:57:22.000Z",
-    "age": "436d ago",
-    "score": 1
-  },
-  {
-    "id": "techcrunch-1777035262210-18",
-    "title": "Self Inspection raises $3M for its AI-powered vehicle inspections",
-    "url": "https://techcrunch.com/2025/02/07/self-inspection-raises-3m-for-its-ai-powered-vehicle-inspections/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-02-07T18:00:44.000Z",
-    "age": "440d ago",
-    "score": 1
-  },
-  {
-    "id": "techcrunch-1777035262210-19",
-    "title": "Meta turns to solar — again — in its data center-building boom",
-    "url": "https://techcrunch.com/2025/01/31/meta-turns-to-solar-again-in-its-data-center-building-boom/",
-    "domain": "techcrunch.com",
-    "source": "techcrunch",
-    "category": "news",
-    "date": "2025-01-31T19:38:51.000Z",
-    "age": "447d ago",
-    "score": 0
-  },
-  {
-    "id": "aisnakeoil-1777035262657-8",
-    "title": "Is AI progress slowing down?",
-    "url": "https://www.normaltech.ai/p/is-ai-progress-slowing-down",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-12-18T16:47:58.000Z",
-    "age": "491d ago",
-    "score": 1
-  },
-  {
-    "id": "aisnakeoil-1777035262657-9",
-    "title": "We Looked at 78 Election Deepfakes. Political Misinformation is not an AI Problem.",
-    "url": "https://www.normaltech.ai/p/we-looked-at-78-election-deepfakes",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-12-13T20:51:29.000Z",
-    "age": "496d ago",
-    "score": 1
-  },
-  {
-    "id": "aisnakeoil-1777035262657-10",
-    "title": "Does the UK’s liver transplant matching algorithm systematically exclude younger patients?",
-    "url": "https://www.normaltech.ai/p/does-the-uks-liver-transplant-matching",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-11-11T19:57:25.000Z",
-    "age": "528d ago",
-    "score": 0
-  },
-  {
-    "id": "aisnakeoil-1777035262657-11",
-    "title": "FAQ about the book and our writing process",
-    "url": "https://www.normaltech.ai/p/faq-about-the-book-and-our-writing",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-10-04T15:55:33.000Z",
-    "age": "566d ago",
-    "score": 0
-  },
-  {
-    "id": "aisnakeoil-1777035262657-12",
-    "title": "Can AI automate computational reproducibility?",
-    "url": "https://www.normaltech.ai/p/can-ai-automate-computational-reproducibility",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-09-18T14:32:47.000Z",
-    "age": "582d ago",
-    "score": 1
-  },
-  {
-    "id": "aisnakeoil-1777035262657-13",
-    "title": "Start reading the AI Snake Oil book online",
-    "url": "https://www.normaltech.ai/p/starting-reading-the-ai-snake-oil",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-09-10T20:55:03.000Z",
-    "age": "590d ago",
-    "score": 1
-  },
-  {
-    "id": "hn-41295923",
-    "title": "Artificial intelligence is losing hype",
-    "url": "https://www.economist.com/finance-and-economics/2024/08/19/artificial-intelligence-is-losing-hype",
-    "domain": "economist.com",
-    "source": "hn",
-    "category": "news",
-    "points": 568,
-    "date": "2024-08-20T01:13:23.000Z",
-    "age": "612d ago",
-    "score": 2
-  },
-  {
-    "id": "aisnakeoil-1777035262657-14",
-    "title": "AI companies are pivoting from creating gods to building products. Good.",
-    "url": "https://www.normaltech.ai/p/ai-companies-are-pivoting-from-creating",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-08-19T20:57:05.000Z",
-    "age": "612d ago",
-    "score": 1
-  },
-  {
-    "id": "aisnakeoil-1777035262657-15",
-    "title": "AI existential risk probabilities are too unreliable to inform policy",
-    "url": "https://www.normaltech.ai/p/ai-existential-risk-probabilities",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-07-26T11:29:25.000Z",
-    "age": "637d ago",
-    "score": 1
-  },
-  {
-    "id": "aisnakeoil-1777035262657-16",
-    "title": "New paper: AI agents that matter",
-    "url": "https://www.normaltech.ai/p/new-paper-ai-agents-that-matter",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-07-03T16:00:56.000Z",
-    "age": "659d ago",
-    "score": 1
-  },
-  {
-    "id": "aisnakeoil-1777035262657-17",
-    "title": "AI scaling myths",
-    "url": "https://www.normaltech.ai/p/ai-scaling-myths",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-06-27T18:16:55.000Z",
-    "age": "665d ago",
-    "score": 1
-  },
-  {
-    "id": "aisnakeoil-1777035262657-18",
-    "title": "Scientists should use AI as a tool, not an oracle",
-    "url": "https://www.normaltech.ai/p/scientists-should-use-ai-as-a-tool",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-06-03T18:34:13.000Z",
-    "age": "689d ago",
-    "score": 1
-  },
-  {
-    "id": "aisnakeoil-1777035262657-19",
-    "title": "AI leaderboards are no longer useful. It's time to switch to Pareto curves.",
-    "url": "https://www.normaltech.ai/p/ai-leaderboards-are-no-longer-useful",
-    "domain": "normaltech.ai",
-    "source": "aisnakeoil",
-    "category": "news",
-    "date": "2024-04-30T14:03:42.000Z",
-    "age": "723d ago",
-    "score": 1
-  },
-  {
-    "id": "hn-37086308",
-    "title": "Artificial General Intelligence – A gentle introduction",
-    "url": "https://cis.temple.edu/~pwang/AGI-Intro.html",
-    "domain": "cis.temple.edu",
-    "source": "hn",
-    "category": "news",
-    "points": 282,
-    "date": "2023-08-11T08:15:43.000Z",
-    "age": "987d ago",
-    "score": 0
-  },
-  {
-    "id": "hn-34637650",
-    "title": "John Carmack’s ‘Different Path’ to Artificial General Intelligence",
-    "url": "https://dallasinnovates.com/exclusive-qa-john-carmacks-different-path-to-artificial-general-intelligence/",
-    "domain": "dallasinnovates.com",
-    "source": "hn",
-    "category": "news",
-    "points": 378,
-    "date": "2023-02-03T06:01:47.000Z",
-    "age": "1176d ago",
-    "score": 0
-  },
-  {
-    "id": "hn-32458048",
-    "title": "Paradigms of Artificial Intelligence Programming (1992)",
-    "url": "https://github.com/norvig/paip-lisp",
-    "domain": "github.com",
-    "source": "hn",
-    "category": "news",
-    "points": 283,
-    "date": "2022-08-14T10:16:34.000Z",
-    "age": "1349d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-28394834",
-    "title": "Use of artificial intelligence for image analysis in breast cancer screening",
-    "url": "https://www.bmj.com/content/374/bmj.n1872",
-    "domain": "bmj.com",
-    "source": "hn",
-    "category": "news",
-    "points": 439,
-    "date": "2021-09-02T17:26:09.000Z",
-    "age": "1694d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-25530178",
-    "title": "Artificial Intelligence – The Revolution Hasn’t Happened Yet (2018)",
-    "url": "https://medium.com/@mijordan3/artificial-intelligence-the-revolution-hasnt-happened-yet-5e1d5812e1e7",
-    "domain": "medium.com",
-    "source": "hn",
-    "category": "news",
-    "points": 278,
-    "date": "2020-12-24T18:47:27.000Z",
-    "age": "1946d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-21979391",
-    "title": "Our field isn't quite “artificial intelligence” – it's “cognitive automation”",
-    "url": "https://twitter.com/fchollet/status/1214392496375025664",
-    "domain": "twitter.com",
-    "source": "hn",
-    "category": "news",
-    "points": 294,
-    "date": "2020-01-07T12:43:21.000Z",
-    "age": "2299d ago",
-    "score": 3
-  },
-  {
-    "id": "hn-21953593",
-    "title": "U.S. government limits exports of artificial intelligence software",
-    "url": "https://www.reuters.com/article/us-usa-artificial-intelligence/u-s-government-limits-exports-of-artificial-intelligence-software-idUSKBN1Z21PT",
-    "domain": "reuters.com",
-    "source": "hn",
-    "category": "news",
-    "points": 595,
-    "date": "2020-01-04T08:02:49.000Z",
-    "age": "2302d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-21530860",
-    "title": "John Carmack: I’m going to work on artificial general intelligence",
-    "url": "https://www.facebook.com/100006735798590/posts/2547632585471243/",
-    "domain": "facebook.com",
-    "source": "hn",
-    "category": "news",
-    "points": 1574,
-    "date": "2019-11-13T23:17:23.000Z",
-    "age": "2353d ago",
-    "score": 0
-  },
-  {
-    "id": "hn-18761907",
-    "title": "Artificial Intelligence Creates Realistic Pictures of People",
-    "url": "http://www.openculture.com/2018/12/artificial-intelligence-creates-realistic-photos-of-people-none-of-whom-actually-exist.html",
-    "domain": "openculture.com",
-    "source": "hn",
-    "category": "news",
-    "points": 337,
-    "date": "2018-12-26T12:54:13.000Z",
-    "age": "2676d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-18219444",
-    "title": "M.I.T. Plans College for Artificial Intelligence, Backed by $1B",
-    "url": "https://www.nytimes.com/2018/10/15/technology/mit-college-artificial-intelligence.html",
-    "domain": "nytimes.com",
-    "source": "hn",
-    "category": "news",
-    "points": 560,
-    "date": "2018-10-15T13:26:14.000Z",
-    "age": "2747d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-17047285",
-    "title": "Warriorjs – An exciting game of programming and artificial intelligence",
-    "url": "https://github.com/olistic/warriorjs",
-    "domain": "github.com",
-    "source": "hn",
-    "category": "news",
-    "points": 293,
-    "date": "2018-05-11T13:55:09.000Z",
-    "age": "2904d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-17040368",
-    "title": "Carnegie Mellon Launches Undergraduate Degree in Artificial Intelligence",
-    "url": "https://www.cs.cmu.edu/news/carnegie-mellon-launches-undergraduate-degree-artificial-intelligence",
-    "domain": "cs.cmu.edu",
-    "source": "hn",
-    "category": "news",
-    "points": 502,
-    "date": "2018-05-10T16:28:03.000Z",
-    "age": "2905d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-15155609",
-    "title": "Where will artificial general intelligence come from?",
-    "url": "https://docs.google.com/presentation/d/119VW6ueBGLQXsw-jGMboGP2-WuOnyMAOYLgd44SL6xM/edit#slide=id.p",
-    "domain": "docs.google.com",
-    "source": "hn",
-    "category": "news",
-    "points": 389,
-    "date": "2017-09-02T12:24:35.000Z",
-    "age": "3156d ago",
-    "score": 0
-  },
-  {
-    "id": "hn-13737426",
-    "title": "Will Democracy Survive Big Data and Artificial Intelligence?",
-    "url": "https://www.scientificamerican.com/article/will-democracy-survive-big-data-and-artificial-intelligence/",
-    "domain": "scientificamerican.com",
-    "source": "hn",
-    "category": "news",
-    "points": 269,
-    "date": "2017-02-26T14:46:07.000Z",
-    "age": "3343d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-12667761",
-    "title": "Artificial Intelligence Lecture Videos",
-    "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/lecture-videos/",
-    "domain": "ocw.mit.edu",
-    "source": "hn",
-    "category": "news",
-    "points": 540,
-    "date": "2016-10-08T17:27:17.000Z",
-    "age": "3484d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-9386004",
-    "title": "Show HN: I'm a 14 year-old dev who has programmed an artificial intelligence bot",
-    "url": "http://acuman.us/",
-    "domain": "acuman.us",
-    "source": "hn",
-    "category": "news",
-    "points": 430,
-    "date": "2015-04-16T05:21:03.000Z",
-    "age": "4026d ago",
-    "score": 2
-  },
-  {
-    "id": "hn-7127938",
-    "title": "Google to Buy Artificial Intelligence Startup DeepMind for $400M",
-    "url": "http://recode.net/2014/01/26/exclusive-google-to-buy-artificial-intelligence-startup-deepmind-for-400m/",
-    "domain": "recode.net",
-    "source": "hn",
-    "category": "news",
-    "points": 352,
-    "date": "2014-01-27T00:40:54.000Z",
-    "age": "4470d ago",
-    "score": 2
   }
 ]

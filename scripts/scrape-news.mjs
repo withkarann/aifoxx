@@ -14,6 +14,9 @@ const OUTPUT_PATH = join(__dirname, '..', 'src', 'data', 'news.json')
 const NEW_TOOLS_PATH = join(__dirname, '..', 'src', 'data', 'new-tools.json')
 const MAX_ITEMS = 200
 const MAX_PER_SOURCE = 20
+// Drop items older than this. Old HN results from Algolia often link to dead domains (e.g. recode.net).
+const MAX_AGE_DAYS = 30
+const MIN_CREATED_AT_S = Math.floor((Date.now() - MAX_AGE_DAYS * 24 * 60 * 60 * 1000) / 1000)
 
 // ─── Relevance scoring ────────────────────────────────────────────────────────
 // Each keyword match adds its weight to the item's score.
@@ -239,7 +242,8 @@ async function fetchText(url) {
 // ─── Fetch functions ──────────────────────────────────────────────────────────
 
 async function fetchHN() {
-  const url = `https://hn.algolia.com/api/v1/search?tags=story&query=artificial+intelligence&hitsPerPage=${MAX_PER_SOURCE}`
+  // search_by_date sorts by recency; numericFilters restricts to the last MAX_AGE_DAYS so we skip 10-year-old dead links.
+  const url = `https://hn.algolia.com/api/v1/search_by_date?tags=story&query=artificial+intelligence&hitsPerPage=${MAX_PER_SOURCE}&numericFilters=created_at_i>${MIN_CREATED_AT_S}`
   const data = JSON.parse(await fetchText(url))
   return (data.hits || [])
     .filter((h) => h.url && h.title)
@@ -262,7 +266,7 @@ async function fetchHN() {
 }
 
 async function fetchLaunchHN() {
-  const url = `https://hn.algolia.com/api/v1/search?tags=story&query=%22Launch+HN%22&hitsPerPage=${MAX_PER_SOURCE}`
+  const url = `https://hn.algolia.com/api/v1/search_by_date?tags=story&query=%22Launch+HN%22&hitsPerPage=${MAX_PER_SOURCE}&numericFilters=created_at_i>${MIN_CREATED_AT_S}`
   const data = JSON.parse(await fetchText(url))
   return (data.hits || [])
     .filter((h) => h.url && h.title && /^Launch HN:/i.test(h.title))
@@ -293,7 +297,12 @@ async function fetchRSSSource(source) {
     const score = scoreTitle(title)
     // For general sources (needsScore), skip items with zero AI relevance
     if (source.needsScore && score === 0) continue
-    const date = i.pubDate ? new Date(i.pubDate).toISOString() : new Date().toISOString()
+    // Skip items without a pubDate (we can't trust the recency) or older than MAX_AGE_DAYS.
+    if (!i.pubDate) continue
+    const parsed = new Date(i.pubDate)
+    if (!Number.isFinite(parsed.getTime())) continue
+    if (parsed.getTime() < MIN_CREATED_AT_S * 1000) continue
+    const date = parsed.toISOString()
     results.push({
       id: `${source.id}-${Date.now()}-${results.length}`,
       title,
