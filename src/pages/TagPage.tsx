@@ -39,6 +39,17 @@ export default function TagPage() {
         robots={tools.length === 0 ? "noindex, follow" : undefined}
       />
       <JsonLd schema={tagSchema} id="tag-collection" />
+      <JsonLd
+        id="tag-breadcrumb"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://${Brand.product.domain}` },
+            { "@type": "ListItem", "position": 2, "name": `#${tagValue}`, "item": `https://${Brand.product.domain}/tag/${encodedTag}` },
+          ],
+        }}
+      />
       <div className="max-w-5xl mx-auto w-full p-6 space-y-5">
         <div>
           <h1 className="font-display font-black text-3xl text-accent-green">&gt; #{tagValue}</h1>
