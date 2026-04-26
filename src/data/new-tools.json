@@ -1,16 +1,5 @@
 [
   {
-    "id": "import-ai-1777037354630-0",
-    "title": "Import AI 454: Automating alignment research; safety study of a Chinese model; HiFloat4",
-    "url": "https://importai.substack.com/p/import-ai-454-automating-alignment",
-    "domain": "importai.substack.com",
-    "source": "import-ai",
-    "category": "new-tool",
-    "date": "2026-04-20T12:30:19.000Z",
-    "age": "4d ago",
-    "score": 1
-  },
-  {
     "id": "launch-hn-47794514",
     "title": "Kampala (YC W26) – Reverse-Engineer Apps into APIs",
     "url": "https://www.zatanna.ai/kampala",
@@ -19,19 +8,8 @@
     "category": "new-tool",
     "points": 100,
     "date": "2026-04-16T15:19:54.000Z",
-    "age": "7d ago",
+    "age": "9d ago",
     "score": 0
-  },
-  {
-    "id": "import-ai-1777037354630-1",
-    "title": "Import AI 453: Breaking AI agents; MirrorCode; and ten views on gradual disempowerment",
-    "url": "https://importai.substack.com/p/import-ai-453-breaking-ai-agents",
-    "domain": "importai.substack.com",
-    "source": "import-ai",
-    "category": "new-tool",
-    "date": "2026-04-13T10:02:22.000Z",
-    "age": "11d ago",
-    "score": 1
   },
   {
     "id": "launch-hn-47720418",
@@ -42,7 +20,7 @@
     "category": "new-tool",
     "points": 77,
     "date": "2026-04-10T16:22:13.000Z",
-    "age": "13d ago",
+    "age": "15d ago",
     "score": 1
   },
   {
@@ -54,7 +32,7 @@
     "category": "new-tool",
     "points": 48,
     "date": "2026-04-09T12:11:56.000Z",
-    "age": "15d ago",
+    "age": "16d ago",
     "score": 0
   },
   {
@@ -66,40 +44,7 @@
     "category": "new-tool",
     "points": 322,
     "date": "2026-04-06T16:32:11.000Z",
-    "age": "17d ago",
+    "age": "19d ago",
     "score": 0
-  },
-  {
-    "id": "import-ai-1777037354630-2",
-    "title": "Import AI 452: Scaling laws for cyberwar; rising tides of AI automation; and a puzzle over gDP forecasting",
-    "url": "https://importai.substack.com/p/import-ai-452-scaling-laws-for-cyberwar",
-    "domain": "importai.substack.com",
-    "source": "import-ai",
-    "category": "new-tool",
-    "date": "2026-04-06T12:31:31.000Z",
-    "age": "18d ago",
-    "score": 2
-  },
-  {
-    "id": "lastweekinai-1777037354945-0",
-    "title": "LWiAI Podcast #238 - GPT 5.4 mini, OpenAI Pivot, Mamba 3, Attention Residuals",
-    "url": "https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai",
-    "domain": "lastweekin.ai",
-    "source": "lastweekinai",
-    "category": "new-tool",
-    "date": "2026-04-01T08:07:15.000Z",
-    "age": "23d ago",
-    "score": 6
-  },
-  {
-    "id": "import-ai-1777037354630-3",
-    "title": "Import AI 451: Political superintelligence; Google's society of minds, and a robot drummer",
-    "url": "https://importai.substack.com/p/import-ai-451-political-superintelligence",
-    "domain": "importai.substack.com",
-    "source": "import-ai",
-    "category": "new-tool",
-    "date": "2026-03-30T12:28:13.000Z",
-    "age": "25d ago",
-    "score": 1
   }
 ]
