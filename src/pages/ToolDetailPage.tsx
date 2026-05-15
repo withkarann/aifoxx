@@ -104,7 +104,16 @@ export default function ToolDetailPage() {
   const hasApiAccess = tool.access_methods?.some((method) => method.toLowerCase().includes("api"));
   const hasFreeOffer = tool.pricing === "Free" || tool.pricing === "Freemium" || tool.pricing === "Open Source";
 
-  const seoDescription = `${tool.description} Pricing: ${tool.pricing}. Category: ${tool.category}.`;
+  // Keep meta description under 160 chars (Google truncation limit).
+  const seoDescription = (() => {
+    const suffix = ` · ${tool.pricing} · ${tool.category}`;
+    const maxDesc = 160 - suffix.length;
+    const desc =
+      tool.description.length > maxDesc
+        ? tool.description.slice(0, maxDesc - 1).trimEnd() + "…"
+        : tool.description;
+    return `${desc}${suffix}`;
+  })();
 
   const faqSchema = {
     "@context": "https://schema.org",
