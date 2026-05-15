@@ -17,6 +17,7 @@ function CodeBlock({ children }: { children: string }) {
     <div className="relative mt-3">
       <button
         onClick={handleCopy}
+        aria-label={copied ? "Code copied to clipboard" : "Copy code to clipboard"}
         className="absolute top-2 right-2 flex items-center gap-1 font-mono text-xs text-text-muted hover:text-text-primary transition-colors duration-150"
       >
         {copied ? <><Check size={12} /> COPIED!</> : <Copy size={12} />}
