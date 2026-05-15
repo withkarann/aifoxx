@@ -41,15 +41,17 @@ export const SearchBar = forwardRef<SearchBarHandle, SearchBarProps>(
           <span className="text-accent-green font-mono font-bold select-none">&gt;</span>
           <input
             ref={inputRef}
-            type="text"
+            type="search"
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder="search_tools..."
+            aria-label="Search AI tools"
             className="bg-transparent text-text-primary font-mono text-sm flex-1 outline-none placeholder:text-text-muted py-2.5 caret-accent-green"
           />
           {value && (
             <button
               onClick={() => onChange("")}
+              aria-label="Clear search"
               className="text-text-muted hover:text-text-primary transition-colors duration-150 text-sm"
             >
               ✕
