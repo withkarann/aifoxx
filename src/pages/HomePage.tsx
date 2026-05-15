@@ -194,11 +194,12 @@ export default function HomePage() {
         >
           <img 
             src="/aifoxx.png" 
-            alt="AIFOXX Logo" 
+            alt="AIFOXX AI Tools Directory Logo" 
             className="hero-logo w-24 h-24 md:w-32 md:h-32 drop-shadow-[0_0_15px_rgba(var(--accent-rgb),0.3)] select-none pointer-events-none" 
           />
           <h1 className="hero-title font-display font-mono font-black text-5xl md:text-7xl text-text-primary tracking-widest min-h-[1.2em]">
-            {displayText}
+            <span className="sr-only">AIFOXX — AI Tools Directory</span>
+            <span aria-hidden="true">{displayText}</span>
           </h1>
         </div>
         
