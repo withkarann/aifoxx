@@ -9,6 +9,7 @@ const SITE_URL = "https://aifoxx.com";
 const TOOLS_PATH = join(__dirname, "..", "src", "data", "tools.json");
 const NEWS_PATH = join(__dirname, "..", "src", "data", "news.json");
 const NEW_TOOLS_PATH = join(__dirname, "..", "src", "data", "new-tools.json");
+const BEST_PATH = join(__dirname, "..", "src", "data", "best-categories.json");
 const OUTPUT_PATH = join(__dirname, "..", "public", "sitemap.xml");
 
 function normalizeTaxonomyValue(value) {
