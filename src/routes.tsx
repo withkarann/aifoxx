@@ -9,6 +9,9 @@ import SkillsPage from "./pages/SkillsPage";
 import McpServersPage from "./pages/McpServersPage";
 import NewsPage from "./pages/NewsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import BestIndexPage from "./pages/BestIndexPage";
+import BestCategoryPage from "./pages/BestCategoryPage";
+import bestData from "./data/best-categories.json";
 import { allTools, normalizeTaxonomyValue } from "./lib/tools";
 
 // Pre-compute all static paths at build time
