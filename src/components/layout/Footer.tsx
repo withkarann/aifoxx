@@ -1,4 +1,5 @@
 import { Github } from "lucide-react";
+import { Link } from "react-router-dom";
 import Brand from "@/lib/brand";
 import { CRTOverlay } from "@/components/ui/CRTOverlay";
 
