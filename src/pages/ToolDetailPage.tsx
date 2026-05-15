@@ -207,7 +207,7 @@ export default function ToolDetailPage() {
             {tool.logo_url ? (
               <img
                 src={tool.logo_url}
-                alt={tool.name}
+                alt={`${tool.name} - ${tool.category} AI tool logo`}
                 loading="lazy"
                 decoding="async"
                 referrerPolicy="no-referrer"
