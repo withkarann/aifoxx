@@ -226,6 +226,30 @@ export default function HomePage() {
             onClearAll={clearFilters}
           />
 
+          {!hasActiveFilters && (
+            <section className="space-y-3" aria-labelledby="best-by-cat-heading">
+              <h2 id="best-by-cat-heading" className="font-mono text-xs text-text-muted tracking-widest">
+                // BEST AI TOOLS BY CATEGORY
+              </h2>
+              <p className="font-mono text-sm text-text-secondary leading-relaxed max-w-3xl">
+                AIFOXX curates the best AI tools across every major category — from AI coding assistants
+                to image generators, marketing platforms, and writing tools. Browse our hand-picked guides
+                below, or search 1000+ tools above.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {bestCategories.map((c) => (
+                  <Link
+                    key={c.slug}
+                    to={`/best/${c.slug}`}
+                    className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-accent-green hover:border-accent-green/60 transition-colors"
+                  >
+                    {c.headline}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
           {!hasActiveFilters && featuredTools.length > 0 && (
             <section className="space-y-3" aria-labelledby="featured-heading">
               <h2 id="featured-heading" className="font-mono text-xs text-text-muted tracking-widest">// FEATURED AI TOOLS</h2>
