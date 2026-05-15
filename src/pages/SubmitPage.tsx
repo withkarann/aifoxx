@@ -109,12 +109,13 @@ export default function SubmitPage() {
       </p>
 
       {/* Steps */}
-      <div className="mt-10 space-y-4">
+      <h2 className="font-mono text-xs text-text-muted tracking-widest mt-10 mb-4">// CONTRIBUTION STEPS</h2>
+      <div className="space-y-4">
         {STEPS.map((step) => (
           <div key={step.num} className="bg-bg-surface border border-border-default rounded-[6px] p-5">
-            <p className="font-display font-black text-text-primary">
+            <h3 className="font-display font-black text-text-primary">
               {step.num} <span className="text-text-muted">//</span> {step.title}
-            </p>
+            </h3>
             <p className="font-mono text-sm text-text-secondary mt-2">{step.desc}</p>
             {step.code && <CodeBlock>{step.code}</CodeBlock>}
           </div>
