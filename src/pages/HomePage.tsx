@@ -159,16 +159,16 @@ export default function HomePage() {
   return (
     <>
       <PageMeta
-        title={`${Brand.product.name_styled} — 1000+ AI Tools Directory`}
-        description={`Browse 1000+ AI tools by category, use case, and pricing. Open source directory.`}
+        title={`Best AI Tools 2026 — 1000+ Curated AI Tools Directory | ${Brand.product.name_styled}`}
+        description={`Discover the best AI tools for coding, writing, design, marketing, video & more. 1000+ curated AI tools with real pricing, compliance & reviews. Updated daily.`}
         url={`https://${Brand.product.domain}`}
         robots={hasSeoQueryParams ? "noindex, follow" : undefined}
         keywords={[
-          "AI tools directory",
-          "best AI tools",
-          "AI software comparison",
-          "AI tools pricing",
-          "AI compliance",
+          "best ai tools",
+          "best ai tools 2026",
+          "ai tools directory",
+          "ai software comparison",
+          "ai tools pricing",
         ]}
       />
       {/* HERO */}
