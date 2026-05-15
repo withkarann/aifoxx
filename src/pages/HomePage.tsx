@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
+import bestData from "@/data/best-categories.json";
+const bestCategories = bestData.categories;
 import { allTools } from "@/lib/tools";
 import { useToolFilters } from "@/hooks/useToolFilters";
 import { useFilteredTools } from "@/hooks/useFilteredTools";
