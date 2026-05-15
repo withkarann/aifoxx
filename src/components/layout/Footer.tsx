@@ -10,6 +10,20 @@ export function Footer() {
         <Link to="/best" className="font-mono text-xs text-accent-green hover:text-text-primary transition-colors tracking-wider">
           &gt; BEST AI TOOLS BY CATEGORY
         </Link>
+        <a
+          href="https://www.producthunt.com/products/aifoxx?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-aifoxx"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="AiFoxx on Product Hunt"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1147900&theme=light&t=1778869557296"
+            alt="AiFoxx - Best AI Tools by Category | Product Hunt"
+            width={250}
+            height={54}
+            loading="lazy"
+          />
+        </a>
         <p className="font-mono text-xs sm:text-[10px] text-text-muted tracking-wider text-center break-words">
           {Brand.copy.footer_line}
         </p>
