@@ -129,7 +129,7 @@ function generateSitemap() {
     priority: 0.5,
   }));
 
-  const routes = [...staticRoutes, ...categoryRoutes, ...toolRoutes, ...tagRoutes];
+  const routes = [...staticRoutes, ...bestRoutes, ...categoryRoutes, ...toolRoutes, ...tagRoutes];
 
   const xml = [
     "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
