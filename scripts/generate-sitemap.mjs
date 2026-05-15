@@ -95,7 +95,16 @@ function generateSitemap() {
     { path: "/skills", lastmod: today, changefreq: "weekly", priority: 0.8 },
     { path: "/mcp", lastmod: today, changefreq: "weekly", priority: 0.8 },
     { path: "/news", lastmod: newsLastmod, changefreq: "daily", priority: 0.8 },
+    { path: "/best", lastmod: today, changefreq: "weekly", priority: 0.9 },
   ];
+
+  const bestData = JSON.parse(readFileSync(BEST_PATH, "utf8"));
+  const bestRoutes = bestData.categories.map((c) => ({
+    path: `/best/${c.slug}`,
+    lastmod: today,
+    changefreq: "weekly",
+    priority: 0.9,
+  }));
 
   const categoryRoutes = categoryPaths.map((path) => ({
     path,
