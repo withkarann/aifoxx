@@ -7,6 +7,9 @@ export function Footer() {
   return (
     <footer className="border-t border-border-dim bg-bg-surface mt-auto w-full">
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col items-center gap-3 sm:px-2 sm:py-3">
+        <Link to="/best" className="font-mono text-xs text-accent-green hover:text-text-primary transition-colors tracking-wider">
+          &gt; BEST AI TOOLS BY CATEGORY
+        </Link>
         <p className="font-mono text-xs sm:text-[10px] text-text-muted tracking-wider text-center break-words">
           {Brand.copy.footer_line}
         </p>
