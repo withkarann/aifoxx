@@ -57,6 +57,12 @@ export const routes: RouteRecord[] = [
       { path: "skills", Component: SkillsPage },
       { path: "mcp", Component: McpServersPage },
       { path: "news", Component: NewsPage },
+      { path: "best", Component: BestIndexPage },
+      {
+        path: "best/:slug",
+        Component: BestCategoryPage,
+        getStaticPaths: () => bestData.categories.map((c) => `best/${c.slug}`),
+      },
       { path: "*", Component: NotFoundPage },
     ],
   },
