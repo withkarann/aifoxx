@@ -124,9 +124,9 @@ export default function SubmitPage() {
 
       {/* Rules */}
       <div className="mt-8 bg-bg-elevated border border-accent-green/30 rounded-[6px] p-5">
-        <p className="font-mono text-xs text-text-muted tracking-widest mb-3">
+        <h2 className="font-mono text-xs text-text-muted tracking-widest mb-3">
           // CONTRIBUTION RULES
-        </p>
+        </h2>
         <ul className="space-y-1.5">
           {RULES.map((rule) => (
             <li key={rule} className="font-mono text-sm text-text-secondary">
@@ -138,9 +138,9 @@ export default function SubmitPage() {
 
       {/* Badge */}
       <div className="mt-8 bg-bg-surface border border-border-default rounded-[6px] p-5">
-        <p className="font-display font-black text-text-primary">
+        <h3 className="font-display font-black text-text-primary">
           05 <span className="text-text-muted">//</span> ADD A BADGE
-        </p>
+        </h3>
         <p className="font-mono text-sm text-text-secondary mt-2">
           Show that your tool is listed on {brandName}:
         </p>
