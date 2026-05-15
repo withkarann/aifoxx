@@ -9,6 +9,7 @@ const SITE_URL = "https://aifoxx.com";
 const TOOLS_PATH = join(__dirname, "..", "src", "data", "tools.json");
 const NEWS_PATH = join(__dirname, "..", "src", "data", "news.json");
 const NEW_TOOLS_PATH = join(__dirname, "..", "src", "data", "new-tools.json");
+const BEST_PATH = join(__dirname, "..", "src", "data", "best-categories.json");
 const OUTPUT_PATH = join(__dirname, "..", "public", "sitemap.xml");
 
 function normalizeTaxonomyValue(value) {
@@ -94,7 +95,16 @@ function generateSitemap() {
     { path: "/skills", lastmod: today, changefreq: "weekly", priority: 0.8 },
     { path: "/mcp", lastmod: today, changefreq: "weekly", priority: 0.8 },
     { path: "/news", lastmod: newsLastmod, changefreq: "daily", priority: 0.8 },
+    { path: "/best", lastmod: today, changefreq: "weekly", priority: 0.9 },
   ];
+
+  const bestData = JSON.parse(readFileSync(BEST_PATH, "utf8"));
+  const bestRoutes = bestData.categories.map((c) => ({
+    path: `/best/${c.slug}`,
+    lastmod: today,
+    changefreq: "weekly",
+    priority: 0.9,
+  }));
 
   const categoryRoutes = categoryPaths.map((path) => ({
     path,
@@ -119,7 +129,7 @@ function generateSitemap() {
     priority: 0.5,
   }));
 
-  const routes = [...staticRoutes, ...categoryRoutes, ...toolRoutes, ...tagRoutes];
+  const routes = [...staticRoutes, ...bestRoutes, ...categoryRoutes, ...toolRoutes, ...tagRoutes];
 
   const xml = [
     "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",

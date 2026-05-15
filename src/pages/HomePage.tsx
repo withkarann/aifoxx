@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
+import bestData from "@/data/best-categories.json";
+const bestCategories = bestData.categories;
 import { allTools } from "@/lib/tools";
 import { useToolFilters } from "@/hooks/useToolFilters";
 import { useFilteredTools } from "@/hooks/useFilteredTools";
@@ -159,16 +161,16 @@ export default function HomePage() {
   return (
     <>
       <PageMeta
-        title={`${Brand.product.name_styled} — 1000+ AI Tools Directory`}
-        description={`Browse 1000+ AI tools by category, use case, and pricing. Open source directory.`}
+        title={`Best AI Tools 2026 — 1000+ Curated AI Tools Directory | ${Brand.product.name_styled}`}
+        description={`Discover the best AI tools for coding, writing, design, marketing, video & more. 1000+ curated AI tools with real pricing, compliance & reviews. Updated daily.`}
         url={`https://${Brand.product.domain}`}
         robots={hasSeoQueryParams ? "noindex, follow" : undefined}
         keywords={[
-          "AI tools directory",
-          "best AI tools",
-          "AI software comparison",
-          "AI tools pricing",
-          "AI compliance",
+          "best ai tools",
+          "best ai tools 2026",
+          "ai tools directory",
+          "ai software comparison",
+          "ai tools pricing",
         ]}
       />
       {/* HERO */}
@@ -225,6 +227,30 @@ export default function HomePage() {
             activeFilterCount={activeFilterCount}
             onClearAll={clearFilters}
           />
+
+          {!hasActiveFilters && (
+            <section className="space-y-3" aria-labelledby="best-by-cat-heading">
+              <h2 id="best-by-cat-heading" className="font-mono text-xs text-text-muted tracking-widest">
+                // BEST AI TOOLS BY CATEGORY
+              </h2>
+              <p className="font-mono text-sm text-text-secondary leading-relaxed max-w-3xl">
+                AIFOXX curates the best AI tools across every major category — from AI coding assistants
+                to image generators, marketing platforms, and writing tools. Browse our hand-picked guides
+                below, or search 1000+ tools above.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {bestCategories.map((c) => (
+                  <Link
+                    key={c.slug}
+                    to={`/best/${c.slug}`}
+                    className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-accent-green hover:border-accent-green/60 transition-colors"
+                  >
+                    {c.headline}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           {!hasActiveFilters && featuredTools.length > 0 && (
             <section className="space-y-3" aria-labelledby="featured-heading">
