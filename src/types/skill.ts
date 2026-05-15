@@ -15,6 +15,7 @@ export const SkillSchema = z.object({
   category: z.string(),
   skill_type: SkillTypeEnum,
   last_updated: z.string(),
+  is_official: z.boolean().optional(),
 });
 
 export type Skill = z.infer<typeof SkillSchema>;
