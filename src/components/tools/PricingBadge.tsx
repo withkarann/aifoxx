@@ -8,6 +8,7 @@ const pricingClassByType: Record<Pricing, string> = {
   "Open Source": "pricing-open-source",
   "Usage Based": "pricing-usage-based",
   "Contact Sales": "pricing-contact-sales",
+  "Pay-as-you-go": "pricing-usage-based",
 };
 
 interface PricingBadgeProps {
