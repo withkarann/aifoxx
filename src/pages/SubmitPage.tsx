@@ -17,6 +17,7 @@ function CodeBlock({ children }: { children: string }) {
     <div className="relative mt-3">
       <button
         onClick={handleCopy}
+        aria-label={copied ? "Code copied to clipboard" : "Copy code to clipboard"}
         className="absolute top-2 right-2 flex items-center gap-1 font-mono text-xs text-text-muted hover:text-text-primary transition-colors duration-150"
       >
         {copied ? <><Check size={12} /> COPIED!</> : <Copy size={12} />}
@@ -108,12 +109,13 @@ export default function SubmitPage() {
       </p>
 
       {/* Steps */}
-      <div className="mt-10 space-y-4">
+      <h2 className="font-mono text-xs text-text-muted tracking-widest mt-10 mb-4">// CONTRIBUTION STEPS</h2>
+      <div className="space-y-4">
         {STEPS.map((step) => (
           <div key={step.num} className="bg-bg-surface border border-border-default rounded-[6px] p-5">
-            <p className="font-display font-black text-text-primary">
+            <h3 className="font-display font-black text-text-primary">
               {step.num} <span className="text-text-muted">//</span> {step.title}
-            </p>
+            </h3>
             <p className="font-mono text-sm text-text-secondary mt-2">{step.desc}</p>
             {step.code && <CodeBlock>{step.code}</CodeBlock>}
           </div>
@@ -122,9 +124,9 @@ export default function SubmitPage() {
 
       {/* Rules */}
       <div className="mt-8 bg-bg-elevated border border-accent-green/30 rounded-[6px] p-5">
-        <p className="font-mono text-xs text-text-muted tracking-widest mb-3">
+        <h2 className="font-mono text-xs text-text-muted tracking-widest mb-3">
           // CONTRIBUTION RULES
-        </p>
+        </h2>
         <ul className="space-y-1.5">
           {RULES.map((rule) => (
             <li key={rule} className="font-mono text-sm text-text-secondary">
@@ -136,9 +138,9 @@ export default function SubmitPage() {
 
       {/* Badge */}
       <div className="mt-8 bg-bg-surface border border-border-default rounded-[6px] p-5">
-        <p className="font-display font-black text-text-primary">
+        <h3 className="font-display font-black text-text-primary">
           05 <span className="text-text-muted">//</span> ADD A BADGE
-        </p>
+        </h3>
         <p className="font-mono text-sm text-text-secondary mt-2">
           Show that your tool is listed on {brandName}:
         </p>

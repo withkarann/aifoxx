@@ -23,7 +23,10 @@ export function NavBar() {
           <div className="md:hidden">
             <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
               <SheetTrigger asChild>
-                <button className="flex items-center justify-center w-7 h-7 border border-border-default rounded-[4px] transition-colors duration-150 hover:shadow-glow">
+                <button
+                  aria-label="Open navigation menu"
+                  className="flex items-center justify-center w-7 h-7 border border-border-default rounded-[4px] transition-colors duration-150 hover:shadow-glow"
+                >
                   <Menu size={16} />
                 </button>
               </SheetTrigger>
@@ -36,10 +39,10 @@ export function NavBar() {
             </Sheet>
           </div>
 
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2" aria-label="AIFOXX home">
             <img
               src="/aifoxx.png"
-              alt="AIFOXX Logo"
+              alt="AIFOXX AI Tools Directory Logo"
               className="w-6 h-6 select-none pointer-events-none"
             />
             <span className="font-display font-black tracking-widest text-text-primary text-lg">

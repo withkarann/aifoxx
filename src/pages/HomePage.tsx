@@ -194,11 +194,12 @@ export default function HomePage() {
         >
           <img 
             src="/aifoxx.png" 
-            alt="AIFOXX Logo" 
+            alt="AIFOXX AI Tools Directory Logo" 
             className="hero-logo w-24 h-24 md:w-32 md:h-32 drop-shadow-[0_0_15px_rgba(var(--accent-rgb),0.3)] select-none pointer-events-none" 
           />
           <h1 className="hero-title font-display font-mono font-black text-5xl md:text-7xl text-text-primary tracking-widest min-h-[1.2em]">
-            {displayText}
+            <span className="sr-only">AIFOXX — AI Tools Directory</span>
+            <span aria-hidden="true">{displayText}</span>
           </h1>
         </div>
         
@@ -226,8 +227,8 @@ export default function HomePage() {
           />
 
           {!hasActiveFilters && featuredTools.length > 0 && (
-            <div className="space-y-3">
-              <p className="font-mono text-xs text-text-muted tracking-widest">// FEATURED</p>
+            <section className="space-y-3" aria-labelledby="featured-heading">
+              <h2 id="featured-heading" className="font-mono text-xs text-text-muted tracking-widest">// FEATURED AI TOOLS</h2>
               <div className="flex gap-4 overflow-x-auto pb-2 -mx-1 px-1">
                 {featuredTools.map((tool) => (
                   <div key={tool.id} className="min-w-[280px] max-w-[320px] shrink-0">
@@ -235,12 +236,12 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-            </div>
+            </section>
           )}
 
-          <p className="font-mono text-xs text-text-muted tracking-wider">
+          <h2 className="font-mono text-xs text-text-muted tracking-wider">
             // SHOWING {visibleStart}-{visibleEnd} OF {total} RESULTS
-          </p>
+          </h2>
 
           {loading ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -21,7 +21,7 @@ function SkillsSection({ skills }: { skills: Skill[] }) {
   return (
     <section className="mt-8 space-y-3">
       <div className="h-px w-full" style={{ background: `linear-gradient(to right, var(--accent-green), transparent)` }} />
-      <p className="font-mono text-xs text-text-muted tracking-widest">// CLAUDE SKILLS</p>
+      <h2 className="font-mono text-xs text-text-muted tracking-widest">// CLAUDE SKILLS</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {shown.map((skill) => (
           <div key={skill.id} className="relative overflow-hidden bg-bg-surface border border-border-default rounded-[6px] p-3 flex flex-col gap-2 hover:border-accent-green/50 transition-all duration-150">
@@ -207,7 +207,7 @@ export default function ToolDetailPage() {
             {tool.logo_url ? (
               <img
                 src={tool.logo_url}
-                alt={tool.name}
+                alt={`${tool.name} - ${tool.category} AI tool logo`}
                 loading="lazy"
                 decoding="async"
                 referrerPolicy="no-referrer"
@@ -274,7 +274,7 @@ export default function ToolDetailPage() {
 
           {/* Access Methods */}
           <section className="space-y-2">
-            <p className="font-mono text-xs text-text-muted tracking-widest">// ACCESS METHODS</p>
+            <h2 className="font-mono text-xs text-text-muted tracking-widest">// ACCESS METHODS</h2>
             {!tool.access_methods || tool.access_methods.length === 0 ? (
               <DataStatus value={tool.access_methods} type="block" />
             ) : (
@@ -290,7 +290,7 @@ export default function ToolDetailPage() {
 
           {/* Compliance */}
           <section className="space-y-2">
-            <p className="font-mono text-xs text-text-muted tracking-widest">// COMPLIANCE</p>
+            <h2 className="font-mono text-xs text-text-muted tracking-widest">// COMPLIANCE & SECURITY</h2>
             <div className="flex flex-wrap gap-2">
               {(["soc2", "iso27001", "gdpr", "hipaa"] as const).map((key) => {
                 const val = compliance?.[key] ?? null;
@@ -315,7 +315,7 @@ export default function ToolDetailPage() {
 
           {/* Data Storage */}
           <section className="space-y-2">
-            <p className="font-mono text-xs text-text-muted tracking-widest">// DATA STORAGE</p>
+            <h2 className="font-mono text-xs text-text-muted tracking-widest">// DATA STORAGE</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div className="bg-bg-surface border border-border-default rounded-[6px] p-3">
                 <p className="font-mono text-xs text-text-muted">Region</p>
@@ -338,7 +338,7 @@ export default function ToolDetailPage() {
 
           {/* Pricing Detail */}
           <section className="space-y-2">
-            <p className="font-mono text-xs text-text-muted tracking-widest">// PRICING DETAIL</p>
+            <h2 className="font-mono text-xs text-text-muted tracking-widest">// PRICING DETAIL</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {([
                 { label: "Free Tier", key: "free_tier" as const },
@@ -378,7 +378,7 @@ export default function ToolDetailPage() {
           {related.length > 0 && (
             <section className="mt-12 space-y-4">
               <div className="h-px w-full" style={{ background: `linear-gradient(to right, ${color.accent}, transparent)` }} />
-              <p className="font-mono text-xs text-text-muted tracking-widest">// MORE IN {tool.subcategory.toUpperCase()}</p>
+              <h2 className="font-mono text-xs text-text-muted tracking-widest">// MORE IN {tool.subcategory.toUpperCase()}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {related.map((r) => (<ToolCard key={r.id} tool={r} variant="compact" />))}
               </div>
@@ -388,7 +388,7 @@ export default function ToolDetailPage() {
           {/* Use Cases */}
           {tool.use_cases && tool.use_cases.length > 0 && (
             <section className="space-y-2">
-              <p className="font-mono text-xs text-text-muted tracking-widest">// USE CASES</p>
+              <h2 className="font-mono text-xs text-text-muted tracking-widest">// USE CASES</h2>
               <div className="flex flex-wrap gap-2">
                 {tool.use_cases.map((uc) => (
                   <span key={uc} className="font-mono text-xs px-2.5 py-1 rounded-[3px] border border-[var(--border-default)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">

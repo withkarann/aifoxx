@@ -32,6 +32,7 @@ export function FilterBar({
       <select
         value={activePricing}
         onChange={(e) => onPricingChange(e.target.value)}
+        aria-label="Filter tools by pricing"
         className="sm:hidden bg-bg-overlay border border-border-default rounded-[4px] px-2.5 py-1 font-mono text-xs text-text-primary"
       >
         <option value="">ALL PRICING</option>
