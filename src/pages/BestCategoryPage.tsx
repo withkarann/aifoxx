@@ -126,9 +126,9 @@ export default function BestCategoryPage() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {tools.map((tool, i) => (
-                <div key={tool.id} className="relative">
+                <div key={tool.id} className="relative pt-3 pl-3">
                   <span
-                    className="absolute -top-2 -left-2 z-10 font-mono font-black text-xs px-2 py-1 rounded-[3px] border"
+                    className="absolute top-0 left-0 z-10 font-mono font-black text-xs px-2 py-1 rounded-[3px] border shadow-md"
                     style={{
                       background: color.bg,
                       color: color.accent,
