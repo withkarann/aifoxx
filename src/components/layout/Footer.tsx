@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { GithubLogo } from "phosphor-react";
 import { Link } from "react-router-dom";
 import Brand from "@/lib/brand";
 import { CRTOverlay } from "@/components/ui/CRTOverlay";
@@ -65,7 +65,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-text-secondary transition-colors duration-150"
           >
-            <Github size={14} />
+            <GithubLogo size={14} />
             Repository
           </a>
           <a
@@ -74,7 +74,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-text-secondary transition-colors duration-150"
           >
-            <Github size={14} />
+            <GithubLogo size={14} />
             Pull Requests
           </a>
           <a
@@ -83,7 +83,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-text-secondary transition-colors duration-150"
           >
-            <Github size={14} />
+            <GithubLogo size={14} />
             Discussions
           </a>
           <span>MIT License</span>
