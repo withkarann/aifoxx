@@ -341,13 +341,6 @@ export default function ToolDetailPage() {
               Compliance data is community-sourced and may be incomplete or out of date. Always verify
               certifications directly with the vendor's official trust or security page before relying on them.
             </p>
-            {(["soc2", "iso27001", "gdpr", "hipaa"] as const).some(
-              (key) => tool.compliance_sources?.[key] != null && isSafeHttpUrl(tool.compliance_sources[key]!),
-            ) && tool.last_verified && (
-              <p className="font-mono text-[10px] text-accent-green/60">
-                ✓ Independently verified · last checked {tool.last_verified}
-              </p>
-            )}
           </section>
 
           {/* Data Storage */}
