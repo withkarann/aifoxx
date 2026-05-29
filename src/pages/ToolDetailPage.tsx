@@ -9,6 +9,7 @@ import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { normalizeTaxonomyValue } from "@/lib/tools";
 import { getCategoryColor } from "@/lib/categoryColors";
+import { isSafeHttpUrl } from "@/lib/utils";
 import { DataStatus } from "@/components/ui/DataStatus";
 import Brand from "@/lib/brand";
 import type { Skill } from "@/types/skill";
@@ -44,9 +45,9 @@ function SkillsSection({ skills }: { skills: Skill[] }) {
                 {skill.skill_type === "mcp-server" ? "MCP Server" : "Claude Code"}
               </span>
               <a
-                href={skill.github_url}
+                href={isSafeHttpUrl(skill.github_url) ? skill.github_url : undefined}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="flex items-center gap-1 font-mono text-[10px] text-accent-green hover:underline"
               >
                 <ExternalLink size={10} />
@@ -101,6 +102,10 @@ export default function ToolDetailPage() {
     .filter((key) => compliance?.[key])
     .map((key) => key.toUpperCase());
 
+  const hasComplianceSources = (["soc2", "iso27001", "gdpr", "hipaa"] as const).some((key) =>
+    isSafeHttpUrl(tool.compliance_sources?.[key])
+  );
+
   const hasApiAccess = tool.access_methods?.some((method) => method.toLowerCase().includes("api"));
   const hasFreeOffer = tool.pricing === "Free" || tool.pricing === "Freemium" || tool.pricing === "Open Source";
 
@@ -136,8 +141,8 @@ export default function ToolDetailPage() {
         "acceptedAnswer": {
           "@type": "Answer",
           "text": verifiedCompliance.length > 0
-            ? `${tool.name} is marked as compliant with ${verifiedCompliance.join(", ")}.`
-            : `${tool.name} does not currently list verified compliance certifications in this directory entry.`,
+            ? `${tool.name} is marked as compliant with ${verifiedCompliance.join(", ")} in this directory. Compliance data is community-sourced — verify it directly with the vendor before relying on it.`
+            : `${tool.name} does not currently list verified compliance certifications in this directory entry. Always confirm compliance directly with the vendor.`,
         },
       },
     ],
@@ -169,8 +174,14 @@ export default function ToolDetailPage() {
           "url": pageUrl,
           "sameAs": tool.url,
           "applicationCategory": tool.category,
+          "applicationSubCategory": tool.subcategory,
           "operatingSystem": "Web",
+          "inLanguage": "en",
           "keywords": tool.tags.join(", "),
+          "isAccessibleForFree": hasFreeOffer,
+          ...(tool.use_cases && tool.use_cases.length > 0 && {
+            "featureList": tool.use_cases.join(", "),
+          }),
           ...(hasFreeOffer && {
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
           }),
@@ -295,22 +306,49 @@ export default function ToolDetailPage() {
               {(["soc2", "iso27001", "gdpr", "hipaa"] as const).map((key) => {
                 const val = compliance?.[key] ?? null;
                 const certified = val === true;
+                const rawSource = tool.compliance_sources?.[key] ?? null;
+                const source = isSafeHttpUrl(rawSource) ? rawSource : null;
+                const badgeClass = `inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1 rounded-full border transition-colors duration-150 ${
+                  certified
+                    ? "bg-accent-green/10 border-accent-green/35 text-accent-green"
+                    : "bg-transparent border-dashed border-border-dim text-text-muted opacity-40"
+                }`;
+                if (certified && source) {
+                  return (
+                    <a
+                      key={key}
+                      href={source}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      title={`Verified — view source: ${source}`}
+                      className={`${badgeClass} hover:bg-accent-green/20`}
+                    >
+                      <span className="text-[10px]">●</span>
+                      {key.toUpperCase()}
+                      <ExternalLink size={10} />
+                    </a>
+                  );
+                }
                 return (
-                  <span
-                    key={key}
-                    className={`inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1 rounded-full border transition-colors duration-150 ${
-                      certified
-                        ? "bg-accent-green/10 border-accent-green/35 text-accent-green"
-                        : "bg-transparent border-dashed border-border-dim text-text-muted opacity-40"
-                    }`}
-                  >
+                  <span key={key} className={badgeClass}>
                     <span className="text-[10px]">{certified ? "●" : "○"}</span>
                     {key.toUpperCase()}
                   </span>
                 );
               })}
             </div>
-            <p className="font-mono text-[10px] text-text-muted">● certified · ○ not verified</p>
+            <p className="font-mono text-[10px] text-text-muted">
+              ● certified · ○ not verified{hasComplianceSources ? " · 🔗 links to vendor source" : ""}
+            </p>
+            {hasComplianceSources && tool.last_verified && (
+              <p className="font-mono text-[10px] text-accent-green/80">
+                ✓ Independently verified · last checked {tool.last_verified}
+              </p>
+            )}
+            <p className="font-mono text-[10px] text-text-muted/80 leading-relaxed max-w-2xl">
+              ⚠ Compliance data is community-sourced and may be incomplete or out of date. Always verify
+              certifications directly with the vendor's official trust or security page before relying on them.
+            </p>
           </section>
 
           {/* Data Storage */}
