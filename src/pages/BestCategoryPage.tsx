@@ -22,9 +22,10 @@ export default function BestCategoryPage() {
     [slug]
   );
 
-  if (!entry) return <NotFoundPage />;
-
+  // Hooks must run unconditionally before any early return, so guard on `entry`
+  // inside the memo rather than returning before it.
   const tools = useMemo(() => {
+    if (!entry) return [];
     const list = allTools.filter(
       (t) => normalizeTaxonomyValue(t.category) === normalizeTaxonomyValue(entry.category)
     );
@@ -37,6 +38,8 @@ export default function BestCategoryPage() {
       })
       .slice(0, PICK_COUNT);
   }, [entry]);
+
+  if (!entry) return <NotFoundPage />;
 
   const color = getCategoryColor(entry.category);
   const pageUrl = `${DOMAIN}/best/${entry.slug}`;
