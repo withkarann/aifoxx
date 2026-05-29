@@ -8,37 +8,56 @@ updates:
       day: "monday"
       time: "03:00"
       timezone: "Europe/Berlin"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
-      - "security"
     groups:
-      # Patch + minor updates → grouped into one PR and auto-merged.
+      # Patch + minor → one PR, auto-merged by auto-merge-dependabot.yml.
       non-breaking:
         update-types:
           - "minor"
           - "patch"
-    # Majors are intentionally NOT grouped: a single grouped major PR repeatedly
-    # broke the build (e.g. Tailwind v4) and could never merge. Ungrouped, each
-    # major arrives as its own reviewable PR (held by auto-merge-dependabot.yml,
-    # which only auto-merges minor/patch). Known-incompatible majors are ignored.
+      # All remaining majors → ONE review PR (not N separate ones). Held for
+      # manual review; never auto-merged. Keeps the queue quiet while staying
+      # aware of major bumps.
+      major-upgrades:
+        update-types:
+          - "major"
     ignore:
-      # Never auto-update these — review manually
+      # Framework versions pinned intentionally — review/upgrade by hand only.
       - dependency-name: "react"
         update-types: ["version-update:semver-major"]
       - dependency-name: "react-dom"
         update-types: ["version-update:semver-major"]
-      - dependency-name: "vite"
-        update-types: ["version-update:semver-major"]
-      # vite-react-ssg peer-depends on react-router-dom@^6; a v7 bump breaks
-      # npm ci with ERESOLVE. Pin to v6 until vite-react-ssg supports v7.
       - dependency-name: "react-router-dom"
         update-types: ["version-update:semver-major"]
       - dependency-name: "react-router"
         update-types: ["version-update:semver-major"]
       # Tailwind v4 is a project-wide migration (CSS-first config + PostCSS
-      # plugin change). Defer until done intentionally in its own PR.
+      # plugin change). Defer to its own intentional PR.
       - dependency-name: "tailwindcss"
+        update-types: ["version-update:semver-major"]
+      # Libs imported ONLY by unused shadcn/ui scaffolding (0 app-code imports).
+      # Major bumps just create noise + break the build with no product benefit.
+      - dependency-name: "recharts"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-day-picker"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "sonner"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "vaul"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-hook-form"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@hookform/resolvers"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "embla-carousel-react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "input-otp"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-resizable-panels"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "date-fns"
         update-types: ["version-update:semver-major"]
 
   # GitHub Actions
