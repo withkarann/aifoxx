@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 
 export type Theme = "dark" | "light" | "notebook";
 
@@ -34,15 +34,20 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     localStorage.setItem(STORAGE_KEY, theme);
   }, [theme]);
 
-  const cycleTheme = () => {
+  const cycleTheme = useCallback(() => {
     setTheme((currentTheme) => {
       const currentIndex = THEMES.indexOf(currentTheme);
       return THEMES[(currentIndex + 1) % THEMES.length];
     });
-  };
+  }, []);
+
+  const value = useMemo(
+    () => ({ theme, cycleTheme, setTheme }),
+    [theme, cycleTheme]
+  );
 
   return (
-    <ThemeContext.Provider value={{ theme, cycleTheme, setTheme }}>
+    <ThemeContext.Provider value={value}>
       {children}
     </ThemeContext.Provider>
   );

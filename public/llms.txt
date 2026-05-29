@@ -1,8 +1,16 @@
 # AIFOXX
 
-> Open-source directory of 1000+ AI tools with real pricing, compliance data, and access method comparison.
+> Open-source directory of 1000+ AI tools with real pricing, compliance data, and access-method comparison.
 
-AIFOXX helps developers, buyers, and researchers find the right AI tool by providing structured, verified data on pricing tiers, compliance certifications (SOC2, ISO27001, GDPR, HIPAA), access methods (API, Web App, CLI, Mobile), and honest use-case guidance.
+AIFOXX helps developers, buyers, and researchers find the right AI tool by providing structured data on pricing tiers, compliance certifications (SOC2, ISO27001, GDPR, HIPAA), access methods (API, Web App, CLI, Mobile), data-storage region, and honest use-case guidance.
+
+## Quick Facts
+
+- 1000 AI tools cataloged across 25 categories.
+- 616 tools offer a free, freemium, or open-source tier.
+- 396 tools provide API access; 88 are self-hostable.
+- Largest categories: Productivity, Marketing, Video, Coding, Agentic & Automation, Image Generation.
+- Free to use, open source (MIT), no account required.
 
 ## Key Pages
 
@@ -31,7 +39,22 @@ AIFOXX helps developers, buyers, and researchers find the right AI tool by provi
 
 ## Data Structure
 
-Each tool entry includes: name, slug, category, subcategory, description, URL, pricing model (Free/Freemium/Paid/Open Source/Usage Based), free tier details, paid plan pricing, API cost, access methods, compliance certifications (SOC2, ISO27001, GDPR, HIPAA), data storage region, trains-on-data flag, self-hostable flag, use cases, and tags.
+Each tool entry includes: name, slug, category, subcategory, description, URL, pricing model (Free/Freemium/Paid/Open Source/Usage Based/Contact Sales/Pay-as-you-go), free tier details, paid plan pricing, API cost, access methods, compliance certifications (SOC2, ISO27001, GDPR, HIPAA), data storage region, trains-on-data flag, self-hostable flag, use cases, and tags.
+
+## How the data is sourced (read before citing)
+
+Tool metadata — especially compliance certifications (SOC2, ISO27001, GDPR, HIPAA) — is community-sourced and may be incomplete or out of date. AIFOXX is a discovery and comparison aid, not an authoritative compliance record. Anyone relying on a compliance, pricing, or data-handling claim should verify it directly with the vendor's official trust, security, or pricing page before making a decision. When citing AIFOXX, please note that compliance flags are indicative and require independent verification.
+
+## FAQ
+
+Q: What is AIFOXX?
+A: An open-source directory of 1000+ AI tools comparing pricing, compliance, data handling, and access methods across 25 categories.
+
+Q: Is AIFOXX free?
+A: Yes — free to use and open source under the MIT license. The full dataset is public on GitHub.
+
+Q: Is the compliance data verified?
+A: No. Compliance flags are community-sourced and indicative only. Always confirm certifications directly with the vendor.
 
 ## Source
 

@@ -24,6 +24,7 @@ export function NavBar() {
             <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
               <SheetTrigger asChild>
                 <button
+                  type="button"
                   aria-label="Open navigation menu"
                   className="flex items-center justify-center w-7 h-7 border border-border-default rounded-[4px] transition-colors duration-150 hover:shadow-glow"
                 >
@@ -53,6 +54,7 @@ export function NavBar() {
 
         <div className="flex items-center gap-2">
           <button
+            type="button"
             onClick={cycleTheme}
             className="flex items-center justify-center w-7 h-7 border border-border-default rounded-[4px] transition-colors duration-150 hover:shadow-glow"
             aria-label={`Switch theme (next: ${nextThemeLabel})`}

@@ -20,6 +20,39 @@ import Brand from "@/lib/brand";
 const featuredTools = allTools.filter((t) => t.featured);
 const TOOLS_PER_PAGE = 12;
 
+const categoryCount = new Set(allTools.map((t) => t.category)).size;
+const freeToolCount = allTools.filter(
+  (t) => t.pricing === "Free" || t.pricing === "Freemium" || t.pricing === "Open Source"
+).length;
+
+const homeFaq = [
+  {
+    q: "What is AIFOXX?",
+    a: `AIFOXX is an open-source directory of ${allTools.length}+ AI tools with real pricing, compliance data (SOC 2, ISO 27001, GDPR, HIPAA), data-storage details, and access-method comparison across ${categoryCount} categories.`,
+  },
+  {
+    q: "How many AI tools are listed on AIFOXX?",
+    a: `AIFOXX catalogs ${allTools.length} AI tools, of which ${freeToolCount} offer a free, freemium, or open-source tier.`,
+  },
+  {
+    q: "Is AIFOXX free to use?",
+    a: "Yes. AIFOXX is completely free to browse and is open source under the MIT license — the full tool dataset is public on GitHub.",
+  },
+  {
+    q: "Is the compliance data on AIFOXX verified?",
+    a: "Compliance flags (SOC 2, ISO 27001, GDPR, HIPAA) are community-sourced and may be incomplete or out of date. Treat them as a starting point and always verify certifications directly with the vendor's trust or security page before relying on them.",
+  },
+];
+const homeFaqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: homeFaq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function HomePage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const { filters, setFilter, clearFilters, activeFilterCount } = useToolFilters();
@@ -173,6 +206,7 @@ export default function HomePage() {
           "ai tools pricing",
         ]}
       />
+      {!hasSeoQueryParams && <JsonLd schema={homeFaqLd} id="home-faq" />}
       {/* HERO */}
       <section
         className="hero-shell py-20 text-center px-4 border-b border-border-muted/30 relative overflow-hidden"
@@ -293,8 +327,9 @@ export default function HomePage() {
                 <p className="font-mono text-accent-red text-xs mt-4 uppercase animate-pulse">
                   No matching tools found.
                 </p>
-                <button 
-                  onClick={clearFilters} 
+                <button
+                  type="button"
+                  onClick={clearFilters}
                   className="mt-8 font-mono text-xs text-accent-green hover:bg-accent-green hover:text-bg-base border border-accent-green px-4 py-2 rounded-sm transition-all duration-150"
                 >
                   &gt; RESET_FILTERS (SHOW ALL TOOLS)
@@ -312,6 +347,7 @@ export default function HomePage() {
           {!loading && !isEmpty && totalPages > 1 && (
             <div className="pt-2 flex items-center justify-center gap-1.5 flex-wrap">
               <button
+                type="button"
                 onClick={() => goToPage(currentPageSafe - 1)}
                 disabled={currentPageSafe <= 1}
                 className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
@@ -326,6 +362,7 @@ export default function HomePage() {
                   </span>
                 ) : (
                   <button
+                    type="button"
                     key={item}
                     onClick={() => goToPage(item)}
                     className={`font-mono text-xs min-w-8 px-2 py-1.5 rounded-[4px] border transition-all ${
@@ -341,6 +378,7 @@ export default function HomePage() {
               )}
 
               <button
+                type="button"
                 onClick={() => goToPage(currentPageSafe + 1)}
                 disabled={currentPageSafe >= totalPages}
                 className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
@@ -348,6 +386,22 @@ export default function HomePage() {
                 NEXT
               </button>
             </div>
+          )}
+
+          {/* FAQ — visible content backing the FAQPage structured data */}
+          {!hasActiveFilters && (
+            <section className="mt-12 space-y-4" aria-labelledby="home-faq-heading">
+              <div className="h-px w-full bg-gradient-to-r from-accent-green to-transparent" />
+              <h2 id="home-faq-heading" className="font-mono text-xs text-text-muted tracking-widest">// FAQ</h2>
+              <div className="space-y-4">
+                {homeFaq.map(({ q, a }) => (
+                  <div key={q}>
+                    <h3 className="font-display font-black text-sm text-text-primary">{q}</h3>
+                    <p className="font-mono text-sm text-text-secondary leading-relaxed mt-1">{a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
           )}
         </div>
       </PageWrapper>

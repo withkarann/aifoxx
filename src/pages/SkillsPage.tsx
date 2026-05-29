@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Github, Star, ExternalLink } from "lucide-react";
 import { allClaudeCodeSkills, searchClaudeCodeSkills, SKILL_COUNTS } from "@/lib/skills";
+import { isSafeHttpUrl } from "@/lib/utils";
 import { type Skill } from "@/types/skill";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -57,9 +58,9 @@ function SkillCard({ skill }: { skill: Skill }) {
           )}
         </div>
         <a
-          href={skill.github_url}
+          href={isSafeHttpUrl(skill.github_url) ? skill.github_url : undefined}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           className="flex items-center gap-1 font-mono text-[10px] text-text-primary hover:text-accent-green hover:drop-shadow-[0_0_6px_currentColor] transition-all duration-150 shrink-0"
           onClick={(e) => e.stopPropagation()}
         >
@@ -136,6 +137,7 @@ export default function SkillsPage() {
             value={query}
             onChange={(e) => handleQueryChange(e.target.value)}
             placeholder="Search skills..."
+            aria-label="Search Claude Code skills"
             className="w-full bg-bg-elevated border border-border-default rounded-[6px] px-4 py-2.5 font-mono text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent-green/60 transition-colors"
           />
         </div>
@@ -156,6 +158,7 @@ export default function SkillsPage() {
               <p className="font-display text-accent-red text-3xl font-black tracking-tight">NO RESULTS</p>
               <p className="font-mono text-text-secondary text-sm mt-3">Try a different search.</p>
               <button
+                type="button"
                 onClick={() => handleQueryChange("")}
                 className="mt-6 font-mono text-xs text-accent-green hover:bg-accent-green hover:text-bg-base border border-accent-green px-4 py-2 rounded-sm transition-all duration-150"
               >
@@ -174,6 +177,7 @@ export default function SkillsPage() {
           {totalPages > 1 && (
             <div className="pt-2 flex items-center justify-center gap-1.5 flex-wrap">
               <button
+                type="button"
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
                 disabled={pageSafe <= 1}
                 className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-[0.95] disabled:cursor-not-allowed"
@@ -183,6 +187,7 @@ export default function SkillsPage() {
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
                 <button
                   key={n}
+                  type="button"
                   onClick={() => setPage(n)}
                   className={`font-mono text-xs min-w-8 px-2 py-1.5 rounded-[4px] border transition-all ${
                     n === pageSafe
@@ -194,6 +199,7 @@ export default function SkillsPage() {
                 </button>
               ))}
               <button
+                type="button"
                 onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
                 disabled={pageSafe >= totalPages}
                 className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-[0.95] disabled:cursor-not-allowed"
