@@ -50,6 +50,7 @@ export const SearchBar = forwardRef<SearchBarHandle, SearchBarProps>(
           />
           {value && (
             <button
+              type="button"
               onClick={() => onChange("")}
               aria-label="Clear search"
               className="text-text-muted hover:text-text-primary transition-colors duration-150 text-sm"

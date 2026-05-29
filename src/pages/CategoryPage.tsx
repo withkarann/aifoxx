@@ -43,11 +43,57 @@ export default function CategoryPage() {
       .sort((a, b) => b.count - a.count);
   }, [cat, filters.subcategory]);
 
-  if (!cat) return <Navigate to="/" replace />;
+  // Canonical (unfiltered) category facts for visible copy + FAQ structured data.
+  const categoryFacts = useMemo(() => {
+    if (!cat) return null;
+    const inCategory = allTools.filter((t) => t.category === cat.name);
+    const isFree = (p: string) => p === "Free" || p === "Freemium" || p === "Open Source";
+    const cc = (k: "soc2" | "gdpr") => inCategory.filter((t) => t.compliance?.[k] === true).length;
+    return {
+      count: inCategory.length,
+      free: inCategory.filter((t) => isFree(t.pricing)).length,
+      soc2: cc("soc2"),
+      gdpr: cc("gdpr"),
+      topNames: [...inCategory]
+        .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
+        .slice(0, 5)
+        .map((t) => t.name),
+      subList: cat.subcategories.slice(0, 6).join(", "),
+    };
+  }, [cat]);
+
+  if (!cat || !categoryFacts) return <Navigate to="/" replace />;
 
   const color = getCategoryColor(cat.name);
   const activeSub = filters.subcategory || "";
   const hasSeoQueryParams = searchParams.toString().length > 0;
+
+  const intro =
+    `AIFOXX lists ${categoryFacts.count} ${cat.name} AI tools — ${categoryFacts.free} with a free or freemium tier, ` +
+    `${categoryFacts.soc2} marked SOC 2 and ${categoryFacts.gdpr} GDPR-ready. Compare real pricing, access methods, ` +
+    `and compliance across ${cat.subcategories.length} subcategories` +
+    (categoryFacts.subList ? ` (${categoryFacts.subList}).` : ".");
+
+  const categoryFaq = [
+    {
+      q: `What are the best ${cat.name} AI tools?`,
+      a: categoryFacts.topNames.length
+        ? `Popular ${cat.name} AI tools on AIFOXX include ${categoryFacts.topNames.join(", ")}. Browse all ${categoryFacts.count} to compare pricing, access methods, and compliance.`
+        : `AIFOXX lists ${categoryFacts.count} ${cat.name} AI tools to compare by pricing, access method, and compliance.`,
+    },
+    {
+      q: `How many ${cat.name} AI tools are free?`,
+      a: `${categoryFacts.free} of the ${categoryFacts.count} ${cat.name} tools in this directory offer a free, freemium, or open-source tier.`,
+    },
+    {
+      q: `Which ${cat.name} AI tools are SOC 2 or GDPR compliant?`,
+      a: `${categoryFacts.soc2} ${cat.name} tools are marked SOC 2 and ${categoryFacts.gdpr} GDPR-ready here. Compliance data is community-sourced — always verify it directly with the vendor before relying on it.`,
+    },
+    {
+      q: `What does the ${cat.name} category include?`,
+      a: `The ${cat.name} category spans ${cat.subcategories.length} subcategories${categoryFacts.subList ? `: ${categoryFacts.subList}` : ""}.`,
+    },
+  ];
 
   const handleSubChange = (sub: string) => {
     setSearchParams((prev) => {
@@ -96,6 +142,18 @@ export default function CategoryPage() {
           ],
         }}
       />
+      <JsonLd
+        id="category-faq"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": categoryFaq.map((f) => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a },
+          })),
+        }}
+      />
       <PageWrapper>
         <div className="space-y-5">
           <div>
@@ -114,10 +172,12 @@ export default function CategoryPage() {
             </h1>
             <p className="font-mono text-xs text-text-muted mt-1">{total} tools in this category</p>
             <div className="h-[2px] w-24 mt-2 rounded-full" style={{ background: color.accent, boxShadow: color.glow }} />
+            <p className="font-mono text-sm text-text-secondary leading-relaxed mt-3 max-w-3xl">{intro}</p>
           </div>
 
           <div className="flex items-center gap-1.5 scroll-x pb-1">
             <button
+              type="button"
               onClick={() => handleSubChange("")}
               className={cn("font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150", !activeSub ? "font-semibold" : "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary")}
               style={!activeSub ? { color: color.text, background: color.bg, border: `1px solid ${color.border}` } : undefined}
@@ -126,6 +186,7 @@ export default function CategoryPage() {
             </button>
             {cat.subcategories.map((sub) => (
               <button
+                type="button"
                 key={sub}
                 onClick={() => handleSubChange(sub)}
                 className={cn("font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150", !matchesTaxonomyValue(activeSub, sub) && "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary")}
@@ -152,6 +213,7 @@ export default function CategoryPage() {
                   <div className="flex flex-wrap justify-center gap-2 mt-2">
                     {pricingBreakdown.map(({ pricing, count }) => (
                       <button
+                        type="button"
                         key={pricing}
                         onClick={() => setFilter("pricing", pricing)}
                         className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default bg-bg-surface text-text-secondary hover:text-text-primary hover:border-[var(--cat-accent)] transition-colors duration-150"
@@ -161,6 +223,7 @@ export default function CategoryPage() {
                       </button>
                     ))}
                     <button
+                      type="button"
                       onClick={() => setFilter("pricing", "")}
                       className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-dashed border-border-dim text-text-muted hover:text-text-primary hover:border-border-default transition-colors duration-150"
                     >
@@ -175,6 +238,20 @@ export default function CategoryPage() {
               {tools.map((tool) => (<ToolCard key={tool.id} tool={tool} />))}
             </div>
           )}
+
+          {/* FAQ — visible content backing the FAQPage structured data */}
+          <section className="mt-10 space-y-4">
+            <div className="h-px w-full" style={{ background: `linear-gradient(to right, ${color.accent}, transparent)` }} />
+            <p className="font-mono text-xs text-text-muted tracking-widest">// FAQ</p>
+            <div className="space-y-4">
+              {categoryFaq.map(({ q, a }) => (
+                <div key={q}>
+                  <h2 className="font-display font-black text-sm text-text-primary">{q}</h2>
+                  <p className="font-mono text-sm text-text-secondary leading-relaxed mt-1">{a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </PageWrapper>
     </>
