@@ -30,6 +30,12 @@ updates:
         update-types: ["version-update:semver-major"]
       - dependency-name: "vite"
         update-types: ["version-update:semver-major"]
+      # vite-react-ssg peer-depends on react-router-dom@^6; a v7 bump breaks
+      # npm ci with ERESOLVE. Pin to v6 until vite-react-ssg supports v7.
+      - dependency-name: "react-router-dom"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-router"
+        update-types: ["version-update:semver-major"]
 
   # GitHub Actions
   - package-ecosystem: "github-actions"
