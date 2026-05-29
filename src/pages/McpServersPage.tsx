@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { Github, Star, ExternalLink } from "lucide-react";
+import { Star, ExternalLink } from "lucide-react";
+import { GithubLogo } from "phosphor-react";
 import { allMcpServers, searchMcpServers, SKILL_COUNTS } from "@/lib/skills";
 import { isSafeHttpUrl } from "@/lib/utils";
 import { type Skill } from "@/types/skill";
@@ -20,7 +21,7 @@ function McpServerCard({ skill }: { skill: Skill }) {
       <div className="flex items-start justify-between gap-2">
         <div className="flex items-center gap-2 min-w-0">
           <div className="w-7 h-7 bg-bg-elevated border border-border-default rounded-[4px] flex items-center justify-center shrink-0">
-            <Github size={14} className="text-text-secondary" />
+            <GithubLogo size={14} className="text-text-secondary" />
           </div>
           <span className="font-display font-black text-text-primary text-sm truncate">
             {skill.name}

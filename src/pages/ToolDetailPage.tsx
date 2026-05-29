@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { Github, Star, ExternalLink } from "lucide-react";
+import { Star, ExternalLink } from "lucide-react";
+import { GithubLogo } from "phosphor-react";
 import { getToolBySlug, getRelatedTools } from "@/lib/tools";
 import { getSkillsByToolSlug } from "@/lib/skills";
 import { PageWrapper } from "@/components/layout/PageWrapper";
@@ -29,7 +30,7 @@ function SkillsSection({ skills }: { skills: Skill[] }) {
             <div className="absolute top-0 left-0 right-0 h-[2px] bg-accent-green opacity-40" />
             <div className="flex items-center justify-between gap-2">
               <div className="flex items-center gap-2 min-w-0">
-                <Github size={12} className="text-text-muted shrink-0" />
+                <GithubLogo size={12} className="text-text-muted shrink-0" />
                 <span className="font-display font-black text-sm text-text-primary truncate">{skill.name}</span>
               </div>
               <div className="flex items-center gap-1 shrink-0 font-mono text-[10px] text-accent-green border border-accent-green/40 px-1.5 py-0.5 rounded-[3px]">
@@ -340,13 +341,6 @@ export default function ToolDetailPage() {
               Compliance data is community-sourced and may be incomplete or out of date. Always verify
               certifications directly with the vendor's official trust or security page before relying on them.
             </p>
-            {(["soc2", "iso27001", "gdpr", "hipaa"] as const).some(
-              (key) => tool.compliance_sources?.[key] != null && isSafeHttpUrl(tool.compliance_sources[key]!),
-            ) && tool.last_verified && (
-              <p className="font-mono text-[10px] text-accent-green/60">
-                ✓ Independently verified · last checked {tool.last_verified}
-              </p>
-            )}
           </section>
 
           {/* Data Storage */}
