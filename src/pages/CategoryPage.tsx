@@ -162,6 +162,10 @@ export default function CategoryPage() {
                 {(() => {
                   const Icon = getCategoryIcon(cat.name);
                   return Icon ? (
+                    // getCategoryIcon returns a stable, module-level phosphor component
+                    // (see categoryIcons.ts) — a fixed reference, not one created during
+                    // render — so its state never resets. The rule's heuristic can't tell.
+                    // eslint-disable-next-line react-hooks/static-components
                     <Icon size={20} weight="duotone" style={{ color: color.accent, filter: `drop-shadow(0 0 8px ${color.accent}66)` }} />
                   ) : (
                     <span>{color.emoji}</span>

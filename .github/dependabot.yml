@@ -64,16 +64,6 @@ updates:
       # cannot go to v8 until vite-react-ssg ships v8 support. Re-enable then.
       - dependency-name: "vite"
         update-types: ["version-update:semver-major"]
-      # ESLint v10 needs eslint-plugin-react-hooks v7, which enables the
-      # React-Compiler rule set (purity / set-state-in-effect /
-      # static-components). Those flag vendored shadcn/ui scaffolding we don't
-      # hand-edit — a migration, not a bump. Defer to its own intentional PR.
-      - dependency-name: "eslint"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "@eslint/js"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "eslint-plugin-react-hooks"
-        update-types: ["version-update:semver-major"]
 
   # GitHub Actions
   - package-ecosystem: "github-actions"
