@@ -8,6 +8,7 @@ import { FilterBar } from "@/components/search/FilterBar";
 import { ToolCard } from "@/components/tools/ToolCard";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbSchema, faqPageSchema, itemListSchema, absoluteUrl } from "@/lib/structuredData";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { getCategoryIcon } from "@/lib/categoryIcons";
 import { CATEGORIES, matchesTaxonomyValue, normalizeTaxonomyValue } from "@/lib/tools";
@@ -43,11 +44,63 @@ export default function CategoryPage() {
       .sort((a, b) => b.count - a.count);
   }, [cat, filters.subcategory]);
 
-  if (!cat) return <Navigate to="/" replace />;
+  // Canonical (unfiltered) category facts — used for visible copy + structured
+  // data so the pre-rendered page describes the whole category, not a filtered view.
+  const seo = useMemo(() => {
+    if (!cat) return null;
+    const inCategory = allTools.filter((t) => t.category === cat.name);
+    const isFree = (p: string) => p === "Free" || p === "Freemium" || p === "Open Source";
+    const freeCount = inCategory.filter((t) => isFree(t.pricing)).length;
+    const complianceCount = (key: "soc2" | "iso27001" | "gdpr" | "hipaa") =>
+      inCategory.filter((t) => t.compliance?.[key] === true).length;
+    const topTools = [...inCategory]
+      .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
+      .slice(0, 20);
+    const subList = cat.subcategories.slice(0, 6).join(", ");
+    return {
+      count: inCategory.length,
+      freeCount,
+      gdpr: complianceCount("gdpr"),
+      soc2: complianceCount("soc2"),
+      topNames: topTools.slice(0, 5).map((t) => t.name),
+      topTools,
+      subList,
+    };
+  }, [cat]);
+
+  if (!cat || !seo) return <Navigate to="/" replace />;
 
   const color = getCategoryColor(cat.name);
   const activeSub = filters.subcategory || "";
   const hasSeoQueryParams = searchParams.toString().length > 0;
+  const categoryUrl = `${absoluteUrl(`/category/${categoryKey}`)}`;
+
+  const intro =
+    `AIFOXX lists ${seo.count} ${cat.name} AI tools — ${seo.freeCount} with a free or freemium tier, ` +
+    `${seo.soc2} marked SOC 2 and ${seo.gdpr} marked GDPR-ready. ` +
+    `Compare real pricing, access methods, and compliance across ${cat.subcategories.length} subcategories` +
+    (seo.subList ? ` (${seo.subList}).` : ".");
+
+  const categoryFaq = [
+    {
+      q: `What are the best ${cat.name} AI tools?`,
+      a: seo.topNames.length
+        ? `Popular ${cat.name} AI tools on AIFOXX include ${seo.topNames.join(", ")}. Browse all ${seo.count} to compare pricing, access methods, and compliance.`
+        : `AIFOXX lists ${seo.count} ${cat.name} AI tools you can compare by pricing, access method, and compliance.`,
+    },
+    {
+      q: `How many ${cat.name} AI tools are free?`,
+      a: `${seo.freeCount} of the ${seo.count} ${cat.name} tools in this directory offer a free, freemium, or open-source tier.`,
+    },
+    {
+      q: `Which ${cat.name} AI tools are SOC 2 or GDPR compliant?`,
+      a: `${seo.soc2} ${cat.name} tools are marked SOC 2 and ${seo.gdpr} are marked GDPR-ready in this directory. Compliance data is community-sourced — always verify it directly with the vendor before relying on it.`,
+    },
+    {
+      q: `What does the ${cat.name} category include?`,
+      a: `The ${cat.name} category spans ${cat.subcategories.length} subcategories${seo.subList ? `: ${seo.subList}` : ""}.`,
+    },
+  ];
 
   const handleSubChange = (sub: string) => {
     setSearchParams((prev) => {
@@ -67,14 +120,23 @@ export default function CategoryPage() {
       />
       <JsonLd
         id="collection-page"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "CollectionPage",
-          "name": `${cat.name} AI Tools`,
-          "description": `Browse ${total} AI tools in the ${cat.name} category on AIFOXX.`,
-          "url": `https://${Brand.product.domain}/category/${categoryKey}`,
-        }}
+        schema={itemListSchema(
+          seo.topTools.map((t) => ({ name: t.name, url: absoluteUrl(`/ai/${t.slug}`) })),
+          {
+            name: `${cat.name} AI Tools`,
+            url: categoryUrl,
+            description: intro,
+          }
+        )}
       />
+      <JsonLd
+        id="category-breadcrumb"
+        schema={breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: `${cat.name} AI Tools`, url: `/category/${categoryKey}` },
+        ])}
+      />
+      <JsonLd id="category-faq" schema={faqPageSchema(categoryFaq)} />
       <PageWrapper>
         <div className="space-y-5">
           <div>
@@ -93,10 +155,12 @@ export default function CategoryPage() {
             </h1>
             <p className="font-mono text-xs text-text-muted mt-1">{total} tools in this category</p>
             <div className="h-[2px] w-24 mt-2 rounded-full" style={{ background: color.accent, boxShadow: color.glow }} />
+            <p className="font-mono text-sm text-text-secondary leading-relaxed mt-3 max-w-3xl">{intro}</p>
           </div>
 
           <div className="flex items-center gap-1.5 scroll-x pb-1">
             <button
+              type="button"
               onClick={() => handleSubChange("")}
               className={cn("font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150", !activeSub ? "font-semibold" : "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary")}
               style={!activeSub ? { color: color.text, background: color.bg, border: `1px solid ${color.border}` } : undefined}
@@ -106,6 +170,7 @@ export default function CategoryPage() {
             {cat.subcategories.map((sub) => (
               <button
                 key={sub}
+                type="button"
                 onClick={() => handleSubChange(sub)}
                 className={cn("font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150", !matchesTaxonomyValue(activeSub, sub) && "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary")}
                 style={matchesTaxonomyValue(activeSub, sub) ? { color: color.text, background: color.bg, border: `1px solid ${color.border}` } : undefined}
@@ -132,6 +197,7 @@ export default function CategoryPage() {
                     {pricingBreakdown.map(({ pricing, count }) => (
                       <button
                         key={pricing}
+                        type="button"
                         onClick={() => setFilter("pricing", pricing)}
                         className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default bg-bg-surface text-text-secondary hover:text-text-primary hover:border-[var(--cat-accent)] transition-colors duration-150"
                         style={{ "--cat-accent": color.accent } as React.CSSProperties}
@@ -140,6 +206,7 @@ export default function CategoryPage() {
                       </button>
                     ))}
                     <button
+                      type="button"
                       onClick={() => setFilter("pricing", "")}
                       className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-dashed border-border-dim text-text-muted hover:text-text-primary hover:border-border-default transition-colors duration-150"
                     >
@@ -154,6 +221,20 @@ export default function CategoryPage() {
               {tools.map((tool) => (<ToolCard key={tool.id} tool={tool} />))}
             </div>
           )}
+
+          {/* FAQ — visible content backing the FAQPage structured data */}
+          <section className="mt-10 space-y-4">
+            <div className="h-px w-full" style={{ background: `linear-gradient(to right, ${color.accent}, transparent)` }} />
+            <p className="font-mono text-xs text-text-muted tracking-widest">// FAQ</p>
+            <div className="space-y-4">
+              {categoryFaq.map(({ q, a }) => (
+                <div key={q}>
+                  <h2 className="font-display font-black text-sm text-text-primary">{q}</h2>
+                  <p className="font-mono text-sm text-text-secondary leading-relaxed mt-1">{a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </PageWrapper>
     </>
