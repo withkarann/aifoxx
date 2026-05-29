@@ -3,36 +3,51 @@ name: Scrape AI News
 on:
   schedule:
     - cron: '0 6 * * *'   # 6am UTC daily
-  workflow_dispatch:        # allow manual trigger from GitHub UI
+  workflow_dispatch:        # allow manual trigger from the Actions tab
 
+# main is guarded by the `main-protection-prod` ruleset (PR + 1 approval, no
+# bot bypass), so the scraper CANNOT push straight to main. Instead it opens a
+# PR from a short-lived branch and merges it with an admin token. news.json is
+# bundled at build time, so the squash-merge (a real commit on main) is what
+# triggers the Vercel production redeploy that surfaces the fresh data.
+#
+# Requires repo secret NEWS_BOT_TOKEN: a PAT from an admin account
+# (classic `repo` scope, or fine-grained with Contents + Pull requests: RW).
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.NEWS_BOT_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Run news scraper
         run: node scripts/scrape-news.mjs
 
-      # Commit fresh data straight to the default branch. Opening a PR meant the
-      # data only updated when someone merged it (which stopped happening), so
-      # /news went stale. main is the deploy branch, so a direct push keeps it
-      # current. [skip ci] avoids a needless rebuild on data-only commits.
-      - name: Commit & push updated data (if changed)
+      - name: Open & auto-merge data PR (if changed)
+        env:
+          GH_TOKEN: ${{ secrets.NEWS_BOT_TOKEN }}
         run: |
           if [ -z "$(git status --porcelain src/data/news.json src/data/new-tools.json)" ]; then
             echo "No news changes — nothing to commit."
             exit 0
           fi
+          BRANCH="chore/news-$(date -u +%Y%m%d-%H%M%S)"
           git config user.name 'AIFoxx Bot'
           git config user.email 'bot@aifox.com'
+          git checkout -b "$BRANCH"
           git add src/data/news.json src/data/new-tools.json
-          git commit -m 'chore: daily news scrape [skip ci]'
-          git push
+          git commit -m 'chore: daily news scrape'
+          git push origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" \
+            --title 'chore: daily news scrape' \
+            --body 'Automated daily AI-news refresh. Data-only; auto-merged.'
+          gh pr merge "$BRANCH" --squash --admin --delete-branch

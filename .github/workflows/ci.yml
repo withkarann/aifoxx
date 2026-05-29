@@ -3,6 +3,11 @@ name: CI — Validate & Build
 on:
   push:
     branches: [main, dev]
+    # The news scraper squash-merges data-only commits to main; they don't need
+    # a full CI build (Vercel still redeploys them to surface the data).
+    paths-ignore:
+      - 'src/data/news.json'
+      - 'src/data/new-tools.json'
   pull_request:
     branches: [main, dev]
 
