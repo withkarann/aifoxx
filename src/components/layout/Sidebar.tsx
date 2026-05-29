@@ -49,6 +49,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
       </p>
 
       <button
+        type="button"
         onClick={() => handleSelect("", undefined, true)}
         className={cn(
           "w-full text-left font-display text-sm font-black uppercase py-2 px-2 mb-1 rounded-[4px] transition-colors duration-150",
@@ -70,6 +71,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
           <Collapsible key={cat.name} defaultOpen={isActive}>
             <CollapsibleTrigger asChild>
               <button
+                type="button"
                 onClick={() => handleSelect(cat.name, undefined, false)}
                 className={cn(
                   "w-full flex items-start justify-between gap-2 py-2 px-2 rounded-[4px] transition-colors duration-150",
@@ -104,6 +106,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
                 {cat.subcategories.map((sub) => (
                   <button
                     key={sub}
+                    type="button"
                     onClick={() => handleSelect(cat.name, sub, true)}
                     className={cn(
                       "block w-full text-left text-sm font-mono pl-4 py-1.5 transition-colors duration-150 cursor-pointer",

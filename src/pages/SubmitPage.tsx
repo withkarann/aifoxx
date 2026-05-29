@@ -16,6 +16,7 @@ function CodeBlock({ children }: { children: string }) {
   return (
     <div className="relative mt-3">
       <button
+        type="button"
         onClick={handleCopy}
         className="absolute top-2 right-2 flex items-center gap-1 font-mono text-xs text-text-muted hover:text-text-primary transition-colors duration-150"
       >

@@ -48,6 +48,7 @@ export function FilterBar({
           return (
             <button
               key={p}
+              type="button"
               onClick={() => onPricingChange(isActive ? "" : p)}
               className={cn(
                 "font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150",
@@ -68,6 +69,7 @@ export function FilterBar({
             {activeFilterCount} active
           </span>
           <button
+            type="button"
             onClick={onClearAll}
             className="font-mono text-xs text-accent-green hover:underline transition-colors duration-150"
           >

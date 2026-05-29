@@ -148,6 +148,7 @@ export default function NewsPage() {
           {TABS.map(({ id, label }) => (
             <button
               key={id}
+              type="button"
               onClick={() => handleTabChange(id)}
               className={cn(
                 "font-mono text-xs tracking-widest px-4 py-2 -mb-px border-b-2 transition-colors duration-150",
@@ -240,6 +241,7 @@ export default function NewsPage() {
               </span>
               {hasMore && (
                 <button
+                  type="button"
                   onClick={() => setVisible((v) => v + PAGE_SIZE)}
                   className="font-mono text-xs text-accent-green hover:bg-accent-green hover:text-primary-foreground border border-accent-green px-4 py-1.5 rounded-[4px] transition-all duration-150"
                 >

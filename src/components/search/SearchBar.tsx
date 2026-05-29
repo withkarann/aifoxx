@@ -45,10 +45,12 @@ export const SearchBar = forwardRef<SearchBarHandle, SearchBarProps>(
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder="search_tools..."
+            aria-label="Search AI tools"
             className="bg-transparent text-text-primary font-mono text-sm flex-1 outline-none placeholder:text-text-muted py-2.5 caret-accent-green"
           />
           {value && (
             <button
+              type="button"
               onClick={() => onChange("")}
               className="text-text-muted hover:text-text-primary transition-colors duration-150 text-sm"
             >
