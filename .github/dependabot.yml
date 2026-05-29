@@ -13,15 +13,15 @@ updates:
       - "dependencies"
       - "security"
     groups:
-      # Patch + minor updates → auto-merge safe
+      # Patch + minor updates → grouped into one PR and auto-merged.
       non-breaking:
         update-types:
           - "minor"
           - "patch"
-      # Major updates → manual review required
-      major-upgrades:
-        update-types:
-          - "major"
+    # Majors are intentionally NOT grouped: a single grouped major PR repeatedly
+    # broke the build (e.g. Tailwind v4) and could never merge. Ungrouped, each
+    # major arrives as its own reviewable PR (held by auto-merge-dependabot.yml,
+    # which only auto-merges minor/patch). Known-incompatible majors are ignored.
     ignore:
       # Never auto-update these — review manually
       - dependency-name: "react"
@@ -35,6 +35,10 @@ updates:
       - dependency-name: "react-router-dom"
         update-types: ["version-update:semver-major"]
       - dependency-name: "react-router"
+        update-types: ["version-update:semver-major"]
+      # Tailwind v4 is a project-wide migration (CSS-first config + PostCSS
+      # plugin change). Defer until done intentionally in its own PR.
+      - dependency-name: "tailwindcss"
         update-types: ["version-update:semver-major"]
 
   # GitHub Actions
