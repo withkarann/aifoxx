@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
 
     steps:
       - uses: actions/checkout@v4
@@ -22,17 +21,18 @@ jobs:
       - name: Run news scraper
         run: node scripts/scrape-news.mjs
 
-      - name: Create PR with updated data (if changed)
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: 'chore: daily news scrape'
-          branch: chore/daily-news-scrape
-          delete-branch: true
-          title: 'chore: daily news scrape'
-          body: |
-            Automated daily scrape of src/data/news.json and src/data/new-tools.json.
-          add-paths: |
-            src/data/news.json
-            src/data/new-tools.json
-          author: 'AIFoxx Bot <bot@aifox.com>'
-          committer: 'AIFoxx Bot <bot@aifox.com>'
+      # Commit fresh data straight to the default branch. Opening a PR meant the
+      # data only updated when someone merged it (which stopped happening), so
+      # /news went stale. main is the deploy branch, so a direct push keeps it
+      # current. [skip ci] avoids a needless rebuild on data-only commits.
+      - name: Commit & push updated data (if changed)
+        run: |
+          if [ -z "$(git status --porcelain src/data/news.json src/data/new-tools.json)" ]; then
+            echo "No news changes — nothing to commit."
+            exit 0
+          fi
+          git config user.name 'AIFoxx Bot'
+          git config user.email 'bot@aifox.com'
+          git add src/data/news.json src/data/new-tools.json
+          git commit -m 'chore: daily news scrape [skip ci]'
+          git push
