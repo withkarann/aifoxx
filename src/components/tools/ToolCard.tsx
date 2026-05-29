@@ -62,6 +62,10 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
               {(() => {
                 const Icon = getCategoryIcon(tool.category);
                 return Icon ? (
+                  // getCategoryIcon returns a stable, module-level phosphor component
+                  // (see categoryIcons.ts) — a fixed reference, not one created during
+                  // render — so its state never resets. The rule's heuristic can't tell.
+                  // eslint-disable-next-line react-hooks/static-components
                   <Icon size={14} weight="duotone" style={{ color: color.accent, filter: `drop-shadow(0 0 6px ${color.accent}66)` }} />
                 ) : (
                   <span>{color.emoji}</span>
