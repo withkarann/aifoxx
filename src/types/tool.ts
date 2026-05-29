@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { HttpUrl } from "./primitives";
 
 export const PricingEnum = z.enum([
   "Free", "Freemium", "Paid", "Open Source", "Usage Based", "Contact Sales", "Pay-as-you-go"
@@ -13,6 +14,16 @@ export const ComplianceSchema = z.object({
   iso27001: z.boolean().nullable(),
   gdpr: z.boolean().nullable(),
   hipaa: z.boolean().nullable(),
+});
+
+// Public, auditable source URL backing each compliance flag (vendor trust /
+// security / legal page). Present only for flags that have been independently
+// verified; absent means the flag is unsourced and must be treated as a guess.
+export const ComplianceSourcesSchema = z.object({
+  soc2: HttpUrl.nullable().optional(),
+  iso27001: HttpUrl.nullable().optional(),
+  gdpr: HttpUrl.nullable().optional(),
+  hipaa: HttpUrl.nullable().optional(),
 });
 
 export const DataStorageSchema = z.object({
@@ -34,7 +45,7 @@ export const ToolSchema = z.object({
   category: z.string(),
   subcategory: z.string(),
   description: z.string(),
-  url: z.string().url(),
+  url: HttpUrl,
   tags: z.array(z.string()),
   pricing: PricingEnum,
   logo_url: z.string().optional(),
@@ -43,6 +54,7 @@ export const ToolSchema = z.object({
   last_verified: z.string().optional(),
   access_methods: z.array(z.string()).optional(),
   compliance: ComplianceSchema.optional(),
+  compliance_sources: ComplianceSourcesSchema.optional(),
   data_storage: DataStorageSchema.optional(),
   pricing_detail: PricingDetailSchema.optional(),
   use_cases: z.array(z.string()).optional(),
