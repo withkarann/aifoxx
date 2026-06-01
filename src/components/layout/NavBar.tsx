@@ -100,6 +100,18 @@ export function NavBar() {
           </Link>
 
           <Link
+            to="/compare"
+            className={cn(
+              "hidden sm:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150",
+              pathname === "/compare"
+                ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
+                : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
+            )}
+          >
+            COMPARE
+          </Link>
+
+          <Link
             to="/news"
             className={cn(
               "hidden sm:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150",

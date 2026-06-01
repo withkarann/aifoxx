@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { RootLayout } from "@/components/layout/RootLayout";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import { CompareProvider } from "@/contexts/CompareContext";
 import { queryClient } from "@/lib/queryClient";
 import { useScrollToTop } from "@/hooks/useScrollToTop";
 
@@ -23,13 +24,15 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <AppContent />
-          <Analytics />
-          <SpeedInsights />
-        </TooltipProvider>
+        <CompareProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            <AppContent />
+            <Analytics />
+            <SpeedInsights />
+          </TooltipProvider>
+        </CompareProvider>
       </ThemeProvider>
     </QueryClientProvider>
   );

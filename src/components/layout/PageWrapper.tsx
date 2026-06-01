@@ -5,9 +5,11 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 
 interface PageWrapperProps {
   children: ReactNode;
+  /** Show the mobile category-filter trigger. Off for pages with nothing to filter (e.g. a tool detail page). */
+  mobileFilter?: boolean;
 }
 
-export function PageWrapper({ children }: PageWrapperProps) {
+export function PageWrapper({ children, mobileFilter = true }: PageWrapperProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -20,22 +22,24 @@ export function PageWrapper({ children }: PageWrapperProps) {
       {/* Main content */}
       <div className="flex-1 min-w-0 overflow-x-hidden">
         {/* Mobile filter button */}
-        <div className="md:hidden p-4 pb-0">
-          <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-            <SheetTrigger asChild>
-              <button type="button" className="flex items-center gap-2 font-mono text-xs tracking-widest border border-border-default text-text-secondary px-3 py-1.5 rounded-[4px] hover:shadow-glow transition-all duration-150">
-                <Filter size={14} />
-                FILTER
-              </button>
-            </SheetTrigger>
-            <SheetContent side="left" className="w-[280px] bg-bg-surface p-0">
-              <SheetTitle className="sr-only">Filter Categories</SheetTitle>
-              <div className="p-4 overflow-y-auto max-h-[100dvh]">
-                <Sidebar onMobileClose={() => setMobileOpen(false)} />
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
+        {mobileFilter && (
+          <div className="md:hidden p-4 pb-0">
+            <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+              <SheetTrigger asChild>
+                <button type="button" className="flex items-center gap-2 font-mono text-xs tracking-widest border border-border-default text-text-secondary px-3 py-1.5 rounded-[4px] hover:shadow-glow transition-all duration-150">
+                  <Filter size={14} />
+                  FILTER
+                </button>
+              </SheetTrigger>
+              <SheetContent side="left" className="w-[280px] bg-bg-surface p-0">
+                <SheetTitle className="sr-only">Filter Categories</SheetTitle>
+                <div className="p-4 overflow-y-auto max-h-[100dvh]">
+                  <Sidebar onMobileClose={() => setMobileOpen(false)} />
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+        )}
 
         <div className="p-4">
           {children}

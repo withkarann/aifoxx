@@ -209,7 +209,7 @@ export default function HomePage() {
       {!hasSeoQueryParams && <JsonLd schema={homeFaqLd} id="home-faq" />}
       {/* HERO */}
       <section
-        className="hero-shell py-20 text-center px-4 border-b border-border-muted/30 relative overflow-hidden"
+        className="hero-shell py-10 md:py-20 text-center px-4 border-b border-border-muted/30 relative overflow-hidden"
         onMouseMove={handleHeroMouseMove}
         onMouseLeave={resetHeroParallax}
       >
@@ -223,24 +223,24 @@ export default function HomePage() {
         />
 
         <div
-          className="flex flex-col items-center justify-center gap-6 relative z-10"
+          className="flex flex-col items-center justify-center gap-4 md:gap-6 relative z-10"
           style={{
             transform: `translate3d(${parallax.x * 8}px, ${parallax.y * 6}px, 0)`,
           }}
         >
-          <img 
-            src="/aifoxx.png" 
-            alt="AIFOXX AI Tools Directory Logo" 
-            className="hero-logo w-24 h-24 md:w-32 md:h-32 drop-shadow-[0_0_15px_rgba(var(--accent-rgb),0.3)] select-none pointer-events-none" 
+          <img
+            src="/aifoxx.png"
+            alt="AIFOXX AI Tools Directory Logo"
+            className="hero-logo w-16 h-16 md:w-32 md:h-32 drop-shadow-[0_0_15px_rgba(var(--accent-rgb),0.3)] select-none pointer-events-none"
           />
-          <h1 className="hero-title font-display font-mono font-black text-5xl md:text-7xl text-text-primary tracking-widest min-h-[1.2em]">
+          <h1 className="hero-title font-display font-mono font-black text-4xl md:text-7xl text-text-primary tracking-widest min-h-[1.2em]">
             <span className="sr-only">AIFOXX — AI Tools Directory</span>
             <span aria-hidden="true">{displayText}</span>
           </h1>
         </div>
         
         <div
-          className="max-w-xl mx-auto mt-10 relative z-10"
+          className="max-w-xl mx-auto mt-6 md:mt-10 relative z-10"
           style={{
             transform: `translate3d(${parallax.x * 5}px, ${parallax.y * 4}px, 0)`,
           }}

@@ -2,6 +2,7 @@ import { type ReactNode } from "react";
 import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
 import { MobileTabBar } from "./MobileTabBar";
+import { CompareTray } from "@/components/tools/CompareTray";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ export function RootLayout({ children }: RootLayoutProps) {
       </main>
       <Footer />
       <MobileTabBar />
+      <CompareTray />
     </div>
   );
 }
