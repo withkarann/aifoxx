@@ -96,6 +96,7 @@ function generateSitemap() {
     { path: "/mcp", lastmod: today, changefreq: "weekly", priority: 0.8 },
     { path: "/news", lastmod: newsLastmod, changefreq: "daily", priority: 0.8 },
     { path: "/best", lastmod: today, changefreq: "weekly", priority: 0.9 },
+    { path: "/compare", lastmod: today, changefreq: "weekly", priority: 0.7 },
   ];
 
   const bestData = JSON.parse(readFileSync(BEST_PATH, "utf8"));
@@ -129,7 +130,32 @@ function generateSitemap() {
     priority: 0.5,
   }));
 
-  const routes = [...staticRoutes, ...bestRoutes, ...categoryRoutes, ...toolRoutes, ...tagRoutes];
+  // "vs" comparison pages — featured + same-category pairs, canonicalised (a<b).
+  // Mirrors getStaticPaths in src/routes.tsx so the sitemap matches what's built.
+  const vsGroups = new Map();
+  for (const tool of tools) {
+    if (!tool.featured) continue;
+    const group = vsGroups.get(tool.category) || [];
+    group.push(tool.slug);
+    vsGroups.set(tool.category, group);
+  }
+  const vsPairKeys = new Set();
+  for (const group of vsGroups.values()) {
+    const sorted = [...group].sort();
+    for (let i = 0; i < sorted.length; i++) {
+      for (let j = i + 1; j < sorted.length; j++) {
+        vsPairKeys.add(`${sorted[i]}|${sorted[j]}`);
+      }
+    }
+  }
+  const vsRoutes = Array.from(vsPairKeys)
+    .slice(0, 80)
+    .map((pair) => {
+      const [a, b] = pair.split("|");
+      return { path: `/compare/${a}/vs/${b}`, lastmod: today, changefreq: "monthly", priority: 0.6 };
+    });
+
+  const routes = [...staticRoutes, ...bestRoutes, ...categoryRoutes, ...toolRoutes, ...tagRoutes, ...vsRoutes];
 
   const xml = [
     "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",

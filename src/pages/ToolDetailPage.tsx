@@ -1,5 +1,6 @@
-import { useParams, Link } from "react-router-dom";
-import { Star, ExternalLink } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import { Star, ExternalLink, Scale } from "lucide-react";
 import { GithubLogo } from "phosphor-react";
 import { getToolBySlug, getRelatedTools } from "@/lib/tools";
 import { getSkillsByToolSlug } from "@/lib/skills";
@@ -12,6 +13,9 @@ import { normalizeTaxonomyValue } from "@/lib/tools";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { isSafeHttpUrl } from "@/lib/utils";
 import { DataStatus } from "@/components/ui/DataStatus";
+import { CollapsibleSection } from "@/components/ui/CollapsibleSection";
+import { StickyOpenBar } from "@/components/tools/StickyOpenBar";
+import { useCompare } from "@/contexts/CompareContext";
 import Brand from "@/lib/brand";
 import type { Skill } from "@/types/skill";
 
@@ -70,6 +74,24 @@ function SkillsSection({ skills }: { skills: Skill[] }) {
 export default function ToolDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const tool = slug ? getToolBySlug(slug) : undefined;
+
+  // Sticky CTA: show the bottom "Open" bar once the in-page CTA scrolls out of
+  // view. Hooks must run before any early return (rules-of-hooks); the ref is
+  // only attached when a tool renders, so the observer no-ops on the 404 branch.
+  const navigate = useNavigate();
+  const { add: addCompare } = useCompare();
+  const ctaRef = useRef<HTMLAnchorElement>(null);
+  const [showStickyCta, setShowStickyCta] = useState(false);
+  useEffect(() => {
+    const el = ctaRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowStickyCta(!entry.isIntersecting),
+      { threshold: 0 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [slug]);
 
   if (!tool) {
     return (
@@ -200,7 +222,7 @@ export default function ToolDetailPage() {
         }}
       />
       <JsonLd id="tool-faq" schema={faqSchema} />
-      <PageWrapper>
+      <PageWrapper mobileFilter={false}>
         <div className="space-y-6">
           {/* Breadcrumbs */}
           <nav className="font-mono text-xs text-text-muted flex gap-2 items-center flex-wrap">
@@ -213,8 +235,8 @@ export default function ToolDetailPage() {
             <span className="text-text-primary">{tool.name}</span>
           </nav>
 
-          {/* Header */}
-          <div className="flex gap-4 items-start">
+          {/* Header — logo + name stack and wrap; CTA lives below so long names never collide with it */}
+          <div className="flex gap-3 sm:gap-4 items-start">
             {tool.logo_url ? (
               <img
                 src={tool.logo_url}
@@ -222,28 +244,15 @@ export default function ToolDetailPage() {
                 loading="lazy"
                 decoding="async"
                 referrerPolicy="no-referrer"
-                className="w-16 h-16 rounded-[4px] object-cover shrink-0"
+                className="w-14 h-14 sm:w-16 sm:h-16 rounded-[4px] object-cover shrink-0"
               />
             ) : (
-              <div className="w-16 h-16 bg-bg-elevated border border-border-default rounded-[4px] flex items-center justify-center shrink-0">
-                <span className="font-display font-black text-2xl" style={{ color: color.accent }}>{tool.name.charAt(0)}</span>
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-bg-elevated border border-border-default rounded-[4px] flex items-center justify-center shrink-0">
+                <span className="font-display font-black text-xl sm:text-2xl" style={{ color: color.accent }}>{tool.name.charAt(0)}</span>
               </div>
             )}
-            <div className="min-w-0">
-              <div className="flex items-start gap-4">
-                <h1 className="font-display font-black text-4xl text-text-primary">{tool.name}</h1>
-                <a
-                  href={tool.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center font-display font-black tracking-widest text-sm px-4 py-2 rounded-[6px] transition-all duration-150"
-                  style={{ background: color.accent, color: '#080C10', marginLeft: 15 }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.boxShadow = color.glow; }}
-                  onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.boxShadow = 'none'; }}
-                >
-                  &gt;&gt; OPEN TOOL
-                </a>
-              </div>
+            <div className="min-w-0 flex-1">
+              <h1 className="font-display font-black text-2xl sm:text-4xl text-text-primary break-words">{tool.name}</h1>
               <div className="flex items-center gap-2 mt-2 flex-wrap">
                 <PricingBadge pricing={tool.pricing} />
                 {tool.featured && (
@@ -255,6 +264,30 @@ export default function ToolDetailPage() {
               </div>
               <a href={tool.url} target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-text-muted truncate block mt-1 hover:text-text-secondary transition-colors duration-150">{tool.url}</a>
             </div>
+          </div>
+
+          {/* Primary actions — full-width stack on mobile, inline on desktop */}
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+            <a
+              ref={ctaRef}
+              href={tool.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex sm:inline-flex w-full sm:w-auto items-center justify-center font-display font-black tracking-widest text-sm px-6 py-3 rounded-[6px] transition-all duration-150 min-h-[48px]"
+              style={{ background: color.accent, color: '#080C10' }}
+              onMouseEnter={(e) => { e.currentTarget.style.boxShadow = color.glow; }}
+              onMouseLeave={(e) => { e.currentTarget.style.boxShadow = 'none'; }}
+            >
+              &gt;&gt; OPEN TOOL
+            </a>
+            <button
+              type="button"
+              onClick={() => { addCompare(tool.slug); navigate("/compare"); }}
+              aria-label={`Compare ${tool.name} with other tools`}
+              className="flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-2 font-mono text-xs tracking-widest border border-border-default text-text-secondary hover:text-accent-green hover:border-accent-green/60 px-5 rounded-[6px] transition-colors duration-150 min-h-[48px]"
+            >
+              <Scale size={14} /> COMPARE
+            </button>
           </div>
 
           {/* Description */}
@@ -283,9 +316,29 @@ export default function ToolDetailPage() {
             ))}
           </div>
 
-          {/* Access Methods */}
-          <section className="space-y-2">
-            <h2 className="font-mono text-xs text-text-muted tracking-widest">// ACCESS METHODS</h2>
+          {/* Pricing — open by default; the number the user actually came for */}
+          <CollapsibleSection title="PRICING DETAIL" defaultOpen>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {([
+                { label: "Free Tier", key: "free_tier" as const },
+                { label: "Paid Plans", key: "paid_plans" as const },
+                { label: "API Cost", key: "api_cost" as const },
+              ]).map(({ label, key }) => (
+                <div key={key} className="bg-bg-surface border border-border-default rounded-[6px] p-3">
+                  <p className="font-mono text-xs text-text-muted">{label}</p>
+                  <div className="mt-1">
+                    {pricingDetail?.[key]
+                      ? <span className="font-mono text-sm text-text-primary">{pricingDetail[key]}</span>
+                      : <DataStatus value={pricingDetail?.[key]} type="inline" />
+                    }
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CollapsibleSection>
+
+          {/* Access methods — tap to expand on mobile */}
+          <CollapsibleSection title="ACCESS METHODS">
             {!tool.access_methods || tool.access_methods.length === 0 ? (
               <DataStatus value={tool.access_methods} type="block" />
             ) : (
@@ -297,11 +350,10 @@ export default function ToolDetailPage() {
                 ))}
               </div>
             )}
-          </section>
+          </CollapsibleSection>
 
-          {/* Compliance */}
-          <section className="space-y-2">
-            <h2 className="font-mono text-xs text-text-muted tracking-widest">// COMPLIANCE & SECURITY</h2>
+          {/* Trust & data — compliance signals + data-storage, merged into one section */}
+          <CollapsibleSection title="TRUST & DATA">
             <div className="flex flex-wrap gap-2">
               {(["soc2", "iso27001", "gdpr", "hipaa"] as const).map((key) => {
                 const val = compliance?.[key] ?? null;
@@ -341,12 +393,7 @@ export default function ToolDetailPage() {
               Compliance data is community-sourced and may be incomplete or out of date. Always verify
               certifications directly with the vendor's official trust or security page before relying on them.
             </p>
-          </section>
-
-          {/* Data Storage */}
-          <section className="space-y-2">
-            <h2 className="font-mono text-xs text-text-muted tracking-widest">// DATA STORAGE</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
               <div className="bg-bg-surface border border-border-default rounded-[6px] p-3">
                 <p className="font-mono text-xs text-text-muted">Region</p>
                 <p className="font-mono text-sm text-text-primary mt-1">{dataStorage?.region ?? <DataStatus value={null} />}</p>
@@ -364,42 +411,7 @@ export default function ToolDetailPage() {
                 </p>
               </div>
             </div>
-          </section>
-
-          {/* Pricing Detail */}
-          <section className="space-y-2">
-            <h2 className="font-mono text-xs text-text-muted tracking-widest">// PRICING DETAIL</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {([
-                { label: "Free Tier", key: "free_tier" as const },
-                { label: "Paid Plans", key: "paid_plans" as const },
-                { label: "API Cost", key: "api_cost" as const },
-              ]).map(({ label, key }) => (
-                <div key={key} className="bg-bg-surface border border-border-default rounded-[6px] p-3">
-                  <p className="font-mono text-xs text-text-muted">{label}</p>
-                  <div className="mt-1">
-                    {pricingDetail?.[key]
-                      ? <span className="font-mono text-sm text-text-primary">{pricingDetail[key]}</span>
-                      : <DataStatus value={pricingDetail?.[key]} type="inline" />
-                    }
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* CTA */}
-          <a
-            href={tool.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center font-display font-black tracking-widest text-sm px-6 py-3 rounded-[6px] transition-all duration-150"
-            style={{ background: color.accent, color: '#080C10' }}
-            onMouseEnter={(e) => { e.currentTarget.style.boxShadow = color.glow; }}
-            onMouseLeave={(e) => { e.currentTarget.style.boxShadow = 'none'; }}
-          >
-            &gt;&gt; OPEN TOOL
-          </a>
+          </CollapsibleSection>
 
           {/* Claude Skills */}
           {skills.length > 0 && <SkillsSection skills={skills} />}
@@ -415,10 +427,9 @@ export default function ToolDetailPage() {
             </section>
           )}
 
-          {/* Use Cases */}
+          {/* Use cases — tap to expand on mobile */}
           {tool.use_cases && tool.use_cases.length > 0 && (
-            <section className="space-y-2">
-              <h2 className="font-mono text-xs text-text-muted tracking-widest">// USE CASES</h2>
+            <CollapsibleSection title="USE CASES">
               <div className="flex flex-wrap gap-2">
                 {tool.use_cases.map((uc) => (
                   <span key={uc} className="font-mono text-xs px-2.5 py-1 rounded-[3px] border border-[var(--border-default)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">
@@ -426,7 +437,7 @@ export default function ToolDetailPage() {
                   </span>
                 ))}
               </div>
-            </section>
+            </CollapsibleSection>
           )}
 
           {/* Tags */}
@@ -444,8 +455,13 @@ export default function ToolDetailPage() {
               ))}
             </div>
           )}
+
+          {/* Spacer so the last content clears the sticky mobile CTA bar */}
+          <div className="h-16 md:hidden" aria-hidden="true" />
         </div>
       </PageWrapper>
+
+      <StickyOpenBar name={tool.name} url={tool.url} accent={color.accent} visible={showStickyCta} />
     </>
   );
 }

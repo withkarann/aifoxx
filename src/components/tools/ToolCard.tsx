@@ -1,8 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
+import { Scale } from "lucide-react";
 import { type Tool } from "@/types/tool";
 import { PricingBadge } from "./PricingBadge";
 import { getCategoryColor, getCategoryVars } from "@/lib/categoryColors";
 import { getCategoryIcon } from "@/lib/categoryIcons";
+import { useCompare } from "@/contexts/CompareContext";
 import { cn } from "@/lib/utils";
 
 interface ToolCardProps {
@@ -14,6 +16,8 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
   const navigate = useNavigate();
   const color = getCategoryColor(tool.category);
   const vars = getCategoryVars(tool.category);
+  const { isSelected, toggle, isFull } = useCompare();
+  const selectedForCompare = isSelected(tool.slug);
 
   return (
     <div
@@ -55,8 +59,9 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
 
       {/* Footer */}
       <div className="mt-3 pt-3 border-t border-border-dim flex flex-col gap-2 min-w-0">
-        {/* Row 1: Category + Subcategory */}
-        <div className="flex flex-wrap gap-1.5 min-w-0">
+        {/* Row 1: Category + Subcategory + compare toggle */}
+        <div className="flex items-start justify-between gap-2 min-w-0">
+          <div className="flex flex-wrap gap-1.5 min-w-0">
           <span className="cat-chip inline-flex items-center text-[10px] font-mono px-2 py-0.5 rounded-[3px] shrink-0 max-w-full truncate">
             <span className="inline-flex items-center gap-1">
               {(() => {
@@ -77,6 +82,24 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
           <span className="subcat-chip inline-flex items-center text-[10px] font-mono px-2 py-0.5 rounded-[3px] shrink-0 max-w-full truncate">
             {tool.subcategory}
           </span>
+          </div>
+          <button
+            type="button"
+            onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggle(tool.slug); }}
+            aria-label={selectedForCompare ? `Remove ${tool.name} from compare` : `Add ${tool.name} to compare`}
+            aria-pressed={selectedForCompare}
+            disabled={!selectedForCompare && isFull}
+            title={!selectedForCompare && isFull ? "Compare is full (max 3)" : selectedForCompare ? "Remove from compare" : "Add to compare"}
+            className={cn(
+              "shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-[4px] border transition-colors duration-150",
+              selectedForCompare
+                ? "border-accent-green text-accent-green bg-accent-green/10"
+                : "border-border-default text-text-muted hover:text-text-primary",
+              !selectedForCompare && isFull && "opacity-40 cursor-not-allowed"
+            )}
+          >
+            <Scale size={13} />
+          </button>
         </div>
 
         {/* Row 2: Tags — max 3 visible */}
