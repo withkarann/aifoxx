@@ -48,3 +48,25 @@ dist-ssr
 *.crt
 *.p12
 *.pfx
+
+# Internal trust-center verification tooling (local-only; never publish)
+scripts/verify-trust.mjs
+scripts/judge-trust.mjs
+scripts/merge-trust.mjs
+scripts/report-trust.mjs
+scripts/aggregate-model.mjs
+scripts/prep-model-review.mjs
+scripts/strip-weak-sources.mjs
+scripts/trust-daily.sh
+scripts/TRUST-CENTERS.md
+scripts/trust-centers.json
+scripts/trust-report.md
+scripts/trust-verdicts.json*
+scripts/trust-review-queue.json
+scripts/needs-better-trust-url.json
+scripts/recapture-slugs.txt
+scripts/rerun-slugs.txt
+scripts/trust-evidence/
+scripts/trust-history/
+scripts/model-input/
+scripts/model-verdicts/
