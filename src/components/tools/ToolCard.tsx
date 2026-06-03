@@ -102,13 +102,16 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
           </button>
         </div>
 
-        {/* Row 2: Tags — max 3 visible */}
+        {/* Row 2: Tags — max 3 visible; 3rd pill hidden on mobile */}
         <div className="flex flex-wrap gap-1 min-w-0 overflow-hidden" style={{ maxHeight: '44px' }}>
-          {tool.tags.slice(0, 3).map((tag) => (
+          {tool.tags.slice(0, 3).map((tag, i) => (
             <span
               key={tag}
               onClick={(e) => { e.preventDefault(); e.stopPropagation(); navigate(`/tag/${tag}`); }}
-              className="tag-pill inline-flex items-center shrink-0 text-[10px] font-mono px-1.5 py-0.5 rounded-[3px] transition-colors duration-150 whitespace-nowrap cursor-pointer max-w-[120px] truncate"
+              className={cn(
+                "tag-pill inline-flex items-center shrink-0 text-[10px] font-mono px-1.5 py-0.5 rounded-[3px] transition-colors duration-150 whitespace-nowrap cursor-pointer max-w-[120px] truncate",
+                i === 2 && "hidden sm:inline-flex"
+              )}
             >
               #{tag}
             </span>
