@@ -9,7 +9,6 @@ import { searchTools } from "@/lib/search";
 import { SearchBar } from "@/components/search/SearchBar";
 import { FilterBar } from "@/components/search/FilterBar";
 import { ToolCard } from "@/components/tools/ToolCard";
-import { ToolCardSkeleton } from "@/components/ui/ToolCardSkeleton";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -66,7 +65,6 @@ export default function HomePage() {
   const isEmpty = total === 0;
   const hasActiveFilters = activeFilterCount > 0;
 
-  const [loading, setLoading] = useState(true);
   const [displayText, setDisplayText] = useState("");
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
   const fullText = Brand.product.name_styled;
@@ -143,11 +141,6 @@ export default function HomePage() {
     items.push(totalPages);
     return items;
   }, [currentPageSafe, totalPages]);
-
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 200);
-    return () => clearTimeout(t);
-  }, []);
 
   useEffect(() => {
     let i = 0;
@@ -306,13 +299,7 @@ export default function HomePage() {
               // SHOWING {visibleStart}-{visibleEnd} OF {total} RESULTS
             </h2>
 
-            {loading ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <ToolCardSkeleton key={i} />
-                ))}
-              </div>
-            ) : isEmpty ? (
+            {isEmpty ? (
               <div className="bg-bg-elevated border-2 border-dashed border-border-dim rounded-[8px] py-20 text-center relative overflow-hidden group">
                 {/* Retro background decoration */}
                 <div className="absolute inset-0 opacity-5 pointer-events-none font-mono text-[80px] font-black leading-none break-all select-none">
@@ -347,7 +334,7 @@ export default function HomePage() {
               </div>
             )}
 
-            {!loading && !isEmpty && totalPages > 1 && (
+            {!isEmpty && totalPages > 1 && (
               <div className="pt-2 flex items-center justify-center gap-1.5 flex-wrap">
                 <button
                   type="button"
