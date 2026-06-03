@@ -38,11 +38,8 @@ export function formatAge(iso: string, now: number = Date.now()): string {
 export function formatAbsoluteDate(iso: string): string {
   const d = new Date(iso)
   if (!Number.isFinite(d.getTime())) return ''
-  // timeZone: 'UTC' makes the rendered calendar date independent of the runtime's
-  // timezone. Without it, an SSG build (Vercel runs in UTC) and a client in another
-  // timezone disagree on the date for instants near midnight, causing a React
-  // hydration text mismatch (#418). UTC keeps the prerendered HTML and the client
-  // byte-identical, and matches the UTC day boundaries used by groupNewsByDate.
+  // Render in UTC (required): every visitor sees the same calendar date regardless of
+  // their timezone, matching the UTC day boundaries used to group stories by date.
   return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
 }
 
@@ -60,16 +57,14 @@ export interface NewsGroup {
 type BucketKey = 'Today' | 'Yesterday' | 'This Week' | 'Earlier'
 
 /**
- * Bucket news items into Today / Yesterday / This Week / Earlier.
+ * Group news items into Today / Yesterday / This Week / Earlier.
  *
- * SSG-safe & deterministic: the reference "today" is DATA-DERIVED — by default
- * the newest item's date in `items` — NOT the wall clock. This guarantees the
- * server-prerendered HTML and the client hydration compute identical groups
- * (no hydration mismatch), and makes the freshest scrape batch always "Today".
- * Day boundaries use UTC so they don't vary by viewer timezone.
+ * The reference "today" is the newest item's date, not the wall clock (required):
+ * this keeps grouping stable so the freshest stories always appear under "Today".
+ * Day boundaries use UTC so the groups don't shift with the viewer's timezone.
  *
- * Input order is preserved within each bucket; empty buckets are omitted;
- * output order is fixed (Today → Yesterday → This Week → Earlier).
+ * Input order is preserved within each group; empty groups are omitted; the output
+ * order is fixed (Today → Yesterday → This Week → Earlier).
  */
 export function groupNewsByDate(items: NewsItem[], referenceMs?: number): NewsGroup[] {
   if (items.length === 0) return []

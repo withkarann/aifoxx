@@ -123,10 +123,9 @@ describe("groupNewsByDate", () => {
 
 describe("formatAbsoluteDate", () => {
   it("renders the calendar date in UTC, independent of runtime timezone", () => {
-    // 01:07 UTC is still the prior calendar day in the Americas; rendering in UTC
-    // keeps SSG-prerendered HTML and client hydration byte-identical (no #418).
+    // An instant just after UTC midnight resolves to the same date everywhere.
     expect(formatAbsoluteDate("2026-06-03T01:07:00.000Z")).toBe("Jun 3, 2026");
-    // 23:30 UTC is the next calendar day in much of Asia; still UTC-stable here.
+    // An instant just before UTC midnight stays on its UTC date everywhere.
     expect(formatAbsoluteDate("2026-06-02T23:30:00.000Z")).toBe("Jun 2, 2026");
   });
 

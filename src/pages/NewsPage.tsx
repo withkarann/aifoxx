@@ -121,8 +121,7 @@ export default function NewsPage() {
   );
 
   const shown = useMemo(() => filteredItems.slice(0, visible), [filteredItems, visible]);
-  // No reference arg: groupNewsByDate self-derives the newest item's date (UTC),
-  // which is order-independent and stays SSG-deterministic.
+  // Group relative to the newest story's date (see groupNewsByDate).
   const groups = useMemo(() => groupNewsByDate(shown), [shown]);
   const hasMore = visible < filteredItems.length;
 
@@ -221,7 +220,7 @@ export default function NewsPage() {
               NO STORIES
             </p>
             <p className="font-mono text-text-secondary text-sm mt-3">
-              The daily scrape hasn&apos;t run yet. Check back soon.
+              Fresh stories are on the way — check back soon.
             </p>
           </div>
         ) : (
