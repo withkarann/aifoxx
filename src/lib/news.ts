@@ -38,7 +38,12 @@ export function formatAge(iso: string, now: number = Date.now()): string {
 export function formatAbsoluteDate(iso: string): string {
   const d = new Date(iso)
   if (!Number.isFinite(d.getTime())) return ''
-  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+  // timeZone: 'UTC' makes the rendered calendar date independent of the runtime's
+  // timezone. Without it, an SSG build (Vercel runs in UTC) and a client in another
+  // timezone disagree on the date for instants near midnight, causing a React
+  // hydration text mismatch (#418). UTC keeps the prerendered HTML and the client
+  // byte-identical, and matches the UTC day boundaries used by groupNewsByDate.
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
 }
 
 export function getLatestNewsDate(): string | null {

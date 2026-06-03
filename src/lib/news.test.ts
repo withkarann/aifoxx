@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { groupNewsByDate } from "@/lib/news";
+import { groupNewsByDate, formatAbsoluteDate } from "@/lib/news";
 import type { NewsItem } from "@/types/news";
 
 // Fixed reference time: 2026-06-03T12:00:00Z (noon UTC)
@@ -118,5 +118,19 @@ describe("groupNewsByDate", () => {
     expect(groups.find((g) => g.label === "Today")?.items).toEqual([newest]);
     // 10 days before reference is well outside the 6-day This Week window → Earlier
     expect(groups.find((g) => g.label === "Earlier")?.items).toEqual([older]);
+  });
+});
+
+describe("formatAbsoluteDate", () => {
+  it("renders the calendar date in UTC, independent of runtime timezone", () => {
+    // 01:07 UTC is still the prior calendar day in the Americas; rendering in UTC
+    // keeps SSG-prerendered HTML and client hydration byte-identical (no #418).
+    expect(formatAbsoluteDate("2026-06-03T01:07:00.000Z")).toBe("Jun 3, 2026");
+    // 23:30 UTC is the next calendar day in much of Asia; still UTC-stable here.
+    expect(formatAbsoluteDate("2026-06-02T23:30:00.000Z")).toBe("Jun 2, 2026");
+  });
+
+  it("returns an empty string for an unparseable date", () => {
+    expect(formatAbsoluteDate("not-a-date")).toBe("");
   });
 });
