@@ -120,8 +120,8 @@ export default function NewsPage() {
     [baseItems, source]
   );
 
-  const shown = filteredItems.slice(0, visible);
-  const groups = useMemo(() => groupNewsByDate(shown), [shown]);
+  const shown = useMemo(() => filteredItems.slice(0, visible), [filteredItems, visible]);
+  const groups = useMemo(() => groupNewsByDate(shown, shown[0]?.date ? new Date(shown[0].date).getTime() : undefined), [shown]);
   const hasMore = visible < filteredItems.length;
 
   function handleTabChange(next: Tab) {
@@ -224,79 +224,85 @@ export default function NewsPage() {
           </div>
         ) : (
           <>
-            {groups.map((group, groupIdx) => {
-              // Compute running offset so numbering is continuous across groups
-              const offset = groups
-                .slice(0, groupIdx)
-                .reduce((sum, g) => sum + g.items.length, 0);
-
-              return (
-                <div key={group.label}>
-                  <h2 className="font-mono text-[10px] tracking-widest text-text-muted uppercase mt-5 mb-2 pb-1 border-b border-border-dim/50 first:mt-0">
-                    {group.label}
-                  </h2>
-                  <ol className="space-y-0">
-                    {group.items.map((item, localIdx) => (
-                      <li
-                        key={item.id}
-                        className="flex items-baseline gap-3 py-2.5 border-b border-border-dim/50 group"
-                      >
-                        {/* Number — continuous across all groups */}
-                        <span className="font-mono text-xs text-text-muted w-6 shrink-0 text-right select-none">
-                          {offset + localIdx + 1}.
-                        </span>
-
-                        {/* Content */}
-                        <div className="min-w-0 flex-1">
-                          <a
-                            href={safeUrl(item.url)}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="font-mono text-sm text-text-primary hover:text-accent-green transition-colors duration-100 leading-snug inline"
+            {(() => {
+              let runningOffset = 0;
+              return groups.map((group, groupIdx) => {
+                const offset = runningOffset;
+                runningOffset += group.items.length;
+                return (
+                  <div key={group.label}>
+                    <h2 className={cn(
+                      "font-mono text-[10px] tracking-widest text-text-muted uppercase mt-5 mb-2 pb-1 border-b border-border-dim/50",
+                      groupIdx === 0 && "mt-0"
+                    )}>
+                      {group.label}
+                    </h2>
+                    <ol className="space-y-0">
+                      {group.items.map((item, localIdx) => {
+                        const displayNumber = offset + localIdx + 1;
+                        return (
+                          <li
+                            key={item.id}
+                            className="flex items-baseline gap-3 py-2.5 border-b border-border-dim/50 group"
                           >
-                            {item.title}
-                          </a>
-                          <span className="font-mono text-xs text-text-muted ml-1.5">
-                            ({item.domain})
-                          </span>
+                            {/* Number — continuous across all groups */}
+                            <span className="font-mono text-xs text-text-muted w-6 shrink-0 text-right select-none">
+                              {displayNumber}.
+                            </span>
 
-                          {/* Metadata row */}
-                          <div className="flex items-center gap-2 mt-0.5">
-                            <span className={cn("font-mono text-[10px]", sourceColor(item.source))}>
-                              {sourceLabel(item.source)}
-                            </span>
-                            <span className="font-mono text-[10px] text-text-muted">·</span>
-                            <span
-                              className="font-mono text-[10px] text-text-muted"
-                              title={formatAbsoluteDate(item.date)}
-                            >
-                              {formatAbsoluteDate(item.date)}
-                            </span>
-                            {item.points !== undefined && (
-                              <>
-                                <span className="font-mono text-[10px] text-text-muted">·</span>
-                                <span className="font-mono text-[10px] text-text-muted">
-                                  {item.points} pts
+                            {/* Content */}
+                            <div className="min-w-0 flex-1">
+                              <a
+                                href={safeUrl(item.url)}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-mono text-sm text-text-primary hover:text-accent-green transition-colors duration-100 leading-snug inline"
+                              >
+                                {item.title}
+                              </a>
+                              <span className="font-mono text-xs text-text-muted ml-1.5">
+                                ({item.domain})
+                              </span>
+
+                              {/* Metadata row */}
+                              <div className="flex items-center gap-2 mt-0.5">
+                                <span className={cn("font-mono text-[10px]", sourceColor(item.source))}>
+                                  {sourceLabel(item.source)}
                                 </span>
-                              </>
-                            )}
-                            <a
-                              href={safeUrl(item.url)}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-100 text-text-muted hover:text-accent-green"
-                              aria-label="Open link"
-                            >
-                              <ExternalLink size={11} />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-              );
-            })}
+                                <span className="font-mono text-[10px] text-text-muted">·</span>
+                                <span
+                                  className="font-mono text-[10px] text-text-muted"
+                                  title={formatAbsoluteDate(item.date)}
+                                >
+                                  {formatAbsoluteDate(item.date)}
+                                </span>
+                                {item.points !== undefined && (
+                                  <>
+                                    <span className="font-mono text-[10px] text-text-muted">·</span>
+                                    <span className="font-mono text-[10px] text-text-muted">
+                                      {item.points} pts
+                                    </span>
+                                  </>
+                                )}
+                                <a
+                                  href={safeUrl(item.url)}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-100 text-text-muted hover:text-accent-green"
+                                  aria-label="Open link"
+                                >
+                                  <ExternalLink size={11} />
+                                </a>
+                              </div>
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ol>
+                  </div>
+                );
+              });
+            })()}
 
             {/* Show more / count */}
             <div className="mt-6 flex items-center justify-between">

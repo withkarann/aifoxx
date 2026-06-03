@@ -108,4 +108,15 @@ describe("groupNewsByDate", () => {
     const groups = groupNewsByDate([item], NOW);
     expect(groups[0].label).toBe("Earlier");
   });
+
+  it("data-derived default: newest item lands in Today, item 10 days older lands in Earlier", () => {
+    // No referenceMs passed — function must self-derive from the data
+    const newest = makeItem("newest", "2026-06-03T09:00:00Z");
+    const older = makeItem("older", "2026-05-24T09:00:00Z"); // 10 days before newest
+    const groups = groupNewsByDate([newest, older]);
+    // newest is the reference; its own UTC day is "Today"
+    expect(groups.find((g) => g.label === "Today")?.items).toEqual([newest]);
+    // 10 days before reference is well outside the 6-day This Week window → Earlier
+    expect(groups.find((g) => g.label === "Earlier")?.items).toEqual([older]);
+  });
 });
