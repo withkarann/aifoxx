@@ -12,6 +12,28 @@ dist
 dist-ssr
 *.local
 
+# Test & QA run output — never commit. The E2E setup itself (playwright.config.ts,
+# playwright-fixture.ts, src/test/) IS committed; only its generated output is ignored.
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+.playwright/
+.playwright-mcp/
+*.trace.zip
+
+# Local QA / dogfooding scratch — keep ad-hoc Playwright scripts & screenshots here
+.scratch/
+/tmp/
+screenshots/
+
+# Loose screenshots / images at the repo root (committed assets live in public/ or src/)
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.gif
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
