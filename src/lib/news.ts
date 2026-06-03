@@ -46,3 +46,39 @@ export function getLatestNewsDate(): string | null {
   if (all.length === 0) return null
   return all.reduce((max, n) => (new Date(n.date).getTime() > new Date(max).getTime() ? n.date : max), all[0].date)
 }
+
+export interface NewsGroup {
+  label: string
+  items: NewsItem[]
+}
+
+/**
+ * Bucket news items into Today / Yesterday / This Week / Earlier based on each
+ * item's ISO `date`, relative to `now`. Input order is preserved within each
+ * bucket; empty buckets are omitted. Items with an unparseable date fall into
+ * "Earlier".
+ */
+export function groupNewsByDate(items: NewsItem[], now: number = Date.now()): NewsGroup[] {
+  const startOfToday = new Date(now)
+  startOfToday.setHours(0, 0, 0, 0)
+  const startOfTodayMs = startOfToday.getTime()
+  const DAY = 86_400_000
+  const buckets: Record<string, NewsItem[]> = {
+    Today: [],
+    Yesterday: [],
+    'This Week': [],
+    Earlier: [],
+  }
+  for (const item of items) {
+    const t = new Date(item.date).getTime()
+    if (!Number.isFinite(t)) { buckets.Earlier.push(item); continue }
+    if (t >= startOfTodayMs) buckets.Today.push(item)
+    else if (t >= startOfTodayMs - DAY) buckets.Yesterday.push(item)
+    else if (t >= startOfTodayMs - 6 * DAY) buckets['This Week'].push(item)
+    else buckets.Earlier.push(item)
+  }
+  const order = ['Today', 'Yesterday', 'This Week', 'Earlier']
+  return order
+    .map((label) => ({ label, items: buckets[label] }))
+    .filter((g) => g.items.length > 0)
+}
