@@ -121,7 +121,9 @@ export default function NewsPage() {
   );
 
   const shown = useMemo(() => filteredItems.slice(0, visible), [filteredItems, visible]);
-  const groups = useMemo(() => groupNewsByDate(shown, shown[0]?.date ? new Date(shown[0].date).getTime() : undefined), [shown]);
+  // No reference arg: groupNewsByDate self-derives the newest item's date (UTC),
+  // which is order-independent and stays SSG-deterministic.
+  const groups = useMemo(() => groupNewsByDate(shown), [shown]);
   const hasMore = visible < filteredItems.length;
 
   function handleTabChange(next: Tab) {
