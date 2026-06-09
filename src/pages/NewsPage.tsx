@@ -5,6 +5,7 @@ import {
   NEWS_COUNTS,
   formatAbsoluteDate,
   getLatestNewsDate,
+  groupNewsByDate,
 } from "@/lib/news";
 import { type NewsCategory } from "@/types/news";
 import { PageMeta } from "@/components/seo/PageMeta";
@@ -83,6 +84,7 @@ const TABS: { id: Tab; label: string }[] = [
 export default function NewsPage() {
   const [tab, setTab] = useState<Tab>("all");
   const [visible, setVisible] = useState(PAGE_SIZE);
+  const [source, setSource] = useState("");
   const allItems = useMemo(() => getNewsByCategory("all"), []);
   const latestDate = useMemo(() => getLatestNewsDate(), []);
 
@@ -103,12 +105,34 @@ export default function NewsPage() {
     },
   }), [allItems]);
 
-  const items = getNewsByCategory(tab === "all" ? "all" : tab);
-  const shown = items.slice(0, visible);
-  const hasMore = visible < items.length;
+  const baseItems = useMemo(() => getNewsByCategory(tab === "all" ? "all" : tab), [tab]);
+
+  const sourceOptions = useMemo(
+    () =>
+      Array.from(new Set(baseItems.map((i) => i.source))).sort((a, b) =>
+        sourceLabel(a).localeCompare(sourceLabel(b))
+      ),
+    [baseItems]
+  );
+
+  const filteredItems = useMemo(
+    () => (source ? baseItems.filter((i) => i.source === source) : baseItems),
+    [baseItems, source]
+  );
+
+  const shown = useMemo(() => filteredItems.slice(0, visible), [filteredItems, visible]);
+  // Group relative to the newest story's date (see groupNewsByDate).
+  const groups = useMemo(() => groupNewsByDate(shown), [shown]);
+  const hasMore = visible < filteredItems.length;
 
   function handleTabChange(next: Tab) {
     setTab(next);
+    setSource("");
+    setVisible(PAGE_SIZE);
+  }
+
+  function handleSourceChange(next: string) {
+    setSource(next);
     setVisible(PAGE_SIZE);
   }
 
@@ -162,82 +186,129 @@ export default function NewsPage() {
           ))}
         </div>
 
+        {/* Source filter */}
+        {sourceOptions.length > 1 && (
+          <div className="flex items-center gap-2 mb-4 flex-wrap">
+            <span className="font-mono text-[10px] tracking-widest text-text-muted">SOURCE:</span>
+            <select
+              value={source}
+              onChange={(e) => handleSourceChange(e.target.value)}
+              aria-label="Filter stories by source"
+              className="bg-bg-overlay border border-border-default rounded-[4px] px-2.5 py-1 font-mono text-xs text-text-primary"
+            >
+              <option value="">ALL SOURCES</option>
+              {sourceOptions.map((s) => (
+                <option key={s} value={s}>{sourceLabel(s)}</option>
+              ))}
+            </select>
+            {source && (
+              <button
+                type="button"
+                onClick={() => handleSourceChange("")}
+                className="font-mono text-[10px] text-accent-green hover:underline"
+              >
+                CLEAR
+              </button>
+            )}
+          </div>
+        )}
+
         {/* News list */}
-        {items.length === 0 ? (
+        {filteredItems.length === 0 ? (
           <div className="bg-bg-elevated border-2 border-dashed border-border-dim rounded-[8px] py-20 text-center">
             <p className="font-display text-accent-red text-3xl font-black tracking-tight">
               NO STORIES
             </p>
             <p className="font-mono text-text-secondary text-sm mt-3">
-              The daily scrape hasn&apos;t run yet. Check back soon.
+              Fresh stories are on the way — check back soon.
             </p>
           </div>
         ) : (
           <>
-            <ol className="space-y-0">
-              {shown.map((item, idx) => (
-                <li
-                  key={item.id}
-                  className="flex items-baseline gap-3 py-2.5 border-b border-border-dim/50 group"
-                >
-                  {/* Number */}
-                  <span className="font-mono text-xs text-text-muted w-6 shrink-0 text-right select-none">
-                    {idx + 1}.
-                  </span>
+            {(() => {
+              let runningOffset = 0;
+              return groups.map((group, groupIdx) => {
+                const offset = runningOffset;
+                runningOffset += group.items.length;
+                return (
+                  <div key={group.label}>
+                    <h2 className={cn(
+                      "font-mono text-[10px] tracking-widest text-text-muted uppercase mt-5 mb-2 pb-1 border-b border-border-dim/50",
+                      groupIdx === 0 && "mt-0"
+                    )}>
+                      {group.label}
+                    </h2>
+                    <ol className="space-y-0">
+                      {group.items.map((item, localIdx) => {
+                        const displayNumber = offset + localIdx + 1;
+                        return (
+                          <li
+                            key={item.id}
+                            className="flex items-baseline gap-3 py-2.5 border-b border-border-dim/50 group"
+                          >
+                            {/* Number — continuous across all groups */}
+                            <span className="font-mono text-xs text-text-muted w-6 shrink-0 text-right select-none">
+                              {displayNumber}.
+                            </span>
 
-                  {/* Content */}
-                  <div className="min-w-0 flex-1">
-                    <a
-                      href={safeUrl(item.url)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-mono text-sm text-text-primary hover:text-accent-green transition-colors duration-100 leading-snug inline"
-                    >
-                      {item.title}
-                    </a>
-                    <span className="font-mono text-xs text-text-muted ml-1.5">
-                      ({item.domain})
-                    </span>
+                            {/* Content */}
+                            <div className="min-w-0 flex-1">
+                              <a
+                                href={safeUrl(item.url)}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-mono text-sm text-text-primary hover:text-accent-green transition-colors duration-100 leading-snug inline"
+                              >
+                                {item.title}
+                              </a>
+                              <span className="font-mono text-xs text-text-muted ml-1.5">
+                                ({item.domain})
+                              </span>
 
-                    {/* Metadata row */}
-                    <div className="flex items-center gap-2 mt-0.5">
-                      <span className={cn("font-mono text-[10px]", sourceColor(item.source))}>
-                        {sourceLabel(item.source)}
-                      </span>
-                      <span className="font-mono text-[10px] text-text-muted">·</span>
-                      <span
-                        className="font-mono text-[10px] text-text-muted"
-                        title={formatAbsoluteDate(item.date)}
-                      >
-                        {formatAbsoluteDate(item.date)}
-                      </span>
-                      {item.points !== undefined && (
-                        <>
-                          <span className="font-mono text-[10px] text-text-muted">·</span>
-                          <span className="font-mono text-[10px] text-text-muted">
-                            {item.points} pts
-                          </span>
-                        </>
-                      )}
-                      <a
-                        href={safeUrl(item.url)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-100 text-text-muted hover:text-accent-green"
-                        aria-label="Open link"
-                      >
-                        <ExternalLink size={11} />
-                      </a>
-                    </div>
+                              {/* Metadata row */}
+                              <div className="flex items-center gap-2 mt-0.5">
+                                <span className={cn("font-mono text-[10px]", sourceColor(item.source))}>
+                                  {sourceLabel(item.source)}
+                                </span>
+                                <span className="font-mono text-[10px] text-text-muted">·</span>
+                                <span
+                                  className="font-mono text-[10px] text-text-muted"
+                                  title={formatAbsoluteDate(item.date)}
+                                >
+                                  {formatAbsoluteDate(item.date)}
+                                </span>
+                                {item.points !== undefined && (
+                                  <>
+                                    <span className="font-mono text-[10px] text-text-muted">·</span>
+                                    <span className="font-mono text-[10px] text-text-muted">
+                                      {item.points} pts
+                                    </span>
+                                  </>
+                                )}
+                                <a
+                                  href={safeUrl(item.url)}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-100 text-text-muted hover:text-accent-green"
+                                  aria-label="Open link"
+                                >
+                                  <ExternalLink size={11} />
+                                </a>
+                              </div>
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ol>
                   </div>
-                </li>
-              ))}
-            </ol>
+                );
+              });
+            })()}
 
             {/* Show more / count */}
             <div className="mt-6 flex items-center justify-between">
               <span className="font-mono text-xs text-text-muted">
-                Showing {shown.length} of {items.length}
+                Showing {shown.length} of {filteredItems.length}
               </span>
               {hasMore && (
                 <button

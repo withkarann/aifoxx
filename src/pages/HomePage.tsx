@@ -9,7 +9,6 @@ import { searchTools } from "@/lib/search";
 import { SearchBar } from "@/components/search/SearchBar";
 import { FilterBar } from "@/components/search/FilterBar";
 import { ToolCard } from "@/components/tools/ToolCard";
-import { ToolCardSkeleton } from "@/components/ui/ToolCardSkeleton";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -66,7 +65,6 @@ export default function HomePage() {
   const isEmpty = total === 0;
   const hasActiveFilters = activeFilterCount > 0;
 
-  const [loading, setLoading] = useState(true);
   const [displayText, setDisplayText] = useState("");
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
   const fullText = Brand.product.name_styled;
@@ -145,11 +143,6 @@ export default function HomePage() {
   }, [currentPageSafe, totalPages]);
 
   useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 200);
-    return () => clearTimeout(t);
-  }, []);
-
-  useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
       setDisplayText(fullText.slice(0, i));
@@ -209,7 +202,7 @@ export default function HomePage() {
       {!hasSeoQueryParams && <JsonLd schema={homeFaqLd} id="home-faq" />}
       {/* HERO */}
       <section
-        className="hero-shell py-10 md:py-20 text-center px-4 border-b border-border-muted/30 relative overflow-hidden"
+        className="hero-shell py-6 md:py-20 text-center px-4 border-b border-border-muted/30 relative overflow-hidden"
         onMouseMove={handleHeroMouseMove}
         onMouseLeave={resetHeroParallax}
       >
@@ -231,7 +224,7 @@ export default function HomePage() {
           <img
             src="/aifoxx.png"
             alt="AIFOXX AI Tools Directory Logo"
-            className="hero-logo w-16 h-16 md:w-32 md:h-32 drop-shadow-[0_0_15px_rgba(var(--accent-rgb),0.3)] select-none pointer-events-none"
+            className="hero-logo w-14 h-14 md:w-32 md:h-32 drop-shadow-[0_0_15px_rgba(var(--accent-rgb),0.3)] select-none pointer-events-none"
           />
           <h1 className="hero-title font-display font-mono font-black text-4xl md:text-7xl text-text-primary tracking-widest min-h-[1.2em]">
             <span className="sr-only">AIFOXX — AI Tools Directory</span>
@@ -240,7 +233,7 @@ export default function HomePage() {
         </div>
         
         <div
-          className="max-w-xl mx-auto mt-6 md:mt-10 relative z-10"
+          className="max-w-xl mx-auto mt-4 md:mt-10 relative z-10"
           style={{
             transform: `translate3d(${parallax.x * 5}px, ${parallax.y * 4}px, 0)`,
           }}
@@ -254,30 +247,32 @@ export default function HomePage() {
 
       {/* MAIN CONTENT */}
       <PageWrapper>
-        <div className="space-y-4" ref={resultsRef}>
-          <FilterBar
-            activePricing={filters.pricing}
-            onPricingChange={(v) => setFilter("pricing", v)}
-            activeFilterCount={activeFilterCount}
-            onClearAll={clearFilters}
-          />
+        <div className="flex flex-col gap-4" ref={resultsRef}>
+          <div className="order-1">
+            <FilterBar
+              activePricing={filters.pricing}
+              onPricingChange={(v) => setFilter("pricing", v)}
+              activeFilterCount={activeFilterCount}
+              onClearAll={clearFilters}
+            />
+          </div>
 
           {!hasActiveFilters && (
-            <section className="space-y-3" aria-labelledby="best-by-cat-heading">
+            <section className="order-3 md:order-2 space-y-3" aria-labelledby="best-by-cat-heading">
               <h2 id="best-by-cat-heading" className="font-mono text-xs text-text-muted tracking-widest">
                 // BEST AI TOOLS BY CATEGORY
               </h2>
-              <p className="font-mono text-sm text-text-secondary leading-relaxed max-w-3xl">
+              <p className="hidden md:block font-mono text-sm text-text-secondary leading-relaxed max-w-3xl">
                 AIFOXX curates the best AI tools across every major category — from AI coding assistants
                 to image generators, marketing platforms, and writing tools. Browse our hand-picked guides
                 below, or search 1000+ tools above.
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex gap-2 overflow-x-auto flex-nowrap md:flex-wrap pb-1 -mx-1 px-1 scrollbar-thin">
                 {bestCategories.map((c) => (
                   <Link
                     key={c.slug}
                     to={`/best/${c.slug}`}
-                    className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-accent-green hover:border-accent-green/60 transition-colors"
+                    className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-accent-green hover:border-accent-green/60 transition-colors shrink-0 whitespace-nowrap"
                   >
                     {c.headline}
                   </Link>
@@ -287,7 +282,7 @@ export default function HomePage() {
           )}
 
           {!hasActiveFilters && featuredTools.length > 0 && (
-            <section className="space-y-3" aria-labelledby="featured-heading">
+            <section className="order-4 md:order-3 space-y-3" aria-labelledby="featured-heading">
               <h2 id="featured-heading" className="font-mono text-xs text-text-muted tracking-widest">// FEATURED AI TOOLS</h2>
               <div className="flex gap-4 overflow-x-auto pb-2 -mx-1 px-1">
                 {featuredTools.map((tool) => (
@@ -299,98 +294,94 @@ export default function HomePage() {
             </section>
           )}
 
-          <h2 className="font-mono text-xs text-text-muted tracking-wider">
-            // SHOWING {visibleStart}-{visibleEnd} OF {total} RESULTS
-          </h2>
+          <div className="order-2 md:order-4 flex flex-col gap-4">
+            <h2 className="font-mono text-xs text-text-muted tracking-wider">
+              // SHOWING {visibleStart}-{visibleEnd} OF {total} RESULTS
+            </h2>
 
-          {loading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {Array.from({ length: 6 }).map((_, i) => (
-                <ToolCardSkeleton key={i} />
-              ))}
-            </div>
-          ) : isEmpty ? (
-            <div className="bg-bg-elevated border-2 border-dashed border-border-dim rounded-[8px] py-20 text-center relative overflow-hidden group">
-              {/* Retro background decoration */}
-              <div className="absolute inset-0 opacity-5 pointer-events-none font-mono text-[80px] font-black leading-none break-all select-none">
-                00 11 00 11 00 11 00 11 00 11 00 11 00 11 00 11
-              </div>
-              
-              <div className="relative z-10">
-                <p className="font-display text-accent-red text-4xl md:text-5xl font-black tracking-tighter">
-                  [! ERROR: NO_TOOLS_FOUND]
-                </p>
-                <div className="w-16 h-1 bg-accent-red mx-auto my-6 animate-pulse" />
-                <p className="font-mono text-text-secondary text-sm max-w-md mx-auto px-4">
-                  No tools match your current search and filters. Try another keyword or reset filters to view all tools.
-                </p>
-                <p className="font-mono text-accent-red text-xs mt-4 uppercase animate-pulse">
-                  No matching tools found.
-                </p>
-                <button
-                  type="button"
-                  onClick={clearFilters}
-                  className="mt-8 font-mono text-xs text-accent-green hover:bg-accent-green hover:text-bg-base border border-accent-green px-4 py-2 rounded-sm transition-all duration-150"
-                >
-                  &gt; RESET_FILTERS (SHOW ALL TOOLS)
-                </button>
-              </div>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {paginatedTools.map((tool) => (
-                <ToolCard key={tool.id} tool={tool} />
-              ))}
-            </div>
-          )}
+            {isEmpty ? (
+              <div className="bg-bg-elevated border-2 border-dashed border-border-dim rounded-[8px] py-20 text-center relative overflow-hidden group">
+                {/* Retro background decoration */}
+                <div className="absolute inset-0 opacity-5 pointer-events-none font-mono text-[80px] font-black leading-none break-all select-none">
+                  00 11 00 11 00 11 00 11 00 11 00 11 00 11 00 11
+                </div>
 
-          {!loading && !isEmpty && totalPages > 1 && (
-            <div className="pt-2 flex items-center justify-center gap-1.5 flex-wrap">
-              <button
-                type="button"
-                onClick={() => goToPage(currentPageSafe - 1)}
-                disabled={currentPageSafe <= 1}
-                className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                PREV
-              </button>
-
-              {pageItems.map((item, index) =>
-                item === "ellipsis" ? (
-                  <span key={`ellipsis-${index}`} className="font-mono text-xs text-text-muted px-1">
-                    ...
-                  </span>
-                ) : (
+                <div className="relative z-10">
+                  <p className="font-display text-accent-red text-4xl md:text-5xl font-black tracking-tighter">
+                    [! ERROR: NO_TOOLS_FOUND]
+                  </p>
+                  <div className="w-16 h-1 bg-accent-red mx-auto my-6 animate-pulse" />
+                  <p className="font-mono text-text-secondary text-sm max-w-md mx-auto px-4">
+                    No tools match your current search and filters. Try another keyword or reset filters to view all tools.
+                  </p>
+                  <p className="font-mono text-accent-red text-xs mt-4 uppercase animate-pulse">
+                    No matching tools found.
+                  </p>
                   <button
                     type="button"
-                    key={item}
-                    onClick={() => goToPage(item)}
-                    className={`font-mono text-xs min-w-8 px-2 py-1.5 rounded-[4px] border transition-all ${
-                      item === currentPageSafe
-                        ? "bg-accent-green text-primary-foreground border-accent-green"
-                        : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
-                    }`}
-                    aria-current={item === currentPageSafe ? "page" : undefined}
+                    onClick={clearFilters}
+                    className="mt-8 font-mono text-xs text-accent-green hover:bg-accent-green hover:text-bg-base border border-accent-green px-4 py-2 rounded-sm transition-all duration-150"
                   >
-                    {item}
+                    &gt; RESET_FILTERS (SHOW ALL TOOLS)
                   </button>
-                )
-              )}
+                </div>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {paginatedTools.map((tool) => (
+                  <ToolCard key={tool.id} tool={tool} />
+                ))}
+              </div>
+            )}
 
-              <button
-                type="button"
-                onClick={() => goToPage(currentPageSafe + 1)}
-                disabled={currentPageSafe >= totalPages}
-                className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                NEXT
-              </button>
-            </div>
-          )}
+            {!isEmpty && totalPages > 1 && (
+              <div className="pt-2 flex items-center justify-center gap-1.5 flex-wrap">
+                <button
+                  type="button"
+                  onClick={() => goToPage(currentPageSafe - 1)}
+                  disabled={currentPageSafe <= 1}
+                  className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  PREV
+                </button>
+
+                {pageItems.map((item, index) =>
+                  item === "ellipsis" ? (
+                    <span key={`ellipsis-${index}`} className="font-mono text-xs text-text-muted px-1">
+                      ...
+                    </span>
+                  ) : (
+                    <button
+                      type="button"
+                      key={item}
+                      onClick={() => goToPage(item)}
+                      className={`font-mono text-xs min-w-8 px-2 py-1.5 rounded-[4px] border transition-all ${
+                        item === currentPageSafe
+                          ? "bg-accent-green text-primary-foreground border-accent-green"
+                          : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
+                      }`}
+                      aria-current={item === currentPageSafe ? "page" : undefined}
+                    >
+                      {item}
+                    </button>
+                  )
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => goToPage(currentPageSafe + 1)}
+                  disabled={currentPageSafe >= totalPages}
+                  className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  NEXT
+                </button>
+              </div>
+            )}
+          </div>
 
           {/* FAQ — visible content backing the FAQPage structured data */}
           {!hasActiveFilters && (
-            <section className="mt-12 space-y-4" aria-labelledby="home-faq-heading">
+            <section className="order-5 space-y-4" aria-labelledby="home-faq-heading">
               <div className="h-px w-full bg-gradient-to-r from-accent-green to-transparent" />
               <h2 id="home-faq-heading" className="font-mono text-xs text-text-muted tracking-widest">// FAQ</h2>
               <div className="space-y-4">
