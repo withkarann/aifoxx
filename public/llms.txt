@@ -15,9 +15,15 @@ AIFOXX helps developers, buyers, and researchers find the right AI tool by provi
 ## Key Pages
 
 - [All Tools](https://aifoxx.com/): Browse and search 1000+ AI tools
+- [Best AI Tools by Category](https://aifoxx.com/best): Curated best-in-class tools per category
+- [AI News](https://aifoxx.com/news): Today in AI — daily roundup of AI tool launches and updates
+- [Compare Tools](https://aifoxx.com/compare): Side-by-side comparison of AI tools
 - [Claude Code Skills](https://aifoxx.com/skills): Browse Claude Code skills directory
 - [MCP Servers](https://aifoxx.com/mcp): Browse MCP servers directory
 - [Submit a Tool](https://aifoxx.com/submit): Submit a new AI tool for inclusion
+
+Every tool has a detail page at https://aifoxx.com/ai/{slug} and every category
+has a hub at https://aifoxx.com/category/{category-slug}.
 
 ## Categories
 
