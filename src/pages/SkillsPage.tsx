@@ -110,7 +110,7 @@ export default function SkillsPage() {
   return (
     <>
       <PageMeta
-        title={`Skills — Claude Code Integrations | ${Brand.product.name_styled}`}
+        title={`Skills: Claude Code Integrations | ${Brand.product.name_styled}`}
         description={`Browse ${SKILL_COUNTS.claudeCodeSkills} Claude Code skills: hooks, commands, and GitHub integrations ranked by stars.`}
         url={`https://${Brand.product.domain}/skills`}
         keywords={["Claude Code skills", "Claude integrations", "AI coding workflows", "GitHub AI tools"]}

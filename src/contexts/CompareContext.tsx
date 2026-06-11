@@ -17,7 +17,7 @@ interface CompareContextValue {
 const CompareContext = createContext<CompareContextValue | undefined>(undefined);
 
 /**
- * Holds the "compare tray" — the slugs the user has marked to compare while
+ * Holds the "compare tray": the slugs the user has marked to compare while
  * browsing. Deliberately in-memory only (no localStorage): the server and the
  * first client render both start empty, so there is no SSG hydration mismatch.
  * Durable sharing is handled by the /compare URL (?tools=…), not this tray.

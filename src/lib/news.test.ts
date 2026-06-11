@@ -77,7 +77,7 @@ describe("groupNewsByDate", () => {
   });
 
   it("output order is always Today → Yesterday → This Week → Earlier", () => {
-    // Only Yesterday and Earlier items — no Today or This Week
+    // Only Yesterday and Earlier items; no Today or This Week
     const yesterday = makeItem("y", "2026-06-02T06:00:00Z");
     const earlier = makeItem("e", "2026-01-01T06:00:00Z");
 
@@ -96,21 +96,21 @@ describe("groupNewsByDate", () => {
 
   it("This Week boundary: exactly 6 days before start of today is still This Week", () => {
     // startOfToday (UTC) = 2026-06-03T00:00:00Z
-    // 6 days before = 2026-05-28T00:00:00Z — should land in This Week
+    // 6 days before = 2026-05-28T00:00:00Z; should land in This Week
     const item = makeItem("boundary", "2026-05-28T00:00:00Z");
     const groups = groupNewsByDate([item], NOW);
     expect(groups[0].label).toBe("This Week");
   });
 
   it("Earlier boundary: 7 days before start of today falls into Earlier", () => {
-    // 7 days before startOfToday = 2026-05-27T00:00:00Z — should be Earlier (not in 6-day window)
+    // 7 days before startOfToday = 2026-05-27T00:00:00Z; should be Earlier (not in 6-day window)
     const item = makeItem("boundary2", "2026-05-27T00:00:00Z");
     const groups = groupNewsByDate([item], NOW);
     expect(groups[0].label).toBe("Earlier");
   });
 
   it("data-derived default: newest item lands in Today, item 10 days older lands in Earlier", () => {
-    // No referenceMs passed — function must self-derive from the data
+    // No referenceMs passed; function must self-derive from the data
     const newest = makeItem("newest", "2026-06-03T09:00:00Z");
     const older = makeItem("older", "2026-05-24T09:00:00Z"); // 10 days before newest
     const groups = groupNewsByDate([newest, older]);

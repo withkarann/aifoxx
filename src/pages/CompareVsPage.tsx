@@ -28,7 +28,7 @@ export default function CompareVsPage() {
   const tools = [a, b];
   const pageUrl = `${DOMAIN}/compare/${a.slug}/vs/${b.slug}`;
   const heading = `${a.name} vs ${b.name}`;
-  const intro = `Compare ${a.name} and ${b.name} side by side — pricing, compliance (SOC 2, ISO 27001, GDPR, HIPAA), access methods, and how each one handles your data.`;
+  const intro = `Compare ${a.name} and ${b.name} side by side: pricing, compliance (SOC 2, ISO 27001, GDPR, HIPAA), access methods, and how each one handles your data.`;
 
   const freeAnswer =
     hasFreeTier(a.pricing) && hasFreeTier(b.pricing)
@@ -37,7 +37,7 @@ export default function CompareVsPage() {
         ? `${a.name} offers a free or freemium tier, while ${b.name} is ${b.pricing.toLowerCase()}.`
         : hasFreeTier(b.pricing)
           ? `${b.name} offers a free or freemium tier, while ${a.name} is ${a.pricing.toLowerCase()}.`
-          : `Neither lists a free tier — ${a.name} is ${a.pricing.toLowerCase()} and ${b.name} is ${b.pricing.toLowerCase()}.`;
+          : `Neither lists a free tier. ${a.name} is ${a.pricing.toLowerCase()} and ${b.name} is ${b.pricing.toLowerCase()}.`;
 
   const faqs = [
     {
@@ -50,7 +50,7 @@ export default function CompareVsPage() {
   return (
     <>
       <PageMeta
-        title={`${heading} — Pricing, Compliance & Features Compared | ${Brand.product.name_styled}`}
+        title={`${heading}: Pricing, Compliance & Features Compared | ${Brand.product.name_styled}`}
         description={`${a.name} vs ${b.name}: compare pricing, compliance, access methods, and data handling side by side.`}
         url={pageUrl}
         keywords={[
@@ -116,7 +116,7 @@ export default function CompareVsPage() {
           &gt; Add another tool to this comparison →
         </Link>
 
-        {/* FAQ — visible content backing the FAQPage structured data */}
+        {/* FAQ: visible content backing the FAQPage structured data */}
         <section className="mt-6 space-y-4 border-t border-border-dim pt-6">
           <p className="font-mono text-xs text-text-muted tracking-widest">// FAQ</p>
           <div className="space-y-4">

@@ -131,7 +131,7 @@ export default function SubmitPage() {
         <ul className="space-y-1.5">
           {RULES.map((rule) => (
             <li key={rule} className="font-mono text-sm text-text-secondary">
-              — {rule}
+              - {rule}
             </li>
           ))}
         </ul>

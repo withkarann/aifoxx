@@ -7,6 +7,7 @@ import { getSkillsByToolSlug } from "@/lib/skills";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PricingBadge } from "@/components/tools/PricingBadge";
 import { ToolCard } from "@/components/tools/ToolCard";
+import { ToolIcon } from "@/components/tools/ToolIcon";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { normalizeTaxonomyValue } from "@/lib/tools";
@@ -76,20 +77,34 @@ export default function ToolDetailPage() {
   const tool = slug ? getToolBySlug(slug) : undefined;
 
   // Sticky CTA: show the bottom "Open" bar once the in-page CTA scrolls out of
-  // view. Hooks must run before any early return (rules-of-hooks); the ref is
-  // only attached when a tool renders, so the observer no-ops on the 404 branch.
+  // view, but hide it again once the footer comes into view so it never stacks
+  // on top of the page's closing content. Hooks must run before any early return
+  // (rules-of-hooks); the ref is only attached when a tool renders, so the
+  // observer no-ops on the 404 branch.
   const navigate = useNavigate();
   const { add: addCompare } = useCompare();
   const ctaRef = useRef<HTMLAnchorElement>(null);
-  const [showStickyCta, setShowStickyCta] = useState(false);
+  const [ctaScrolledOut, setCtaScrolledOut] = useState(false);
+  const [footerVisible, setFooterVisible] = useState(false);
+  const showStickyCta = ctaScrolledOut && !footerVisible;
   useEffect(() => {
     const el = ctaRef.current;
     if (!el) return;
     const observer = new IntersectionObserver(
-      ([entry]) => setShowStickyCta(!entry.isIntersecting),
+      ([entry]) => setCtaScrolledOut(!entry.isIntersecting),
       { threshold: 0 }
     );
     observer.observe(el);
+    return () => observer.disconnect();
+  }, [slug]);
+  useEffect(() => {
+    const footer = document.querySelector("footer");
+    if (!footer) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setFooterVisible(entry.isIntersecting),
+      { threshold: 0 }
+    );
+    observer.observe(footer);
     return () => observer.disconnect();
   }, [slug]);
 
@@ -120,6 +135,16 @@ export default function ToolDetailPage() {
   const dataStorage = tool.data_storage;
   const pricingDetail = tool.pricing_detail;
   const pageUrl = `https://${Brand.product.domain}/ai/${tool.slug}`;
+
+  // Data-storage facts are often unverified (null). Only render a card when its
+  // value is known; otherwise point contributors at a prefilled GitHub issue so
+  // the gap is filled rather than shown as a wall of dashes.
+  const hasRegion = dataStorage?.region != null && dataStorage.region !== "";
+  const hasTrainsOnData = dataStorage?.trains_on_data != null;
+  const hasSelfHostable = dataStorage?.self_hostable != null;
+  const hasAnyDataStorage = hasRegion || hasTrainsOnData || hasSelfHostable;
+  const allDataStorageKnown = hasRegion && hasTrainsOnData && hasSelfHostable;
+  const dataFixIssueUrl = `${Brand.product.repo}/issues/new?title=${encodeURIComponent(`[Data Fix] ${tool.name}`)}`;
 
   const verifiedCompliance = (["soc2", "iso27001", "gdpr", "hipaa"] as const)
     .filter((key) => compliance?.[key])
@@ -235,22 +260,16 @@ export default function ToolDetailPage() {
             <span className="text-text-primary">{tool.name}</span>
           </nav>
 
-          {/* Header — logo + name stack and wrap; CTA lives below so long names never collide with it */}
+          {/* Header: logo + name stack and wrap; CTA lives below so long names never collide with it */}
           <div className="flex gap-3 sm:gap-4 items-start">
-            {tool.logo_url ? (
-              <img
-                src={tool.logo_url}
-                alt={`${tool.name} - ${tool.category} AI tool logo`}
-                loading="lazy"
-                decoding="async"
-                referrerPolicy="no-referrer"
-                className="w-14 h-14 sm:w-16 sm:h-16 rounded-[4px] object-cover shrink-0"
-              />
-            ) : (
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-bg-elevated border border-border-default rounded-[4px] flex items-center justify-center shrink-0">
-                <span className="font-display font-black text-xl sm:text-2xl" style={{ color: color.accent }}>{tool.name.charAt(0)}</span>
-              </div>
-            )}
+            <ToolIcon
+              name={tool.name}
+              logoUrl={tool.logo_url}
+              websiteUrl={tool.url}
+              accent={color.accent}
+              className="w-14 h-14 sm:w-16 sm:h-16"
+              letterClassName="text-xl sm:text-2xl"
+            />
             <div className="min-w-0 flex-1">
               <h1 className="font-display font-black text-2xl sm:text-4xl text-text-primary break-words">{tool.name}</h1>
               <div className="flex items-center gap-2 mt-2 flex-wrap">
@@ -266,7 +285,7 @@ export default function ToolDetailPage() {
             </div>
           </div>
 
-          {/* Primary actions — full-width stack on mobile, inline on desktop */}
+          {/* Primary actions: full-width stack on mobile, inline on desktop */}
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
             <a
               ref={ctaRef}
@@ -295,7 +314,7 @@ export default function ToolDetailPage() {
             className="bg-bg-elevated border-l-4 pl-4 py-3 rounded-r-[6px]"
             style={{ borderLeftColor: color.accent }}
           >
-            <p className="font-mono text-sm text-text-secondary leading-relaxed">{tool.description}</p>
+            <p className="font-sans text-sm text-text-secondary leading-relaxed">{tool.description}</p>
           </div>
 
           {/* Info Grid */}
@@ -316,7 +335,7 @@ export default function ToolDetailPage() {
             ))}
           </div>
 
-          {/* Pricing — open by default; the number the user actually came for */}
+          {/* Pricing: open by default; the number the user actually came for */}
           <CollapsibleSection title="PRICING DETAIL" defaultOpen>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {([
@@ -337,8 +356,8 @@ export default function ToolDetailPage() {
             </div>
           </CollapsibleSection>
 
-          {/* Access methods — tap to expand on mobile */}
-          <CollapsibleSection title="ACCESS METHODS">
+          {/* Access methods: open by default; tap to collapse on mobile */}
+          <CollapsibleSection title="ACCESS METHODS" defaultOpen>
             {!tool.access_methods || tool.access_methods.length === 0 ? (
               <DataStatus value={tool.access_methods} type="block" />
             ) : (
@@ -352,8 +371,8 @@ export default function ToolDetailPage() {
             )}
           </CollapsibleSection>
 
-          {/* Trust & data — compliance signals + data-storage, merged into one section */}
-          <CollapsibleSection title="TRUST & DATA">
+          {/* Trust & data: open by default; the site's core differentiator */}
+          <CollapsibleSection title="TRUST & DATA" defaultOpen>
             <div className="flex flex-wrap gap-2">
               {(["soc2", "iso27001", "gdpr", "hipaa"] as const).map((key) => {
                 const val = compliance?.[key] ?? null;
@@ -388,48 +407,59 @@ export default function ToolDetailPage() {
                 );
               })}
             </div>
-            <p className="font-mono text-[10px] text-text-muted">● certified · ○ not verified</p>
-            <p className="font-mono text-[10px] text-text-muted">
+            <p className="font-mono text-xs text-text-muted">● certified · ○ not verified</p>
+            <p className="font-mono text-xs text-text-muted">
               Compliance data is community-sourced and may be incomplete or out of date. Always verify
               certifications directly with the vendor's official trust or security page before relying on them.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-              <div className="bg-bg-surface border border-border-default rounded-[6px] p-3">
-                <p className="font-mono text-xs text-text-muted">Region</p>
-                <p className="font-mono text-sm text-text-primary mt-1">{dataStorage?.region ?? <DataStatus value={null} />}</p>
-              </div>
-              <div className={`border rounded-[6px] p-3 ${dataStorage?.trains_on_data === true ? "bg-accent-red/5 border-accent-red/30" : dataStorage?.trains_on_data === false ? "bg-accent-green/5 border-accent-green/30" : "bg-bg-surface border-border-default"}`}>
-                <p className="font-mono text-xs text-text-muted">Trains on Data</p>
-                <p className={`font-mono text-sm mt-1 ${dataStorage?.trains_on_data === true ? "text-accent-red" : dataStorage?.trains_on_data === false ? "text-accent-green" : "text-text-primary"}`}>
-                  {dataStorage?.trains_on_data === null || dataStorage?.trains_on_data === undefined ? <DataStatus value={null} /> : dataStorage.trains_on_data ? "Yes" : "No"}
-                </p>
-              </div>
-              <div className={`border rounded-[6px] p-3 ${dataStorage?.self_hostable === true ? "bg-accent-green/5 border-accent-green/30" : "bg-bg-surface border-border-default"}`}>
-                <p className="font-mono text-xs text-text-muted">Self-hostable</p>
-                <p className={`font-mono text-sm mt-1 ${dataStorage?.self_hostable === true ? "text-accent-green" : "text-text-primary"}`}>
-                  {dataStorage?.self_hostable === null || dataStorage?.self_hostable === undefined ? <DataStatus value={null} /> : dataStorage.self_hostable ? "Yes" : "No"}
-                </p>
-              </div>
-            </div>
+            {hasAnyDataStorage ? (
+              <>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                  {hasRegion && (
+                    <div className="bg-bg-surface border border-border-default rounded-[6px] p-3">
+                      <p className="font-mono text-xs text-text-muted">Region</p>
+                      <p className="font-mono text-sm text-text-primary mt-1">{dataStorage?.region}</p>
+                    </div>
+                  )}
+                  {hasTrainsOnData && (
+                    <div className={`border rounded-[6px] p-3 ${dataStorage?.trains_on_data === true ? "bg-accent-red/5 border-accent-red/30" : "bg-accent-green/5 border-accent-green/30"}`}>
+                      <p className="font-mono text-xs text-text-muted">Trains on Data</p>
+                      <p className={`font-mono text-sm mt-1 ${dataStorage?.trains_on_data === true ? "text-accent-red" : "text-accent-green"}`}>
+                        {dataStorage?.trains_on_data ? "Yes" : "No"}
+                      </p>
+                    </div>
+                  )}
+                  {hasSelfHostable && (
+                    <div className={`border rounded-[6px] p-3 ${dataStorage?.self_hostable === true ? "bg-accent-green/5 border-accent-green/30" : "bg-bg-surface border-border-default"}`}>
+                      <p className="font-mono text-xs text-text-muted">Self-hostable</p>
+                      <p className={`font-mono text-sm mt-1 ${dataStorage?.self_hostable === true ? "text-accent-green" : "text-text-primary"}`}>
+                        {dataStorage?.self_hostable ? "Yes" : "No"}
+                      </p>
+                    </div>
+                  )}
+                </div>
+                {!allDataStorageKnown && (
+                  <p className="font-mono text-[11px] text-text-muted pt-1">
+                    Some data-handling details aren't verified yet.{" "}
+                    <a href={dataFixIssueUrl} target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                      Help verify this data ↗
+                    </a>
+                  </p>
+                )}
+              </>
+            ) : (
+              <p className="font-mono text-[11px] text-text-muted pt-1">
+                Data-handling details (storage region, model training, self-hosting) aren't verified yet for {tool.name}.{" "}
+                <a href={dataFixIssueUrl} target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                  Help verify this data ↗
+                </a>
+              </p>
+            )}
           </CollapsibleSection>
 
-          {/* Claude Skills */}
-          {skills.length > 0 && <SkillsSection skills={skills} />}
-
-          {/* Related */}
-          {related.length > 0 && (
-            <section className="mt-12 space-y-4">
-              <div className="h-px w-full" style={{ background: `linear-gradient(to right, ${color.accent}, transparent)` }} />
-              <h2 className="font-mono text-xs text-text-muted tracking-widest">// MORE IN {tool.subcategory.toUpperCase()}</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {related.map((r) => (<ToolCard key={r.id} tool={r} variant="compact" />))}
-              </div>
-            </section>
-          )}
-
-          {/* Use cases — tap to expand on mobile */}
+          {/* Use cases: open by default; tap to collapse on mobile */}
           {tool.use_cases && tool.use_cases.length > 0 && (
-            <CollapsibleSection title="USE CASES">
+            <CollapsibleSection title="USE CASES" defaultOpen>
               <div className="flex flex-wrap gap-2">
                 {tool.use_cases.map((uc) => (
                   <span key={uc} className="font-mono text-xs px-2.5 py-1 rounded-[3px] border border-[var(--border-default)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">
@@ -439,6 +469,32 @@ export default function ToolDetailPage() {
               </div>
             </CollapsibleSection>
           )}
+
+          {/* Related: sits right after the tool's own details so the
+              browse-and-compare loop is reachable before the skills section */}
+          {related.length > 0 && (
+            <section className="mt-8 space-y-4">
+              <div className="h-px w-full" style={{ background: `linear-gradient(to right, ${color.accent}, transparent)` }} />
+              <h2 className="font-mono text-xs text-text-muted tracking-widest">// MORE IN {tool.subcategory.toUpperCase()}</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {related.map((r) => (
+                  <div key={r.id} className="flex flex-col gap-2">
+                    <ToolCard tool={r} variant="compact" />
+                    <button
+                      type="button"
+                      onClick={() => { addCompare(tool.slug); addCompare(r.slug); navigate("/compare"); }}
+                      className="inline-flex items-center justify-center gap-1.5 font-mono text-[11px] text-text-muted hover:text-accent-green border border-border-dim hover:border-accent-green/60 rounded-[4px] px-2 min-h-11 transition-colors duration-150"
+                    >
+                      <Scale size={12} /> Compare with {r.name}
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Claude Skills */}
+          {skills.length > 0 && <SkillsSection skills={skills} />}
 
           {/* Tags */}
           {tool.tags.length > 0 && (

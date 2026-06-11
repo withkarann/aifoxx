@@ -12,8 +12,8 @@ interface CollapsibleSectionProps {
 
 /**
  * A section that collapses on mobile (tap the heading to expand/collapse) but is
- * ALWAYS expanded on desktop (md+). The content stays mounted in both states —
- * only its mobile visibility toggles via CSS — so the SSG'd HTML and crawlers
+ * ALWAYS expanded on desktop (md+). The content stays mounted in both states
+ * (only its mobile visibility toggles via CSS), so the SSG'd HTML and crawlers
  * (which render at desktop width) always see every section. Keeps a real <h2> so
  * the page's heading outline and SEO are preserved.
  */

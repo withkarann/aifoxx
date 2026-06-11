@@ -34,7 +34,7 @@ export function useFilteredTools(filters: ToolFilters) {
 
           if (!inherentlyFree && !hasFreeTier) return false;
         } else if (filters.pricing === "Paid") {
-          // "Paid" matches any tool that costs money somewhere — Paid, Freemium
+          // "Paid" matches any tool that costs money somewhere: Paid, Freemium
           // (has paid tiers), Usage Based, Pay-as-you-go, Contact Sales.
           // Exclude only purely-free options.
           if (tool.pricing === "Free" || tool.pricing === "Open Source") return false;

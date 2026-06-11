@@ -28,7 +28,7 @@ export function DataStatus({ value, type = "badge" }: DataStatusProps) {
       <div className="border border-dashed border-[var(--border-dim)] rounded-[6px] p-4 text-center font-mono">
         <p className="text-xs text-[var(--text-muted)]">// DATA NOT AVAILABLE YET</p>
         <p className="text-[10px] text-[var(--text-muted)] mt-1 opacity-60">
-          Help us —{" "}
+          Help us:{" "}
           <a href={Brand.product.repo} target="_blank" rel="noopener noreferrer" className="text-[var(--accent-blue)]">
             contribute via GitHub ↗
           </a>
@@ -38,6 +38,6 @@ export function DataStatus({ value, type = "badge" }: DataStatusProps) {
   }
 
   return (
-    <span className="font-mono text-sm text-[var(--text-muted)]">—</span>
+    <span className="font-mono text-sm text-[var(--text-muted)]">n/a</span>
   );
 }

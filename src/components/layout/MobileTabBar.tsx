@@ -31,7 +31,7 @@ export function MobileTabBar() {
                 <span className="absolute top-0 left-2 right-2 h-[2px] bg-accent-green rounded-full" />
               )}
               <Icon size={16} strokeWidth={active ? 2.5 : 1.75} />
-              <span className="font-mono text-[9px] tracking-widest">{label}</span>
+              <span className="font-mono text-[10px] tracking-wide">{label}</span>
             </Link>
           );
         })}

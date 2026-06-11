@@ -78,8 +78,8 @@ export default function ComparePage() {
         title={`Compare ${titleNames} | ${Brand.product.name_styled}`}
         description={
           tools.length
-            ? `Compare ${tools.map((t) => t.name).join(", ")} side by side — pricing, compliance, access methods, and data handling.`
-            : "Compare AI tools side by side — pricing, compliance (SOC 2, ISO 27001, GDPR, HIPAA), access methods, and data storage. Pick any tools to see the differences."
+            ? `Compare ${tools.map((t) => t.name).join(", ")} side by side: pricing, compliance, access methods, and data handling.`
+            : "Compare AI tools side by side: pricing, compliance (SOC 2, ISO 27001, GDPR, HIPAA), access methods, and data storage. Pick any tools to see the differences."
         }
         url={`https://${Brand.product.domain}/compare`}
         robots={tools.length ? "noindex, follow" : undefined}
@@ -96,7 +96,7 @@ export default function ComparePage() {
             Compare AI Tools
           </h1>
           <p className="font-mono text-sm text-text-secondary max-w-2xl">
-            Put up to {max} tools head to head — pricing, compliance, access methods, and how they handle your data.
+            Put up to {max} tools head to head: pricing, compliance, access methods, and how they handle your data.
             Rows that differ are highlighted.
           </p>
         </header>
@@ -130,7 +130,7 @@ export default function ComparePage() {
             )}
           </div>
         ) : (
-          <p className="font-mono text-xs text-text-muted">Max {max} tools — remove one to add another.</p>
+          <p className="font-mono text-xs text-text-muted">Max {max} tools. Remove one to add another.</p>
         )}
 
         {/* Empty state */}
