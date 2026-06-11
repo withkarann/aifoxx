@@ -5,33 +5,35 @@ const STORAGE_KEY = "aifoxx-crt";
 
 export function CRTOverlay() {
   const { theme } = useTheme();
-  const [enabled, setEnabled] = useState(() => {
-    if (typeof window === "undefined") {
-      return true;
-    }
-
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored !== null) {
-      return stored !== "false";
-    }
-
-    return document.documentElement.getAttribute("data-theme") === "dark";
-  });
+  // The first client render must match the prerendered HTML exactly, so the
+  // stored preference and live theme are applied after mount, never during
+  // the initial render.
+  const [mounted, setMounted] = useState(false);
+  const [enabled, setEnabled] = useState(true);
 
   useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-
     const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored === null) {
+    if (stored !== null) {
+      setEnabled(stored !== "false");
+    }
+    setMounted(true);
+  }, []);
+
+  // Visitors who never used the toggle follow the theme: scanlines on for the
+  // dark theme, off otherwise.
+  useEffect(() => {
+    if (localStorage.getItem(STORAGE_KEY) === null) {
       setEnabled(theme === "dark");
     }
   }, [theme]);
 
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, String(enabled));
-  }, [enabled]);
+  const toggle = () => {
+    setEnabled((value) => {
+      const next = !value;
+      localStorage.setItem(STORAGE_KEY, String(next));
+      return next;
+    });
+  };
 
   const showMovingScanline = enabled && theme === "dark";
   const overlayStyle = theme === "light"
@@ -53,7 +55,7 @@ export function CRTOverlay() {
 
   return (
     <>
-      {enabled && (
+      {mounted && enabled && (
         <div className="fixed inset-0 pointer-events-none z-[9999] overflow-hidden">
           <div className="absolute inset-0 animate-flicker" style={overlayStyle} />
           {showMovingScanline && (
@@ -66,7 +68,7 @@ export function CRTOverlay() {
       )}
       <button
         id="crt-toggle"
-        onClick={() => setEnabled((v) => !v)}
+        onClick={toggle}
         className="font-mono text-[10px] uppercase tracking-tighter text-text-muted hover:text-accent-green transition-colors duration-150"
       >
         CRT {enabled ? "ON" : "OFF"}
