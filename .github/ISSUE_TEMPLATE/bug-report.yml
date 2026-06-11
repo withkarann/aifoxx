@@ -1,0 +1,30 @@
+name: Bug report
+description: Report something on the site that is broken or behaving wrong.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: viewport
+    attributes:
+      label: Viewport / device
+      description: Browser, and whether you were on desktop or mobile.
+      placeholder: Chrome on iPhone 15, mobile
+    validations:
+      required: false

@@ -1,0 +1,40 @@
+name: Data correction
+description: Report a wrong or outdated fact about a tool.
+title: "[Data]: "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to correct an existing entry. A source URL on the vendor's own
+        domain is required: it is how the correction gets verified.
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name or slug
+      description: The tool the correction is about (name, or the slug from the URL).
+      placeholder: chatgpt
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Which field is wrong?
+      placeholder: pricing, compliance.hipaa, data_storage.region, ...
+    validations:
+      required: true
+  - type: textarea
+    id: correct-value
+    attributes:
+      label: Correct value
+      description: What the field should say.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL (vendor's own domain)
+      description: A page on the vendor's domain that backs the correct value.
+      placeholder: https://vendor.com/security
+    validations:
+      required: true
