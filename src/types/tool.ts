@@ -16,14 +16,20 @@ export const ComplianceSchema = z.object({
   hipaa: z.boolean().nullable(),
 });
 
-// Public, auditable source URL backing each compliance flag (vendor trust /
-// security / legal page). Present only for flags that have been independently
-// verified; absent means the flag is unsourced and must be treated as a guess.
+// Public, auditable source URL backing each verified fact (vendor trust /
+// security / legal page). Covers the four compliance flags plus the
+// data-handling facts (data residency region, whether the vendor trains on
+// user data, and whether the tool can be self-hosted). Present only for facts
+// that have been independently verified; absent means the value is unsourced
+// and must be treated as a guess.
 export const ComplianceSourcesSchema = z.object({
   soc2: HttpUrl.nullable().optional(),
   iso27001: HttpUrl.nullable().optional(),
   gdpr: HttpUrl.nullable().optional(),
   hipaa: HttpUrl.nullable().optional(),
+  trains_on_data: HttpUrl.nullable().optional(),
+  region: HttpUrl.nullable().optional(),
+  self_hostable: HttpUrl.nullable().optional(),
 });
 
 export const DataStorageSchema = z.object({

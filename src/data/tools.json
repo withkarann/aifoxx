@@ -17,7 +17,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -51,9 +51,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://openai.com/security-and-privacy/",
-      "iso27001": "https://openai.com/security-and-privacy/",
-      "gdpr": "https://openai.com/security-and-privacy/",
+      "soc2": "https://trust.openai.com",
+      "iso27001": "https://trust.openai.com",
+      "gdpr": "https://trust.openai.com",
       "hipaa": "https://openai.com/security-and-privacy/"
     }
   },
@@ -75,7 +75,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -90,7 +90,7 @@
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -111,7 +111,9 @@
       "soc2": "https://cloud.google.com/compliance",
       "iso27001": "https://cloud.google.com/compliance",
       "gdpr": "https://cloud.google.com/compliance",
-      "hipaa": "https://cloud.google.com/compliance"
+      "hipaa": "https://cloud.google.com/compliance",
+      "trains_on_data": "https://ai.google.dev/gemini-api/terms",
+      "self_hostable": "https://gemini.google.com"
     }
   },
   {
@@ -132,7 +134,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -146,8 +148,8 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -167,8 +169,10 @@
     "compliance_sources": {
       "soc2": "https://trust.anthropic.com/",
       "iso27001": "https://trust.anthropic.com/",
-      "gdpr": "https://trust.anthropic.com/",
-      "hipaa": "https://trust.anthropic.com/"
+      "gdpr": "https://www.anthropic.com/legal/data-processing-addendum",
+      "hipaa": "https://claude.com/pricing/enterprise",
+      "trains_on_data": "https://www.anthropic.com/privacy",
+      "region": "https://www.anthropic.com/privacy"
     }
   },
   {
@@ -246,7 +250,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -256,13 +260,13 @@
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "EU (for EU users); US / EU / other regions for non-EU users",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -279,7 +283,13 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
+      "gdpr": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
+      "hipaa": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-hipaa-hitech",
+      "trains_on_data": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
+      "region": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy"
+    }
   },
   {
     "id": "6",
@@ -609,7 +619,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -619,12 +629,12 @@
     "compliance": {
       "soc2": false,
       "iso27001": false,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "China (PRC)",
+      "trains_on_data": true,
       "self_hostable": true
     },
     "pricing_detail": {
@@ -641,7 +651,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
+      "trains_on_data": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
+      "region": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html"
+    }
   },
   {
     "id": "13",
@@ -1122,7 +1136,7 @@
     "pricing": "Free",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "iOS App",
       "Android App",
@@ -1136,7 +1150,7 @@
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -1153,7 +1167,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "trains_on_data": "https://policies.google.com/privacy",
+      "self_hostable": "https://assistant.google.com"
+    }
   },
   {
     "id": "23",
@@ -1173,7 +1190,7 @@
     "pricing": "Free",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "iOS App",
       "Desktop App"
@@ -1185,8 +1202,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (EEA/UK/CH data controlled by Apple Distribution International Ltd, Ireland)",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -1203,7 +1220,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "trains_on_data": "https://www.apple.com/legal/privacy/data/en/ask-siri-dictation/",
+      "region": "https://www.apple.com/legal/privacy/en-ww/"
+    }
   },
   {
     "id": "24",
@@ -1223,7 +1243,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -1236,8 +1256,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (and other countries)",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -1254,7 +1274,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://policies.character.ai/regional",
+      "trains_on_data": "https://policies.character.ai/privacy",
+      "region": "https://policies.character.ai/regional"
+    }
   },
   {
     "id": "25",
@@ -1327,7 +1351,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Browser Extension",
@@ -1340,8 +1364,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -1359,8 +1383,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.jasper.ai/trust",
-      "gdpr": "https://www.jasper.ai/trust"
+      "soc2": "https://www.jasper.ai/security",
+      "gdpr": "https://www.jasper.ai/security",
+      "trains_on_data": "https://www.jasper.ai/terms",
+      "region": "https://www.jasper.ai/security"
     }
   },
   {
@@ -1591,7 +1617,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Browser Extension",
@@ -1601,13 +1627,13 @@
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (AWS US East)",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -1625,7 +1651,12 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.grammarly.com/trust"
+      "soc2": "https://www.grammarly.com/security",
+      "iso27001": "https://www.grammarly.com/security",
+      "gdpr": "https://www.grammarly.com/compliance",
+      "hipaa": "https://www.grammarly.com/compliance",
+      "trains_on_data": "https://www.grammarly.com/trust",
+      "region": "https://www.grammarly.com/security"
     }
   },
   {
@@ -1697,7 +1728,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Browser Extension",
@@ -1710,8 +1741,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US / India",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -1729,7 +1760,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://quillbot.com/trust-center"
+      "gdpr": "https://quillbot.com/trust-center",
+      "trains_on_data": "https://quillbot.com/trust-center",
+      "region": "https://quillbot.com/trust-center"
     }
   },
   {
@@ -1902,7 +1935,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -1910,14 +1943,14 @@
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US / EU",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -1934,7 +1967,13 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.notion.com/security",
+      "iso27001": "https://www.notion.com/security",
+      "gdpr": "https://www.notion.com/security",
+      "trains_on_data": "https://www.notion.com/help/notion-ai-security-practices",
+      "region": "https://www.notion.com/enterprise"
+    }
   },
   {
     "id": "38",
@@ -3379,21 +3418,21 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "VS Code Extension",
       "Plugin",
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -3410,7 +3449,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://github.com/security",
+      "gdpr": "https://github.com/features/copilot",
+      "trains_on_data": "https://github.com/features/copilot"
+    }
   },
   {
     "id": "67",
@@ -3430,19 +3473,19 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Desktop App"
     ],
     "compliance": {
       "soc2": true,
       "iso27001": false,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -3460,7 +3503,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.cursor.com/"
+      "soc2": "https://cursor.com/security",
+      "gdpr": "https://cursor.com/enterprise",
+      "trains_on_data": "https://www.cursor.com/privacy",
+      "region": "https://www.cursor.com/privacy",
+      "self_hostable": "https://cursor.com/enterprise"
     }
   },
   {
@@ -3586,21 +3633,21 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": false,
       "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (primarily); India possible",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -3618,7 +3665,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://replit.com/certifications"
+      "gdpr": "https://repl.it/site/dpa",
+      "soc2": "https://repl.it/site/dpa",
+      "trains_on_data": "https://replit.com/site/terms",
+      "region": "https://replit.com/privacy",
+      "self_hostable": "https://replit.com/pricing"
     }
   },
   {
@@ -3897,7 +3948,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App"
     ],
@@ -3909,8 +3960,8 @@
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
-      "self_hostable": false
+      "trains_on_data": false,
+      "self_hostable": true
     },
     "pricing_detail": {
       "free_tier": null,
@@ -3927,7 +3978,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://cognition.ai/legal/privacy-policy"
+      "gdpr": "https://cognition.ai/legal/privacy-policy",
+      "soc2": "https://devin.ai/enterprise",
+      "trains_on_data": "https://www.cognition.ai/pages/terms-of-service",
+      "self_hostable": "https://devin.ai/enterprise"
     }
   },
   {
@@ -4306,7 +4360,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App"
     ],
@@ -4314,12 +4368,12 @@
       "soc2": true,
       "iso27001": false,
       "gdpr": true,
-      "hipaa": false
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
-      "self_hostable": false
+      "trains_on_data": true,
+      "self_hostable": true
     },
     "pricing_detail": {
       "free_tier": "Free with limited tokens",
@@ -4336,8 +4390,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.bolt.new/",
-      "gdpr": "https://trust.bolt.new/"
+      "soc2": "https://bolt.new/enterprise",
+      "gdpr": "https://trust.bolt.new/",
+      "hipaa": "https://bolt.new/enterprise",
+      "trains_on_data": "https://stackblitz.com/privacy-policy",
+      "self_hostable": "https://bolt.new/enterprise"
     }
   },
   {
@@ -5126,7 +5183,7 @@
     "pricing": "Open Source",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "API",
       "CLI"
@@ -5138,8 +5195,8 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (GCP us-central-1)",
+      "trains_on_data": false,
       "self_hostable": true
     },
     "pricing_detail": {
@@ -5158,8 +5215,11 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://trust.langchain.com/",
-      "gdpr": "https://trust.langchain.com/",
-      "hipaa": "https://trust.langchain.com/"
+      "gdpr": "https://langchain.com/DPA",
+      "hipaa": "https://trust.langchain.com/",
+      "trains_on_data": "https://www.langchain.com/langsmith",
+      "region": "https://www.langchain.com/langsmith",
+      "self_hostable": "https://www.langchain.com/pricing"
     }
   },
   {
@@ -5234,7 +5294,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API",
@@ -5247,7 +5307,7 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
+      "region": "US (default); EU available on Team/Enterprise plans",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -5265,7 +5325,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://huggingface.co/docs/hub/security",
+      "gdpr": "https://huggingface.co/docs/hub/security",
+      "region": "https://huggingface.co/docs/hub/storage-regions"
+    }
   },
   {
     "id": "103",
@@ -5707,16 +5771,16 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API",
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -5738,7 +5802,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.databricks.com/trust/compliance",
+      "gdpr": "https://www.databricks.com/legal/databricks-data-processing-addendum"
+    }
   },
   {
     "id": "112",
@@ -5972,7 +6039,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -5986,8 +6053,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US, Australia, Singapore, EU, UK, Philippines, New Zealand",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -6004,7 +6071,13 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.canva.com",
+      "iso27001": "https://trust.canva.com",
+      "gdpr": "https://trust.canva.com",
+      "trains_on_data": "https://www.canva.com/policies/privacy-policy/",
+      "region": "https://www.canva.com/policies/privacy-policy/"
+    }
   },
   {
     "id": "117",
@@ -6024,7 +6097,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -6058,7 +6131,8 @@
     "compliance_sources": {
       "soc2": "https://www.figma.com/security/",
       "iso27001": "https://www.figma.com/security/",
-      "gdpr": "https://www.figma.com/security/"
+      "gdpr": "https://www.figma.com/security/",
+      "hipaa": "https://www.figma.com/legal/dpa/"
     }
   },
   {
@@ -6981,7 +7055,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -6996,7 +7070,7 @@
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -7014,9 +7088,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.miro.com/?tab=overview",
-      "iso27001": "https://trust.miro.com/?tab=overview",
-      "gdpr": "https://trust.miro.com/?tab=overview"
+      "soc2": "https://miro.com/enterprise/",
+      "iso27001": "https://miro.com/enterprise/",
+      "gdpr": "https://miro.com/legal/privacy-policy/",
+      "hipaa": "https://miro.com/legal/master-cloud-agreement/",
+      "trains_on_data": "https://miro.com/legal/ai-features-addendum/"
     }
   },
   {
@@ -7142,7 +7218,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App"
     ],
@@ -7154,7 +7230,7 @@
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -7172,7 +7248,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.gamma.app/"
+      "soc2": "https://trust.gamma.app/",
+      "trains_on_data": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features"
     }
   },
   {
@@ -7598,7 +7675,7 @@
     "pricing": "Open Source",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API",
@@ -7631,7 +7708,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.stability.ai/"
+      "soc2": "https://trust.stability.ai/",
+      "self_hostable": "https://stability.ai/license"
     }
   },
   {
@@ -10275,7 +10353,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API"
@@ -10283,12 +10361,12 @@
     "compliance": {
       "soc2": true,
       "iso27001": false,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -10306,7 +10384,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.runwayml.com/"
+      "soc2": "https://runwayml.com/data-security",
+      "iso27001": "https://runwayml.com/data-security",
+      "gdpr": "https://runwayml.com/data-security",
+      "trains_on_data": "https://runwayml.com/terms-of-use",
+      "region": "https://runwayml.com/privacy-policy"
     }
   },
   {
@@ -10327,7 +10409,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API"
@@ -10340,7 +10422,7 @@
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -10358,9 +10440,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://security.synthesia.io/",
-      "iso27001": "https://security.synthesia.io/",
-      "gdpr": "https://security.synthesia.io/"
+      "soc2": "https://www.synthesia.io/legal/security-practices",
+      "iso27001": "https://www.synthesia.io/legal/security-practices",
+      "gdpr": "https://www.synthesia.io/legal",
+      "trains_on_data": "https://www.synthesia.io/legal/ai-governance-practices"
     }
   },
   {
@@ -10381,7 +10464,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API"
@@ -10393,8 +10476,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -10412,8 +10495,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.heygen.com/trust-and-safety",
-      "gdpr": "https://www.heygen.com/trust-and-safety"
+      "soc2": "https://www.heygen.com/security",
+      "gdpr": "https://www.heygen.com/security",
+      "trains_on_data": "https://www.heygen.com/privacy",
+      "region": "https://www.heygen.com/security"
     }
   },
   {
@@ -10633,7 +10718,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Desktop App",
       "Web App"
@@ -10641,12 +10726,12 @@
     "compliance": {
       "soc2": true,
       "iso27001": false,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -10664,7 +10749,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.descript.com/security"
+      "soc2": "https://www.descript.com/security",
+      "gdpr": "https://www.descript.com/security",
+      "trains_on_data": "https://www.descript.com/terms",
+      "region": "https://www.descript.com/privacy"
     }
   },
   {
@@ -11611,7 +11699,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -11621,12 +11709,12 @@
     "compliance": {
       "soc2": false,
       "iso27001": false,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US / Singapore / Malaysia",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -11643,7 +11731,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://www.capcut.com/clause/privacy-policy?store_region=&lang=en-US",
+      "trains_on_data": "https://www.capcut.com/clause/privacy-policy?store_region=&lang=en-US",
+      "region": "https://www.capcut.com/clause/privacy-policy?store_region=&lang=en-US"
+    }
   },
   {
     "id": "228",
@@ -13142,7 +13234,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API"
@@ -13172,7 +13264,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "hipaa": "https://cloud.google.com/security/compliance/hipaa"
+    }
   },
   {
     "id": "258",
@@ -13347,7 +13441,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API"
@@ -13359,8 +13453,8 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (primary); also Netherlands, Singapore; enterprise regional residency: US, EU, India",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -13380,8 +13474,10 @@
     "compliance_sources": {
       "soc2": "https://compliance.elevenlabs.io/",
       "iso27001": "https://compliance.elevenlabs.io/",
-      "gdpr": "https://compliance.elevenlabs.io/",
-      "hipaa": "https://compliance.elevenlabs.io/"
+      "gdpr": "https://elevenlabs.io/privacy-policy",
+      "hipaa": "https://elevenlabs.io/enterprise",
+      "trains_on_data": "https://elevenlabs.io/privacy-policy",
+      "region": "https://elevenlabs.io/privacy-policy"
     }
   },
   {
@@ -14132,19 +14228,19 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": false,
       "iso27001": false,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -14161,7 +14257,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://suno.com/privacy-policy",
+      "trains_on_data": "https://suno.com/privacy-policy",
+      "region": "https://suno.com/privacy-policy"
+    }
   },
   {
     "id": "277",
@@ -15931,7 +16031,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -15946,8 +16046,8 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (AWS US East) / EU (Frankfurt)",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -15966,8 +16066,10 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://trust.hubspot.com/",
-      "gdpr": "https://trust.hubspot.com/",
-      "hipaa": "https://trust.hubspot.com/"
+      "gdpr": "https://legal.hubspot.com/dpa",
+      "hipaa": "https://legal.hubspot.com/sensitive-data-terms",
+      "trains_on_data": "https://legal.hubspot.com/privacy-policy",
+      "region": "https://legal.hubspot.com/security"
     }
   },
   {
@@ -16037,7 +16139,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API",
@@ -16050,8 +16152,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -16068,7 +16170,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://www.semrush.com/company/security/",
+      "hipaa": "https://www.semrush.com/company/legal/dpa/",
+      "trains_on_data": "https://www.semrush.com/company/legal/semrush-artificial-intelligence-services-terms/",
+      "region": "https://www.semrush.com/company/security/"
+    }
   },
   {
     "id": "314",
@@ -16343,7 +16450,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -16353,11 +16460,11 @@
     "compliance": {
       "soc2": true,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
+      "region": "US",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -16376,8 +16483,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://mailchimp.com/de/about/security/",
-      "iso27001": "https://mailchimp.com/de/about/security/"
+      "soc2": "https://mailchimp.com/about/security/",
+      "iso27001": "https://mailchimp.com/about/security/",
+      "gdpr": "https://mailchimp.com/gdpr/",
+      "region": "https://mailchimp.com/about/security/"
     }
   },
   {
@@ -16505,7 +16614,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API"
@@ -16517,8 +16626,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (AWS us-east-1, Northern Virginia)",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -16536,9 +16645,13 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.klaviyo.com/trust",
-      "iso27001": "https://www.klaviyo.com/trust",
-      "gdpr": "https://www.klaviyo.com/trust"
+      "soc2": "https://www.klaviyo.com/legal/dpa",
+      "iso27001": "https://www.klaviyo.com/legal/dpa",
+      "gdpr": "https://www.klaviyo.com/legal/dpa",
+      "hipaa": "https://www.klaviyo.com/legal/dpa",
+      "trains_on_data": "https://www.klaviyo.com/legal/ai-faqs",
+      "region": "https://www.klaviyo.com/legal/privacy-faqs",
+      "self_hostable": "https://www.klaviyo.com/legal/dpa"
     }
   },
   {
@@ -17275,7 +17388,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -17289,7 +17402,7 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
+      "region": "US (default); EU and Australia available",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -17308,10 +17421,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.intercom.com/",
-      "iso27001": "https://trust.intercom.com/",
-      "gdpr": "https://trust.intercom.com/",
-      "hipaa": "https://trust.intercom.com/"
+      "soc2": "https://www.intercom.com/legal/data-processing-agreement",
+      "iso27001": "https://www.intercom.com/legal/data-processing-agreement",
+      "gdpr": "https://www.intercom.com/legal/data-processing-agreement",
+      "hipaa": "https://trust.intercom.com/",
+      "region": "https://www.intercom.com/legal/data-processing-agreement"
     }
   },
   {
@@ -19024,7 +19138,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -19032,8 +19146,8 @@
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -19056,7 +19170,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://compliance.salesforce.com/en/categories/soc-2",
+      "iso27001": "https://compliance.salesforce.com/en/categories/iso-27001"
+    }
   },
   {
     "id": "372",
@@ -19076,7 +19193,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -19090,8 +19207,8 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (AWS us-east) / EU (Frankfurt)",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -19109,9 +19226,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.hubspot.com/",
-      "gdpr": "https://trust.hubspot.com/",
-      "hipaa": "https://trust.hubspot.com/"
+      "soc2": "https://legal.hubspot.com/security",
+      "gdpr": "https://legal.hubspot.com/dpa",
+      "hipaa": "https://legal.hubspot.com/sensitive-data-terms",
+      "trains_on_data": "https://legal.hubspot.com/privacy-policy",
+      "region": "https://legal.hubspot.com/security"
     }
   },
   {
@@ -19132,7 +19251,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -19145,8 +19264,8 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US / EU / Israel",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -19164,10 +19283,12 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.gong.io/platform/trust",
-      "iso27001": "https://www.gong.io/platform/trust",
-      "gdpr": "https://www.gong.io/platform/trust",
-      "hipaa": "https://www.gong.io/platform/trust"
+      "soc2": "https://www.gong.io/security/",
+      "iso27001": "https://www.gong.io/security/",
+      "gdpr": "https://www.gong.io/legal/data-processing-addendum/",
+      "hipaa": "https://trust.gong.io/",
+      "trains_on_data": "https://www.gong.io/security/",
+      "region": "https://www.gong.io/legal/privacy-policy/"
     }
   },
   {
@@ -19235,7 +19356,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -19249,8 +19370,8 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (AWS); EU data center available for EU tenancy",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -19268,10 +19389,12 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.outreach.ai/platform/trust",
-      "iso27001": "https://www.outreach.ai/platform/trust",
-      "gdpr": "https://www.outreach.ai/platform/trust",
-      "hipaa": "https://www.outreach.ai/platform/trust"
+      "soc2": "https://www.outreach.ai/platform/security",
+      "iso27001": "https://www.outreach.ai/security",
+      "gdpr": "https://www.outreach.ai/gdpr",
+      "hipaa": "https://www.outreach.ai/trust",
+      "trains_on_data": "https://www.outreach.ai/platform/security",
+      "region": "https://www.outreach.ai/gdpr"
     }
   },
   {
@@ -19292,7 +19415,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -19305,8 +19428,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US / EU",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -19324,9 +19447,12 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.salesloft.com/",
-      "iso27001": "https://trust.salesloft.com/",
-      "gdpr": "https://trust.salesloft.com/"
+      "soc2": "https://www.salesloft.com/security-compliance",
+      "iso27001": "https://www.salesloft.com/security-compliance",
+      "gdpr": "https://salesloft.com/legal/data-processing-addendum/",
+      "trains_on_data": "https://salesloft.com/legal/data-processing-addendum/",
+      "region": "https://www.salesloft.com/security-compliance",
+      "self_hostable": "https://www.salesloft.com/security-compliance"
     }
   },
   {
@@ -19347,7 +19473,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Browser Extension",
@@ -19360,7 +19486,7 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
+      "region": "US",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -19379,9 +19505,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.apollo.io/product/security",
-      "iso27001": "https://www.apollo.io/product/security",
-      "gdpr": "https://www.apollo.io/product/security"
+      "soc2": "https://trust.apollo.io",
+      "iso27001": "https://trust.apollo.io",
+      "gdpr": "https://www.apollo.io/company/privacy-center",
+      "region": "https://www.apollo.io/privacy-policy"
     }
   },
   {
@@ -19402,7 +19529,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Browser Extension",
@@ -19415,8 +19542,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -19434,9 +19561,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.zoominfo.com/",
-      "iso27001": "https://trust.zoominfo.com/",
-      "gdpr": "https://trust.zoominfo.com/"
+      "soc2": "https://www.zoominfo.com/about/security",
+      "iso27001": "https://www.zoominfo.com/about/security",
+      "gdpr": "https://www.zoominfo.com/legal/privacy-policy",
+      "trains_on_data": "https://www.zoominfo.com/legal/privacy-policy",
+      "region": "https://www.zoominfo.com/about/security"
     }
   },
   {
@@ -19874,7 +20003,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App"
     ],
@@ -19904,8 +20033,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.clay.com/",
-      "iso27001": "https://trust.clay.com/",
+      "soc2": "https://clay.com/enterprise",
+      "iso27001": "https://clay.com/enterprise",
       "gdpr": "https://trust.clay.com/"
     }
   },
@@ -20082,7 +20211,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -20116,9 +20245,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.atlassian.com/legal/security-measures#intro",
+      "soc2": "https://www.loom.com/enterprise",
       "iso27001": "https://www.atlassian.com/legal/security-measures#intro",
-      "gdpr": "https://www.atlassian.com/legal/security-measures#intro"
+      "gdpr": "https://www.loom.com/enterprise"
     }
   },
   {
@@ -20139,7 +20268,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -20147,13 +20276,13 @@
       "Browser Extension"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
+      "region": "US",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -20171,7 +20300,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://calendly.com/security",
+      "iso27001": "https://calendly.com/security",
+      "gdpr": "https://calendly.com/legal/data-processing-addendum",
+      "region": "https://calendly.com/legal/data-processing-addendum"
+    }
   },
   {
     "id": "393",
@@ -20243,7 +20377,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -20253,7 +20387,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": true,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": true
     },
     "data_storage": {
@@ -20275,7 +20409,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.docusign.com/trust/compliance/certifications",
+      "iso27001": "https://www.docusign.com/trust/compliance/certifications",
+      "gdpr": "https://www.docusign.com/trust/privacy",
+      "hipaa": "https://www.docusign.com/solutions/industries/healthcare"
+    }
   },
   {
     "id": "395",
@@ -20616,7 +20755,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -20625,14 +20764,14 @@
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US / EU",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -20649,7 +20788,14 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.notion.com/security",
+      "iso27001": "https://www.notion.com/security",
+      "gdpr": "https://www.notion.com/security",
+      "hipaa": "https://www.notion.com/security",
+      "trains_on_data": "https://www.notion.com/product/ai",
+      "region": "https://www.notion.com/enterprise"
+    }
   },
   {
     "id": "402",
@@ -21829,7 +21975,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API"
@@ -21841,8 +21987,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -21860,8 +22006,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.zapier.com/",
-      "gdpr": "https://trust.zapier.com/"
+      "soc2": "https://zapier.com/security-compliance",
+      "gdpr": "https://zapier.com/security-compliance",
+      "hipaa": "https://help.zapier.com/hc/en-us/search?utf8=%E2%9C%93&query=HIPAA+BAA",
+      "trains_on_data": "https://zapier.com/security-compliance",
+      "region": "https://zapier.com/security-compliance"
     }
   },
   {
@@ -22305,7 +22454,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -22319,7 +22468,7 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
+      "region": "US / EU (EU data residency option available)",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -22338,10 +22487,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.airtable.com/company/trust-and-security",
-      "iso27001": "https://www.airtable.com/company/trust-and-security",
-      "gdpr": "https://www.airtable.com/company/trust-and-security",
-      "hipaa": "https://www.airtable.com/company/trust-and-security"
+      "soc2": "https://airtable.com/company/trust-and-security",
+      "iso27001": "https://airtable.com/company/trust-and-security",
+      "gdpr": "https://airtable.com/company/trust-and-security",
+      "hipaa": "https://www.airtable.com/company/trust-and-security",
+      "region": "https://airtable.com/company/trust-and-security"
     }
   },
   {
@@ -22414,7 +22564,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -22429,7 +22579,7 @@
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -22450,7 +22600,9 @@
       "soc2": "https://asana.com/trust",
       "iso27001": "https://asana.com/trust",
       "gdpr": "https://asana.com/trust",
-      "hipaa": "https://asana.com/trust"
+      "hipaa": "https://asana.com/trust",
+      "trains_on_data": "https://asana.com/terms/privacy-statement",
+      "self_hostable": "https://asana.com/trust"
     }
   },
   {
@@ -25837,7 +25989,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -25851,7 +26003,7 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
+      "region": "US / EU (EEA) / AU / JP",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -25870,10 +26022,12 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.zendesk.de/trust-center/",
-      "iso27001": "https://www.zendesk.de/trust-center/",
-      "gdpr": "https://www.zendesk.de/trust-center/",
-      "hipaa": "https://www.zendesk.de/trust-center/"
+      "soc2": "https://www.zendesk.de/product/zendesk-security/",
+      "iso27001": "https://www.zendesk.de/product/zendesk-security/",
+      "gdpr": "https://www.zendesk.de/company/privacy-and-data-protection/",
+      "hipaa": "https://www.zendesk.de/trust-center/",
+      "region": "https://www.zendesk.de/product/zendesk-security/",
+      "self_hostable": "https://www.zendesk.de/product/zendesk-security/"
     }
   },
   {
@@ -27699,20 +27853,20 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
-      "region": null,
+      "region": "US (Virginia, Oregon), Canada, Quebec, EU (Germany, Switzerland, UK), APAC (Japan, Singapore, South Korea, Australia, India, Indonesia)",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -27730,7 +27884,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://compliance.salesforce.com/en/services/tableau-cloud",
+      "hipaa": "https://help.tableau.com/current/online/en-us/to_security.htm",
+      "region": "https://help.tableau.com/current/online/en-us/to_security.htm"
+    }
   },
   {
     "id": "537",
@@ -27750,7 +27908,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -27759,15 +27917,15 @@
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
       "trains_on_data": null,
-      "self_hostable": false
+      "self_hostable": true
     },
     "pricing_detail": {
       "free_tier": "Power BI Desktop free for personal use",
@@ -27783,7 +27941,13 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-soc-2",
+      "iso27001": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-iso-27001",
+      "gdpr": "https://learn.microsoft.com/en-us/compliance/regulatory/gdpr",
+      "hipaa": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-hipaa-hitech",
+      "self_hostable": "https://learn.microsoft.com/en-us/power-bi/report-server/get-started"
+    }
   },
   {
     "id": "538",
@@ -31241,7 +31405,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -31254,7 +31418,7 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
+      "region": "US (AWS Virginia and Oregon)",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -31272,7 +31436,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.coursera.org/about/security",
+      "iso27001": "https://www.coursera.org/about/security",
+      "region": "https://www.coursera.org/about/privacy/data-protection-addendum"
+    }
   },
   {
     "id": "604",
@@ -35225,7 +35393,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App"
     ],
@@ -35236,8 +35404,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US / EU / AU",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -35255,9 +35423,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.harvey.ai/security",
-      "iso27001": "https://www.harvey.ai/security",
-      "gdpr": "https://www.harvey.ai/security"
+      "soc2": "https://harvey.ai/security",
+      "iso27001": "https://trust.harvey.ai",
+      "gdpr": "https://trust.harvey.ai",
+      "trains_on_data": "https://harvey.ai/security",
+      "region": "https://harvey.ai/security"
     }
   },
   {
@@ -37652,7 +37822,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -37662,12 +37832,12 @@
     "compliance": {
       "soc2": true,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (primary); may also process in any country where Intuit operates",
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -37686,7 +37856,10 @@
     "industries": [],
     "compliance_sources": {
       "iso27001": "https://www.intuit.com/compliance/",
-      "soc2": "https://www.intuit.com/compliance/"
+      "soc2": "https://www.intuit.com/compliance/",
+      "gdpr": "https://www.intuit.com/privacy/statement/",
+      "trains_on_data": "https://www.intuit.com/privacy/statement/",
+      "region": "https://www.intuit.com/privacy/statement/"
     }
   },
   {
@@ -39301,7 +39474,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -39315,8 +39488,8 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US / EU (Dublin) / SG",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -39334,7 +39507,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.shopify.com/de/security"
+      "soc2": "https://www.shopify.com/de/security",
+      "trains_on_data": "https://help.shopify.com/en/manual/shopify-magic/ai-features-data",
+      "region": "https://www.shopify.com/legal/privacy"
     }
   },
   {
@@ -40840,7 +41015,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -40872,7 +41047,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.deepl.com/en/pro-data-security",
+      "gdpr": "https://www.deepl.com/en/privacy"
+    }
   },
   {
     "id": "792",
@@ -40892,7 +41070,7 @@
     "pricing": "Free",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -40907,7 +41085,7 @@
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
+      "trains_on_data": true,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -40924,7 +41102,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "trains_on_data": "https://policies.google.com/privacy",
+      "self_hostable": "https://cloud.google.com/translate"
+    }
   },
   {
     "id": "793",
@@ -42146,7 +42327,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App"
     ],
@@ -42176,7 +42357,7 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "iso27001": "https://www.darktrace.com/trust"
+      "iso27001": "https://darktrace.com/trust/"
     }
   },
   {
@@ -42197,7 +42378,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API"
@@ -42205,7 +42386,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -42228,8 +42409,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.crowdstrike.com/en-us/why-crowdstrike/crowdstrike-compliance-certification/",
-      "iso27001": "https://www.crowdstrike.com/en-us/why-crowdstrike/crowdstrike-compliance-certification/"
+      "soc2": "https://trust.crowdstrike.com",
+      "iso27001": "https://trust.crowdstrike.com",
+      "gdpr": "https://trust.crowdstrike.com"
     }
   },
   {
@@ -43922,7 +44104,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API"
@@ -43953,9 +44135,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.wiz.io/trust-center",
+      "soc2": "https://trust.wiz.io",
       "iso27001": "https://www.wiz.io/trust-center",
-      "hipaa": "https://www.wiz.io/trust-center"
+      "hipaa": "https://trust.wiz.io"
     }
   },
   {
@@ -44231,7 +44413,7 @@
     "pricing": "Open Source",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "CLI"
@@ -44239,7 +44421,7 @@
     "compliance": {
       "soc2": false,
       "iso27001": false,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -44261,7 +44443,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://agpt.co/legal/platform-privacy-policy",
+      "self_hostable": "https://agpt.co/pricing"
+    }
   },
   {
     "id": "857",
@@ -46453,7 +46638,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API",
@@ -46466,7 +46651,7 @@
       "hipaa": true
     },
     "data_storage": {
-      "region": null,
+      "region": "US (default); global regions available",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -46485,10 +46670,11 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://vercel.com/security",
-      "iso27001": "https://vercel.com/security",
-      "gdpr": "https://vercel.com/security",
-      "hipaa": "https://vercel.com/security"
+      "soc2": "https://vercel.com/docs/security/compliance",
+      "iso27001": "https://vercel.com/docs/security/compliance",
+      "gdpr": "https://vercel.com/docs/security/compliance",
+      "hipaa": "https://vercel.com/docs/security/compliance",
+      "region": "https://vercel.com/docs/security/compliance"
     }
   },
   {
@@ -46672,7 +46858,7 @@
     "pricing": "Paid",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -46686,7 +46872,7 @@
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -46704,9 +46890,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trustcenter.hootsuite.com/",
-      "iso27001": "https://trustcenter.hootsuite.com/",
-      "gdpr": "https://trustcenter.hootsuite.com/"
+      "soc2": "https://hootsuite.com/legal/data-processing-addendum",
+      "iso27001": "https://hootsuite.com/legal/data-processing-addendum",
+      "gdpr": "https://hootsuite.com/legal/data-processing-addendum",
+      "trains_on_data": "https://hootsuite.com/privacy"
     }
   },
   {
@@ -48346,7 +48533,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -50570,7 +50757,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -50578,12 +50765,12 @@
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": true,
-      "hipaa": false
+      "hipaa": true
     },
     "data_storage": {
-      "region": null,
+      "region": "US / EU",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -50602,8 +50789,12 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.postman.com/security/",
-      "gdpr": "https://www.postman.com/security/"
+      "soc2": "https://security.postman.com/",
+      "gdpr": "https://www.postman.com/trust/security/",
+      "iso27001": "https://security.postman.com/",
+      "hipaa": "https://security.postman.com/",
+      "region": "https://www.postman.com/trust/security/",
+      "self_hostable": "https://www.postman.com/trust/security/"
     }
   },
   {
@@ -50777,16 +50968,16 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -50808,7 +50999,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://www.twilio.com/en-us/trust-center"
+      "gdpr": "https://www.twilio.com/en-us/legal/data-protection-addendum",
+      "soc2": "https://www.twilio.com/en-us/security",
+      "iso27001": "https://www.twilio.com/en-us/security",
+      "hipaa": "https://www.twilio.com/en-us/security"
     }
   },
   {
@@ -51425,7 +51619,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -51440,7 +51634,7 @@
     },
     "data_storage": {
       "region": null,
-      "trains_on_data": null,
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -51461,7 +51655,8 @@
       "soc2": "https://www.zoom.com/en/trust/legal-compliance/",
       "iso27001": "https://www.zoom.com/en/trust/legal-compliance/",
       "gdpr": "https://www.zoom.com/en/trust/legal-compliance/",
-      "hipaa": "https://www.zoom.com/en/trust/legal-compliance/"
+      "hipaa": "https://www.zoom.com/en/trust/legal-compliance/",
+      "trains_on_data": "https://www.zoom.com/en/products/ai-assistant/resources/privacy-security/"
     }
   },
   {
@@ -51482,7 +51677,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -51490,14 +51685,14 @@
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US / EU / APAC and country-specific regions (Australia, Brazil, Canada, France, Germany, India, Japan, UK, and more)",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -51514,7 +51709,14 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+      "iso27001": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+      "gdpr": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy",
+      "hipaa": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+      "trains_on_data": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy",
+      "region": "https://learn.microsoft.com/en-us/microsoftteams/privacy/location-of-data-in-teams"
+    }
   },
   {
     "id": "995",
@@ -51534,7 +51736,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -51548,8 +51750,8 @@
       "hipaa": null
     },
     "data_storage": {
-      "region": null,
-      "trains_on_data": null,
+      "region": "US (default); data residency options available",
+      "trains_on_data": false,
       "self_hostable": false
     },
     "pricing_detail": {
@@ -51567,7 +51769,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://slack.com/trust"
+      "gdpr": "https://slack.com/trust",
+      "trains_on_data": "https://slack.com/trust/ai-principles",
+      "region": "https://slack.com/trust/data-management",
+      "self_hostable": "https://slack.com/security-practices"
     }
   },
   {
@@ -51588,7 +51793,7 @@
     "pricing": "Freemium",
     "featured": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-11",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -51602,7 +51807,7 @@
       "hipaa": false
     },
     "data_storage": {
-      "region": null,
+      "region": "US",
       "trains_on_data": null,
       "self_hostable": false
     },
@@ -51621,7 +51826,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://discord.com/privacy"
+      "gdpr": "https://discord.com/privacy",
+      "region": "https://discord.com/privacy"
     }
   },
   {
