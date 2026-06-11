@@ -4,7 +4,7 @@
     "name": "N8n",
     "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
     "github_url": "https://github.com/n8n-io/n8n",
-    "stars": 180209,
+    "stars": 192100,
     "topics": [
       "ai",
       "apis",
@@ -31,7 +31,7 @@
     "tool_name": "n8n",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -39,7 +39,7 @@
     "name": "Gemini Cli",
     "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
     "github_url": "https://github.com/google-gemini/gemini-cli",
-    "stars": 98506,
+    "stars": 105173,
     "topics": [
       "ai",
       "ai-agents",
@@ -53,15 +53,15 @@
     "tool_name": "gemini-cli",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
     "id": "affaan-m-everything-claude-code",
     "name": "Everything Claude Code",
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "github_url": "https://github.com/affaan-m/everything-claude-code",
-    "stars": 90557,
+    "github_url": "https://github.com/affaan-m/ECC",
+    "stars": 213469,
     "topics": [
       "ai-agents",
       "anthropic",
@@ -76,7 +76,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -84,7 +84,7 @@
     "name": "Context7",
     "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
     "github_url": "https://github.com/upstash/context7",
-    "stars": 49930,
+    "stars": 57194,
     "topics": [
       "llm",
       "mcp",
@@ -95,7 +95,7 @@
     "tool_name": "context7",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -103,7 +103,7 @@
     "name": "TrendRadar",
     "description": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
     "github_url": "https://github.com/sansan0/TrendRadar",
-    "stars": 49424,
+    "stars": 59318,
     "topics": [
       "ai",
       "bark",
@@ -126,7 +126,7 @@
     "tool_name": "Bark",
     "category": "Audio & Music",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -134,7 +134,7 @@
     "name": "Awesome Claude Skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "github_url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 46429,
+    "stars": 64200,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -145,8 +145,10 @@
       "codex",
       "composio",
       "cursor",
+      "developer-tools",
       "gemini-cli",
       "mcp",
+      "openai-codex",
       "rube",
       "saas",
       "skill",
@@ -156,7 +158,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -164,7 +166,7 @@
     "name": "Scrapling",
     "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
     "github_url": "https://github.com/D4Vinci/Scrapling",
-    "stars": 31496,
+    "stars": 63066,
     "topics": [
       "ai",
       "ai-scraping",
@@ -191,7 +193,7 @@
     "tool_name": "Scrapling",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -199,12 +201,14 @@
     "name": "Cc Switch",
     "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw & Gemini CLI.",
     "github_url": "https://github.com/farion1231/cc-switch",
-    "stars": 31061,
+    "stars": 98486,
     "topics": [
       "ai-tools",
       "claude-code",
       "codex",
       "desktop-app",
+      "hermes",
+      "hermes-agent",
       "mcp",
       "minimax",
       "omo",
@@ -224,7 +228,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -232,7 +236,7 @@
     "name": "Chrome Devtools Mcp",
     "description": "Chrome DevTools for coding agents",
     "github_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-    "stars": 30512,
+    "stars": 43382,
     "topics": [
       "browser",
       "chrome",
@@ -247,7 +251,7 @@
     "tool_name": "chrome-devtools-mcp",
     "category": "Dev Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -255,7 +259,7 @@
     "name": "UI TARS Desktop",
     "description": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
     "github_url": "https://github.com/bytedance/UI-TARS-desktop",
-    "stars": 28942,
+    "stars": 36311,
     "topics": [
       "agent",
       "agent-tars",
@@ -276,7 +280,7 @@
     "tool_name": "Modal",
     "category": "Coding",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -284,7 +288,7 @@
     "name": "Github Mcp Server",
     "description": "GitHub's official MCP Server",
     "github_url": "https://github.com/github/github-mcp-server",
-    "stars": 28096,
+    "stars": 30583,
     "topics": [
       "github",
       "mcp",
@@ -294,7 +298,7 @@
     "tool_name": "github-mcp-server",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -302,26 +306,26 @@
     "name": "Antigravity Awesome Skills",
     "description": "Installable GitHub library of 1,273+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes installer CLI, bundles, workflows, and official/community skill collections.",
     "github_url": "https://github.com/sickn33/antigravity-awesome-skills",
-    "stars": 26175,
+    "stars": 40391,
     "topics": [
       "agent-skills",
       "agentic-skills",
       "ai-agent-skills",
       "ai-agents",
+      "ai-coding",
       "ai-workflows",
       "antigravity",
       "antigravity-skills",
-      "autonomous-coding",
-      "awesome-list",
-      "awesome-lists",
       "claude-code",
       "claude-code-skills",
       "codex-cli",
       "codex-skills",
+      "cursor",
       "cursor-skills",
       "developer-tools",
       "gemini-cli",
       "gemini-skills",
+      "kiro",
       "mcp",
       "skill-library"
     ],
@@ -329,7 +333,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -337,7 +341,7 @@
     "name": "Gpt Researcher",
     "description": "An autonomous agent that conducts deep research on any data using any LLM providers",
     "github_url": "https://github.com/assafelovic/gpt-researcher",
-    "stars": 25866,
+    "stars": 27645,
     "topics": [
       "agent",
       "ai",
@@ -355,7 +359,7 @@
     "tool_name": "gpt-researcher",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -363,7 +367,7 @@
     "name": "Fastmcp",
     "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
     "github_url": "https://github.com/PrefectHQ/fastmcp",
-    "stars": 23855,
+    "stars": 25597,
     "topics": [
       "agents",
       "fastmcp",
@@ -379,7 +383,7 @@
     "tool_name": "fastmcp",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -387,34 +391,34 @@
     "name": "Ruflo",
     "description": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
     "github_url": "https://github.com/ruvnet/ruflo",
-    "stars": 22124,
+    "stars": 58996,
     "topics": [
       "agentic-ai",
-      "agentic-engineering",
       "agentic-framework",
       "agentic-rag",
       "agentic-workflow",
       "agents",
+      "ai-agents",
       "ai-assistant",
-      "ai-tools",
-      "anthropic-claude",
+      "ai-coding",
+      "ai-skills",
       "autonomous-agents",
       "claude-code",
-      "claude-code-skills",
       "codex",
-      "huggingface",
       "mcp-server",
-      "model-context-protocol",
       "multi-agent",
       "multi-agent-systems",
+      "npm",
+      "skills",
       "swarm",
-      "swarm-intelligence"
+      "swarm-intelligence",
+      "typescript"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -422,15 +426,17 @@
     "name": "Serena",
     "description": "A powerful coding agent toolkit providing semantic retrieval and editing capabilities (MCP server & other integrations)",
     "github_url": "https://github.com/oraios/serena",
-    "stars": 21850,
+    "stars": 25254,
     "topics": [
       "agent",
       "ai",
       "ai-coding",
       "claude",
       "claude-code",
+      "codex",
+      "ide",
+      "jetbrains",
       "language-server",
-      "llms",
       "mcp-server",
       "programming",
       "vibe-coding"
@@ -439,7 +445,7 @@
     "tool_name": "serena",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -447,7 +453,7 @@
     "name": "Activepieces",
     "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
     "github_url": "https://github.com/activepieces/activepieces",
-    "stars": 21321,
+    "stars": 22713,
     "topics": [
       "ai-agent",
       "ai-agent-tools",
@@ -467,7 +473,7 @@
     "tool_name": "Pieces",
     "category": "Coding",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -475,7 +481,7 @@
     "name": "MaxKB",
     "description": "🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。",
     "github_url": "https://github.com/1Panel-dev/MaxKB",
-    "stars": 20508,
+    "stars": 21216,
     "topics": [
       "agent",
       "agentic-ai",
@@ -496,7 +502,7 @@
     "tool_name": "MaxKB",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -504,7 +510,7 @@
     "name": "Mcp For Beginners",
     "description": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.",
     "github_url": "https://github.com/microsoft/mcp-for-beginners",
-    "stars": 15490,
+    "stars": 16508,
     "topics": [
       "csharp",
       "java",
@@ -525,7 +531,7 @@
     "tool_name": "mcp-for-beginners",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -533,7 +539,7 @@
     "name": "N8n Mcp",
     "description": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
     "github_url": "https://github.com/czlonkowski/n8n-mcp",
-    "stars": 15479,
+    "stars": 21681,
     "topics": [
       "mcp",
       "mcp-server",
@@ -544,7 +550,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -552,7 +558,7 @@
     "name": "Trigger.Dev",
     "description": "Trigger.dev – build and deploy fully‑managed AI agents and workflows",
     "github_url": "https://github.com/triggerdotdev/trigger.dev",
-    "stars": 14102,
+    "stars": 15310,
     "topics": [
       "ai",
       "ai-agent-framework",
@@ -572,7 +578,7 @@
     "tool_name": "trigger.dev",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -580,7 +586,7 @@
     "name": "Claude Plugins Official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "github_url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 13588,
+    "stars": 29920,
     "topics": [
       "claude-code",
       "mcp",
@@ -590,7 +596,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -598,7 +604,7 @@
     "name": "Xiaohongshu Mcp",
     "description": "MCP for xiaohongshu.com",
     "github_url": "https://github.com/xpzouying/xiaohongshu-mcp",
-    "stars": 11987,
+    "stars": 14108,
     "topics": [
       "mcp",
       "mcp-server",
@@ -608,7 +614,7 @@
     "tool_name": "xiaohongshu-mcp",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -616,7 +622,7 @@
     "name": "Fastapi_mcp",
     "description": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
     "github_url": "https://github.com/tadata-org/fastapi_mcp",
-    "stars": 11668,
+    "stars": 11911,
     "topics": [
       "ai",
       "authentication",
@@ -636,7 +642,7 @@
     "tool_name": "fastapi_mcp",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -644,7 +650,7 @@
     "name": "Skill_Seekers",
     "description": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection",
     "github_url": "https://github.com/yusufkaraaslan/Skill_Seekers",
-    "stars": 11066,
+    "stars": 14054,
     "topics": [
       "ai-tools",
       "ast-parser",
@@ -669,7 +675,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -677,7 +683,7 @@
     "name": "Nginx Ui",
     "description": "Yet another WebUI for Nginx",
     "github_url": "https://github.com/0xJacky/nginx-ui",
-    "stars": 10890,
+    "stars": 11204,
     "topics": [
       "chatgpt-app",
       "code-completion",
@@ -701,7 +707,7 @@
     "tool_name": "nginx-ui",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -709,7 +715,7 @@
     "name": "XHS Downloader",
     "description": "小红书（XiaoHongShu、RedNote）链接提取/作品采集工具：提取账号发布、收藏、点赞、专辑作品链接；提取搜索结果作品、用户链接；采集小红书作品信息；提取小红书作品下载地址；下载小红书作品文件",
     "github_url": "https://github.com/JoeanAmier/XHS-Downloader",
-    "stars": 10461,
+    "stars": 11520,
     "topics": [
       "api",
       "docker",
@@ -736,7 +742,7 @@
     "tool_name": "XHS-Downloader",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -744,7 +750,7 @@
     "name": "Agent Reach",
     "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
     "github_url": "https://github.com/Panniantong/Agent-Reach",
-    "stars": 10129,
+    "stars": 26355,
     "topics": [
       "agent-infrastructure",
       "ai-agent",
@@ -768,7 +774,7 @@
     "tool_name": "Agent-Reach",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -776,7 +782,7 @@
     "name": "Mcp Use",
     "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
     "github_url": "https://github.com/mcp-use/mcp-use",
-    "stars": 9468,
+    "stars": 10089,
     "topics": [
       "agentic-framework",
       "ai",
@@ -803,7 +809,7 @@
     "tool_name": "ChatGPT",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -811,8 +817,10 @@
     "name": "OpenMetadata",
     "description": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team collaboration.",
     "github_url": "https://github.com/open-metadata/OpenMetadata",
-    "stars": 8971,
+    "stars": 14168,
     "topics": [
+      "context",
+      "context-layer",
       "data-catalog",
       "data-collaboration",
       "data-contracts",
@@ -823,22 +831,20 @@
       "data-profiling",
       "data-quality",
       "data-quality-checks",
-      "data-validation",
       "datadiscovery",
       "dataengineering",
       "dataquality",
-      "hacktoberfest",
       "mcp",
       "mcp-server",
       "metadata",
       "metadata-management",
-      "snowflake"
+      "semantics"
     ],
     "tool_slug": null,
     "tool_name": "OpenMetadata",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -846,7 +852,7 @@
     "name": "Xiaozhi Esp32 Server",
     "description": "本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.",
     "github_url": "https://github.com/xinnan-tech/xiaozhi-esp32-server",
-    "stars": 8951,
+    "stars": 9787,
     "topics": [
       "dify",
       "esp32",
@@ -860,7 +866,7 @@
     "tool_name": "xiaozhi-esp32-server",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -868,7 +874,7 @@
     "name": "MCP (awslabs)",
     "description": "Official MCP Servers for AWS",
     "github_url": "https://github.com/awslabs/mcp",
-    "stars": 8517,
+    "stars": 9254,
     "topics": [
       "aws",
       "mcp",
@@ -884,7 +890,7 @@
     "tool_name": "mcp",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -892,7 +898,7 @@
     "name": "Mcp Agent",
     "description": "Build effective agents using Model Context Protocol and simple workflow patterns",
     "github_url": "https://github.com/lastmile-ai/mcp-agent",
-    "stars": 8111,
+    "stars": 8369,
     "topics": [
       "agents",
       "ai",
@@ -907,7 +913,7 @@
     "tool_name": "mcp-agent",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -915,16 +921,19 @@
     "name": "Upsonic",
     "description": "Agent Framework For Fintech and Banks",
     "github_url": "https://github.com/Upsonic/Upsonic",
-    "stars": 7814,
+    "stars": 7877,
     "topics": [
       "agent",
       "agent-framework",
+      "autonomous-agent",
+      "autonomous-agents",
       "claude",
       "computer-use",
       "llms",
       "mcp",
       "model-context-protocol",
       "openai",
+      "openclaw",
       "rag",
       "reliability",
       "ucp",
@@ -934,7 +943,7 @@
     "tool_name": "Upsonic",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -942,7 +951,7 @@
     "name": "Lamda",
     "description": " The most powerful Android RPA agent framework, next generation of mobile automation robots.",
     "github_url": "https://github.com/firerpa/lamda",
-    "stars": 7676,
+    "stars": 7829,
     "topics": [
       "adb",
       "agents",
@@ -969,7 +978,7 @@
     "tool_name": "lamda",
     "category": "Security",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -977,7 +986,7 @@
     "name": "Hexstrike Ai",
     "description": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
     "github_url": "https://github.com/0x4m4/hexstrike-ai",
-    "stars": 7584,
+    "stars": 9521,
     "topics": [
       "0x4m4",
       "ai",
@@ -1004,7 +1013,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1012,7 +1021,7 @@
     "name": "Superset",
     "description": "IDE for the AI Agents Era - Run an army of Claude Code, Codex, etc. on your machine",
     "github_url": "https://github.com/superset-sh/superset",
-    "stars": 7526,
+    "stars": 11744,
     "topics": [
       "agentic-ai",
       "ai-agents",
@@ -1039,7 +1048,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1047,7 +1056,7 @@
     "name": "Unity MCP (CoplayDev)",
     "description": "Unity MCP acts as a bridge, allowing AI assistants (like Claude, Cursor) to interact directly with your Unity Editor via a local MCP (Model Context Protocol) Client. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
     "github_url": "https://github.com/CoplayDev/unity-mcp",
-    "stars": 7330,
+    "stars": 10567,
     "topics": [
       "ai",
       "ai-integration",
@@ -1070,7 +1079,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1078,7 +1087,7 @@
     "name": "Browser Tools Mcp",
     "description": "Monitor browser logs directly from Cursor and other MCP compatible IDEs.",
     "github_url": "https://github.com/AgentDeskAI/browser-tools-mcp",
-    "stars": 7131,
+    "stars": 7235,
     "topics": [
       "ai",
       "anthropic",
@@ -1090,7 +1099,7 @@
     "tool_name": "Cursor",
     "category": "Coding",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1098,7 +1107,7 @@
     "name": "Awesome MCP ZH",
     "description": "MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients",
     "github_url": "https://github.com/yzfly/Awesome-MCP-ZH",
-    "stars": 6578,
+    "stars": 7267,
     "topics": [
       "claude",
       "claude-mcp",
@@ -1117,7 +1126,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1125,7 +1134,7 @@
     "name": "Ida Pro Mcp",
     "description": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
     "github_url": "https://github.com/mrexodia/ida-pro-mcp",
-    "stars": 6552,
+    "stars": 9297,
     "topics": [
       "ai",
       "aiagent",
@@ -1141,7 +1150,7 @@
     "tool_name": "ida-pro-mcp",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1149,7 +1158,7 @@
     "name": "Cursor Talk To Figma Mcp",
     "description": "TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code) and Figma, allowing Agentic AI to communicate with Figma for reading designs and modifying them programmatically.",
     "github_url": "https://github.com/grab/cursor-talk-to-figma-mcp",
-    "stars": 6520,
+    "stars": 6830,
     "topics": [
       "agent",
       "agentic",
@@ -1170,7 +1179,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1178,7 +1187,7 @@
     "name": "MCP (BrowserMCP)",
     "description": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser",
     "github_url": "https://github.com/BrowserMCP/mcp",
-    "stars": 6108,
+    "stars": 6655,
     "topics": [
       "browser-automation",
       "browser-extension",
@@ -1191,7 +1200,7 @@
     "tool_name": "Rows",
     "category": "Data & Analytics",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1199,7 +1208,7 @@
     "name": "Firecrawl Mcp Server",
     "description": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
     "github_url": "https://github.com/firecrawl/firecrawl-mcp-server",
-    "stars": 5812,
+    "stars": 6542,
     "topics": [
       "batch-processing",
       "claude",
@@ -1220,7 +1229,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1228,7 +1237,7 @@
     "name": "Klavis",
     "description": "Klavis AI:  MCP integration platforms that let AI agents use tools reliably at any scale",
     "github_url": "https://github.com/Klavis-AI/klavis",
-    "stars": 5671,
+    "stars": 5747,
     "topics": [
       "agents",
       "ai",
@@ -1249,7 +1258,7 @@
     "tool_name": "Ably",
     "category": "Agentic & Automation",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1257,7 +1266,7 @@
     "name": "Awesome Mcp Servers",
     "description": "Awesome MCP Servers - A curated list of Model Context Protocol servers",
     "github_url": "https://github.com/appcypher/awesome-mcp-servers",
-    "stars": 5252,
+    "stars": 5590,
     "topics": [
       "ai",
       "anthropic-claude",
@@ -1273,7 +1282,7 @@
     "tool_name": "awesome-mcp-servers",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1281,7 +1290,7 @@
     "name": "5ire",
     "description": "5ire is a cross-platform desktop AI assistant, MCP client. It compatible with major service providers,  supports local knowledge base and  tools via model context protocol servers .",
     "github_url": "https://github.com/nanbingxyz/5ire",
-    "stars": 5123,
+    "stars": 5241,
     "topics": [
       "knowledge-base",
       "llms",
@@ -1293,7 +1302,7 @@
     "tool_name": "5ire",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1301,7 +1310,7 @@
     "name": "Viper",
     "description": "Adversary simulation and Red teaming platform with AI",
     "github_url": "https://github.com/FunnyWolf/Viper",
-    "stars": 5003,
+    "stars": 5071,
     "topics": [
       "agent",
       "ai",
@@ -1318,7 +1327,7 @@
     "tool_name": "Viper",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1326,7 +1335,7 @@
     "name": "XcodeBuildMCP",
     "description": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
     "github_url": "https://github.com/getsentry/XcodeBuildMCP",
-    "stars": 4824,
+    "stars": 5891,
     "topics": [
       "mcp",
       "mcp-server",
@@ -1340,7 +1349,7 @@
     "tool_name": "XcodeBuildMCP",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1348,7 +1357,7 @@
     "name": "Deep Research",
     "description": "Use any LLMs (Large Language Models) for Deep Research. Support SSE API and MCP server.",
     "github_url": "https://github.com/u14app/deep-research",
-    "stars": 4523,
+    "stars": 4609,
     "topics": [
       "anthropic",
       "deep-research",
@@ -1365,42 +1374,41 @@
     "tool_name": "deep-research",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
     "id": "casibase-casibase",
     "name": "Casibase",
     "description": "⚡️AI Cloud OS: Open-source enterprise-level AI knowledge base and MCP (model-context-protocol)/A2A (agent-to-agent) management platform with admin UI, user management and Single-Sign-On⚡️, supports ChatGPT, Claude, Llama, Ollama, HuggingFace, etc., chat bot demo: https://ai.casibase.com, admin UI demo: https://ai-admin.casibase.com",
-    "github_url": "https://github.com/casibase/casibase",
-    "stars": 4474,
+    "github_url": "https://github.com/the-open-agent/openagent",
+    "stars": 5231,
     "topics": [
-      "a2a",
       "agent",
+      "agentic",
+      "agentic-ai",
       "agi",
-      "casibase",
       "chatbot",
       "chatgpt",
-      "claude",
-      "gemini",
       "gpt",
-      "huggingface",
+      "harness",
+      "hermes-agent",
       "knowledge-base",
       "langchain",
-      "llama",
       "llm",
-      "manus",
       "mcp",
       "model-context-protocol",
       "multi-agent",
+      "openagent",
       "openai",
+      "openclaw",
       "rag"
     ],
     "tool_slug": "chatgpt",
     "tool_name": "ChatGPT",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1408,7 +1416,7 @@
     "name": "Osaurus",
     "description": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source.",
     "github_url": "https://github.com/osaurus-ai/osaurus",
-    "stars": 4395,
+    "stars": 5751,
     "topics": [
       "anthropic",
       "apple-foundation-models",
@@ -1425,7 +1433,7 @@
     "tool_name": "osaurus",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1433,7 +1441,7 @@
     "name": "Httprunner",
     "description": "HttpRunner 是一款开源的 API/UI 测试框架，简单易用，功能强大，具有丰富的插件化机制和高度的可扩展能力。",
     "github_url": "https://github.com/httprunner/httprunner",
-    "stars": 4267,
+    "stars": 4280,
     "topics": [
       "adb",
       "agent-tars",
@@ -1450,7 +1458,7 @@
     "tool_name": "httprunner",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1458,7 +1466,7 @@
     "name": "ENScan_GO",
     "description": "一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。支持MCP接入",
     "github_url": "https://github.com/wgpsec/ENScan_GO",
-    "stars": 4261,
+    "stars": 4449,
     "topics": [
       "app",
       "cyber-security",
@@ -1474,7 +1482,7 @@
     "tool_name": "ENScan_GO",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1482,7 +1490,7 @@
     "name": "Mcpo",
     "description": "A simple, secure MCP-to-OpenAPI proxy server",
     "github_url": "https://github.com/open-webui/mcpo",
-    "stars": 4070,
+    "stars": 4251,
     "topics": [
       "mcp",
       "mcp-server",
@@ -1494,7 +1502,7 @@
     "tool_name": "mcpo",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1502,7 +1510,7 @@
     "name": "Kubefwd",
     "description": "Bulk port forwarding Kubernetes services for local development.",
     "github_url": "https://github.com/txn2/kubefwd",
-    "stars": 4069,
+    "stars": 4120,
     "topics": [
       "api-rest",
       "developer-tools",
@@ -1524,7 +1532,7 @@
     "tool_name": "kubefwd",
     "category": "Dev Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1532,7 +1540,7 @@
     "name": "Exa Mcp Server",
     "description": "Exa MCP for web search and web crawling!",
     "github_url": "https://github.com/exa-labs/exa-mcp-server",
-    "stars": 4060,
+    "stars": 4564,
     "topics": [
       "code-search",
       "codesearch",
@@ -1547,7 +1555,7 @@
     "tool_name": "exa-mcp-server",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1555,7 +1563,7 @@
     "name": "Mcp Server Chart",
     "description": "🤖 A visualization mcp & skills contains 25+ visual charts using @antvis. Using for chart generation and data analysis.",
     "github_url": "https://github.com/antvis/mcp-server-chart",
-    "stars": 3851,
+    "stars": 4148,
     "topics": [
       "antv",
       "llm",
@@ -1568,7 +1576,7 @@
     "tool_name": "mcp-server-chart",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1576,7 +1584,7 @@
     "name": "Fast Agent",
     "description": "Code, Build and Evaluate agents - excellent Model and Skills/MCP/ACP Support",
     "github_url": "https://github.com/evalstate/fast-agent",
-    "stars": 3714,
+    "stars": 3818,
     "topics": [
       "acp",
       "agent",
@@ -1594,7 +1602,7 @@
     "tool_name": "fast-agent",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1602,7 +1610,7 @@
     "name": "Claude Code Guide",
     "description": "Claude Code Guide - Setup, Commands, workflows, agents, skills & tips-n-tricks go from beginner to power user!",
     "github_url": "https://github.com/zebbern/claude-code-guide",
-    "stars": 3679,
+    "stars": 4286,
     "topics": [
       "ai",
       "ai-agent",
@@ -1629,7 +1637,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1637,7 +1645,7 @@
     "name": "Archestra",
     "description": "Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator",
     "github_url": "https://github.com/archestra-ai/archestra",
-    "stars": 3538,
+    "stars": 3824,
     "topics": [
       "a2a",
       "a2a-mcp",
@@ -1664,7 +1672,7 @@
     "tool_name": "archestra",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1672,7 +1680,7 @@
     "name": "Excel Mcp Server",
     "description": "A Model Context Protocol server for Excel file manipulation",
     "github_url": "https://github.com/haris-musa/excel-mcp-server",
-    "stars": 3514,
+    "stars": 3920,
     "topics": [
       "ai",
       "automation",
@@ -1689,7 +1697,7 @@
     "tool_name": "excel-mcp-server",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1697,7 +1705,7 @@
     "name": "Mcp Context Forge",
     "description": "An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and management. Optimizes Agent & Tool calling, and supports plugins.",
     "github_url": "https://github.com/IBM/mcp-context-forge",
-    "stars": 3443,
+    "stars": 3869,
     "topics": [
       "agents",
       "ai",
@@ -1724,7 +1732,7 @@
     "tool_name": "Front",
     "category": "Productivity",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1732,7 +1740,7 @@
     "name": "MCP Chinese Getting Started Guide",
     "description": "Model Context Protocol(MCP) 编程极速入门",
     "github_url": "https://github.com/liaokongVFX/MCP-Chinese-Getting-Started-Guide",
-    "stars": 3399,
+    "stars": 3518,
     "topics": [
       "ai",
       "deepseek",
@@ -1744,7 +1752,7 @@
     "tool_name": "MCP-Chinese-Getting-Started-Guide",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1752,20 +1760,29 @@
     "name": "Py Xiaozhi",
     "description": "A Python-based Xiaozhi AI for users who want the full Xiaozhi experience without owning specialized hardware.",
     "github_url": "https://github.com/huangjunsen0406/py-xiaozhi",
-    "stars": 3233,
+    "stars": 3356,
     "topics": [
+      "cross-platform",
+      "edge-computing",
+      "embodied-ai",
       "esp32",
       "esp32-s3",
+      "iot",
       "mcp",
+      "mcp-client",
       "mcp-server",
+      "multi-modal",
       "python",
+      "raspberry-pi",
+      "robotics",
+      "voice-assistant",
       "xiaozhi-esp32"
     ],
     "tool_slug": null,
     "tool_name": "py-xiaozhi",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1773,7 +1790,7 @@
     "name": "Bifrost",
     "description": "Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS.",
     "github_url": "https://github.com/maximhq/bifrost",
-    "stars": 3060,
+    "stars": 5680,
     "topics": [
       "ai-gateway",
       "gateway",
@@ -1796,7 +1813,7 @@
     "tool_name": "bifrost",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1804,7 +1821,7 @@
     "name": "Auto Claude Code Research In Sleep",
     "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.",
     "github_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
-    "stars": 2830,
+    "stars": 11950,
     "topics": [
       "ai-research",
       "ai-tools",
@@ -1831,7 +1848,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1839,7 +1856,7 @@
     "name": "Markdownify Mcp",
     "description": "A Model Context Protocol server for converting almost anything to Markdown",
     "github_url": "https://github.com/zcaceres/markdownify-mcp",
-    "stars": 2477,
+    "stars": 2731,
     "topics": [
       "ai",
       "anthropic",
@@ -1855,7 +1872,7 @@
     "tool_name": "markdownify-mcp",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1863,7 +1880,7 @@
     "name": "Metamcp",
     "description": "MCP Aggregator, Orchestrator, Middleware, Gateway in one docker",
     "github_url": "https://github.com/metatool-ai/metamcp",
-    "stars": 2135,
+    "stars": 2404,
     "topics": [
       "mcp",
       "mcp-gateway",
@@ -1885,7 +1902,7 @@
     "tool_name": "metamcp",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1893,7 +1910,7 @@
     "name": "Generative Ai",
     "description": "Comprehensive resources on Generative AI, including a detailed roadmap, projects, use cases, interview preparation, and coding preparation.",
     "github_url": "https://github.com/genieincodebottle/generative-ai",
-    "stars": 2132,
+    "stars": 2352,
     "topics": [
       "agentic-ai",
       "agentic-framework",
@@ -1920,7 +1937,7 @@
     "tool_name": "generative-ai",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1928,7 +1945,7 @@
     "name": "Gemini Mcp Tool",
     "description": "MCP server that enables AI assistants to interact with Google Gemini CLI, leveraging Gemini's massive token window for large file analysis and codebase understanding",
     "github_url": "https://github.com/jamubc/gemini-mcp-tool",
-    "stars": 2077,
+    "stars": 2237,
     "topics": [
       "ai",
       "claude",
@@ -1945,7 +1962,7 @@
     "tool_name": "Google Gemini",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1953,7 +1970,7 @@
     "name": "Google_workspace_mcp",
     "description": "Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace / G Suite MCP Server & CLI Tool",
     "github_url": "https://github.com/taylorwilsdon/google_workspace_mcp",
-    "stars": 1865,
+    "stars": 2656,
     "topics": [
       "ai",
       "g-suite",
@@ -1980,7 +1997,7 @@
     "tool_name": "google_workspace_mcp",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1988,7 +2005,7 @@
     "name": "Mcphub.Nvim",
     "description": "An MCP client for Neovim that seamlessly integrates MCP servers into your editing workflow with an intuitive interface for managing, testing, and using MCP servers with your favorite chat plugins.",
     "github_url": "https://github.com/ravitemer/mcphub.nvim",
-    "stars": 1746,
+    "stars": 1779,
     "topics": [
       "avante",
       "chatgpt",
@@ -2011,7 +2028,7 @@
     "tool_name": "mcphub.nvim",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2019,7 +2036,7 @@
     "name": "Toolhive",
     "description": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
     "github_url": "https://github.com/stacklok/toolhive",
-    "stars": 1664,
+    "stars": 1871,
     "topics": [
       "ai",
       "ai-security",
@@ -2037,7 +2054,7 @@
     "tool_name": "Hive",
     "category": "Productivity",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2045,7 +2062,7 @@
     "name": "Pilot Shell",
     "description": "The professional development environment for Claude Code: From requirement to production-grade code. Planned, tested, verified.",
     "github_url": "https://github.com/maxritter/pilot-shell",
-    "stars": 1561,
+    "stars": 1749,
     "topics": [
       "ai-agents",
       "ai-assistant",
@@ -2059,52 +2076,18 @@
       "claude-ai",
       "claude-code",
       "claude-context",
-      "claude-mem",
       "claude-skills",
       "claudecode",
-      "model-context-protocol",
+      "codex",
+      "codex-cli",
+      "openai",
       "spec-driven-development"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
-    "is_official": false
-  },
-  {
-    "id": "doobidoo-mcp-memory-service",
-    "name": "Mcp Memory Service",
-    "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
-    "github_url": "https://github.com/doobidoo/mcp-memory-service",
-    "stars": 1518,
-    "topics": [
-      "agent-memory",
-      "agentic-ai",
-      "ai-agents",
-      "autogen",
-      "claude",
-      "crewai",
-      "knowledge-graph",
-      "langgraph",
-      "long-term-memory",
-      "mcp",
-      "mcp-server",
-      "memory",
-      "model-context-protocol",
-      "multi-agent",
-      "open-source",
-      "rag",
-      "semantic-search",
-      "sqlite-vec",
-      "vector-database",
-      "vector-storage"
-    ],
-    "tool_slug": "claude",
-    "tool_name": "Claude",
-    "category": "AI Assistants",
-    "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2112,7 +2095,7 @@
     "name": "Jadx Ai Mcp",
     "description": "Plugin for JADX to integrate MCP server",
     "github_url": "https://github.com/zinja-coder/jadx-ai-mcp",
-    "stars": 1506,
+    "stars": 2293,
     "topics": [
       "ai",
       "java",
@@ -2132,7 +2115,7 @@
     "tool_name": "jadx-ai-mcp",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2140,7 +2123,7 @@
     "name": "Mcp Language Server",
     "description": "mcp-language-server gives MCP enabled clients access semantic tools like get definition, references, rename, and diagnostics.",
     "github_url": "https://github.com/isaacphi/mcp-language-server",
-    "stars": 1494,
+    "stars": 1540,
     "topics": [
       "ai",
       "language-server-protocol",
@@ -2152,7 +2135,7 @@
     "tool_name": "mcp-language-server",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2160,28 +2143,26 @@
     "name": "Mcp Unity",
     "description": "Model Context Protocol (MCP) plugin to connect with Unity Editor — designed for Cursor, Claude Code, Codex, Windsurf and other IDEs",
     "github_url": "https://github.com/CoderGamester/mcp-unity",
-    "stars": 1435,
+    "stars": 1767,
     "topics": [
-      "antigravity-ide",
       "claudecode",
       "codex-cli",
       "copilot",
       "cursor",
       "game-development",
-      "gemini",
       "mcp",
       "model-context-protocol",
       "openai",
+      "openclaw",
       "unity",
       "unity-package",
-      "unity3d",
-      "windsurf"
+      "unity3d"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2189,7 +2170,7 @@
     "name": "Code Mode",
     "description": "🔌 Plug-and-play library to enable agents to call MCP and UTCP tools via code execution. ",
     "github_url": "https://github.com/universal-tool-calling-protocol/code-mode",
-    "stars": 1396,
+    "stars": 1478,
     "topics": [
       "ai-agents",
       "codemode",
@@ -2202,7 +2183,7 @@
     "tool_name": "code-mode",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2210,7 +2191,7 @@
     "name": "Unity MCP (IvanMurzak)",
     "description": "AI Skills, MCP Tools, and CLI for Unity Engine. Full AI develop and test loop. Use cli for quick setup. Efficient token usage, advanced tools. Any C# method may be turned into a tool by a single line. Works with Claude Code, Gemini, Copilot, Cursor and any other absolutely for free.",
     "github_url": "https://github.com/IvanMurzak/Unity-MCP",
-    "stars": 1388,
+    "stars": 3124,
     "topics": [
       "ai",
       "ai-integration",
@@ -2236,7 +2217,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2244,7 +2225,7 @@
     "name": "Nerve",
     "description": "The Simple Agent Development Kit.",
     "github_url": "https://github.com/evilsocket/nerve",
-    "stars": 1320,
+    "stars": 1319,
     "topics": [
       "adk",
       "agent-based-modeling",
@@ -2260,7 +2241,7 @@
     "tool_name": "nerve",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2268,7 +2249,7 @@
     "name": "Grafbase",
     "description": "The Grafbase GraphQL Federation Gateway",
     "github_url": "https://github.com/grafbase/grafbase",
-    "stars": 1222,
+    "stars": 1229,
     "topics": [
       "ai",
       "api",
@@ -2285,7 +2266,7 @@
     "tool_name": "grafbase",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2293,10 +2274,15 @@
     "name": "MySQL MCP Server (designcomputer)",
     "description": "A Model Context Protocol (MCP) server that enables secure interaction with MySQL databases",
     "github_url": "https://github.com/designcomputer/mysql_mcp_server",
-    "stars": 1177,
+    "stars": 1295,
     "topics": [
       "ai",
+      "claude",
+      "claude-code",
+      "database",
+      "llm",
       "mcp",
+      "mcp-server",
       "model-context-protocol",
       "mysql"
     ],
@@ -2304,7 +2290,7 @@
     "tool_name": "mysql_mcp_server",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2312,7 +2298,7 @@
     "name": "Apple Docs Mcp",
     "description": "MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit docs, WWDC videos, Swift/Objective-C APIs & code examples in Claude, Cursor & AI assistants",
     "github_url": "https://github.com/kimsungwhee/apple-docs-mcp",
-    "stars": 1160,
+    "stars": 1304,
     "topics": [
       "ai-assistant",
       "api-documentation",
@@ -2338,7 +2324,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2346,7 +2332,7 @@
     "name": "Tuui",
     "description": "A desktop MCP client designed as a tool unitary utility integration, accelerating AI adoption through the Model Context Protocol (MCP) and enabling cross-vendor LLM API orchestration.",
     "github_url": "https://github.com/AI-QL/tuui",
-    "stars": 1135,
+    "stars": 1148,
     "topics": [
       "agent",
       "agentic-ai",
@@ -2373,7 +2359,7 @@
     "tool_name": "tuui",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2381,7 +2367,7 @@
     "name": "Minima",
     "description": "On-premises conversational RAG with configurable containers",
     "github_url": "https://github.com/dmayboroda/minima",
-    "stars": 1039,
+    "stars": 1047,
     "topics": [
       "ai",
       "claude",
@@ -2400,7 +2386,7 @@
     "tool_name": "minima",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2408,7 +2394,7 @@
     "name": "Short Video Maker",
     "description": "Creates short videos for TikTok, Instagram Reels, and YouTube Shorts using the Model Context Protocol (MCP) and a REST API.",
     "github_url": "https://github.com/gyoridavid/short-video-maker",
-    "stars": 1029,
+    "stars": 1176,
     "topics": [
       "faceless-video",
       "instagram",
@@ -2435,7 +2421,7 @@
     "tool_name": "Make",
     "category": "Productivity",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2443,7 +2429,7 @@
     "name": "MCP Bridge",
     "description": "A middleware to provide an openAI compatible endpoint that can call MCP tools",
     "github_url": "https://github.com/SecretiveShell/MCP-Bridge",
-    "stars": 921,
+    "stars": 929,
     "topics": [
       "ai",
       "claude",
@@ -2458,7 +2444,7 @@
     "tool_name": "MCP-Bridge",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2466,11 +2452,10 @@
     "name": "MCPJungle",
     "description": "Self-hosted MCP Gateway for AI agents",
     "github_url": "https://github.com/mcpjungle/MCPJungle",
-    "stars": 914,
+    "stars": 1090,
     "topics": [
       "ai-agents",
       "infrastructure",
-      "llmops",
       "mcp",
       "mcp-gateway",
       "mcp-registry",
@@ -2482,7 +2467,7 @@
     "tool_name": "MCPJungle",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2490,7 +2475,7 @@
     "name": "Memory Bank Mcp",
     "description": "A Model Context Protocol (MCP) server implementation for remote memory bank management, inspired by Cline Memory Bank.",
     "github_url": "https://github.com/alioshr/memory-bank-mcp",
-    "stars": 880,
+    "stars": 912,
     "topics": [
       "antrophic",
       "claude",
@@ -2506,7 +2491,7 @@
     "tool_name": "Remote",
     "category": "HR & Recruitment",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2514,7 +2499,7 @@
     "name": "MassGen",
     "description": "🚀 MassGen is an open-source multi-agent scaling system that runs in your terminal, autonomously orchestrating frontier models and agents to collaborate, reason, and produce high-quality results. | Join us on Discord: discord.massgen.ai",
     "github_url": "https://github.com/massgen/MassGen",
-    "stars": 846,
+    "stars": 1061,
     "topics": [
       "agent",
       "agentic-ai",
@@ -2537,7 +2522,7 @@
     "tool_name": "Front",
     "category": "Productivity",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2545,7 +2530,7 @@
     "name": "Scira Mcp Chat",
     "description": "A minimalistic MCP client with a good feature set.",
     "github_url": "https://github.com/zaidmukaddam/scira-mcp-chat",
-    "stars": 833,
+    "stars": 830,
     "topics": [
       "anthropic",
       "grok3",
@@ -2559,7 +2544,7 @@
     "tool_name": "scira-mcp-chat",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2567,29 +2552,31 @@
     "name": "Arcade Mcp",
     "description": "The best way to create, deploy, and share MCP Servers",
     "github_url": "https://github.com/ArcadeAI/arcade-mcp",
-    "stars": 829,
+    "stars": 919,
     "topics": [
       "ai",
-      "ai-gateway",
       "arcade",
       "arcade-ai",
-      "llm-tool-call",
-      "llm-tools",
+      "claude",
+      "claude-code",
+      "claude-mcp",
       "mcp",
-      "mcp-client",
+      "mcp-framework",
       "mcp-gateway",
       "mcp-runtime",
+      "mcp-server",
       "mcp-servers",
       "mcp-tools",
+      "mcpserver",
       "model-context-protocol",
       "model-context-protocol-sdk",
-      "toolcalling"
+      "python"
     ],
     "tool_slug": null,
     "tool_name": "arcade-mcp",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2597,7 +2584,7 @@
     "name": "Supabase Mcp Server",
     "description": "Query MCP enables end-to-end management of Supabase via chat interface: read & write query executions, management API support, automatic migration versioning, access to logs and much more.",
     "github_url": "https://github.com/alexander-zuev/supabase-mcp-server",
-    "stars": 815,
+    "stars": 828,
     "topics": [
       "cursor",
       "model-context-protocol",
@@ -2608,7 +2595,7 @@
     "tool_name": "Supabase",
     "category": "Agentic & Automation",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2616,7 +2603,7 @@
     "name": "Awesome Openclaw",
     "description": "A curated list of OpenClaw resources, tools, skills, tutorials & articles. OpenClaw (formerly Moltbot / Clawdbot) — open-source self-hosted AI agent for WhatsApp, Telegram, Discord & 50+ integrations.",
     "github_url": "https://github.com/SamurAIGPT/awesome-openclaw",
-    "stars": 810,
+    "stars": 958,
     "topics": [
       "agentic-ai",
       "ai-agent",
@@ -2643,7 +2630,7 @@
     "tool_name": "awesome-openclaw",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2651,7 +2638,7 @@
     "name": "Context Space",
     "description": "Ultimate Context Engineering Infrastructure, starting from MCPs and Integrations",
     "github_url": "https://github.com/context-space/context-space",
-    "stars": 806,
+    "stars": 810,
     "topics": [
       "agent",
       "agents",
@@ -2671,7 +2658,7 @@
     "tool_name": "context-space",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2679,7 +2666,7 @@
     "name": "Vllora",
     "description": "Debug your AI agents",
     "github_url": "https://github.com/vllora/vllora",
-    "stars": 787,
+    "stars": 802,
     "topics": [
       "agents",
       "ai-agents",
@@ -2704,7 +2691,7 @@
     "tool_name": "vllora",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2712,15 +2699,16 @@
     "name": "Codebase Memory Mcp",
     "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 64 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
     "github_url": "https://github.com/DeusData/codebase-memory-mcp",
-    "stars": 780,
+    "stars": 3321,
     "topics": [
       "aider",
-      "c",
+      "ast",
       "claude-code",
       "code-analysis",
       "code-intelligence",
       "codex",
       "cursor",
+      "cypher",
       "developer-tools",
       "gemini-cli",
       "graph-visualization",
@@ -2730,7 +2718,6 @@
       "mcp-server",
       "model-context-protocol",
       "opencode",
-      "performance",
       "sqlite",
       "tree-sitter",
       "windsurf"
@@ -2739,7 +2726,7 @@
     "tool_name": "codebase-memory-mcp",
     "category": "Dev Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2747,7 +2734,7 @@
     "name": "Drift",
     "description": "Codebase intelligence for AI. Detects patterns & conventions + remembers decisions across sessions. MCP server for any IDE. Offline CLI.",
     "github_url": "https://github.com/dadbodgeoff/drift",
-    "stars": 762,
+    "stars": 781,
     "topics": [
       "ai-tools",
       "cli",
@@ -2767,15 +2754,15 @@
     "tool_name": "Cision",
     "category": "Marketing",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
     "id": "bgauryy-octocode-mcp",
     "name": "Octocode Mcp",
     "description": "MCP server for semantic code research and context generation on real-time using LLM patterns | Search naturally across public & private repos based on your permissions | Transform any accessible codebase/s into AI-optimized knowledge on simple and complex flows | Find real implementations and live docs from anywhere",
-    "github_url": "https://github.com/bgauryy/octocode-mcp",
-    "stars": 756,
+    "github_url": "https://github.com/bgauryy/octocode",
+    "stars": 863,
     "topics": [
       "agent",
       "ai",
@@ -2802,7 +2789,7 @@
     "tool_name": "octocode-mcp",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2810,7 +2797,7 @@
     "name": "Mcp Client Cli",
     "description": "A simple CLI to run LLM prompt and implement MCP client.",
     "github_url": "https://github.com/adhikasp/mcp-client-cli",
-    "stars": 672,
+    "stars": 675,
     "topics": [
       "langchain",
       "llm",
@@ -2821,7 +2808,7 @@
     "tool_name": "mcp-client-cli",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2829,7 +2816,7 @@
     "name": "Stealth Browser Mcp",
     "description": "The only browser automation that bypasses anti-bot systems. AI writes network hooks, clones UIs pixel-perfect via simple chat.",
     "github_url": "https://github.com/vibheksoni/stealth-browser-mcp",
-    "stars": 411,
+    "stars": 685,
     "topics": [
       "ai-agent-tools",
       "ai-tools",
@@ -2856,7 +2843,7 @@
     "tool_name": "Rows",
     "category": "Data & Analytics",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2864,7 +2851,7 @@
     "name": "Skyll",
     "description": "A tool for AI agents to discover and learn skills autonomously",
     "github_url": "https://github.com/assafelovic/skyll",
-    "stars": 219,
+    "stars": 233,
     "topics": [
       "claude-skill",
       "mcp",
@@ -2874,42 +2861,7 @@
     "tool_name": "skyll",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
-    "is_official": false
-  },
-  {
-    "id": "crestdrasnip-claude-zeroclaw",
-    "name": "Claude Zeroclaw",
-    "description": "Claude-Zeroclaw — claude zeroclaw keyword code research. Open-source tool for automation and enhancement.",
-    "github_url": "https://github.com/Crestdrasnip/Claude-Zeroclaw",
-    "stars": 140,
-    "topics": [
-      "awesome-claude-code",
-      "claude",
-      "claude-4-5-sonnet",
-      "claude-code",
-      "claude-code-claw",
-      "claude-code-cli",
-      "claude-code-proxy",
-      "claude-code-router",
-      "claude-code-sdk",
-      "claude-code-zeroclaw",
-      "claude-context",
-      "claude-desktop",
-      "claude-integration",
-      "claude-mcp",
-      "claude-sdk",
-      "claude-skill",
-      "claude-subagents",
-      "zeroclaw",
-      "zeroclaw-claude",
-      "zeroclaw-claude-code"
-    ],
-    "tool_slug": "claude",
-    "tool_name": "Claude",
-    "category": "AI Assistants",
-    "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2917,7 +2869,7 @@
     "name": "Xclaude Plugin",
     "description": "iOS development ClaudeCode plugin for mindful token and context usage. Contains modular MCPs that group various Xcode/IDB tools based on your current workflow.",
     "github_url": "https://github.com/conorluddy/xclaude-plugin",
-    "stars": 113,
+    "stars": 170,
     "topics": [
       "agentic",
       "agentic-workflow",
@@ -2943,7 +2895,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2951,7 +2903,7 @@
     "name": "Claude Android Skill",
     "description": "Claude Code skill for building modern Android apps following best practices.",
     "github_url": "https://github.com/dpconde/claude-android-skill",
-    "stars": 103,
+    "stars": 242,
     "topics": [
       "android",
       "claude-code",
@@ -2963,7 +2915,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2971,7 +2923,7 @@
     "name": "Mcp Python Interpreter",
     "description": "MCP Python Interpreter: run python code. Python-mcp-server, mcp-python-server, Code Executor",
     "github_url": "https://github.com/yzfly/mcp-python-interpreter",
-    "stars": 94,
+    "stars": 101,
     "topics": [
       "claude",
       "claude-mcp",
@@ -2988,7 +2940,7 @@
     "tool_name": "mcp-python-interpreter",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2996,7 +2948,7 @@
     "name": "Mcp Excel Server",
     "description": "The Excel MCP Server is a powerful tool that enables natural language interaction with Excel files through the Model Context Protocol (MCP). It provides a comprehensive set of capabilities for reading, analyzing, visualizing, and writing Excel data.",
     "github_url": "https://github.com/yzfly/mcp-excel-server",
-    "stars": 85,
+    "stars": 91,
     "topics": [
       "claude",
       "claude-mcp",
@@ -3009,7 +2961,7 @@
     "tool_name": "mcp-excel-server",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3017,7 +2969,7 @@
     "name": "Xc Mcp",
     "description": "XCode CLI MCP: Convenience wrapper for Xcode CLI tools & iOS Simulator. Progressive disclosure of tool responses to reduce context usage.  Use --mini param for build-only with tiny context footprint.",
     "github_url": "https://github.com/conorluddy/xc-mcp",
-    "stars": 70,
+    "stars": 86,
     "topics": [
       "claude-code",
       "claude-mcp",
@@ -3040,7 +2992,7 @@
     "tool_name": "xc-mcp",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3048,7 +3000,7 @@
     "name": "RivalSearchMCP",
     "description": "Deep Research & Competitor Analysis MCP for Claude & Cursor. No API Keys. Features: Web Search, Social Media (Reddit/HN), Trends & OCR.",
     "github_url": "https://github.com/damionrashford/RivalSearchMCP",
-    "stars": 56,
+    "stars": 101,
     "topics": [
       "agent-skills",
       "ai-agent",
@@ -3058,24 +3010,24 @@
       "claude-mcp",
       "competitor-analysis",
       "cursor-mcp",
+      "deterministic-tools",
+      "entity-research",
       "fastmcp",
       "market-intelligence",
       "mcp",
       "mcp-server",
-      "model",
       "modelcontextprotocol",
-      "ocr",
       "osint",
       "research-tools",
       "search-engine",
-      "trends-analysis",
+      "structured-output",
       "web-research"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3083,7 +3035,7 @@
     "name": "Mcp Zen",
     "description": "Enhanced Zen MCP Server with 'zen' default tool and improvements",
     "github_url": "https://github.com/199-mcp/mcp-zen",
-    "stars": 49,
+    "stars": 52,
     "topics": [
       "ai-tools",
       "claude-mcp",
@@ -3094,36 +3046,7 @@
     "tool_name": "mcp-zen",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
-    "is_official": false
-  },
-  {
-    "id": "moresl-cchub",
-    "name": "Cchub",
-    "description": "CCHub - Claude Code 生态管理平台 | Claude Code Ecosystem Management Platform (MCP, Skills, Hooks, Config)",
-    "github_url": "https://github.com/Moresl/cchub",
-    "stars": 35,
-    "topics": [
-      "ai-tools",
-      "anthropic",
-      "claude",
-      "claude-code",
-      "claude-mcp",
-      "config-manager",
-      "desktop-app",
-      "developer-tools",
-      "mcp",
-      "mcp-server",
-      "react",
-      "rust",
-      "tauri",
-      "typescript"
-    ],
-    "tool_slug": "claude",
-    "tool_name": "Claude",
-    "category": "AI Assistants",
-    "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3158,7 +3081,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3166,7 +3089,7 @@
     "name": "Datawrapper Mcp",
     "description": "A Model Context Protocol (MCP) server for creating Datawrapper charts using AI assistants.",
     "github_url": "https://github.com/palewire/datawrapper-mcp",
-    "stars": 27,
+    "stars": 40,
     "topics": [
       "ai",
       "automation",
@@ -3180,17 +3103,20 @@
       "graphics",
       "journalism",
       "mcp",
+      "mcp-apps",
       "mcp-server",
+      "mcp-servers",
       "model-context-protocol",
       "modelcontextprotocol",
       "news",
+      "prefab-ui",
       "python"
     ],
     "tool_slug": "datawrapper",
     "tool_name": "Datawrapper",
     "category": "Data & Analytics",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3209,7 +3135,7 @@
     "tool_name": "Daily",
     "category": "Agentic & Automation",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3233,7 +3159,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3241,7 +3167,7 @@
     "name": "Secure Mcp Gateway",
     "description": "Build secure mcp infrastructure to audit and control every data access by AI agents with minimal effort",
     "github_url": "https://github.com/datacline/secure-mcp-gateway",
-    "stars": 23,
+    "stars": 32,
     "topics": [
       "ai-gateway",
       "ai-governance",
@@ -3249,21 +3175,24 @@
       "ai-security-tool",
       "audit-logging",
       "claude-mcp",
+      "claude-skills",
+      "enterprise-mcp-gateway",
       "gdpr",
       "llm-security",
       "mcp-gateway",
       "mcp-groups",
+      "mcp-infra",
       "mcp-servers",
       "mcp-tools",
       "secure-ai",
       "secure-mcp-gateway",
-      "shadow-ai"
+      "stable-mcp"
     ],
     "tool_slug": null,
     "tool_name": "secure-mcp-gateway",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3271,7 +3200,7 @@
     "name": "Json Mcp Filter",
     "description": "JSON MCP server to filter only relevant data for your LLM",
     "github_url": "https://github.com/kehvinbehvin/json-mcp-filter",
-    "stars": 22,
+    "stars": 24,
     "topics": [
       "claude-mcp",
       "data",
@@ -3295,7 +3224,7 @@
     "tool_name": "json-mcp-filter",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3303,7 +3232,7 @@
     "name": "Multi_mcp",
     "description": "Multi-Model chat, code review and analysis MCP Server for Claude Code",
     "github_url": "https://github.com/religa/multi_mcp",
-    "stars": 19,
+    "stars": 30,
     "topics": [
       "agents",
       "ai",
@@ -3330,7 +3259,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3338,7 +3267,7 @@
     "name": "Claude Skills Vault (georgekhananaev)",
     "description": "A curated collection of high impact skills for Claude Code designed to supercharge the senior full stack workflow. This vault automates the repetitive parts of development like architectural reviews, TDD cycles, and PR management so you can stay in flow. It is a force multiplier for shipping clean, production ready code at scale. 🚀⚡️",
     "github_url": "https://github.com/georgekhananaev/claude-skills-vault",
-    "stars": 14,
+    "stars": 25,
     "topics": [
       "claude",
       "claude-code",
@@ -3356,7 +3285,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3364,7 +3293,7 @@
     "name": "Houtini Lm",
     "description": "MCP server that saves Claude Code tokens by delegating bounded tasks to local or cloud LLMs. 93% token savings benchmarked. Works with LM Studio, Ollama, vLLM, DeepSeek, Groq, Cerebras.",
     "github_url": "https://github.com/houtini-ai/houtini-lm",
-    "stars": 14,
+    "stars": 91,
     "topics": [
       "ai-agents",
       "claude",
@@ -3388,7 +3317,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3396,7 +3325,7 @@
     "name": "Claude For Safari",
     "description": "Give your AI Agent the power to control Safari on macOS. No extensions, no separate browser.",
     "github_url": "https://github.com/SDLLL/claude-for-safari",
-    "stars": 13,
+    "stars": 35,
     "topics": [
       "ai-agent",
       "applescript",
@@ -3415,7 +3344,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3423,28 +3352,20 @@
     "name": "Claude Email",
     "description": "AI-powered email management and marketing skill for Claude Code. Inbox triage, composition, quality review, deliverability audit, automation sequences, and marketing strategy.",
     "github_url": "https://github.com/AgriciDaniel/claude-email",
-    "stars": 11,
+    "stars": 73,
     "topics": [
-      "agent-skills",
-      "ai-agent",
+      "ai",
+      "ai-marketing",
       "claude-code",
       "claude-code-skill",
-      "claude-skill",
-      "copywriting",
-      "email-automation",
-      "email-deliverability",
-      "email-marketing",
-      "gmail",
-      "inbox-management",
-      "mcp",
-      "outlook",
-      "spf-dkim-dmarc"
+      "marketing-automation",
+      "open-source"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3452,7 +3373,7 @@
     "name": "Awesome Mcp",
     "description": "🚀 Discover and explore a curated list of MCP servers, tools, and resources for AI assistants, enhancing your development and productivity.",
     "github_url": "https://github.com/timunbasah3/awesome-mcp",
-    "stars": 10,
+    "stars": 11,
     "topics": [
       "anthropic-claude",
       "awesome-mcp-servers",
@@ -3477,7 +3398,7 @@
     "tool_name": "awesome-mcp",
     "category": "Dev Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3485,7 +3406,7 @@
     "name": "Paper_reader",
     "description": "An MCP server that empowers AI assistants (Cursor, Claude, Cherry Studio) to search, read, and summarize arXiv papers directly.",
     "github_url": "https://github.com/itshen/paper_reader",
-    "stars": 8,
+    "stars": 9,
     "topics": [
       "ai-assistant",
       "arxiv",
@@ -3503,7 +3424,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3529,7 +3450,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3537,7 +3458,7 @@
     "name": "Mcp Elevenlabs",
     "description": "Fork of ElevenLabs MCP server with enhanced conversational AI features",
     "github_url": "https://github.com/199-mcp/mcp-elevenlabs",
-    "stars": 7,
+    "stars": 8,
     "topics": [
       "ai-tools",
       "claude-mcp",
@@ -3548,7 +3469,7 @@
     "tool_name": "ElevenLabs",
     "category": "Audio & Music",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3573,7 +3494,7 @@
     "tool_name": "webssh-mcpb-dxt-extension",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3581,7 +3502,7 @@
     "name": "Domain Mcp",
     "description": "Domain MCP server for AI-powered Dynadot management. Use Claude, Cursor, or any MCP client to manage domains through natural language. 106 API commands for domains, DNS, transfers, contacts, and more.",
     "github_url": "https://github.com/joachimBrindeau/domain-mcp",
-    "stars": 6,
+    "stars": 9,
     "topics": [
       "ai-domain-management",
       "claude-assistant",
@@ -3603,7 +3524,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3622,7 +3543,7 @@
     "tool_name": "mcp-phenoage-clock",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3630,7 +3551,7 @@
     "name": "Data4library Mcp",
     "description": "MCP server for Korean National Library API with 25+ tools for book/library search, popular trends, and   GPS-based nearby library discovery",
     "github_url": "https://github.com/isnow890/data4library-mcp",
-    "stars": 5,
+    "stars": 6,
     "topics": [
       "book-search",
       "claude-mcp",
@@ -3645,7 +3566,7 @@
     "tool_name": "data4library-mcp",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3653,7 +3574,7 @@
     "name": "Next Payload Ai Fluent Starter",
     "description": "AI-fluent full-stack starter with Next.js, Payload CMS, and TypeScript. Built for developers using Claude, Cursor, and AI coding tools. Features smart scaffolding, test-driven patterns, and MCP integration.",
     "github_url": "https://github.com/joshuamartyn/next-payload-ai-fluent-starter",
-    "stars": 5,
+    "stars": 6,
     "topics": [
       "ai-agents",
       "ai-development",
@@ -3670,7 +3591,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3678,7 +3599,7 @@
     "name": "Claude Code Google Workspace",
     "description": "Multi-account Google Workspace (Gmail, Drive, Calendar, Sheets, Docs) + Slack MCP servers for Claude Code. Setup guide with CLAUDE.md for AI-guided installation.",
     "github_url": "https://github.com/evolsb/claude-code-google-workspace",
-    "stars": 4,
+    "stars": 24,
     "topics": [
       "agent-tools",
       "ai-tools",
@@ -3703,7 +3624,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3711,7 +3632,7 @@
     "name": "Claude Mcp Server Gateway",
     "description": "MCP server gateway for Claude Code, Claude Desktop, and Cline. Loads only specific tools from your MCPs as you need them and saves thousands of tokens. Works with any Model Context Protocol server.",
     "github_url": "https://github.com/bzsasson/claude-mcp-server-gateway",
-    "stars": 3,
+    "stars": 6,
     "topics": [
       "claude-code-mcp",
       "claude-desktop",
@@ -3728,7 +3649,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3736,7 +3657,7 @@
     "name": "Mcp Obsidian Tools",
     "description": "A Model Context Protocol (MCP) server that allows MCP clients (Cursor, VSCode, Claude Desktop, etc.) to read and search any directory containing Markdown notes, such as an Obsidian vault.  This server exposes a rich, read-only toolkit of obsidian_-prefixed MCP tools for working with vault metadata (tags, links, frontmatter), filenames, and more",
     "github_url": "https://github.com/dp-veritas/mcp-obsidian-tools",
-    "stars": 3,
+    "stars": 4,
     "topics": [
       "claude-mcp",
       "cursor-mcp",
@@ -3750,7 +3671,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3758,7 +3679,7 @@
     "name": "Mcp Occams Razor",
     "description": "",
     "github_url": "https://github.com/199-mcp/mcp-occams-razor",
-    "stars": 2,
+    "stars": 3,
     "topics": [
       "ai-tools",
       "claude-mcp",
@@ -3769,7 +3690,7 @@
     "tool_name": "mcp-occams-razor",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3788,7 +3709,7 @@
     "tool_name": "mcp-better-thinking",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3796,7 +3717,7 @@
     "name": "Encode Toolkit",
     "description": "MCP server and Claude Plugin for a full ENCODE Project genomic data and analysis toolkit — search, download, track, and analyze functional genomics experiments",
     "github_url": "https://github.com/ammawla/encode-toolkit",
-    "stars": 2,
+    "stars": 35,
     "topics": [
       "ai",
       "ai-agents",
@@ -3818,7 +3739,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3826,7 +3747,7 @@
     "name": "Ask Llm",
     "description": "MCP server for AI-to-AI collaboration — bridge Claude with Gemini, Codex, and other LLMs for code review, second opinions, and plan debate",
     "github_url": "https://github.com/Lykhoyda/ask-llm",
-    "stars": 2,
+    "stars": 10,
     "topics": [
       "ai",
       "claude",
@@ -3841,7 +3762,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3849,7 +3770,7 @@
     "name": "Claude Vault",
     "description": "🧠 Enhance your Obsidian experience with Claude Vault, an AI-assisted knowledge base that syncs notes and tasks across all devices effortlessly.",
     "github_url": "https://github.com/akashbytecode/claude-vault",
-    "stars": 2,
+    "stars": 4,
     "topics": [
       "ai",
       "ai-native",
@@ -3876,7 +3797,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3884,7 +3805,7 @@
     "name": "MySQL MCP Server (mukul975)",
     "description": "A comprehensive Model Context Protocol (MCP) server for MySQL databases with 200+ tools for advanced database management, diagnostics, performance analysis, security auditing, and AI-powered database interactions.",
     "github_url": "https://github.com/mukul975/mysql-mcp-server",
-    "stars": 2,
+    "stars": 6,
     "topics": [
       "ai",
       "ai-tools",
@@ -3909,7 +3830,7 @@
     "tool_name": "mysql-mcp-server",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3917,7 +3838,7 @@
     "name": "Claude Code Tips",
     "description": "Provide ready-to-use plugins, hooks, and commands to enhance Claude Code sessions with data mining, automation, and integration tools.",
     "github_url": "https://github.com/habibbedawi/claude-code-tips",
-    "stars": 1,
+    "stars": 3,
     "topics": [
       "agentic",
       "agentic-workflow",
@@ -3942,7 +3863,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3962,7 +3883,7 @@
     "tool_name": "mochify-cli",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -3981,7 +3902,7 @@
     "tool_name": "mcp-wait-timer",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -4005,7 +3926,7 @@
     "tool_name": "Rows",
     "category": "Data & Analytics",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -4013,7 +3934,7 @@
     "name": "Claude Skills Vault (hackermanishackerman)",
     "description": "🛠️ Curate and enhance your coding skills with Claude Skills Vault, a collection of commands and MCP server guides for efficient development.",
     "github_url": "https://github.com/hackermanishackerman/claude-skills-vault",
-    "stars": 1,
+    "stars": 2,
     "topics": [
       "ai",
       "automation",
@@ -4038,7 +3959,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -4064,7 +3985,7 @@
     "tool_name": "Remote",
     "category": "HR & Recruitment",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -4072,7 +3993,7 @@
     "name": "Code Executor MCP",
     "description": "🚀 Execute code efficiently with Code Executor MCP, reducing token usage by 98% and offering secure, seamless access to multiple tools in one framework.",
     "github_url": "https://github.com/Muhumuree/code-executor-MCP",
-    "stars": 1,
+    "stars": 2,
     "topics": [
       "claude",
       "claude-mcp",
@@ -4089,7 +4010,7 @@
     "tool_name": "code-executor-MCP",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -4122,7 +4043,7 @@
     "tool_name": "MCP-Server",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -4142,7 +4063,7 @@
     "tool_name": "Later",
     "category": "Social Media",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -4169,7 +4090,7 @@
     "tool_name": "zen-mcp-server",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -4191,7 +4112,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -4199,7 +4120,7 @@
     "name": "Behavioral Prediction Mcp",
     "description": "AI-powered tools to analyze wallet behaviour prediction,fraud detection and rug pull prediction.",
     "github_url": "https://github.com/ChainAware/behavioral-prediction-mcp",
-    "stars": 1,
+    "stars": 8,
     "topics": [
       "awesome-mcp-servers",
       "blockchain",
@@ -4213,7 +4134,7 @@
     "tool_name": "behavioral-prediction-mcp",
     "category": "Developer Tools",
     "skill_type": "mcp-server",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   }
 ]
