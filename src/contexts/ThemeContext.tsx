@@ -15,19 +15,23 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 const STORAGE_KEY = "aifoxx-theme";
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window !== "undefined") {
-      const storedTheme = localStorage.getItem(STORAGE_KEY) as Theme | "sepia" | null;
-      if (storedTheme === "sepia") {
-        return "notebook";
-      }
-      if (storedTheme && THEMES.includes(storedTheme as Theme)) {
-        return storedTheme as Theme;
-      }
-    }
+  // Starts on the same theme the prerendered HTML was built with; the saved
+  // theme is applied after mount so the first client render always matches
+  // the server markup.
+  const [theme, setTheme] = useState<Theme>("dark");
 
-    return "dark";
-  });
+  useEffect(() => {
+    const storedTheme = localStorage.getItem(STORAGE_KEY) as Theme | "sepia" | null;
+    if (storedTheme === "sepia") {
+      // Reading the saved theme during render would make the first client
+      // render differ from the prerendered HTML, so it must happen here even
+      // though it costs one extra render on mount.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setTheme("notebook");
+    } else if (storedTheme && THEMES.includes(storedTheme as Theme)) {
+      setTheme(storedTheme as Theme);
+    }
+  }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
