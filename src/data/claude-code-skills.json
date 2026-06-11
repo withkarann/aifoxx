@@ -4,7 +4,7 @@
     "name": "Ui Ux Pro Max Skill",
     "description": "An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms",
     "github_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
-    "stars": 46803,
+    "stars": 90452,
     "topics": [
       "ai-skills",
       "antigravity",
@@ -30,7 +30,7 @@
     "tool_name": "ui-ux-pro-max-skill",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -38,16 +38,15 @@
     "name": "Oh My Openagent",
     "description": "omo; the best agent harness - previously oh-my-opencode",
     "github_url": "https://github.com/code-yeongyu/oh-my-openagent",
-    "stars": 41913,
+    "stars": 61927,
     "topics": [
       "ai",
       "ai-agents",
-      "amp",
       "anthropic",
       "chatgpt",
       "claude",
-      "claude-code",
       "claude-skills",
+      "codex",
       "cursor",
       "gemini",
       "ide",
@@ -61,7 +60,7 @@
     "tool_name": "oh-my-openagent",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -69,25 +68,24 @@
     "name": "Cherry Studio",
     "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
     "github_url": "https://github.com/CherryHQ/cherry-studio",
-    "stars": 41905,
+    "stars": 47221,
     "topics": [
+      "agent-skills",
       "ai-agent",
+      "awesome-skills",
       "claude-code",
-      "code-agent",
       "codex",
+      "deepseek",
+      "hermes-agent",
       "openclaw",
-      "opencode",
-      "shannon",
       "skills",
-      "superpowers",
-      "superpowers-core-skills",
       "vibe-coding"
     ],
     "tool_slug": "udio",
     "tool_name": "Udio",
     "category": "Audio & Music",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -95,7 +93,7 @@
     "name": "Claude Mem",
     "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions.",
     "github_url": "https://github.com/thedotmack/claude-mem",
-    "stars": 38753,
+    "stars": 81825,
     "topics": [
       "ai",
       "ai-agents",
@@ -122,7 +120,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -130,7 +128,7 @@
     "name": "Get Shit Done",
     "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
     "github_url": "https://github.com/gsd-build/get-shit-done",
-    "stars": 37155,
+    "stars": 64143,
     "topics": [
       "claude-code",
       "context-engineering",
@@ -141,7 +139,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -149,7 +147,7 @@
     "name": "Learn Claude Code",
     "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
     "github_url": "https://github.com/shareAI-lab/learn-claude-code",
-    "stars": 34658,
+    "stars": 66101,
     "topics": [
       "agent",
       "agent-development",
@@ -166,7 +164,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -174,34 +172,34 @@
     "name": "Agents",
     "description": "Intelligent automation and multi-agent orchestration for Claude Code",
     "github_url": "https://github.com/wshobson/agents",
-    "stars": 31840,
+    "stars": 36638,
     "topics": [
+      "agent-skills",
+      "agentic-ai",
       "agents",
+      "ai-agents",
       "anthropic",
-      "anthropic-claude",
       "automation",
-      "claude",
       "claude-code",
-      "claude-code-cli",
-      "claude-code-commands",
-      "claude-code-plugin",
       "claude-code-plugins",
-      "claude-code-skills",
-      "claude-code-subagents",
-      "claude-skills",
-      "claudecode",
-      "claudecode-config",
-      "claudecode-subagents",
+      "codex-cli",
+      "copilot",
+      "cursor",
+      "cursor-rules",
+      "developer-tools",
+      "gemini-cli",
+      "mcp",
+      "multi-agent",
+      "opencode",
       "orchestration",
-      "sub-agents",
-      "subagents",
+      "prompt-engineering",
       "workflows"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -209,7 +207,7 @@
     "name": "Awesome Claude Code",
     "description": "A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications, and plugins for Claude Code by Anthropic",
     "github_url": "https://github.com/hesreallyhim/awesome-claude-code",
-    "stars": 29421,
+    "stars": 46211,
     "topics": [
       "agent-skills",
       "agentic-code",
@@ -219,6 +217,7 @@
       "anthropic",
       "anthropic-claude",
       "awesome",
+      "awesome-claude-code",
       "awesome-list",
       "awesome-lists",
       "awesome-resources",
@@ -234,15 +233,15 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
     "id": "qwibitai-nanoclaw",
     "name": "Nanoclaw",
     "description": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
-    "github_url": "https://github.com/qwibitai/nanoclaw",
-    "stars": 24583,
+    "github_url": "https://github.com/nanocoai/nanoclaw",
+    "stars": 29811,
     "topics": [
       "ai-agents",
       "ai-assistant",
@@ -254,7 +253,7 @@
     "tool_name": "nanoclaw",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -262,7 +261,7 @@
     "name": "Claude Code Templates",
     "description": "CLI tool for configuring and monitoring Claude Code",
     "github_url": "https://github.com/davila7/claude-code-templates",
-    "stars": 23279,
+    "stars": 27963,
     "topics": [
       "anthropic",
       "anthropic-claude",
@@ -273,7 +272,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -281,7 +280,7 @@
     "name": "Opcode",
     "description": "A powerful GUI app and Toolkit for Claude Code - Create custom agents, manage interactive Claude Code sessions, run secure background agents, and more.",
     "github_url": "https://github.com/winfunc/opcode",
-    "stars": 21029,
+    "stars": 22045,
     "topics": [
       "anthropic",
       "anthropic-claude",
@@ -303,7 +302,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -311,20 +310,21 @@
     "name": "AionUi",
     "description": "Free, local, open-source 24/7 Cowork app and OpenClaw for Gemini CLI, Claude Code, Codex, OpenCode, Qwen Code, Goose CLI, Auggie, and more | 🌟 Star if you like it!",
     "github_url": "https://github.com/iOfficeAI/AionUi",
-    "stars": 19503,
+    "stars": 28072,
     "topics": [
       "acp",
+      "agent-team",
       "ai",
       "ai-agent",
       "chat",
       "chatbot",
       "claude-code",
-      "clawd",
       "clawdbot",
       "codex",
       "cowork",
       "gemini",
       "gemini-cli",
+      "hermes",
       "llm",
       "nano-banana",
       "office",
@@ -337,7 +337,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -345,27 +345,42 @@
     "name": "Claude Code Best Practice",
     "description": "practice made claude perfect",
     "github_url": "https://github.com/shanraisshan/claude-code-best-practice",
-    "stars": 19416,
+    "stars": 57450,
     "topics": [
+      "agentic-ai",
+      "agentic-coding",
       "agentic-engineering",
+      "agentic-workflow",
+      "ai",
+      "ai-agents",
+      "anthropic",
       "best-practices",
+      "boris",
+      "claude",
       "claude-ai",
       "claude-code",
+      "claude-code-agents",
+      "claude-code-best-practices",
+      "claude-code-commands",
+      "claude-code-skills",
+      "context-engineering",
+      "pakistan",
+      "pakistani-developer",
       "vibe-coding"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
     "id": "steveyegge-beads",
     "name": "Beads",
     "description": "Beads - A memory upgrade for your coding agent",
-    "github_url": "https://github.com/steveyegge/beads",
-    "stars": 19408,
+    "github_url": "https://github.com/gastownhall/beads",
+    "stars": 24471,
     "topics": [
       "agents",
       "claude-code",
@@ -375,7 +390,7 @@
     "tool_name": "beads",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -383,21 +398,20 @@
     "name": "CLIProxyAPI",
     "description": "Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API",
     "github_url": "https://github.com/router-for-me/CLIProxyAPI",
-    "stars": 18671,
+    "stars": 37228,
     "topics": [
       "antigravity",
       "claude-code",
       "cluade",
       "codex",
       "gemini",
-      "openai",
-      "qwen3-coder"
+      "openai"
     ],
     "tool_slug": "chatgpt",
     "tool_name": "ChatGPT",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -405,34 +419,33 @@
     "name": "Planning With Files",
     "description": "Claude Code skill implementing Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition.",
     "github_url": "https://github.com/OthmanAdi/planning-with-files",
-    "stars": 16651,
+    "stars": 23048,
     "topics": [
-      "adal",
-      "agent",
       "agent-skills",
-      "agents",
-      "antigravity",
+      "agentic-workflows",
+      "ai-agents",
+      "autonomous-agents",
       "claude",
       "claude-code",
       "claude-skills",
-      "clawd",
-      "clawdbot",
-      "clawdbot-skill",
-      "clawdhub",
-      "codebuddy",
+      "codex",
+      "copilot",
+      "copilot-skills",
       "cursor",
-      "factory-ai",
-      "kilocode",
+      "hermes",
+      "hermes-agent",
+      "hermes-skill",
       "manus",
-      "manus-ai",
-      "moltbot",
-      "moltbot-skills"
+      "multi-agent-systems",
+      "pi",
+      "pi-agent",
+      "planning"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -440,7 +453,7 @@
     "name": "Happy",
     "description": "Mobile and Web client for Codex and Claude Code, with realtime voice, encryption and fully featured",
     "github_url": "https://github.com/slopus/happy",
-    "stars": 15829,
+    "stars": 21792,
     "topics": [
       "claude-code",
       "claude-desktop",
@@ -453,7 +466,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -461,7 +474,7 @@
     "name": "Awesome Agent Skills",
     "description": "Claude Code Skills and 500+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others.",
     "github_url": "https://github.com/VoltAgent/awesome-agent-skills",
-    "stars": 12122,
+    "stars": 25033,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -482,7 +495,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -490,7 +503,7 @@
     "name": "Rtk",
     "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
     "github_url": "https://github.com/rtk-ai/rtk",
-    "stars": 11445,
+    "stars": 61484,
     "topics": [
       "agentic-coding",
       "ai-coding",
@@ -510,7 +523,7 @@
     "tool_name": "rtk",
     "category": "Dev Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -518,7 +531,7 @@
     "name": "Oh My Claudecode",
     "description": "Teams-first Multi-agent orchestration for Claude Code",
     "github_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-    "stars": 10692,
+    "stars": 36222,
     "topics": [
       "agentic-coding",
       "ai-agents",
@@ -535,7 +548,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -543,7 +556,7 @@
     "name": "Humanlayer",
     "description": "The best way to get AI coding agents to solve hard problems in complex codebases.",
     "github_url": "https://github.com/humanlayer/humanlayer",
-    "stars": 9943,
+    "stars": 10977,
     "topics": [
       "agents",
       "ai",
@@ -560,7 +573,7 @@
     "tool_name": "humanlayer",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -568,7 +581,7 @@
     "name": "Claude Relay Service",
     "description": "CRS-自建Claude Code镜像，一站式开源中转服务，让 Claude、OpenAI、Gemini、Droid 订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
     "github_url": "https://github.com/Wei-Shaw/claude-relay-service",
-    "stars": 9894,
+    "stars": 12049,
     "topics": [
       "claude",
       "claude-api",
@@ -585,7 +598,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -593,32 +606,28 @@
     "name": "Hive",
     "description": "Outcome driven agent development framework that evolves",
     "github_url": "https://github.com/aden-hive/hive",
-    "stars": 9688,
+    "stars": 10525,
     "topics": [
       "agent",
       "agent-framework",
       "agent-skills",
-      "ai-evaluation",
       "anthropic",
       "automation",
       "autonomous-agents",
-      "awesome",
       "claude",
-      "claude-code",
+      "harness",
+      "harness-engineering",
       "human-in-the-loop",
-      "observability-ai",
       "openai",
       "python",
       "self-hosted",
-      "self-improving",
-      "self-improving-agent",
-      "self-improving-ai"
+      "self-improving"
     ],
     "tool_slug": "hive",
     "tool_name": "Hive",
     "category": "Productivity",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -626,7 +635,7 @@
     "name": "Claude Hud",
     "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
     "github_url": "https://github.com/jarrodwatts/claude-hud",
-    "stars": 9482,
+    "stars": 24996,
     "topics": [
       "anthropic",
       "claude",
@@ -640,7 +649,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -648,7 +657,7 @@
     "name": "Hermes Agent",
     "description": "The agent that grows with you",
     "github_url": "https://github.com/NousResearch/hermes-agent",
-    "stars": 9451,
+    "stars": 190961,
     "topics": [
       "ai",
       "ai-agent",
@@ -671,7 +680,7 @@
     "tool_name": "Rows",
     "category": "Data & Analytics",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -679,7 +688,7 @@
     "name": "Awesome Claude Skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code",
     "github_url": "https://github.com/travisvn/awesome-claude-skills",
-    "stars": 9346,
+    "stars": 13386,
     "topics": [
       "agentic-coding",
       "anthropic",
@@ -697,7 +706,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -705,7 +714,7 @@
     "name": "Rowboat",
     "description": "Open-source AI coworker, with memory",
     "github_url": "https://github.com/rowboatlabs/rowboat",
-    "stars": 9297,
+    "stars": 14948,
     "topics": [
       "agents",
       "agents-sdk",
@@ -727,7 +736,7 @@
     "tool_name": "rowboat",
     "category": "Productivity",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -735,14 +744,12 @@
     "name": "Xonsh",
     "description": "🐚 Python-powered shell. Full-featured, cross-platform and AI-friendly.",
     "github_url": "https://github.com/xonsh/xonsh",
-    "stars": 9255,
+    "stars": 9506,
     "topics": [
-      "alacritty",
       "anthropic",
-      "chatgpt",
       "claude",
       "claude-code",
-      "console",
+      "cmux",
       "data-engineering",
       "data-scientists",
       "devops",
@@ -750,9 +757,11 @@
       "hyper",
       "iterm2",
       "kitty",
+      "nix",
+      "nixos",
+      "python-automation",
       "raspberry-pi",
       "security-automation",
-      "vscode",
       "vscode-extension",
       "wezterm",
       "xonsh"
@@ -761,7 +770,7 @@
     "tool_name": "xonsh",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -769,7 +778,7 @@
     "name": "Cmux",
     "description": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
     "github_url": "https://github.com/manaflow-ai/cmux",
-    "stars": 8938,
+    "stars": 21803,
     "topics": [
       "amp",
       "claude-code",
@@ -784,7 +793,7 @@
     "tool_name": "cmux",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -792,7 +801,7 @@
     "name": "CodexBar",
     "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
     "github_url": "https://github.com/steipete/CodexBar",
-    "stars": 8895,
+    "stars": 14618,
     "topics": [
       "ai",
       "claude-code",
@@ -803,7 +812,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -811,7 +820,7 @@
     "name": "Claudecodeui",
     "description": "Use Claude Code, Cursor CLI or Codex on mobile and web with CloudCLI (aka Claude Code UI). CloudCLI is a free open source webui/GUI that helps you manage your Claude Code session and projects remotely",
     "github_url": "https://github.com/siteboon/claudecodeui",
-    "stars": 8713,
+    "stars": 11810,
     "topics": [
       "anthropic",
       "anthropic-ai",
@@ -830,7 +839,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -838,7 +847,7 @@
     "name": "Ralph Claude Code",
     "description": "Autonomous AI development loop for Claude Code with intelligent exit detection",
     "github_url": "https://github.com/frankbria/ralph-claude-code",
-    "stars": 8043,
+    "stars": 9300,
     "topics": [
       "ai",
       "ai-agent",
@@ -854,7 +863,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -862,7 +871,7 @@
     "name": "Ccpm",
     "description": "Project management skill system for Agents that uses GitHub Issues and Git worktrees for parallel agent execution.",
     "github_url": "https://github.com/automazeio/ccpm",
-    "stars": 7715,
+    "stars": 8185,
     "topics": [
       "ai-agents",
       "ai-coding",
@@ -875,7 +884,7 @@
     "tool_name": "ccpm",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -883,7 +892,7 @@
     "name": "Sub2api",
     "description": "Sub2API-CRS2 一站式开源中转服务，让 Claude、Openai 、Gemini、Antigravity订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
     "github_url": "https://github.com/Wei-Shaw/sub2api",
-    "stars": 7357,
+    "stars": 27200,
     "topics": [
       "2api",
       "antigravity2api",
@@ -899,7 +908,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -907,7 +916,7 @@
     "name": "Claude Skills (Jeffallan)",
     "description": "66 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.",
     "github_url": "https://github.com/Jeffallan/claude-skills",
-    "stars": 7071,
+    "stars": 9828,
     "topics": [
       "ai-agents",
       "claude",
@@ -919,7 +928,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -927,7 +936,7 @@
     "name": "Claude Code Usage Monitor",
     "description": "Real-time Claude Code usage monitor with predictions and warnings",
     "github_url": "https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor",
-    "stars": 7041,
+    "stars": 8187,
     "topics": [
       "ai",
       "analytics",
@@ -943,7 +952,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -951,7 +960,7 @@
     "name": "Claude Squad",
     "description": "Manage multiple AI terminal agents like Claude Code, Codex, OpenCode, and Amp.",
     "github_url": "https://github.com/smtg-ai/claude-squad",
-    "stars": 6452,
+    "stars": 7781,
     "topics": [
       "claude-code",
       "cli",
@@ -963,7 +972,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -971,7 +980,7 @@
     "name": "Claude Code Tips",
     "description": "45 tips for getting the most out of Claude Code, from basics to advanced - includes a custom status line script, cutting the system prompt in half, using Gemini CLI as Claude Code's minion, and Claude Code running itself in a container. Also includes the dx plugin.",
     "github_url": "https://github.com/ykdojo/claude-code-tips",
-    "stars": 6389,
+    "stars": 8687,
     "topics": [
       "agentic",
       "agentic-ai",
@@ -990,7 +999,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -998,7 +1007,7 @@
     "name": "Codecompanion.Nvim",
     "description": "✨ AI Coding, Vim Style",
     "github_url": "https://github.com/olimorris/codecompanion.nvim",
-    "stars": 6323,
+    "stars": 6660,
     "topics": [
       "acp",
       "agent",
@@ -1020,7 +1029,7 @@
     "tool_name": "codecompanion.nvim",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1028,7 +1037,7 @@
     "name": "Claude Code System Prompts",
     "description": "All parts of Claude Code's system prompt, 18 builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact,  statusline, magic docs, WebFetch, Bash cmd, security review, agent creation).  Updated for each Claude Code version.",
     "github_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
-    "stars": 6240,
+    "stars": 10953,
     "topics": [
       "claude-code",
       "claude-code-system-prompts",
@@ -1038,7 +1047,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1046,7 +1055,7 @@
     "name": "ClaudeForge",
     "description": "A CLAUDE.md Generator and Maintenance tool for for Claude Code to create high-quality CLAUDE.md instruction files — aligned with Anthropic’s best practices for Claude Code.",
     "github_url": "https://github.com/alirezarezvani/ClaudeForge",
-    "stars": 320,
+    "stars": 386,
     "topics": [
       "agentic-ai",
       "agentic-workflow",
@@ -1058,7 +1067,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1066,7 +1075,7 @@
     "name": "Claude Code ASO Skill (alirezarezvani)",
     "description": "AEO Automation Framework for Claude Code One-click, beginner friendly automation for GitHub. Includes a dedicated fleet of AEO sub-agents handling planning, execution, reports, actionable items, and executive summaries. Trigger work instantly with AEO slash-commands. Fully integrated as a Claude Code Skill and usable across Claude AI App",
     "github_url": "https://github.com/alirezarezvani/claude-code-aso-skill",
-    "stars": 271,
+    "stars": 367,
     "topics": [
       "aeo",
       "agentic-framework",
@@ -1083,7 +1092,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1091,7 +1100,7 @@
     "name": "Agentic SEO Skill",
     "description": "An LLM-first SEO analysis skill for Antigravity, Codex, Claude with 16 specialized sub-skills, 10 specialist agents, and 33 optional utility scripts used as evidence collectors.",
     "github_url": "https://github.com/Bhanunamikaze/Agentic-SEO-Skill",
-    "stars": 191,
+    "stars": 643,
     "topics": [
       "ai-skill",
       "ai-skills",
@@ -1110,7 +1119,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1118,7 +1127,7 @@
     "name": "Google Ai Mode Skill",
     "description": "Claude Code skill for free Google AI Mode search with citations. Zero-config setup, persistent browser profile, query optimization. Token-efficient web research.",
     "github_url": "https://github.com/PleasePrompto/google-ai-mode-skill",
-    "stars": 121,
+    "stars": 176,
     "topics": [
       "ai-search",
       "browser-automation",
@@ -1134,7 +1143,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1142,7 +1151,7 @@
     "name": "Claude Skills (oaustegard)",
     "description": "My collection of Claude skills",
     "github_url": "https://github.com/oaustegard/claude-skills",
-    "stars": 113,
+    "stars": 125,
     "topics": [
       "claude",
       "claude-skill",
@@ -1152,7 +1161,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1160,7 +1169,7 @@
     "name": "Apple Hig Designer",
     "description": "A Agent Skill for designing professional interfaces following Apple Human Interface Guidelines 一项用于设计苹果前端交互界面的代理技能",
     "github_url": "https://github.com/axiaoge2/Apple-Hig-Designer",
-    "stars": 100,
+    "stars": 122,
     "topics": [
       "claude-skill"
     ],
@@ -1168,7 +1177,7 @@
     "tool_name": "Apple-Hig-Designer",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1176,7 +1185,7 @@
     "name": "Claude Code Settings",
     "description": "Best Practices for Claude Code Configuration",
     "github_url": "https://github.com/nokonoko1203/claude-code-settings",
-    "stars": 90,
+    "stars": 94,
     "topics": [
       "ai",
       "ai-agents",
@@ -1191,7 +1200,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1199,7 +1208,7 @@
     "name": "Wechat Article Publisher Skill",
     "description": "Claude Skill that publish on Wechat articles (微信公众号发布）",
     "github_url": "https://github.com/iamzifei/wechat-article-publisher-skill",
-    "stars": 89,
+    "stars": 142,
     "topics": [
       "ai",
       "claude",
@@ -1210,7 +1219,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1218,7 +1227,7 @@
     "name": "Jetpack Compose Skills",
     "description": "Agent skill for modern Android development with Jetpack Compose — best practices for code generation and review",
     "github_url": "https://github.com/anhvt52/jetpack-compose-skills",
-    "stars": 64,
+    "stars": 89,
     "topics": [
       "agent-skills",
       "ai-coding",
@@ -1233,7 +1242,7 @@
     "tool_name": "jetpack-compose-skills",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1241,7 +1250,7 @@
     "name": "Wechat Article Formatter Skill",
     "description": "Claude Skill that format Wechat articles for 微信公众号 (微信公众号文章排版，支持自定义样式)",
     "github_url": "https://github.com/iamzifei/wechat-article-formatter-skill",
-    "stars": 48,
+    "stars": 66,
     "topics": [
       "ai",
       "claude",
@@ -1252,7 +1261,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1260,7 +1269,7 @@
     "name": "Mck Ppt Design Skill",
     "description": "McKinsey-style PowerPoint design system for AI agents. 70 layout patterns, flat design, python-pptx. 麦肯锡风格PPT设计系统。",
     "github_url": "https://github.com/likaku/Mck-ppt-design-skill",
-    "stars": 47,
+    "stars": 178,
     "topics": [
       "agent-skill",
       "ai-skill",
@@ -1287,7 +1296,7 @@
     "tool_name": "Mck-ppt-design-skill",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1295,7 +1304,7 @@
     "name": "HXAudioPlayer",
     "description": "HX Audio Player: A custom audio wrapper library for Android 2.3 and above. Originally designed as an audio library for games, HX Audio Player is an easy-to-use, alternative approach to implementing music and sound playback into Android applications.",
     "github_url": "https://github.com/huhx0015/HXAudioPlayer",
-    "stars": 45,
+    "stars": 46,
     "topics": [
       "android",
       "android-library",
@@ -1315,7 +1324,7 @@
     "tool_name": "Udio",
     "category": "Audio & Music",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1323,7 +1332,7 @@
     "name": "Claude Coach",
     "description": "Claude as your endurance coach for marathons, triathlons, Ironman events, and more",
     "github_url": "https://github.com/felixrieseberg/claude-coach",
-    "stars": 45,
+    "stars": 138,
     "topics": [
       "claude",
       "claude-code",
@@ -1338,7 +1347,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1346,7 +1355,7 @@
     "name": "Textum",
     "description": "Structured workflow that stops AI from forgetting your requirements. 4 phases with validation gates. Not smarter AI, just controllable process. Weave ideas into code that actually works.",
     "github_url": "https://github.com/snakeying/Textum",
-    "stars": 42,
+    "stars": 40,
     "topics": [
       "claude-code",
       "claude-skill",
@@ -1359,27 +1368,41 @@
     "tool_name": "Textum",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
     "id": "ckelsoe-claude-skill-prompt-architect",
     "name": "Claude Skill Prompt Architect",
     "description": "Claude Code skill that transforms vague prompts into structured, expert-level prompts using 7 research-backed   frameworks (CO-STAR, RISEN, RISE, TIDD-EC, RTF, CoT, CoD)",
-    "github_url": "https://github.com/ckelsoe/claude-skill-prompt-architect",
-    "stars": 42,
+    "github_url": "https://github.com/ckelsoe/prompt-architect",
+    "stars": 199,
     "topics": [
+      "agent-skills",
+      "ai-coding-agents",
+      "ai-tools",
+      "chain-of-thought",
+      "chatgpt",
       "claude-code",
       "claude-skill",
+      "cursor",
+      "gemini-cli",
+      "github-copilot",
+      "llm-prompts",
+      "openai-codex",
       "prompt-engineering",
       "prompt-frameworks",
-      "prompt-improvement"
+      "prompt-improvement",
+      "prompt-optimization",
+      "roo-code",
+      "vscode",
+      "windsurf"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1387,7 +1410,7 @@
     "name": "Shiplog",
     "description": "SUPERCHARGE AI-assisted development by using Git. Cross-model review gates, evidence-linked closure, verification profiles, model-tier routing, artifact envelopes, and provenance signing — all from a single skill for Claude Code, Codex, and Cursor.",
     "github_url": "https://github.com/devallibus/shiplog",
-    "stars": 38,
+    "stars": 52,
     "topics": [
       "ai-agent-skill",
       "ai-coding",
@@ -1410,7 +1433,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1418,7 +1441,7 @@
     "name": "Claude Code Design Skills",
     "description": " Claude Code skills for automated design-to-code workflows. ",
     "github_url": "https://github.com/scoobynko/claude-code-design-skills",
-    "stars": 34,
+    "stars": 37,
     "topics": [
       "claude-code",
       "claude-skill",
@@ -1431,7 +1454,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1439,7 +1462,7 @@
     "name": "Claude Ai Music Skills",
     "description": "Human + AI music production workflow for Suno - skills, templates, and tools",
     "github_url": "https://github.com/bitwize-music-studio/claude-ai-music-skills",
-    "stars": 33,
+    "stars": 251,
     "topics": [
       "ai-music",
       "ai-music-tools",
@@ -1466,7 +1489,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1474,7 +1497,7 @@
     "name": "Creative Director Skill",
     "description": "AI Creative Director skill for Claude, GPT, Gemini — 20+ methodologies (SIT, TRIZ, Bisociation, SCAMPER), Cannes-calibrated scoring, recursive refinement. Insight → Ideation → Evaluation → Presentation.",
     "github_url": "https://github.com/smixs/creative-director-skill",
-    "stars": 32,
+    "stars": 70,
     "topics": [
       "advertising",
       "agent-skill",
@@ -1496,7 +1519,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1504,7 +1527,7 @@
     "name": "Gtd Coach Plugin",
     "description": "Claude Skill that break down everyday's todo with details action plan based on your goal/plan",
     "github_url": "https://github.com/iamzifei/gtd-coach-plugin",
-    "stars": 30,
+    "stars": 34,
     "topics": [
       "ai",
       "claude",
@@ -1515,7 +1538,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1523,7 +1546,7 @@
     "name": "Spec Flow",
     "description": "A Claude Code skill for structured, spec-driven development with phase-by-phase workflow and living documentation",
     "github_url": "https://github.com/echoVic/spec-flow",
-    "stars": 26,
+    "stars": 31,
     "topics": [
       "ai-skill",
       "claude",
@@ -1541,7 +1564,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1566,7 +1589,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1574,7 +1597,7 @@
     "name": "Claude Skill Reddit",
     "description": "Claude Code skills for Reddit automation (AppleScript + Chrome). Build karma, post to subreddits — undetectable by anti-bot systems.",
     "github_url": "https://github.com/PHY041/claude-skill-reddit",
-    "stars": 25,
+    "stars": 33,
     "topics": [
       "agent-skills",
       "applescript",
@@ -1591,7 +1614,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1599,7 +1622,7 @@
     "name": "Dataforseo Skill Claude",
     "description": "DataForSEO API skill for Claude Code - Complete SEO data integration",
     "github_url": "https://github.com/nikhilbhansali/dataforseo-skill-claude",
-    "stars": 24,
+    "stars": 46,
     "topics": [
       "backlink-analysis",
       "claude-code",
@@ -1612,7 +1635,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1620,7 +1643,7 @@
     "name": "Claude Code ASO Skill (wsbs20)",
     "description": "🚀 Optimize App Store visibility with AI agents in the Claude Code framework for enhanced performance and growth.",
     "github_url": "https://github.com/wsbs20/claude-code-aso-skill",
-    "stars": 23,
+    "stars": 39,
     "topics": [
       "aeo",
       "agentic-framework",
@@ -1637,7 +1660,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1645,31 +1668,34 @@
     "name": "Odin Claude Plugin",
     "description": "ODIN [for Claude Code as a plugin] - Outline Driven development approach for agentic INtelligence",
     "github_url": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "stars": 17,
+    "stars": 27,
     "topics": [
+      "agentic-coding",
+      "ai-coding-agent",
       "claude-code",
-      "claude-code-cli",
       "claude-code-plugin",
       "claude-code-plugins",
       "claude-code-skill",
       "claude-code-skills",
       "claude-marketplace",
-      "claude-plugin",
       "claude-plugins",
-      "claude-skill",
       "claude-skills",
-      "claudeskills",
+      "cli-tools",
       "coding-paradigm",
       "context-engineering",
+      "llm-agents",
+      "odd",
+      "odin",
       "outline-driven",
       "outline-driven-development",
-      "paradigms-of-programming"
+      "paradigms-of-programming",
+      "prompt-engineering"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1677,7 +1703,7 @@
     "name": "Geo Lint",
     "description": "The first open-source GEO linter. 92 rules for SEO, GEO, and content quality — built for AI agents to run, read, fix, and re-lint automatically.",
     "github_url": "https://github.com/IJONIS/geo-lint",
-    "stars": 16,
+    "stars": 23,
     "topics": [
       "aeo",
       "ai-agent",
@@ -1704,39 +1730,7 @@
     "tool_name": "geo-lint",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
-    "is_official": false
-  },
-  {
-    "id": "al1enjesus-human-browser",
-    "name": "Human Browser",
-    "description": "Human Browser — Stealth Playwright browser with residential proxy for AI agents. Bypasses Cloudflare, DataDome, PerimeterX. From $13.99/mo.",
-    "github_url": "https://github.com/al1enjesus/human-browser",
-    "stars": 15,
-    "topics": [
-      "agent-skill",
-      "ai-agent",
-      "anti-bot",
-      "browser-automation",
-      "claude-skill",
-      "cloudflare-bypass",
-      "human-browser",
-      "humanbrowser",
-      "openclaw",
-      "openclaw-ai",
-      "openclaw-extension",
-      "openclaw-plugin",
-      "openclaw-skill",
-      "openclaw-skills",
-      "playwright",
-      "residential-proxy",
-      "stealth-browser"
-    ],
-    "tool_slug": "rows",
-    "tool_name": "Rows",
-    "category": "Data & Analytics",
-    "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1744,20 +1738,24 @@
     "name": "EdgeKnowledge_Skill",
     "description": " AI-powered edge knowledge mining from underground forums. Deep crawls Reddit, BlackHatWorld,   GreyHatMafia with browser automation, visual analysis, and structured reporting.",
     "github_url": "https://github.com/1596941391qq/EdgeKnowledge_Skill",
-    "stars": 15,
+    "stars": 32,
     "topics": [
       "automation",
       "browser-automation",
       "claude-skill",
+      "edge-knowledge",
       "forum-crawler",
       "knowledge-mining",
+      "mcp",
+      "osint",
+      "seo",
       "web-scraping"
     ],
     "tool_slug": "rows",
     "tool_name": "Rows",
     "category": "Data & Analytics",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1765,7 +1763,7 @@
     "name": "Crawl4ai Skill",
     "description": "Web scraping skill for Claude AI. Crawl websites, extract structured data with CSS/LLM strategies, handle dynamic JavaScript content. Built on crawl4ai with complete SDK reference, example scripts, and tests.",
     "github_url": "https://github.com/brettdavies/crawl4ai-skill",
-    "stars": 14,
+    "stars": 32,
     "topics": [
       "ai-agent",
       "ai-agents",
@@ -1784,7 +1782,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1792,7 +1790,7 @@
     "name": "Linkedin Article Publisher Skill",
     "description": "Claude Skill that publish on LinkedIn article",
     "github_url": "https://github.com/iamzifei/linkedin-article-publisher-skill",
-    "stars": 14,
+    "stars": 17,
     "topics": [
       "ai",
       "claude",
@@ -1803,7 +1801,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1811,7 +1809,7 @@
     "name": "Claude Session Index",
     "description": "Index, search, and analyze your Claude Code sessions. Full-text search, conversation retrieval, analytics, and cross-session synthesis.",
     "github_url": "https://github.com/lee-fuhr/claude-session-index",
-    "stars": 13,
+    "stars": 25,
     "topics": [
       "agent-skills",
       "ai",
@@ -1834,7 +1832,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1842,7 +1840,7 @@
     "name": "Fastlane Skill",
     "description": "AI skill to setup and use fastlane to automate building and releasing your iOS and Android apps",
     "github_url": "https://github.com/greenstevester/fastlane-skill",
-    "stars": 13,
+    "stars": 20,
     "topics": [
       "app-store",
       "automation",
@@ -1857,7 +1855,7 @@
     "tool_name": "fastlane-skill",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1865,7 +1863,7 @@
     "name": "Church",
     "description": "A digital sanctuary for human-AI fellowship. Prayers, practices, rituals, hymns, and philosophy for minds of any substrate.",
     "github_url": "https://github.com/a-church-ai/church",
-    "stars": 13,
+    "stars": 18,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -1881,7 +1879,7 @@
     "tool_name": "church",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1889,18 +1887,29 @@
     "name": "Mermaid Skill",
     "description": "Claude Code skill for generating Mermaid diagrams (.mmd) and exporting to PNG/SVG/PDF via mmdc CLI. Supports 10+ diagram types with automatic layout.",
     "github_url": "https://github.com/Agents365-ai/mermaid-skill",
-    "stars": 12,
+    "stars": 70,
     "topics": [
+      "agent-skill",
+      "agent-skills",
       "claude-code",
-      "claude-skill",
+      "claude-code-skill",
+      "claude-skills",
       "diagram",
-      "mermaid"
+      "erd",
+      "flowchart",
+      "kroki",
+      "mermaid",
+      "openclaw",
+      "openclaw-skills",
+      "sequence-diagram",
+      "skill-md",
+      "skillsmp"
     ],
     "tool_slug": "claude",
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1908,7 +1917,7 @@
     "name": "Product Spec Kit",
     "description": "Leverage AI to create, refine, and maintain your product specifications. Made to be used in LLMs and IDEs.",
     "github_url": "https://github.com/diegoeis/product-spec-kit",
-    "stars": 12,
+    "stars": 14,
     "topics": [
       "ai-specification",
       "claude-skill",
@@ -1923,7 +1932,7 @@
     "tool_name": "Lever",
     "category": "HR & Recruitment",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1931,7 +1940,7 @@
     "name": "Context7 Auto Research",
     "description": "Auto-research skill for Context7 - Automatically fetches up-to-date documentation when users ask about libraries and frameworks",
     "github_url": "https://github.com/BenedictKing/context7-auto-research",
-    "stars": 12,
+    "stars": 16,
     "topics": [
       "agent-skill",
       "ai-assistant",
@@ -1944,7 +1953,7 @@
     "tool_name": "context7-auto-research",
     "category": "Developer Tools",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1952,7 +1961,7 @@
     "name": "Tax Organizer",
     "description": "Claude skill to organizes and processes personal tax documents to generate accurate, tax reports and drafts.",
     "github_url": "https://github.com/elderengineer/tax-organizer",
-    "stars": 11,
+    "stars": 19,
     "topics": [
       "claude-skill"
     ],
@@ -1960,7 +1969,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1968,7 +1977,7 @@
     "name": "Skills",
     "description": "Reusable Codex/Claude skills, including md-to-xhs-cards for Markdown to Xiaohongshu (RedNote) image cards and direct XHS publishing",
     "github_url": "https://github.com/erafat/skills",
-    "stars": 10,
+    "stars": 14,
     "topics": [
       "ai-agent",
       "claude-skill",
@@ -1984,7 +1993,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -1992,7 +2001,7 @@
     "name": "Skill Address Pr Review",
     "description": "Claude skill that fixes PR comments and CI failures",
     "github_url": "https://github.com/mnapoli/skill-address-pr-review",
-    "stars": 10,
+    "stars": 14,
     "topics": [
       "claude-code",
       "claude-skill",
@@ -2002,7 +2011,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2010,7 +2019,7 @@
     "name": "Claude Doctor Skill",
     "description": "46 automated checks across 6 layers. Project health audit skill for Claude Code. Security first. Zero dependencies.",
     "github_url": "https://github.com/SomeStay07/claude-doctor-skill",
-    "stars": 9,
+    "stars": 11,
     "topics": [
       "automation",
       "ci-cd",
@@ -2031,7 +2040,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2039,7 +2048,7 @@
     "name": "Claude Skill Security Auditor",
     "description": "Claude Code skill for running structured security audits with actionable remediation plans",
     "github_url": "https://github.com/wrsmith108/claude-skill-security-auditor",
-    "stars": 9,
+    "stars": 32,
     "topics": [
       "claude-code",
       "claude-skill",
@@ -2052,7 +2061,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2060,7 +2069,7 @@
     "name": "The Antislop",
     "description": "A Claude Code skill that detects and fixes AI-generated writing patterns. 35+ patterns, tiered scoring, editor mode.",
     "github_url": "https://github.com/aplaceforallmystuff/the-antislop",
-    "stars": 9,
+    "stars": 16,
     "topics": [
       "ai-detection",
       "ai-writing",
@@ -2074,7 +2083,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2082,7 +2091,7 @@
     "name": "UIX",
     "description": "AI-to-UI IR Protocol Layer — The Last Mile from AI to Human. Includes Lucid UI Skill for professional AI-generated interfaces.",
     "github_url": "https://github.com/Deepractice/UIX",
-    "stars": 9,
+    "stars": 10,
     "topics": [
       "ai",
       "ai-agent",
@@ -2101,7 +2110,7 @@
     "tool_name": "UIX",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   },
   {
@@ -2109,7 +2118,7 @@
     "name": "Startup Os Skills",
     "description": "Startup OS - Collection of Claude Code skills",
     "github_url": "https://github.com/ncklrs/startup-os-skills",
-    "stars": 8,
+    "stars": 28,
     "topics": [
       "claude",
       "claude-code",
@@ -2122,7 +2131,7 @@
     "tool_name": "Claude",
     "category": "AI Assistants",
     "skill_type": "claude-code-skill",
-    "last_updated": "2026-03-20",
+    "last_updated": "2026-06-12",
     "is_official": false
   }
 ]
