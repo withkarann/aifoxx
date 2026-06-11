@@ -1,4 +1,4 @@
-name: CI — Validate & Build
+name: CI | Validate & Build
 
 on:
   push:

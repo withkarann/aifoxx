@@ -53,7 +53,7 @@ jobs:
         if: steps.meta.outputs.update-type == 'version-update:semver-major'
         run: |
           gh pr edit "$PR_URL" --add-label "major-upgrade" --add-label "needs-review"
-          gh pr comment "$PR_URL" --body "⚠️ **Major version update** — auto-merge skipped. Manual review required before merging."
+          gh pr comment "$PR_URL" --body "⚠️ **Major version update**: auto-merge skipped. Manual review required before merging."
         env:
           PR_URL:       ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

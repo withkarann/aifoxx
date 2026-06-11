@@ -904,7 +904,7 @@
   },
   {
     "id": "jeffallan-claude-skills",
-    "name": "Claude Skills",
+    "name": "Claude Skills (Jeffallan)",
     "description": "66 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.",
     "github_url": "https://github.com/Jeffallan/claude-skills",
     "stars": 7071,
@@ -1063,7 +1063,7 @@
   },
   {
     "id": "alirezarezvani-claude-code-aso-skill",
-    "name": "Claude Code Aso Skill",
+    "name": "Claude Code ASO Skill (alirezarezvani)",
     "description": "AEO Automation Framework for Claude Code One-click, beginner friendly automation for GitHub. Includes a dedicated fleet of AEO sub-agents handling planning, execution, reports, actionable items, and executive summaries. Trigger work instantly with AEO slash-commands. Fully integrated as a Claude Code Skill and usable across Claude AI App",
     "github_url": "https://github.com/alirezarezvani/claude-code-aso-skill",
     "stars": 271,
@@ -1139,7 +1139,7 @@
   },
   {
     "id": "oaustegard-claude-skills",
-    "name": "Claude Skills",
+    "name": "Claude Skills (oaustegard)",
     "description": "My collection of Claude skills",
     "github_url": "https://github.com/oaustegard/claude-skills",
     "stars": 113,
@@ -1617,7 +1617,7 @@
   },
   {
     "id": "wsbs20-claude-code-aso-skill",
-    "name": "Claude Code Aso Skill",
+    "name": "Claude Code ASO Skill (wsbs20)",
     "description": "🚀 Optimize App Store visibility with AI agents in the Claude Code framework for enhanced performance and growth.",
     "github_url": "https://github.com/wsbs20/claude-code-aso-skill",
     "stars": 23,

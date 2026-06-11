@@ -1,14 +1,10 @@
-# Contributing to AIFOXX 🦊
+# Contributing to AIFOXX
 
-First time contributing to open source? **Welcome — this is a great place to start.**
+Contributions are welcome: fixing data, adding tools, and improving the site
+are all useful. Keep pull requests focused; smaller changes are easier to review
+and merge.
 
-## 🧭 Before You Start
-
-- Browse [open issues](https://github.com/withkarann/aifoxx/issues) before starting major work
-- Keep changes focused — small PRs get merged faster
-- **Never fabricate tool data.** Use `null` where schema allows it
-
-## ⚙️ Local Setup
+## Local setup
 
 ```bash
 git clone https://github.com/withkarann/aifoxx.git
@@ -17,34 +13,47 @@ npm install
 npm run dev
 ```
 
-## ✅ Required Checks Before PR
+The dev server runs on http://localhost:8080.
 
-Run all of these:
+## Checks to run before opening a PR
+
+Run all of these and make sure they pass:
 
 ```bash
-npm run validate   # validate tools.json schema
-npm run lint       # check code style
-npm run build      # ensure no build errors
-npm run test       # run unit tests
+npm run validate   # tools.json has all required fields and no duplicate slugs
+npm run lint       # ESLint
+npm run typecheck  # TypeScript, no emit
+npm run test       # Vitest unit tests
+npm run build      # static build succeeds
 ```
 
-## 📋 Data Contribution Rules
+`npm run check` runs typecheck, lint, validate, and build in one step.
 
-When editing `src/data/tools.json`:
+## Contributing tool data
 
-- ✅ All required schema fields must be present
-- ✅ Use consistent `category` / `subcategory` naming
-- ✅ URLs must be real and verified
-- ❌ No duplicate slugs or tool names
-- ❌ No fabricated pricing or compliance data — use `null`
+Tool data lives in `src/data/tools.json`. The shape is defined by the Zod schema
+in `src/types/tool.ts`, which is the source of truth.
 
-## 🔀 Pull Request Guidelines
+- Every entry must include all required fields: `name`, `category`,
+  `subcategory`, `description`, `url`, `tags`, and `pricing`.
+- Do not fabricate anything. If you cannot verify a fact, leave the field `null`
+  (where the schema allows it) rather than guessing.
+- Every compliance flag set to `true` must have a matching source URL in
+  `compliance_sources`, and that URL must be on the vendor's own domain (its
+  trust center, security page, or privacy policy). A `true` flag without a source
+  on the vendor's domain will not be accepted.
+- Use category and subcategory names consistently with the existing entries.
+  Check the current list before introducing a new one.
+- No duplicate slugs, names, or URLs.
 
-- Use a clear, descriptive title
-- Explain **what** changed and **why**
-- Include screenshots for UI changes
-- Note any schema or data migration impact
+## Pull requests
 
-## 💬 Questions?
+- Use a Conventional Commits title (for example `feat: add comparison filters`,
+  `fix: correct ChatGPT pricing`, `data: add 12 design tools`).
+- Describe what changed and why.
+- Include before/after screenshots for any UI change.
+- Note any change to the data schema.
 
-[Open a Discussion](https://github.com/withkarann/aifoxx/discussions) — we're friendly. 🙌
+## Questions
+
+Open a thread in [Discussions](https://github.com/withkarann/aifoxx/discussions).

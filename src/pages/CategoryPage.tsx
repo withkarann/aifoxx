@@ -69,7 +69,7 @@ export default function CategoryPage() {
   const hasSeoQueryParams = searchParams.toString().length > 0;
 
   const intro =
-    `AIFOXX lists ${categoryFacts.count} ${cat.name} AI tools — ${categoryFacts.free} with a free or freemium tier, ` +
+    `AIFOXX lists ${categoryFacts.count} ${cat.name} AI tools. ${categoryFacts.free} offer a free or freemium tier, ` +
     `${categoryFacts.soc2} marked SOC 2 and ${categoryFacts.gdpr} GDPR-ready. Compare real pricing, access methods, ` +
     `and compliance across ${cat.subcategories.length} subcategories` +
     (categoryFacts.subList ? ` (${categoryFacts.subList}).` : ".");
@@ -87,7 +87,7 @@ export default function CategoryPage() {
     },
     {
       q: `Which ${cat.name} AI tools are SOC 2 or GDPR compliant?`,
-      a: `${categoryFacts.soc2} ${cat.name} tools are marked SOC 2 and ${categoryFacts.gdpr} GDPR-ready here. Compliance data is community-sourced — always verify it directly with the vendor before relying on it.`,
+      a: `${categoryFacts.soc2} ${cat.name} tools are marked SOC 2 and ${categoryFacts.gdpr} GDPR-ready here. Compliance data is community-sourced; always verify it directly with the vendor before relying on it.`,
     },
     {
       q: `What does the ${cat.name} category include?`,
@@ -163,8 +163,8 @@ export default function CategoryPage() {
                   const Icon = getCategoryIcon(cat.name);
                   return Icon ? (
                     // getCategoryIcon returns a stable, module-level phosphor component
-                    // (see categoryIcons.ts) — a fixed reference, not one created during
-                    // render — so its state never resets. The rule's heuristic can't tell.
+                    // (see categoryIcons.ts): a fixed reference, not one created during
+                    // render, so its state never resets. The rule's heuristic can't tell.
                     // eslint-disable-next-line react-hooks/static-components
                     <Icon size={20} weight="duotone" style={{ color: color.accent, filter: `drop-shadow(0 0 8px ${color.accent}66)` }} />
                   ) : (
@@ -243,7 +243,7 @@ export default function CategoryPage() {
             </div>
           )}
 
-          {/* FAQ — visible content backing the FAQPage structured data */}
+          {/* FAQ: visible content backing the FAQPage structured data */}
           <section className="mt-10 space-y-4">
             <div className="h-px w-full" style={{ background: `linear-gradient(to right, ${color.accent}, transparent)` }} />
             <p className="font-mono text-xs text-text-muted tracking-widest">// FAQ</p>

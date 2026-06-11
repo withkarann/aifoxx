@@ -24,7 +24,7 @@ updates:
         update-types:
           - "major"
     ignore:
-      # Framework versions pinned intentionally — review/upgrade by hand only.
+      # Framework versions pinned intentionally; review/upgrade by hand only.
       - dependency-name: "react"
         update-types: ["version-update:semver-major"]
       - dependency-name: "react-dom"

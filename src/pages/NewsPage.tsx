@@ -63,7 +63,7 @@ function sourceColor(id: string) {
   return SOURCE_COLORS[id] ?? "text-text-muted";
 }
 
-// Only allow http/https URLs — prevents javascript: protocol XSS via RSS feed data
+// Only allow http/https URLs. Prevents javascript: protocol XSS via RSS feed data.
 function safeUrl(url: string): string {
   try {
     const parsed = new URL(url);
@@ -139,7 +139,7 @@ export default function NewsPage() {
   return (
     <>
       <PageMeta
-        title={`AI News — Today in AI | ${Brand.product.name_styled}`}
+        title={`AI News: Today in AI | ${Brand.product.name_styled}`}
         description={`Latest AI news and new tool releases. Curated daily from ${NEWS_COUNTS.total} stories across HN, VentureBeat, TechCrunch, Wired and more.`}
         url={`https://${Brand.product.domain}/news`}
         keywords={["AI news", "new AI tools", "AI releases", "today in AI"]}
@@ -220,7 +220,7 @@ export default function NewsPage() {
               NO STORIES
             </p>
             <p className="font-mono text-text-secondary text-sm mt-3">
-              Fresh stories are on the way — check back soon.
+              Fresh stories are on the way. Check back soon.
             </p>
           </div>
         ) : (
@@ -246,7 +246,7 @@ export default function NewsPage() {
                             key={item.id}
                             className="flex items-baseline gap-3 py-2.5 border-b border-border-dim/50 group"
                           >
-                            {/* Number — continuous across all groups */}
+                            {/* Number: continuous across all groups */}
                             <span className="font-mono text-xs text-text-muted w-6 shrink-0 text-right select-none">
                               {displayNumber}.
                             </span>

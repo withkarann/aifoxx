@@ -1,44 +1,35 @@
-<div align="center">
+# AIFOXX
 
-# 🦊 AIFOXX
+An open-source directory of AI tools with structured, source-backed metadata.
 
-**Open-source directory of 1000+ AI tools**  
-Structured metadata for pricing, compliance, access methods & more.
+[MIT License](LICENSE) · [aifoxx.com](https://aifoxx.com)
 
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Website](https://img.shields.io/badge/Website-aifoxx.com-blue)](https://aifoxx.com)
-[![Stars](https://img.shields.io/github/stars/withkarann/aifoxx?style=social)](https://github.com/withkarann/aifoxx)
+AIFOXX catalogs 1000 AI tools and, for each one, records the things that are
+hard to compare across vendor marketing pages: pricing tier, compliance posture,
+how the vendor handles your data, and the ways you can actually use the tool.
+Every compliance claim links to the vendor's own page that backs it. Where a
+fact has not been verified, the field is left empty rather than guessed.
 
-[🌐 Website](https://aifoxx.com) · [🐛 Issues](https://github.com/withkarann/aifoxx/issues) · [💬 Discussions](https://github.com/withkarann/aifoxx/discussions)
+Alongside the tools directory it includes:
 
-</div>
+- An index of 154 MCP (Model Context Protocol) servers.
+- An index of 85 Claude Code skills.
+- A daily-updated AI news feed.
+- Side-by-side comparison pages at `/compare/:a/vs/:b`.
+- Best-of category guides at `/best`.
 
----
+## What's recorded for each tool
 
-## ✨ Features
+- **Pricing:** Free, Freemium, Paid, or Open Source, with notes on the free
+  tier, paid plans, and API cost where known.
+- **Compliance:** SOC 2, ISO 27001, GDPR, and HIPAA flags. Each flag that is
+  set to `true` carries a link to the vendor's trust center, security page, or
+  privacy policy that backs it.
+- **Data storage:** hosting region, whether the vendor trains on customer
+  data, and whether the tool can be self-hosted.
+- **Access methods:** web app, mobile apps, desktop app, API, and so on.
 
-- 🗂️ Curated index of 1000+ AI tools
-- 🔍 Filter by category, subcategory, pricing & tags
-- 📂 Dedicated category pages with tool grids
-- 📌 Tag pages for cross-category discovery
-- 📋 Tool detail pages with compliance & data storage metadata
-- 🎨 Multi-theme UI — dark, light, notebook
-- ✅ Runtime schema validation for data integrity
-- 📥 Community tool submission page
-
-## 🛠 Tech Stack
-
-| Layer | Tech |
-|---|---|
-| Frontend | React 18 + TypeScript |
-| Build | Vite |
-| Styling | Tailwind CSS + shadcn/ui |
-| Routing | React Router |
-| Validation | Zod |
-| Testing | Vitest + Playwright |
-
-## 🚀 Getting Started
+## Getting started
 
 ```bash
 git clone https://github.com/withkarann/aifoxx.git
@@ -47,102 +38,93 @@ npm install
 npm run dev
 ```
 
-App runs on **http://localhost:8080**
+The dev server runs on http://localhost:8080 (configured in `vite.config.ts`).
 
-## 📦 Scripts
+## Scripts
 
 | Command | Description |
 |---|---|
-| `npm run dev` | Start development server |
-| `npm run build` | Production build |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run lint checks |
-| `npm run test` | Run unit tests |
-| `npm run validate` | Validate `src/data/tools.json` against schema |
+| `npm run dev` | Start the Vite dev server |
+| `npm run build` | Generate the sitemap, then build the static site |
+| `npm run typecheck` | Type-check with `tsc --noEmit` |
+| `npm run lint` | Run ESLint |
+| `npm run test` | Run the Vitest unit tests |
+| `npm run validate` | Check `tools.json` for required fields and duplicate slugs |
+| `npm run check` | typecheck + lint + validate + build |
+| `npm run sitemap` | Regenerate `sitemap.xml` |
 
-## 🗃️ Project Structure
+## Project structure
 
 ```
-aifoxx/
-├── public/                    # Static assets
-├── src/
-│   ├── components/            # Reusable UI components
-│   ├── contexts/              # React context providers (theme, etc.)
-│   ├── data/
-│   │   ├── tools.json         # ⭐ Main tools dataset (1000+ entries)
-│   │   ├── categoryColors.json # Category accent colors & emoji config
-│   │   └── brand.json         # Centralized branding & site config text
-│   ├── hooks/                 # Custom React hooks
-│   ├── lib/
-│   │   └── tools.ts           # Normalization, filtering & validation utils
-│   ├── pages/
-│   │   ├── HomePage.tsx       # Main directory listing with search & filters
-│   │   ├── CategoryPage.tsx   # Per-category tool grid page
-│   │   ├── TagPage.tsx        # Per-tag filtered view
-│   │   ├── ToolDetailPage.tsx # Full tool detail — pricing, compliance, links
-│   │   ├── SubmitPage.tsx     # Community tool submission form
-│   │   ├── NotFoundPage.tsx   # 404 page
-│   │   └── Index.tsx          # Route entry point
-│   ├── test/                  # Unit & integration tests
-│   ├── types/
-│   │   └── tool.ts            # Zod schema — single source of truth for tool shape
-│   ├── App.tsx                # Root component & route definitions
-│   └── main.tsx               # App entry point
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-├── LICENSE
-└── SECURITY.md
+src/
+├── routes.tsx                 # Route table (vite-react-ssg)
+├── App.tsx                    # Root layout
+├── pages/
+│   ├── HomePage.tsx           # / | tool listing, search, filters
+│   ├── ToolDetailPage.tsx     # /ai/:slug | single tool
+│   ├── CategoryPage.tsx       # /category/:category
+│   ├── TagPage.tsx            # /tag/:tag
+│   ├── SkillsPage.tsx         # /skills | Claude Code skills
+│   ├── McpServersPage.tsx     # /mcp | MCP servers
+│   ├── NewsPage.tsx           # /news | AI news feed
+│   ├── ComparePage.tsx        # /compare | pick tools to compare
+│   ├── CompareVsPage.tsx      # /compare/:a/vs/:b | head-to-head
+│   ├── BestIndexPage.tsx      # /best | category guide index
+│   ├── BestCategoryPage.tsx   # /best/:slug | one category guide
+│   └── SubmitPage.tsx         # /submit | tool submission form
+├── lib/                       # Data access, search, helpers
+├── types/                     # Zod schemas (single source of truth for shape)
+└── data/
+    ├── tools.json             # 1000 tools
+    ├── mcp-servers.json       # 154 MCP servers
+    ├── claude-code-skills.json# 85 Claude Code skills
+    ├── news.json              # AI news items
+    ├── best-categories.json   # Best-of category guides
+    ├── categoryColors.json    # Category to color/emoji mapping
+    └── brand.json             # Site name and copy
 ```
 
-## 📊 Data Accuracy
+The site is a static SPA: there is no backend and no database. Pages read from
+`src/lib/`; components never import the JSON data files directly.
 
-> ⚠️ **This project is in active development.** We continuously review and improve data quality, and some entries may still need verification updates.
+## Data accuracy
 
-- Pricing, features, and availability change frequently — some entries may be outdated
-- `null` fields are intentional — it means unverified, not missing. We never guess.
-- Manual verification is ongoing. Verified entries will be marked in future releases.
+Pricing, features, and availability change often, so some entries will be out of
+date. The governing rule is simple: **`null` means unverified, not zero, and we
+never guess.** An empty field is a field nobody has confirmed yet, not a claim
+that the answer is "no."
 
-**Found incorrect or outdated data?**
-- 👉 [Open an issue](https://github.com/withkarann/aifoxx/issues/new?title=[Data+Fix]) with the tool name and what's wrong
-- 👉 Or submit a PR directly to `src/data/tools.json`
+Manual verification is ongoing. As entries are confirmed they will be marked,
+and a verified-badge UI is planned.
 
-We review and patch data corrections within **48 hours**.
+## Data sources and attribution
 
-## 🚧 Roadmap
+Facts are compiled from each vendor's own public pages: trust centers, security
+pages, and privacy policies. Every compliance flag set to `true` carries a
+source link to the page on the vendor's own domain that supports it. Trademarks,
+product names, and logos belong to their respective owners and are used here only
+to identify the tools. News items link to their original publishers.
 
-- [ ] Full manual verification pass on all tool entries
-- [ ] Side-by-side tool comparison
-- [ ] Pricing plan comparison table
-- [ ] Verified compliance badges
-- [ ] User-submitted reviews
-- [ ] API endpoint for tool data
-- [ ] Weekly data freshness checks
+Found something wrong or out of date? Open an issue or a pull request. Data
+corrections that include a source URL on the vendor's domain are the fastest to
+merge.
 
-## 🔐 Environment & Secrets
+## Roadmap
 
-This project runs **without environment variables** by default.
+- A full verification pass across every entry.
+- A verified-badge UI for confirmed compliance claims.
+- A public JSON API / dataset endpoint.
+- Wider coverage of MCP servers and Claude Code skills.
 
-If you add `VITE_*` variables later — they are **bundled into client code and are public.**
+## Contributing
 
-- Keep `.env.local` private (already git-ignored)
-- Never commit tokens, API keys, or credentials
-- Use GitHub Actions Secrets for CI/deployment values
+See [CONTRIBUTING.md](CONTRIBUTING.md) for local setup, the checks to run before
+opening a PR, and the rules for contributing tool data.
 
-## 🤝 Contributing
+## Security
 
-We'd love your help! See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
+Please do not open a public issue for security reports. See [SECURITY.md](SECURITY.md).
 
-1. Fork the repo
-2. Create your branch
-3. Run `npm run validate` + `npm run test` before opening a PR
-4. Open a Pull Request 🎉
+## License
 
-> All PRs are reviewed by maintainers before merging. See [CONTRIBUTING.md](CONTRIBUTING.md) for data rules.
-
-## 🛡️ Security
-
-Found a vulnerability? See [SECURITY.md](SECURITY.md). **Don't open a public issue.**
-
-## 📜 License
-
-[MIT](LICENSE) © 2026 [Karan Rajeshbhai Mungara](https://github.com/withkarann) & [Aanjaneya Singh Dhoni](https://github.com/aanjaneyasinghdhoni)
+[MIT](LICENSE) © 2026 Karan Rajeshbhai Mungara and Aanjaneya Singh Dhoni

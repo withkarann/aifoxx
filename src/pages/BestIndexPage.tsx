@@ -15,8 +15,8 @@ export default function BestIndexPage() {
   return (
     <>
       <PageMeta
-        title={`Best AI Tools by Category — Curated Lists for 2026 | ${Brand.product.name_styled}`}
-        description="Curated best-of lists for every AI category — coding, writing, image, video, marketing, design, productivity & more. Hand-picked AI tools with pricing and reviews."
+        title={`Best AI Tools by Category: Curated Lists for 2026 | ${Brand.product.name_styled}`}
+        description="Curated best-of lists for every AI category: coding, writing, image, video, marketing, design, productivity & more. Hand-picked AI tools with pricing and reviews."
         url={pageUrl}
         keywords={["best ai tools", "best ai tools by category", "ai tools 2026", "ai tools list"]}
       />

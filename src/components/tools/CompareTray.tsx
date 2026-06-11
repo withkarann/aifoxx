@@ -5,7 +5,7 @@ import { useCompare } from "@/contexts/CompareContext";
 /**
  * Floating launcher for the compare tray. Appears on listing pages once at least
  * one tool is marked, and links through to /compare (the tray carries the
- * selection — no query string needed). Hidden on /compare itself and on tool
+ * selection; no query string needed). Hidden on /compare itself and on tool
  * detail pages, where it would collide with the sticky Open bar.
  */
 export function CompareTray() {

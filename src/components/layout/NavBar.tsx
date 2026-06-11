@@ -26,9 +26,11 @@ export function NavBar() {
                 <button
                   type="button"
                   aria-label="Open navigation menu"
-                  className="flex items-center justify-center w-7 h-7 border border-border-default rounded-[4px] transition-colors duration-150 hover:shadow-glow"
+                  className="flex items-center justify-center w-11 h-11 -ml-2 rounded-[4px] text-text-secondary hover:text-text-primary transition-colors duration-150"
                 >
-                  <Menu size={16} />
+                  <span className="flex items-center justify-center w-7 h-7 border border-border-default rounded-[4px] hover:shadow-glow transition-shadow duration-150">
+                    <Menu size={16} />
+                  </span>
                 </button>
               </SheetTrigger>
               <SheetContent side="left" className="w-[280px] bg-bg-surface p-0">
@@ -56,11 +58,13 @@ export function NavBar() {
           <button
             type="button"
             onClick={cycleTheme}
-            className="flex items-center justify-center w-7 h-7 border border-border-default rounded-[4px] transition-colors duration-150 hover:shadow-glow"
+            className="flex items-center justify-center w-11 h-11 rounded-[4px] text-text-secondary hover:text-text-primary transition-colors duration-150"
             aria-label={`Switch theme (next: ${nextThemeLabel})`}
             title={`Theme: ${theme.toUpperCase()} (next: ${nextThemeLabel})`}
           >
-            <ThemeIcon size={14} />
+            <span className="flex items-center justify-center w-7 h-7 border border-border-default rounded-[4px] hover:shadow-glow transition-shadow duration-150">
+              <ThemeIcon size={14} />
+            </span>
           </button>
 
           <Link

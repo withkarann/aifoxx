@@ -36,7 +36,7 @@ const tagPaths = Object.entries(tagCounts)
 
 // Pre-render "vs" comparison pages only for featured tools within the same
 // category (sensible head-to-heads like "ChatGPT vs Claude"). Canonicalised so
-// a<b — we never ship both a-vs-b and b-vs-a (duplicate content) — and bounded
+// a<b (we never ship both a-vs-b and b-vs-a, duplicate content) and bounded
 // to keep this to a few dozen high-intent pages, not a combinatorial explosion.
 const vsGroups = new Map<string, string[]>();
 allTools

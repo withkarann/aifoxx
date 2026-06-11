@@ -1,52 +1,55 @@
 # Security Policy
 
-## Supported Versions
+## Supported versions
 
 | Version | Supported |
 |---|---|
-| `main` (latest) | ✅ |
-| Older releases | ❌ |
+| `main` (latest) | Yes |
+| Older releases | No |
 
-## Reporting a Vulnerability
+## Reporting a vulnerability
 
-> ⚠️ **Do NOT open a public GitHub issue for security vulnerabilities.**
+Please do not open a public GitHub issue for security vulnerabilities.
 
 | Channel | Use for |
 |---|---|
-| [GitHub Security Advisories](https://github.com/withkarann/aifoxx/security/advisories) | Preferred — private report |
+| [GitHub Security Advisories](https://github.com/withkarann/aifoxx/security/advisories) | Preferred (private report) |
 | [GitHub Discussions](https://github.com/withkarann/aifoxx/discussions) | Questions about security scope |
 | Pull Request | If you have a fix ready |
 
-**Include in your report:**
+Include in your report:
+
 - Description of the vulnerability
 - Steps to reproduce
 - Potential impact
 - Suggested fix (optional)
 
-We respond within **48 hours** and patch critical issues within **7 days**.
+We respond within 48 hours and patch critical issues within 7 days.
 
 ## Scope
 
-**In scope:**
+In scope:
+
 - XSS via unsanitized tool URL fields
 - Data integrity issues in `tools.json`
 - Supply chain attacks via compromised dependencies
 - Secrets accidentally exposed in committed files
 
-**Out of scope** *(static site — no backend):*
+Out of scope (static site, no backend):
+
 - SQL injection
 - Server-side vulnerabilities
 - Rate limiting
 
-## Automated Security
+## Automated security
 
-- 🤖 Dependabot monitors all npm + GitHub Actions dependencies weekly
-- ✅ Patch/minor updates auto-merge after CI passes
-- 🔍 Major updates require manual review
-- 🔒 All external URLs sanitized via `sanitizeUrl()` (https:// only)
-- 🛡️ Security headers enforced via CDN config
+- Dependabot monitors all npm and GitHub Actions dependencies weekly.
+- Patch and minor updates auto-merge after CI passes.
+- Major updates require manual review.
+- All external URLs are sanitized via `sanitizeUrl()` (https:// only).
+- Security headers are enforced via CDN config.
 
-## Security Headers
+## Security headers
 
 ```
 X-Frame-Options: DENY
@@ -56,8 +59,8 @@ Permissions-Policy: camera=(), microphone=(), geolocation=()
 Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
 ```
 
-## For Contributors
+## For contributors
 
-- Never commit `.env` files or API keys
-- All tool URLs must pass `sanitizeUrl()` before render
-- Use `null` for unverified compliance fields — never guess or fabricate data
+- Never commit `.env` files or API keys.
+- All tool URLs must pass `sanitizeUrl()` before render.
+- Use `null` for unverified compliance fields; never guess or fabricate data.

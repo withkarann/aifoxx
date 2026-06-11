@@ -110,7 +110,7 @@ export default function McpServersPage() {
   return (
     <>
       <PageMeta
-        title={`MCP Servers — Model Context Protocol Integrations | ${Brand.product.name_styled}`}
+        title={`MCP Servers: Model Context Protocol Integrations | ${Brand.product.name_styled}`}
         description={`Browse ${SKILL_COUNTS.mcpServers} MCP servers: connect Claude to tools, APIs, and data sources via Model Context Protocol.`}
         url={`https://${Brand.product.domain}/mcp`}
         keywords={["MCP servers", "Model Context Protocol", "Claude MCP", "AI tool integrations"]}

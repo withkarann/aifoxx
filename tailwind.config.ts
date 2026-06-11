@@ -22,6 +22,18 @@ export default {
       fontFamily: {
         display: ["Archimoto", "Courier New", "monospace"],
         mono: ["JetBrains Mono", "monospace"],
+        // Clean system sans for long-form reading (descriptions, FAQ answers);
+        // headings, labels, badges, nav, and data values stay monospace.
+        sans: [
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif",
+        ],
       },
       colors: {
         border: "hsl(var(--border))",

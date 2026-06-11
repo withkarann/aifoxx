@@ -9,7 +9,7 @@ function text(value: string | null | undefined): ReactNode {
   return value ? (
     <span className="font-mono text-xs text-text-primary break-words">{value}</span>
   ) : (
-    <span className="font-mono text-xs text-text-muted">—</span>
+    <span className="font-mono text-xs text-text-muted">n/a</span>
   );
 }
 
@@ -24,18 +24,18 @@ function complianceDot(value: boolean | null | undefined): ReactNode {
   if (value === false) {
     return <span className="font-mono text-xs text-text-secondary"><span className="text-[10px]">○</span> No</span>;
   }
-  return <span className="font-mono text-xs text-text-muted">—</span>;
+  return <span className="font-mono text-xs text-text-muted">n/a</span>;
 }
 
 function yesNo(value: boolean | null | undefined): ReactNode {
   if (value === true) return <span className="font-mono text-xs text-accent-green">Yes</span>;
   if (value === false) return <span className="font-mono text-xs text-text-secondary">No</span>;
-  return <span className="font-mono text-xs text-text-muted">—</span>;
+  return <span className="font-mono text-xs text-text-muted">n/a</span>;
 }
 
 function accessList(tool: Tool): ReactNode {
   const methods = tool.access_methods ?? [];
-  if (methods.length === 0) return <span className="font-mono text-xs text-text-muted">—</span>;
+  if (methods.length === 0) return <span className="font-mono text-xs text-text-muted">n/a</span>;
   return <span className="font-mono text-xs text-text-secondary break-words">{methods.join(" · ")}</span>;
 }
 

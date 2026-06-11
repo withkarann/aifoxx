@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import bestData from "@/data/best-categories.json";
 const bestCategories = bestData.categories;
 import { allTools } from "@/lib/tools";
@@ -17,7 +18,7 @@ import Brand from "@/lib/brand";
 // Organization + WebSite JSON-LD are emitted globally from index.html so every SSG'd page carries them.
 
 const featuredTools = allTools.filter((t) => t.featured);
-const TOOLS_PER_PAGE = 12;
+const TOOLS_PER_PAGE = 24;
 
 const categoryCount = new Set(allTools.map((t) => t.category)).size;
 const freeToolCount = allTools.filter(
@@ -35,7 +36,7 @@ const homeFaq = [
   },
   {
     q: "Is AIFOXX free to use?",
-    a: "Yes. AIFOXX is completely free to browse and is open source under the MIT license — the full tool dataset is public on GitHub.",
+    a: "Yes. AIFOXX is completely free to browse and is open source under the MIT license. The full tool dataset is public on GitHub.",
   },
   {
     q: "Is the compliance data on AIFOXX verified?",
@@ -70,6 +71,31 @@ export default function HomePage() {
   const fullText = Brand.product.name_styled;
   const resultsRef = useRef<HTMLDivElement | null>(null);
   const previousFilterSignatureRef = useRef("");
+
+  // Featured carousel: track scroll position so edge fades and arrows only show
+  // when there's actually more content to reach in that direction.
+  const featuredScrollRef = useRef<HTMLDivElement | null>(null);
+  const [featuredCanScrollLeft, setFeaturedCanScrollLeft] = useState(false);
+  const [featuredCanScrollRight, setFeaturedCanScrollRight] = useState(false);
+
+  const updateFeaturedEdges = useCallback(() => {
+    const el = featuredScrollRef.current;
+    if (!el) return;
+    setFeaturedCanScrollLeft(el.scrollLeft > 4);
+    setFeaturedCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
+  }, []);
+
+  const scrollFeatured = useCallback((direction: 1 | -1) => {
+    const el = featuredScrollRef.current;
+    if (!el) return;
+    el.scrollBy({ left: direction * Math.round(el.clientWidth * 0.8), behavior: "smooth" });
+  }, []);
+
+  useEffect(() => {
+    updateFeaturedEdges();
+    window.addEventListener("resize", updateFeaturedEdges);
+    return () => window.removeEventListener("resize", updateFeaturedEdges);
+  }, [updateFeaturedEdges]);
 
   const currentPage = useMemo(() => {
     const rawPage = Number.parseInt(searchParams.get("page") ?? "1", 10);
@@ -187,7 +213,7 @@ export default function HomePage() {
   return (
     <>
       <PageMeta
-        title={`Best AI Tools 2026 — 1000+ Curated AI Tools Directory | ${Brand.product.name_styled}`}
+        title={`Best AI Tools 2026 | 1000+ Curated AI Tools Directory | ${Brand.product.name_styled}`}
         description={`Discover the best AI tools for coding, writing, design, marketing, video & more. 1000+ curated AI tools with real pricing, compliance & reviews. Updated daily.`}
         url={`https://${Brand.product.domain}`}
         robots={hasSeoQueryParams ? "noindex, follow" : undefined}
@@ -200,9 +226,10 @@ export default function HomePage() {
         ]}
       />
       {!hasSeoQueryParams && <JsonLd schema={homeFaqLd} id="home-faq" />}
-      {/* HERO */}
+      {/* HERO: compact logo + wordmark + value prop + search, sized so the
+          category sidebar and first tool cards stay above the fold on desktop */}
       <section
-        className="hero-shell py-6 md:py-20 text-center px-4 border-b border-border-muted/30 relative overflow-hidden"
+        className="hero-shell py-6 md:py-10 text-center px-4 border-b border-border-muted/30 relative overflow-hidden"
         onMouseMove={handleHeroMouseMove}
         onMouseLeave={resetHeroParallax}
       >
@@ -216,24 +243,32 @@ export default function HomePage() {
         />
 
         <div
-          className="flex flex-col items-center justify-center gap-4 md:gap-6 relative z-10"
+          className="flex flex-col items-center justify-center gap-3 md:gap-4 relative z-10"
           style={{
             transform: `translate3d(${parallax.x * 8}px, ${parallax.y * 6}px, 0)`,
           }}
         >
-          <img
-            src="/aifoxx.png"
-            alt="AIFOXX AI Tools Directory Logo"
-            className="hero-logo w-14 h-14 md:w-32 md:h-32 drop-shadow-[0_0_15px_rgba(var(--accent-rgb),0.3)] select-none pointer-events-none"
-          />
-          <h1 className="hero-title font-display font-mono font-black text-4xl md:text-7xl text-text-primary tracking-widest min-h-[1.2em]">
-            <span className="sr-only">AIFOXX — AI Tools Directory</span>
-            <span aria-hidden="true">{displayText}</span>
-          </h1>
+          <div className="flex items-center justify-center gap-3 md:gap-4">
+            <img
+              src="/aifoxx.png"
+              alt="AIFOXX AI Tools Directory Logo"
+              className="hero-logo w-12 h-12 md:w-20 md:h-20 drop-shadow-[0_0_15px_rgba(var(--accent-rgb),0.3)] select-none pointer-events-none"
+            />
+            <h1 className="hero-title font-display font-mono font-black text-3xl md:text-6xl text-text-primary tracking-widest min-h-[1.2em]">
+              <span className="sr-only">AIFOXX: AI Tools Directory</span>
+              <span aria-hidden="true">{displayText}</span>
+            </h1>
+          </div>
+          <p className="font-display font-black text-base md:text-2xl text-text-primary max-w-2xl leading-tight">
+            {allTools.length.toLocaleString()}+ AI tools with transparent pricing, compliance &amp; data-privacy facts
+          </p>
+          <p className="font-mono text-xs md:text-sm text-text-secondary max-w-xl">
+            {Brand.product.tagline}
+          </p>
         </div>
-        
+
         <div
-          className="max-w-xl mx-auto mt-4 md:mt-10 relative z-10"
+          className="max-w-xl mx-auto mt-4 md:mt-6 relative z-10"
           style={{
             transform: `translate3d(${parallax.x * 5}px, ${parallax.y * 4}px, 0)`,
           }}
@@ -262,8 +297,8 @@ export default function HomePage() {
               <h2 id="best-by-cat-heading" className="font-mono text-xs text-text-muted tracking-widest">
                 // BEST AI TOOLS BY CATEGORY
               </h2>
-              <p className="hidden md:block font-mono text-sm text-text-secondary leading-relaxed max-w-3xl">
-                AIFOXX curates the best AI tools across every major category — from AI coding assistants
+              <p className="hidden md:block font-sans text-sm text-text-secondary leading-relaxed max-w-3xl">
+                AIFOXX curates the best AI tools across every major category, from AI coding assistants
                 to image generators, marketing platforms, and writing tools. Browse our hand-picked guides
                 below, or search 1000+ tools above.
               </p>
@@ -284,12 +319,48 @@ export default function HomePage() {
           {!hasActiveFilters && featuredTools.length > 0 && (
             <section className="order-4 md:order-3 space-y-3" aria-labelledby="featured-heading">
               <h2 id="featured-heading" className="font-mono text-xs text-text-muted tracking-widest">// FEATURED AI TOOLS</h2>
-              <div className="flex gap-4 overflow-x-auto pb-2 -mx-1 px-1">
-                {featuredTools.map((tool) => (
-                  <div key={tool.id} className="min-w-[280px] max-w-[320px] shrink-0">
-                    <ToolCard tool={tool} />
-                  </div>
-                ))}
+              <div className="relative group/carousel">
+                <div
+                  ref={featuredScrollRef}
+                  onScroll={updateFeaturedEdges}
+                  className="flex gap-4 overflow-x-auto pb-2 px-1 scroll-smooth scroll-x"
+                >
+                  {featuredTools.map((tool) => (
+                    <div key={tool.id} className="w-[280px] sm:w-[300px] shrink-0">
+                      <ToolCard tool={tool} />
+                    </div>
+                  ))}
+                </div>
+
+                {/* Edge fades signal more cards off-screen */}
+                {featuredCanScrollLeft && (
+                  <div className="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-bg-base to-transparent" aria-hidden="true" />
+                )}
+                {featuredCanScrollRight && (
+                  <div className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-bg-base to-transparent" aria-hidden="true" />
+                )}
+
+                {/* Scroll arrows (desktop only; touch users swipe) */}
+                {featuredCanScrollLeft && (
+                  <button
+                    type="button"
+                    onClick={() => scrollFeatured(-1)}
+                    aria-label="Scroll featured tools left"
+                    className="hidden md:flex items-center justify-center absolute left-1 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-bg-elevated border border-border-default text-text-secondary hover:text-text-primary hover:border-accent-green/60 transition-colors duration-150 shadow-lg z-10"
+                  >
+                    <ChevronLeft size={18} />
+                  </button>
+                )}
+                {featuredCanScrollRight && (
+                  <button
+                    type="button"
+                    onClick={() => scrollFeatured(1)}
+                    aria-label="Scroll featured tools right"
+                    className="hidden md:flex items-center justify-center absolute right-1 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-bg-elevated border border-border-default text-text-secondary hover:text-text-primary hover:border-accent-green/60 transition-colors duration-150 shadow-lg z-10"
+                  >
+                    <ChevronRight size={18} />
+                  </button>
+                )}
               </div>
             </section>
           )}
@@ -335,51 +406,56 @@ export default function HomePage() {
             )}
 
             {!isEmpty && totalPages > 1 && (
-              <div className="pt-2 flex items-center justify-center gap-1.5 flex-wrap">
-                <button
-                  type="button"
-                  onClick={() => goToPage(currentPageSafe - 1)}
-                  disabled={currentPageSafe <= 1}
-                  className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
-                >
-                  PREV
-                </button>
+              <nav className="pt-2 flex flex-col items-center gap-2" aria-label="Pagination">
+                <div className="flex items-center justify-center gap-1.5 flex-wrap">
+                  <button
+                    type="button"
+                    onClick={() => goToPage(currentPageSafe - 1)}
+                    disabled={currentPageSafe <= 1}
+                    className="font-mono text-xs px-4 min-h-11 inline-flex items-center rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+                  >
+                    PREV
+                  </button>
 
-                {pageItems.map((item, index) =>
-                  item === "ellipsis" ? (
-                    <span key={`ellipsis-${index}`} className="font-mono text-xs text-text-muted px-1">
-                      ...
-                    </span>
-                  ) : (
-                    <button
-                      type="button"
-                      key={item}
-                      onClick={() => goToPage(item)}
-                      className={`font-mono text-xs min-w-8 px-2 py-1.5 rounded-[4px] border transition-all ${
-                        item === currentPageSafe
-                          ? "bg-accent-green text-primary-foreground border-accent-green"
-                          : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
-                      }`}
-                      aria-current={item === currentPageSafe ? "page" : undefined}
-                    >
-                      {item}
-                    </button>
-                  )
-                )}
+                  {pageItems.map((item, index) =>
+                    item === "ellipsis" ? (
+                      <span key={`ellipsis-${index}`} className="font-mono text-xs text-text-muted px-1">
+                        ...
+                      </span>
+                    ) : (
+                      <button
+                        type="button"
+                        key={item}
+                        onClick={() => goToPage(item)}
+                        className={`font-mono text-xs min-w-11 min-h-11 inline-flex items-center justify-center px-2 rounded-[4px] border transition-all ${
+                          item === currentPageSafe
+                            ? "bg-accent-green text-primary-foreground border-accent-green"
+                            : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
+                        }`}
+                        aria-current={item === currentPageSafe ? "page" : undefined}
+                      >
+                        {item}
+                      </button>
+                    )
+                  )}
 
-                <button
-                  type="button"
-                  onClick={() => goToPage(currentPageSafe + 1)}
-                  disabled={currentPageSafe >= totalPages}
-                  className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
-                >
-                  NEXT
-                </button>
-              </div>
+                  <button
+                    type="button"
+                    onClick={() => goToPage(currentPageSafe + 1)}
+                    disabled={currentPageSafe >= totalPages}
+                    className="font-mono text-xs px-4 min-h-11 inline-flex items-center rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+                  >
+                    NEXT
+                  </button>
+                </div>
+                <p className="font-mono text-xs text-text-muted" aria-live="polite">
+                  Page {currentPageSafe} of {totalPages}
+                </p>
+              </nav>
             )}
           </div>
 
-          {/* FAQ — visible content backing the FAQPage structured data */}
+          {/* FAQ: visible content backing the FAQPage structured data */}
           {!hasActiveFilters && (
             <section className="order-5 space-y-4" aria-labelledby="home-faq-heading">
               <div className="h-px w-full bg-gradient-to-r from-accent-green to-transparent" />
@@ -388,7 +464,7 @@ export default function HomePage() {
                 {homeFaq.map(({ q, a }) => (
                   <div key={q}>
                     <h3 className="font-display font-black text-sm text-text-primary">{q}</h3>
-                    <p className="font-mono text-sm text-text-secondary leading-relaxed mt-1">{a}</p>
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed mt-1">{a}</p>
                   </div>
                 ))}
               </div>

@@ -47,7 +47,8 @@
 
     --text-primary: 210 20% 93%;
     --text-secondary: 212 10% 56%;
-    --text-muted: 212 10% 31%;
+    /* Lightened so muted labels/legends clear the 4.5:1 contrast floor on the near-black background. */
+    --text-muted: 212 10% 59%;
 
     --accent-green: 26 86% 52%;
     --accent-blue: 214 100% 67%;
@@ -572,7 +573,7 @@ html, body {
 }
 
 [data-theme="dark"] .pricing-badge.pricing-free { color: #5cf2b3; background: rgba(47, 138, 95, 0.2); border-color: rgba(92, 242, 179, 0.5); }
-[data-theme="dark"] .pricing-badge.pricing-freemium { color: #ffd071; background: rgba(178, 131, 28, 0.2); border-color: rgba(255, 208, 113, 0.5); }
+[data-theme="dark"] .pricing-badge.pricing-freemium { color: #ffe08a; background: rgba(178, 131, 28, 0.32); border-color: rgba(255, 208, 113, 0.55); }
 [data-theme="dark"] .pricing-badge.pricing-paid { color: #ff8a95; background: rgba(169, 52, 62, 0.2); border-color: rgba(255, 138, 149, 0.5); }
 [data-theme="dark"] .pricing-badge.pricing-open-source { color: #c7a3ff; background: rgba(103, 63, 160, 0.2); border-color: rgba(199, 163, 255, 0.5); }
 [data-theme="dark"] .pricing-badge.pricing-usage-based { color: #87cfff; background: rgba(36, 92, 140, 0.2); border-color: rgba(135, 207, 255, 0.5); }
