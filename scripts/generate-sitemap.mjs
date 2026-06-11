@@ -130,7 +130,7 @@ function generateSitemap() {
     priority: 0.5,
   }));
 
-  // "vs" comparison pages — featured + same-category pairs, canonicalised (a<b).
+  // "vs" comparison pages: featured + same-category pairs, canonicalised (a<b).
   // Mirrors getStaticPaths in src/routes.tsx so the sitemap matches what's built.
   const vsGroups = new Map();
   for (const tool of tools) {

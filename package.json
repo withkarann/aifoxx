@@ -1,7 +1,7 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "aifoxx",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,7 +15,7 @@
     "test:watch": "vitest",
     "check": "npm run typecheck && npm run lint && npm run validate && npm run build",
     "prepare": "husky",
-    "validate": "node -e \"const t=require('./src/data/tools.json');const s=new Set();t.forEach((x,i)=>{const k=x.name.toLowerCase().replace(/[^a-z0-9]+/g,'-');if(s.has(k))throw new Error('DUPLICATE SLUG: '+k+' at index '+i);s.add(k);['name','category','subcategory','description','url','tags','pricing'].forEach(f=>{if(!x[f])throw new Error('MISSING: '+f+' at index '+i);});});console.log('✓ '+t.length+' tools valid, no duplicates');\""
+    "validate": "node scripts/validate-tools.mjs"
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.2.8",
