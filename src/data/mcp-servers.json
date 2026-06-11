@@ -865,7 +865,7 @@
   },
   {
     "id": "awslabs-mcp",
-    "name": "Mcp",
+    "name": "MCP (awslabs)",
     "description": "Official MCP Servers for AWS",
     "github_url": "https://github.com/awslabs/mcp",
     "stars": 8517,
@@ -1044,7 +1044,7 @@
   },
   {
     "id": "coplaydev-unity-mcp",
-    "name": "Unity Mcp",
+    "name": "Unity MCP (CoplayDev)",
     "description": "Unity MCP acts as a bridge, allowing AI assistants (like Claude, Cursor) to interact directly with your Unity Editor via a local MCP (Model Context Protocol) Client. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
     "github_url": "https://github.com/CoplayDev/unity-mcp",
     "stars": 7330,
@@ -1175,7 +1175,7 @@
   },
   {
     "id": "browsermcp-mcp",
-    "name": "Mcp",
+    "name": "MCP (BrowserMCP)",
     "description": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser",
     "github_url": "https://github.com/BrowserMCP/mcp",
     "stars": 6108,
@@ -2207,7 +2207,7 @@
   },
   {
     "id": "ivanmurzak-unity-mcp",
-    "name": "Unity MCP",
+    "name": "Unity MCP (IvanMurzak)",
     "description": "AI Skills, MCP Tools, and CLI for Unity Engine. Full AI develop and test loop. Use cli for quick setup. Efficient token usage, advanced tools. Any C# method may be turned into a tool by a single line. Works with Claude Code, Gemini, Copilot, Cursor and any other absolutely for free.",
     "github_url": "https://github.com/IvanMurzak/Unity-MCP",
     "stars": 1388,
@@ -2290,7 +2290,7 @@
   },
   {
     "id": "designcomputer-mysql_mcp_server",
-    "name": "Mysql_mcp_server",
+    "name": "MySQL MCP Server (designcomputer)",
     "description": "A Model Context Protocol (MCP) server that enables secure interaction with MySQL databases",
     "github_url": "https://github.com/designcomputer/mysql_mcp_server",
     "stars": 1177,
@@ -3335,7 +3335,7 @@
   },
   {
     "id": "georgekhananaev-claude-skills-vault",
-    "name": "Claude Skills Vault",
+    "name": "Claude Skills Vault (georgekhananaev)",
     "description": "A curated collection of high impact skills for Claude Code designed to supercharge the senior full stack workflow. This vault automates the repetitive parts of development like architectural reviews, TDD cycles, and PR management so you can stay in flow. It is a force multiplier for shipping clean, production ready code at scale. 🚀⚡️",
     "github_url": "https://github.com/georgekhananaev/claude-skills-vault",
     "stars": 14,
@@ -3881,7 +3881,7 @@
   },
   {
     "id": "mukul975-mysql-mcp-server",
-    "name": "Mysql Mcp Server",
+    "name": "MySQL MCP Server (mukul975)",
     "description": "A comprehensive Model Context Protocol (MCP) server for MySQL databases with 200+ tools for advanced database management, diagnostics, performance analysis, security auditing, and AI-powered database interactions.",
     "github_url": "https://github.com/mukul975/mysql-mcp-server",
     "stars": 2,
@@ -4010,7 +4010,7 @@
   },
   {
     "id": "hackermanishackerman-claude-skills-vault",
-    "name": "Claude Skills Vault",
+    "name": "Claude Skills Vault (hackermanishackerman)",
     "description": "🛠️ Curate and enhance your coding skills with Claude Skills Vault, a collection of commands and MCP server guides for efficient development.",
     "github_url": "https://github.com/hackermanishackerman/claude-skills-vault",
     "stars": 1,
