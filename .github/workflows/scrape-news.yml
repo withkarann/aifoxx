@@ -37,7 +37,7 @@ jobs:
           GH_TOKEN: ${{ secrets.NEWS_BOT_TOKEN }}
         run: |
           if [ -z "$(git status --porcelain src/data/news.json src/data/new-tools.json)" ]; then
-            echo "No news changes — nothing to commit."
+            echo "No news changes; nothing to commit."
             exit 0
           fi
           BRANCH="chore/news-$(date -u +%Y%m%d-%H%M%S)"

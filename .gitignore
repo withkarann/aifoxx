@@ -71,24 +71,31 @@ screenshots/
 *.p12
 *.pfx
 
-# Internal trust-center verification tooling (local-only; never publish)
-scripts/verify-trust.mjs
-scripts/judge-trust.mjs
-scripts/merge-trust.mjs
-scripts/report-trust.mjs
-scripts/aggregate-model.mjs
-scripts/prep-model-review.mjs
-scripts/strip-weak-sources.mjs
-scripts/trust-daily.sh
-scripts/TRUST-CENTERS.md
-scripts/trust-centers.json
-scripts/trust-report.md
-scripts/trust-verdicts.json*
-scripts/trust-review-queue.json
-scripts/needs-better-trust-url.json
-scripts/recapture-slugs.txt
-scripts/rerun-slugs.txt
-scripts/trust-evidence/
-scripts/trust-history/
+# Internal documents — keep these out of the public repo
+.lovable/
+docs/superpowers/
+SEO_PLAN.md
+CLAUDE.md
+.remember/
+
+# Local data-pipeline artifacts under scripts/ — never publish.
+# Note: scripts/generate-sitemap.mjs and scripts/scrape-news.mjs are tracked
+# build/data scripts and are intentionally NOT matched by the rules below.
+scripts/*.log
+scripts/compliance-*
+scripts/trust-*
 scripts/model-input/
 scripts/model-verdicts/
+scripts/*-slugs.txt
+scripts/needs-better-trust-url.json
+scripts/TRUST-CENTERS.md
+scripts/compliance-research-prompt.md
+scripts/prep-model-review.mjs
+scripts/judge-trust.mjs
+scripts/merge-*.mjs
+scripts/aggregate-model.mjs
+scripts/report-trust.mjs
+scripts/strip-weak-sources.mjs
+scripts/verify-*.mjs
+scripts/recapture-slugs.txt
+scripts/trust-daily.sh
