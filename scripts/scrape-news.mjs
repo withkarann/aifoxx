@@ -49,6 +49,12 @@ function scoreTitle(title) {
   return SCORE_KEYWORDS.reduce((sum, { re, w }) => sum + (re.test(title) ? w : 0), 0)
 }
 
+// Titles end up inside page markup and structured data, so a feed must never
+// be able to smuggle HTML through them. Drop angle brackets entirely.
+function sanitizeTitle(title) {
+  return title.replace(/[<>]/g, '').replace(/\s+/g, ' ').trim()
+}
+
 // ─── Source config ────────────────────────────────────────────────────────────
 
 const RSS_SOURCES = [
@@ -248,7 +254,7 @@ async function fetchHN() {
   return (data.hits || [])
     .filter((h) => h.url && h.title)
     .map((h) => {
-      const title = h.title
+      const title = sanitizeTitle(h.title)
       const date = new Date(h.created_at_i * 1000).toISOString()
       return {
         id: `hn-${h.objectID}`,
@@ -271,7 +277,7 @@ async function fetchLaunchHN() {
   return (data.hits || [])
     .filter((h) => h.url && h.title && /^Launch HN:/i.test(h.title))
     .map((h) => {
-      const title = h.title.replace(/^Launch HN:\s*/i, '').trim()
+      const title = sanitizeTitle(h.title.replace(/^Launch HN:\s*/i, ''))
       const date = new Date(h.created_at_i * 1000).toISOString()
       return {
         id: `launch-hn-${h.objectID}`,
@@ -293,7 +299,7 @@ async function fetchRSSSource(source) {
   const items = source.atom ? parseAtom(xml) : parseRSS(xml)
   const results = []
   for (const i of items.slice(0, MAX_PER_SOURCE)) {
-    const title = i.title
+    const title = sanitizeTitle(i.title)
     const score = scoreTitle(title)
     // For general sources (needsScore), skip items with zero AI relevance
     if (source.needsScore && score === 0) continue
