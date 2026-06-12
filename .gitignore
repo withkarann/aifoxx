@@ -76,6 +76,7 @@ screenshots/
 docs/superpowers/
 SEO_PLAN.md
 CLAUDE.md
+AGENTS.md
 .remember/
 
 # Local data-pipeline artifacts under scripts/ — never publish.
