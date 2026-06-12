@@ -108,6 +108,12 @@ export function Footer() {
             <GithubLogo size={14} />
             Discussions
           </a>
+          <Link
+            to={Brand.legal.privacy_url}
+            className="hover:text-text-secondary transition-colors duration-150"
+          >
+            Privacy
+          </Link>
           <span>MIT License</span>
           <span>v{Brand.product.version}</span>
           <CRTOverlay />

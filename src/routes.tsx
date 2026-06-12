@@ -10,6 +10,7 @@ import CompareVsPage from "./pages/CompareVsPage";
 import SkillsPage from "./pages/SkillsPage";
 import McpServersPage from "./pages/McpServersPage";
 import NewsPage from "./pages/NewsPage";
+import PrivacyPage from "./pages/PrivacyPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import BestIndexPage from "./pages/BestIndexPage";
 import BestCategoryPage from "./pages/BestCategoryPage";
@@ -93,6 +94,7 @@ export const routes: RouteRecord[] = [
       { path: "skills", Component: SkillsPage },
       { path: "mcp", Component: McpServersPage },
       { path: "news", Component: NewsPage },
+      { path: "privacy", Component: PrivacyPage },
       { path: "best", Component: BestIndexPage },
       {
         path: "best/:slug",
