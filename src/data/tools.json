@@ -52035,5 +52035,62 @@
       "soc2": "https://tuple.app/security",
       "iso27001": "https://tuple.app/security"
     }
+  },
+  {
+    "id": "1001",
+    "name": "FPVTune",
+    "slug": "fpvtune",
+    "category": "Data & Analytics",
+    "subcategory": "Predictive Analytics",
+    "description": "FPVTune is an open-source AI assistant for FPV drone pilots that analyzes Betaflight blackbox logs and suggests practical PID and filter tuning changes.",
+    "url": "https://fpvtune.com/",
+    "tags": [
+      "fpv",
+      "drones",
+      "betaflight",
+      "pid tuning",
+      "blackbox logs"
+    ],
+    "pricing": "Open Source",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-06-17",
+    "access_methods": [
+      "Web App",
+      "Source Code"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": true
+    },
+    "pricing_detail": {
+      "free_tier": "Open-source project with public repository",
+      "paid_plans": null,
+      "api_cost": null
+    },
+    "use_cases": [
+      "Analyzing Betaflight blackbox flight logs",
+      "Generating PID and filter tuning suggestions",
+      "Diagnosing gyro noise, resonance, and prop wash issues"
+    ],
+    "not_good_for": [
+      "General-purpose flight simulation",
+      "Non-Betaflight drone firmware tuning"
+    ],
+    "industries": [
+      "Drones",
+      "Robotics",
+      "Hobby Electronics"
+    ],
+    "compliance_sources": {
+      "self_hostable": "https://github.com/chugzb/betaflight-pid-autotuning"
+    }
   }
 ]
