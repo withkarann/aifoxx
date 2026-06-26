@@ -1951,7 +1951,7 @@
     "category": "Content Creation",
     "subcategory": "Writing",
     "description": "Notion AI is an integrated AI writing assistant within the Notion workspace that can draft documents, summarize notes, generate action items, and improve writing without leaving the app.",
-    "url": "https://notion.so/product/ai",
+    "url": "https://www.notion.com/product/ai",
     "tags": [
       "notion",
       "workspace ai",
@@ -2315,56 +2315,6 @@
     }
   },
   {
-    "id": "44",
-    "name": "INK Editor",
-    "slug": "ink-editor",
-    "category": "Content Creation",
-    "subcategory": "Writing",
-    "description": "INK Editor is an AI writing and SEO optimization tool that provides real-time SEO guidance while writing, optimizing content for both human readers and search engine ranking simultaneously.",
-    "url": "https://inkforall.com",
-    "tags": [
-      "ai writing",
-      "seo editor",
-      "real-time optimization",
-      "content scoring",
-      "keyword optimization"
-    ],
-    "pricing": "Freemium",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "Web App",
-      "Desktop App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Free plan available",
-      "paid_plans": "Professional at $49/month, Enterprise at $119/month",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Writing SEO content with real-time scoring",
-      "Blog post optimization",
-      "On-page keyword optimization",
-      "Improving content readability",
-      "Landing page SEO writing"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
-  },
-  {
     "id": "45",
     "name": "Scalenut",
     "slug": "scalenut",
@@ -2465,12 +2415,12 @@
   },
   {
     "id": "47",
-    "name": "Peppertype.ai",
+    "name": "Pepper (Pepper Content)",
     "slug": "peppertype-ai",
     "category": "Content Creation",
     "subcategory": "Copywriting",
     "description": "Peppertype.ai is an AI content assistant from Pepper Content that generates marketing copy, blog introductions, ad scripts, and social media posts using GPT-based models with content templates.",
-    "url": "https://peppertype.ai",
+    "url": "https://www.pepper.inc",
     "tags": [
       "ai copywriting",
       "content templates",
@@ -2920,55 +2870,6 @@
     "compliance_sources": {}
   },
   {
-    "id": "56",
-    "name": "Narrato",
-    "slug": "narrato",
-    "category": "Content Creation",
-    "subcategory": "Writing",
-    "description": "Narrato is an AI content workspace that combines content planning, AI writing, SEO optimization, and workflow management for content teams. It includes a content calendar and team collaboration features.",
-    "url": "https://narrato.io",
-    "tags": [
-      "content workspace",
-      "content planning",
-      "ai writing",
-      "seo",
-      "team workflow"
-    ],
-    "pricing": "Freemium",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "Web App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Free trial available",
-      "paid_plans": "Pro at $59/month, Business at $149/month",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Managing content team workflows",
-      "Planning and scheduling content calendar",
-      "AI-assisted article writing",
-      "SEO content optimization",
-      "Assigning and reviewing content tasks"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
-  },
-  {
     "id": "57",
     "name": "StoryLab.ai",
     "slug": "storylab-ai",
@@ -3123,12 +3024,12 @@
   },
   {
     "id": "60",
-    "name": "Reword",
+    "name": "Juno",
     "slug": "reword",
     "category": "Content Creation",
     "subcategory": "Blog Writing",
     "description": "Reword is an AI collaborative writing tool designed to help writers create articles while learning their unique style and preferences over time, producing more personalized and original content.",
-    "url": "https://reword.co",
+    "url": "https://www.getjuno.com",
     "tags": [
       "article writing",
       "personalized ai",
@@ -3561,7 +3462,7 @@
     ],
     "pricing": "Freemium",
     "featured": true,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Desktop App",
@@ -3863,12 +3764,12 @@
   },
   {
     "id": "74",
-    "name": "Codium AI",
+    "name": "Qodo",
     "slug": "codium-ai",
     "category": "Coding",
     "subcategory": "Testing",
     "description": "Codium AI (now Qodo) is an AI test generation tool that analyzes code and automatically generates meaningful tests to improve code coverage and catch edge cases before deployment.",
-    "url": "https://codium.ai",
+    "url": "https://www.qodo.ai",
     "tags": [
       "test generation",
       "unit tests",
@@ -4505,7 +4406,7 @@
     "category": "Coding",
     "subcategory": "Code Generation",
     "description": "v0 is Vercel's AI UI generation tool that creates React and shadcn/ui components from text or image prompts, allowing developers to generate and iterate on UI code directly from a browser interface.",
-    "url": "https://v0.dev",
+    "url": "https://v0.app",
     "tags": [
       "ui generation",
       "react",
@@ -5129,7 +5030,7 @@
     "category": "Coding",
     "subcategory": "API Development",
     "description": "The Vercel AI SDK is an open-source TypeScript toolkit for building AI-powered streaming applications with React, Next.js, and other frameworks, simplifying integration with major LLM providers.",
-    "url": "https://sdk.vercel.ai",
+    "url": "https://ai-sdk.dev",
     "tags": [
       "ai sdk",
       "typescript",
@@ -6277,7 +6178,7 @@
     "category": "Design",
     "subcategory": "UI/UX Design",
     "description": "Galileo AI is an AI UI design generator that creates editable Figma UI designs from text descriptions in seconds, helping designers and product teams prototype interface ideas rapidly.",
-    "url": "https://usegalileo.ai",
+    "url": "https://stitch.withgoogle.com",
     "tags": [
       "ui generation",
       "figma",
@@ -6287,7 +6188,7 @@
     ],
     "pricing": "Freemium",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-03-13",
     "access_methods": [
       "Web App"
@@ -6869,55 +6770,6 @@
     "compliance_sources": {}
   },
   {
-    "id": "132",
-    "name": "Magician (Figma)",
-    "slug": "magician-figma",
-    "category": "Design",
-    "subcategory": "UI/UX Design",
-    "description": "Magician is an AI design plugin for Figma that generates icons, images, and copy directly within Figma using AI, streamlining the design workflow without switching between tools.",
-    "url": "https://magician.design",
-    "tags": [
-      "figma plugin",
-      "ai icons",
-      "design workflow",
-      "image generation",
-      "copy generation"
-    ],
-    "pricing": "Paid",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "Plugin"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Free trial",
-      "paid_plans": "Plans from $4.99/month",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Generating icons inside Figma",
-      "Creating AI images within design files",
-      "Writing copy for UI components",
-      "Speeding up design mockup creation",
-      "Exploring design variations in Figma"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
-  },
-  {
     "id": "134",
     "name": "Uxpilot",
     "slug": "uxpilot",
@@ -7452,7 +7304,7 @@
     "category": "Design",
     "subcategory": "Presentation Design",
     "description": "Plus AI is an AI presentation assistant for Google Slides and PowerPoint that generates, edits, and redesigns presentations directly within the apps, supporting creation from scratch and slide-by-slide regeneration.",
-    "url": "https://plusdocs.com",
+    "url": "https://plusai.com",
     "tags": [
       "google slides",
       "powerpoint",
@@ -7819,7 +7671,7 @@
     "category": "Image Generation",
     "subcategory": "Text-to-Image",
     "description": "Flux is a family of state-of-the-art text-to-image generation models by Black Forest Labs, offering high quality, prompt adherence, and photorealism, available via API and through platforms like Replicate.",
-    "url": "https://blackforestlabs.ai",
+    "url": "https://bfl.ai",
     "tags": [
       "flux model",
       "text-to-image",
@@ -9957,12 +9809,12 @@
   },
   {
     "id": "194",
-    "name": "Rendernet AI",
+    "name": "Affogato AI",
     "slug": "rendernet-ai",
     "category": "Image Generation",
     "subcategory": "Avatar Generation",
     "description": "Rendernet AI is an AI character generation platform focused on creating consistent, high-quality character portraits for games, comics, and creative projects with face-locking and style control features.",
-    "url": "https://rendernet.ai",
+    "url": "https://affogato.ai",
     "tags": [
       "character generation",
       "consistent characters",
@@ -10525,7 +10377,7 @@
     "category": "Video",
     "subcategory": "Video Generation",
     "description": "Kling AI is an advanced AI video generation model by Kuaishou Technology that creates high-quality, realistic videos from text and image inputs, supporting up to 2-minute clips at 1080p. It features advanced motion simulation and cinematic camera controls.",
-    "url": "https://klingai.com",
+    "url": "https://kling.ai",
     "tags": [
       "text-to-video",
       "video generation",
@@ -11195,7 +11047,7 @@
     "category": "Video",
     "subcategory": "Video Generation",
     "description": "DeepBrain AI creates hyper-realistic AI human avatars for video generation, supporting text-to-video production with over 100 AI avatars in multiple languages. It serves media, retail, and enterprise sectors with digital human experiences.",
-    "url": "https://deepbrain.io",
+    "url": "https://aistudios.com",
     "tags": [
       "digital humans",
       "ai avatars",
@@ -11456,55 +11308,6 @@
       "trains_on_data": "https://www.tavus.io/privacy-policy",
       "region": "https://www.tavus.io/privacy-policy"
     }
-  },
-  {
-    "id": "223",
-    "name": "Hour One",
-    "slug": "hour-one",
-    "category": "Video",
-    "subcategory": "Video Generation",
-    "description": "Hour One is an AI video platform that enables businesses to create professional video communications using realistic virtual humans from text in minutes. It is designed for corporate training, customer communications, and marketing video production.",
-    "url": "https://hourone.ai",
-    "tags": [
-      "virtual humans",
-      "corporate video",
-      "ai avatars",
-      "text-to-video",
-      "business communications"
-    ],
-    "pricing": "Paid",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "Web App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Free plan with limited videos",
-      "paid_plans": "Lite $25/mo, Business $95/mo, Enterprise custom",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Creating internal training and compliance videos",
-      "Building product explainer videos",
-      "Generating multilingual corporate communications",
-      "Producing scalable video marketing content",
-      "Making virtual spokesperson videos"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
   },
   {
     "id": "224",
@@ -11826,7 +11629,7 @@
     "category": "Video",
     "subcategory": "Video Editing",
     "description": "Riverside is an AI-powered remote recording and editing platform that captures studio-quality audio and video locally on each participant's device for podcasts and interviews. It offers AI-powered transcription, clip generation, and video editing features.",
-    "url": "https://riverside.fm",
+    "url": "https://riverside.com",
     "tags": [
       "podcast recording",
       "remote recording",
@@ -12092,7 +11895,7 @@
     "category": "Video",
     "subcategory": "Video Editing",
     "description": "Fathom is a free AI meeting assistant that records and transcribes Zoom, Google Meet, and Teams calls, providing instant AI meeting summaries and CRM sync. It is praised for being free for individuals and offering highly accurate call recordings.",
-    "url": "https://fathom.video",
+    "url": "https://fathom.ai",
     "tags": [
       "meeting assistant",
       "ai summaries",
@@ -12456,7 +12259,7 @@
     "category": "Video",
     "subcategory": "Video Editing",
     "description": "Wisecut is an AI-powered automatic video editing tool that removes silences, adds subtitles, creates background music, and generates face-tracking cuts automatically from raw video footage. It is designed to drastically reduce video editing time for content creators.",
-    "url": "https://wisecut.video",
+    "url": "https://wisecut.ai",
     "tags": [
       "auto video editing",
       "silence removal",
@@ -12500,12 +12303,12 @@
   },
   {
     "id": "243",
-    "name": "Vidyo.ai",
+    "name": "Quso.ai",
     "slug": "vidyo-ai",
     "category": "Video",
     "subcategory": "Video Editing",
     "description": "Vidyo.ai is an AI-powered short video creation tool that automatically extracts and repurposes engaging clips from long-form content for social media platforms. It offers AI-generated captions, chapters, and social media scheduling.",
-    "url": "https://vidyo.ai",
+    "url": "https://quso.ai",
     "tags": [
       "short video creator",
       "content repurposing",
@@ -12554,7 +12357,7 @@
     "category": "Video",
     "subcategory": "Video Editing",
     "description": "Munch is an AI content repurposing platform that extracts the most marketable and engaging moments from long-form videos using AI trend analysis and topic detection. It generates short clips, social media captions, and post text optimized for each platform.",
-    "url": "https://getmunch.com",
+    "url": "https://munchstudio.com",
     "tags": [
       "content repurposing",
       "video clips",
@@ -12703,7 +12506,7 @@
     "category": "Video",
     "subcategory": "Video Enhancement",
     "description": "Papercup is an AI video dubbing platform that translates and dubs video content into multiple languages using AI-generated voices that sound natural and match the original speaker's tone. It is used by media companies and enterprises to expand global content reach.",
-    "url": "https://papercup.com",
+    "url": "https://www.rws.com",
     "tags": [
       "video dubbing",
       "ai translation",
@@ -12713,7 +12516,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Web App"
@@ -13511,57 +13314,6 @@
     }
   },
   {
-    "id": "263",
-    "name": "Play.ht",
-    "slug": "play-ht",
-    "category": "Audio & Music",
-    "subcategory": "Text-to-Speech",
-    "description": "Play.ht is an AI text-to-speech platform that converts written content into natural-sounding audio with 600+ voices in 100+ languages, supporting podcast creation, article audio, and voice cloning. It offers a WordPress plugin and API for audio publishing integration.",
-    "url": "https://play.ht",
-    "tags": [
-      "text-to-speech",
-      "article to audio",
-      "podcast creation",
-      "voice cloning",
-      "multilingual tts"
-    ],
-    "pricing": "Freemium",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "Web App",
-      "API",
-      "Plugin"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Free trial with limited characters",
-      "paid_plans": "Creator $39/mo, Pro $99/mo, Enterprise custom",
-      "api_cost": "API pricing per character"
-    },
-    "use_cases": [
-      "Converting blog posts to audio for accessibility",
-      "Creating voiceovers for video content",
-      "Generating podcast audio from scripts",
-      "Building voice clones for brand consistency",
-      "Publishing audio articles on websites"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
-  },
-  {
     "id": "264",
     "name": "Speechify",
     "slug": "speechify",
@@ -13621,7 +13373,7 @@
     "category": "Audio & Music",
     "subcategory": "Text-to-Speech",
     "description": "WellSaid Labs is an enterprise-grade AI voice generation platform that creates realistic, studio-quality voiceovers from text for training, marketing, and product experiences. It offers branded voice studio avatars and high compliance standards for enterprise customers.",
-    "url": "https://wellsaidlabs.com",
+    "url": "https://wellsaid.io",
     "tags": [
       "enterprise tts",
       "ai voiceover",
@@ -13928,7 +13680,7 @@
     "category": "Audio & Music",
     "subcategory": "Text-to-Speech",
     "description": "Listnr is an AI voice generator that converts text content into realistic speech and podcasts, enabling content creators and publishers to create audio versions of their written content. It supports 900+ AI voices across 142 languages with an embeddable audio player.",
-    "url": "https://listnr.tech",
+    "url": "https://listnr.ai",
     "tags": [
       "text-to-speech",
       "ai voice",
@@ -14025,12 +13777,12 @@
   },
   {
     "id": "273",
-    "name": "Podcastle",
+    "name": "Async",
     "slug": "podcastle",
     "category": "Audio & Music",
     "subcategory": "Podcast Tools",
     "description": "Podcastle is an AI-powered podcast creation platform that provides studio-quality recording, AI voice cloning, automated transcription, and editing tools in a browser-based interface. It enables podcasters to create professional episodes without hardware studios.",
-    "url": "https://podcastle.ai",
+    "url": "https://async.com",
     "tags": [
       "podcast creation",
       "ai recording",
@@ -16681,12 +16433,12 @@
   },
   {
     "id": "325",
-    "name": "Phrasee",
+    "name": "Jacquard",
     "slug": "phrasee",
     "category": "Marketing",
     "subcategory": "Content Marketing",
     "description": "Phrasee is an AI-powered brand language optimization platform that generates and tests marketing copy for email subject lines, push notifications, SMS, and social ads using natural language generation and predictive performance scoring. It helps enterprise marketers improve campaign performance with on-brand AI copy.",
-    "url": "https://phrasee.co",
+    "url": "https://jacquard.com",
     "tags": [
       "ai copywriting",
       "email subject lines",
@@ -17403,7 +17155,7 @@
     "category": "Marketing",
     "subcategory": "Email Marketing",
     "description": "Marketo Engage (by Adobe) is an enterprise marketing automation platform that manages complex B2B demand generation, lead nurturing, account-based marketing, and revenue attribution at scale. It is widely adopted by enterprise marketing teams for orchestrating multi-channel campaign journeys.",
-    "url": "https://marketo.com",
+    "url": "https://business.adobe.com/products/marketo/adobe-marketo.html",
     "tags": [
       "marketing automation",
       "b2b marketing",
@@ -17413,7 +17165,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-03-13",
     "access_methods": [
       "Web App",
@@ -17713,12 +17465,12 @@
   },
   {
     "id": "346",
-    "name": "Insider",
+    "name": "Insider One",
     "slug": "insider",
     "category": "Marketing",
     "subcategory": "Email Marketing",
     "description": "Insider is an AI-powered growth management platform that unifies customer data and enables personalized cross-channel marketing experiences across web, app, email, SMS, and WhatsApp. It is recognized by Gartner and uses predictive AI to recommend the best next action for each customer.",
-    "url": "https://useinsider.com",
+    "url": "https://insiderone.com",
     "tags": [
       "growth platform",
       "personalization",
@@ -19215,7 +18967,7 @@
     "category": "Sales & CRM",
     "subcategory": "Outreach Automation",
     "description": "Outreach is an AI-powered sales execution platform that manages multi-touch sales sequences, call workflows, and deal management while providing AI-driven insights on pipeline health, rep performance, and deal risks. It is a leading sales engagement platform used by enterprise sales teams.",
-    "url": "https://outreach.io",
+    "url": "https://www.outreach.ai",
     "tags": [
       "sales engagement",
       "email sequences",
@@ -19654,12 +19406,12 @@
   },
   {
     "id": "383",
-    "name": "People.ai",
+    "name": "Backstory",
     "slug": "people-ai",
     "category": "Sales & CRM",
     "subcategory": "Revenue Intelligence",
     "description": "People.ai is an AI revenue intelligence platform that automatically captures sales activity data from emails, calendars, and calls, then maps it to CRM records to give revenue leaders a complete view of account engagement and deal progress. It eliminates manual CRM data entry for sales reps.",
-    "url": "https://people.ai",
+    "url": "https://backstory.ai",
     "tags": [
       "revenue intelligence",
       "activity capture",
@@ -20638,7 +20390,7 @@
     "category": "Productivity",
     "subcategory": "Knowledge Management",
     "description": "Notion is an all-in-one AI-powered workspace that combines notes, databases, wikis, and project management. Its AI features help users draft content, summarize pages, and auto-fill databases.",
-    "url": "https://notion.so",
+    "url": "https://notion.com",
     "tags": [
       "notes",
       "wiki",
@@ -21165,7 +20917,7 @@
     "category": "Productivity",
     "subcategory": "Knowledge Management",
     "description": "Tettra is an AI knowledge management system that allows teams to capture and share company knowledge. It integrates with Slack to answer team questions directly from the knowledge base.",
-    "url": "https://tettra.co",
+    "url": "https://tettra.com",
     "tags": [
       "knowledge base",
       "slack integration",
@@ -22064,7 +21816,7 @@
     "category": "Productivity",
     "subcategory": "Workflow Automation",
     "description": "Tray.io is an enterprise AI integration and automation platform that enables teams to build and deploy complex workflows connecting SaaS applications. It offers a low-code visual builder alongside a powerful workflow engine.",
-    "url": "https://tray.io",
+    "url": "https://tray.ai",
     "tags": [
       "enterprise automation",
       "integration",
@@ -23308,7 +23060,7 @@
     "category": "Productivity",
     "subcategory": "Document Management",
     "description": "Scribe is an AI process documentation tool that automatically creates step-by-step guides with screenshots as you work. It captures browser and desktop workflows and generates written SOPs and tutorials instantly.",
-    "url": "https://scribehow.com",
+    "url": "https://scribe.com",
     "tags": [
       "process documentation",
       "sop",
@@ -23362,7 +23114,7 @@
     "category": "Productivity",
     "subcategory": "Document Management",
     "description": "Tango is an AI workflow documentation tool that automatically generates step-by-step tutorials with annotated screenshots as you complete tasks in your browser. It helps teams create training materials and onboarding guides with minimal effort.",
-    "url": "https://tango.us",
+    "url": "https://tango.ai",
     "tags": [
       "workflow documentation",
       "tutorials",
@@ -23935,7 +23687,7 @@
     "category": "Productivity",
     "subcategory": "Knowledge Management",
     "description": "Fibery is an AI-powered work platform that lets teams create custom tools for their unique workflows by combining databases, wikis, and boards. Its AI features include AI fields, text generation, and automated insights.",
-    "url": "https://fibery.io",
+    "url": "https://fibery.com",
     "tags": [
       "work management",
       "custom tools",
@@ -24538,7 +24290,7 @@
     "category": "Research",
     "subcategory": "Academic Research",
     "description": "Inciteful is a free AI citation network tool that builds a graph of papers connected to a seed paper through citations, then uses algorithms to rank the most important related works. It helps researchers quickly find key literature.",
-    "url": "https://inciteful.xyz",
+    "url": "https://incitefulmed.com/academic/",
     "tags": [
       "citation network",
       "free",
@@ -24779,12 +24531,12 @@
   },
   {
     "id": "481",
-    "name": "Unriddle",
+    "name": "Anara",
     "slug": "unriddle",
     "category": "Research",
     "subcategory": "Academic Research",
     "description": "Unriddle is an AI research assistant that helps users read, annotate, and understand complex documents faster. It allows users to ask questions about research papers, generate citations, and write AI-assisted notes connected to source material.",
-    "url": "https://unriddle.ai",
+    "url": "https://anara.com",
     "tags": [
       "research assistant",
       "annotations",
@@ -26897,7 +26649,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Web App",
@@ -28011,12 +27763,12 @@
   },
   {
     "id": "544",
-    "name": "MicroStrategy",
+    "name": "Strategy",
     "slug": "microstrategy",
     "category": "Data & Analytics",
     "subcategory": "Business Intelligence",
     "description": "MicroStrategy is an enterprise analytics and business intelligence platform known for its ability to handle large-scale data and complex analytical workloads. It has expanded into AI-powered analytics and enterprise semantic layers for consistent metric definitions.",
-    "url": "https://microstrategy.com",
+    "url": "https://strategy.com",
     "tags": [
       "enterprise analytics",
       "business intelligence",
@@ -28743,12 +28495,12 @@
   },
   {
     "id": "558",
-    "name": "Obviously AI",
+    "name": "Zams",
     "slug": "obviously-ai",
     "category": "Data & Analytics",
     "subcategory": "Predictive Analytics",
     "description": "Obviously AI is a no-code machine learning platform that enables business users to build and deploy predictive models from CSV data without writing any code. It provides instant predictions and model explanations to help teams make data-driven decisions.",
-    "url": "https://obviously.ai",
+    "url": "https://zams.com",
     "tags": [
       "no-code ml",
       "predictive analytics",
@@ -28904,7 +28656,7 @@
     "category": "Data & Analytics",
     "subcategory": "Predictive Analytics",
     "description": "RapidMiner is a data science platform that provides an end-to-end environment for data preparation, machine learning, deep learning, and model deployment. It offers a visual workflow designer that enables both data scientists and business analysts to build AI models.",
-    "url": "https://rapidminer.com",
+    "url": "https://altair.com/rapidminer",
     "tags": [
       "data science",
       "machine learning",
@@ -28914,7 +28666,7 @@
     ],
     "pricing": "Freemium",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Web App",
@@ -29230,7 +28982,7 @@
     "category": "Data & Analytics",
     "subcategory": "Predictive Analytics",
     "description": "Domino Data Lab is an enterprise MLOps platform that helps data science teams develop, deploy, and monitor models in a centralized, reproducible environment. It supports any language, framework, or compute environment with integrated model governance.",
-    "url": "https://dominodatalab.com",
+    "url": "https://domino.ai",
     "tags": [
       "mlops",
       "enterprise",
@@ -29333,7 +29085,7 @@
     "category": "Data & Analytics",
     "subcategory": "Statistical Analysis",
     "description": "MonkeyLearn is a no-code AI text analysis platform that enables businesses to extract insights from text data using classification and extraction models. It provides sentiment analysis, keyword extraction, intent detection, and custom ML model training without coding.",
-    "url": "https://monkeylearn.com",
+    "url": "https://www.medallia.com",
     "tags": [
       "text analysis",
       "sentiment analysis",
@@ -29343,7 +29095,7 @@
     ],
     "pricing": "Freemium",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Web App",
@@ -30036,7 +29788,7 @@
     "category": "HR & Recruitment",
     "subcategory": "Resume Screening",
     "description": "Greenhouse is an AI-powered recruiting platform that helps companies build structured, unbiased hiring processes with tools for sourcing, interviewing, and onboarding. Its AI features include candidate matching, interview scorecards, and diversity recruiting analytics.",
-    "url": "https://greenhouse.io",
+    "url": "https://greenhouse.com",
     "tags": [
       "recruiting",
       "ats",
@@ -30628,7 +30380,7 @@
     "category": "HR & Recruitment",
     "subcategory": "Resume Screening",
     "description": "HiredScore is an AI talent orchestration platform that uses explainable AI to score and prioritize candidates, identify matches for internal roles, and reduce bias in hiring decisions. It integrates with enterprise ATS platforms to enhance existing recruiting workflows.",
-    "url": "https://hiredscore.com",
+    "url": "https://www.workday.com/en-us/products/talent-management/ai-recruiting.html",
     "tags": [
       "ai screening",
       "candidate scoring",
@@ -30638,7 +30390,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Web App",
@@ -31532,7 +31284,7 @@
     ],
     "pricing": "Free",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-03-13",
     "access_methods": [
       "iOS App",
@@ -31773,12 +31525,12 @@
   },
   {
     "id": "616",
-    "name": "Quizizz",
+    "name": "Wayground",
     "slug": "quizizz",
     "category": "Education",
     "subcategory": "Quiz Generation",
     "description": "Quizizz is an AI-powered quiz and learning game platform used by teachers to create engaging assessments and by students to self-study using gamified quizzes. Its AI features include auto-generated questions from any topic or document and real-time student performance analytics.",
-    "url": "https://quizizz.com",
+    "url": "https://wayground.com",
     "tags": [
       "quiz platform",
       "gamification",
@@ -32859,56 +32611,6 @@
     "compliance_sources": {}
   },
   {
-    "id": "638",
-    "name": "Knewton",
-    "slug": "knewton",
-    "category": "Education",
-    "subcategory": "Tutoring",
-    "description": "Knewton (now part of Wiley) is an adaptive learning technology platform that personalizes educational content delivery for higher education students by continuously analyzing performance data and adjusting recommendations. It is used by publishers and institutions to embed adaptive learning into existing courseware.",
-    "url": "https://knewton.com",
-    "tags": [
-      "adaptive learning",
-      "higher education",
-      "personalization",
-      "wiley",
-      "courseware"
-    ],
-    "pricing": "Paid",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "Web App",
-      "API"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": null,
-      "paid_plans": "Institutional licensing through Wiley; pricing on request",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Universities deploying adaptive homework and practice tools",
-      "Publishers embedding adaptive features in digital textbooks",
-      "Improving pass rates in gateway college courses",
-      "Delivering personalized remediation for underprepared students",
-      "Integrating with LMS platforms for adaptive assignments"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
-  },
-  {
     "id": "639",
     "name": "Third Space Learning",
     "slug": "third-space-learning",
@@ -33620,12 +33322,12 @@
   },
   {
     "id": "654",
-    "name": "Atomwise",
+    "name": "Numerion Labs",
     "slug": "atomwise",
     "category": "Healthcare",
     "subcategory": "Drug Discovery",
     "description": "Atomwise is an AI drug discovery platform that uses convolutional neural networks to predict how small molecules bind to protein targets, enabling faster and cheaper identification of drug candidates. Its AtomNet technology has been used to screen billions of compounds for therapeutic potential.",
-    "url": "https://atomwise.com",
+    "url": "https://numerionlabs.ai",
     "tags": [
       "drug discovery",
       "molecular modeling",
@@ -33674,7 +33376,7 @@
     "category": "Healthcare",
     "subcategory": "Drug Discovery",
     "description": "BenevolentAI is an AI-powered drug discovery company that uses its biomedical knowledge graph and machine learning to identify novel disease targets and drug candidates across multiple therapeutic areas. It has an internal drug pipeline and provides platform access to pharmaceutical partners.",
-    "url": "https://benevolent.ai",
+    "url": "https://www.benevolent.com",
     "tags": [
       "drug discovery",
       "knowledge graph",
@@ -33733,7 +33435,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-03-13",
     "access_methods": [
       "Web App"
@@ -34020,7 +33722,7 @@
     "category": "Healthcare",
     "subcategory": "Medical Documentation",
     "description": "Nuance DAX (Dragon Ambient eXperience) is an AI-powered ambient clinical intelligence solution from Microsoft Nuance that automatically documents patient encounters by listening to physician-patient conversations and generating structured clinical notes. It reduces documentation time by up to 50%, giving physicians more time with patients.",
-    "url": "https://nuance.com/healthcare/ambient-clinical-intelligence",
+    "url": "https://www.microsoft.com/en-us/health-solutions/clinical-workflow/dragon-copilot",
     "tags": [
       "clinical documentation",
       "ambient ai",
@@ -34030,7 +33732,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-03-13",
     "access_methods": [
       "iOS App",
@@ -34592,12 +34294,12 @@
   },
   {
     "id": "673",
-    "name": "Fitbit AI",
+    "name": "Google Fitbit",
     "slug": "fitbit-ai",
     "category": "Healthcare",
     "subcategory": "Health Monitoring",
     "description": "Fitbit, owned by Google, is a health and fitness platform with wearable devices that use AI to track activity, sleep, heart rate, blood oxygen, stress, and more, providing personalized health insights through the Fitbit app. Its AI features include Daily Readiness Score, stress management tools, and personalized exercise recommendations.",
-    "url": "https://fitbit.com",
+    "url": "https://store.google.com/category/watches_trackers",
     "tags": [
       "fitness tracker",
       "health monitoring",
@@ -34840,55 +34542,6 @@
       "COVID-19 screening and vaccine information distribution",
       "Healthcare call center deflection with AI self-service",
       "Patient FAQ bots for insurance and benefits questions"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
-  },
-  {
-    "id": "678",
-    "name": "Olive AI",
-    "slug": "olive-ai",
-    "category": "Healthcare",
-    "subcategory": "Clinical AI",
-    "description": "Olive AI is an AI automation platform for healthcare operations that uses robotic process automation and AI to streamline administrative workflows including prior authorizations, eligibility verification, and revenue cycle management. It was acquired by Waystar in 2023 to enhance healthcare payment automation.",
-    "url": "https://oliveai.com",
-    "tags": [
-      "healthcare rpa",
-      "revenue cycle",
-      "prior authorization",
-      "administrative ai",
-      "waystar"
-    ],
-    "pricing": "Paid",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "Web App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": null,
-      "paid_plans": "Enterprise health system licensing through Waystar",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Automating prior authorization requests to reduce delays",
-      "Insurance eligibility verification for patient intake",
-      "Revenue cycle management and claims processing automation",
-      "Reducing administrative burden on hospital staff",
-      "Integrating AI automation into existing health IT infrastructure"
     ],
     "not_good_for": [],
     "industries": [],
@@ -35155,7 +34808,7 @@
     "category": "Legal",
     "subcategory": "Contract Analysis",
     "description": "Kira Systems is an AI-powered contract analysis platform owned by Litera that uses machine learning to identify, extract, and analyze provisions from contracts and legal documents at scale. It enables lawyers to complete due diligence and contract review projects significantly faster.",
-    "url": "https://kirasystems.com",
+    "url": "https://www.litera.com/products/kira",
     "tags": [
       "contract analysis",
       "due diligence",
@@ -35165,7 +34818,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Web App"
@@ -35252,12 +34905,12 @@
   },
   {
     "id": "686",
-    "name": "ContractPodAi",
+    "name": "Leah",
     "slug": "contractpodai",
     "category": "Legal",
     "subcategory": "Contract Analysis",
     "description": "ContractPodAi is an AI-powered contract lifecycle management platform that uses AI to automate contract drafting, review, negotiation, and obligation tracking for enterprise legal teams. Its Leah AI provides intelligent contract analytics and answers contract questions in natural language.",
-    "url": "https://contractpodai.com",
+    "url": "https://leahai.com",
     "tags": [
       "contract management",
       "clm",
@@ -35514,7 +35167,7 @@
     "category": "Legal",
     "subcategory": "Legal Research",
     "description": "Lex Machina is an AI-powered legal analytics platform owned by LexisNexis that provides data and insights on litigation outcomes, judges, courts, parties, and law firms for strategic case planning. Lawyers use it to understand litigation trends and predict how judges are likely to rule.",
-    "url": "https://lexmachina.com",
+    "url": "https://www.lexisnexis.com/en-us/products/lex-machina.page",
     "tags": [
       "legal analytics",
       "litigation data",
@@ -35705,12 +35358,12 @@
   },
   {
     "id": "695",
-    "name": "Westlaw Edge",
+    "name": "Westlaw Advantage",
     "slug": "westlaw-edge",
     "category": "Legal",
     "subcategory": "Legal Research",
     "description": "Westlaw Edge is Thomson Reuters' AI-enhanced legal research platform that combines the world's most comprehensive legal database with AI analytics including litigation analytics, opposing counsel analysis, and KeyCite citation analysis. It is the industry standard for legal research at major law firms.",
-    "url": "https://westlaw.com",
+    "url": "https://legal.thomsonreuters.com/en/products/westlaw-advantage",
     "tags": [
       "legal research",
       "thomson reuters",
@@ -36155,12 +35808,12 @@
   },
   {
     "id": "704",
-    "name": "Lawyaw",
+    "name": "Clio Draft",
     "slug": "lawyaw",
     "category": "Legal",
     "subcategory": "Document Review",
     "description": "Lawyaw is an AI-powered legal document automation platform acquired by Clio that helps law firms generate court forms and custom documents by intelligently filling templates from client intake data. It integrates with practice management software to reduce manual document preparation time.",
-    "url": "https://lawyaw.com",
+    "url": "https://www.clio.com/clio-draft/",
     "tags": [
       "legal document automation",
       "court forms",
@@ -36360,7 +36013,7 @@
     "category": "Legal",
     "subcategory": "Compliance",
     "description": "Neota is a no-code AI and automation platform used by legal, compliance, and HR teams to build intelligent document automation, compliance workflows, and interactive guidance tools without programming. It enables organizations to create sophisticated legal decision trees and document assembly applications.",
-    "url": "https://neotalogic.com",
+    "url": "https://neota.com",
     "tags": [
       "legal automation",
       "no-code",
@@ -36661,7 +36314,7 @@
     "category": "Finance",
     "subcategory": "Financial Analysis",
     "description": "AYLIEN is an AI-powered news intelligence platform that provides structured, entity-enriched financial news data to investment managers, banks, and financial institutions for market analysis and decision-making. Its API delivers real-time news with sentiment analysis, entity extraction, and event classification.",
-    "url": "https://www.quantexa.com/products/news-intelligence",
+    "url": "https://www.quantexa.com/solutions/news-intelligence/",
     "tags": [
       "news analytics",
       "sentiment analysis",
@@ -37274,12 +36927,12 @@
   },
   {
     "id": "727",
-    "name": "Divvy",
+    "name": "BILL Spend & Expense",
     "slug": "divvy",
     "category": "Finance",
     "subcategory": "Financial Planning",
     "description": "Divvy (now BILL Spend & Expense) is an AI-powered expense management and corporate card platform that provides real-time budget controls, automated expense reports, and spend visibility for mid-market businesses. It was acquired by BILL to create an integrated accounts payable and expense management solution.",
-    "url": "https://divvy.co",
+    "url": "https://www.bill.com/product/spend-and-expense",
     "tags": [
       "expense management",
       "corporate cards",
@@ -37948,7 +37601,7 @@
     "category": "Finance",
     "subcategory": "Financial Planning",
     "description": "Mosaic is an AI-powered strategic finance platform that connects financial and operational data from multiple systems to provide real-time reporting, forecasting, and business insights for high-growth companies. It uses AI to surface anomalies, generate narrative explanations, and accelerate financial close processes.",
-    "url": "https://mosaic.tech",
+    "url": "https://www.hibob.com",
     "tags": [
       "strategic finance",
       "fp&a",
@@ -37958,7 +37611,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Web App"
@@ -38502,57 +38155,6 @@
     "industries": [],
     "compliance_sources": {
       "gdpr": "https://visible.vc/gdpr/"
-    }
-  },
-  {
-    "id": "751",
-    "name": "Finmark",
-    "slug": "finmark",
-    "category": "Finance",
-    "subcategory": "Financial Planning",
-    "description": "Finmark is an AI-powered financial modeling platform that helps startups build financial models, forecasts, and runway projections without needing to be spreadsheet experts. It provides templates and automated data syncing from accounting tools to keep models current.",
-    "url": "https://finmark.com",
-    "tags": [
-      "financial modeling",
-      "startup finance",
-      "runway planning",
-      "forecasting",
-      "no-code finance"
-    ],
-    "pricing": "Paid",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-06-02",
-    "access_methods": [
-      "Web App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": true
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": null,
-      "paid_plans": "Starter ~$50/month; Growth ~$100/month",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Non-technical founders building investor-ready financial models",
-      "Modeling cash runway and burn rate scenarios",
-      "Connecting QuickBooks or Stripe for automatic actuals",
-      "Planning headcount growth against revenue projections",
-      "Preparing financial models for fundraising pitch decks"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {
-      "hipaa": "https://www.bill.com/product/security"
     }
   },
   {
@@ -39188,7 +38790,7 @@
     "category": "E-commerce",
     "subcategory": "Product Recommendations",
     "description": "Adobe Commerce (formerly Magento) is an AI-powered enterprise e-commerce platform with highly customizable storefronts, AI-driven product recommendations, live search, and B2B commerce capabilities. Its AI features powered by Adobe Sensei include personalized product recommendations and intelligent search results.",
-    "url": "https://business.adobe.com/products/magento",
+    "url": "https://business.adobe.com/products/commerce.html",
     "tags": [
       "enterprise ecommerce",
       "magento",
@@ -40006,12 +39608,12 @@
   },
   {
     "id": "780",
-    "name": "Sellics",
+    "name": "Perpetua",
     "slug": "sellics",
     "category": "E-commerce",
     "subcategory": "Pricing Optimization",
     "description": "Sellics is an AI-powered Amazon analytics and advertising optimization platform that helps sellers and vendors automate PPC campaigns, track organic rankings, and analyze profitability. Its Perpetua technology uses machine learning to optimize Amazon advertising bids and budgets in real time.",
-    "url": "https://sellics.com",
+    "url": "https://perpetua.io",
     "tags": [
       "amazon advertising",
       "ppc optimization",
@@ -42388,7 +41990,7 @@
     "category": "Security",
     "subcategory": "Security Monitoring",
     "description": "ThreatConnect is an AI-driven threat intelligence platform and security orchestration solution that centralizes threat data, enables collaboration, and automates security workflows. Its Risk Quantifier module helps organizations measure and communicate cyber risk in financial terms.",
-    "url": "https://threatconnect.com",
+    "url": "https://www.dataminr.com",
     "tags": [
       "threat intelligence",
       "soar",
@@ -42398,7 +42000,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-03-13",
     "access_methods": [
       "Web App",
@@ -42668,7 +42270,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Web App",
@@ -42818,7 +42420,7 @@
     "category": "Security",
     "subcategory": "Fraud Prevention",
     "description": "Tessian is an AI-powered email security platform that uses machine learning to prevent inbound phishing attacks, business email compromise, and outbound data loss. It analyzes historical email behavior to understand normal communication patterns and detect anomalies in real time.",
-    "url": "https://tessian.com",
+    "url": "https://www.proofpoint.com",
     "tags": [
       "email security",
       "phishing prevention",
@@ -42828,7 +42430,7 @@
     ],
     "pricing": "Paid",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Web App"
@@ -42865,12 +42467,12 @@
   },
   {
     "id": "836",
-    "name": "Abnormal Security",
+    "name": "Abnormal AI",
     "slug": "abnormal-security",
     "category": "Security",
     "subcategory": "Fraud Prevention",
     "description": "Abnormal Security is an AI-powered cloud email security platform that uses behavioral AI to stop sophisticated phishing, business email compromise, and supply chain attacks. It builds a behavioral baseline for every user and supplier to detect anomalous email activity with high precision.",
-    "url": "https://abnormalsecurity.com",
+    "url": "https://abnormal.ai",
     "tags": [
       "email security",
       "bec prevention",
@@ -44368,12 +43970,12 @@
   },
   {
     "id": "865",
-    "name": "Fixie AI",
+    "name": "Ultravox",
     "slug": "fixie-ai",
     "category": "Agentic & Automation",
     "subcategory": "AI Agents",
     "description": "Fixie AI is an AI agent platform that enables developers to build, deploy, and manage intelligent agents that can use tools, access data, and interact with external APIs. It provides a cloud infrastructure for hosting conversational AI agents with persistent memory and tool-use capabilities.",
-    "url": "https://fixie.ai",
+    "url": "https://www.ultravox.ai",
     "tags": [
       "ai agents",
       "platform",
@@ -44530,7 +44132,7 @@
     "category": "Agentic & Automation",
     "subcategory": "Workflow Automation",
     "description": "Stack AI is a no-code AI workflow builder that enables enterprises to build and deploy AI applications and automations by connecting LLMs with data sources and APIs visually. It supports complex multi-step AI pipelines with integrations for databases, documents, and third-party services.",
-    "url": "https://stack-ai.com",
+    "url": "https://www.stackai.com",
     "tags": [
       "ai workflow",
       "no-code",
@@ -44540,7 +44142,7 @@
     ],
     "pricing": "Freemium",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
       "Web App",
@@ -45737,7 +45339,7 @@
     "category": "Agentic & Automation",
     "subcategory": "Integration Platform",
     "description": "Neon is a serverless PostgreSQL platform designed for modern development workflows, with instant branching, autoscaling, and scale-to-zero capabilities. It enables developers to create database branches for each feature or PR, making database development as easy as Git branching.",
-    "url": "https://neon.tech",
+    "url": "https://neon.com",
     "tags": [
       "serverless postgres",
       "database",
@@ -45747,7 +45349,7 @@
     ],
     "pricing": "Freemium",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-05-29",
     "access_methods": [
       "Web App",
@@ -45958,7 +45560,7 @@
     "category": "Agentic & Automation",
     "subcategory": "Integration Platform",
     "description": "Railway is a modern cloud deployment platform that makes it simple to provision infrastructure, develop locally, and deploy applications to the cloud with zero configuration. It supports automatic deployments from GitHub, managed databases, and straightforward environment management.",
-    "url": "https://railway.app",
+    "url": "https://railway.com",
     "tags": [
       "cloud deployment",
       "hosting",
@@ -46610,7 +46212,7 @@
     "category": "Social Media",
     "subcategory": "Content Scheduling",
     "description": "Publer is an AI-powered social media scheduling and collaboration tool that supports Facebook, Instagram, TikTok, Twitter, LinkedIn, Google Business, Pinterest, YouTube, and Telegram. Its AI Assist feature generates captions, hashtags, and content ideas directly within the scheduling workflow.",
-    "url": "https://publer.io",
+    "url": "https://publer.com",
     "tags": [
       "social media scheduling",
       "multi-platform",
@@ -48064,7 +47666,7 @@
     "category": "Real Estate",
     "subcategory": "Lead Generation",
     "description": "Rechat is an AI-powered real estate CRM and marketing platform designed for real estate agents and brokerages, combining contact management, marketing automation, and transaction coordination. Its AI provides personalized follow-up recommendations and automates client communication workflows.",
-    "url": "https://rechat.com",
+    "url": "https://rechat.ai",
     "tags": [
       "real estate crm",
       "marketing automation",
@@ -48219,7 +47821,7 @@
     "category": "Real Estate",
     "subcategory": "Lead Generation",
     "description": "Roof AI is an AI-powered chatbot and virtual assistant platform for real estate websites that automatically qualifies leads, schedules appointments, and engages with site visitors 24/7. It integrates with real estate CRMs to deliver qualified leads directly to agents with full conversation context.",
-    "url": "https://roof.ai",
+    "url": "https://roofai.com",
     "tags": [
       "real estate chatbot",
       "lead qualification",
@@ -48413,12 +48015,12 @@
   },
   {
     "id": "943",
-    "name": "CoreLogic",
+    "name": "Cotality",
     "slug": "corelogic",
     "category": "Real Estate",
     "subcategory": "Market Analysis",
     "description": "CoreLogic is a leading provider of AI-powered property data, analytics, and services for the real estate and mortgage industries. It offers property data for 99% of US parcels and provides AI-driven analytics for valuations, risk assessment, fraud detection, and market intelligence.",
-    "url": "https://corelogic.com",
+    "url": "https://www.cotality.com",
     "tags": [
       "property data",
       "real estate analytics",
@@ -48657,60 +48259,6 @@
       "CRM pipeline management",
       "Team lead management",
       "Client communication automation"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {
-      "soc2": "https://lofty.com/security-compliance?hsLang=en",
-      "iso27001": "https://lofty.com/security-compliance?hsLang=en"
-    }
-  },
-  {
-    "id": "948",
-    "name": "Chime",
-    "slug": "chime",
-    "category": "Real Estate",
-    "subcategory": "Lead Generation",
-    "description": "Chime is an AI-powered real estate CRM and marketing platform for agents, teams, and brokerages that integrates lead generation, automated follow-up, and transaction management. Its AI assistant Sierra provides 24/7 lead engagement via text and email to keep prospects moving through the sales funnel.",
-    "url": "https://chime.me",
-    "tags": [
-      "real estate crm",
-      "ai assistant",
-      "lead nurturing",
-      "marketing automation",
-      "brokerage tools"
-    ],
-    "pricing": "Paid",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-06-02",
-    "access_methods": [
-      "Web App",
-      "iOS App",
-      "Android App"
-    ],
-    "compliance": {
-      "soc2": true,
-      "iso27001": true,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": null,
-      "paid_plans": "Starting from $499/month for teams, Enterprise pricing for brokerages",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Automated lead follow-up",
-      "Real estate pipeline management",
-      "Marketing campaign automation",
-      "Transaction coordination",
-      "Team performance tracking"
     ],
     "not_good_for": [],
     "industries": [],
@@ -49041,7 +48589,7 @@
     "category": "Project Management",
     "subcategory": "Collaboration",
     "description": "Notion Calendar is an AI-powered calendar application by Notion that integrates deeply with Notion workspace data, allowing users to connect meetings with notes, docs, and projects. It offers smart scheduling, time blocking, and unified views of Google Calendar events alongside Notion databases.",
-    "url": "https://notion.so/product/calendar",
+    "url": "https://www.notion.com/product/calendar",
     "tags": [
       "calendar",
       "scheduling",
@@ -49307,7 +48855,7 @@
     "category": "Project Management",
     "subcategory": "Collaboration",
     "description": "Draw.io (diagrams.net) is a free, open-source diagramming tool for creating flowcharts, network diagrams, UML, and other visual diagrams, with integrations for Google Drive, Confluence, Jira, and GitHub. It is widely used for technical documentation and collaborative diagram creation.",
-    "url": "https://draw.io",
+    "url": "https://www.drawio.com",
     "tags": [
       "diagramming",
       "free tool",
@@ -50452,7 +50000,7 @@
     "category": "Agentic & Automation",
     "subcategory": "Integration Platform",
     "description": "SendGrid is a cloud-based email delivery platform by Twilio that provides transactional and marketing email APIs with high deliverability, analytics, and compliance tools. It is used by developers and marketers to send billions of emails reliably with advanced tracking and optimization features.",
-    "url": "https://sendgrid.com",
+    "url": "https://www.twilio.com/en-us/sendgrid/email-api",
     "tags": [
       "email api",
       "transactional email",
@@ -50462,7 +50010,7 @@
     ],
     "pricing": "Freemium",
     "featured": false,
-    "status": "active",
+    "status": "acquired",
     "last_verified": "2026-05-29",
     "access_methods": [
       "Web App",
@@ -50884,7 +50432,7 @@
     "category": "Agentic & Automation",
     "subcategory": "Integration Platform",
     "description": "LiveKit is an open-source WebRTC infrastructure platform for building real-time audio, video, and data applications at scale, commonly used for building AI voice agents and multi-party video applications. It provides server-side media processing, AI agent integration, and scalable media routing.",
-    "url": "https://livekit.io",
+    "url": "https://livekit.com",
     "tags": [
       "open source",
       "webrtc",
@@ -51049,7 +50597,7 @@
     "category": "Productivity",
     "subcategory": "Calendar & Scheduling",
     "description": "Zoom AI Companion is Zoom's built-in generative AI assistant that provides meeting summaries, action item extraction, in-meeting question answering, and chat composition across Zoom Meetings, Team Chat, and Phone. It is included at no additional cost for paid Zoom users.",
-    "url": "https://zoom.us",
+    "url": "https://www.zoom.com",
     "tags": [
       "video conferencing",
       "meeting summaries",
