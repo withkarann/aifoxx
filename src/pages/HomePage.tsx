@@ -213,8 +213,8 @@ export default function HomePage() {
   return (
     <>
       <PageMeta
-        title={`Best AI Tools 2026 | 1000+ Curated AI Tools Directory | ${Brand.product.name_styled}`}
-        description={`Discover the best AI tools for coding, writing, design, marketing, video & more. 1000+ curated AI tools with real pricing, compliance & reviews. Updated daily.`}
+        title={`Best AI Tools 2026 | ${allTools.length.toLocaleString()} Curated AI Tools Directory | ${Brand.product.name_styled}`}
+        description={`Discover the best AI tools for coding, writing, design, marketing, video & more. ${allTools.length.toLocaleString()} curated AI tools with real pricing, compliance & reviews. Updated daily.`}
         url={`https://${Brand.product.domain}`}
         robots={hasSeoQueryParams ? "noindex, follow" : undefined}
         keywords={[
@@ -260,7 +260,7 @@ export default function HomePage() {
             </h1>
           </div>
           <p className="font-display font-black text-base md:text-2xl text-text-primary max-w-2xl leading-tight">
-            {allTools.length.toLocaleString()}+ AI tools with transparent pricing, compliance &amp; data-privacy facts
+            Verified compliance, real pricing &amp; data-privacy facts for {allTools.length.toLocaleString()} AI tools
           </p>
           <p className="font-mono text-xs md:text-sm text-text-secondary max-w-xl">
             {Brand.product.tagline}
@@ -300,7 +300,7 @@ export default function HomePage() {
               <p className="hidden md:block font-sans text-sm text-text-secondary leading-relaxed max-w-3xl">
                 AIFOXX curates the best AI tools across every major category, from AI coding assistants
                 to image generators, marketing platforms, and writing tools. Browse our hand-picked guides
-                below, or search 1000+ tools above.
+                below, or search 900+ tools above.
               </p>
               <div className="flex gap-2 overflow-x-auto flex-nowrap md:flex-wrap pb-1 -mx-1 px-1 scrollbar-thin">
                 {bestCategories.map((c) => (

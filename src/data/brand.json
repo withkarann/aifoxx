@@ -6,7 +6,7 @@
     "name_styled":  "AIFOXX",
     "tagline":      "Find the right AI tool. Know the real cost. Trust the data.",
     "tagline_short":"The AI Tools Decision Engine",
-    "description":  "Open-source directory of 1000+ AI tools with real pricing, compliance data, and access method comparison.",
+    "description":  "Open-source directory of 900+ AI tools with real pricing, compliance data, and access method comparison.",
     "domain":       "aifoxx.com",
     "repo":         "https://github.com/withkarann/aifoxx",
     "version":      "1.0.0"
@@ -29,7 +29,7 @@
   "seo": {
     "title_template":    "{page} | AIFOXX",
     "default_title":     "AIFOXX — Find the Right AI Tool",
-    "default_description": "Browse 1000+ AI tools. Compare real pricing, compliance certifications, and access methods.",
+    "default_description": "Browse 900+ AI tools. Compare real pricing, compliance certifications, and access methods.",
     "og_image":          "/aifoxx.png",
     "twitter_card":      "summary_large_image"
   },

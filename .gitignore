@@ -98,5 +98,7 @@ scripts/aggregate-model.mjs
 scripts/report-trust.mjs
 scripts/strip-weak-sources.mjs
 scripts/verify-*.mjs
+scripts/fetch-catalog.mjs
 scripts/recapture-slugs.txt
 scripts/trust-daily.sh
+.gstack/

@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import { Star, ExternalLink, Scale } from "lucide-react";
 import { GithubLogo } from "phosphor-react";
 import { getToolBySlug, getRelatedTools } from "@/lib/tools";
-import { getSkillsByToolSlug } from "@/lib/skills";
+import { getToolSkills } from "@/lib/skills";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PricingBadge } from "@/components/tools/PricingBadge";
 import { ToolCard } from "@/components/tools/ToolCard";
@@ -129,7 +129,7 @@ export default function ToolDetailPage() {
 
   const color = getCategoryColor(tool.category);
   const related = getRelatedTools(tool.slug, 3);
-  const skills = getSkillsByToolSlug(tool.slug);
+  const skills = getToolSkills(tool.slug);
 
   const compliance = tool.compliance;
   const dataStorage = tool.data_storage;
@@ -407,10 +407,11 @@ export default function ToolDetailPage() {
                 );
               })}
             </div>
-            <p className="font-mono text-xs text-text-muted">● certified · ○ not verified</p>
+            <p className="font-mono text-xs text-text-muted">● verified, click for source · ○ not confirmed by us</p>
             <p className="font-mono text-xs text-text-muted">
-              Compliance data is community-sourced and may be incomplete or out of date. Always verify
-              certifications directly with the vendor's official trust or security page before relying on them.
+              Each filled certification links to the vendor's official trust or security page where we
+              confirmed it. A hollow marker means we could not confirm that certification, not that the
+              vendor lacks it. Always confirm directly with the vendor before relying on it.
             </p>
             {hasAnyDataStorage ? (
               <>

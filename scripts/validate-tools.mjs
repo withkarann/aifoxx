@@ -19,12 +19,19 @@ import { dirname, resolve } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, '../src/data/tools.json');
+const MCP_PATH = resolve(__dirname, '../src/data/mcp-servers.json');
+const SKILLS_PATH = resolve(__dirname, '../src/data/claude-code-skills.json');
 
 // Fields every tool entry must carry.
 const REQUIRED_FIELDS = ['name', 'category', 'subcategory', 'description', 'url', 'tags', 'pricing'];
 
 // Compliance keys checked against compliance_sources.
 const COMPLIANCE_KEYS = ['gdpr', 'soc2', 'hipaa', 'iso27001'];
+
+// MCP server / skill entries: missing these breaks a listing (hard fail);
+// an empty description only degrades the card (warn).
+const SKILL_REQUIRED_HARD = ['name', 'github_url'];
+const SKILL_REQUIRED_WARN = ['description'];
 
 // ---------------------------------------------------------------------------
 // Normalization helpers
@@ -137,6 +144,58 @@ function checkComplianceSources(tools) {
   return orphans;
 }
 
+/**
+ * Validates an MCP-server / Claude-skill dataset (same shape as the skill type).
+ * Duplicate id / name / github_url is a hard fail; an empty description is a warn.
+ */
+function validateSkillDataset(label, path) {
+  let data;
+  try {
+    data = JSON.parse(readFileSync(path, 'utf8'));
+  } catch (err) {
+    return { hard: [`${label}: could not read (${err.message})`], warn: [], count: 0 };
+  }
+  if (!Array.isArray(data)) {
+    return { hard: [`${label}: must be a JSON array at the top level`], warn: [], count: 0 };
+  }
+  const hard = [];
+  const warn = [];
+  const ids = new Map();
+  const names = new Map();
+  const urls = new Map();
+  for (const entry of data) {
+    const id = entry.id || entry.slug || '(no id)';
+    if (entry.id || entry.slug) {
+      const key = entry.id || entry.slug;
+      if (ids.has(key)) hard.push(`${label}: duplicate id "${key}"`);
+      else ids.set(key, true);
+    }
+    const nn = normalizeName(entry.name);
+    if (nn) {
+      if (names.has(nn)) hard.push(`${label}: duplicate name "${entry.name}" (${names.get(nn)} & ${id})`);
+      else names.set(nn, id);
+    }
+    const nu = normalizeURL(entry.github_url);
+    if (nu) {
+      if (urls.has(nu)) hard.push(`${label}: duplicate github_url "${nu}" (${urls.get(nu)} & ${id})`);
+      else urls.set(nu, id);
+    }
+    for (const field of SKILL_REQUIRED_HARD) {
+      const val = entry[field];
+      if (val === undefined || val === null || val === '') {
+        hard.push(`${label}: ${id} is missing "${field}"`);
+      }
+    }
+    for (const field of SKILL_REQUIRED_WARN) {
+      const val = entry[field];
+      if (val === undefined || val === null || (typeof val === 'string' && val.trim() === '')) {
+        warn.push(`${label}: ${id} has an empty "${field}"`);
+      }
+    }
+  }
+  return { hard, warn, count: data.length };
+}
+
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -204,12 +263,28 @@ if (orphanedCompliance.length > 0) {
   );
 }
 
-if (failed) {
-  process.exit(1);
-}
-
 console.log(
   `OK tools.json validated: ${tools.length} entries, ` +
   `0 duplicate slugs, 0 duplicate names, 0 duplicate URLs, 0 missing required fields. ` +
   `(${orphanedCompliance.length} compliance source warning(s))`
 );
+
+// --- MCP servers + Claude Code skills datasets ---
+for (const [label, path] of [['mcp-servers.json', MCP_PATH], ['claude-code-skills.json', SKILLS_PATH]]) {
+  const r = validateSkillDataset(label, path);
+  if (r.hard.length > 0) {
+    console.error(`FAIL ${label} (${r.hard.length}):`);
+    r.hard.forEach(h => console.error(`  ${h}`));
+    failed = true;
+  }
+  if (r.warn.length > 0) {
+    console.warn(`WARN ${label}: ${r.warn.length} entr${r.warn.length === 1 ? 'y' : 'ies'} with an empty description.`);
+  }
+  if (r.hard.length === 0) {
+    console.log(`OK ${label} validated: ${r.count} entries (${r.warn.length} warning(s)).`);
+  }
+}
+
+if (failed) {
+  process.exit(1);
+}

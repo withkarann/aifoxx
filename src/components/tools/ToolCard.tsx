@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { Scale } from "lucide-react";
+import { Scale, ShieldCheck } from "lucide-react";
 import { type Tool } from "@/types/tool";
 import { PricingBadge } from "./PricingBadge";
 import { ToolIcon } from "./ToolIcon";
@@ -19,6 +19,13 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
   const vars = getCategoryVars(tool.category);
   const { isSelected, toggle, isFull } = useCompare();
   const selectedForCompare = isSelected(tool.slug);
+
+  // Number of compliance flags that are both claimed and backed by a source URL.
+  // Surfaced as a "Verified" chip so the directory's trust signal is visible in
+  // the grid, not only on the detail page.
+  const verifiedCompliance = (["soc2", "iso27001", "gdpr", "hipaa"] as const).filter(
+    (k) => tool.compliance?.[k] === true && tool.compliance_sources?.[k]
+  ).length;
 
   return (
     <div
@@ -77,6 +84,15 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
           <span className="subcat-chip inline-flex items-center text-[10px] font-mono px-2 py-0.5 rounded-[3px] shrink-0 max-w-full truncate">
             {tool.subcategory}
           </span>
+          {verifiedCompliance > 0 && (
+            <span
+              className="inline-flex items-center gap-1 text-[10px] font-mono px-2 py-0.5 rounded-[3px] shrink-0 bg-accent-green/10 border border-accent-green/35 text-accent-green"
+              title={`${verifiedCompliance} compliance ${verifiedCompliance === 1 ? "certification" : "certifications"} verified against the vendor's trust page`}
+            >
+              <ShieldCheck size={11} aria-hidden="true" />
+              Verified
+            </span>
+          )}
           </div>
           <button
             type="button"
