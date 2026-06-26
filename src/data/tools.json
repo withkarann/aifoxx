@@ -52138,5 +52138,58 @@
       "Education"
     ],
     "compliance_sources": {}
+  },
+  {
+    "id": "1003",
+    "name": "Auferet",
+    "slug": "auferet",
+    "category": "Content Creation",
+    "subcategory": "Storytelling",
+    "description": "Auferet is an AI game master for solo text adventures and tabletop-style RPGs. It keeps a persistent memory of your story and lets you upload your own lore, so the world stays consistent across long sessions. Plays in the browser and on Android, with dedicated D&D 5e and Pathfinder 2e modes.",
+    "url": "https://auferet.com",
+    "tags": [
+      "ai game master",
+      "text adventure",
+      "interactive fiction",
+      "rpg",
+      "storytelling",
+      "solo roleplaying"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-06-27",
+    "access_methods": [
+      "Web App",
+      "Android"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "10 actions per day on Gemini 3.1 Flash Lite, full feature set",
+      "paid_plans": "Basic $10/mo for unlimited actions; Pro $35/mo and Ultimate $75/mo add more powerful Gemini models",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Solo roleplaying campaigns with an AI dungeon master",
+      "Interactive fiction and text adventures",
+      "Running D&D 5e or Pathfinder 2e one-shots and prep",
+      "Multiplayer storytelling with friends"
+    ],
+    "not_good_for": [],
+    "industries": [
+      "Gaming",
+      "Entertainment"
+    ],
+    "compliance_sources": {}
   }
 ]
