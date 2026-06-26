@@ -7,7 +7,7 @@ export default function NotFoundPage() {
     <>
       <PageMeta
         title="404 | Page Not Found | AIFOXX"
-        description="The page you're looking for doesn't exist. Browse 1000+ AI tools at AIFOXX."
+        description="The page you're looking for doesn't exist. Browse 900+ AI tools at AIFOXX."
         url={`https://${Brand.product.domain}/404`}
         robots="noindex, nofollow"
       />

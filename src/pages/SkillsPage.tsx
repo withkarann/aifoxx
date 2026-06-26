@@ -2,7 +2,8 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Star, ExternalLink } from "lucide-react";
 import { GithubLogo } from "phosphor-react";
-import { allClaudeCodeSkills, searchClaudeCodeSkills, SKILL_COUNTS } from "@/lib/skills";
+import { useQuery } from "@tanstack/react-query";
+import { loadClaudeCodeSkills, filterSkills, SKILL_COUNTS } from "@/lib/skills";
 import { isSafeHttpUrl } from "@/lib/utils";
 import { type Skill } from "@/types/skill";
 import { PageMeta } from "@/components/seo/PageMeta";
@@ -77,6 +78,11 @@ export default function SkillsPage() {
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
 
+  const { data: skills = [], isLoading } = useQuery({
+    queryKey: ["claude-code-skills"],
+    queryFn: loadClaudeCodeSkills,
+  });
+
   const schema = useMemo(() => ({
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -85,18 +91,16 @@ export default function SkillsPage() {
     "url": `https://${Brand.product.domain}/skills`,
     "mainEntity": {
       "@type": "ItemList",
-      "itemListElement": allClaudeCodeSkills.slice(0, 30).map((skill, index) => ({
+      "itemListElement": skills.slice(0, 30).map((skill, index) => ({
         "@type": "ListItem",
         "position": index + 1,
         "name": skill.name,
         "url": skill.github_url,
       })),
     },
-  }), []);
+  }), [skills]);
 
-  const filtered = useMemo(() => {
-    return query.trim() ? searchClaudeCodeSkills(query) : allClaudeCodeSkills;
-  }, [query]);
+  const filtered = useMemo(() => filterSkills(skills, query), [skills, query]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / SKILLS_PER_PAGE));
   const pageSafe = Math.min(page, totalPages);
@@ -149,12 +153,18 @@ export default function SkillsPage() {
           {/* Result count */}
           <div className="flex items-center justify-end">
             <span className="font-mono text-xs text-text-muted">
-              {filtered.length} result{filtered.length !== 1 ? "s" : ""}
+              {isLoading ? "Loading..." : `${filtered.length} result${filtered.length !== 1 ? "s" : ""}`}
             </span>
           </div>
 
           {/* Grid */}
-          {paginated.length === 0 ? (
+          {isLoading ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" aria-busy="true">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div key={i} className="h-36 bg-bg-surface border border-border-default rounded-[6px] animate-pulse" />
+              ))}
+            </div>
+          ) : paginated.length === 0 ? (
             <div className="bg-bg-elevated border-2 border-dashed border-border-dim rounded-[8px] py-20 text-center">
               <p className="font-display text-accent-red text-3xl font-black tracking-tight">NO RESULTS</p>
               <p className="font-mono text-text-secondary text-sm mt-3">Try a different search.</p>

@@ -17,7 +17,9 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [react()],
   build: {
-    minify: false,
+    // Default esbuild minification; previously disabled, which shipped a
+    // multi-megabyte unminified bundle.
+    minify: "esbuild",
     sourcemap: false,
   },
   resolve: {
