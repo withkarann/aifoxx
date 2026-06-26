@@ -20951,56 +20951,6 @@
     }
   },
   {
-    "id": "1001",
-    "name": "Remio",
-    "slug": "remio",
-    "category": "Productivity",
-    "subcategory": "Knowledge Management",
-    "description": "Remio is a local-first AI memory and knowledge base desktop app that parses files, webpages, recordings, emails, messages, images, and notes into local indexes and vectors for focused personal context retrieval.",
-    "url": "https://remio.ai",
-    "tags": [
-      "knowledge base",
-      "personal knowledge management",
-      "local-first",
-      "ai memory",
-      "semantic search"
-    ],
-    "pricing": "Freemium",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-06-24",
-    "access_methods": [
-      "Desktop App",
-      "CLI"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": false
-    },
-    "pricing_detail": {
-      "free_tier": null,
-      "paid_plans": null,
-      "api_cost": null
-    },
-    "use_cases": [
-      "Indexing personal files and notes for AI-assisted recall",
-      "Searching across webpages, recordings, emails, and documents",
-      "Retrieving focused context before prompting AI agents",
-      "Reducing repeated manual file scanning and directory search",
-      "Building a local-first personal knowledge base"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
-  },
-  {
     "id": "405",
     "name": "Reflect",
     "slug": "reflect",
@@ -52085,5 +52035,56 @@
       "soc2": "https://tuple.app/security",
       "iso27001": "https://tuple.app/security"
     }
+  },
+  {
+    "id": "1001",
+    "name": "Remio",
+    "slug": "remio",
+    "category": "Productivity",
+    "subcategory": "Knowledge Management",
+    "description": "Remio is a local-first AI knowledge assistant that runs in the background and automatically captures your files, webpages, meetings, emails, and notes into a private personal knowledge base you can search and ask questions across.",
+    "url": "https://remio.ai",
+    "tags": [
+      "knowledge base",
+      "personal knowledge management",
+      "local-first",
+      "ai memory",
+      "semantic search"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-06-27",
+    "access_methods": [
+      "Desktop App",
+      "Mobile App",
+      "Browser Extension"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "Free plan available; desktop app runs on Windows 10+ (x64) and Apple silicon Macs",
+      "paid_plans": null,
+      "api_cost": null
+    },
+    "use_cases": [
+      "Indexing personal files, webpages, and notes for AI-assisted recall",
+      "Searching across meetings, emails, recordings, and documents",
+      "Auto-capturing browsed pages via a browser extension",
+      "Generating reports and slide decks from your own knowledge base",
+      "Building a local-first personal knowledge base"
+    ],
+    "not_good_for": [],
+    "industries": [],
+    "compliance_sources": {}
   }
 ]
