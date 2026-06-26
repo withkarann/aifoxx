@@ -17,6 +17,9 @@
     "prepare": "husky",
     "validate": "node scripts/validate-tools.mjs"
   },
+  "overrides": {
+    "esbuild": "^0.28.1"
+  },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.2.8",
     "@hookform/resolvers": "^3.10.0",
@@ -83,7 +86,7 @@
     "@tailwindcss/typography": "^0.5.20",
     "@testing-library/jest-dom": "^6.6.0",
     "@testing-library/react": "^16.0.0",
-    "@types/node": "^25.9.3",
+    "@types/node": "^26.0.0",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^4.3.1",
