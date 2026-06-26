@@ -1,14 +1,38 @@
 [
   {
+    "id": "launch-hn-48586299",
+    "title": "TesterArmy (YC P26) – Agents that test web and mobile apps",
+    "url": "https://tester.army",
+    "domain": "tester.army",
+    "source": "launch-hn",
+    "category": "new-tool",
+    "points": 130,
+    "date": "2026-06-18T14:49:44.000Z",
+    "age": "7d ago",
+    "score": 0
+  },
+  {
+    "id": "launch-hn-48572553",
+    "title": "Adam (YC W25) – Open-Source AI CAD",
+    "url": "https://github.com/Adam-CAD/CADAM",
+    "domain": "github.com",
+    "source": "launch-hn",
+    "category": "new-tool",
+    "points": 214,
+    "date": "2026-06-17T16:14:04.000Z",
+    "age": "8d ago",
+    "score": 1
+  },
+  {
     "id": "launch-hn-48506545",
     "title": "BitBoard (YC P25) – Analytics Workspace for Agents",
     "url": "https://bitboard.work/",
     "domain": "bitboard.work",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 43,
+    "points": 58,
     "date": "2026-06-12T16:58:03.000Z",
-    "age": "14h ago",
+    "age": "13d ago",
     "score": 0
   },
   {
@@ -20,55 +44,7 @@
     "category": "new-tool",
     "points": 117,
     "date": "2026-06-08T13:35:27.000Z",
-    "age": "4d ago",
-    "score": 0
-  },
-  {
-    "id": "launch-hn-48280729",
-    "title": "Minicor (YC P26) – Windows desktop automations at scale",
-    "url": "https://www.minicor.com/",
-    "domain": "minicor.com",
-    "source": "launch-hn",
-    "category": "new-tool",
-    "points": 105,
-    "date": "2026-05-26T14:57:27.000Z",
     "age": "17d ago",
-    "score": 0
-  },
-  {
-    "id": "launch-hn-48267829",
-    "title": "Chert (YC P26) – Twilio for iMessage",
-    "url": "https://www.trychert.com",
-    "domain": "trychert.com",
-    "source": "launch-hn",
-    "category": "new-tool",
-    "points": 62,
-    "date": "2026-05-25T15:12:33.000Z",
-    "age": "18d ago",
-    "score": 0
-  },
-  {
-    "id": "launch-hn-48236770",
-    "title": "Superset (YC P26) – IDE for the agents era",
-    "url": "https://github.com/superset-sh/superset",
-    "domain": "github.com",
-    "source": "launch-hn",
-    "category": "new-tool",
-    "points": 108,
-    "date": "2026-05-22T14:53:55.000Z",
-    "age": "21d ago",
-    "score": 0
-  },
-  {
-    "id": "launch-hn-48225040",
-    "title": "Runtime (YC P26) – Sandboxed coding agents for everyone on a team",
-    "url": "https://www.runtm.com/",
-    "domain": "runtm.com",
-    "source": "launch-hn",
-    "category": "new-tool",
-    "points": 103,
-    "date": "2026-05-21T16:07:13.000Z",
-    "age": "22d ago",
     "score": 0
   }
 ]
