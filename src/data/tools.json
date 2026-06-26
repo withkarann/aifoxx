@@ -52086,5 +52086,57 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {}
+  },
+  {
+    "id": "1002",
+    "name": "Roblox GUI Maker",
+    "slug": "roblox-gui-maker",
+    "category": "Design",
+    "subcategory": "UI Design",
+    "description": "Roblox GUI Maker is an AI tool that turns a text prompt into Roblox-style interface mockups (shops, HUDs, inventory, popups, admin panels) with a structured component plan and named hierarchy you can rebuild in Roblox Studio.",
+    "url": "https://robloxguimaker.dev/",
+    "tags": [
+      "roblox studio",
+      "gui generator",
+      "game ui",
+      "ui mockups",
+      "developer tools"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-06-27",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "10 free credits (about 2 full generations), no credit card required",
+      "paid_plans": "Creator $12/mo (30 generations); Studio $39/mo (100 generations), billed via Stripe",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Drafting Roblox Studio GUI layouts from a prompt",
+      "Generating GUI mockup images and a structured component plan",
+      "Prototyping game menus and HUDs",
+      "Creating shop panels and inventory screens",
+      "Planning interface structure before building in Roblox Studio"
+    ],
+    "not_good_for": [],
+    "industries": [
+      "Gaming",
+      "Education"
+    ],
+    "compliance_sources": {}
   }
 ]
