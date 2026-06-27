@@ -4,7 +4,7 @@ An open-source directory of AI tools with structured, source-backed metadata.
 
 [MIT License](LICENSE) · [aifoxx.com](https://aifoxx.com)
 
-AIFOXX catalogs 1000 AI tools and, for each one, records the things that are
+AIFOXX catalogs 980 AI tools and, for each one, records the things that are
 hard to compare across vendor marketing pages: pricing tier, compliance posture,
 how the vendor handles your data, and the ways you can actually use the tool.
 Every compliance claim links to the vendor's own page that backs it. Where a
@@ -13,7 +13,7 @@ fact has not been verified, the field is left empty rather than guessed.
 Alongside the tools directory it includes:
 
 - An index of 154 MCP (Model Context Protocol) servers.
-- An index of 85 Claude Code skills.
+- An index of 1638 Claude Code skills.
 - A daily-updated AI news feed.
 - Side-by-side comparison pages at `/compare/:a/vs/:b`.
 - Best-of category guides at `/best`.
@@ -75,9 +75,9 @@ src/
 ├── lib/                       # Data access, search, helpers
 ├── types/                     # Zod schemas (single source of truth for shape)
 └── data/
-    ├── tools.json             # 1000 tools
-    ├── mcp-servers.json       # 154 MCP servers
-    ├── claude-code-skills.json# 85 Claude Code skills
+    ├── tools.json             # 980 tools
+    ├── mcp-servers.json       # 1979 MCP servers
+    ├── claude-code-skills.json# 1638 Claude Code skills
     ├── news.json              # AI news items
     ├── best-categories.json   # Best-of category guides
     ├── categoryColors.json    # Category to color/emoji mapping

@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run sitemap && vite-react-ssg build",
+    "build": "npm run stats && npm run sitemap && vite-react-ssg build",
     "build:dev": "vite build --mode development",
+    "stats": "node scripts/generate-stats.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
