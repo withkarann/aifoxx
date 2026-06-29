@@ -6,7 +6,7 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   // Build output and gitignored local scratch directories are not app code.
-  { ignores: ["dist", ".scratch", ".remember", ".playwright-mcp"] },
+  { ignores: ["dist", ".scratch", ".remember", ".playwright-mcp", "scripts/vendor-assessment"] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ["**/*.{ts,tsx}"],
