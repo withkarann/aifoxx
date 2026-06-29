@@ -102,3 +102,7 @@ scripts/fetch-catalog.mjs
 scripts/recapture-slugs.txt
 scripts/trust-daily.sh
 .gstack/
+
+# Local vendor research working files (not part of the published catalog)
+scripts/vendor-assessment/
+.vendor-data/
