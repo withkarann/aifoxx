@@ -6,9 +6,9 @@
     "domain": "tester.army",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 131,
+    "points": 132,
     "date": "2026-06-18T14:49:44.000Z",
-    "age": "10d ago",
+    "age": "11d ago",
     "score": 0
   },
   {
@@ -18,9 +18,9 @@
     "domain": "github.com",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 214,
+    "points": 215,
     "date": "2026-06-17T16:14:04.000Z",
-    "age": "11d ago",
+    "age": "12d ago",
     "score": 1
   },
   {
@@ -32,7 +32,7 @@
     "category": "new-tool",
     "points": 58,
     "date": "2026-06-12T16:58:03.000Z",
-    "age": "16d ago",
+    "age": "17d ago",
     "score": 0
   },
   {
@@ -44,7 +44,7 @@
     "category": "new-tool",
     "points": 117,
     "date": "2026-06-08T13:35:27.000Z",
-    "age": "20d ago",
+    "age": "21d ago",
     "score": 0
   }
 ]
