@@ -1,5 +1,17 @@
 [
   {
+    "id": "launch-hn-48762862",
+    "title": "Manufact (YC S25) – MCP Cloud",
+    "url": "https://manufact.com",
+    "domain": "manufact.com",
+    "source": "launch-hn",
+    "category": "new-tool",
+    "points": 106,
+    "date": "2026-07-02T15:11:20.000Z",
+    "age": "15h ago",
+    "score": 0
+  },
+  {
     "id": "launch-hn-48586299",
     "title": "TesterArmy (YC P26) – Agents that test web and mobile apps",
     "url": "https://tester.army",
@@ -8,7 +20,7 @@
     "category": "new-tool",
     "points": 132,
     "date": "2026-06-18T14:49:44.000Z",
-    "age": "13d ago",
+    "age": "14d ago",
     "score": 0
   },
   {
@@ -20,7 +32,7 @@
     "category": "new-tool",
     "points": 215,
     "date": "2026-06-17T16:14:04.000Z",
-    "age": "14d ago",
+    "age": "15d ago",
     "score": 1
   },
   {
@@ -32,7 +44,7 @@
     "category": "new-tool",
     "points": 58,
     "date": "2026-06-12T16:58:03.000Z",
-    "age": "19d ago",
+    "age": "20d ago",
     "score": 0
   },
   {
@@ -44,7 +56,7 @@
     "category": "new-tool",
     "points": 117,
     "date": "2026-06-08T13:35:27.000Z",
-    "age": "23d ago",
+    "age": "24d ago",
     "score": 0
   }
 ]
