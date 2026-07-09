@@ -34,7 +34,7 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
   return (
     <div
       className={cn(
-        "tool-card relative overflow-hidden bg-bg-surface border border-border-default rounded-[6px] p-4 flex flex-col min-w-0 transition-all duration-150 cursor-pointer"
+        "tool-card relative overflow-hidden bg-bg-surface border border-border-default rounded-[6px] p-4 flex flex-col min-w-0 cursor-pointer"
       )}
       style={vars}
     >
