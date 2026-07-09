@@ -9,6 +9,7 @@
     "dev": "vite",
     "prebuild": "npm run split",
     "build": "npm run stats && npm run sitemap && vite-react-ssg build",
+    "postbuild": "node scripts/gen-spa-fallback.mjs",
     "build:dev": "vite build --mode development",
     "stats": "node scripts/generate-stats.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
