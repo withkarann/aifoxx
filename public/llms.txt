@@ -20,9 +20,11 @@ AIFOXX helps developers, buyers, and researchers find the right AI tool by provi
 - [Compare Tools](https://aifoxx.com/compare): Side-by-side comparison of AI tools
 - [Claude Code Skills](https://aifoxx.com/skills): Browse Claude Code skills directory
 - [MCP Servers](https://aifoxx.com/mcp): Browse MCP servers directory
+- [AI Vendor Trust Reports](https://aifoxx.com/trust): Security and compliance reports for 980 AI vendors, each certification backed by a sourced quote
 - [Submit a Tool](https://aifoxx.com/submit): Submit a new AI tool for inclusion
 
-Every tool has a detail page at https://aifoxx.com/ai/{slug} and every category
+Every tool has a detail page at https://aifoxx.com/ai/{slug}, every vendor has a
+Trust and Security Report at https://aifoxx.com/trust/{slug}, and every category
 has a hub at https://aifoxx.com/category/{category-slug}.
 
 ## Categories
@@ -42,6 +44,32 @@ has a hub at https://aifoxx.com/category/{category-slug}.
 - Legal: Contract analysis, compliance monitoring, legal research
 - Sales & CRM: Lead generation, sales forecasting, customer engagement
 - Customer Support: Chatbots, ticketing, knowledge bases
+
+## Vendor Trust & Security Reports
+
+AIFOXX publishes a Trust and Security Report for every vendor at
+https://aifoxx.com/trust/{slug}. Unlike the community-sourced tool metadata, each
+certification in these reports is graded against a verbatim quote found on the
+vendor's OWN trust, security, or privacy page at the stated verification date.
+
+Each report covers:
+- Certifications with a held/not-confirmed status and a sourced proof quote for
+  each: SOC 2, ISO 27001, ISO/IEC 42001 (AI governance), GDPR, HIPAA, PCI DSS,
+  FedRAMP, CCPA/CPRA, and others the vendor holds.
+- AI-training posture: whether the product trains AI models on customer data,
+  opt-out and tier differences, and any marketing-vs-policy contradictions.
+- Privacy: data processing agreement availability, data region, privacy policy
+  and terms links.
+- Security controls, per-product data scope, and considerations to watch.
+
+Verification discipline: a certification is confirmed only with a direct quote on
+the vendor's own domain. Claims sourced only to third-party aggregators, made on a
+cloud host's or parent company's behalf, or belonging to a similarly named company
+are rejected. Reports state a "last verified" date; compliance changes over time,
+so confirm directly with the vendor before relying on any certification.
+
+The trust hub at https://aifoxx.com/trust can be filtered by certification (SOC 2,
+ISO 27001, GDPR, HIPAA, ISO 42001) and by whether a vendor trains AI on your data.
 
 ## Data Structure
 

@@ -11,6 +11,8 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { getCategoryIcon } from "@/lib/categoryIcons";
 import { CATEGORIES, matchesTaxonomyValue, normalizeTaxonomyValue } from "@/lib/tools";
+import { getTrustBadges } from "@/lib/trust-badges";
+import { canonicalCertKeys } from "@/lib/trust";
 import { cn } from "@/lib/utils";
 import Brand from "@/lib/brand";
 
@@ -48,7 +50,13 @@ export default function CategoryPage() {
     if (!cat) return null;
     const inCategory = allTools.filter((t) => t.category === cat.name);
     const isFree = (p: string) => p === "Free" || p === "Freemium" || p === "Open Source";
-    const cc = (k: "soc2" | "gdpr") => inCategory.filter((t) => t.compliance?.[k] === true).length;
+    // Count from the verified trust assessment (same source as the /trust
+    // reports) so category copy and FAQ schema match the per-tool pages.
+    const cc = (k: "soc2" | "gdpr") =>
+      inCategory.filter((t) => {
+        const b = getTrustBadges(t.slug);
+        return b ? canonicalCertKeys(b.certs).has(k) : t.compliance?.[k] === true;
+      }).length;
     return {
       count: inCategory.length,
       free: inCategory.filter((t) => isFree(t.pricing)).length,

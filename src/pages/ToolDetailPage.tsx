@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Star, ExternalLink, Scale } from "lucide-react";
+import { Star, ExternalLink, Scale, ShieldCheck, ArrowUpRight } from "lucide-react";
 import { GithubLogo } from "phosphor-react";
 import { getToolBySlug, getRelatedTools } from "@/lib/tools";
 import { getToolSkills } from "@/lib/skills";
+import { hasTrustReport } from "@/lib/trust";
+import { getTrustBadges } from "@/lib/trust-badges";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PricingBadge } from "@/components/tools/PricingBadge";
 import { ToolCard } from "@/components/tools/ToolCard";
@@ -132,6 +134,11 @@ export default function ToolDetailPage() {
   const skills = getToolSkills(tool.slug);
 
   const compliance = tool.compliance;
+  const showTrustReport = hasTrustReport(tool.slug);
+  // Verified assessment is the single source of truth for compliance. When a
+  // report exists, the TRUST & DATA section mirrors it (same certs, same
+  // AI-training posture) so this page and /trust/:slug never disagree.
+  const trustBadges = getTrustBadges(tool.slug);
   const dataStorage = tool.data_storage;
   const pricingDetail = tool.pricing_detail;
   const pageUrl = `https://${Brand.product.domain}/ai/${tool.slug}`;
@@ -146,9 +153,13 @@ export default function ToolDetailPage() {
   const allDataStorageKnown = hasRegion && hasTrainsOnData && hasSelfHostable;
   const dataFixIssueUrl = `${Brand.product.repo}/issues/new?title=${encodeURIComponent(`[Data Fix] ${tool.name}`)}`;
 
-  const verifiedCompliance = (["soc2", "iso27001", "gdpr", "hipaa"] as const)
-    .filter((key) => compliance?.[key])
-    .map((key) => key.toUpperCase());
+  // Prefer the verified assessment's cert list so the FAQ structured data
+  // matches the badges shown on the page (and the /trust report).
+  const verifiedCompliance = trustBadges && trustBadges.certs.length > 0
+    ? trustBadges.certs
+    : (["soc2", "iso27001", "gdpr", "hipaa"] as const)
+        .filter((key) => compliance?.[key])
+        .map((key) => key.toUpperCase());
 
   const hasApiAccess = tool.access_methods?.some((method) => method.toLowerCase().includes("api"));
   const hasFreeOffer = tool.pricing === "Free" || tool.pricing === "Freemium" || tool.pricing === "Open Source";
@@ -373,6 +384,76 @@ export default function ToolDetailPage() {
 
           {/* Trust & data: open by default; the site's core differentiator */}
           <CollapsibleSection title="TRUST & DATA" defaultOpen>
+            {showTrustReport && (
+              <Link
+                to={`/trust/${tool.slug}`}
+                className="group flex items-center justify-between gap-3 rounded-[6px] border border-accent-green/40 bg-accent-green/5 p-3 transition-colors duration-150 hover:border-accent-green/70 hover:bg-accent-green/10"
+              >
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <ShieldCheck size={18} className="text-accent-green shrink-0" />
+                  <div className="min-w-0">
+                    <p className="font-display font-black text-sm text-text-primary">{tool.name} Trust &amp; Security Report</p>
+                    <p className="font-mono text-[11px] text-text-muted">Certifications, AI-training posture, and security controls, with sourced proof.</p>
+                  </div>
+                </div>
+                <span className="flex items-center gap-1 font-mono text-[11px] text-accent-green shrink-0 group-hover:underline">
+                  VIEW <ArrowUpRight size={13} />
+                </span>
+              </Link>
+            )}
+            {trustBadges ? (
+              <>
+                {trustBadges.certs.length > 0 ? (
+                  <div className="flex flex-wrap gap-2">
+                    {trustBadges.certs.map((name) => (
+                      <span
+                        key={name}
+                        className="inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1 rounded-full border bg-accent-green/10 border-accent-green/35 text-accent-green"
+                      >
+                        <span className="text-[10px]">●</span>
+                        {name}
+                      </span>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="font-mono text-xs text-text-muted">
+                    No public certifications confirmed for {tool.name}. A startup or simple tool may hold
+                    none. See the full report for what we checked.
+                  </p>
+                )}
+                <p className="font-mono text-xs text-text-muted">
+                  Verified against {tool.name}&apos;s own trust and security pages.{" "}
+                  <Link to={`/trust/${tool.slug}`} className="text-accent-green hover:underline">
+                    See the full report for sourced proof →
+                  </Link>
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                  {trustBadges.data_region && (
+                    <div className="bg-bg-surface border border-border-default rounded-[6px] p-3">
+                      <p className="font-mono text-xs text-text-muted">Region</p>
+                      <p className="font-mono text-sm text-text-primary mt-1">{trustBadges.data_region}</p>
+                    </div>
+                  )}
+                  {trustBadges.trains !== null && (
+                    <div className={`border rounded-[6px] p-3 ${trustBadges.trains ? "bg-accent-red/5 border-accent-red/30" : "bg-accent-green/5 border-accent-green/30"}`}>
+                      <p className="font-mono text-xs text-text-muted">Trains on Data</p>
+                      <p className={`font-mono text-sm mt-1 ${trustBadges.trains ? "text-accent-red" : "text-accent-green"}`}>
+                        {trustBadges.trains ? "Yes" : "No"}
+                      </p>
+                    </div>
+                  )}
+                  {trustBadges.self_hostable !== null && (
+                    <div className={`border rounded-[6px] p-3 ${trustBadges.self_hostable ? "bg-accent-green/5 border-accent-green/30" : "bg-bg-surface border-border-default"}`}>
+                      <p className="font-mono text-xs text-text-muted">Self-hostable</p>
+                      <p className={`font-mono text-sm mt-1 ${trustBadges.self_hostable ? "text-accent-green" : "text-text-primary"}`}>
+                        {trustBadges.self_hostable ? "Yes" : "No"}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </>
+            ) : (
+              <>
             <div className="flex flex-wrap gap-2">
               {(["soc2", "iso27001", "gdpr", "hipaa"] as const).map((key) => {
                 const val = compliance?.[key] ?? null;
@@ -455,6 +536,8 @@ export default function ToolDetailPage() {
                   Help verify this data ↗
                 </a>
               </p>
+            )}
+              </>
             )}
           </CollapsibleSection>
 
