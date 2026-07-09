@@ -9,6 +9,7 @@ import ComparePage from "./pages/ComparePage";
 import CompareVsPage from "./pages/CompareVsPage";
 import SkillsPage from "./pages/SkillsPage";
 import McpServersPage from "./pages/McpServersPage";
+import TrustReportPage from "./pages/TrustReportPage";
 import { TRUST_SLUGS } from "./lib/trust";
 import { loadTrustReport } from "./lib/trust-report";
 import { loadToolDetail } from "./lib/tool-detail";
@@ -99,17 +100,17 @@ export const routes: RouteRecord[] = [
       },
       { path: "skills", Component: SkillsPage },
       { path: "mcp", Component: McpServersPage },
-      // Lazy so the trust index's 794 KB data and the report page's multi-MB
-      // dataset are code-split into their own chunks, off the main bundle. SSG
-      // still resolves these lazy routes at build time, so each page's full
-      // content and structured data are inlined into static HTML for crawlers.
+      // The hub is lazy so its ~794 KB index data stays off the main bundle.
+      // The report page is eager (its own code is tiny; each vendor's data loads
+      // on demand via the loader) so navigating to a report never depends on
+      // fetching a separate component chunk that a newer deploy may have removed.
       {
         path: "trust",
         lazy: async () => ({ Component: (await import("./pages/TrustIndexPage")).default }),
       },
       {
         path: "trust/:slug",
-        lazy: async () => ({ Component: (await import("./pages/TrustReportPage")).default }),
+        Component: TrustReportPage,
         loader: async ({ params }) => (await loadTrustReport(params.slug)) ?? null,
         getStaticPaths: () => TRUST_SLUGS.map((slug) => `trust/${slug}`),
       },
