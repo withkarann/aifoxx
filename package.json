@@ -22,7 +22,8 @@
     "test:watch": "vitest",
     "check": "npm run typecheck && npm run lint && npm run test && npm run validate && npm run build",
     "prepare": "husky",
-    "validate": "node scripts/validate-tools.mjs"
+    "validate": "node scripts/validate-tools.mjs",
+    "indexnow": "node scripts/indexnow-submit.mjs"
   },
   "overrides": {
     "esbuild": "^0.28.1"

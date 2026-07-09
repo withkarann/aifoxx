@@ -1,0 +1,20 @@
+name: indexnow
+on:
+  push:
+    branches: [main]
+    paths:
+      - "public/sitemap.xml"
+      - "src/data/**"
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm ci
+      - run: npm run build # regenerate a fresh sitemap.xml before submitting
+      - run: npm run indexnow
+        env:
+          INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY }}
