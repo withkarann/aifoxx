@@ -39,7 +39,7 @@ const SECTIONS: Section[] = [
     title: "THIRD-PARTY SERVICES",
     body: [
       "Hosting and analytics: the site is hosted on Vercel, which keeps standard server access logs (including IP addresses) to deliver pages and protect against abuse. We use Vercel Analytics and Speed Insights, which are cookieless and report only aggregated, anonymized usage and performance. They do not build a profile of you or track you across other websites.",
-      "Tool icons: many tool logos are favicons loaded from Google's public favicon service (google.com/s2/favicons). Loading an image sends your IP address and the tool's domain to Google. We set a no-referrer policy to limit what is shared.",
+      "Tool icons: tool logos are served from our own site, so viewing them does not contact any third party or share your IP address with an outside service.",
       "Badges: the footer shows a Product Hunt badge image and some pages show a shields.io badge. Loading these images contacts those services in the same way any embedded image does.",
       "Fonts are bundled with the site, so loading the page does not call Google Fonts or any external font service.",
     ],

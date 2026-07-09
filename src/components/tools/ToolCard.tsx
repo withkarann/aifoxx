@@ -46,6 +46,7 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
           <div className="flex items-center min-w-0">
             <ToolIcon
               name={tool.name}
+              slug={tool.slug}
               logoUrl={tool.logo_url}
               websiteUrl={tool.url}
               accent={color.accent}
