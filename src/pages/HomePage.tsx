@@ -252,6 +252,8 @@ export default function HomePage() {
             <img
               src="/aifoxx.png"
               alt="AIFOXX AI Tools Directory Logo"
+              width={80}
+              height={80}
               className="hero-logo w-12 h-12 md:w-20 md:h-20 drop-shadow-[0_0_15px_rgba(var(--accent-rgb),0.3)] select-none pointer-events-none"
             />
             <h1 className="hero-title font-display font-mono font-black text-3xl md:text-6xl text-text-primary tracking-widest min-h-[1.2em]">

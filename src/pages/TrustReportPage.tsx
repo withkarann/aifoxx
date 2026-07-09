@@ -301,6 +301,7 @@ export default function TrustReportPage() {
             <div className="flex gap-3 sm:gap-4 items-start mt-2">
               <ToolIcon
                 name={report.vendor}
+                slug={report.slug}
                 websiteUrl={site}
                 accent={ACCENT}
                 className="w-12 h-12 sm:w-14 sm:h-14 rounded-[6px]"

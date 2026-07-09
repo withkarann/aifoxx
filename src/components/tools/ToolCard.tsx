@@ -34,7 +34,7 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
   return (
     <div
       className={cn(
-        "tool-card relative overflow-hidden bg-bg-surface border border-border-default rounded-[6px] p-4 flex flex-col min-w-0 transition-all duration-150 cursor-pointer"
+        "tool-card relative overflow-hidden bg-bg-surface border border-border-default rounded-[6px] p-4 flex flex-col min-w-0 cursor-pointer"
       )}
       style={vars}
     >
@@ -46,6 +46,7 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
           <div className="flex items-center min-w-0">
             <ToolIcon
               name={tool.name}
+              slug={tool.slug}
               logoUrl={tool.logo_url}
               websiteUrl={tool.url}
               accent={color.accent}

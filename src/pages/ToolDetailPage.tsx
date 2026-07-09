@@ -279,6 +279,7 @@ export default function ToolDetailPage() {
           <div className="flex gap-3 sm:gap-4 items-start">
             <ToolIcon
               name={tool.name}
+              slug={tool.slug}
               logoUrl={tool.logo_url}
               websiteUrl={tool.url}
               accent={color.accent}

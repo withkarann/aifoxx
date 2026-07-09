@@ -1,12 +1,14 @@
 import { useState } from "react";
-import { getFaviconUrl } from "@/lib/utils";
+import { hasToolIcon, toolIconUrl } from "@/lib/tool-icons";
 
 interface ToolIconProps {
   /** Tool name. Its first letter is the fallback when no favicon loads. */
   name: string;
-  /** Optional explicit logo image URL; preferred over the derived favicon. */
+  /** Tool slug, used to resolve the locally hosted icon. */
+  slug?: string;
+  /** Optional explicit logo image URL; preferred over the local icon. */
   logoUrl?: string;
-  /** Tool website URL, used to derive a favicon when no logo is provided. */
+  /** Tool website URL. Kept for compatibility; no longer used for the icon. */
   websiteUrl?: string;
   /** Accent color for the letter-tile fallback glyph. */
   accent: string;
@@ -24,13 +26,16 @@ interface ToolIconProps {
  */
 export function ToolIcon({
   name,
+  slug,
   logoUrl,
   websiteUrl,
   accent,
   className = "w-8 h-8",
   letterClassName = "text-sm",
 }: ToolIconProps) {
-  const src = logoUrl || getFaviconUrl(websiteUrl) || null;
+  void websiteUrl;
+  const localIcon = slug && hasToolIcon(slug) ? toolIconUrl(slug) : null;
+  const src = logoUrl || localIcon || null;
   const [failed, setFailed] = useState(false);
 
   if (src && !failed) {
