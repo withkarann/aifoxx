@@ -1,8 +1,10 @@
 import Fuse from 'fuse.js';
 import type { Tool } from '@/types/tool';
-import toolsData from '@/data/tools.json';
+import { allTools } from './tools';
 
-const tools = toolsData as Tool[];
+// Reuse the light catalog (name/tags/description/category are all indexed here);
+// importing the raw data again would ship a second copy of the catalog.
+const tools = allTools;
 
 const fuseOptions = {
   keys: [

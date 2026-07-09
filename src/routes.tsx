@@ -11,6 +11,7 @@ import SkillsPage from "./pages/SkillsPage";
 import McpServersPage from "./pages/McpServersPage";
 import { TRUST_SLUGS } from "./lib/trust";
 import { loadTrustReport } from "./lib/trust-report";
+import { loadToolDetail } from "./lib/tool-detail";
 import NewsPage from "./pages/NewsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -74,6 +75,9 @@ export const routes: RouteRecord[] = [
       {
         path: "ai/:slug",
         Component: ToolDetailPage,
+        // Heavy detail fields load per tool; the loader runs at build time so
+        // each page's full content is still pre-rendered into static HTML.
+        loader: ({ params }) => loadToolDetail(params.slug),
         getStaticPaths: () => toolPaths,
       },
       {
