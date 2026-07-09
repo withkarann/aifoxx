@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/withkarann/aifoxx/compare/v1.1.0...v1.1.1) (2026-07-09)
+
+
+### Performance
+
+* optimize mobile performance and add IndexNow submission ([#157](https://github.com/withkarann/aifoxx/issues/157)) ([1045550](https://github.com/withkarann/aifoxx/commit/10455504fc631c2d14f55dc6c39c9fc82fb90415))
+
 ## [1.1.0](https://github.com/withkarann/aifoxx/compare/v1.0.0...v1.1.0) (2026-07-09)
 
 
