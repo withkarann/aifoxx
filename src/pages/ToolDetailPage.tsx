@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useLoaderData, Link, useNavigate } from "react-router-dom";
 import { Star, ExternalLink, Scale, ShieldCheck, ArrowUpRight } from "lucide-react";
 import { GithubLogo } from "phosphor-react";
 import { getToolBySlug, getRelatedTools } from "@/lib/tools";
 import { getToolSkills } from "@/lib/skills";
 import { hasTrustReport } from "@/lib/trust";
 import { getTrustBadges } from "@/lib/trust-badges";
+import { type ToolDetail } from "@/lib/tool-detail";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PricingBadge } from "@/components/tools/PricingBadge";
 import { ToolCard } from "@/components/tools/ToolCard";
@@ -76,7 +77,10 @@ function SkillsSection({ skills }: { skills: Skill[] }) {
 
 export default function ToolDetailPage() {
   const { slug } = useParams<{ slug: string }>();
-  const tool = slug ? getToolBySlug(slug) : undefined;
+  // Merge the light catalog entry with this tool's lazily-loaded detail fields.
+  const detail = useLoaderData() as ToolDetail;
+  const baseTool = slug ? getToolBySlug(slug) : undefined;
+  const tool = baseTool ? { ...baseTool, ...detail } : undefined;
 
   // Sticky CTA: show the bottom "Open" bar once the in-page CTA scrolls out of
   // view, but hide it again once the footer comes into view so it never stacks
