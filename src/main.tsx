@@ -2,29 +2,16 @@ import { ViteReactSSG } from "vite-react-ssg";
 import "@fontsource/jetbrains-mono/latin.css";
 import "./index.css";
 import { routes } from "./routes";
+import { reloadOnceForStaleDeploy } from "./lib/stale-deploy";
 
-// When a new version is deployed, its asset filenames change and the previous
-// build's chunks are removed. A tab that was already open still references the
-// old chunk names, so a lazily-loaded route or data chunk 404s with "Failed to
-// fetch dynamically imported module". Reload once to pick up the current build.
-// The 10s guard prevents a reload loop if a chunk is genuinely unreachable.
+// When a new version deploys, the previous build's chunk filenames are removed.
+// A tab still on the old build 404s on a lazily loaded route chunk, which Vite
+// surfaces as "vite:preloadError". Reload once onto the current build. Errors
+// that reach a route loader instead (e.g. the loader-data manifest) are handled
+// by RootErrorBoundary, which shares the same one-time reload guard.
 if (typeof window !== "undefined") {
   window.addEventListener("vite:preloadError", () => {
-    const KEY = "preloadReloadAt";
-    let last = 0;
-    try {
-      last = Number(sessionStorage.getItem(KEY) || 0);
-    } catch {
-      /* sessionStorage unavailable; fall through and reload */
-    }
-    if (Date.now() - last > 10_000) {
-      try {
-        sessionStorage.setItem(KEY, String(Date.now()));
-      } catch {
-        /* ignore */
-      }
-      window.location.reload();
-    }
+    reloadOnceForStaleDeploy();
   });
 }
 
