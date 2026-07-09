@@ -1,5 +1,8 @@
 import { ToolSchema, type Tool } from "@/types/tool";
-import toolsData from "@/data/tools.json";
+// Light catalog (generated from tools.json by scripts/split-tools.mjs). Heavy
+// detail fields (use_cases, compliance, etc.) are loaded per tool page; they are
+// optional on Tool, so listing/search/filter code reads this index directly.
+import toolsData from "@/data/tools-index.json";
 
 export interface CategoryTaxonomyItem {
   name: string;
