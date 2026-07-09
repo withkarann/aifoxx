@@ -20,7 +20,7 @@
     "pretest": "npm run split",
     "test": "vitest run",
     "test:watch": "vitest",
-    "check": "npm run typecheck && npm run lint && npm run validate && npm run build",
+    "check": "npm run typecheck && npm run lint && npm run test && npm run validate && npm run build",
     "prepare": "husky",
     "validate": "node scripts/validate-tools.mjs"
   },

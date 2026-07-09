@@ -27,7 +27,9 @@ npm run test       # Vitest unit tests
 npm run build      # static build succeeds
 ```
 
-`npm run check` runs typecheck, lint, validate, and build in one step.
+`npm run check` runs all of these in one step. A git pre-push hook runs
+`npm run check` automatically before every push, so a change that fails a check
+never reaches the remote.
 
 ## Contributing tool data
 
@@ -45,6 +47,17 @@ in `src/types/tool.ts`, which is the source of truth.
 - Use category and subcategory names consistently with the existing entries.
   Check the current list before introducing a new one.
 - No duplicate slugs, names, or URLs.
+
+## Correcting a Trust & Security Report
+
+The reports at `/trust/:slug` cover each vendor's certifications, AI-training
+posture, and data handling. To correct one, open a
+[Data correction issue](https://github.com/withkarann/aifoxx/issues/new?template=data-correction.yml)
+with the vendor, the field that is wrong, the correct value, and a link to the
+page on the vendor's own domain that shows it. A verbatim quote from that page is
+the most useful thing you can include. Report data is maintained centrally so
+every certification stays tied to a source, so these corrections are handled as
+issues rather than direct file edits, and ship in the next data refresh.
 
 ## Pull requests
 
