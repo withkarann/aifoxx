@@ -1,11 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
-import { LayoutGrid, Code2, Server, Newspaper, Plus } from "lucide-react";
+import { LayoutGrid, Code2, ShieldCheck, Newspaper, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const TABS = [
   { to: "/",       label: "TOOLS",  Icon: LayoutGrid },
   { to: "/skills", label: "SKILLS", Icon: Code2       },
-  { to: "/mcp",    label: "MCP",    Icon: Server      },
+  { to: "/trust",  label: "TRUST",  Icon: ShieldCheck },
   { to: "/news",   label: "NEWS",   Icon: Newspaper   },
   { to: "/submit", label: "SUBMIT", Icon: Plus        },
 ];

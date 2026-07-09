@@ -6,6 +6,7 @@ import { ToolIcon } from "./ToolIcon";
 import { getCategoryColor, getCategoryVars } from "@/lib/categoryColors";
 import { getCategoryIcon } from "@/lib/categoryIcons";
 import { useCompare } from "@/contexts/CompareContext";
+import { getTrustBadges } from "@/lib/trust-badges";
 import { cn } from "@/lib/utils";
 
 interface ToolCardProps {
@@ -20,12 +21,15 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
   const { isSelected, toggle, isFull } = useCompare();
   const selectedForCompare = isSelected(tool.slug);
 
-  // Number of compliance flags that are both claimed and backed by a source URL.
-  // Surfaced as a "Verified" chip so the directory's trust signal is visible in
-  // the grid, not only on the detail page.
-  const verifiedCompliance = (["soc2", "iso27001", "gdpr", "hipaa"] as const).filter(
-    (k) => tool.compliance?.[k] === true && tool.compliance_sources?.[k]
-  ).length;
+  // Number of verified certifications, from the trust assessment when available
+  // (same source as the /trust report) so the grid's "Verified" chip matches the
+  // detail page; falls back to the legacy sourced-flag count otherwise.
+  const badges = getTrustBadges(tool.slug);
+  const verifiedCompliance = badges
+    ? badges.certs.length
+    : (["soc2", "iso27001", "gdpr", "hipaa"] as const).filter(
+        (k) => tool.compliance?.[k] === true && tool.compliance_sources?.[k]
+      ).length;
 
   return (
     <div

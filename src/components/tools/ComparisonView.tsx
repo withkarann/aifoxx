@@ -3,6 +3,33 @@ import { X, ExternalLink } from "lucide-react";
 import type { Tool } from "@/types/tool";
 import { PricingBadge } from "@/components/tools/PricingBadge";
 import { getCategoryColor } from "@/lib/categoryColors";
+import { getTrustBadges } from "@/lib/trust-badges";
+import { canonicalCertKeys, type CanonicalCertKey } from "@/lib/trust";
+
+// Resolve compliance + data-handling from the verified trust assessment (the
+// same source as the /trust report), falling back to legacy tool fields only
+// when a tool has no assessment. The assessment positively asserts HELD certs,
+// so an unconfirmed canonical cert reads as "n/a", never a false "No".
+function certValue(tool: Tool, key: CanonicalCertKey): boolean | null {
+  const b = getTrustBadges(tool.slug);
+  if (b) return canonicalCertKeys(b.certs).has(key) ? true : null;
+  return tool.compliance?.[key] ?? null;
+}
+function trainsValue(tool: Tool): boolean | null {
+  const b = getTrustBadges(tool.slug);
+  if (b) return b.trains;
+  return tool.data_storage?.trains_on_data ?? null;
+}
+function regionValue(tool: Tool): string {
+  const b = getTrustBadges(tool.slug);
+  if (b && b.data_region) return b.data_region;
+  return tool.data_storage?.region ?? "";
+}
+function selfHostValue(tool: Tool): boolean | null {
+  const b = getTrustBadges(tool.slug);
+  if (b) return b.self_hostable;
+  return tool.data_storage?.self_hostable ?? null;
+}
 
 // ── value renderers ─────────────────────────────────────────────────────────
 function text(value: string | null | undefined): ReactNode {
@@ -53,13 +80,13 @@ const ATTRIBUTES: Attribute[] = [
   { label: "Paid Plans", get: (t) => text(t.pricing_detail?.paid_plans), key: (t) => t.pricing_detail?.paid_plans ?? "" },
   { label: "API Cost", get: (t) => text(t.pricing_detail?.api_cost), key: (t) => t.pricing_detail?.api_cost ?? "" },
   { label: "Access", get: (t) => accessList(t), key: (t) => [...(t.access_methods ?? [])].sort().join(",") },
-  { label: "SOC 2", get: (t) => complianceDot(t.compliance?.soc2), key: (t) => String(t.compliance?.soc2) },
-  { label: "ISO 27001", get: (t) => complianceDot(t.compliance?.iso27001), key: (t) => String(t.compliance?.iso27001) },
-  { label: "GDPR", get: (t) => complianceDot(t.compliance?.gdpr), key: (t) => String(t.compliance?.gdpr) },
-  { label: "HIPAA", get: (t) => complianceDot(t.compliance?.hipaa), key: (t) => String(t.compliance?.hipaa) },
-  { label: "Data Region", get: (t) => text(t.data_storage?.region), key: (t) => t.data_storage?.region ?? "" },
-  { label: "Trains on Data", get: (t) => yesNo(t.data_storage?.trains_on_data), key: (t) => String(t.data_storage?.trains_on_data) },
-  { label: "Self-hostable", get: (t) => yesNo(t.data_storage?.self_hostable), key: (t) => String(t.data_storage?.self_hostable) },
+  { label: "SOC 2", get: (t) => complianceDot(certValue(t, "soc2")), key: (t) => String(certValue(t, "soc2")) },
+  { label: "ISO 27001", get: (t) => complianceDot(certValue(t, "iso27001")), key: (t) => String(certValue(t, "iso27001")) },
+  { label: "GDPR", get: (t) => complianceDot(certValue(t, "gdpr")), key: (t) => String(certValue(t, "gdpr")) },
+  { label: "HIPAA", get: (t) => complianceDot(certValue(t, "hipaa")), key: (t) => String(certValue(t, "hipaa")) },
+  { label: "Data Region", get: (t) => text(regionValue(t)), key: (t) => regionValue(t) },
+  { label: "Trains on Data", get: (t) => yesNo(trainsValue(t)), key: (t) => String(trainsValue(t)) },
+  { label: "Self-hostable", get: (t) => yesNo(selfHostValue(t)), key: (t) => String(selfHostValue(t)) },
   { label: "Category", get: (t) => text(t.category), key: (t) => t.category },
   { label: "Subcategory", get: (t) => text(t.subcategory), key: (t) => t.subcategory },
 ];

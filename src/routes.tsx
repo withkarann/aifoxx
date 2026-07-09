@@ -9,6 +9,8 @@ import ComparePage from "./pages/ComparePage";
 import CompareVsPage from "./pages/CompareVsPage";
 import SkillsPage from "./pages/SkillsPage";
 import McpServersPage from "./pages/McpServersPage";
+import { TRUST_SLUGS } from "./lib/trust";
+import { loadTrustReport } from "./lib/trust-report";
 import NewsPage from "./pages/NewsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -93,6 +95,20 @@ export const routes: RouteRecord[] = [
       },
       { path: "skills", Component: SkillsPage },
       { path: "mcp", Component: McpServersPage },
+      // Lazy so the trust index's 794 KB data and the report page's multi-MB
+      // dataset are code-split into their own chunks, off the main bundle. SSG
+      // still resolves these lazy routes at build time, so each page's full
+      // content and structured data are inlined into static HTML for crawlers.
+      {
+        path: "trust",
+        lazy: async () => ({ Component: (await import("./pages/TrustIndexPage")).default }),
+      },
+      {
+        path: "trust/:slug",
+        lazy: async () => ({ Component: (await import("./pages/TrustReportPage")).default }),
+        loader: async ({ params }) => (await loadTrustReport(params.slug)) ?? null,
+        getStaticPaths: () => TRUST_SLUGS.map((slug) => `trust/${slug}`),
+      },
       { path: "news", Component: NewsPage },
       { path: "privacy", Component: PrivacyPage },
       { path: "best", Component: BestIndexPage },

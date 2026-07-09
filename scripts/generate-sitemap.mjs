@@ -10,6 +10,7 @@ const TOOLS_PATH = join(__dirname, "..", "src", "data", "tools.json");
 const NEWS_PATH = join(__dirname, "..", "src", "data", "news.json");
 const NEW_TOOLS_PATH = join(__dirname, "..", "src", "data", "new-tools.json");
 const BEST_PATH = join(__dirname, "..", "src", "data", "best-categories.json");
+const TRUST_INDEX_PATH = join(__dirname, "..", "src", "data", "trust-index.json");
 const OUTPUT_PATH = join(__dirname, "..", "public", "sitemap.xml");
 
 function normalizeTaxonomyValue(value) {
@@ -94,6 +95,7 @@ function generateSitemap() {
     { path: "/submit", lastmod: today, changefreq: "monthly", priority: 0.6 },
     { path: "/skills", lastmod: today, changefreq: "weekly", priority: 0.8 },
     { path: "/mcp", lastmod: today, changefreq: "weekly", priority: 0.8 },
+    { path: "/trust", lastmod: today, changefreq: "weekly", priority: 0.9 },
     { path: "/news", lastmod: newsLastmod, changefreq: "daily", priority: 0.8 },
     { path: "/best", lastmod: today, changefreq: "weekly", priority: 0.9 },
     { path: "/compare", lastmod: today, changefreq: "weekly", priority: 0.7 },
@@ -130,6 +132,17 @@ function generateSitemap() {
     priority: 0.5,
   }));
 
+  // Vendor Trust & Security Report pages, one per assessed vendor.
+  const trustIndex = JSON.parse(readFileSync(TRUST_INDEX_PATH, "utf8"));
+  const trustRoutes = trustIndex
+    .map((entry) => ({
+      path: `/trust/${entry.slug}`,
+      lastmod: toIsoDate(entry.last_verified, today),
+      changefreq: "monthly",
+      priority: 0.8,
+    }))
+    .sort((a, b) => a.path.localeCompare(b.path));
+
   // "vs" comparison pages: featured + same-category pairs, canonicalised (a<b).
   // Mirrors getStaticPaths in src/routes.tsx so the sitemap matches what's built.
   const vsGroups = new Map();
@@ -155,7 +168,7 @@ function generateSitemap() {
       return { path: `/compare/${a}/vs/${b}`, lastmod: today, changefreq: "monthly", priority: 0.6 };
     });
 
-  const routes = [...staticRoutes, ...bestRoutes, ...categoryRoutes, ...toolRoutes, ...tagRoutes, ...vsRoutes];
+  const routes = [...staticRoutes, ...bestRoutes, ...categoryRoutes, ...toolRoutes, ...tagRoutes, ...vsRoutes, ...trustRoutes];
 
   const xml = [
     "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",

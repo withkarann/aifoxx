@@ -29,9 +29,14 @@ export function Footer() {
             ))}
           </ul>
         </nav>
-        <Link to="/best" className="font-mono text-xs text-accent-green hover:text-text-primary transition-colors tracking-wider">
-          &gt; BEST AI TOOLS BY CATEGORY
-        </Link>
+        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+          <Link to="/best" className="font-mono text-xs text-accent-green hover:text-text-primary transition-colors tracking-wider">
+            &gt; BEST AI TOOLS BY CATEGORY
+          </Link>
+          <Link to="/trust" className="font-mono text-xs text-accent-green hover:text-text-primary transition-colors tracking-wider">
+            &gt; AI VENDOR TRUST REPORTS
+          </Link>
+        </div>
         <a
           href="https://www.producthunt.com/products/aifoxx?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-aifoxx"
           target="_blank"
