@@ -16,6 +16,7 @@ import { loadToolDetail } from "./lib/tool-detail";
 import NewsPage from "./pages/NewsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import { RootErrorBoundary } from "./components/RootErrorBoundary";
 import BestIndexPage from "./pages/BestIndexPage";
 import BestCategoryPage from "./pages/BestCategoryPage";
 import bestData from "./data/best-categories.json";
@@ -71,6 +72,10 @@ export const routes: RouteRecord[] = [
   {
     path: "/",
     Component: App,
+    // Catches loader/render errors from any child route. Its main job is to
+    // reload once when a stale build's asset or loader-data file 404s after a
+    // deploy, instead of showing the visitor a raw error screen.
+    ErrorBoundary: RootErrorBoundary,
     children: [
       { index: true, Component: HomePage },
       {
