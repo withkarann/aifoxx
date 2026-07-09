@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/withkarann/aifoxx/compare/v1.1.1...v1.1.2) (2026-07-09)
+
+
+### Bug Fixes
+
+* recover from stale deploys and serve the app for all routes ([#159](https://github.com/withkarann/aifoxx/issues/159)) ([9365938](https://github.com/withkarann/aifoxx/commit/9365938f000ed4cc6f66a7b908bc7bcc054ccae2))
+* serve the app for unmatched routes via a 404.html fallback ([#161](https://github.com/withkarann/aifoxx/issues/161)) ([9ac44ce](https://github.com/withkarann/aifoxx/commit/9ac44ce3741271fe7895fbbbb28124aa5a76be9e))
+
 ## [1.1.1](https://github.com/withkarann/aifoxx/compare/v1.1.0...v1.1.1) (2026-07-09)
 
 
