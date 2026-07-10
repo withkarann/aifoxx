@@ -83,6 +83,8 @@ export interface TrustIndexEntry {
   certs_held_count: number;
   trains_on_customer_data: boolean | null;
   self_hostable: boolean | null;
+  /** Whether the vendor documents a data processing agreement (GDPR contract). */
+  dpa: boolean | null;
   flags_count: number;
   confidence: string;
 }

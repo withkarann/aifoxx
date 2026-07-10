@@ -12,7 +12,7 @@ import { getCategoryColor } from "@/lib/categoryColors";
 import { getCategoryIcon } from "@/lib/categoryIcons";
 import { CATEGORIES, matchesTaxonomyValue, normalizeTaxonomyValue } from "@/lib/tools";
 import { getTrustBadges } from "@/lib/trust-badges";
-import { canonicalCertKeys } from "@/lib/trust";
+import { complianceKeys } from "@/lib/trust";
 import { cn } from "@/lib/utils";
 import Brand from "@/lib/brand";
 
@@ -55,7 +55,7 @@ export default function CategoryPage() {
     const cc = (k: "soc2" | "gdpr") =>
       inCategory.filter((t) => {
         const b = getTrustBadges(t.slug);
-        return b ? canonicalCertKeys(b.certs).has(k) : t.compliance?.[k] === true;
+        return b ? complianceKeys(b.certs, b.dpa).has(k) : t.compliance?.[k] === true;
       }).length;
     return {
       count: inCategory.length,

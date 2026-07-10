@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { ShieldCheck, ArrowUpRight } from "lucide-react";
 import { filterTrustIndex, TRUST_STATS } from "@/lib/trust-index";
-import { canonicalCertKeys, type CanonicalCertKey } from "@/lib/trust";
+import { complianceKeys, type CanonicalCertKey } from "@/lib/trust";
 import type { TrustIndexEntry } from "@/types/trust";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -11,7 +11,7 @@ import Brand from "@/lib/brand";
 const PER_PAGE = 24;
 
 function TrustCard({ entry }: { entry: TrustIndexEntry }) {
-  const held = canonicalCertKeys(entry.certs_held);
+  const held = complianceKeys(entry.certs_held, entry.dpa);
   const trains = entry.trains_on_customer_data;
   return (
     <Link
