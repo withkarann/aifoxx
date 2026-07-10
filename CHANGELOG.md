@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.3](https://github.com/withkarann/aifoxx/compare/v1.1.2...v1.1.3) (2026-07-10)
+
+
+### Bug Fixes
+
+* keep Trust & Security Report copy customer-facing and lint against stray notes ([#164](https://github.com/withkarann/aifoxx/issues/164)) ([4ae989a](https://github.com/withkarann/aifoxx/commit/4ae989aba2472bd218d0ba23894d9cc2f74d7878))
+* prevent trust-page hydration crash and stop card name truncation ([#166](https://github.com/withkarann/aifoxx/issues/166)) ([6837a9e](https://github.com/withkarann/aifoxx/commit/6837a9e7ae9cb7f42d640717ca3d3bef02a779f4))
+
 ## [1.1.2](https://github.com/withkarann/aifoxx/compare/v1.1.1...v1.1.2) (2026-07-09)
 
 
