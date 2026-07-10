@@ -133,7 +133,10 @@ export default function BestCategoryPage() {
                   <span
                     className="absolute top-0 left-0 z-10 font-mono font-black text-xs px-2 py-1 rounded-[3px] border shadow-md"
                     style={{
-                      background: color.bg,
+                      // The tint is nearly transparent, so it sits on a solid
+                      // surface layer; otherwise the card's accent bar shows
+                      // through and reads as a line struck through the number.
+                      background: `linear-gradient(${color.bg}, ${color.bg}), hsl(var(--bg-elevated))`,
                       color: color.accent,
                       borderColor: color.border,
                     }}

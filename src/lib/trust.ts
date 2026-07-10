@@ -45,6 +45,18 @@ export function canonicalCertKeys(heldCertNames: string[]): Set<CanonicalCertKey
   return out;
 }
 
+/**
+ * GDPR is a regulation, not a certificate: a vendor documents compliance either
+ * with an explicit GDPR entry on its trust pages or by publishing a data
+ * processing agreement (DPA), the contract the regulation requires. Both count,
+ * so the tool page, compare view, filters, and /trust report always agree.
+ */
+export function complianceKeys(heldCertNames: string[], dpa?: boolean | null): Set<CanonicalCertKey> {
+  const keys = canonicalCertKeys(heldCertNames);
+  if (dpa === true) keys.add("gdpr");
+  return keys;
+}
+
 /** Held-cert names from either a full report or a light index entry. */
 export function heldCertNames(entry: Pick<TrustReport, "certifications"> | Pick<TrustIndexEntry, "certs_held">): string[] {
   if ("certs_held" in entry) return entry.certs_held;

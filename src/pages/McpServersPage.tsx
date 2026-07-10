@@ -4,6 +4,7 @@ import { Star, ExternalLink } from "lucide-react";
 import { GithubLogo } from "phosphor-react";
 import { useQuery } from "@tanstack/react-query";
 import { loadMcpServers, filterSkills, SKILL_COUNTS } from "@/lib/skills";
+import { paginationItems } from "@/lib/pagination";
 import { isSafeHttpUrl } from "@/lib/utils";
 import { type Skill } from "@/types/skill";
 import { PageMeta } from "@/components/seo/PageMeta";
@@ -195,20 +196,27 @@ export default function McpServersPage() {
               >
                 PREV
               </button>
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
-                <button
-                  key={n}
-                  type="button"
-                  onClick={() => setPage(n)}
-                  className={`font-mono text-xs min-w-8 px-2 py-1.5 rounded-[4px] border transition-all ${
-                    n === pageSafe
-                      ? "bg-accent-green text-primary-foreground border-accent-green"
-                      : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
-                  }`}
-                >
-                  {n}
-                </button>
-              ))}
+              {paginationItems(pageSafe, totalPages).map((item, index) =>
+                item === "ellipsis" ? (
+                  <span key={`ellipsis-${index}`} className="font-mono text-xs text-text-muted px-1">
+                    ...
+                  </span>
+                ) : (
+                  <button
+                    key={item}
+                    type="button"
+                    onClick={() => setPage(item)}
+                    aria-current={item === pageSafe ? "page" : undefined}
+                    className={`font-mono text-xs min-w-8 px-2 py-1.5 rounded-[4px] border transition-all ${
+                      item === pageSafe
+                        ? "bg-accent-green text-primary-foreground border-accent-green"
+                        : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
+                    }`}
+                  >
+                    {item}
+                  </button>
+                )
+              )}
               <button
                 type="button"
                 onClick={() => setPage((p) => Math.min(totalPages, p + 1))}

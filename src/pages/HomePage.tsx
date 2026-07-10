@@ -7,6 +7,7 @@ import { allTools } from "@/lib/tools";
 import { useToolFilters } from "@/hooks/useToolFilters";
 import { useFilteredTools } from "@/hooks/useFilteredTools";
 import { searchTools } from "@/lib/search";
+import { paginationItems } from "@/lib/pagination";
 import { SearchBar } from "@/components/search/SearchBar";
 import { FilterBar } from "@/components/search/FilterBar";
 import { ToolCard } from "@/components/tools/ToolCard";
@@ -151,22 +152,7 @@ export default function HomePage() {
   const visibleStart = total === 0 ? 0 : (currentPageSafe - 1) * TOOLS_PER_PAGE + 1;
   const visibleEnd = Math.min(currentPageSafe * TOOLS_PER_PAGE, total);
 
-  const pageItems = useMemo(() => {
-    if (totalPages <= 7) {
-      return Array.from({ length: totalPages }, (_, i) => i + 1);
-    }
-
-    const items: Array<number | "ellipsis"> = [1];
-    const left = Math.max(2, currentPageSafe - 1);
-    const right = Math.min(totalPages - 1, currentPageSafe + 1);
-
-    if (left > 2) items.push("ellipsis");
-    for (let page = left; page <= right; page++) items.push(page);
-    if (right < totalPages - 1) items.push("ellipsis");
-
-    items.push(totalPages);
-    return items;
-  }, [currentPageSafe, totalPages]);
+  const pageItems = useMemo(() => paginationItems(currentPageSafe, totalPages), [currentPageSafe, totalPages]);
 
   useEffect(() => {
     let i = 0;

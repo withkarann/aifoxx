@@ -1,6 +1,6 @@
 import trustIndexData from "@/data/trust-index.json";
 import type { TrustIndexEntry } from "@/types/trust";
-import { CANONICAL_CERTS, canonicalCertKeys, type CanonicalCertKey } from "@/lib/trust";
+import { CANONICAL_CERTS, complianceKeys, type CanonicalCertKey } from "@/lib/trust";
 
 /**
  * The trust hub's data source: the full 980-vendor light index (~794 KB). Only
@@ -29,7 +29,7 @@ export const TRUST_STATS = (() => {
   for (const e of trustIndex) {
     if (e.has_trust_center) trustCenters += 1;
     if (e.trains_on_customer_data === false) noTrainVendors += 1;
-    for (const key of canonicalCertKeys(e.certs_held)) {
+    for (const key of complianceKeys(e.certs_held, e.dpa)) {
       certCounts.set(key, (certCounts.get(key) || 0) + 1);
     }
   }
@@ -63,7 +63,7 @@ export function filterTrustIndex({ query, certs, noTrain }: TrustFilter): TrustI
   const results = trustIndex.filter((e) => {
     if (noTrain && e.trains_on_customer_data !== false) return false;
     if (wantCerts.size > 0) {
-      const held = canonicalCertKeys(e.certs_held);
+      const held = complianceKeys(e.certs_held, e.dpa);
       for (const key of wantCerts) {
         if (!held.has(key)) return false;
       }

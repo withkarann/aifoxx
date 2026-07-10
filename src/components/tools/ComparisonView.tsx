@@ -4,7 +4,7 @@ import type { Tool } from "@/types/tool";
 import { PricingBadge } from "@/components/tools/PricingBadge";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { getTrustBadges } from "@/lib/trust-badges";
-import { canonicalCertKeys, type CanonicalCertKey } from "@/lib/trust";
+import { complianceKeys, type CanonicalCertKey } from "@/lib/trust";
 
 // Resolve compliance + data-handling from the verified trust assessment (the
 // same source as the /trust report), falling back to legacy tool fields only
@@ -12,7 +12,7 @@ import { canonicalCertKeys, type CanonicalCertKey } from "@/lib/trust";
 // so an unconfirmed canonical cert reads as "n/a", never a false "No".
 function certValue(tool: Tool, key: CanonicalCertKey): boolean | null {
   const b = getTrustBadges(tool.slug);
-  if (b) return canonicalCertKeys(b.certs).has(key) ? true : null;
+  if (b) return complianceKeys(b.certs, b.dpa).has(key) ? true : null;
   return tool.compliance?.[key] ?? null;
 }
 function trainsValue(tool: Tool): boolean | null {

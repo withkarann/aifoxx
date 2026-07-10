@@ -157,10 +157,19 @@ export default function ToolDetailPage() {
   const allDataStorageKnown = hasRegion && hasTrainsOnData && hasSelfHostable;
   const dataFixIssueUrl = `${Brand.product.repo}/issues/new?title=${encodeURIComponent(`[Data Fix] ${tool.name}`)}`;
 
+  // GDPR compliance is documented through a data processing agreement for many
+  // vendors rather than a certificate entry; show it here the same way the
+  // compare view and the /trust report count it, so the surfaces agree.
+  const badgeCerts = trustBadges
+    ? trustBadges.dpa === true && !trustBadges.certs.some((n) => /\bgdpr\b/i.test(n))
+      ? [...trustBadges.certs, "GDPR (DPA available)"]
+      : trustBadges.certs
+    : [];
+
   // Prefer the verified assessment's cert list so the FAQ structured data
   // matches the badges shown on the page (and the /trust report).
-  const verifiedCompliance = trustBadges && trustBadges.certs.length > 0
-    ? trustBadges.certs
+  const verifiedCompliance = badgeCerts.length > 0
+    ? badgeCerts
     : (["soc2", "iso27001", "gdpr", "hipaa"] as const)
         .filter((key) => compliance?.[key])
         .map((key) => key.toUpperCase());
@@ -408,9 +417,9 @@ export default function ToolDetailPage() {
             )}
             {trustBadges ? (
               <>
-                {trustBadges.certs.length > 0 ? (
+                {badgeCerts.length > 0 ? (
                   <div className="flex flex-wrap gap-2">
-                    {trustBadges.certs.map((name) => (
+                    {badgeCerts.map((name) => (
                       <span
                         key={name}
                         className="inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1 rounded-full border bg-accent-green/10 border-accent-green/35 text-accent-green"

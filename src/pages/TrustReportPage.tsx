@@ -1,6 +1,6 @@
 import { useParams, useLoaderData, Link } from "react-router-dom";
 import { ExternalLink, ShieldCheck, ArrowUpRight, Info } from "lucide-react";
-import { canonicalCertKeys, heldCertNames, CANONICAL_CERTS } from "@/lib/trust";
+import { complianceKeys, heldCertNames, CANONICAL_CERTS } from "@/lib/trust";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -175,7 +175,7 @@ export default function TrustReportPage() {
   }
 
   const site = vendorSite(report);
-  const held = canonicalCertKeys(heldCertNames(report));
+  const held = complianceKeys(heldCertNames(report), report.privacy?.dpa === true);
   const trains = trainsOnData(report);
   const certsHeldCount = (report.certifications || []).filter((c) => c.held).length;
   const marquee = marqueeCerts(held);
@@ -209,6 +209,9 @@ export default function TrustReportPage() {
     if (isHeld && cert?.proof_quote) {
       return `Yes. Per ${report.vendor}: "${cert.proof_quote}"`.slice(0, 300);
     }
+    if (isHeld && key === "gdpr" && !cert) {
+      return `Yes. ${report.vendor} provides a GDPR data processing agreement (DPA) covering how customer data is handled.`;
+    }
     if (isHeld) return `Yes, ${report.vendor} lists ${label} compliance.`;
     return `We could not confirm ${label} for ${report.vendor} from its public trust or security pages. This does not necessarily mean the vendor lacks it. Confirm directly with the vendor.`;
   };
@@ -225,6 +228,18 @@ export default function TrustReportPage() {
         ? `No. ${report.privacy.ai_training_note || `${report.vendor} does not train AI models on customer data.`}`.slice(0, 300)
         : `${report.vendor}'s public documentation does not clearly state whether it trains AI models on customer data. Confirm directly with the vendor.`,
   });
+  if (report.privacy?.dpa === true) {
+    faq.push({
+      q: `Does ${report.vendor} offer a data processing agreement (DPA)?`,
+      a: `Yes. ${report.vendor} provides a DPA, the GDPR contract that governs how it processes customer data. Review its terms during procurement.`,
+    });
+  }
+  if (report.privacy?.data_region) {
+    faq.push({
+      q: `Where does ${report.vendor} store customer data?`,
+      a: `${report.privacy.data_region}`.slice(0, 300),
+    });
+  }
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -450,7 +465,7 @@ export default function TrustReportPage() {
                       <span className="font-display font-black text-sm text-text-primary">{p.name}</span>
                       {p.category && <span className="font-mono text-[10px] text-text-muted border border-border-dim px-1.5 py-0.5 rounded-[3px]">{p.category}</span>}
                     </div>
-                    {p.data_scope && <p className="font-mono text-xs text-text-secondary mt-2 leading-relaxed"><span className="text-text-muted">data: </span>{p.data_scope}</p>}
+                    {p.data_scope && <p className="font-mono text-xs text-text-secondary mt-2 leading-relaxed"><span className="text-text-muted">Data it handles: </span>{p.data_scope}</p>}
                     {p.notes && <p className="font-sans text-sm text-text-secondary mt-1 leading-relaxed">{p.notes}</p>}
                   </div>
                 ))}
