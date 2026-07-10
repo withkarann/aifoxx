@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.4](https://github.com/withkarann/aifoxx/compare/v1.1.3...v1.1.4) (2026-07-10)
+
+
+### Bug Fixes
+
+* count documented DPAs as GDPR coverage, unify pagination, polish trust and best pages ([#168](https://github.com/withkarann/aifoxx/issues/168)) ([7df1f00](https://github.com/withkarann/aifoxx/commit/7df1f00c71249f6c1af9be500e808d84b2f4a614))
+* keep trust report copy customer-facing and lint coded labels and dashes ([#167](https://github.com/withkarann/aifoxx/issues/167)) ([eab47b7](https://github.com/withkarann/aifoxx/commit/eab47b7b2aec3aee349bdc23a928736a6ead8bfd))
+
 ## [1.1.3](https://github.com/withkarann/aifoxx/compare/v1.1.2...v1.1.3) (2026-07-10)
 
 
