@@ -13,14 +13,16 @@
  * Exit code 0 = all hard checks passed, exit code 1 = one or more hard checks failed.
  */
 
-import { readFileSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
 import { fileURLToPath } from 'url';
-import { dirname, resolve } from 'path';
+import { dirname, resolve, join } from 'path';
+import { GUARD_RE, findEditorialVoice } from './editorial-voice.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, '../src/data/tools.json');
 const MCP_PATH = resolve(__dirname, '../src/data/mcp-servers.json');
 const SKILLS_PATH = resolve(__dirname, '../src/data/claude-code-skills.json');
+const TRUST_DIR = resolve(__dirname, '../src/data/trust');
 
 // Fields every tool entry must carry.
 const REQUIRED_FIELDS = ['name', 'category', 'subcategory', 'description', 'url', 'tags', 'pricing'];
@@ -196,6 +198,37 @@ function validateSkillDataset(label, path) {
   return { hard, warn, count: data.length };
 }
 
+/**
+ * Every published Trust & Security Report must read as buyer-facing copy. This
+ * scans each committed report for internal editorial voice (verification notes,
+ * QA changelog labels, grading mechanics, directives aimed at the directory) and
+ * hard-fails so that language can never reach production. See editorial-voice.mjs.
+ */
+function checkTrustEditorialVoice() {
+  let files;
+  try {
+    files = readdirSync(TRUST_DIR).filter(
+      (f) => f.endsWith('.json') && f !== 'dimensions.json'
+    );
+  } catch {
+    return { hits: [], count: 0 }; // no trust dataset present in this checkout
+  }
+  const hits = [];
+  for (const file of files) {
+    let report;
+    try {
+      report = JSON.parse(readFileSync(join(TRUST_DIR, file), 'utf8'));
+    } catch (err) {
+      hits.push({ slug: file.replace(/\.json$/, ''), path: '(parse)', match: err.message });
+      continue;
+    }
+    for (const h of findEditorialVoice(report, GUARD_RE)) {
+      hits.push({ slug: report.slug || file.replace(/\.json$/, ''), path: h.path, match: h.match });
+    }
+  }
+  return { hits, count: files.length };
+}
+
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -283,6 +316,25 @@ for (const [label, path] of [['mcp-servers.json', MCP_PATH], ['claude-code-skill
   if (r.hard.length === 0) {
     console.log(`OK ${label} validated: ${r.count} entries (${r.warn.length} warning(s)).`);
   }
+}
+
+// --- Hard check: internal editorial voice in Trust & Security Reports ---
+const trust = checkTrustEditorialVoice();
+if (trust.hits.length > 0) {
+  const affected = new Set(trust.hits.map((h) => h.slug)).size;
+  console.error(
+    `FAIL internal editorial voice in ${trust.hits.length} trust report field(s) across ${affected} report(s):`
+  );
+  trust.hits.slice(0, 40).forEach((h) =>
+    console.error(`  ${h.slug} ${h.path}: matched ${JSON.stringify(h.match)}`)
+  );
+  if (trust.hits.length > 40) console.error(`  ... and ${trust.hits.length - 40} more`);
+  console.error(
+    '  Trust reports must be customer-facing. Rewrite the source assessment and regenerate.'
+  );
+  failed = true;
+} else if (trust.count > 0) {
+  console.log(`OK trust reports validated: ${trust.count} reports, 0 internal-voice leaks.`);
 }
 
 if (failed) {

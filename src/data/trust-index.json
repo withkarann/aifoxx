@@ -161,7 +161,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -539,7 +539,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -872,7 +872,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -901,7 +901,7 @@
     "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -930,7 +930,7 @@
     "certs_held_count": 7,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -1079,7 +1079,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "high"
   },
   {
@@ -1340,7 +1340,7 @@
   {
     "slug": "apple-translate",
     "vendor": "Apple Inc.",
-    "product_family": "Apple Translate — a free, system-integrated translation app for iOS, iPadOS, macOS, and watchOS, supporting 20+ languages with on-device and cloud-based processing, including live translation with AirPods.",
+    "product_family": "Apple Translate: a free, system-integrated translation app for iOS, iPadOS, macOS, and watchOS, supporting 20+ languages with on-device and cloud-based processing, including live translation with AirPods.",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -1361,7 +1361,7 @@
     "certs_held_count": 5,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -1602,7 +1602,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 9,
+    "flags_count": 7,
     "confidence": "medium"
   },
   {
@@ -1621,7 +1621,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 8,
+    "flags_count": 7,
     "confidence": "medium"
   },
   {
@@ -1745,7 +1745,7 @@
   {
     "slug": "autodraw",
     "vendor": "Google LLC (Alphabet Inc.)",
-    "product_family": "AutoDraw – a free, web-based drawing tool powered by machine learning that recognizes sketches and suggests refined vector versions. Created by Google Creative Lab as an AI experiment, operates in-browser without login.",
+    "product_family": "AutoDraw: a free, web-based drawing tool powered by machine learning that recognizes sketches and suggests refined vector versions. Created by Google Creative Lab as an AI experiment, operates in-browser without login.",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -1769,7 +1769,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -1805,7 +1805,7 @@
   {
     "slug": "avalara",
     "vendor": "Avalara, Inc.",
-    "product_family": "Avalara tax compliance and agentic AI platform: AvaTax (tax calculation), Avalara Returns / Managed Returns / Returns for Accountants, Exemption Certificate Management (ECM), e-invoicing and Property Tax modules, plus new Avi/agentic AI compliance agents (\"ALFA\" AI foundry). No dedicated public trust center was located; evidence is pieced together from press releases, product marketing pages, and legal/privacy pages.",
+    "product_family": "Avalara tax compliance and agentic AI platform: AvaTax (tax calculation), Avalara Returns / Managed Returns / Returns for Accountants, Exemption Certificate Management (ECM), e-invoicing and Property Tax modules, plus new Avi/agentic AI compliance agents (\"ALFA\" AI foundry).",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-06-27",
@@ -1821,7 +1821,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -1872,7 +1872,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -2260,7 +2260,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -2285,7 +2285,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 9,
+    "flags_count": 8,
     "confidence": "medium"
   },
   {
@@ -2315,7 +2315,7 @@
     "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "high"
   },
   {
@@ -2456,7 +2456,7 @@
   },
   {
     "slug": "brandmark",
-    "vendor": "Brandmark (brandmark.io) - indie AI logo design tool operating under the name \"Brandmark\" per its Terms of Service; independently founded by Jack Qiao and live since 2017. No formal operating legal entity is named on the vendor's own site; the Terms of Service state Canadian governing law (Burnaby, BC). NOTE: two same-name entities found in external registries are NOT confirmed to be this vendor and must not be conflated with it: Brandmark LLC, a local marketing/signage firm at 349 Marhil Ct, Crystal Lake, Illinois; and BRANDMARK.IO LIMITED, a dissolved UK shell (Companies House #15590183).",
+    "vendor": "Brandmark (brandmark.io) - indie AI logo design tool operating under the name \"Brandmark\" per its Terms of Service; independently founded by Jack Qiao and live since 2017. No formal operating legal entity is named on the vendor's own site; the Terms of Service state Canadian governing law (Burnaby, BC). Two unrelated same-name entities appear in external registries and are not this vendor: Brandmark LLC, a local marketing/signage firm at 349 Marhil Ct, Crystal Lake, Illinois; and BRANDMARK.IO LIMITED, a dissolved UK shell (Companies House #15590183).",
     "product_family": "AI-powered logo and brand identity design tool. Generates logos, business cards, social media graphics, brand guides, and website templates. Free tier with pay-once or subscription models.",
     "maturity": "startup",
     "has_trust_center": false,
@@ -3177,7 +3177,7 @@
     "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -3213,7 +3213,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -3295,7 +3295,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 9,
+    "flags_count": 8,
     "confidence": "medium"
   },
   {
@@ -3531,7 +3531,7 @@
   {
     "slug": "cleanup-pictures",
     "vendor": "Init ML SAS (operating as \"Clipdrop\"; product owned by Jasper AI, Inc. since Feb 2024)",
-    "product_family": "Cleanup.pictures is a free/low-cost web tool for AI object, text, and watermark removal from photos, operated as part of the Clipdrop suite (background removal, uncrop, generative fill, API). Originally built by French startup Init ML, briefly owned by Stability AI (Feb 2023-Feb 2024), then acquired by Jasper AI in Feb 2024. The site footer still reads 'Init ML' as of this review.",
+    "product_family": "Cleanup.pictures is a free/low-cost web tool for AI object, text, and watermark removal from photos, operated as part of the Clipdrop suite (background removal, uncrop, generative fill, API). Originally built by French startup Init ML, briefly owned by Stability AI (Feb 2023-Feb 2024), then acquired by Jasper AI in Feb 2024. The site footer still reads 'Init ML'.",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-06-27",
@@ -3540,7 +3540,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 4,
     "confidence": "low"
   },
   {
@@ -3756,7 +3756,7 @@
     "certs_held_count": 5,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -4107,7 +4107,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -4251,7 +4251,7 @@
   {
     "slug": "continue",
     "vendor": "Continue Dev, Inc.",
-    "product_family": "Continue — an open-source IDE extension (VS Code, JetBrains) for AI-assisted coding with BYOM (bring-your-own-model) architecture. **CRITICAL: Product is being shut down effective July 15, 2026 following acquisition by Cursor (June 16, 2026).**",
+    "product_family": "Continue is an open-source IDE extension (VS Code, JetBrains) for AI-assisted coding with BYOM (bring-your-own-model) architecture. The product is being discontinued effective July 15, 2026 following acquisition by Cursor (June 16, 2026).",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -4360,7 +4360,7 @@
     "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "high"
   },
   {
@@ -4407,7 +4407,7 @@
     "certs_held_count": 5,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "high"
   },
   {
@@ -4445,7 +4445,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": true,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "low"
   },
   {
@@ -4470,7 +4470,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -4517,7 +4517,7 @@
     "certs_held_count": 10,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 5,
     "confidence": "high"
   },
   {
@@ -4598,7 +4598,7 @@
   {
     "slug": "crayon",
     "vendor": "Crayon, Inc.",
-    "product_family": "Crayon AI — Competitive Intelligence Platform",
+    "product_family": "Crayon AI: Competitive Intelligence Platform",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-06-27",
@@ -4615,7 +4615,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "high"
   },
   {
@@ -5469,7 +5469,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -6013,7 +6013,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 8,
+    "flags_count": 7,
     "confidence": "medium"
   },
   {
@@ -6423,7 +6423,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -6733,7 +6733,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 8,
+    "flags_count": 7,
     "confidence": "medium"
   },
   {
@@ -7542,7 +7542,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 3,
     "confidence": "low"
   },
   {
@@ -7563,7 +7563,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 9,
+    "flags_count": 8,
     "confidence": "high"
   },
   {
@@ -7608,7 +7608,7 @@
   {
     "slug": "gemini-code-assist",
     "vendor": "Google (Google Cloud)",
-    "product_family": "Gemini for Google Cloud — Gemini Code Assist (Standard & Enterprise)",
+    "product_family": "Gemini for Google Cloud: Gemini Code Assist (Standard & Enterprise)",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
@@ -7862,7 +7862,7 @@
   {
     "slug": "google-assistant",
     "vendor": "Google LLC",
-    "product_family": "Google Assistant is a consumer-facing AI voice assistant available on phones, tablets, smart displays, smart speakers, watches, TVs, and connected devices. Note: This assessment covers the free consumer product at assistant.google.com; separate enterprise certifications apply to Google Cloud services (Cloud Platform, Workspace) that may power backend infrastructure but are distinct products.",
+    "product_family": "Google Assistant is a consumer-facing AI voice assistant available on phones, tablets, smart displays, smart speakers, watches, TVs, and connected devices, distinct from the enterprise Google Cloud services (Cloud Platform, Workspace) that may power backend infrastructure and carry separate certifications.",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -8127,7 +8127,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 8,
+    "flags_count": 7,
     "confidence": "medium"
   },
   {
@@ -8721,7 +8721,7 @@
     "certs_held_count": 7,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -9383,7 +9383,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -9410,7 +9410,7 @@
     "certs_held_count": 5,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -9597,7 +9597,7 @@
   {
     "slug": "jenni-ai",
     "vendor": "Jenni AI, Inc.",
-    "product_family": "Jenni AI — an AI-powered academic writing and research workspace. Users can import papers, write with AI-assisted autocomplete grounded in user's own sources, generate citations in 10,000+ styles, conduct literature reviews, access 248M+ academic papers, and collaborate in real-time. Used by 6M+ academics and researchers globally.",
+    "product_family": "Jenni AI, an AI-powered academic writing and research workspace. Users can import papers, write with AI-assisted autocomplete grounded in user's own sources, generate citations in 10,000+ styles, conduct literature reviews, access 248M+ academic papers, and collaborate in real-time. Used by 6M+ academics and researchers globally.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -9967,7 +9967,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -10129,7 +10129,7 @@
   {
     "slug": "komo",
     "vendor": "Komo AI Corp",
-    "product_family": "The AI Revenue Engine — AI-powered sales operations platform for B2B revenue teams, including Signal Agents that monitor buyer signals and deliver account intelligence, research, meeting prep, and expansion workflows.",
+    "product_family": "The AI Revenue Engine: AI-powered sales operations platform for B2B revenue teams, including Signal Agents that monitor buyer signals and deliver account intelligence, research, meeting prep, and expansion workflows.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -10348,7 +10348,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -10464,7 +10464,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -10902,13 +10902,13 @@
     "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "high"
   },
   {
     "slug": "linear",
     "vendor": "Linear Orbit, Inc. (d/b/a Linear)",
-    "product_family": "Product development / issue-tracking system \"Linear\" for teams and AI agents — core issue tracking, cycles, and roadmaps, plus AI-driven features (Triage Intelligence, Linear Agents, Linear MCP, Insights, Coding Sessions) and mobile/desktop apps. Single core product sold across Free, Basic, Business, and Enterprise plans with security features gated by tier.",
+    "product_family": "Product development / issue-tracking system \"Linear\" for teams and AI agents: core issue tracking, cycles, and roadmaps, plus AI-driven features (Triage Intelligence, Linear Agents, Linear MCP, Insights, Coding Sessions) and mobile/desktop apps. Single core product sold across Free, Basic, Business, and Enterprise plans with security features gated by tier.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
@@ -11094,7 +11094,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -11118,7 +11118,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -11457,7 +11457,7 @@
     "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -11482,7 +11482,7 @@
   {
     "slug": "luma-dream-machine",
     "vendor": "Luma Labs, Inc.",
-    "product_family": "Luma creative AI agents platform (formerly Dream Machine) — text-to-video, image generation, and multimodal reasoning for creative teams. Includes Ray video models, video editing, image generation, and team collaboration features. Offered in individual (Plus/Pro/Ultra) and team/enterprise tiers.",
+    "product_family": "Luma creative AI agents platform (formerly Dream Machine): text-to-video, image generation, and multimodal reasoning for creative teams. Includes Ray video models, video editing, image generation, and team collaboration features. Offered in individual (Plus/Pro/Ultra) and team/enterprise tiers.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-07",
@@ -12089,7 +12089,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -12158,7 +12158,7 @@
     "certs_held_count": 10,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 3,
     "confidence": "high"
   },
   {
@@ -12339,7 +12339,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 3,
+    "flags_count": 2,
     "confidence": "medium"
   },
   {
@@ -12499,13 +12499,13 @@
     "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
     "slug": "mode-analytics",
     "vendor": "Mode Analytics, Inc. (a ThoughtSpot company)",
-    "product_family": "Mode is a collaborative business-intelligence platform (SQL editor, Python/R notebooks, visual explorer, dashboards, self-serve reporting, embedded analytics, custom data apps). Mode Analytics, Inc. was acquired by ThoughtSpot in 2023; Mode's analysis capabilities were absorbed into ThoughtSpot Analyst Studio (GA early 2025), while mode.com continues to operate as a distinct, actively marketed product/site as of this assessment.",
+    "product_family": "Mode is a collaborative business-intelligence platform (SQL editor, Python/R notebooks, visual explorer, dashboards, self-serve reporting, embedded analytics, custom data apps). Mode Analytics, Inc. was acquired by ThoughtSpot in 2023; Mode's analysis capabilities were absorbed into ThoughtSpot Analyst Studio (GA early 2025), while mode.com continues to operate as a distinct, actively marketed product and site.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-08",
@@ -12636,7 +12636,7 @@
     "certs_held_count": 13,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -12716,7 +12716,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "low"
   },
   {
@@ -12735,7 +12735,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -12837,7 +12837,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -12864,7 +12864,7 @@
     "certs_held_count": 5,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -12894,7 +12894,7 @@
     "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -12914,7 +12914,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -13245,7 +13245,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -13291,7 +13291,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "low"
   },
   {
@@ -13345,7 +13345,7 @@
     "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -13394,7 +13394,7 @@
     "certs_held_count": 8,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -13475,7 +13475,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -13498,7 +13498,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -13577,7 +13577,7 @@
     "certs_held_count": 9,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -13709,7 +13709,7 @@
     "certs_held_count": 5,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -13761,7 +13761,7 @@
     "certs_held_count": 7,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -13832,7 +13832,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -13871,7 +13871,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -14098,7 +14098,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -14216,7 +14216,7 @@
   {
     "slug": "pdf-ai",
     "vendor": "Three Sigma AI (dba PDF.ai)",
-    "product_family": "AI-powered PDF/document tool: chat with PDFs, document parsing, field extraction, and document splitting. Offered as a consumer web app, a Chrome extension, and a developer-facing REST API (Parse/Extract/Split/Ask endpoints). The same company also operates several adjacent single-purpose tools (Resume AI scanner, Invoice AI scanner, Quiz AI generator, PDF generator, QuickyAI, Docsium) linked from the PDF.ai footer, which are out of scope for this assessment.",
+    "product_family": "AI-powered PDF/document tool: chat with PDFs, document parsing, field extraction, and document splitting. Offered as a consumer web app, a Chrome extension, and a developer-facing REST API (Parse/Extract/Split/Ask endpoints). The same company also operates several adjacent single-purpose tools (Resume AI scanner, Invoice AI scanner, Quiz AI generator, PDF generator, QuickyAI, Docsium) linked from the PDF.ai footer.",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-07-08",
@@ -14298,7 +14298,7 @@
   {
     "slug": "people-ai",
     "vendor": "People.ai, Inc. (d/b/a Backstory)",
-    "product_family": "Backstory (formerly People.ai) — AI-powered revenue intelligence platform for sales teams, providing deal risk analysis, pipeline intelligence, and CRM hygiene through automatic activity capture from email, meetings, calls, and chat integrations.",
+    "product_family": "Backstory (formerly People.ai), an AI-powered revenue intelligence platform for sales teams, providing deal risk analysis, pipeline intelligence, and CRM hygiene through automatic activity capture from email, meetings, calls, and chat integrations.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-09",
@@ -14368,7 +14368,7 @@
     "certs_held_count": 6,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "high"
   },
   {
@@ -14433,13 +14433,13 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "low"
   },
   {
     "slug": "photoai",
     "vendor": "Photo AI (photoai.com, operated by Pieter Levels / Levels.io — no separate legal entity name publicly disclosed)",
-    "product_family": "Consumer AI photo and video generator: users upload selfies to train a personal AI model, then generate photos, short AI/Mocap videos, AI influencer personas, and AI-model product photography/try-on-clothes content. Sold as individual subscriptions (Pro/Max/Ultra); no team, enterprise, or API tier found. Same operator/legal terms also cover a sibling product, Interior AI (interiorai.com), which is out of scope for this assessment.",
+    "product_family": "Consumer AI photo and video generator: users upload selfies to train a personal AI model, then generate photos, short AI/Mocap videos, AI influencer personas, and AI-model product photography/try-on-clothes content. Sold as individual subscriptions (Pro/Max/Ultra); no team, enterprise, or API tier found. Same operator/legal terms also cover a sibling product, Interior AI (interiorai.com).",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-07-08",
@@ -14452,7 +14452,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -14494,7 +14494,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -14558,7 +14558,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": true,
     "self_hostable": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -14605,7 +14605,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -14698,7 +14698,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -14835,7 +14835,7 @@
     "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 3,
+    "flags_count": 2,
     "confidence": "medium"
   },
   {
@@ -14863,7 +14863,7 @@
     "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -14916,7 +14916,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -14993,7 +14993,7 @@
     "certs_held_count": 6,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -15041,7 +15041,7 @@
     "certs_held_count": 11,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -15072,7 +15072,7 @@
     "certs_held_count": 9,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "high"
   },
   {
@@ -15101,7 +15101,7 @@
     "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "high"
   },
   {
@@ -15120,7 +15120,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -15163,7 +15163,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -15192,7 +15192,7 @@
   {
     "slug": "profile-picture-ai",
     "vendor": "Postcrafts PTE LTD (operating as ProfilePicture.AI / PFP.AI)",
-    "product_family": "Consumer AI headshot/profile-picture generator: Free PFP Maker (single-photo, casual avatars) and Studio Photoshoots (paid, higher-volume photorealistic headshot packs). Cross-promotes a separate sibling product, HeadshotPro.com, which is not covered by this assessment.",
+    "product_family": "Consumer AI headshot/profile-picture generator: Free PFP Maker (single-photo, casual avatars) and Studio Photoshoots (paid, higher-volume photorealistic headshot packs). Cross-promotes a separate sibling product, HeadshotPro.com, which is a distinct listing.",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-07-08",
@@ -15425,7 +15425,7 @@
     "certs_held_count": 12,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 7,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -15479,7 +15479,7 @@
     "certs_held_count": 9,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "high"
   },
   {
@@ -15575,7 +15575,7 @@
     "certs_held_count": 5,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -15615,7 +15615,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -15695,7 +15695,7 @@
     "certs_held_count": 10,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -15714,7 +15714,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": true,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -15733,7 +15733,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "low"
   },
   {
@@ -15794,7 +15794,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -15814,7 +15814,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 3,
+    "flags_count": 2,
     "confidence": "medium"
   },
   {
@@ -15901,7 +15901,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -15925,7 +15925,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -16060,7 +16060,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": true,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -16204,7 +16204,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -16284,7 +16284,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "high"
   },
   {
@@ -16336,7 +16336,7 @@
     "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -16431,7 +16431,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -16466,7 +16466,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -16481,7 +16481,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 4,
     "confidence": "low"
   },
   {
@@ -16527,7 +16527,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -16546,7 +16546,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -16647,7 +16647,7 @@
   {
     "slug": "revolut-business",
     "vendor": "Revolut Ltd / Revolut Bank UAB (Revolut Group)",
-    "product_family": "Business banking and expense platform (business.revolut.com): multi-currency business accounts, corporate/expense cards, invoicing, payments, and merchant acquiring, offered by the Revolut group of regulated entities (Revolut Ltd and Revolut Bank UK Ltd in the UK; Revolut Bank UAB in Lithuania/EEA, plus local entities elsewhere). Distinct from Revolut Personal (consumer banking, including the AIR AI assistant) and from Revolut People (a separate Revolut product: an HR/payroll SaaS platform with its own trust hub) - both are different sub-products of the same corporate group and must not be conflated with Revolut Business.",
+    "product_family": "Business banking and expense platform (business.revolut.com): multi-currency business accounts, corporate/expense cards, invoicing, payments, and merchant acquiring, offered by the Revolut group of regulated entities (Revolut Ltd and Revolut Bank UK Ltd in the UK; Revolut Bank UAB in Lithuania/EEA, plus local entities elsewhere). Distinct from Revolut Personal (consumer banking, including the AIR AI assistant) and from Revolut People (a separate Revolut product: an HR/payroll SaaS platform with its own trust hub); both are different sub-products of the same corporate group and are not part of Revolut Business.",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-06-27",
@@ -16660,13 +16660,13 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
     "slug": "reword",
     "vendor": "Reword Limited (trading as Juno)",
-    "product_family": "AI marketing \"coworker\" / agentic go-to-market platform (formerly Reword, an AI collaborative writing tool). Now marketed as Juno: agents/playbooks for lead finding, landing pages, brand assets, content briefs, and social calendars, connected to a brand's existing marketing apps. The AIFOXX listing description (\"Reword is an AI collaborative writing tool...\") reflects the pre-rebrand product and is stale relative to the current site.",
+    "product_family": "AI marketing \"coworker\" / agentic go-to-market platform (formerly Reword, an AI collaborative writing tool). Now marketed as Juno: agents/playbooks for lead finding, landing pages, brand assets, content briefs, and social calendars, connected to a brand's existing marketing apps.",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-07-09",
@@ -16675,7 +16675,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -16706,7 +16706,7 @@
     "certs_held_count": 9,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -16746,7 +16746,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "low"
   },
   {
@@ -16761,7 +16761,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "low"
   },
   {
@@ -16864,13 +16864,13 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
     "slug": "rows",
     "vendor": "Rows GmbH",
-    "product_family": "Rows is an AI-powered spreadsheet / data-analyst tool (core product), with a browser extension (RowsX) for extracting web data into spreadsheets and a public API. Rows was acquired by Superhuman (formerly Grammarly) in February 2026 and, per the vendor's own announcement, the standalone product was scheduled to be sunset by May 31, 2026, with its capabilities folded into Superhuman's Coda product. As of this assessment, rows.com is still live and displays a banner confirming the acquisition.",
+    "product_family": "Rows is an AI-powered spreadsheet / data-analyst tool (core product), with a browser extension (RowsX) for extracting web data into spreadsheets and a public API. Rows was acquired by Superhuman (formerly Grammarly) in February 2026; per the vendor's announcement, the standalone product was scheduled to be sunset by May 31, 2026, with its capabilities folded into Superhuman's Coda product. As of July 2026, rows.com is still live and displays a banner confirming the acquisition.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-09",
@@ -16904,7 +16904,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -17061,7 +17061,7 @@
   {
     "slug": "sapling",
     "vendor": "Sapling Intelligence, Inc.",
-    "product_family": "Sapling — language model API toolkit and AI writing assistant (consumer grammar/AI-detection tools + enterprise customer-service autocomplete/suggestions + developer API/SDK)",
+    "product_family": "Sapling: language model API toolkit and AI writing assistant (consumer grammar/AI-detection tools + enterprise customer-service autocomplete/suggestions + developer API/SDK)",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
@@ -17160,7 +17160,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -17181,7 +17181,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -17221,7 +17221,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -17486,13 +17486,13 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 3,
+    "flags_count": 2,
     "confidence": "medium"
   },
   {
     "slug": "semrush",
     "vendor": "Semrush (SEMrush Inc. / Semrush Holdings, now an Adobe company)",
-    "product_family": "Semrush One — unified SEO, AI search visibility, content, traffic/market intelligence, local, advertising, social, and PR platform (SaaS), plus Enterprise tier (Enterprise SEO/AIO/SI), App Center marketplace, and a public API",
+    "product_family": "Semrush One: a unified SEO, AI search visibility, content, traffic/market intelligence, local, advertising, social, and PR platform (SaaS), plus Enterprise tier (Enterprise SEO/AIO/SI), App Center marketplace, and a public API",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
@@ -17590,7 +17590,7 @@
     "certs_held_count": 12,
     "trains_on_customer_data": true,
     "self_hostable": true,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -17821,7 +17821,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -17979,7 +17979,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -18196,7 +18196,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -18215,7 +18215,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -18333,13 +18333,13 @@
     "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
     "slug": "sora",
     "vendor": "OpenAI, OpCo, LLC (OpenAI)",
-    "product_family": "Sora is OpenAI's AI video-generation product family: the Sora web/app consumer product (sora.chatgpt.com, iOS/Android) for text-to-video creation and a social feed, and the developer-facing Sora 2 / Sora 2 Pro API served through the OpenAI platform. As of this assessment, the consumer web/app experience has already been discontinued and the API is on a published sunset timeline (see flags).",
+    "product_family": "Sora is OpenAI's AI video-generation product family: the Sora web/app consumer product (sora.chatgpt.com, iOS/Android) for text-to-video creation and a social feed, and the developer-facing Sora 2 / Sora 2 Pro API served through the OpenAI platform. The consumer web/app experience has already been discontinued and the API is on a published sunset timeline.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-09",
@@ -18352,7 +18352,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -18504,7 +18504,7 @@
   {
     "slug": "splash",
     "vendor": "Popgun Labs Pty Ltd (trading as Splash / Splash Music)",
-    "product_family": "Consumer AI music-creation and social-gaming products: the Splash Music mobile app (AI beat maker), the Splash on Roblox experience (in-game social music/skate world), and Kaimix / WEMIX ('wemixed') — an AI voice-to-music tool where a user hums, sings, or talks and the product builds a track around it, which supports collaborative 'remixing' of others' tracks.",
+    "product_family": "Consumer AI music-creation and social-gaming products: the Splash Music mobile app (AI beat maker), the Splash on Roblox experience (in-game social music/skate world), and Kaimix / WEMIX ('wemixed'), an AI voice-to-music tool where a user hums, sings, or talks and the product builds a track around it, which supports collaborative 'remixing' of others' tracks.",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-07-09",
@@ -18513,13 +18513,13 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
     "slug": "splice",
     "vendor": "Distributed Creation Inc. (dba Splice)",
-    "product_family": "Royalty-free sample/loop library and creator tools: Splice Sounds (subscription sample catalog), Splice INSTRUMENT (free virtual instrument plugin), Rent-to-Own Plugins (e.g. Serum 2, Abbey Road Two), Splice Mobile, the in-DAW Sounds Plugin (beta), and new generative AI tools (Variations, Craft, Magic Fit). Recently acquired Spitfire Audio (2025), which continues to operate as a distinct brand/product not covered by this assessment.",
+    "product_family": "Royalty-free sample/loop library and creator tools: Splice Sounds (subscription sample catalog), Splice INSTRUMENT (free virtual instrument plugin), Rent-to-Own Plugins (e.g. Serum 2, Abbey Road Two), Splice Mobile, the in-DAW Sounds Plugin (beta), and new generative AI tools (Variations, Craft, Magic Fit). Recently acquired Spitfire Audio (2025), which continues to operate as a separate brand and product line.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-09",
@@ -18532,7 +18532,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -18595,7 +18595,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -18817,7 +18817,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -19157,7 +19157,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": true,
     "self_hostable": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -19269,7 +19269,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -19316,7 +19316,7 @@
     "certs_held_count": 5,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -19393,7 +19393,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -19446,7 +19446,7 @@
     "certs_held_count": 10,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -19471,7 +19471,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -19522,7 +19522,7 @@
     "certs_held_count": 14,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -19543,7 +19543,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -19581,13 +19581,13 @@
     "certs_held_count": 0,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 8,
+    "flags_count": 7,
     "confidence": "medium"
   },
   {
     "slug": "tandem",
     "vendor": "Tandem Software LLC",
-    "product_family": "Tandem (tandem.chat) is a virtual-office / video-conferencing app for remote and hybrid teams (instant video calls, screensharing, virtual rooms, meeting widgets, 200+ integrations). Single product with tiered team-size pricing (Free, Small Teams, Medium Teams, Large Teams); no separate enterprise/API/AI product line found. Not to be confused with other companies also named 'Tandem': Tandem LLC / tandem.app (InfoSec compliance software, has its own real SOC 2 Type II), Tandem AI / usetandem.ai (AI workspace platform), Tandem Health (trust.tandemhealth.ai), or the Tandem language-learning app (tandem.net) — none of those entities' certifications apply to this vendor.",
+    "product_family": "Tandem (tandem.chat) is a virtual-office / video-conferencing app for remote and hybrid teams (instant video calls, screensharing, virtual rooms, meeting widgets, 200+ integrations). Single product with tiered team-size pricing (Free, Small Teams, Medium Teams, Large Teams); no separate enterprise/API/AI product line found. Not to be confused with other companies also named 'Tandem': Tandem LLC / tandem.app (InfoSec compliance software, has its own real SOC 2 Type II), Tandem AI / usetandem.ai (AI workspace platform), Tandem Health (trust.tandemhealth.ai), or the Tandem language-learning app (tandem.net); none of those entities' certifications apply to this vendor.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-09",
@@ -19639,7 +19639,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -19797,7 +19797,7 @@
   {
     "slug": "tempus",
     "vendor": "Tempus AI, Inc. (operating clinical laboratory subsidiary Tempus Labs, Inc.)",
-    "product_family": "AI-enabled precision medicine platform: CLIA-certified/CAP-accredited genomic and molecular diagnostic lab testing (oncology, cardiology, radiology, neuropsychiatry), the Tempus OS data/AI operating system, Tempus One (generative-AI clinical/research assistant), Tempus Next (care-gap/care-pathway intelligence), Tempus Lens (data/AI platform for biopharma drug development), and the TIME Trial clinical-trial-matching network. Distinct from the unrelated companies 'Tempus Technologies' (payments) and 'Tempus Resource' by ProSymmetry (project management software) - do not conflate certifications or facts across these.",
+    "product_family": "AI-enabled precision medicine platform: CLIA-certified/CAP-accredited genomic and molecular diagnostic lab testing (oncology, cardiology, radiology, neuropsychiatry), the Tempus OS data/AI operating system, Tempus One (generative-AI clinical/research assistant), Tempus Next (care-gap/care-pathway intelligence), Tempus Lens (data/AI platform for biopharma drug development), and the TIME Trial clinical-trial-matching network. Distinct from the unrelated companies 'Tempus Technologies' (payments) and 'Tempus Resource' by ProSymmetry (project management software).",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-07-09",
@@ -19814,7 +19814,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -20071,7 +20071,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -20132,7 +20132,7 @@
     "certs_held_count": 6,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -20232,7 +20232,7 @@
   {
     "slug": "todoist",
     "vendor": "Doist Inc.",
-    "product_family": "Todoist, a consumer/team to-do list and task management app (Free/Beginner, Pro, Business tiers), plus AI features under the \"Todoist Assist\" umbrella (Task Assist, Filter Assist, Email Assist, and the voice-to-task \"Ramble\" feature). Doist also makes a separate team-chat product, Twist, which is out of scope for this assessment.",
+    "product_family": "Todoist, a consumer/team to-do list and task management app (Free/Beginner, Pro, Business tiers), plus AI features under the \"Todoist Assist\" umbrella (Task Assist, Filter Assist, Email Assist, and the voice-to-task \"Ramble\" feature). Doist also makes a separate team-chat product, Twist.",
     "maturity": "growth",
     "has_trust_center": true,
     "last_verified": "2026-07-09",
@@ -20247,7 +20247,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -20348,7 +20348,7 @@
   {
     "slug": "tortoise-tts",
     "vendor": "James Betker (individual open-source maintainer; no registered company identified)",
-    "product_family": "Tortoise TTS — an open-source, self-hosted multi-voice text-to-speech model (Apache 2.0 license) distributed as a GitHub repo / pip package (`tortoise-tts`). No commercial entity, hosted SaaS product, or paid tier exists under this name; a community-run demo is hosted on Hugging Face Spaces (a third party, not the author).",
+    "product_family": "Tortoise TTS, an open-source, self-hosted multi-voice text-to-speech model (Apache 2.0 license) distributed as a GitHub repo / pip package (`tortoise-tts`). No commercial entity, hosted SaaS product, or paid tier exists under this name; a community-run demo is hosted on Hugging Face Spaces (a third party, not the author).",
     "maturity": "unknown",
     "has_trust_center": false,
     "last_verified": "2026-07-09",
@@ -20357,7 +20357,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -20479,7 +20479,7 @@
     "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 3,
+    "flags_count": 2,
     "confidence": "high"
   },
   {
@@ -20551,7 +20551,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -20573,7 +20573,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -20622,7 +20622,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -20701,7 +20701,7 @@
     "certs_held_count": 5,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -20767,7 +20767,7 @@
     "certs_held_count": 10,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -20789,7 +20789,7 @@
     "certs_held_count": 2,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -20863,7 +20863,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -20984,7 +20984,7 @@
   {
     "slug": "veed-io",
     "vendor": "Veed Limited",
-    "product_family": "Browser-based AI video creation and editing platform (VEED) — includes the core web video editor, AI subtitles/dubbing/avatars/image generation tools, a mobile app, an API, and a Business/Enterprise tier with additional legal and security terms",
+    "product_family": "Browser-based AI video creation and editing platform (VEED), including the core web video editor, AI subtitles/dubbing/avatars/image generation tools, a mobile app, an API, and a Business/Enterprise tier with additional legal and security terms",
     "maturity": "growth",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
@@ -21180,7 +21180,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -21210,7 +21210,7 @@
     "certs_held_count": 0,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -21308,7 +21308,7 @@
   {
     "slug": "vizard-ai",
     "vendor": "Vizard, Corp.",
-    "product_family": "Vizard.ai is an AI video clipping/editing tool that turns long-form video into short social clips (TikTok, Instagram, YouTube Shorts); sub-products include the web editor, a Team Workspace for collaboration, and a developer API. Note: this is a distinct company from the unrelated, similarly-named healthcare AI vendor \"Viz.ai\" (viz.ai) and from \"Vizard.digital\" and \"Vizard.co\" — do not conflate certifications or policies across these names.",
+    "product_family": "Vizard.ai is an AI video clipping/editing tool that turns long-form video into short social clips (TikTok, Instagram, YouTube Shorts); sub-products include the web editor, a Team Workspace for collaboration, and a developer API. Not to be confused with the unrelated, similarly named healthcare AI vendor Viz.ai (viz.ai), or with Vizard.digital and Vizard.co.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-09",
@@ -21425,7 +21425,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -21500,7 +21500,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -21554,7 +21554,7 @@
     "certs_held_count": 7,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -21576,7 +21576,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -21708,7 +21708,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 3,
+    "flags_count": 2,
     "confidence": "medium"
   },
   {
@@ -21741,7 +21741,7 @@
     "certs_held_count": 12,
     "trains_on_customer_data": null,
     "self_hostable": true,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -21981,7 +21981,7 @@
   {
     "slug": "wondershare-virbo",
     "vendor": "Wondershare Inc.",
-    "product_family": "Wondershare Virbo — AI video generation and avatar creation platform with 350+ AI avatars, 400+ voice options, AI voice cloning, talking photos, and video translation across 80+ languages. DISCONTINUATION STATUS: Product officially discontinued June 30, 2025; existing paid users can access service but no new customers accepted.",
+    "product_family": "Wondershare Virbo, an AI video generation and avatar creation platform with 350+ AI avatars, 400+ voice options, AI voice cloning, talking photos, and video translation across 80+ languages. The product was officially discontinued on June 30, 2025; existing paid users can still access the service, but no new customers are accepted.",
     "maturity": "unknown",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -22054,7 +22054,7 @@
     "certs_held_count": 5,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -22152,7 +22152,7 @@
     "certs_held_count": 16,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -22265,13 +22265,13 @@
     "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
     "slug": "writerly",
     "vendor": "AGYL AI, Inc. (formerly Writerly Technology, Inc.; product operated as \"Writerly\")",
-    "product_family": "Writerly is a no-code generative AI content/productivity platform (Business Cloud for teams/enterprise, Creator Cloud for individuals/small teams, Writerly Go Chrome extension, Creator AI Chat). It sits under the AGYL AI, Inc. parent umbrella alongside a separate e-commerce product, EKOM, which is not covered by this assessment.",
+    "product_family": "Writerly is a no-code generative AI content/productivity platform (Business Cloud for teams/enterprise, Creator Cloud for individuals/small teams, Writerly Go Chrome extension, Creator AI Chat). It sits under the AGYL AI, Inc. parent umbrella alongside a separate e-commerce product, EKOM.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-09",
@@ -22318,7 +22318,7 @@
     "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "high"
   },
   {
@@ -22406,13 +22406,13 @@
     "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
     "slug": "yandex-translate",
     "vendor": "Yandex (LLC Yandex)",
-    "product_family": "Yandex Translate — free consumer translation service (118+ languages) and enterprise API via Yandex Cloud; includes AI-powered assistance features for grammar explanation and translation recommendations.",
+    "product_family": "Yandex Translate: free consumer translation service (118+ languages) and enterprise API via Yandex Cloud; includes AI-powered assistance features for grammar explanation and translation recommendations.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-06",
@@ -22575,7 +22575,7 @@
     "certs_held_count": 4,
     "trains_on_customer_data": true,
     "self_hostable": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -22641,7 +22641,7 @@
   {
     "slug": "zillow-ai",
     "vendor": "Zillow Group Inc.",
-    "product_family": "Zillow AI mode — conversational real estate assistant (launched March 2026) with guided intelligence for home search, powered by custom AI models integrated with ChatGPT for MLS data access. Also includes AI-powered virtual staging and real estate agent tools (Zillow Pro).",
+    "product_family": "Zillow AI mode: conversational real estate assistant (launched March 2026) with guided intelligence for home search, powered by custom AI models integrated with ChatGPT for MLS data access. Also includes AI-powered virtual staging and real estate agent tools (Zillow Pro).",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-09",
@@ -22656,7 +22656,7 @@
     "certs_held_count": 1,
     "trains_on_customer_data": null,
     "self_hostable": false,
-    "flags_count": 7,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
