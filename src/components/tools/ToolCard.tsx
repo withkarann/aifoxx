@@ -43,7 +43,7 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
       <Link to={`/ai/${tool.slug}`} className="block no-underline cursor-pointer min-w-0">
         {/* Top row */}
         <div className="flex justify-between items-start gap-2">
-          <div className="flex items-center min-w-0">
+          <div className="flex items-center min-w-0 flex-1">
             <ToolIcon
               name={tool.name}
               slug={tool.slug}
@@ -53,9 +53,9 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
               className="w-8 h-8"
               letterClassName="text-sm"
             />
-            <span className="font-display font-black text-text-primary text-base truncate min-w-0 flex-1 ml-3 block">{tool.name}</span>
+            <span className="font-display font-black text-text-primary text-base min-w-0 flex-1 ml-3 line-clamp-2 leading-tight break-words">{tool.name}</span>
           </div>
-          <PricingBadge pricing={tool.pricing} />
+          <PricingBadge pricing={tool.pricing} className="shrink-0" />
         </div>
 
         {/* Description */}
