@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 // picks it up. It protects the promise that every trust report reads as
 // customer-facing copy.
 // @ts-expect-error -- plain .mjs module, no types
-import { GUARD_RE, AUDIT_RE, findEditorialVoice } from "../../scripts/editorial-voice.mjs";
+import { GUARD_RE, AUDIT_RE, findEditorialVoice, findBannedDashes } from "../../scripts/editorial-voice.mjs";
 
 describe("editorial-voice GUARD_RE", () => {
   // Note-like phrasing that must never appear in published copy.
@@ -40,6 +40,81 @@ describe("editorial-voice GUARD_RE", () => {
       expect(GUARD_RE.test(s)).toBe(false);
     });
   }
+});
+
+describe("flag label prefixes", () => {
+  // A "What to watch" entry must read as a sentence, never as a coded label.
+  const labeled = [
+    "CERT-SCOPE: Most certifications are held at the corporate level.",
+    "HIPAA-AMBIGUITY: No standalone HIPAA certification exists.",
+    "NO TRUST CENTER: The vendor does not publish a trust portal.",
+    "AI TRAINING NUANCE: Enterprise data is excluded from training.",
+    "CRITICAL: The consumer tier trains on user content by default.",
+    "LEGACY-NAME: The listing uses the vendor's former name.",
+  ];
+  for (const s of labeled) {
+    it(`rejects label-prefixed flag: ${s.slice(0, 40)}...`, () => {
+      const hits = findEditorialVoice({ slug: "acme", flags: [s] });
+      expect(hits).toHaveLength(1);
+      expect(hits[0].path).toBe("flags[0]");
+    });
+  }
+
+  const cleanFlags = [
+    "ISO 27001:2022 is held at the parent-company level; confirm product scope during procurement.",
+    "Most certifications are held at the Palo Alto Networks corporate level.",
+    "The vendor does not publish a dedicated trust center.",
+    "No standalone HIPAA certification exists; a BAA is available for eligible services.",
+  ];
+  for (const s of cleanFlags) {
+    it(`passes sentence-style flag: ${s.slice(0, 40)}...`, () => {
+      expect(findEditorialVoice({ slug: "acme", flags: [s] })).toHaveLength(0);
+    });
+  }
+
+  it("does not apply the label rule to verbatim certification quotes", () => {
+    const report = {
+      slug: "acme",
+      flags: ["Certification scope is organization-wide; confirm product coverage."],
+      certifications: [
+        { name: "ISO 27001", held: true, proof_quote: "ISO 27001: Information Security Management System certification." },
+      ],
+    };
+    expect(findEditorialVoice(report)).toHaveLength(0);
+  });
+
+  it("rejects severity shorthand in privacy and security fields", () => {
+    const report = {
+      slug: "acme",
+      flags: [],
+      privacy: { ai_training_note: "CRITICAL GAP: the privacy policy is silent on model training." },
+      security: [{ name: "Policy", value: "FLAG: policy may change without notice." }],
+    };
+    const hits = findEditorialVoice(report);
+    expect(hits.map((h) => h.path).sort()).toEqual(["privacy.ai_training_note", "security[0].value"]);
+  });
+});
+
+describe("findBannedDashes", () => {
+  it("rejects em and en dashes in our own prose", () => {
+    const report = {
+      slug: "acme",
+      product_family: "Design suite — with AI features.",
+      flags: ["Trains on customer data – opt-out available."],
+    };
+    const hits = findBannedDashes(report);
+    expect(hits.map((h: { path: string }) => h.path).sort()).toEqual(["flags[0]", "product_family"]);
+  });
+
+  it("leaves verbatim quote fields untouched", () => {
+    const report = {
+      slug: "acme",
+      flags: ["Clean flag."],
+      certifications: [{ name: "SOC 2", held: true, proof_quote: "Audited annually — report available on request." }],
+      security: [{ name: "Encryption", value: "TLS 1.2+ — vendor wording." }],
+    };
+    expect(findBannedDashes(report)).toHaveLength(0);
+  });
 });
 
 describe("findEditorialVoice", () => {
