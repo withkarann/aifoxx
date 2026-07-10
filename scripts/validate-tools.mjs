@@ -16,7 +16,7 @@
 import { readFileSync, readdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, resolve, join } from 'path';
-import { GUARD_RE, findEditorialVoice } from './editorial-voice.mjs';
+import { GUARD_RE, findEditorialVoice, findBannedDashes } from './editorial-voice.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, '../src/data/tools.json');
@@ -223,6 +223,9 @@ function checkTrustEditorialVoice() {
     }
     for (const h of findEditorialVoice(report, GUARD_RE)) {
       hits.push({ slug: report.slug || file.replace(/\.json$/, ''), path: h.path, match: h.match });
+    }
+    for (const h of findBannedDashes(report)) {
+      hits.push({ slug: report.slug || file.replace(/\.json$/, ''), path: h.path, match: `banned dash "${h.match}"` });
     }
   }
   return { hits, count: files.length };

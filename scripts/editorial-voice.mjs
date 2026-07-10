@@ -62,6 +62,12 @@ const GUARD_PATTERNS = [
   "the directory should",
   "recommend not (?:displaying|crediting|listing|showing)",
   "do not (?:display|present|list|show) [^.]*?as (?:held|compliant|certified)",
+  // Severity shorthand: a coded label in front of a sentence instead of prose.
+  "CRITICAL GAP:",
+  "CONTRADICTION FLAGGED:",
+  "CLASS-LEVEL RISK:",
+  "TIER-DEPENDENT:",
+  "^FLAG:",
 ];
 
 // Broader net for listing fields to review. Includes everything in GUARD plus
@@ -98,6 +104,12 @@ const AUDIT_EXTRA = [
 export const GUARD_RE = new RegExp(GUARD_PATTERNS.join("|"), "i");
 export const AUDIT_RE = new RegExp([...GUARD_PATTERNS, ...AUDIT_EXTRA].join("|"), "i");
 
+// A "What to watch" entry must read as a sentence. An all-caps label followed
+// by a colon ("CERT-SCOPE: ...", "NO TRUST CENTER: ...") is a coded note, not
+// published copy, and is rejected. Certification names like "ISO 27001:2022"
+// stay legal because their colon is followed by digits, not a space.
+export const FLAG_LABEL_RE = /^[A-Z][A-Z0-9 _/&+.'-]{1,50}?:\s/;
+
 // Every free-text field on a report that a visitor can read. The guard and the
 // audit both walk exactly these paths, so nothing user-facing is missed.
 export function reportProseStrings(report) {
@@ -124,12 +136,33 @@ export function reportProseStrings(report) {
   return out;
 }
 
+// House style bans em and en dashes in copy written in our own voice. Verbatim
+// vendor material (certification proof quotes, security excerpts) keeps its
+// original punctuation, so those paths are exempt.
+export const DASH_RE = /[–—]/;
+export function findBannedDashes(report) {
+  const hits = [];
+  for (const { path, text } of reportProseStrings(report)) {
+    if (path.startsWith("certifications[") || path.startsWith("security[")) continue;
+    const m = DASH_RE.exec(text);
+    if (m) hits.push({ path, text, match: m[0] });
+  }
+  return hits;
+}
+
 // Returns [{ path, text, match }] for every prose field that trips `re`.
 export function findEditorialVoice(report, re = GUARD_RE) {
   const hits = [];
   for (const { path, text } of reportProseStrings(report)) {
     const m = re.exec(text);
-    if (m) hits.push({ path, text, match: m[0] });
+    if (m) {
+      hits.push({ path, text, match: m[0] });
+      continue;
+    }
+    if (path.startsWith("flags[")) {
+      const lm = FLAG_LABEL_RE.exec(text);
+      if (lm) hits.push({ path, text, match: lm[0] });
+    }
   }
   return hits;
 }
