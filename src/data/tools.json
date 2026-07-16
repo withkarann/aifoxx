@@ -51450,5 +51450,56 @@
       "Entertainment"
     ],
     "compliance_sources": {}
+  },
+  {
+    "id": "1004",
+    "name": "Recapo.ai",
+    "slug": "recapo",
+    "category": "Video",
+    "subcategory": "Video Editing",
+    "description": "Recapo.ai is an AI video editing platform that turns long-form video into publish-ready short clips. It understands long footage to generate plot summaries and highlights, drafts scripts, adds synchronized subtitles and AI voiceover, and exports vertical clips for TikTok, Reels, and YouTube Shorts. It offers dedicated modes for film and TV recaps, talking-head clips with speaker focus, and product promos that match A-roll with B-roll, plus batch generation and cloud rendering.",
+    "url": "https://recapo.ai",
+    "tags": [
+      "video editing",
+      "short form video",
+      "content repurposing",
+      "ai subtitles",
+      "ai voiceover"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-07-16",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": true,
+      "self_hostable": null
+    },
+    "pricing_detail": {
+      "free_tier": "300 free credits on signup",
+      "paid_plans": "Credit-based Pro plans (see pricing page)",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Turning long videos into multiple TikTok-ready short clips",
+      "Creating film and TV recap videos from long footage",
+      "Clipping talking-head content with automatic speaker focus",
+      "Producing product promos with matched A-roll and B-roll",
+      "Generating subtitles, scripts, and AI voiceover for short-form content"
+    ],
+    "not_good_for": [],
+    "industries": [],
+    "compliance_sources": {
+      "trains_on_data": "https://recapo.ai/privacy-policy/"
+    }
   }
 ]
