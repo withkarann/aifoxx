@@ -1,20 +1,20 @@
 # AIFOXX
 
-> Open-source directory of 980 AI tools with real pricing, compliance data, and access-method comparison.
+> Open-source directory of 981 AI tools with real pricing, compliance data, and access-method comparison.
 
 AIFOXX helps developers, buyers, and researchers find the right AI tool by providing structured data on pricing tiers, compliance certifications (SOC2, ISO27001, GDPR, HIPAA), access methods (API, Web App, CLI, Mobile), data-storage region, and honest use-case guidance.
 
 ## Quick Facts
 
-- 980 AI tools cataloged across 25 categories.
-- 609 tools offer a free, freemium, or open-source tier.
+- 981 AI tools cataloged across 25 categories.
+- 610 tools offer a free, freemium, or open-source tier.
 - 390 tools provide API access; 6 are self-hostable.
 - Largest categories: Productivity, Marketing, Video, Coding, Agentic & Automation, Image Generation.
 - Free to use, open source (MIT), no account required.
 
 ## Key Pages
 
-- [All Tools](https://aifoxx.com/): Browse and search 980 AI tools
+- [All Tools](https://aifoxx.com/): Browse and search 981 AI tools
 - [Best AI Tools by Category](https://aifoxx.com/best): Curated best-in-class tools per category
 - [AI News](https://aifoxx.com/news): Today in AI — daily roundup of AI tool launches and updates
 - [Compare Tools](https://aifoxx.com/compare): Side-by-side comparison of AI tools
@@ -82,7 +82,7 @@ Tool metadata — especially compliance certifications (SOC2, ISO27001, GDPR, HI
 ## FAQ
 
 Q: What is AIFOXX?
-A: An open-source directory of 980 AI tools comparing pricing, compliance, data handling, and access methods across 25 categories.
+A: An open-source directory of 981 AI tools comparing pricing, compliance, data handling, and access methods across 25 categories.
 
 Q: Is AIFOXX free?
 A: Yes — free to use and open source under the MIT license. The full dataset is public on GitHub.
