@@ -6,9 +6,9 @@
     "domain": "coasty.ai",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 32,
+    "points": 44,
     "date": "2026-07-15T15:51:20.000Z",
-    "age": "15h ago",
+    "age": "1d ago",
     "score": 0
   },
   {
@@ -18,9 +18,9 @@
     "domain": "agnost.ai",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 84,
+    "points": 85,
     "date": "2026-07-14T16:06:18.000Z",
-    "age": "1d ago",
+    "age": "2d ago",
     "score": 3
   },
   {
@@ -32,7 +32,7 @@
     "category": "new-tool",
     "points": 119,
     "date": "2026-07-09T15:28:39.000Z",
-    "age": "6d ago",
+    "age": "7d ago",
     "score": 0
   },
   {
@@ -44,7 +44,7 @@
     "category": "new-tool",
     "points": 111,
     "date": "2026-07-02T15:11:20.000Z",
-    "age": "13d ago",
+    "age": "14d ago",
     "score": 0
   },
   {
@@ -56,7 +56,7 @@
     "category": "new-tool",
     "points": 132,
     "date": "2026-06-18T14:49:44.000Z",
-    "age": "27d ago",
+    "age": "28d ago",
     "score": 0
   },
   {
@@ -68,7 +68,7 @@
     "category": "new-tool",
     "points": 215,
     "date": "2026-06-17T16:14:04.000Z",
-    "age": "28d ago",
+    "age": "29d ago",
     "score": 1
   }
 ]
