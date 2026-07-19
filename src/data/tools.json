@@ -51501,5 +51501,30 @@
     "compliance_sources": {
       "trains_on_data": "https://recapo.ai/privacy-policy/"
     }
+  },
+  {
+    "id": "1005",
+    "name": "DaoXE",
+    "slug": "daoxe",
+    "category": "Coding",
+    "subcategory": "API Development",
+    "description": "OpenAI-compatible, multi-protocol LLM gateway providing Claude, GPT, Gemini, DeepSeek and more through one base URL and API key. Supports Chat Completions, OpenAI Responses, and Anthropic Messages (Claude native).",
+    "url": "https://daoxe.com",
+    "tags": [
+      "api",
+      "llm-gateway",
+      "openai-compatible",
+      "claude",
+      "gpt",
+      "gemini",
+      "deepseek"
+    ],
+    "pricing": "Pay-as-you-go",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-07-20",
+    "access_methods": [
+      "API"
+    ]
   }
 ]
