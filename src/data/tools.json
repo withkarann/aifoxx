@@ -51501,5 +51501,25 @@
     "compliance_sources": {
       "trains_on_data": "https://recapo.ai/privacy-policy/"
     }
+  },
+  {
+    "id": "1005",
+    "name": "Markstream",
+    "slug": "markstream",
+    "category": "Coding",
+    "subcategory": "API Development",
+    "description": "Markstream is an open-source streaming Markdown renderer for AI chat interfaces. It renders incomplete token-by-token Markdown and provides packages for Vue, React, Svelte, Angular, and Vue 2, with Mermaid, KaTeX, Shiki, Monaco, and safe HTML support.",
+    "url": "https://markstream.simonhe.me/",
+    "tags": [
+      "streaming markdown",
+      "ai chat ui",
+      "markdown renderer",
+      "frontend library",
+      "developer tools"
+    ],
+    "pricing": "Open Source",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-07-19"
   }
 ]
