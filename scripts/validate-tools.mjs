@@ -81,6 +81,22 @@ function checkDuplicateSlugs(tools) {
   return dupes;
 }
 
+function checkDuplicateIds(tools) {
+  const seen = new Map(); // id → first slug that used it
+  const dupes = [];
+  for (const tool of tools) {
+    const id = tool.id;
+    if (id === undefined || id === null || id === '') continue;
+    const key = String(id);
+    if (seen.has(key)) {
+      dupes.push({ id: key, slugA: seen.get(key), slugB: tool.slug });
+    } else {
+      seen.set(key, tool.slug);
+    }
+  }
+  return dupes;
+}
+
 function checkDuplicateNames(tools) {
   const seen = new Map(); // normalized name → first slug
   const dupes = [];
@@ -258,6 +274,16 @@ if (dupeSlugs.length > 0) {
   failed = true;
 }
 
+// --- Hard check: duplicate ids ---
+const dupeIds = checkDuplicateIds(tools);
+if (dupeIds.length > 0) {
+  console.error(`FAIL duplicate ids (${dupeIds.length}):`);
+  dupeIds.forEach(d =>
+    console.error(`  id "${d.id}" → ${d.slugA} and ${d.slugB}`)
+  );
+  failed = true;
+}
+
 // --- Hard check: duplicate normalized names ---
 const dupeNames = checkDuplicateNames(tools);
 if (dupeNames.length > 0) {
@@ -300,7 +326,7 @@ if (orphanedCompliance.length > 0) {
 
 console.log(
   `OK tools.json validated: ${tools.length} entries, ` +
-  `0 duplicate slugs, 0 duplicate names, 0 duplicate URLs, 0 missing required fields. ` +
+  `0 duplicate slugs, 0 duplicate ids, 0 duplicate names, 0 duplicate URLs, 0 missing required fields. ` +
   `(${orphanedCompliance.length} compliance source warning(s))`
 );
 
