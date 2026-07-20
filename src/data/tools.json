@@ -51501,5 +51501,190 @@
     "compliance_sources": {
       "trains_on_data": "https://recapo.ai/privacy-policy/"
     }
+  },
+  {
+    "id": "1005",
+    "name": "DaoXE",
+    "slug": "daoxe",
+    "category": "Coding",
+    "subcategory": "API Development",
+    "description": "OpenAI-compatible, multi-protocol LLM gateway providing Claude, GPT, Gemini, DeepSeek and more through one base URL and API key. Supports Chat Completions, OpenAI Responses, and Anthropic Messages (Claude native).",
+    "url": "https://daoxe.com",
+    "tags": [
+      "api",
+      "llm-gateway",
+      "openai-compatible",
+      "claude",
+      "gpt",
+      "gemini",
+      "deepseek"
+    ],
+    "pricing": "Pay-as-you-go",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-07-20",
+    "access_methods": [
+      "API"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": false,
+      "self_hostable": null
+    },
+    "compliance_sources": {
+      "trains_on_data": "https://daoxe.com/privacy-policy"
+    }
+  },
+  {
+    "id": "1006",
+    "name": "Markstream",
+    "slug": "markstream",
+    "category": "Coding",
+    "subcategory": "API Development",
+    "description": "Open-source streaming Markdown renderer for AI chat interfaces. It renders incomplete token-by-token Markdown and ships packages for Vue, React, Svelte, Angular, and Vue 2, with Mermaid, KaTeX, Shiki, Monaco, and safe HTML support.",
+    "url": "https://markstream.simonhe.me/",
+    "tags": [
+      "streaming markdown",
+      "ai chat ui",
+      "markdown renderer",
+      "frontend library",
+      "developer tools"
+    ],
+    "pricing": "Open Source",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-07-20",
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": true
+    },
+    "compliance_sources": {
+      "self_hostable": "https://github.com/Simon-He95/markstream-vue"
+    }
+  },
+  {
+    "id": "1007",
+    "name": "Better Agent",
+    "slug": "better-agent",
+    "category": "Coding",
+    "subcategory": "IDE Assistant",
+    "description": "Local workspace for running parallel Claude, Codex, and Gemini coding-agent sessions in one place, with per-session provider and model choice, delegation and forking across providers, approvals, and restart recovery for sessions that outlive a closed tab.",
+    "url": "https://github.com/ofekron/better-agent",
+    "tags": [
+      "coding agents",
+      "claude",
+      "codex",
+      "gemini",
+      "local workspace",
+      "self-hosted"
+    ],
+    "pricing": "Free",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-07-20",
+    "access_methods": [
+      "Web App",
+      "Desktop App",
+      "Mobile App",
+      "Source Code",
+      "CLI"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": true
+    },
+    "compliance_sources": {
+      "self_hostable": "https://github.com/ofekron/better-agent"
+    },
+    "pricing_detail": {
+      "free_tier": "Free for non-commercial use (personal, educational, research, evaluation, hobby)",
+      "paid_plans": "Commercial use requires prior written permission from the maintainer under the Source-Available Non-Commercial License",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Running parallel Claude, Codex, and Gemini coding sessions in one workspace",
+      "Recovering agent sessions after a crash or closed tab",
+      "Delegating and forking coding-agent work across providers"
+    ],
+    "not_good_for": [
+      "Hosted or cloud-managed agent runs, since it runs on your own machine",
+      "Commercial use without prior written permission from the maintainer"
+    ],
+    "industries": [
+      "Software Development"
+    ]
+  },
+  {
+    "id": "1008",
+    "name": "FPVTune",
+    "slug": "fpvtune",
+    "category": "Data & Analytics",
+    "subcategory": "Predictive Analytics",
+    "description": "FPVTune is an AI assistant for FPV drone pilots that uses a neural network to analyze Betaflight blackbox logs and suggest practical PID and filter tuning changes.",
+    "url": "https://fpvtune.com/",
+    "tags": [
+      "fpv",
+      "drones",
+      "betaflight",
+      "pid tuning",
+      "blackbox logs"
+    ],
+    "pricing": "Pay-as-you-go",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-07-20",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": null,
+      "paid_plans": "Quick Tune $9.90 per tune; Pro $27.92/mo (15 tunes); Plus $48.83/mo (40 tunes); 7-day refund policy",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Analyzing Betaflight blackbox flight logs",
+      "Generating PID and filter tuning suggestions",
+      "Diagnosing gyro noise, resonance, and prop wash issues"
+    ],
+    "not_good_for": [
+      "General-purpose flight simulation",
+      "Non-Betaflight drone firmware tuning"
+    ],
+    "industries": [
+      "Drones",
+      "Robotics",
+      "Hobby Electronics"
+    ]
   }
 ]
