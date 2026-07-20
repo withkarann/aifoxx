@@ -58,8 +58,14 @@ invent trust data to fill the gap.
   on the vendor's domain will not be accepted.
 - Use category and subcategory names consistently with the existing entries.
   Check the current list before introducing a new one.
-- No duplicate slugs, names, or URLs. Reuse of an existing `id` is rejected; new
-  entries take the next free `id`.
+- No duplicate slugs, names, or URLs.
+- The `id` is maintainer-assigned, not something to reserve. The
+  [tool-submission form](https://github.com/withkarann/aifoxx/issues/new?template=tool-submission.yml)
+  is the recommended path and never asks for one. If you edit `tools.json`
+  directly, append your entry with the next number after the current highest
+  `id`; if a simultaneous submission takes the same number, the maintainer
+  renumbers yours on merge. Either way, CI now rejects any duplicate `id`, so a
+  collision cannot slip through.
 
 ## Correcting a Trust & Security Report
 
