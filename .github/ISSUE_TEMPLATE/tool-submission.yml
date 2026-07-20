@@ -6,8 +6,16 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting a tool. Please fill in what you can. Leave a field
-        blank rather than guessing; unverified facts are left empty in the data.
+        Thanks for suggesting a tool.
+
+        AIFOXX is a trust-first directory: every listing carries pricing,
+        data-handling, and compliance context. To keep that promise, we ask for
+        the tool's own Privacy Policy and Terms pages up front. If yours are
+        still in progress, say so in the notes; we will hold the entry until
+        they are live rather than publish an unverifiable listing.
+
+        Fill in what you can. Leave a field blank rather than guessing;
+        unverified facts are stored as `null`, never invented.
   - type: input
     id: name
     attributes:
@@ -77,16 +85,81 @@ body:
       description: What does the tool do, in a sentence?
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Trust and data handling
+
+        These pages are how we verify a listing. The Privacy Policy and Terms
+        URLs are required and must live on the tool's own domain.
+  - type: input
+    id: privacy_policy
+    attributes:
+      label: Privacy Policy URL
+      description: Link to the privacy policy on the tool's own domain.
+      placeholder: https://example.com/privacy
+    validations:
+      required: true
+  - type: input
+    id: terms
+    attributes:
+      label: Terms of Service URL
+      description: Link to the terms of service or user agreement on the tool's own domain.
+      placeholder: https://example.com/terms
+    validations:
+      required: true
+  - type: dropdown
+    id: trains_on_data
+    attributes:
+      label: Does the tool train on user data?
+      description: >
+        Answer from the privacy policy if it says so. Choose Unknown if the
+        policy does not state it; we will not guess.
+      options:
+        - Unknown
+        - "No"
+        - "Yes"
+    validations:
+      required: false
+  - type: dropdown
+    id: self_hostable
+    attributes:
+      label: Can the tool be self-hosted?
+      options:
+        - Unknown
+        - "No"
+        - "Yes"
+    validations:
+      required: false
+  - type: input
+    id: data_region
+    attributes:
+      label: Data residency region (optional)
+      description: Where user data is stored, if the vendor states it (for example US, EU).
+      placeholder: EU
+    validations:
+      required: false
   - type: textarea
     id: compliance
     attributes:
-      label: Compliance info (optional)
+      label: Compliance certifications (optional)
       description: >
         If the tool holds SOC 2, ISO 27001, GDPR, or HIPAA, list each one with a
         source URL on the vendor's own domain (trust center, security page, or
-        privacy policy). Leave blank if you have not verified this.
+        privacy policy). Leave blank if you have not verified this. A
+        certification without a source on the vendor's domain is not published.
       placeholder: |
         SOC 2: https://vendor.com/security
         GDPR: https://vendor.com/privacy
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else? (disclosures, in-progress pages)
+      description: >
+        If you operate or maintain the tool, disclose it here. If the Privacy or
+        Terms pages are still being written, tell us and we will hold the entry
+        until they are live.
     validations:
       required: false
