@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.5](https://github.com/withkarann/aifoxx/compare/v1.1.4...v1.1.5) (2026-07-20)
+
+
+### Bug Fixes
+
+* reject duplicate tool ids in validation ([#198](https://github.com/withkarann/aifoxx/issues/198)) ([949eba9](https://github.com/withkarann/aifoxx/commit/949eba9f89c69b0666cd82ba9b08fa06d039771b))
+* resolve CodeQL findings in news scraper and workflows ([#200](https://github.com/withkarann/aifoxx/issues/200)) ([86f8b53](https://github.com/withkarann/aifoxx/commit/86f8b535176d06f28c3cc07704e6389af78775c7))
+
 ## [1.1.4](https://github.com/withkarann/aifoxx/compare/v1.1.3...v1.1.4) (2026-07-10)
 
 
