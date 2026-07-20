@@ -13,6 +13,12 @@ on:
 #
 # Requires repo secret NEWS_BOT_TOKEN: a PAT from an admin account
 # (classic `repo` scope, or fine-grained with Contents + Pull requests: RW).
+#
+# The default GITHUB_TOKEN only needs read: all writes (branch push, PR create,
+# merge) go through NEWS_BOT_TOKEN, not the default token.
+permissions:
+  contents: read
+
 jobs:
   scrape:
     runs-on: ubuntu-latest

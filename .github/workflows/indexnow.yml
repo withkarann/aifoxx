@@ -5,6 +5,12 @@ on:
     paths:
       - "public/sitemap.xml"
       - "src/data/**"
+
+# Read-only: this job checks out, builds, and pings the IndexNow API. It never
+# writes back to the repo.
+permissions:
+  contents: read
+
 jobs:
   submit:
     runs-on: ubuntu-latest

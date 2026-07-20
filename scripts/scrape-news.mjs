@@ -185,14 +185,17 @@ function computeAge(dateStr) {
 }
 
 function decodeEntities(str) {
+  // Decode the ampersand entity LAST. Doing it first would re-decode the
+  // output of the other rules (for example "&amp;lt;" must become the literal
+  // "&lt;", not "<"), which is a double-unescape bug.
   return str
-    .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
     .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(parseInt(code, 10)))
     .replace(/&#x([0-9a-fA-F]+);/g, (_, code) => String.fromCharCode(parseInt(code, 16)))
     .replace(/&apos;/g, "'")
+    .replace(/&amp;/g, '&')
 }
 
 function extractTag(xml, tag) {
