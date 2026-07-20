@@ -36,17 +36,30 @@ never reaches the remote.
 Tool data lives in `src/data/tools.json`. The shape is defined by the Zod schema
 in `src/types/tool.ts`, which is the source of truth.
 
+AIFOXX is a trust-first directory. A tool can be added, but every listing has to
+carry verifiable trust context, so each submission needs a Privacy Policy and a
+Terms page on the tool's own domain. If those pages are not live yet, say so and
+the entry is held until they are, rather than published without them. We never
+invent trust data to fill the gap.
+
 - Every entry must include all required fields: `name`, `category`,
   `subcategory`, `description`, `url`, `tags`, and `pricing`.
+- Provide the tool's **Privacy Policy** and **Terms of Service** URLs, both on
+  the tool's own domain. These are how we verify pricing, data handling, and
+  compliance. A submission without them is held, not rejected: add the links (or
+  tell us they are in progress) and it moves forward.
 - Do not fabricate anything. If you cannot verify a fact, leave the field `null`
-  (where the schema allows it) rather than guessing.
+  (where the schema allows it) rather than guessing. That applies to every trust
+  field: `compliance`, `data_storage.trains_on_data`, `data_storage.region`, and
+  `data_storage.self_hostable`.
 - Every compliance flag set to `true` must have a matching source URL in
   `compliance_sources`, and that URL must be on the vendor's own domain (its
   trust center, security page, or privacy policy). A `true` flag without a source
   on the vendor's domain will not be accepted.
 - Use category and subcategory names consistently with the existing entries.
   Check the current list before introducing a new one.
-- No duplicate slugs, names, or URLs.
+- No duplicate slugs, names, or URLs. Reuse of an existing `id` is rejected; new
+  entries take the next free `id`.
 
 ## Correcting a Trust & Security Report
 
