@@ -51686,5 +51686,167 @@
       "Robotics",
       "Hobby Electronics"
     ]
+  },
+  {
+    "id": "1009",
+    "name": "Image Describer",
+    "slug": "image-describer",
+    "category": "Content Creation",
+    "subcategory": "Writing",
+    "description": "Image Describer is an AI tool that turns an uploaded image into text, generating descriptions, WCAG-oriented alt text, OCR extractions, image-to-prompt output, and social captions.",
+    "url": "https://imagedescriber.dev/",
+    "tags": [
+      "alt text",
+      "image captioning",
+      "accessibility",
+      "ocr",
+      "image to prompt"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-07-26",
+    "access_methods": [
+      "Web App",
+      "API"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": false,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "One image analysis without an account, plus daily free credits for signed-in users",
+      "paid_plans": "One-time credit packs from $4.99 (100 credits) to $29.99 (1500 credits); monthly plans $9.99 (600 credits) and $29.99 (3000 credits)",
+      "api_cost": "API credit packs from $99.99 (11000 credits) to $199.99 (25000 credits)"
+    },
+    "use_cases": [
+      "Generating alt text for accessibility compliance",
+      "Writing SEO image descriptions at scale",
+      "Extracting text from screenshots and scans with OCR",
+      "Converting reference images into generation prompts"
+    ],
+    "not_good_for": [
+      "Generating or editing images",
+      "Workloads needing a self-hosted deployment"
+    ],
+    "industries": [
+      "Publishing",
+      "Marketing",
+      "Accessibility",
+      "E-commerce"
+    ]
+  },
+  {
+    "id": "1010",
+    "name": "Blur Background",
+    "slug": "blur-background",
+    "category": "Design",
+    "subcategory": "Graphic Design",
+    "description": "Blur Background is a photo tool from Vignra that blurs image backgrounds while keeping the subject sharp, running its free tier locally in the browser with an optional AI-assisted subject mask.",
+    "url": "https://blurbackground.vip/",
+    "tags": [
+      "photo editing",
+      "background blur",
+      "bokeh",
+      "local processing",
+      "subject masking"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-07-26",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "Free Basic runs in the browser without upload, 20 attempts per 24 hours anonymously and 30 when signed in",
+      "paid_plans": "One-time credit packs, $2.99 for 10 images and $6.99 for 30 images, raising the allowance to 100 attempts per 24 hours",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Blurring distracting photo backgrounds for portraits",
+      "Adding depth-of-field effects to product shots",
+      "Editing photos without uploading them to a server"
+    ],
+    "not_good_for": [
+      "Batch processing large photo libraries",
+      "Video background blur"
+    ],
+    "industries": [
+      "Photography",
+      "Social Media",
+      "E-commerce"
+    ]
+  },
+  {
+    "id": "1011",
+    "name": "Video Upscaler",
+    "slug": "video-upscaler",
+    "category": "Video",
+    "subcategory": "Video Enhancement",
+    "description": "Video Upscaler is an online AI video enhancer that upscales low-resolution footage to HD or 4K, applying restoration, denoising, and sharpening through a credit-based workflow.",
+    "url": "https://videoupscaler.video/",
+    "tags": [
+      "video upscaling",
+      "4k",
+      "video enhancement",
+      "denoising",
+      "restoration"
+    ],
+    "pricing": "Paid",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-07-26",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": null,
+      "paid_plans": "Starter $15/mo (300 credits), Standard $39/mo (1000 credits), Premium $79/mo; annual billing saves 20% at $12, $31, and $63 per month; credits never expire",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Upscaling archived or low-resolution footage to HD or 4K",
+      "Improving clarity in blurry source video",
+      "Preparing older clips for large-screen playback"
+    ],
+    "not_good_for": [
+      "Free or trial-only video processing",
+      "Real-time or live-stream upscaling"
+    ],
+    "industries": [
+      "Video Production",
+      "Media & Entertainment",
+      "Marketing"
+    ]
   }
 ]
