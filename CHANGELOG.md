@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.6](https://github.com/withkarann/aifoxx/compare/v1.1.5...v1.1.6) (2026-07-26)
+
+
+### Bug Fixes
+
+* force patched brace-expansion across dev toolchain ([#213](https://github.com/withkarann/aifoxx/issues/213)) ([117aa08](https://github.com/withkarann/aifoxx/commit/117aa0844363a3387b3be5e925eedb5bdda09413))
+* restore release automation by using the bot token ([#216](https://github.com/withkarann/aifoxx/issues/216)) ([651601b](https://github.com/withkarann/aifoxx/commit/651601b6fa0bd478be0b9fc09b76d3054098ed00))
+
 ## [1.1.5](https://github.com/withkarann/aifoxx/compare/v1.1.4...v1.1.5) (2026-07-20)
 
 
