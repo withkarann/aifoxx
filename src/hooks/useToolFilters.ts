@@ -5,7 +5,10 @@ export interface ToolFilters {
   search: string;
   category: string;
   subcategory: string;
-  pricing: string;
+  /** Pricing models to include. Empty means no pricing constraint. */
+  pricing: string[];
+  /** Keep only tools that can be used without paying. */
+  freeTierOnly: boolean;
   tags: string[];
 }
 
@@ -18,7 +21,10 @@ export function useToolFilters() {
     search: searchParams.get("search") || "",
     category: searchParams.get("category") || "",
     subcategory: searchParams.get("subcategory") || "",
-    pricing: searchParams.get("pricing") || "",
+    // getAll keeps older single-value links such as ?pricing=Free working
+    // while allowing several models to be selected at once.
+    pricing: searchParams.getAll("pricing").filter(Boolean),
+    freeTierOnly: searchParams.get("freeTier") === "1",
     tags: searchParams.getAll("tag"),
   }), [searchParams]);
 
@@ -27,10 +33,22 @@ export function useToolFilters() {
       setSearchParams((prev) => {
         const next = new URLSearchParams(prev);
 
-        const applyValue = (key: ToolFilterKey, value: string | string[]) => {
+        const applyValue = (key: ToolFilterKey, value: string | string[] | boolean) => {
           if (key === "tags") {
             next.delete("tag");
             (value as string[]).forEach((tag) => next.append("tag", tag));
+            return;
+          }
+
+          if (key === "pricing") {
+            next.delete("pricing");
+            (value as string[]).forEach((p) => next.append("pricing", p));
+            return;
+          }
+
+          if (key === "freeTierOnly") {
+            if (value) next.set("freeTier", "1");
+            else next.delete("freeTier");
             return;
           }
 
@@ -42,7 +60,10 @@ export function useToolFilters() {
           next.set(key, value as string);
         };
 
-        for (const [key, value] of Object.entries(updates) as [ToolFilterKey, string | string[]][]) {
+        for (const [key, value] of Object.entries(updates) as [
+          ToolFilterKey,
+          string | string[] | boolean,
+        ][]) {
           applyValue(key, value);
         }
 
@@ -61,10 +82,22 @@ export function useToolFilters() {
   );
 
   const setFilter = useCallback(
-    (key: ToolFilterKey, value: string | string[]) => {
+    (key: ToolFilterKey, value: string | string[] | boolean) => {
       setFilters({ [key]: value } as Partial<ToolFilters>);
     },
     [setFilters]
+  );
+
+  /** Add or remove one pricing model, leaving the others selected. */
+  const togglePricing = useCallback(
+    (value: string) => {
+      const current = searchParams.getAll("pricing").filter(Boolean);
+      const next = current.includes(value)
+        ? current.filter((p) => p !== value)
+        : [...current, value];
+      setFilters({ pricing: next });
+    },
+    [searchParams, setFilters]
   );
 
   const clearFilters = useCallback(() => {
@@ -76,10 +109,11 @@ export function useToolFilters() {
     if (filters.search) count++;
     if (filters.category) count++;
     if (filters.subcategory) count++;
-    if (filters.pricing) count++;
+    count += filters.pricing.length;
+    if (filters.freeTierOnly) count++;
     count += filters.tags.length;
     return count;
   }, [filters]);
 
-  return { filters, setFilter, setFilters, clearFilters, activeFilterCount };
+  return { filters, setFilter, setFilters, togglePricing, clearFilters, activeFilterCount };
 }

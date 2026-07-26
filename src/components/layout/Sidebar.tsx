@@ -27,7 +27,10 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
     } else {
       const params = new URLSearchParams();
       if (filters.search) params.set("search", filters.search);
-      if (filters.pricing) params.set("pricing", filters.pricing);
+      for (const pricing of filters.pricing) {
+        params.append("pricing", pricing);
+      }
+      if (filters.freeTierOnly) params.set("freeTier", "1");
       for (const tag of filters.tags) {
         params.append("tag", tag);
       }
