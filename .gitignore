@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+# Static-build scratch directories. The page generator writes these while it
+# renders and normally clears them, but a failed or interrupted build leaves
+# them behind, so they must never be committable.
+.vite-react-ssg-temp/
+.vite/
+*.tsbuildinfo
+
 # Test & QA run output — never commit. The E2E setup itself (playwright.config.ts,
 # playwright-fixture.ts, src/test/) IS committed; only its generated output is ignored.
 /test-results/
