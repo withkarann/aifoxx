@@ -6,7 +6,18 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   // Build output and gitignored local scratch directories are not app code.
-  { ignores: ["dist", ".scratch", ".remember", ".playwright-mcp", "scripts/vendor-assessment"] },
+  // ".vite-react-ssg-temp" holds generated page bundles that a failed build can
+  // leave behind. Linting generated output reports errors no one can act on.
+  {
+    ignores: [
+      "dist",
+      ".scratch",
+      ".remember",
+      ".playwright-mcp",
+      ".vite-react-ssg-temp",
+      "scripts/vendor-assessment",
+    ],
+  },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ["**/*.{ts,tsx}"],
