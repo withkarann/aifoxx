@@ -6,9 +6,12 @@ on:
   push:
     branches: [main]
 
+# The repository does not allow workflows to open pull requests, so the default
+# token cannot create the release PR. Writes go through NEWS_BOT_TOKEN, the same
+# admin PAT the news workflow uses (Contents + Pull requests: RW). The default
+# token stays read-only.
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 jobs:
   release-please:
@@ -16,5 +19,6 @@ jobs:
     steps:
       - uses: googleapis/release-please-action@v5
         with:
+          token: ${{ secrets.NEWS_BOT_TOKEN }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
