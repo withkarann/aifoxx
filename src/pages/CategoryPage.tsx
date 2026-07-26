@@ -21,7 +21,7 @@ export default function CategoryPage() {
   const categoryKey = category ? normalizeTaxonomyValue(category) : "";
   const cat = CATEGORIES.find((c) => matchesTaxonomyValue(c.name, categoryKey));
 
-  const { filters, setFilter, clearFilters, activeFilterCount } = useToolFilters();
+  const { filters, setFilter, togglePricing, clearFilters, activeFilterCount } = useToolFilters();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const filtersWithCategory = useMemo(() => ({
@@ -209,17 +209,24 @@ export default function CategoryPage() {
             ))}
           </div>
 
-          <FilterBar activePricing={filters.pricing} onPricingChange={(v) => setFilter("pricing", v)} activeFilterCount={activeFilterCount} onClearAll={clearFilters} />
+          <FilterBar
+            activePricing={filters.pricing}
+            onTogglePricing={togglePricing}
+            freeTierOnly={filters.freeTierOnly}
+            onFreeTierChange={(v) => setFilter("freeTierOnly", v)}
+            activeFilterCount={activeFilterCount}
+            onClearAll={clearFilters}
+          />
 
           {isEmpty ? (
             <div className="bg-bg-elevated border border-border-default rounded-[6px] p-8 text-center">
               <p className="font-display font-black" style={{ color: color.accent }}>&gt; NO_RESULTS_FOUND</p>
               <p className="font-mono text-text-secondary text-sm mt-2">
-                {filters.pricing && pricingBreakdown.length > 0
-                  ? `No ${filters.pricing} tools in ${cat.name}${activeSub ? ` / ${activeSub}` : ""}.`
+                {filters.pricing.length > 0 && pricingBreakdown.length > 0
+                  ? `No ${filters.pricing.join(" or ")} tools in ${cat.name}${activeSub ? ` / ${activeSub}` : ""}.`
                   : "No tools match these filters"}
               </p>
-              {filters.pricing && pricingBreakdown.length > 0 && (
+              {filters.pricing.length > 0 && pricingBreakdown.length > 0 && (
                 <>
                   <p className="font-mono text-xs text-text-muted mt-4 tracking-widest">AVAILABLE PRICING</p>
                   <div className="flex flex-wrap justify-center gap-2 mt-2">
@@ -227,7 +234,7 @@ export default function CategoryPage() {
                       <button
                         type="button"
                         key={pricing}
-                        onClick={() => setFilter("pricing", pricing)}
+                        onClick={() => setFilter("pricing", [pricing])}
                         className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default bg-bg-surface text-text-secondary hover:text-text-primary hover:border-[var(--cat-accent)] transition-colors duration-150"
                         style={{ "--cat-accent": color.accent } as React.CSSProperties}
                       >

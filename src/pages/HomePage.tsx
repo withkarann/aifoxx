@@ -56,7 +56,7 @@ const homeFaqLd = {
 
 export default function HomePage() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { filters, setFilter, clearFilters, activeFilterCount } = useToolFilters();
+  const { filters, setFilter, togglePricing, clearFilters, activeFilterCount } = useToolFilters();
   const nonSearchFilters = useMemo(
     () => ({ ...filters, search: "" }),
     [filters]
@@ -107,7 +107,7 @@ export default function HomePage() {
   const totalPages = Math.max(1, Math.ceil(total / TOOLS_PER_PAGE));
 
   const hasSeoQueryParams = useMemo(() => {
-    const seoParams = ["search", "category", "subcategory", "pricing", "tag", "page"];
+    const seoParams = ["search", "category", "subcategory", "pricing", "freeTier", "tag", "page"];
     return seoParams.some((key) => searchParams.has(key));
   }, [searchParams]);
 
@@ -274,7 +274,9 @@ export default function HomePage() {
           <div className="order-1">
             <FilterBar
               activePricing={filters.pricing}
-              onPricingChange={(v) => setFilter("pricing", v)}
+              onTogglePricing={togglePricing}
+              freeTierOnly={filters.freeTierOnly}
+              onFreeTierChange={(v) => setFilter("freeTierOnly", v)}
               activeFilterCount={activeFilterCount}
               onClearAll={clearFilters}
             />
