@@ -51848,5 +51848,59 @@
       "Media & Entertainment",
       "Marketing"
     ]
+  },
+  {
+    "id": "1012",
+    "name": "Rao Edits",
+    "slug": "rao-edits",
+    "category": "Image Generation",
+    "subcategory": "Image Editing",
+    "description": "Rao Edits is a browser-based AI platform for text-to-image generation and reference-image editing for social, product, and creative workflows.",
+    "url": "https://raoedits.top/",
+    "tags": [
+      "text-to-image",
+      "image editing",
+      "reference images",
+      "product visuals",
+      "social media"
+    ],
+    "pricing": "Paid",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-08-02",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": null
+    },
+    "pricing_detail": {
+      "free_tier": null,
+      "paid_plans": "Starter $29/month (50 credits), Standard $89/month (160 credits), and Premium $199/month (360 credits)",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Generating product and marketing visuals from text prompts",
+      "Editing reference images for social and creative projects",
+      "Creating image assets for CapCut templates"
+    ],
+    "not_good_for": [
+      "Workflows requiring a free plan",
+      "Self-hosted image generation"
+    ],
+    "industries": [
+      "Design",
+      "Marketing",
+      "Social Media",
+      "E-commerce"
+    ]
   }
 ]
