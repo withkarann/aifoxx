@@ -51848,5 +51848,48 @@
       "Media & Entertainment",
       "Marketing"
     ]
+  },
+  {
+    "id": "1012",
+    "name": "WebPrompts.dev",
+    "slug": "webprompts-dev",
+    "category": "Coding",
+    "subcategory": "Code Generation",
+    "description": "Visual library of production-ready prompts for building websites, apps, UI sections, and motion effects with AI coding tools.",
+    "url": "https://webprompts.dev/",
+    "tags": [
+      "prompts",
+      "ai coding",
+      "web design",
+      "ui/ux",
+      "developer tools"
+    ],
+    "pricing": "Freemium",
+    "logo_url": "https://webprompts.dev/logo.svg",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-08-02",
+    "access_methods": [
+      "Web App"
+    ],
+    "pricing_detail": {
+      "free_tier": "116 free library entries",
+      "paid_plans": "$239/year or $349 lifetime for premium access",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Starting website builds from detailed implementation prompts",
+      "Creating landing pages, UI sections, app interfaces, and motion effects",
+      "Comparing visual directions before using an AI coding assistant"
+    ],
+    "not_good_for": [
+      "Generating finished websites directly",
+      "API-based prompt access"
+    ],
+    "industries": [
+      "Web Design",
+      "Software Development",
+      "Marketing"
+    ]
   }
 ]
