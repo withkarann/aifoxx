@@ -51848,5 +51848,59 @@
       "Media & Entertainment",
       "Marketing"
     ]
+  },
+  {
+    "id": "1012",
+    "name": "Fortuneteller.Today",
+    "slug": "fortuneteller-today",
+    "category": "AI Assistants",
+    "subcategory": "Personal Assistant",
+    "description": "Fortuneteller.Today offers AI tarot, astrology, numerology, BaZi, and rune readings for practical self-reflection and planning.",
+    "url": "https://www.fortuneteller.today",
+    "tags": [
+      "tarot",
+      "astrology",
+      "numerology",
+      "bazi",
+      "self-reflection"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-08-05",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "Free readings with paid upgrade options",
+      "paid_plans": "Freemium plans available",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Generating AI tarot readings",
+      "Exploring astrology and numerology insights",
+      "Comparing Eastern and Western divination methods",
+      "Reflecting on relationship, career, and timing questions"
+    ],
+    "not_good_for": [
+      "Medical, legal, or financial decision-making",
+      "Guaranteed predictions"
+    ],
+    "industries": [
+      "Personal Development",
+      "Wellness",
+      "Consumer AI"
+    ]
   }
 ]
