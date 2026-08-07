@@ -1,14 +1,26 @@
 [
   {
+    "id": "launch-hn-49198464",
+    "title": "ProvenMetal (YC S26) delivers circuit boards in days instead of weeks",
+    "url": "https://provenmetal.com",
+    "domain": "provenmetal.com",
+    "source": "launch-hn",
+    "category": "new-tool",
+    "points": 195,
+    "date": "2026-08-06T15:59:15.000Z",
+    "age": "14h ago",
+    "score": 0
+  },
+  {
     "id": "launch-hn-49185389",
     "title": "HyperProbe (YC S26) – Agents that do read-only debugging in prod",
     "url": "https://www.hyperprobe.co",
     "domain": "hyperprobe.co",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 53,
+    "points": 68,
     "date": "2026-08-05T16:47:15.000Z",
-    "age": "14h ago",
+    "age": "1d ago",
     "score": 0
   },
   {
@@ -20,7 +32,7 @@
     "category": "new-tool",
     "points": 39,
     "date": "2026-08-04T18:36:02.000Z",
-    "age": "1d ago",
+    "age": "2d ago",
     "score": 2
   },
   {
@@ -30,9 +42,9 @@
     "domain": "hoplite.sh",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 79,
+    "points": 81,
     "date": "2026-08-03T16:32:06.000Z",
-    "age": "2d ago",
+    "age": "3d ago",
     "score": 0
   },
   {
@@ -44,7 +56,7 @@
     "category": "new-tool",
     "points": 79,
     "date": "2026-07-30T13:29:03.000Z",
-    "age": "6d ago",
+    "age": "7d ago",
     "score": 0
   },
   {
@@ -56,7 +68,7 @@
     "category": "new-tool",
     "points": 71,
     "date": "2026-07-29T15:55:27.000Z",
-    "age": "7d ago",
+    "age": "8d ago",
     "score": 0
   },
   {
@@ -68,7 +80,7 @@
     "category": "new-tool",
     "points": 85,
     "date": "2026-07-27T19:58:22.000Z",
-    "age": "9d ago",
+    "age": "10d ago",
     "score": 0
   },
   {
@@ -80,7 +92,7 @@
     "category": "new-tool",
     "points": 56,
     "date": "2026-07-22T16:02:03.000Z",
-    "age": "14d ago",
+    "age": "15d ago",
     "score": 0
   },
   {
@@ -92,7 +104,7 @@
     "category": "new-tool",
     "points": 44,
     "date": "2026-07-15T15:51:20.000Z",
-    "age": "21d ago",
+    "age": "22d ago",
     "score": 0
   },
   {
@@ -104,7 +116,7 @@
     "category": "new-tool",
     "points": 85,
     "date": "2026-07-14T16:06:18.000Z",
-    "age": "22d ago",
+    "age": "23d ago",
     "score": 3
   },
   {
@@ -116,7 +128,7 @@
     "category": "new-tool",
     "points": 119,
     "date": "2026-07-09T15:28:39.000Z",
-    "age": "27d ago",
+    "age": "28d ago",
     "score": 0
   }
 ]
