@@ -29,16 +29,11 @@ jobs:
           REPO:         ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Auto-merge ONLY patch + minor updates
-      - name: Auto-approve patch and minor
-        if: |
-          steps.meta.outputs.update-type == 'version-update:semver-patch' ||
-          steps.meta.outputs.update-type == 'version-update:semver-minor'
-        run: gh pr review --approve "$PR_URL"
-        env:
-          PR_URL:       ${{ github.event.pull_request.html_url }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      # Auto-merge ONLY patch + minor updates.
+      # Queues the merge so it lands on its own once branch protection is
+      # satisfied. The required review stays with the maintainer on purpose:
+      # this repo keeps Actions review approval disabled, so the workflow
+      # must not try to approve on the maintainer's behalf.
       - name: Auto-merge patch and minor
         if: |
           steps.meta.outputs.update-type == 'version-update:semver-patch' ||
