@@ -51848,5 +51848,58 @@
       "Media & Entertainment",
       "Marketing"
     ]
+  },
+  {
+    "id": "1012",
+    "name": "Mydentify AI Crawler Access Checker",
+    "slug": "mydentify-ai-crawler-access-checker",
+    "category": "Marketing",
+    "subcategory": "SEO",
+    "description": "Mydentify AI Crawler Access Checker checks robots.txt and page directives to show whether major AI crawlers can access and index a website.",
+    "url": "https://mydentify.com/tools/ai-crawler-access-checker",
+    "tags": [
+      "robots.txt",
+      "ai crawlers",
+      "technical seo",
+      "indexability",
+      "llm optimization"
+    ],
+    "pricing": "Free",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-08-12",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": null
+    },
+    "pricing_detail": {
+      "free_tier": "Free browser-based checks without an account",
+      "paid_plans": null,
+      "api_cost": null
+    },
+    "use_cases": [
+      "Checking robots.txt rules for major AI crawlers",
+      "Reviewing page and header indexing directives",
+      "Diagnosing blocked AI discovery before changing crawler policy"
+    ],
+    "not_good_for": [
+      "Proving that a request came from an official AI provider IP range",
+      "Changing a website's crawler policy automatically"
+    ],
+    "industries": [
+      "Marketing",
+      "Software Development",
+      "Publishing"
+    ]
   }
 ]
