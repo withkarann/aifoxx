@@ -1,14 +1,26 @@
 [
   {
+    "id": "launch-hn-49283063",
+    "title": "Bullet (YC S26) – A Faster Coding Agent",
+    "url": "https://www.codewithbullet.com",
+    "domain": "codewithbullet.com",
+    "source": "launch-hn",
+    "category": "new-tool",
+    "points": 93,
+    "date": "2026-08-13T08:14:30.000Z",
+    "age": "22h ago",
+    "score": 2
+  },
+  {
     "id": "launch-hn-49269090",
     "title": "Discovered Materials (YC P26) – AI agents to discover new materials",
     "url": "https://discoveredmaterials.com/research/",
     "domain": "discoveredmaterials.com",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 132,
+    "points": 155,
     "date": "2026-08-12T07:51:20.000Z",
-    "age": "22h ago",
+    "age": "1d ago",
     "score": 1
   },
   {
@@ -20,7 +32,7 @@
     "category": "new-tool",
     "points": 47,
     "date": "2026-08-11T14:48:37.000Z",
-    "age": "1d ago",
+    "age": "2d ago",
     "score": 0
   },
   {
@@ -32,7 +44,7 @@
     "category": "new-tool",
     "points": 77,
     "date": "2026-08-10T16:35:27.000Z",
-    "age": "2d ago",
+    "age": "3d ago",
     "score": 1
   },
   {
@@ -44,7 +56,7 @@
     "category": "new-tool",
     "points": 237,
     "date": "2026-08-06T15:59:15.000Z",
-    "age": "6d ago",
+    "age": "7d ago",
     "score": 0
   },
   {
@@ -56,7 +68,7 @@
     "category": "new-tool",
     "points": 69,
     "date": "2026-08-05T16:47:15.000Z",
-    "age": "7d ago",
+    "age": "8d ago",
     "score": 0
   },
   {
@@ -68,7 +80,7 @@
     "category": "new-tool",
     "points": 39,
     "date": "2026-08-04T18:36:02.000Z",
-    "age": "8d ago",
+    "age": "9d ago",
     "score": 2
   },
   {
@@ -80,7 +92,7 @@
     "category": "new-tool",
     "points": 81,
     "date": "2026-08-03T16:32:06.000Z",
-    "age": "9d ago",
+    "age": "10d ago",
     "score": 0
   },
   {
@@ -92,7 +104,7 @@
     "category": "new-tool",
     "points": 79,
     "date": "2026-07-30T13:29:03.000Z",
-    "age": "13d ago",
+    "age": "14d ago",
     "score": 0
   },
   {
@@ -104,7 +116,7 @@
     "category": "new-tool",
     "points": 71,
     "date": "2026-07-29T15:55:27.000Z",
-    "age": "14d ago",
+    "age": "15d ago",
     "score": 0
   },
   {
@@ -116,7 +128,7 @@
     "category": "new-tool",
     "points": 85,
     "date": "2026-07-27T19:58:22.000Z",
-    "age": "16d ago",
+    "age": "17d ago",
     "score": 0
   },
   {
@@ -128,7 +140,7 @@
     "category": "new-tool",
     "points": 56,
     "date": "2026-07-22T16:02:03.000Z",
-    "age": "21d ago",
+    "age": "22d ago",
     "score": 0
   },
   {
@@ -140,19 +152,7 @@
     "category": "new-tool",
     "points": 44,
     "date": "2026-07-15T15:51:20.000Z",
-    "age": "28d ago",
-    "score": 0
-  },
-  {
-    "id": "launch-hn-48908950",
-    "title": "Agnost AI (YC S26) – Extract user feedback from agent conversations",
-    "url": "https://agnost.ai",
-    "domain": "agnost.ai",
-    "source": "launch-hn",
-    "category": "new-tool",
-    "points": 85,
-    "date": "2026-07-14T16:06:18.000Z",
     "age": "29d ago",
-    "score": 3
+    "score": 0
   }
 ]
