@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/withkarann/aifoxx/compare/v1.2.1...v1.2.2) (2026-08-15)
+
+
+### Bug Fixes
+
+* stop tool cards cutting text off mid-word ([#273](https://github.com/withkarann/aifoxx/issues/273)) ([338ac1a](https://github.com/withkarann/aifoxx/commit/338ac1a9f053ba81a7154caca42e2114999a9d7d))
+
 ## [1.2.1](https://github.com/withkarann/aifoxx/compare/v1.2.0...v1.2.1) (2026-08-15)
 
 
