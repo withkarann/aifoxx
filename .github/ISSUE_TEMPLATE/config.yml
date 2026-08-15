@@ -3,3 +3,9 @@ contact_links:
   - name: Questions and discussion
     url: https://github.com/withkarann/aifoxx/discussions
     about: For questions, ideas, and general discussion, please use Discussions.
+  - name: Where do I go for what?
+    url: https://github.com/withkarann/aifoxx/blob/main/SUPPORT.md
+    about: Getting a fact fixed, a tool removed, or a question answered.
+  - name: What gets listed, and who decides
+    url: https://github.com/withkarann/aifoxx/blob/main/GOVERNANCE.md
+    about: Scope, data standards, conflicts of interest, and how entries are removed.

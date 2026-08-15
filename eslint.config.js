@@ -11,10 +11,9 @@ export default tseslint.config(
   {
     ignores: [
       "dist",
-      ".scratch",
-      ".remember",
-      ".playwright-mcp",
-      ".vite-react-ssg-temp",
+      // Every dot-directory here is local working state and is gitignored.
+      // None of it is app code, and linting it reports errors no one can act on.
+      ".*/**",
       "scripts/vendor-assessment",
     ],
   },
@@ -37,7 +36,7 @@ export default tseslint.config(
   },
   {
     // Vendored shadcn/ui components + their generated mobile hook are not
-    // hand-edited (see CLAUDE.md). The React-Compiler rules added in
+    // hand-edited. The React-Compiler rules added in
     // eslint-plugin-react-hooks v7 flag upstream shadcn patterns (setState in
     // an effect, Math.random skeleton widths) we can't fix without diverging
     // from upstream. Silence them here only; app code outside this scope keeps
