@@ -22,6 +22,7 @@ const readJSON = (p) => JSON.parse(read(p));
 const tools = readJSON("src/data/tools.json");
 const mcp = readJSON("src/data/mcp-servers.json");
 const skills = readJSON("src/data/claude-code-skills.json");
+const trustSlugs = readJSON("src/data/trust-slugs.json");
 
 const FREE = new Set(["Free", "Freemium", "Open Source"]);
 const stats = {
@@ -34,6 +35,7 @@ const stats = {
   selfHostable: tools.filter((t) => (t.data_storage || {}).self_hostable === true).length,
   mcpServers: mcp.length,
   skills: skills.length,
+  trustReports: trustSlugs.length,
 };
 
 // Machine-readable source of truth for the app.
@@ -42,7 +44,10 @@ writeFileSync(
   JSON.stringify(stats, null, 2) + "\n"
 );
 
-const { tools: N, categories: C, freeTier: F, apiAccess: A, selfHostable: S, mcpServers: M, skills: K } = stats;
+const { tools: N, categories: C, freeTier: F, apiAccess: A, selfHostable: S, mcpServers: M, skills: K, trustReports: T } = stats;
+
+/** Thousands separators, matching how the README's summary table reads. */
+const group = (n) => n.toLocaleString("en-US");
 
 // Apply a list of [pattern, replacement] edits to a file, preserving its EOL.
 function patch(path, edits) {
@@ -63,12 +68,21 @@ patch("public/llms.txt", [
   [/\b[\d,]+ tools offer a free/, `${F} tools offer a free`],
   [/\b[\d,]+ tools provide API access; [\d,]+ are self-hostable/, `${A} tools provide API access; ${S} are self-hostable`],
 ]);
+// The summary table is the number readers actually see, so it is patched by
+// matching the row label rather than the old value. Anchoring on the label
+// keeps these working if the wording around them changes.
+const tableRow = (label, value) => [
+  new RegExp(`(\\*\\*${label}\\*\\*\\s*\\|\\s*)[\\d,]+`),
+  `$1${value}`,
+];
+
 patch("README.md", [
+  tableRow("AI tools", group(N)),
+  tableRow("MCP servers", group(M)),
+  tableRow("Claude Code skills", group(K)),
+  tableRow("Trust & Security Reports", group(T)),
   [/catalogs [\d,]+ AI tools/, `catalogs ${N} AI tools`],
   [/index of [\d,]+ Claude Code skills/, `index of ${K} Claude Code skills`],
-  [/#\s*[\d,]+ tools\b/, `# ${N} tools`],
-  [/#\s*[\d,]+ MCP servers/, `# ${M} MCP servers`],
-  [/#\s*[\d,]+ Claude Code skills/, `# ${K} Claude Code skills`],
 ]);
 
 console.log("catalog-stats:", JSON.stringify(stats));

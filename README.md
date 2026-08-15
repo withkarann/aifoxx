@@ -24,10 +24,10 @@ Every compliance claim links to the vendor page that proves it. Where a fact is 
 
 | | Count | What it is |
 |---|--:|---|
-| 🛠️ **AI tools** | 981 | Searchable, filterable catalog with pricing, compliance, and data-handling metadata |
+| 🛠️ **AI tools** | 990 | Searchable, filterable catalog with pricing, compliance, and data-handling metadata |
 | 🔌 **MCP servers** | 1,979 | Indexed Model Context Protocol servers |
 | 🧩 **Claude Code skills** | 1,638 | Indexed Claude Code skills |
-| 🛡️ **Trust & Security Reports** | 979 | Per-vendor reports, every certification backed by a verbatim source quote |
+| 🛡️ **Trust & Security Reports** | 980 | Per-vendor reports, every certification backed by a verbatim source quote |
 
 > The governing rule across all of it: **`null` means unverified, not zero. We never guess.**
 
