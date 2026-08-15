@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.0](https://github.com/withkarann/aifoxx/compare/v1.1.6...v1.2.0) (2026-08-15)
+
+
+### Features
+
+* give the featured slot to Answerdeck and BrikSync PropOS ([#267](https://github.com/withkarann/aifoxx/issues/267)) ([dcad722](https://github.com/withkarann/aifoxx/commit/dcad72204b7f0b4a816eff212eabe81a52670537))
+
+
+### Bug Fixes
+
+* keep the README counts in sync with the data ([#268](https://github.com/withkarann/aifoxx/issues/268)) ([32dccdb](https://github.com/withkarann/aifoxx/commit/32dccdbd93cb6b786b7d81222d1c2bbe4fe98fe3))
+* make pricing filters match the pricing they name ([#220](https://github.com/withkarann/aifoxx/issues/220)) ([df00245](https://github.com/withkarann/aifoxx/commit/df00245a52a95f72fed2402849fe44f0d160b0f5))
+* name trust reports after the product, not the parent company ([#250](https://github.com/withkarann/aifoxx/issues/250)) ([4ba042b](https://github.com/withkarann/aifoxx/commit/4ba042b5c24c6c4979742ca95b93dbece52d83f8))
+* stop Dependabot workflow failing on the approval step ([#247](https://github.com/withkarann/aifoxx/issues/247)) ([426bae5](https://github.com/withkarann/aifoxx/commit/426bae562790df76e9ffb9075416e996bcb67cf4))
+
 ## [1.1.6](https://github.com/withkarann/aifoxx/compare/v1.1.5...v1.1.6) (2026-07-26)
 
 
