@@ -1,14 +1,17 @@
-name: Auto-merge Dependabot PRs
+name: Triage Dependabot PRs
 
+# Labels dependency updates and flags major bumps for a closer look. It does
+# not merge anything: every dependency change waits for the maintainer, the
+# same as any other pull request.
 on: pull_request
 
+# No contents:write, because nothing here writes to the repository.
 permissions:
-  contents: write
   pull-requests: write
   issues: write
 
 jobs:
-  auto-merge:
+  triage:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
     steps:
@@ -29,16 +32,15 @@ jobs:
           REPO:         ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Auto-merge ONLY patch + minor updates.
-      # Queues the merge so it lands on its own once branch protection is
-      # satisfied. The required review stays with the maintainer on purpose:
-      # this repo keeps Actions review approval disabled, so the workflow
-      # must not try to approve on the maintainer's behalf.
-      - name: Auto-merge patch and minor
+      # Patch and minor updates are labelled and left for the maintainer to
+      # merge. Nothing is queued to merge on its own: a dependency change
+      # reaches production the moment it lands, so it gets the same look as
+      # any other change.
+      - name: Label patch and minor
         if: |
           steps.meta.outputs.update-type == 'version-update:semver-patch' ||
           steps.meta.outputs.update-type == 'version-update:semver-minor'
-        run: gh pr merge --auto --squash "$PR_URL"
+        run: gh pr edit "$PR_URL" --add-label "dependencies"
         env:
           PR_URL:       ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
