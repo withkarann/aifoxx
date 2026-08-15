@@ -1,0 +1,65 @@
+name: Tool removal or delisting
+description: Ask for a tool to be removed from the directory.
+title: "[Removal]: "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to have an entry taken down, whether you run the tool or you
+        spotted one that should not be listed.
+
+        If a fact about your tool is simply wrong, a data correction is usually
+        the better route and keeps the listing accurate instead of removing it.
+
+        You do not have to justify a removal request for your own product. If
+        you are the owner and you want it gone, say so and it goes.
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name or slug
+      description: The entry to remove (name, or the slug from its URL).
+      placeholder: example-tool
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Who are you?
+      options:
+        - I own or work for this tool
+        - I am not connected to this tool
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Why should it be removed?
+      options:
+        - Owner request, no reason given
+        - The product has shut down
+        - The listing describes something we no longer offer
+        - The entry is inaccurate and cannot be corrected
+        - It falls outside what this directory lists
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else worth knowing
+      description: |
+        Optional. If the product moved to a new domain or changed name, say so
+        and the entry can be updated rather than dropped.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        Owner requests are actioned without argument. Everything else gets
+        checked against the live site first.
+
+        Removal takes the entry out of the catalog, and its tool page and trust
+        report stop being published on the next deploy. Search engines drop the
+        pages on their own schedule after that, which is not something this
+        project controls.

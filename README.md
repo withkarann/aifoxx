@@ -117,6 +117,8 @@ The featured slot on the home page holds products built by the people who mainta
 
 A listing is a judgement at a point in time, not a permanent record. Tools get removed when they shut down, when their claims stop checking out, or when they no longer meet the bar. Tools we declined before can be listed later if what they offer changes. The catalog is curated on purpose, so it will keep moving.
 
+**Listed here and want it taken down?** Open a [tool removal request](https://github.com/withkarann/aifoxx/issues/new?template=tool-removal.yml). If it is your product, you do not need to give a reason. [GOVERNANCE.md](GOVERNANCE.md) covers how these calls are made, and [SUPPORT.md](SUPPORT.md) points you at the right form for everything else.
+
 ## Contributing data
 
 Found something wrong or out of date? Two quick paths:
