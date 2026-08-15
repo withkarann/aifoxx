@@ -52047,5 +52047,113 @@
       "Real Estate",
       "Property Management"
     ]
+  },
+  {
+    "id": "1014",
+    "name": "Sharpniq",
+    "slug": "sharpniq",
+    "category": "Image Generation",
+    "subcategory": "Photo Enhancement",
+    "description": "Sharpniq removes blur from photos in the browser, running the model on your own device so the image is never uploaded, with an optional paid mode that processes larger files on its servers.",
+    "url": "https://unblurimage.me",
+    "tags": [
+      "unblur",
+      "photo enhancement",
+      "on-device",
+      "image restoration",
+      "no upload"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-08-15",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "compliance_sources": {
+      "region": "https://unblurimage.me/privacy-policy"
+    },
+    "data_storage": {
+      "region": "Browser Free mode processes on your own device and does not upload the image",
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "Browser Free mode, unlimited and no sign-in, up to 4MP per image",
+      "paid_plans": "Cloud Unblur costs credits and needs an account, supporting up to 12MP",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Sharpening a soft or motion-blurred photo without uploading it anywhere",
+      "Recovering detail in scanned or archived images",
+      "Editing images that cannot leave the device for privacy reasons"
+    ],
+    "not_good_for": [
+      "Bulk or automated processing, there is no API",
+      "Recovering detail that was never captured"
+    ],
+    "industries": [
+      "Photography",
+      "Consumer AI"
+    ]
+  },
+  {
+    "id": "1015",
+    "name": "CVExpert",
+    "slug": "cvexpert",
+    "category": "HR & Recruitment",
+    "subcategory": "Job Search",
+    "description": "CVExpert is a job-search workspace for candidates, tailoring a CV to a specific role, drafting application material, and tracking applications, with free CV checks that need no account.",
+    "url": "https://cvexpert.com",
+    "tags": [
+      "cv",
+      "job search",
+      "resume tailoring",
+      "ats",
+      "career"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "beta",
+    "last_verified": "2026-08-15",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "CV health check and CV to job comparison, no account or upload required",
+      "paid_plans": "The workspace is in private beta with the first month free. Ongoing pricing is not published yet and there is no checkout.",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Tailoring a CV to one specific job description",
+      "Checking whether a CV reads cleanly before applying",
+      "Drafting application material for a role",
+      "Tracking applications and follow-ups in one place"
+    ],
+    "not_good_for": [
+      "Employers screening candidates, this is built for the person applying",
+      "Anyone needing published pricing before signing up"
+    ],
+    "industries": [
+      "Recruitment",
+      "Career Services"
+    ]
   }
 ]

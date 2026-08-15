@@ -1561,6 +1561,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://aifoxx.com/ai/cvexpert</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://aifoxx.com/ai/cybereason</loc>
     <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -4881,6 +4887,12 @@
   <url>
     <loc>https://aifoxx.com/ai/sharly-ai</loc>
     <lastmod>2026-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aifoxx.com/ai/sharpniq</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
