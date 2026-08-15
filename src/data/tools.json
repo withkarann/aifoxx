@@ -15,7 +15,8 @@
       "writing"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -75,7 +76,8 @@
       "ai assistant"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -135,7 +137,8 @@
       "reasoning"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -194,7 +197,8 @@
       "research"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-02",
     "access_methods": [
@@ -252,7 +256,8 @@
       "enterprise"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
     "access_methods": [
@@ -312,7 +317,8 @@
       "real-time"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -630,7 +636,8 @@
       "open source"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -1100,7 +1107,8 @@
       "iot"
     ],
     "pricing": "Free",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -1152,7 +1160,8 @@
       "google services"
     ],
     "pricing": "Free",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -1206,7 +1215,8 @@
       "on-device ai"
     ],
     "pricing": "Free",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -1259,7 +1269,8 @@
       "creative writing"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -1369,7 +1380,8 @@
       "enterprise"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -1642,7 +1654,8 @@
       "proofreading"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -1753,7 +1766,8 @@
       "citation generator"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -1963,7 +1977,8 @@
       "summarization"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -3357,7 +3372,8 @@
       "ai coding"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -3413,7 +3429,8 @@
       "refactoring"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -3468,7 +3485,8 @@
       "code generation"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "acquired",
     "last_verified": "2026-06-02",
     "access_methods": [
@@ -3576,7 +3594,8 @@
       "code generation"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -3895,7 +3914,8 @@
       "deployment"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -4318,7 +4338,8 @@
       "ai coding"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -5104,7 +5125,8 @@
       "python"
     ],
     "pricing": "Open Source",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -5217,7 +5239,8 @@
       "datasets"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -5700,7 +5723,8 @@
       "data engineering"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
     "access_methods": [
@@ -5977,7 +6001,8 @@
       "ai design"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -6035,7 +6060,8 @@
       "design system"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -6093,7 +6119,8 @@
       "creative cloud"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -6910,7 +6937,8 @@
       "ai diagrams"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -7077,7 +7105,8 @@
       "content generation"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-29",
     "access_methods": [
@@ -7390,7 +7419,8 @@
       "photorealistic"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -7439,7 +7469,8 @@
       "api"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -7496,7 +7527,8 @@
       "image generation"
     ],
     "pricing": "Open Source",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -7552,7 +7584,8 @@
       "ai art"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -10203,7 +10236,8 @@
       "generative ai"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -10259,7 +10293,8 @@
       "video generation"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -10315,7 +10350,8 @@
       "personalized video"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -10370,7 +10406,8 @@
       "cinematic video"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -10569,7 +10606,8 @@
       "screen recording"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -11513,7 +11551,8 @@
       "social media"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -13051,7 +13090,8 @@
       "enterprise ai"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -13259,7 +13299,8 @@
       "multilingual"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -13985,7 +14026,8 @@
       "music ai"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -15742,7 +15784,8 @@
       "lead scoring"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -15850,7 +15893,8 @@
       "content marketing"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -16163,7 +16207,8 @@
       "small business"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -16329,7 +16374,8 @@
       "customer data"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -17056,7 +17102,8 @@
       "saas"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -18812,7 +18859,8 @@
       "generative crm"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
     "access_methods": [
@@ -18869,7 +18917,8 @@
       "hubspot"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -18927,7 +18976,8 @@
       "call analytics"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -19036,7 +19086,8 @@
       "ai sales"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -19095,7 +19146,8 @@
       "sales automation"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -19153,7 +19205,8 @@
       "b2b prospecting"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -19209,7 +19262,8 @@
       "account intelligence"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -19696,7 +19750,8 @@
       "ai prospecting"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -19908,7 +19963,8 @@
       "ai transcription"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -19965,7 +20021,8 @@
       "routing"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -20075,7 +20132,8 @@
       "clf"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -20461,7 +20519,8 @@
       "collaboration"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -21679,7 +21738,8 @@
       "apps"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -22158,7 +22218,8 @@
       "workflow"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -22272,7 +22333,8 @@
       "goals"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -25613,7 +25675,8 @@
       "enterprise"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -27443,7 +27506,8 @@
       "salesforce"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -27498,7 +27562,8 @@
       "reporting"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -30882,7 +30947,8 @@
       "ai tutor"
     ],
     "pricing": "Free",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -30933,7 +30999,8 @@
       "multilingual"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
     "access_methods": [
@@ -30988,7 +31055,8 @@
       "universities"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -34821,7 +34889,8 @@
       "due diligence"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -36340,7 +36409,8 @@
       "institutional finance"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -36905,7 +36975,8 @@
       "fintech"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -37225,7 +37296,8 @@
       "tax"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -38838,7 +38910,8 @@
       "dropshipping"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -40329,7 +40402,8 @@
       "multilingual"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -40386,7 +40460,8 @@
       "133 languages"
     ],
     "pricing": "Free",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -41656,7 +41731,8 @@
       "zero-day threats"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -41707,7 +41783,8 @@
       "xdr"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -42381,7 +42458,8 @@
       "threat detection"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-02",
     "access_methods": [
@@ -43448,7 +43526,8 @@
       "multi-cloud"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -43761,7 +43840,8 @@
       "ai agent"
     ],
     "pricing": "Open Source",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -45986,7 +46066,8 @@
       "devops"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -46207,7 +46288,8 @@
       "enterprise"
     ],
     "pricing": "Paid",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -47727,7 +47809,8 @@
       "market analysis"
     ],
     "pricing": "Free",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
     "access_methods": [
@@ -47880,7 +47963,8 @@
       "real estate"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -50010,7 +50094,8 @@
       "developer tools"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -50221,7 +50306,8 @@
       "cpaas"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -50875,7 +50961,8 @@
       "collaboration"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -50933,7 +51020,8 @@
       "microsoft 365"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -50992,7 +51080,8 @@
       "enterprise"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
     "access_methods": [
@@ -51052,7 +51141,8 @@
       "developer community"
     ],
     "pricing": "Freemium",
-    "featured": true,
+    "featured": false,
+    "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
     "access_methods": [
@@ -51847,6 +51937,115 @@
       "Video Production",
       "Media & Entertainment",
       "Marketing"
+    ]
+  },
+  {
+    "id": "1012",
+    "name": "Answerdeck",
+    "slug": "answerdeck",
+    "category": "Legal",
+    "subcategory": "Compliance",
+    "description": "Answerdeck is a compliance intelligence platform that drafts security questionnaire answers from a company's own documents, Slack, Jira, and past questionnaires, with every answer cited and reviewed by a person before it is sent.",
+    "url": "https://answerdeck.app",
+    "tags": [
+      "security questionnaires",
+      "compliance",
+      "grc",
+      "trust center",
+      "questionnaire automation"
+    ],
+    "pricing": "Contact Sales",
+    "featured": true,
+    "status": "beta",
+    "last_verified": "2026-08-15",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "compliance_sources": {
+      "region": "https://answerdeck.app/trust"
+    },
+    "data_storage": {
+      "region": "EU (Ireland, eu-west-1) live; US region available on request",
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": null,
+      "paid_plans": "Not published. Access is by request during early access.",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Answering security questionnaires from evidence the team already has",
+      "Building a reusable compliance knowledge base from existing documents",
+      "Routing drafted answers to subject matter experts for approval",
+      "Publishing a customer-facing trust center"
+    ],
+    "not_good_for": [
+      "Teams wanting answers sent without human review",
+      "Obtaining a certification, it documents compliance rather than granting it"
+    ],
+    "industries": [
+      "SaaS",
+      "Security",
+      "Compliance"
+    ]
+  },
+  {
+    "id": "1013",
+    "name": "BrikSync PropOS",
+    "slug": "briksync-propos",
+    "category": "Real Estate",
+    "subcategory": "Property Management",
+    "description": "BrikSync PropOS is a property operating system for landlords, property managers, and brokers, covering properties, units, leases, rent, maintenance, and commissions with role-based access.",
+    "url": "https://briksync.com",
+    "tags": [
+      "property management",
+      "leases",
+      "rent collection",
+      "maintenance",
+      "commissions"
+    ],
+    "pricing": "Freemium",
+    "featured": true,
+    "status": "beta",
+    "last_verified": "2026-08-15",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "Free plan with one property, five units, and ten AI calls per month",
+      "paid_plans": "Pro and Business tiers. India pricing is set separately at Rs 999/month for Pro and Rs 2,499/month for Business. Billing is not live during the private beta.",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Tracking properties, units, and tenants in one place",
+      "Managing leases, rent collection, and maintenance requests",
+      "Calculating broker commissions"
+    ],
+    "not_good_for": [
+      "Teams that need live billing today, the product is in private beta",
+      "Open sign-up, access is invitation-only"
+    ],
+    "industries": [
+      "Real Estate",
+      "Property Management"
     ]
   }
 ]

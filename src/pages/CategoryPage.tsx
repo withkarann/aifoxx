@@ -63,7 +63,7 @@ export default function CategoryPage() {
       soc2: cc("soc2"),
       gdpr: cc("gdpr"),
       topNames: [...inCategory]
-        .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
+        .sort((a, b) => Number(Boolean(b.popular)) - Number(Boolean(a.popular)))
         .slice(0, 5)
         .map((t) => t.name),
       subList: cat.subcategories.slice(0, 6).join(", "),

@@ -143,11 +143,13 @@ function generateSitemap() {
     }))
     .sort((a, b) => a.path.localeCompare(b.path));
 
-  // "vs" comparison pages: featured + same-category pairs, canonicalised (a<b).
+  // "vs" comparison pages: widely used + same-category pairs, canonicalised (a<b).
   // Mirrors getStaticPaths in src/routes.tsx so the sitemap matches what's built.
+  // Both sides must filter on the same field, or the sitemap silently drops
+  // pages that are still being built.
   const vsGroups = new Map();
   for (const tool of tools) {
-    if (!tool.featured) continue;
+    if (!tool.popular) continue;
     const group = vsGroups.get(tool.category) || [];
     group.push(tool.slug);
     vsGroups.set(tool.category, group);

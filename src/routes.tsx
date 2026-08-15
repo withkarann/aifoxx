@@ -40,13 +40,13 @@ const tagPaths = Object.entries(tagCounts)
   .filter(([, count]) => count >= 5)
   .map(([tag]) => `tag/${encodeURIComponent(tag)}`);
 
-// Pre-render "vs" comparison pages only for featured tools within the same
+// Pre-render "vs" comparison pages only for widely used tools within the same
 // category (sensible head-to-heads like "ChatGPT vs Claude"). Canonicalised so
 // a<b (we never ship both a-vs-b and b-vs-a, duplicate content) and bounded
 // to keep this to a few dozen high-intent pages, not a combinatorial explosion.
 const vsGroups = new Map<string, string[]>();
 allTools
-  .filter((t) => t.featured)
+  .filter((t) => t.popular)
   .forEach((t) => {
     const group = vsGroups.get(t.category) ?? [];
     group.push(t.slug);
