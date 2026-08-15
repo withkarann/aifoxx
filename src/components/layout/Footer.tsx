@@ -65,6 +65,28 @@ export function Footer() {
             GitHub
           </a>
         </p>
+        <p className="font-mono text-[11px] sm:text-[10px] text-text-secondary text-center break-words max-w-xl">
+          Every tool is checked by hand against the vendor&apos;s own pages. Divination, adult content,
+          and gambling tools are not listed. See{" "}
+          <a
+            href={`${Brand.product.repo}#what-we-list`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent-blue hover:text-text-primary transition-colors duration-150"
+          >
+            what we list
+          </a>
+          , or{" "}
+          <a
+            href={Brand.contact.sponsor}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent-blue hover:text-text-primary transition-colors duration-150"
+          >
+            sponsor the work
+          </a>
+          .
+        </p>
         <p className="font-mono text-[11px] sm:text-[10px] text-text-secondary text-center break-words">
           Created by{" "}
           <a

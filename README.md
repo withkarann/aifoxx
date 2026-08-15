@@ -101,6 +101,20 @@ src/
 
 The site is a static SPA: no backend, no database. Pages read from `src/lib/`; components never import JSON data directly. Each vendor's report is its own file, so opening a report downloads only that vendor's data, and every page is pre-rendered to static HTML so its full content is indexable.
 
+## What we list
+
+AIFOXX lists AI tools that a person or a team can evaluate on how they handle data: what they store, where they store it, whether they train on your input, and what they can prove. Every entry is checked against the live site before it goes in.
+
+Some things are out of scope, and submissions in these areas are declined:
+
+- Astrology, tarot, numerology, and other divination products
+- Adult and pornographic content
+- Betting, gambling, and real-money wagering
+- Tools whose live site does not match what the submission describes
+- Products that take another company's model name as their own brand
+
+A listing is a judgement at a point in time, not a permanent record. Tools get removed when they shut down, when their claims stop checking out, or when they no longer meet the bar. Tools we declined before can be listed later if what they offer changes. The catalog is curated on purpose, so it will keep moving.
+
 ## Contributing data
 
 Found something wrong or out of date? Two quick paths:
@@ -122,6 +136,16 @@ Facts are compiled from each vendor's own public pages: trust centers, security 
 - [ ] A verified-badge UI for confirmed compliance claims
 - [ ] A public JSON API / dataset endpoint
 - [ ] Wider coverage of MCP servers and Claude Code skills
+
+## Support this work
+
+Every entry here is read and checked by hand against the vendor's own trust, security, and privacy pages. Nothing is scraped and published unverified, which is slow, and it is the whole reason the data is worth anything.
+
+If that saves you time, three things help, in order of how much they help:
+
+- Share it with someone who is picking AI tools for their team
+- Star the repo, which is how most people find it
+- [Sponsor the work](https://github.com/sponsors/withkarann) if your company relies on it
 
 ## Security
 
