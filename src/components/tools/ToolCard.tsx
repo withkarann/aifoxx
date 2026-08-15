@@ -34,7 +34,9 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
   return (
     <div
       className={cn(
-        "tool-card relative overflow-hidden bg-bg-surface border border-border-default rounded-[6px] p-4 flex flex-col min-w-0 cursor-pointer"
+        // h-full lets a card fill its row, so cards sitting side by side share
+        // a height instead of each ending wherever its own text runs out.
+        "tool-card relative overflow-hidden bg-bg-surface border border-border-default rounded-[6px] p-4 flex flex-col gap-3 h-full min-w-0 cursor-pointer"
       )}
       style={vars}
     >
@@ -42,8 +44,12 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
 
       <Link to={`/ai/${tool.slug}`} className="block no-underline cursor-pointer min-w-0">
         {/* Top row */}
-        <div className="flex justify-between items-start gap-2">
-          <div className="flex items-center min-w-0 flex-1">
+        {/* Wraps so the price badge drops below the name on a narrow card
+            rather than squeezing it until a long name splits mid-word. */}
+        <div className="flex flex-wrap justify-between items-start gap-2">
+          {/* The floor is what makes the row wrap: without it the name keeps
+              shrinking to fit beside the badge until it splits mid-word. */}
+          <div className="flex items-center flex-1 min-w-[9rem]">
             <ToolIcon
               name={tool.name}
               slug={tool.slug}
@@ -64,8 +70,10 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
         )}
       </Link>
 
-      {/* Footer */}
-      <div className="mt-3 pt-3 border-t border-border-dim flex flex-col gap-2 min-w-0">
+      {/* Footer. mt-auto holds it to the bottom edge, so the category and tag
+          rows line up across neighbouring cards whatever length the name and
+          description happen to be. */}
+      <div className="mt-auto pt-3 border-t border-border-dim flex flex-col gap-2 min-w-0">
         {/* Row 1: Category + Subcategory + compare toggle */}
         <div className="flex items-start justify-between gap-2 min-w-0">
           <div className="flex flex-wrap gap-1.5 min-w-0">
@@ -146,8 +154,11 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
                 }
               }}
               className={cn(
-                "tag-pill inline-flex items-center shrink-0 text-[10px] font-mono px-1.5 py-0.5 rounded-[3px] transition-colors duration-150 whitespace-nowrap cursor-pointer max-w-[120px] truncate",
-                i === 2 && "hidden sm:inline-flex"
+                // inline-block, not inline-flex: an ellipsis is never drawn for
+                // the text inside a flex container, so a long tag was being cut
+                // mid-word with no sign that anything had been left off.
+                "tag-pill inline-block align-middle shrink-0 text-[10px] font-mono px-1.5 py-0.5 rounded-[3px] transition-colors duration-150 cursor-pointer max-w-[120px] truncate",
+                i === 2 && "hidden sm:inline-block"
               )}
             >
               #{tag}

@@ -321,7 +321,7 @@ export default function HomePage() {
                   className="flex gap-4 overflow-x-auto pb-2 px-1 scroll-smooth scroll-x"
                 >
                   {featuredTools.map((tool) => (
-                    <div key={tool.id} className="w-[280px] sm:w-[300px] shrink-0">
+                    <div key={tool.id} className="w-[280px] sm:w-[300px] shrink-0 h-auto">
                       <ToolCard tool={tool} />
                     </div>
                   ))}
