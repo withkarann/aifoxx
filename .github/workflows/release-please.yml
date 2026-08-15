@@ -47,4 +47,11 @@ jobs:
             echo "No release pull request to queue."
             exit 0
           fi
-          gh pr merge --auto --squash "$number" --repo "$REPO"
+          # Queuing is a convenience. The release pull request has already been
+          # opened by this point, so failing to queue it must not fail the job
+          # and hide a real release problem behind a red run.
+          if gh pr merge --auto --squash "$number" --repo "$REPO"; then
+            echo "Queued #${number} to merge once the required checks pass."
+          else
+            echo "::warning::Could not queue #${number}. Merge it by hand. This needs 'Allow auto-merge' enabled in the repository settings."
+          fi
