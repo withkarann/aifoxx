@@ -8,8 +8,7 @@
     "tagline_short":"The AI Tools Decision Engine",
     "description":  "Open-source directory of 990 AI tools with real pricing, compliance data, and access method comparison.",
     "domain":       "aifoxx.com",
-    "repo":         "https://github.com/withkarann/aifoxx",
-    "version":      "1.0.0"
+    "repo":         "https://github.com/withkarann/aifoxx"
   },
   "contact": {
     "github":         "https://github.com/withkarann/aifoxx",

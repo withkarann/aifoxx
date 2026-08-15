@@ -2,6 +2,7 @@
   "name": "aifoxx",
   "private": true,
   "version": "1.2.0",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "split": "node scripts/split-tools.mjs",

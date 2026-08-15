@@ -142,7 +142,7 @@ export function Footer() {
             Privacy
           </Link>
           <span>MIT License</span>
-          <span>v{Brand.product.version}</span>
+          <span>v{__APP_VERSION__}</span>
           <CRTOverlay />
         </div>
       </div>
