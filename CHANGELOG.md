@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/withkarann/aifoxx/compare/v1.2.0...v1.2.1) (2026-08-15)
+
+
+### Bug Fixes
+
+* show the real version in the footer ([#270](https://github.com/withkarann/aifoxx/issues/270)) ([471ee84](https://github.com/withkarann/aifoxx/commit/471ee84ec525e173a7c9b4b9db2f5dcba2c4748f))
+
 ## [1.2.0](https://github.com/withkarann/aifoxx/compare/v1.1.6...v1.2.0) (2026-08-15)
 
 
