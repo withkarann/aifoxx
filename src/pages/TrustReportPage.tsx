@@ -1,6 +1,7 @@
 import { useParams, useLoaderData, Link } from "react-router-dom";
 import { ExternalLink, ShieldCheck, ArrowUpRight, Info } from "lucide-react";
 import { complianceKeys, heldCertNames, CANONICAL_CERTS } from "@/lib/trust";
+import { trustProductName, trustOperator } from "@/lib/trust-name";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -184,13 +185,18 @@ export default function TrustReportPage() {
   const heldCerts = (report.certifications || []).filter((c) => c.held);
   const notHeldCerts = (report.certifications || []).filter((c) => !c.held);
 
+  // A report is named after the product it covers, not the legal entity that
+  // owns it, so pages for sibling products stay distinct from each other.
+  const product = trustProductName(report.slug, report.vendor);
+  const operator = trustOperator(product, report.vendor);
+
   const certLine = marquee.length > 0 ? marquee.slice(0, 4).join(", ") : "certification status";
-  const title = `${report.vendor} Security & Compliance (${marquee.length ? marquee.slice(0, 3).join(", ") : "SOC 2, GDPR, HIPAA"}) | ${Brand.product.name_styled}`;
+  const title = `${product} Security & Compliance (${marquee.length ? marquee.slice(0, 3).join(", ") : "SOC 2, GDPR, HIPAA"}) | ${Brand.product.name_styled}`;
   const description = (() => {
     const base =
       certsHeldCount > 0
-        ? `${report.vendor} holds ${certsHeldCount} verified certifications (${certLine}). `
-        : `${report.vendor} certification status, verified against its own trust and security pages. `;
+        ? `${product} holds ${certsHeldCount} verified certifications (${certLine}). `
+        : `${product} certification status, verified against its own trust and security pages. `;
     const trainNote =
       trains === true
         ? "Trains AI on customer data. "
@@ -215,12 +221,12 @@ export default function TrustReportPage() {
     if (isHeld) return `Yes, ${report.vendor} lists ${label} compliance.`;
     return `We could not confirm ${label} for ${report.vendor} from its public trust or security pages. This does not necessarily mean the vendor lacks it. Confirm directly with the vendor.`;
   };
-  faq.push({ q: `Is ${report.vendor} SOC 2 compliant?`, a: certAnswer("soc2", "SOC 2") });
-  faq.push({ q: `Is ${report.vendor} ISO 27001 certified?`, a: certAnswer("iso27001", "ISO 27001") });
-  faq.push({ q: `Is ${report.vendor} GDPR compliant?`, a: certAnswer("gdpr", "GDPR") });
-  faq.push({ q: `Is ${report.vendor} HIPAA compliant?`, a: certAnswer("hipaa", "HIPAA") });
+  faq.push({ q: `Is ${product} SOC 2 compliant?`, a: certAnswer("soc2", "SOC 2") });
+  faq.push({ q: `Is ${product} ISO 27001 certified?`, a: certAnswer("iso27001", "ISO 27001") });
+  faq.push({ q: `Is ${product} GDPR compliant?`, a: certAnswer("gdpr", "GDPR") });
+  faq.push({ q: `Is ${product} HIPAA compliant?`, a: certAnswer("hipaa", "HIPAA") });
   faq.push({
-    q: `Does ${report.vendor} train AI models on customer data?`,
+    q: `Does ${product} train AI models on customer data?`,
     a:
       trains === true
         ? `Yes. ${report.privacy.ai_training_note || `${report.vendor} trains AI models on customer data.`}`.slice(0, 300)
@@ -230,13 +236,13 @@ export default function TrustReportPage() {
   });
   if (report.privacy?.dpa === true) {
     faq.push({
-      q: `Does ${report.vendor} offer a data processing agreement (DPA)?`,
+      q: `Does ${product} offer a data processing agreement (DPA)?`,
       a: `Yes. ${report.vendor} provides a DPA, the GDPR contract that governs how it processes customer data. Review its terms during procurement.`,
     });
   }
   if (report.privacy?.data_region) {
     faq.push({
-      q: `Where does ${report.vendor} store customer data?`,
+      q: `Where does ${product} store customer data?`,
       a: `${report.privacy.data_region}`.slice(0, 300),
     });
   }
@@ -271,7 +277,7 @@ export default function TrustReportPage() {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `https://${Brand.product.domain}` },
       { "@type": "ListItem", position: 2, name: "Trust Reports", item: `https://${Brand.product.domain}/trust` },
-      { "@type": "ListItem", position: 3, name: report.vendor, item: pageUrl },
+      { "@type": "ListItem", position: 3, name: product, item: pageUrl },
     ],
   };
 
@@ -285,12 +291,12 @@ export default function TrustReportPage() {
         url={pageUrl}
         type="article"
         keywords={[
-          `${report.vendor} SOC 2`,
-          `${report.vendor} GDPR`,
-          `${report.vendor} HIPAA`,
-          `${report.vendor} compliance`,
-          `${report.vendor} security`,
-          `is ${report.vendor} secure`,
+          `${product} SOC 2`,
+          `${product} GDPR`,
+          `${product} HIPAA`,
+          `${product} compliance`,
+          `${product} security`,
+          `is ${product} secure`,
         ]}
       />
       <JsonLd id="trust-faq" schema={faqSchema} />
@@ -305,7 +311,7 @@ export default function TrustReportPage() {
             <span style={{ color: ACCENT }}>&gt;</span>
             <Link to="/trust" className="hover:text-text-primary transition-colors duration-150">TRUST</Link>
             <span style={{ color: ACCENT }}>&gt;</span>
-            <span className="text-text-primary">{report.vendor}</span>
+            <span className="text-text-primary">{product}</span>
           </nav>
 
           {/* Dossier header */}
@@ -315,7 +321,7 @@ export default function TrustReportPage() {
             </p>
             <div className="flex gap-3 sm:gap-4 items-start mt-2">
               <ToolIcon
-                name={report.vendor}
+                name={product}
                 slug={report.slug}
                 websiteUrl={site}
                 accent={ACCENT}
@@ -324,8 +330,11 @@ export default function TrustReportPage() {
               />
               <div className="min-w-0 flex-1">
                 <h1 className="font-display font-black text-2xl sm:text-4xl text-text-primary break-words leading-tight">
-                  {report.vendor}
+                  {product}
                 </h1>
+                {operator && (
+                  <p className="font-mono text-xs text-text-muted mt-1">by {operator}</p>
+                )}
                 {report.product_family && (
                   <p className="font-sans text-sm text-text-secondary mt-2 leading-relaxed">{report.product_family}</p>
                 )}
