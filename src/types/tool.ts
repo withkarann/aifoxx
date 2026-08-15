@@ -55,7 +55,14 @@ export const ToolSchema = z.object({
   tags: z.array(z.string()),
   pricing: PricingEnum,
   logo_url: z.string().optional(),
+  /** Editorial spotlight: shown as featured on the site. Kept deliberately small. */
   featured: z.boolean().optional(),
+  /**
+   * Widely used tool. Drives the head-to-head comparison pages, the compare
+   * page's starting suggestions, and best-of ordering. Separate from `featured`
+   * so the spotlight can change without rebuilding those pages.
+   */
+  popular: z.boolean().optional(),
   status: StatusEnum.optional(),
   last_verified: z.string().optional(),
   access_methods: z.array(z.string()).optional(),

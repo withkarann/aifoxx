@@ -309,6 +309,11 @@ export default function HomePage() {
           {!hasActiveFilters && featuredTools.length > 0 && (
             <section className="order-4 md:order-3 space-y-3" aria-labelledby="featured-heading">
               <h2 id="featured-heading" className="font-mono text-xs text-text-muted tracking-widest">// FEATURED AI TOOLS</h2>
+              {/* Says plainly that these are the maintainers' own products, so the
+                  slot is never mistaken for a ranking earned in the catalog. */}
+              <p className="font-mono text-[11px] text-text-muted">
+                Built by the people who maintain AIFOXX. Listed like any other tool, and never ranked above them.
+              </p>
               <div className="relative group/carousel">
                 <div
                   ref={featuredScrollRef}

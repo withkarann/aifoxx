@@ -8,7 +8,9 @@ import { ComparisonView } from "@/components/tools/ComparisonView";
 import { useCompare } from "@/contexts/CompareContext";
 import Brand from "@/lib/brand";
 
-const featuredTools = allTools.filter((t) => t.featured);
+// Starting suggestions for an empty comparison, drawn from widely used tools
+// so the shortcuts are names people recognise.
+const popularTools = allTools.filter((t) => t.popular);
 
 export default function ComparePage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -139,7 +141,7 @@ export default function ComparePage() {
             <p className="font-display text-text-primary text-xl font-black tracking-tight">Pick tools to compare</p>
             <p className="font-mono text-text-secondary text-sm">Search above, or start with a popular one:</p>
             <div className="flex flex-wrap justify-center gap-2">
-              {featuredTools.slice(0, 8).map((t) => (
+              {popularTools.slice(0, 8).map((t) => (
                 <button
                   key={t.slug}
                   type="button"

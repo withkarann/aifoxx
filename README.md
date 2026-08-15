@@ -113,6 +113,8 @@ Some things are out of scope, and submissions in these areas are declined:
 - Tools whose live site does not match what the submission describes
 - Products that take another company's model name as their own brand
 
+The featured slot on the home page holds products built by the people who maintain AIFOXX, and it says so on the page. Those products are listed with the same fields, the same verification, and the same unproven claims left as `null` as everything else. Being featured is a disclosure, not a ranking, and it never moves a product up the catalog.
+
 A listing is a judgement at a point in time, not a permanent record. Tools get removed when they shut down, when their claims stop checking out, or when they no longer meet the bar. Tools we declined before can be listed later if what they offer changes. The catalog is curated on purpose, so it will keep moving.
 
 ## Contributing data

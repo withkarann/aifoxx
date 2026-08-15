@@ -29,11 +29,11 @@ export default function BestCategoryPage() {
     const list = allTools.filter(
       (t) => normalizeTaxonomyValue(t.category) === normalizeTaxonomyValue(entry.category)
     );
-    // Featured first, then by name
+    // Widely used tools first, then by name
     return list
       .sort((a, b) => {
-        if (a.featured && !b.featured) return -1;
-        if (!a.featured && b.featured) return 1;
+        if (a.popular && !b.popular) return -1;
+        if (!a.popular && b.popular) return 1;
         return a.name.localeCompare(b.name);
       })
       .slice(0, PICK_COUNT);
