@@ -21,7 +21,30 @@ jobs:
       # token, so a retagged release must not be able to change what runs here.
       # Renovate and Dependabot both understand the trailing version comment.
       - uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5.0.0
+        id: release
         with:
           token: ${{ secrets.NEWS_BOT_TOKEN }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
+
+      # Queue the release pull request to merge itself once the checks pass.
+      #
+      # Branch protection asks for one approving review, which a repository with
+      # two maintainers can rarely satisfy on a pull request the maintainer
+      # opened. Release pull requests were therefore sitting open until someone
+      # merged them by hand, and a finished release sat unpublished in the
+      # meantime. Queuing it here with the same admin token that opened it lets
+      # it land on its own, and the required checks still have to pass first.
+      - name: Queue the release pull request for merge
+        if: steps.release.outputs.pr
+        env:
+          GH_TOKEN: ${{ secrets.NEWS_BOT_TOKEN }}
+          PR_JSON: ${{ steps.release.outputs.pr }}
+          REPO: ${{ github.repository }}
+        run: |
+          number=$(printf '%s' "$PR_JSON" | jq -r '.number // empty')
+          if [ -z "$number" ]; then
+            echo "No release pull request to queue."
+            exit 0
+          fi
+          gh pr merge --auto --squash "$number" --repo "$REPO"
