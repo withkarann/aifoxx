@@ -52155,5 +52155,57 @@
       "Recruitment",
       "Career Services"
     ]
+  },
+  {
+    "id": "1016",
+    "name": "Muse Video",
+    "slug": "muse-video",
+    "category": "Video",
+    "subcategory": "Video Generation",
+    "description": "Muse Video is a prompt-led AI video workflow for planning subject, motion, camera, visual detail, and native audio direction together. Free signup includes trial credits for short preview-stage generation.",
+    "url": "https://muse-video.app",
+    "tags": [
+      "video generation",
+      "text to video",
+      "prompt workflow",
+      "native audio",
+      "video concepts"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-08-25",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "Free signup includes 5 trial credits",
+      "paid_plans": "Preview-stage model; public pricing and limits not confirmed yet",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Planning subject, motion, camera and audio direction in one prompt",
+      "Generating short video clips from text and reference media",
+      "Comparing generated results against a written brief"
+    ],
+    "not_good_for": [
+      "Confirmed public model access, duration, or pricing",
+      "Physically accurate fast motion and audio-video sync remain open problem areas"
+    ],
+    "industries": [
+      "Content Creation",
+      "Marketing"
+    ]
   }
 ]
