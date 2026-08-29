@@ -13,7 +13,7 @@
  * Exit code 0 = all hard checks passed, exit code 1 = one or more hard checks failed.
  */
 
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync, readdirSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, resolve, join } from 'path';
 import { GUARD_RE, findEditorialVoice, findBannedDashes } from './editorial-voice.mjs';
@@ -347,6 +347,45 @@ for (const [label, path] of [['mcp-servers.json', MCP_PATH], ['claude-code-skill
 }
 
 // --- Hard check: note-like phrasing in Trust & Security Reports ---
+/**
+ * A certification is either confirmed held or it is not. Anything else, such as
+ * a report recording that it could not tell, must never reach a page: the site
+ * shows any non-true value as held, so an unconfirmed certification would be
+ * published as a claim in the vendor's name that nobody verified.
+ */
+function checkCertificationHeldValues() {
+  const hits = [];
+  let count = 0;
+  let reports = 0;
+  if (!existsSync(TRUST_DIR)) return { hits, count, reports };
+  for (const file of readdirSync(TRUST_DIR).filter((f) => f.endsWith('.json'))) {
+    const report = JSON.parse(readFileSync(resolve(TRUST_DIR, file), 'utf8'));
+    reports += 1;
+    for (const cert of report.certifications || []) {
+      count += 1;
+      if (typeof cert.held !== 'boolean') {
+        hits.push({ slug: file.slice(0, -5), name: cert.name, value: cert.held });
+      }
+    }
+  }
+  return { hits, count, reports };
+}
+
+const heldValues = checkCertificationHeldValues();
+if (heldValues.hits.length > 0) {
+  console.error(`FAIL ${heldValues.hits.length} certification(s) record held as something other than true or false:`);
+  heldValues.hits.slice(0, 40).forEach((h) =>
+    console.error(`  ${h.slug} ${h.name}: held = ${JSON.stringify(h.value)}`)
+  );
+  if (heldValues.hits.length > 40) console.error(`  ... and ${heldValues.hits.length - 40} more`);
+  console.error(
+    '  Every certification must be true or false. A certification that could not be confirmed is false, which the page shows as "not confirmed".'
+  );
+  failed = true;
+} else if (heldValues.count > 0) {
+  console.log(`OK certification held values: ${heldValues.count} certifications across ${heldValues.reports} reports, all true or false.`);
+}
+
 const trust = checkTrustEditorialVoice();
 if (trust.hits.length > 0) {
   const affected = new Set(trust.hits.map((h) => h.slug)).size;

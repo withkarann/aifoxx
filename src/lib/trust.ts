@@ -57,8 +57,20 @@ export function complianceKeys(heldCertNames: string[], dpa?: boolean | null): S
   return keys;
 }
 
+/**
+ * Whether a certification is confirmed held.
+ *
+ * Only an exact true counts. A report that could not confirm a certification
+ * records something other than true, and every one of those must read as "not
+ * confirmed": publishing an unconfirmed certification as held would put a claim
+ * in a vendor's name that nobody has verified.
+ */
+export function isHeld(cert: { held: unknown }): boolean {
+  return cert.held === true;
+}
+
 /** Held-cert names from either a full report or a light index entry. */
 export function heldCertNames(entry: Pick<TrustReport, "certifications"> | Pick<TrustIndexEntry, "certs_held">): string[] {
   if ("certs_held" in entry) return entry.certs_held;
-  return (entry.certifications || []).filter((c) => c.held).map((c) => c.name);
+  return (entry.certifications || []).filter(isHeld).map((c) => c.name);
 }

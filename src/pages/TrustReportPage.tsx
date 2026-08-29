@@ -1,6 +1,6 @@
 import { useParams, useLoaderData, Link } from "react-router-dom";
 import { ExternalLink, ShieldCheck, ArrowUpRight, Info } from "lucide-react";
-import { complianceKeys, heldCertNames, CANONICAL_CERTS } from "@/lib/trust";
+import { complianceKeys, heldCertNames, CANONICAL_CERTS, isHeld } from "@/lib/trust";
 import { trustProductName, trustOperator } from "@/lib/trust-name";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PageMeta } from "@/components/seo/PageMeta";
@@ -77,7 +77,7 @@ function StatTile({ label, value, tone = "default" }: { label: string; value: st
 
 /** The signature element: a certification with its verbatim, sourced proof. */
 function CertLedgerRow({ cert }: { cert: Certification }) {
-  const held = cert.held;
+  const held = isHeld(cert);
   const sourceHost = hostOf(cert.source);
   const linkable = isSafeHttpUrl(cert.source);
   return (
@@ -178,12 +178,12 @@ export default function TrustReportPage() {
   const site = vendorSite(report);
   const held = complianceKeys(heldCertNames(report), report.privacy?.dpa === true);
   const trains = trainsOnData(report);
-  const certsHeldCount = (report.certifications || []).filter((c) => c.held).length;
+  const certsHeldCount = (report.certifications || []).filter(isHeld).length;
   const marquee = marqueeCerts(held);
   const pageUrl = `https://${Brand.product.domain}/trust/${report.slug}`;
 
-  const heldCerts = (report.certifications || []).filter((c) => c.held);
-  const notHeldCerts = (report.certifications || []).filter((c) => !c.held);
+  const heldCerts = (report.certifications || []).filter(isHeld);
+  const notHeldCerts = (report.certifications || []).filter((c) => !isHeld(c));
 
   // A report is named after the product it covers, not the legal entity that
   // owns it, so pages for sibling products stay distinct from each other.
@@ -210,15 +210,17 @@ export default function TrustReportPage() {
   // strictly from the verified report data.
   const faq: { q: string; a: string }[] = [];
   const certAnswer = (key: string, label: string) => {
-    const isHeld = held.has(key);
-    const cert = (report.certifications || []).find((c) => c.held && CANONICAL_CERTS.find((cc) => cc.key === key)?.match(c.name));
-    if (isHeld && cert?.proof_quote) {
+    const confirmed = held.has(key);
+    const cert = (report.certifications || []).find(
+      (c) => isHeld(c) && CANONICAL_CERTS.find((cc) => cc.key === key)?.match(c.name)
+    );
+    if (confirmed && cert?.proof_quote) {
       return `Yes. Per ${report.vendor}: "${cert.proof_quote}"`.slice(0, 300);
     }
-    if (isHeld && key === "gdpr" && !cert) {
+    if (confirmed && key === "gdpr" && !cert) {
       return `Yes. ${report.vendor} provides a GDPR data processing agreement (DPA) covering how customer data is handled.`;
     }
-    if (isHeld) return `Yes, ${report.vendor} lists ${label} compliance.`;
+    if (confirmed) return `Yes, ${report.vendor} lists ${label} compliance.`;
     return `We could not confirm ${label} for ${report.vendor} from its public trust or security pages. This does not necessarily mean the vendor lacks it. Confirm directly with the vendor.`;
   };
   faq.push({ q: `Is ${product} SOC 2 compliant?`, a: certAnswer("soc2", "SOC 2") });
