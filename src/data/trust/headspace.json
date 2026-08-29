@@ -47,8 +47,8 @@
   "privacy": {
     "privacy_policy_url": "https://www.headspace.com/privacy-policy",
     "terms_url": "https://www.headspace.com/terms-and-conditions",
-    "dpa": "unknown",
-    "trains_on_customer_data": "unknown",
+    "dpa": null,
+    "trains_on_customer_data": null,
     "ai_training_note": "The privacy policy states data is used 'to power machine learning algorithms that support our Platform.' Ebb was trained on proprietary curated datasets combined with external LLMs, but the policy does not explicitly state whether ongoing user conversation data is fed back into model training. No opt-out mechanism for AI training is disclosed. Reflections in Ebb are not shared with care teams (unless user elects to share) and are not used for targeted advertising. The ambiguity here is material given the sensitive mental health context.",
     "data_region": "Primarily United States. Privacy policy states: 'our Platform is operated in the United States where your personal information will be primarily processed and stored.' EU/UK data transfers rely on the EU-U.S. Data Privacy Framework.",
     "sources": [
@@ -148,7 +148,7 @@
     "pricing_model": "Consumer: subscription-based (monthly ~$12.99, annual ~$69.99, lifetime $399.99). Enterprise/B2B: per-employee per year pricing (custom, approx. $18-36/employee/year), negotiated per contract size and tier.",
     "self_hostable": false,
     "data_residency": "Primarily United States. No EU data residency option confirmed in public sources. EU transfers covered by EU-U.S. Data Privacy Framework.",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "SOC 2 Type II",
       "HITRUST",

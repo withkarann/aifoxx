@@ -41,7 +41,7 @@
   "privacy": {
     "privacy_policy_url": "https://www.hypotenuse.ai/privacy-policy",
     "terms_url": "https://www.hypotenuse.ai/terms-of-service",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Terms of service state customers retain rights to submitted/generated content, and that Hypotenuse may collect usage data to improve the Services 'solely in aggregate or other de-identified form' - i.e. no training of models on identifiable customer content by default. Vendor messaging states data is 'never shared with third parties or used to train public AI models.' Note: the public privacy policy itself does not explicitly address model training, so the binding commitment lives in the ToS / enterprise contract; underlying third-party LLM subprocessors are not named.",
     "data_region": "United States (privacy policy discloses transfer to and maintenance on computers in the United States). Corporate entity is Singapore-based (Hypotenuse Technologies Pte. Ltd.).",

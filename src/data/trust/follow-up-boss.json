@@ -59,7 +59,7 @@
   "privacy": {
     "privacy_policy_url": "https://www.followupboss.com/legal-pages/privacy-notice",
     "terms_url": "https://www.followupboss.com/legal-pages/terms-of-service",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": true,
     "ai_training_note": "Terms of Service (Section 6.5) explicitly authorize Zillow to use Customer Data for AI/ML Activities including designing, developing, pre-training, training, fine-tuning, and evaluating ML systems. A carve-out applies: Agent-Only Customer Data (end customers without a Zillow account) is NOT used for Zillow products other than FUB. However, Mutual Customer Data (end customers who also have a Zillow account) is subject to Zillow's full Privacy Notice with fewer restrictions. The AI features page states 'it is not used to train global AI models or any external systems,' which partially softens but does not override the broad ToS grant. Internal training for FUB service improvement is permitted and likely occurs.",
     "data_region": "Not disclosed. Vendor states 'leading cloud platform technologies' without naming the provider or geographic region. Presumed US-based given Zillow Group infrastructure.",

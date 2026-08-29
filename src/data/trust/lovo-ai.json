@@ -59,7 +59,7 @@
   "privacy": {
     "privacy_policy_url": "https://lovo.ai/privacy",
     "terms_url": "https://lovo.ai/tos",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": true,
     "ai_training_note": "Training on customer-provided data is the default. ToS (Custom Voice Cloning section): 'By using Custom Voice Designing (Cloning) Services offered by LOVO, you grant permission to LOVO and its affiliates to use the data you provided for research and development purposes to further improve the technology, products, and Services they offer. Any data, including sensitive personal information, will not be shared with 3rd parties unless for the purposes of research, development, and enhancement of technology and Services.' The privacy policy lists 'improve our machine learning features and services' as a collection purpose and says uploaded voice recording data is used 'solely to improve our Services provided to you.' No documented opt-out toggle was found. Voice cloning requires that the user warrant they hold consent/rights to the uploaded voice.",
     "data_region": "US-based (LOVO, Inc., SkyDeck, 2150 Shattuck Ave, Berkeley, CA; governing law Delaware). Hosting reported on AWS/Vercel via third-party profile. Privacy policy states personal data 'may be transferred to and stored outside the country in which you are located.' No EU/regional data-residency option is documented.",

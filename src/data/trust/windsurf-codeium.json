@@ -41,7 +41,7 @@
   "privacy": {
     "privacy_policy_url": "https://windsurf.com/privacy-policy",
     "terms_url": "https://windsurf.com/terms-of-service",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Opt-out by default for all users and contractually excluded for enterprise. Vendor docs state: 'By default, we do not use any of your data for model training purposes unless you explicitly opt-in' and 'If you are an Enterprise customer, we will never train on your data.' Legacy Windsurf/Codeium positioning also advertised zero-data-retention for paid/enterprise seats.",
     "data_region": "United States. Subprocessor data locations on trust center: GCP us-central1 (Council Bluffs, IA) for cloud infrastructure; AWS us-west-2 (processing); OpenAI Chat API US (processing); Cerebras US, Crusoe us-southcentral-1, CoreSite Santa Clara CA (processing).",
@@ -106,7 +106,7 @@
   ],
   "compare": {
     "pricing_model": "Freemium + subscription: Free $0, Pro $20/mo, Max $200/mo, Teams $80/mo + $40/full seat, Enterprise (custom).",
-    "self_hostable": "yes (enterprise): Windsurf/Codeium Extensions are offered in self-hosted and hybrid deployments, which underpin the FedRAMP High / IL5 enterprise environment; the consumer Windsurf / Devin Desktop app is cloud-backed.",
+    "self_hostable": true,
     "data_residency": "US-only (GCP us-central1, AWS us-west-2, plus US-based inference subprocessors).",
     "trains_on_data": false,
     "top_certs": [
@@ -121,6 +121,7 @@
     "FedRAMP High is CONFIRMED, but scoped to Windsurf/Codeium Extensions (the enterprise self-hosted/FedRAMP offering), not the consumer Windsurf IDE, Cascade, or Devin cloud agents. Authorization announced March 10, 2025, FedRAMP Marketplace ID FR2315464863, with DoD IL5 and ITAR data-handling. Earlier draft marked this unknown; that was a missed real certification. HIPAA BAA support is referenced by multiple third-party reports but is not confirmed on current vendor security docs or the trust center, so it remains unknown.",
     "CMMC and FedRAMP trust-center entries are control-mapping/responsibility documents (CRM/Workbook), which are commonly mistaken for certifications; they are not.",
     "DPA existence is likely (enterprise customers, SOC 2) but no DPA URL was directly verifiable; marked unknown.",
-    "SOC 2 report itself is gated behind an NDA request, so the report contents could not be independently inspected; the SOC 2 Type II claim is corroborated by the vendor blog (auditor Prescient Assurance) and current security docs."
+    "SOC 2 report itself is gated behind an NDA request, so the report contents could not be independently inspected; the SOC 2 Type II claim is corroborated by the vendor blog (auditor Prescient Assurance) and current security docs.",
+    "compare.self_hostable recorded as: yes (enterprise): Windsurf/Codeium Extensions are offered in self-hosted and hybrid deployments, which underpin the FedRAMP High / IL5 enterprise environment; the consumer Windsurf / Devin Desktop app is cloud-backed."
   ]
 }

@@ -47,8 +47,8 @@
   "privacy": {
     "privacy_policy_url": "https://www.gomoonbeam.com/privacy",
     "terms_url": "",
-    "dpa": "unknown",
-    "trains_on_customer_data": "unknown",
+    "dpa": null,
+    "trains_on_customer_data": null,
     "ai_training_note": "Moonbeam is built on top of GPT-4 / ChatGPT-class models (the marketing site references 'GPT-4 powered Smart Chat' and 'ChatGPT', surfaced through a 'Luna' AI persona; no GPT-3 claim is evidenced). The privacy policy is silent on whether user-generated documents are used to train AI models, and there is no AI/data-use policy on the site. Processing purposes listed are limited to providing/improving/administering the Service, marketing, security/fraud prevention, and legal compliance; 'improve... our Services' is generic and does not confirm or rule out model training. No opt-out toggle for AI training is disclosed.",
     "data_region": "unknown",
     "sources": [
@@ -117,7 +117,7 @@
     "pricing_model": "Freemium - generous Free Plan plus paid Moonbeam Pro subscription with a 30-day 100% money-back guarantee",
     "self_hostable": false,
     "data_residency": "unknown",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": []
   },
   "confidence": "medium",

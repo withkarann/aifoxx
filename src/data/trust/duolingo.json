@@ -59,7 +59,7 @@
   "privacy": {
     "privacy_policy_url": "https://www.duolingo.com/privacy",
     "terms_url": "https://www.duolingo.com/terms",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": true,
     "ai_training_note": "Duolingo explicitly trains on user-generated content in two ways. First, for AI features (Video Call, Roleplay): 'Duolingo may generate, record, and store audio recordings or transcripts of the text and audio you submit, and use these recordings or transcripts for product improvement and personalization purposes, including training and running Duolingo's own artificial intelligence models.' Second, for all users via anonymization: 'Duolingo may anonymize your personal information, and use this de-identified data for any purpose, such as better understanding learning trends and training artificial intelligence models.' Users can opt out of sharing audio for product improvement in app Settings, but there is no opt-out for training on anonymized data. AI vendors (OpenAI, Google) are contractually barred from using Duolingo user data for their own purposes.",
     "data_region": "United States (Amazon Web Services). No explicit EU data residency commitment found for the consumer app. DET supplemental privacy terms may differ.",

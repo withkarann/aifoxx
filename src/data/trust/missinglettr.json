@@ -48,7 +48,7 @@
     "privacy_policy_url": "https://missinglettr.com/legal/privacy/",
     "terms_url": "https://missinglettr.com/legal/terms/",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "No explicit policy on AI model training found. The privacy policy states aggregated and de-identified data 'may be shared, licensed, or sold to third parties' for analytics, research, and product development. The platform uses AI to generate social media posts from blog content, but neither the privacy policy nor security page addresses whether user content is used to train underlying AI models. No dedicated AI data-use policy exists.",
     "data_region": "Canada primary; also United States and other jurisdictions where Google Cloud Platform operates",
     "sources": [
@@ -151,7 +151,7 @@
     "pricing_model": "Subscription (monthly or annual). Solo $12/month, Pro $32/month, Agency $117/month (annual pricing). Enterprise custom.",
     "self_hostable": false,
     "data_residency": "Canada and United States (Google Cloud); no customer-selectable region",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": []
   },
   "confidence": "medium",

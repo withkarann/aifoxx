@@ -41,7 +41,7 @@
   "privacy": {
     "privacy_policy_url": "https://prowritingaid.com/en/Home/Privacy",
     "terms_url": "https://prowritingaid.com/en/Home/Terms",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "ProWritingAid explicitly states it does NOT train its models on customer text. 'When using ProWritingAid, your texts will not be used to improve the quality of our services. We use texts hand corrected by professional copyeditors to train our algorithms.' Grammar-checked text is deleted after processing; only documents a user explicitly saves in the Web Editor are retained (encrypted) in the cloud. Trust Center: 'Our writing suggestions use our unique Natural Language Processing models that never retain your text.'",
     "data_region": "Primary processing in the United Kingdom; data stored on servers in the USA, with service providers also operating in the EEA and US. GDPR page: 'All ProWritingAid data is held on servers hosted outside of the EU in the USA.' Cross-border transfers covered by Standard Contractual Clauses (SCCs).",

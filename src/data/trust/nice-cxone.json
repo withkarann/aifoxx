@@ -102,7 +102,7 @@
     "privacy_policy_url": "https://www.nice.com/company/legal/privacy-policy",
     "terms_url": "https://www.nice.com/company/legal/nice-enterprise-terms-and-conditions/terms-and-conditions",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "Ambiguous. NICE claims AI models are 'trained on the largest CX dataset in the industry and refined across billions of interactions' but does not explicitly confirm or deny using individual customer data for shared model training. The Terms prohibit customers from using the service to train competing AI models (Section 3.6). The DPA restricts NICE's processing to the 'Permitted Purpose' under the Master Relationship Agreement. Third-party models are described as operating 'within secure, private instances.' No explicit opt-out mechanism for AI model training was found on public-facing pages. Enterprise customers should seek written confirmation in their contract.",
     "data_region": "Multi-region: Americas (US East, US West, Canada, South America, FedRAMP US East), EMEA, APAC",
     "sources": [
@@ -194,7 +194,7 @@
     "pricing_model": "Enterprise subscription (CCaaS). Usage-based tiered model billed monthly in arrears. No publicly listed per-seat pricing; requires contact with sales team. Packages available as preconfigured bundles (Essential, Core, Complete tiers referenced in resources).",
     "self_hostable": false,
     "data_residency": "Multi-region cloud deployment across Americas (US East, US West, Canada, South America, FedRAMP US East), EMEA, and APAC. Region selection agreed in Master Relationship Agreement. NICE commits to negotiate in good faith on data localization but does not guarantee changing data center location unilaterally.",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "SOC 2 Type II + HITRUST",
       "ISO 27001",

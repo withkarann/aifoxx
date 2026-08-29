@@ -54,7 +54,7 @@
     "privacy_policy_url": "https://www.freshbooks.com/policies/privacy",
     "terms_url": "https://www.freshbooks.com/policies/terms-of-service",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "FreshBooks states AI is used for fraud detection, support chatbot, and credit evaluation. Privacy policy does not explicitly prohibit training models on customer data. Terms of Service permit use of data for 'conducting simulations, analytics or modeling (including through Authorized Partners) to generate reports, trends, or recommendations,' though 'reasonable confidentiality and security measures, including de-identifying or aggregating User Content prior to external use' are required. No explicit opt-out for AI/ML model training is disclosed.",
     "data_region": "United States (Google Cloud Platform). EU/UK users' data may be transferred to the US under Standard Contractual Clauses and UK Addendum. No EU data residency option identified.",
     "sources": [
@@ -140,7 +140,7 @@
     "pricing_model": "Subscription (SaaS). Multiple tiers: Lite, Plus, Premium, Select (custom). 30-day free trial available. Currently offering 90% off for 6 months promotional pricing.",
     "self_hostable": false,
     "data_residency": "United States (GCP). No EU data residency option. EU transfers covered by SCCs and UK Addendum.",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "PCI DSS Level 1",
       "SOC 2 Type 1",

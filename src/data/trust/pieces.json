@@ -35,7 +35,7 @@
   "privacy": {
     "privacy_policy_url": "https://pieces.app/legal/privacy-policy",
     "terms_url": "https://pieces.app/legal/terms",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Vendor explicitly and repeatedly states user data is never used to train models. Security page: 'User data is never used to train any model at Pieces. Instead, our nanomodels are trained exclusively on synthetic datasets generated using non-user-derived Oracle models.' Architecture is local-first / on-device by default; nothing is sent to the cloud unless the user explicitly initiates it. Optional cloud LLM features (e.g. OpenAI, Claude) send only the user's immediate prompt scope, not full memory logs.",
     "data_region": "US-based vendor (1311 Vine St., Cincinnati, OH 45202). Data is local/on-device by default. For any cloud-processed data, privacy policy states: 'Your personal information may be transferred, stored, or processed on servers outside of your home country' using legally-approved transfer mechanisms. No specific data-residency selection / region pinning is advertised.",
@@ -98,7 +98,7 @@
   ],
   "compare": {
     "pricing_model": "Free downloadable developer tool (Windows/macOS/Linux); freemium positioning with optional cloud features and bring-your-own-key. No public enterprise pricing tier verified.",
-    "self_hostable": "unknown",
+    "self_hostable": null,
     "data_residency": "Local/on-device by default; no cloud region selection advertised. Cloud-processed data may be handled on US/other servers.",
     "trains_on_data": false,
     "top_certs": [

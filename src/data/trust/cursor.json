@@ -35,7 +35,7 @@
   "privacy": {
     "privacy_policy_url": "https://cursor.com/privacy",
     "terms_url": "https://cursor.com/terms-of-service",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": true,
     "ai_training_note": "Default (Privacy Mode OFF) DOES train on customer data: \"we may use and store codebase data, prompts, editor actions, code snippets, and other code data and actions to improve our AI features and train our models.\" With Privacy Mode ON: \"Customer Data will not be used for training by Cursor. Cursor maintains zero data retention (ZDR) agreements with all providers, and AI model providers will not store or train on your data.\" Privacy Mode is available to any user (free or Pro) and can be enforced by a team/enterprise admin. Caveat: abuse/risk classifiers may store data if abuse detectors are triggered. Codebase indexing: plaintext code for embeddings \"ceases to exist after the life of the request,\" but embeddings and metadata (hashes, file names) may be stored.",
     "data_region": "Primarily AWS US region, with some latency-critical services in Europe (EU) and Singapore. No infrastructure in China and no China-headquartered subprocessors.",

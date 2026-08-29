@@ -35,8 +35,8 @@
   "privacy": {
     "privacy_policy_url": "https://slidebean.com/privacy",
     "terms_url": "https://slidebean.com/terms",
-    "dpa": "unknown",
-    "trains_on_customer_data": "unknown",
+    "dpa": null,
+    "trains_on_customer_data": null,
     "ai_training_note": "Slidebean markets an 'AI Pitch Deck Creator' but publishes no AI/data-use or model-training policy. Neither the privacy policy (last updated Sept 2021, predating its generative-AI features) nor the terms (last updated May 2018) address whether user deck content or prompts are used to train AI models, or which third-party LLM provider powers the feature. The privacy policy states 'We do not sell to, trade with or otherwise transfer to outside parties your personally identifiable information' and lists sub-processors at templates.slidebean.com/gdpr-data, but is silent on model training. Default behavior is genuinely undocumented; treat as unknown and request written clarification for any sensitive/confidential deck content.",
     "data_region": "United States (company HQ 25 Broadway, New York) with processing in Costa Rica (San Jose) and 'other countries'. Terms: 'you herein consent to the collection and use of the information provided, including the transfer of information within the Costa Rica and/or other countries for storage, processing or use by Slidebean Inc and/or our subsidiaries and affiliates'. No EU data-residency option is offered.",
     "sources": [
@@ -111,7 +111,7 @@
     "pricing_model": "Freemium SaaS subscription (free sign-up tier plus paid plans) for the software; separate quoted professional-services fees for the agency offerings",
     "self_hostable": false,
     "data_residency": "US-headquartered; processing in Costa Rica and other countries; no EU/region pinning option offered",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": []
   },
   "confidence": "medium",

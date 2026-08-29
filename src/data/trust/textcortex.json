@@ -121,7 +121,7 @@
   ],
   "compare": {
     "pricing_model": "Freemium plus paid individual/team subscriptions; custom Enterprise pricing (demo-led)",
-    "self_hostable": "unknown",
+    "self_hostable": null,
     "data_residency": "EU (Germany/EU servers; EU data sovereignty positioning)",
     "trains_on_data": true,
     "top_certs": [

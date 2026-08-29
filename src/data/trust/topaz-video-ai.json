@@ -35,7 +35,7 @@
   "privacy": {
     "privacy_policy_url": "https://www.topazlabs.com/privacy-policy",
     "terms_url": "https://topazlabs.com/eula",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Vendor states explicitly it does not train models on customer content. Enterprise page: 'We never train models using customer data or content.' and 'No-retention mode guarantees customer data is never persisted or used for training.' Consumer privacy policy notes that media submitted for enhancement may be cached/stored only as needed to provide the service, not for training. Desktop local rendering keeps files entirely on the user's machine ('Your files never leave your computer with local rendering').",
     "data_region": "United States (cloud rendering). Local/desktop rendering is on-device, so no data leaves the user's computer. Data controller entity is US-based (Dallas, TX); acts as controller for EEA users.",

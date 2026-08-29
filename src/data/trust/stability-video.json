@@ -41,7 +41,7 @@
   "privacy": {
     "privacy_policy_url": "https://stability.ai/privacypolicy",
     "terms_url": "https://stability.ai/terms-of-service",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": true,
     "ai_training_note": "Trains on customer Inputs and Outputs BY DEFAULT to improve and develop models, with a user opt-out available. Privacy Policy: 'When we use your Inputs and Outputs to train our models, you can opt-out of our use of this personal data for these training purposes.' Terms: 'we may use Inputs and Outputs to improve and develop our Services (but you can opt-out ...).' Opt-out is product-specific: Platform API has a dedicated opt-out (kb.stability.ai), Stable Audio via account page, Stable Assistant via turning off chat history. NOTE: the self-hosted Stable Video Diffusion model runs on the customer's own infrastructure, so this default-train behavior applies to hosted Services (API/Brand Studio/Stable Audio/Assistant), not to self-hosted deployments.",
     "data_region": "Processed in the US and on servers outside the EEA/UK/Switzerland; EU/UK/Swiss transfers covered by adequacy decisions and SCCs. EU data controller: Stability AI Ltd (London, UK); non-EU data controller: Stability AI US Services Corporation (Los Angeles, CA).",

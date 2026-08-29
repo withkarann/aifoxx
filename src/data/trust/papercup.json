@@ -30,7 +30,7 @@
     "privacy_policy_url": "https://www.rws.com/legal/privacy/",
     "terms_url": "https://www.rws.com/legal/terms-of-use/",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "RWS positions its AI (Language Weaver, secure dubbing) around confidentiality, traceability and human-in-the-loop oversight ('RWS combines human oversight with secure AI to safeguard sensitive information'; 'maintaining the confidentiality and traceability regulators demand'). No explicit 'we do not train on customer data by default' statement was located on the public security/privacy pages, so default training behavior could not be confirmed verbatim. Enterprise localization positioning strongly implies customer content is not used to train shared models, but this should be confirmed via DPA/contract.",
     "data_region": "Global. UK-headquartered (LSE-listed). Personal data processed by third parties both inside and outside the EU under signed data processing agreements.",
     "sources": [
@@ -98,9 +98,9 @@
   ],
   "compare": {
     "pricing_model": "Enterprise / custom (contact sales; no public self-serve pricing)",
-    "self_hostable": "unknown",
+    "self_hostable": null,
     "data_residency": "Global processing in and outside the EU under DPAs; specifics negotiated per contract",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "ISO 27001:2022",
       "SOC 2 Type II"

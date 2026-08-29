@@ -35,8 +35,8 @@
   "privacy": {
     "privacy_policy_url": "https://fliki.ai/privacy",
     "terms_url": "https://fliki.ai/terms",
-    "dpa": "unknown",
-    "trains_on_customer_data": "unknown",
+    "dpa": null,
+    "trains_on_customer_data": null,
     "ai_training_note": "Voice cloning is explicitly excluded from training: 'samples are never shared, never used to train Fliki's public TTS models, and never made available to other users' (fliki.ai/features/voice-cloning). However the Terms grant Fliki a broad content license: 'you grant Us the right and license to access, use, host, store, cache, modify, reproduce, transmit, display, publish, and distribute your Content to operate, improve, promote and provide the Services and to develop new services and products.' That 'improve... and develop new services and products' language is broad enough to cover model/product improvement on user content other than voice samples, and is not explicitly carved out. No standalone AI/data-use policy stating a blanket no-training default was found.",
     "data_region": "United States (servers and central databases in the US). 'such information may be transferred, stored or processed in the United States where our servers or central databases are located.' No EU data residency option found.",
     "sources": [
@@ -112,7 +112,7 @@
     "pricing_model": "Freemium SaaS subscription (free plan + monthly/yearly paid tiers, auto-renewing). No public enterprise pricing.",
     "self_hostable": false,
     "data_residency": "United States only",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": []
   },
   "confidence": "medium",

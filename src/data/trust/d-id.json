@@ -59,7 +59,7 @@
   "privacy": {
     "privacy_policy_url": "https://www.d-id.com/privacy-policy/",
     "terms_url": "https://www.d-id.com/terms-of-use/",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Privacy policy states uploaded user content is not used to train models: 'While in the storage, awaiting processing or deletion, the Applicative Data is not accessed for any purpose, including not accessed for model training.' Applicative data uploaded via API is auto-erased (24h via AWS settings; 72h for Agents; 14d for Insight Service) unless the user sets a persist flag; Studio data persists until user deletion.",
     "data_region": "AWS, Oregon, USA (primary storage for Software and Applicative Data). Sub-processors (Salesforce, HubSpot, Zendesk) are also US-based.",

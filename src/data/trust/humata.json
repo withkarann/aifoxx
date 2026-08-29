@@ -41,7 +41,7 @@
   "privacy": {
     "privacy_policy_url": "https://www.humata.ai/privacy-policy",
     "terms_url": "https://www.humata.ai/terms",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Vendor explicitly states it does not train AI models on customer data: 'We do not use any of the data provided by our users to train our AI models.' Per supplementary sources, document data used by the model is not retained beyond 30 days, while dashboard data is retained until the user deletes it. Users own and can permanently delete their data.",
     "data_region": "unknown",

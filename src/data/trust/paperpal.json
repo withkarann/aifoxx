@@ -53,7 +53,7 @@
   "privacy": {
     "privacy_policy_url": "https://paperpal.com/privacy-policy",
     "terms_url": "https://paperpal.com/terms-of-use",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Paperpal repeatedly and explicitly states it does not train AI on customer content. Homepage: 'your data is never used to train AI systems' and 'We don't train AI models on your data. Ever.' Data-security page, in answer to whether they train on user data: 'Never! Our AI models are trained on independent datasets safeguarded by a strict privacy policy.' Paperpal uses a mix of best-fit third-party models plus proprietary generative AI trained on scholarly (published research) data, not user manuscripts. HIPAA/PHI processing is supported only under a signed BAA; standard service does not process PHI by default.",
     "data_region": "Multi-region cloud (AWS, Google Cloud, Azure); backups across multiple regions. No customer-selectable single-region residency documented. Legal entity is Cactus Communications Services Pte Ltd (Singapore); regional sites for China, Korea, Japan exist. Encryption: 256-bit in transit, KMS-key encryption at rest.",

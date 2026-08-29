@@ -35,8 +35,8 @@
   "privacy": {
     "privacy_policy_url": "https://www.vidnoz.com/privacy.html",
     "terms_url": "https://www.vidnoz.com/terms.html",
-    "dpa": "unknown",
-    "trains_on_customer_data": "unknown",
+    "dpa": null,
+    "trains_on_customer_data": null,
     "ai_training_note": "Vidnoz's main Privacy Policy (Last Update March 2026) and Terms (Oct 2024) do NOT explicitly say whether user Input/Output is used to train AI models. The Terms grant Vidnoz a broad license to 'access, use, host, cache, store, reproduce, transmit, display, publish, distribute, and modify for technical purposes Your Content but solely as required to be able to operate, improve, promote and provide the Services,' and the Privacy Policy says data is used 'to develop new products, services, features, and functionalities' and that aggregated/de-identified data is used 'to improve and add features.' Third-party summaries claim Vidnoz 'does not use user input data for AI training unless users voluntarily submit specific content (e.g. custom Avatar Lite/Pro or Voice Clones),' but this no-train statement could NOT be confirmed verbatim on a Vidnoz-owned page during this review, so it is treated as unverified. Net: ambiguous. Note Vidnoz processes biometric-grade data (face images for custom avatars, voice samples for voice cloning), which raises the sensitivity of this open question.",
     "data_region": "unknown",
     "sources": [
@@ -125,7 +125,7 @@
     "pricing_model": "Freemium: free tier with daily credits (no card required), paid Pro plans per product (Vidnoz AI Plan, Vidnoz Flex Plan), plus custom Enterprise agreements.",
     "self_hostable": false,
     "data_residency": "unknown",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "ISO/IEC 27001:2022"
     ]
