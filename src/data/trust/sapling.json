@@ -60,7 +60,7 @@
     "privacy_policy_url": "https://sapling.ai/privacy",
     "terms_url": "https://sapling.ai/terms",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "Consumer privacy policy states content 'is stored by us and used only to improve the Service,' wording that is broad and does not explicitly confirm or deny use of customer content for AI or model training, and does not state a default opt-out for the consumer tier. The enterprise tier mitigates this: Sapling offers 'customized storage and data retention options,' PII redaction, self-hosted/on-prem deployment, and maintains a published AI Governance Policy in its trust center. No explicit 'we do not train on your data by default' statement is published for the enterprise tier. Sapling does state 'We do not sell or rent customer data.'",
     "data_region": "United States (AWS). Privacy policy: 'Our Services are hosted in the United States.' EU/other-region users have data transferred to the US for storage and processing.",
     "sources": [
@@ -130,7 +130,7 @@
     "pricing_model": "Freemium + subscription (free tier, no card required) with paid Pro and Enterprise plans; usage-based API/SDK access.",
     "self_hostable": true,
     "data_residency": "United States (AWS); self-hosted/on-prem option for customers needing in-house residency.",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "SOC 2 Type II",
       "GDPR compliant",

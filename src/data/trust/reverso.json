@@ -41,7 +41,7 @@
   "privacy": {
     "privacy_policy_url": "https://www.reverso.net/privacy/en",
     "terms_url": "https://www.reverso.net/terms/en",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "For the Corporate product: vendor claims 'your data remains your property: it is never used to train our models' (sourced from corporate-translation.reverso.com). For the consumer/free product: the privacy policy states 'When you are not logged in, no personal data is stored by Reverso. When you are logged in to Reverso Translation, Conjugation, or Spelling services, no personal data is collected.' An exception exists: Reverso retains 'an anonymized and sampled history of spelling errors corrected by its spelling checker, for the sole purpose of analyzing this data for statistical purposes and improving the services offered.' This is anonymized, not raw user content. Document uploads in Reverso Documents are stored temporarily and may be accessed by support only if the user requests help; users can delete at any time.",
     "data_region": "Europe (all personal data is hosted in Europe per the privacy policy; corporate product advertises 100% European hosting)",

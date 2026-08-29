@@ -41,8 +41,8 @@
   "privacy": {
     "privacy_policy_url": "https://www.altered.ai/privacy/",
     "terms_url": "https://www.altered.ai/terms-and-conditions/",
-    "dpa": "unknown",
-    "trains_on_customer_data": "unknown",
+    "dpa": null,
+    "trains_on_customer_data": null,
     "ai_training_note": "No explicit statement that customer audio/voice is or is not used to train Altered's models. The privacy policy lists service-improvement and analytics as a use of Personal Data ('to evaluate and improve our Service'), but does not specifically address training voice models on user uploads. The product mitigates this for some workflows by offering fully local processing: marketing pages state 'Clone locally on your own PC without exposing your data to any server' and 'Without cloud transfers, your data never leaves your premises' (Local cloning). Cloud ('Rapid') and Custom services do send audio to Altered/cloud infrastructure (AWS, plus Google/Microsoft for speech transcription). Voice cloning of a real person and Custom Voice services raise consent/biometric considerations the user must manage. Treat training-on-customer-data as UNVERIFIED, not confirmed-false.",
     "data_region": "unknown",
     "sources": [
@@ -113,7 +113,7 @@
     "pricing_model": "Paid subscription (monthly/annual, auto-renewing), with free trial; tiered licences (Creator licence for <5 employees and <$100k revenue; Commercial licence for broader use). In-app purchases via app stores possible.",
     "self_hostable": false,
     "data_residency": "unknown",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": []
   },
   "confidence": "medium",

@@ -35,8 +35,8 @@
   "privacy": {
     "privacy_policy_url": "https://designs.ai/en/privacy",
     "terms_url": "https://designs.ai/en/terms",
-    "dpa": "unknown",
-    "trains_on_customer_data": "unknown",
+    "dpa": null,
+    "trains_on_customer_data": null,
     "ai_training_note": "No explicit statement that user content trains AI models. Terms clause 7 states content 'may be retained by us for a reasonable period of time for the purposes of: (i) improving or enhancing the Website and Services... (ii) analysing and measuring the effectiveness of the Website and Services', which is ambiguous and could imply service/model improvement but does not clearly say models are trained on user inputs. Biometric data is explicitly protected: 'We do not store, collect or use your facial features for any other purposes' and 'facial geometry will not be shared to any third parties.' No dedicated AI/data-use or DPA page was found.",
     "data_region": "Data controller is Pixlr Pte. Ltd., Singapore (36 Robinson Road, City House). Privacy policy states Personal Data 'may be transferred outside the European Economic Area (EEA)' with safeguards 'including binding corporate rules or standard data protection clauses adopted by the European Commission'. No fixed/single data residency guarantee offered.",
     "sources": [
@@ -94,7 +94,7 @@
     "pricing_model": "Subscription (monthly/yearly, auto-renewing) with monthly usage Credits that expire and do not roll over; separately Purchased Credits valid 1 year; all fees in USD. No free-forever enterprise tier documented.",
     "self_hostable": false,
     "data_residency": "No guaranteed region; controller in Singapore, EEA transfers under SCCs/BCRs, no customer-selectable data region.",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": []
   },
   "confidence": "high",

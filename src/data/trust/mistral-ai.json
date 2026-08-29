@@ -48,7 +48,7 @@
     "privacy_policy_url": "https://legal.mistral.ai/terms/privacy-policy?language=en-US",
     "terms_url": "https://legal.mistral.ai/terms",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "Product-dependent. For consumer products (free Le Chat), Input and Output ARE used to train models by default, subject to an in-account opt-out: \"Your Input and Output, subject to your opt-out.\" For business and enterprise tiers, training is OFF: \"we do not use your Input and Output to train our artificial intelligence models when you use Le Chat Enterprise or the paid version of our APIs.\" In-app 'thumbs up/down' Feedback (plus associated Input/Output) is used for training as Controller regardless of tier. When Mistral acts as data processor for business customers, the Privacy Policy does not apply and the DPA governs.",
     "data_region": "EU by default (\"Our servers are hosted in the EU\"). Self-hosted/on-prem and VPC options keep data in the customer environment. A US API region is available (subprocessor Google LLC, Netherlands/United States). International transfers covered by EU Standard Contractual Clauses under Article 46 GDPR.",
     "sources": [
@@ -141,7 +141,7 @@
     "pricing_model": "Freemium consumer (Le Chat free/Pro) + usage-based API pricing + enterprise/commercial contracts + self-managed compute",
     "self_hostable": true,
     "data_residency": "EU-default (EU-hosted servers); self-hosted/on-prem and VPC options; optional US API region; SCCs for restricted-country transfers",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "ISO/IEC 27001:2022",
       "ISO/IEC 27701:2019",

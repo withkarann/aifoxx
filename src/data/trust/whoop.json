@@ -41,7 +41,7 @@
   "privacy": {
     "privacy_policy_url": "https://www.whoop.com/us/en/full-privacy-policy/",
     "terms_url": "https://www.whoop.com/us/en/terms-of-use/",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "WHOOP Coach is powered by OpenAI. Per the full privacy policy: 'We have ensured that our LLM partner has a Zero-Retention/Zero Training Policy with respect to your WHOOP metrics.' WHOOP shares only de-identified WHOOP metrics with OpenAI. Conversations with WHOOP Coach are retained by WHOOP (not stored by third parties) for service continuity. Separately, WHOOP uses aggregated and de-identified wellness data (no longer personally identifiable) for internal human performance research. Individual identifiable data is never used for AI model training.",
     "data_region": "United States. The full privacy policy states: 'To provide the Services, we will process your Personal Data in the United States, where WHOOP is based.' No EU or regional data residency option is mentioned in public documentation.",

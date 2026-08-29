@@ -47,7 +47,7 @@
   "privacy": {
     "privacy_policy_url": "https://playground.com/privacy",
     "terms_url": "https://playground.com/terms",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": true,
     "ai_training_note": "No explicit opt-out or 'we do not train on your data' statement. The Terms grant Playground a broad, perpetual license over user content for service improvement: \"you grant to Playground AI ... a perpetual, worldwide, non-exclusive, sublicensable, no-charge, royalty-free, irrevocable copyright license to use, copy, reproduce, process, adapt, modify ... text prompts and images you input into the Services, or Assets produced by the Service ... to use such Assets as needed to provide, maintain, promote and improve the Services.\" Separately, content is community-facing by default: \"By default, your Assets may be publicly viewable and remixable by others.\" The privacy policy lists a purpose 'To improve and develop our Services.' Taken together this is consistent with using customer inputs/outputs to improve models. No business/enterprise carve-out (e.g. 'we do not train on paid/team content') was found.",
     "data_region": "unknown",

@@ -35,7 +35,7 @@
   "privacy": {
     "privacy_policy_url": "https://sudowrite.com/privacy-policy",
     "terms_url": "https://sudowrite.com/terms-and-conditions",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Sudowrite states it does not train AI models on user writing. FAQ direct quote: 'We do not use your writing to train AI models.' Founder Amit Gupta has separately stated 'No manuscripts were used to train the AI as we have not done any training.' Generation is powered by third-party LLM providers (e.g. OpenAI enterprise API, which contractually does not retain or train on submitted data) plus Sudowrite's own 'Muse' fiction model. Any review of user content for model fine-tuning is described as optional and consent-based.",
     "data_region": "unknown (US-based company governed by California law; privacy policy notes cross-border transfers may occur but does not specify a hosting region)",

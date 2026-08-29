@@ -59,8 +59,8 @@
   "privacy": {
     "privacy_policy_url": "https://www.similarweb.com/corp/legal/privacy-policy/",
     "terms_url": "https://www.similarweb.com/corp/legal/terms-of-service/",
-    "dpa": "unknown",
-    "trains_on_customer_data": "unknown",
+    "dpa": null,
+    "trains_on_customer_data": null,
     "ai_training_note": "Similarweb is itself a data vendor, not an LLM provider. Its 'Data for AI' offering states training datasets are 'aggregated, anonymized, and privacy-compliant' and 'fully licensed for commercial AI training', sourced from a global opted-in panel - this concerns the data products it SELLS, not ingestion of a SaaS customer's own uploaded business data. No statement was found indicating Similarweb trains models on a customer's CRM/account data submitted to Sales Intelligence or other SaaS products. Customers ingesting personal data (e.g. CRM enrichment) should review the DPA and obtain explicit AI-use terms.",
     "data_region": "unknown (Similarweb runs on cloud infrastructure; the privacy statement allows international transfer with safeguards. The third-party cookie/consent provider referenced on the marketing site is Microsoft.)",
     "sources": [
@@ -169,7 +169,7 @@
     "pricing_model": "Commercial subscription (free tools + free trial; paid Starter/Team/Enterprise tiers; custom enterprise and DaaS/API contracts; 'Get a demo' / 'Talk to Sales' for higher tiers)",
     "self_hostable": false,
     "data_residency": "unknown / cloud-hosted with international transfer safeguards (no public residency-selection commitment found)",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "SOC 2 Type II",
       "ISO/IEC 27001:2022",

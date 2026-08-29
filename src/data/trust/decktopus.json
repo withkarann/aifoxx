@@ -47,8 +47,8 @@
   "privacy": {
     "privacy_policy_url": "https://www.decktopus.com/privacy",
     "terms_url": "https://www.decktopus.com/terms",
-    "dpa": "unknown",
-    "trains_on_customer_data": "unknown",
+    "dpa": null,
+    "trains_on_customer_data": null,
     "ai_training_note": "The privacy policy does not explicitly state whether user presentation content or prompts are used to train AI models. It lists generic uses such as to 'develop new products, features, and services' and to improve Services, and states 'We do not sell or rent personal information.' AI generation (DecktoGPT) is presumably powered by third-party model providers, but no AI-data-use / training-opt-out policy is published on the vendor domain. Treat training-on-customer-data as unverified.",
     "data_region": "unknown",
     "sources": [
@@ -118,7 +118,7 @@
     "pricing_model": "Freemium SaaS subscription (monthly/annual; no refunds per Terms). Free, Pro, Business, and Enterprise tiers.",
     "self_hostable": false,
     "data_residency": "unknown",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "GDPR (stated in Terms)"
     ]

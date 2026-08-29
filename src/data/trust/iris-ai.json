@@ -35,7 +35,7 @@
   "privacy": {
     "privacy_policy_url": "https://iris.ai/privacy-policy/",
     "terms_url": "https://iris.ai/terms-of-service/",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Axion product page states 'Data is never used to train general models and always remains with the client.' The Terms of Service confirm customer ownership: 'We claim no intellectual property rights over the material you provide to the Service... Your profile, content and materials uploaded remain yours.' Note: ToS also says 'all training datasets generated in the Service belong to Iris.ai' (i.e. Iris.ai owns derived/structured training datasets created inside the platform, while raw customer content stays the customer's). No statement found that customer business data trains shared/general models.",
     "data_region": "EU only: 'All data collected by IRIS.AI is stored electronically in Ireland and Germany, Europe' (AWS, EEA). OAuth2 tokens 'stored in encrypted form on our servers located in the EEA.' International transfers use EU Commission standard contractual clauses.",

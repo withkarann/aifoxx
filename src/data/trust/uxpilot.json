@@ -47,7 +47,7 @@
   "privacy": {
     "privacy_policy_url": "https://uxpilot.ai/privacy",
     "terms_url": "https://uxpilot.ai/terms",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Terms of Service section 13 (Data Usage and AI Training): 'we may use anonymized usage data (such as clicks, navigation patterns, and UX interaction metrics) to improve our Services... We do not train our AI models using your generated designs or any confidential information.' So: model training on your generated designs = NO; anonymized product-usage telemetry = YES (opt-in by use). Note the platform integrates third-party AI/LLM providers for generation, and the privacy policy permits sharing data with service providers and using third-party advertising/tracking cookies.",
     "data_region": "United States",

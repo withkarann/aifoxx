@@ -1,3 +1,4 @@
+import { TrustReportSchema } from "@/types/trust";
 import type { TrustReport } from "@/types/trust";
 
 /**
@@ -14,6 +15,18 @@ export async function loadTrustReport(
   if (!slug) return undefined;
   const load = modules[`../data/trust/${slug}.json`];
   if (!load) return undefined;
-  const mod = (await load()) as { default: TrustReport };
-  return mod.default;
+  const mod = (await load()) as { default: unknown };
+
+  // Checked, not assumed. The pages read these fields directly, so a value of
+  // the wrong type renders rather than failing: a yes/no field holding text
+  // counts as yes wherever it is checked. Parsing here means a report that does
+  // not match its shape stops the build instead of publishing a wrong answer.
+  const parsed = TrustReportSchema.safeParse(mod.default);
+  if (!parsed.success) {
+    const faults = parsed.error.issues
+      .map((issue) => `${issue.path.join(".")}: ${issue.message}`)
+      .join("; ");
+    throw new Error(`Trust report "${slug}" does not match the expected shape. ${faults}`);
+  }
+  return parsed.data as TrustReport;
 }

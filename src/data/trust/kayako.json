@@ -41,8 +41,8 @@
   "privacy": {
     "privacy_policy_url": "https://kayako.com/about/privacy/",
     "terms_url": "https://kayako.com/about/terms-of-use/",
-    "dpa": "unknown",
-    "trains_on_customer_data": "unknown",
+    "dpa": null,
+    "trains_on_customer_data": null,
     "ai_training_note": "Kay, the AI agent, is explicitly 'Trained on your tickets, not on a generic model. The longer Kay runs, the better it gets at your customers' questions' and 'Learns from human resolutions to improve coverage' (homepage). This indicates per-customer model tuning on that customer's own ticket data, which is expected behavior for the product. There is NO published statement on whether customer data is used to train shared/cross-customer or foundation models, no model-provider disclosure, and no AI/data-use sub-policy. The general privacy policy treats customer-submitted data under a processor model ('The data that we process through our Services is processed by us on behalf of our customer'), so end-customer ticket content is governed by the customer contract, not the public policy. Cross-customer training default is therefore unverified.",
     "data_region": "unknown (privacy policy confirms data is transferred to and stored in the United States: 'data transfer to the United States'; backups are kept in multiple geographies per the security page, but no customer-selectable data residency is documented)",
     "sources": [
@@ -130,7 +130,7 @@
   ],
   "compare": {
     "pricing_model": "Sales-led / 'Book a Strategy Session'. Expert-led, white-glove deployment, priced per engagement; no transparent public self-serve pricing was surfaced on the site.",
-    "self_hostable": "unknown",
+    "self_hostable": null,
     "data_residency": "US (data transferred to and stored in the United States per the privacy policy; backups replicated across geographies). No customer-selectable region documented.",
     "trains_on_data": true,
     "top_certs": [

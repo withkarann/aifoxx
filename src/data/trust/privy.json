@@ -54,7 +54,7 @@
     "privacy_policy_url": "https://www.privy.com/privacy",
     "terms_url": "https://www.privy.com/terms-of-service",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "Terms of service permit use of aggregated or de-identified Customer Materials for Privy's own business purposes including product development: 'Privy may collect and utilize data and other information, including without limitation the Customer Materials, in aggregated or other de-identified form...for the purposes of developing, delivering and enhancing Privy's products and services.' No explicit AI training clause found. No opt-out mechanism described for this aggregate use.",
     "data_region": "United States (Privy Operations, LLC, governed by laws of Massachusetts). EU data is processed in the US under SCCs. Privacy policy states data may be transferred to jurisdictions without adequate protection designations.",
     "sources": [
@@ -124,7 +124,7 @@
     "pricing_model": "Subscription, tiered by number of contacts. No long-term commitment required. Annual plans available. Free 15-day trial. No pricing listed for specific tiers on the public page (links to a separate pricing page).",
     "self_hostable": false,
     "data_residency": "United States only. EU data processed in the US under SCCs. No EU/UK data residency option found.",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "GDPR processor posture (DPA available)",
       "SCCs for EU transfers",

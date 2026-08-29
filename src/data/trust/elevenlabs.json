@@ -132,7 +132,7 @@
     "privacy_policy_url": "https://elevenlabs.io/privacy-policy",
     "terms_url": "https://elevenlabs.io/terms-of-use",
     "dpa": true,
-    "trains_on_customer_data": "true",
+    "trains_on_customer_data": true,
     "ai_training_note": "Consumer/free/self-serve users: ElevenLabs DOES use Personal Data to train models by default and provides an opt-out. Privacy Policy: 'We may process your Personal Data to research, develop, train and/or otherwise improve our AI models' and 'You may opt out of our use of your Personal Data for training at any time by navigating to the Data use menu in the Terms and Privacy section of your ElevenLabs account' (opt-out applies prospectively only). Enterprise/business customers: the consumer Privacy Policy does NOT apply ('This Policy does not apply when we offer our Services and process Personal Data on behalf of enterprise/business customers'); processing is governed by the DPA, ElevenLabs does not train on enterprise customer content beyond providing the service, and third-party LLM subprocessors are contractually prohibited from training on customer content whether or not Zero Retention Mode is enabled. Zero Retention Mode (Enterprise, per-product/per-agent) deletes request/response data immediately and logs no PII, aimed at healthcare/banking. Voice data retained no longer than 3 years after last interaction.",
     "data_region": "Non-Enterprise: US, EU, or Singapore (latency/performance). Enterprise: customer-selectable hosting location (subject to availability). India Data Residency available via Azure. Subprocessors: Google Cloud, AWS, Azure.",
     "sources": [
@@ -215,7 +215,7 @@
     "pricing_model": "Freemium + tiered subscription (Free, Starter, Creator, Pro, Scale, Business) plus usage-based API and custom Enterprise contracts",
     "self_hostable": false,
     "data_residency": "Configurable for Enterprise (selectable hosting location incl. US/EU/Singapore/India); non-Enterprise processed in US, EU, or Singapore",
-    "trains_on_data": "true",
+    "trains_on_data": true,
     "top_certs": [
       "SOC 2 Type 2",
       "ISO 27001:2022",

@@ -41,7 +41,7 @@
   "privacy": {
     "privacy_policy_url": "https://www.crayon.co/privacy",
     "terms_url": "https://www.crayon.co/terms",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Terms of Service Section 8 (AI/Machine Learning) is explicit: 'Neither Crayon nor its AI Tools providers will use Customer data, User Content, Inputs, or Outputs to train, fine-tune, or otherwise improve any general-purpose AI or machine learning models.' AI Tools are third-party LLMs (Crayon does not operate its own models); Customer data/Inputs/Outputs are processed solely to provide the Services. The product itself aggregates PUBLICLY available data about a customer's tracked competitors ('Targets'/'Competitors'), so the core dataset is public intel rather than the customer's private corpus.",
     "data_region": "unknown",

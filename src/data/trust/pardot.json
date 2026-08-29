@@ -66,7 +66,7 @@
     "privacy_policy_url": "https://www.salesforce.com/company/legal/privacy/",
     "terms_url": "https://www.salesforce.com/company/legal/agreements/",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "Salesforce's Einstein Trust Layer enforces a zero-data-retention architecture with third-party LLM providers (OpenAI, Anthropic, etc.), and generative AI features (Agentforce, Einstein Copilot) are contractually excluded from being used to train third-party or global models. HOWEVER, by default the org-level 'Opt Out of Customer Data Access' setting is NOT opted out, meaning Salesforce may use customer data on an aggregate basis to train global predictive AI (Einstein) models and improve services unless the admin opts out. This default behavior is configurable per org. For core Marketing Cloud Account Engagement (Pardot) marketing data the predictive-model sharing is the relevant control. Reviewers should confirm the opt-out state for their tenant.",
     "data_region": "Multi-region; Salesforce operates on Hyperforce and AWS with data-residency options across US, EU, UK, Japan, Australia and others depending on the instance/edition.",
     "sources": [
@@ -131,7 +131,7 @@
     "pricing_model": "Subscription / per-edition (Growth, Plus, Advanced, Premium tiers) annual contract; enterprise sales-led, no free tier",
     "self_hostable": false,
     "data_residency": "Configurable multi-region (US, EU, UK, JP, AU and others) via Hyperforce/AWS depending on edition",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "SOC 2",
       "SOC 1",

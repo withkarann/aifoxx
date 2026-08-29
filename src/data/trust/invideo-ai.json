@@ -42,7 +42,7 @@
     "privacy_policy_url": "https://invideo.io/privacy-policy/ (consumer) and https://invideo.io/legal/privacy/ (enterprise/MSA)",
     "terms_url": "https://invideo.io/terms-and-conditions/",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "Two distinct regimes. ENTERPRISE (MSA-based) privacy policy: 'Such processing supports Service functionality and does not use Customer Personal Data to train general models for other customers, except as expressly permitted or using aggregated/de-identified data.' CONSUMER terms are broader: 'We may also use Customer Content/ Output generated using your Customer Content for the purpose of supporting and developing and further improving the Services' and grant Invideo an 'irrevocable, perpetual, non-exclusive, royalty-free' license; this content/improvement license explicitly 'do not apply to enterprise customers.' Biometric face data for avatars is 'never shared, sold, or disclosed,' processed on Invideo's own AI model, and 'immediately and permanently deleted' on avatar/account deletion. No model-training opt-out is documented for consumer users.",
     "data_region": "Hosted on AWS; international transfers explicitly contemplated. Controllers are an Indian entity (Whitesheep Technology Pvt Ltd) and a Singapore entity (Invideo Innovation Pte Ltd). No customer-selectable data residency advertised.",
     "sources": [
@@ -129,7 +129,7 @@
     "pricing_model": "Subscription, credit-based. Individual: Plus $17/mo, Max $85/mo, Generative $170/mo, Elite $900/mo (billed annually); plus Team & Enterprise tier and on-demand credit top-ups. Free tier with limited functionality.",
     "self_hostable": false,
     "data_residency": "No customer-selectable residency; AWS-hosted with international transfers; India + Singapore legal entities.",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "SOC 2 (claimed/aligned, report gated)",
       "GDPR (self-asserted)"

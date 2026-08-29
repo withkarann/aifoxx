@@ -71,7 +71,7 @@
   "privacy": {
     "privacy_policy_url": "https://s3.amazonaws.com/files.alpaca.markets/disclosures/PrivacyPolicy.pdf",
     "terms_url": "https://files.alpaca.markets/disclosures/library/TermsAndConditions.pdf",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Privacy policy (effective March 20, 2026) states: 'Alpaca does not permit AI service providers to use customer personal data to train their models.' Where Alpaca uses AI for internal operations, those tools may process provided data but do not collect new categories of personal data beyond those already described.",
     "data_region": "Not explicitly disclosed; infrastructure runs on Google Cloud Platform (US-headquartered company). Specific storage regions not stated publicly.",

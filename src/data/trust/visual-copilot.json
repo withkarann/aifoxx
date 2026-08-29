@@ -47,7 +47,7 @@
   "privacy": {
     "privacy_policy_url": "https://www.builder.io/legal/privacy",
     "terms_url": "https://www.builder.io/legal (SaaS Services Agreement / SaaS Terms); AI Terms also published at https://www.builder.io/legal",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Plan-dependent and this is the most important nuance for buyers. Verbatim from the AI-use doc: Free plans -> 'Builder may use customer data to train and improve the AI.' Self-serve paid plans -> 'Customer data may be used to train the AI only if AI content training is toggled On' (opt-in, default behavior should be confirmed in-product). Enterprise plans -> 'Builder does not use customer data from Enterprise accounts for AI training or improvement purposes.' Third-party LLMs -> 'Builder currently uses OpenAI and Anthropic's Claude. We may also use open-source LLMs, such as Mistral or Llama 2' and 'The third-party LLMs we use do not train on your data.' Proprietary models -> 'Builder's proprietary AI models are fully built and trained internally and hosted on Google Cloud.' Marketing/blog claim: 'We don't train on your data.' trains_on_customer_data is recorded as false for paid/enterprise (the directory's relevant audience), but note the free-tier exception.",
     "data_region": "United States and other countries (global). Privacy policy: 'Your information may be stored and processed in - and we may transfer information to - the U.S. and other countries.' No EU-only/region-pinned residency offered publicly. Standard cross-border transfer language for EU users.",

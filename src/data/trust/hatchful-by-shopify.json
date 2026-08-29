@@ -48,7 +48,7 @@
     "privacy_policy_url": "https://www.shopify.com/legal/privacy",
     "terms_url": "https://www.shopify.com/legal/terms",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "Shopify's privacy policy documents a machine-learning / automated-decision section: when ML is used either a human stays in the loop (not fully automated) or it is used in ways with no legal or similarly significant effect (e.g. reordering App Store results). It does NOT state that user inputs to the free Logo Maker / Hatchful tool (brand name, industry) are used to train generative models, and it does not state they are excluded either; whether tool inputs are used for model training is unknown. The privacy stance is data-minimization oriented ('Your data belongs to you'; delete/anonymize when no longer needed).",
     "data_region": "Canada (HQ, Shopify Inc., Ottawa) with processing in the US; EEA/UK/Swiss data is controlled by Shopify International Ltd. (Dublin, Ireland); APAC/AU/NZ data via Shopify Commerce Singapore Pte. Ltd. Cross-border transfers use SCC-equivalent contractual protections and the Canada adequacy decision.",
     "sources": [
@@ -114,7 +114,7 @@
     "pricing_model": "Logo Maker / Hatchful: free (no paid tier, no hidden fees). Broader Shopify platform: subscription tiers (Basic to Plus/Enterprise) plus payment processing fees.",
     "self_hostable": false,
     "data_residency": "Multi-region: Canada (HQ) + US processing; EEA/UK/CH via Shopify International Ltd. (Ireland); APAC via Shopify Commerce Singapore. No single-region pinning for the free tool.",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "PCI DSS Level 1",
       "SOC 2 Type II",

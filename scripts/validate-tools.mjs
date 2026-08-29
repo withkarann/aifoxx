@@ -348,6 +348,57 @@ for (const [label, path] of [['mcp-servers.json', MCP_PATH], ['claude-code-skill
 
 // --- Hard check: note-like phrasing in Trust & Security Reports ---
 /**
+ * Every report must match the shape the pages expect. The pages read this data
+ * directly, so a value of the wrong type does not fail loudly, it renders: a
+ * yes/no field holding text counts as yes everywhere it is checked, which would
+ * publish an answer nobody established.
+ */
+function checkTrustReportShape() {
+  const hits = [];
+  let reports = 0;
+  if (!existsSync(TRUST_DIR)) return { hits, reports };
+
+  // Fields recording a yes, no, or not-established answer. Anything else is a
+  // fault, including the string "unknown", which reads as yes.
+  const TRISTATE = [
+    ['privacy', 'dpa'],
+    ['privacy', 'trains_on_customer_data'],
+    ['compare', 'trains_on_data'],
+    ['compare', 'self_hostable'],
+  ];
+
+  for (const file of readdirSync(TRUST_DIR).filter((f) => f.endsWith('.json'))) {
+    const report = JSON.parse(readFileSync(resolve(TRUST_DIR, file), 'utf8'));
+    const slug = file.slice(0, -5);
+    reports += 1;
+    for (const [group, key] of TRISTATE) {
+      const value = report[group]?.[key];
+      if (value === true || value === false || value === null || value === undefined) continue;
+      hits.push({ slug, field: `${group}.${key}`, value });
+    }
+    if (report.has_trust_center !== undefined && typeof report.has_trust_center !== 'boolean') {
+      hits.push({ slug, field: 'has_trust_center', value: report.has_trust_center });
+    }
+  }
+  return { hits, reports };
+}
+
+const shape = checkTrustReportShape();
+if (shape.hits.length > 0) {
+  console.error(`FAIL ${shape.hits.length} trust report field(s) hold a value of the wrong type:`);
+  shape.hits.slice(0, 40).forEach((h) =>
+    console.error(`  ${h.slug} ${h.field}: ${JSON.stringify(h.value)?.slice(0, 80)}`)
+  );
+  if (shape.hits.length > 40) console.error(`  ... and ${shape.hits.length - 40} more`);
+  console.error(
+    '  A yes/no field must be true, false, or null. Null means not established, which the page shows as unknown.'
+  );
+  failed = true;
+} else if (shape.reports > 0) {
+  console.log(`OK trust report field types: ${shape.reports} reports, all yes/no fields are true, false, or null.`);
+}
+
+/**
  * A certification is either confirmed held or it is not. Anything else, such as
  * a report recording that it could not tell, must never reach a page: the site
  * shows any non-true value as held, so an unconfirmed certification would be

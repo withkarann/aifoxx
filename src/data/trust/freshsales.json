@@ -78,7 +78,7 @@
     "privacy_policy_url": "https://www.freshworks.com/privacy/",
     "terms_url": "https://www.freshworks.com/company/terms/",
     "dpa": true,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "ai_training_note": "Nuanced. Freshworks states it 'does not use customer data to train third-party hosted generative models' and 'does not share customer data with any third-party providers for AI model training.' However, Freddy AI DOES use customer data from CONSENTING customers to train its own proprietary models: 'Custom Models' (trained only on that org's data, used exclusively in that account) and 'Collaborative Models' (trained on de-identified data from multiple customers). Customers can opt out at any time via support@freshworks.com, after which data is removed from training sets. Net: no third-party/foundation-model training on customer data; first-party model training is consent-based with opt-out, hence 'unknown/conditional' rather than a flat true or false.",
     "data_region": "Processing in United States, United Kingdom, and the EEA per Privacy Notice; Freshworks operates regional data centers (US, EU, India, Australia) on AWS, and offers data-region selection at provisioning.",
     "sources": [
@@ -148,7 +148,7 @@
     "pricing_model": "Subscription SaaS, per-user per-month tiers starting at $9/user/month (Growth/Pro/Enterprise tiers); 21-day free trial, no credit card required",
     "self_hostable": false,
     "data_residency": "Regional AWS data centers (US, EU, India, Australia); data-region selection at provisioning; processing in US/UK/EEA per Privacy Notice",
-    "trains_on_data": "unknown",
+    "trains_on_data": null,
     "top_certs": [
       "SOC 2 Type II",
       "SOC 1 Type II",

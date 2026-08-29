@@ -35,7 +35,7 @@
   "privacy": {
     "privacy_policy_url": "https://kaiber.ai/privacy",
     "terms_url": "https://kaiber.ai/terms",
-    "dpa": "unknown",
+    "dpa": null,
     "trains_on_customer_data": false,
     "ai_training_note": "Terms of Service (last modified Oct 15, 2024) explicitly state: 'Kaiber will not use your User Content to train any generative AI models without your permission.' However, the same clause reserves broad rights over Usage Data: 'Kaiber will be free (during and after the term of this Agreement) to use Usage Data in de-identified or aggregated form to maintain, improve, train, finetune, and enhance Kaiber's current and future products' and lists 'textual inputs you provide to Kaiber' as an example of Usage Data. So generated/uploaded User Content is not used for model training without consent, but text prompts and telemetry may be used in de-identified/aggregated form. Privacy Policy also notes de-identified data may be used and shared for R&D. Users retain ownership of User Input and Output.",
     "data_region": "United States",
