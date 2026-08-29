@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import { hasTagPage } from "@/lib/tags";
 import { Scale, ShieldCheck } from "lucide-react";
 import { type Tool } from "@/types/tool";
 import { PricingBadge } from "./PricingBadge";
@@ -140,30 +141,41 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
 
         {/* Row 2: Tags (max 3 visible; 3rd pill hidden on mobile) */}
         <div className="flex flex-wrap gap-1 min-w-0 overflow-hidden" style={{ maxHeight: '44px' }}>
-          {tool.tags.slice(0, 3).map((tag, i) => (
+          {tool.tags.slice(0, 3).map((tag, i) => {
+            // Only tags with a page of their own are clickable. The rest render
+            // as plain labels so no tag ever leads to a missing page.
+            const linkable = hasTagPage(tag);
+            const goToTag = () => navigate(`/tag/${encodeURIComponent(tag)}`);
+            return (
             <span
               key={tag}
-              role="link"
-              tabIndex={0}
-              onClick={(e) => { e.preventDefault(); e.stopPropagation(); navigate(`/tag/${tag}`); }}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  navigate(`/tag/${tag}`);
-                }
-              }}
+              {...(linkable
+                ? {
+                    role: "link" as const,
+                    tabIndex: 0,
+                    onClick: (e: React.MouseEvent) => { e.preventDefault(); e.stopPropagation(); goToTag(); },
+                    onKeyDown: (e: React.KeyboardEvent) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        goToTag();
+                      }
+                    },
+                  }
+                : {})}
               className={cn(
                 // inline-block, not inline-flex: an ellipsis is never drawn for
                 // the text inside a flex container, so a long tag was being cut
                 // mid-word with no sign that anything had been left off.
-                "tag-pill inline-block align-middle shrink-0 text-[10px] font-mono px-1.5 py-0.5 rounded-[3px] transition-colors duration-150 cursor-pointer max-w-[120px] truncate",
+                "tag-pill inline-block align-middle shrink-0 text-[10px] font-mono px-1.5 py-0.5 rounded-[3px] transition-colors duration-150 max-w-[120px] truncate",
+                linkable && "cursor-pointer",
                 i === 2 && "hidden sm:inline-block"
               )}
             >
               #{tag}
             </span>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
