@@ -6,9 +6,9 @@
     "domain": "norirobotics.com",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 129,
+    "points": 195,
     "date": "2026-09-01T17:35:10.000Z",
-    "age": "12h ago",
+    "age": "1d ago",
     "score": 0
   },
   {
@@ -18,9 +18,9 @@
     "domain": "usealmanac.com",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 57,
+    "points": 59,
     "date": "2026-08-31T15:34:34.000Z",
-    "age": "1d ago",
+    "age": "2d ago",
     "score": 1
   },
   {
@@ -32,7 +32,7 @@
     "category": "new-tool",
     "points": 46,
     "date": "2026-08-31T15:02:41.000Z",
-    "age": "1d ago",
+    "age": "2d ago",
     "score": 0
   },
   {
@@ -44,7 +44,7 @@
     "category": "new-tool",
     "points": 54,
     "date": "2026-08-26T16:06:01.000Z",
-    "age": "6d ago",
+    "age": "7d ago",
     "score": 0
   },
   {
@@ -56,7 +56,7 @@
     "category": "new-tool",
     "points": 61,
     "date": "2026-08-20T15:29:52.000Z",
-    "age": "12d ago",
+    "age": "13d ago",
     "score": 0
   },
   {
@@ -68,7 +68,7 @@
     "category": "new-tool",
     "points": 88,
     "date": "2026-08-19T16:29:02.000Z",
-    "age": "13d ago",
+    "age": "14d ago",
     "score": 2
   },
   {
@@ -80,7 +80,7 @@
     "category": "new-tool",
     "points": 83,
     "date": "2026-08-18T16:26:42.000Z",
-    "age": "14d ago",
+    "age": "15d ago",
     "score": 0
   },
   {
@@ -92,7 +92,7 @@
     "category": "new-tool",
     "points": 118,
     "date": "2026-08-17T15:36:18.000Z",
-    "age": "15d ago",
+    "age": "16d ago",
     "score": 1
   },
   {
@@ -104,7 +104,7 @@
     "category": "new-tool",
     "points": 121,
     "date": "2026-08-13T08:14:30.000Z",
-    "age": "19d ago",
+    "age": "20d ago",
     "score": 2
   },
   {
@@ -116,7 +116,7 @@
     "category": "new-tool",
     "points": 162,
     "date": "2026-08-12T07:51:20.000Z",
-    "age": "20d ago",
+    "age": "21d ago",
     "score": 1
   },
   {
@@ -128,7 +128,7 @@
     "category": "new-tool",
     "points": 48,
     "date": "2026-08-11T14:48:37.000Z",
-    "age": "21d ago",
+    "age": "22d ago",
     "score": 0
   },
   {
@@ -140,7 +140,7 @@
     "category": "new-tool",
     "points": 77,
     "date": "2026-08-10T16:35:27.000Z",
-    "age": "22d ago",
+    "age": "23d ago",
     "score": 1
   },
   {
@@ -152,7 +152,7 @@
     "category": "new-tool",
     "points": 237,
     "date": "2026-08-06T15:59:15.000Z",
-    "age": "26d ago",
+    "age": "27d ago",
     "score": 0
   },
   {
@@ -164,7 +164,7 @@
     "category": "new-tool",
     "points": 69,
     "date": "2026-08-05T16:47:15.000Z",
-    "age": "27d ago",
+    "age": "28d ago",
     "score": 0
   },
   {
@@ -176,19 +176,7 @@
     "category": "new-tool",
     "points": 39,
     "date": "2026-08-04T18:36:02.000Z",
-    "age": "28d ago",
-    "score": 2
-  },
-  {
-    "id": "launch-hn-49157997",
-    "title": "Hoplite (YC S26) – Effortlessly deploy cloud coding agents",
-    "url": "https://hoplite.sh",
-    "domain": "hoplite.sh",
-    "source": "launch-hn",
-    "category": "new-tool",
-    "points": 81,
-    "date": "2026-08-03T16:32:06.000Z",
     "age": "29d ago",
-    "score": 0
+    "score": 2
   }
 ]
