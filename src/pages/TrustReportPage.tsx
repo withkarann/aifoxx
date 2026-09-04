@@ -8,7 +8,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { ToolIcon } from "@/components/tools/ToolIcon";
 import { isSafeHttpUrl } from "@/lib/utils";
 import Brand from "@/lib/brand";
-import type { TrustReport, Certification } from "@/types/trust";
+import type { TrustReport, Certification, TrustRelatedVendor } from "@/types/trust";
 
 // The --accent-green token stores raw HSL components ("26 86% 52%"), so inline
 // uses must wrap it in hsl() exactly like the Tailwind color mapping does.
@@ -154,7 +154,9 @@ function SectionHeader({ children }: { children: React.ReactNode }) {
 export default function TrustReportPage() {
   const { slug } = useParams<{ slug: string }>();
   // The route loader resolves this vendor's report (only its own data loads).
-  const report = useLoaderData() as TrustReport | null;
+  const data = useLoaderData() as { report: TrustReport; related: TrustRelatedVendor[] } | null;
+  const report = data?.report ?? null;
+  const related = data?.related ?? [];
 
   if (!report) {
     return (
@@ -540,6 +542,27 @@ export default function TrustReportPage() {
               <Link to="/trust" className="text-accent-green hover:underline">&gt; Browse all vendor trust reports</Link>
             </p>
           </section>
+
+          {related.length > 0 && (
+            <section className="space-y-3">
+              <SectionHeader>Trust reports for comparable tools</SectionHeader>
+              <p className="font-mono text-[11px] text-text-muted">
+                Other tools in the same category, each with its own sourced report.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {related.map((peer) => (
+                  <Link
+                    key={peer.slug}
+                    to={`/trust/${peer.slug}`}
+                    className="flex items-center justify-between gap-2 bg-bg-surface border border-border-default rounded-[6px] px-4 py-3 hover:border-accent-green/60 transition-colors duration-150 min-h-[48px]"
+                  >
+                    <span className="font-display font-black text-sm text-text-primary truncate">{peer.name}</span>
+                    <ArrowUpRight size={14} className="text-text-muted shrink-0" />
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           <div className="h-10" aria-hidden="true" />
         </div>

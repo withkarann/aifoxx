@@ -88,3 +88,9 @@ export interface TrustIndexEntry {
   flags_count: number;
   confidence: string;
 }
+
+/** A comparable vendor linked from the bottom of a trust report. */
+export interface TrustRelatedVendor {
+  slug: string;
+  name: string;
+}

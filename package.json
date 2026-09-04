@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "split": "node scripts/split-tools.mjs",
+    "split": "node scripts/split-tools.mjs && node scripts/generate-trust-related.mjs",
     "predev": "npm run split",
     "dev": "vite",
     "prebuild": "npm run split",
