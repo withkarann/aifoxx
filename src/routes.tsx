@@ -21,6 +21,7 @@ import BestIndexPage from "./pages/BestIndexPage";
 import BestCategoryPage from "./pages/BestCategoryPage";
 import bestData from "./data/best-categories.json";
 import { allTools, normalizeTaxonomyValue } from "./lib/tools";
+import { tagPagePaths } from "./lib/tags";
 
 // Pre-compute all static paths at build time
 const toolPaths = allTools.map((t) => `ai/${t.slug}`);
@@ -29,16 +30,10 @@ const categoryPaths = [...new Set(allTools.map((t) => t.category))].map(
   (c) => `category/${normalizeTaxonomyValue(c)}`
 );
 
-// Only pre-render tags that appear on ≥5 tools (avoids 2700+ micro-pages)
-const tagCounts: Record<string, number> = {};
-allTools.forEach((t) =>
-  t.tags.forEach((tag) => {
-    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
-  })
-);
-const tagPaths = Object.entries(tagCounts)
-  .filter(([, count]) => count >= 5)
-  .map(([tag]) => `tag/${encodeURIComponent(tag)}`);
+// Only tags carrying enough tools to make a worthwhile page get one. The same
+// set decides which tags the UI is allowed to link, so no link can point at a
+// tag page that was never built.
+const tagPaths = tagPagePaths();
 
 // Pre-render "vs" comparison pages only for widely used tools within the same
 // category (sensible head-to-heads like "ChatGPT vs Claude"). Canonicalised so
