@@ -11,6 +11,8 @@ const NEWS_PATH = join(__dirname, "..", "src", "data", "news.json");
 const NEW_TOOLS_PATH = join(__dirname, "..", "src", "data", "new-tools.json");
 const BEST_PATH = join(__dirname, "..", "src", "data", "best-categories.json");
 const TRUST_INDEX_PATH = join(__dirname, "..", "src", "data", "trust-index.json");
+const MCP_PATH = join(__dirname, "..", "src", "data", "mcp-servers.json");
+const SKILLS_PATH = join(__dirname, "..", "src", "data", "claude-code-skills.json");
 const OUTPUT_PATH = join(__dirname, "..", "public", "sitemap.xml");
 
 function normalizeTaxonomyValue(value) {
@@ -73,6 +75,43 @@ function generateSitemap() {
     ? new Date(latestNewsDate).toISOString().slice(0, 10)
     : today;
 
+  // A page's date is the newest date among the entries it lists, so it only
+  // moves when something on the page actually changed. Stamping every page
+  // with the build date instead tells search engines the whole site changes
+  // daily, which makes the dates worth nothing to them.
+  const newestVerified = (items) => {
+    const newest = items
+      .map((item) => new Date(item.last_verified).getTime())
+      .filter((value) => !Number.isNaN(value))
+      .sort((a, b) => b - a)[0];
+    return newest ? new Date(newest).toISOString().slice(0, 10) : today;
+  };
+
+  const catalogLastmod = newestVerified(tools);
+
+  // The index hubs are dated from the newest entry each of them lists.
+  const newestUpdated = (items) => {
+    const newest = items
+      .map((item) => new Date(item.last_updated).getTime())
+      .filter((value) => !Number.isNaN(value))
+      .sort((a, b) => b - a)[0];
+    return newest ? new Date(newest).toISOString().slice(0, 10) : today;
+  };
+
+  const mcpLastmod = newestUpdated(JSON.parse(readFileSync(MCP_PATH, "utf8")));
+  const skillsLastmod = newestUpdated(JSON.parse(readFileSync(SKILLS_PATH, "utf8")));
+  const trustLastmod = newestVerified(JSON.parse(readFileSync(TRUST_INDEX_PATH, "utf8")));
+
+  const toolsByCategory = new Map();
+  const toolsByTag = new Map();
+  for (const tool of tools) {
+    const category = normalizeTaxonomyValue(tool.category);
+    toolsByCategory.set(category, [...(toolsByCategory.get(category) || []), tool]);
+    for (const tag of tool.tags || []) {
+      toolsByTag.set(tag, [...(toolsByTag.get(tag) || []), tool]);
+    }
+  }
+
   const categoryPaths = unique(tools.map((tool) => normalizeTaxonomyValue(tool.category))).map(
     (category) => `/category/${category}`
   );
@@ -91,27 +130,27 @@ function generateSitemap() {
     .sort((a, b) => a.localeCompare(b));
 
   const staticRoutes = [
-    { path: "/", lastmod: today, changefreq: "daily", priority: 1.0 },
-    { path: "/submit", lastmod: today, changefreq: "monthly", priority: 0.6 },
-    { path: "/skills", lastmod: today, changefreq: "weekly", priority: 0.8 },
-    { path: "/mcp", lastmod: today, changefreq: "weekly", priority: 0.8 },
-    { path: "/trust", lastmod: today, changefreq: "weekly", priority: 0.9 },
+    { path: "/", lastmod: catalogLastmod, changefreq: "daily", priority: 1.0 },
+    { path: "/submit", lastmod: catalogLastmod, changefreq: "monthly", priority: 0.6 },
+    { path: "/skills", lastmod: skillsLastmod, changefreq: "weekly", priority: 0.8 },
+    { path: "/mcp", lastmod: mcpLastmod, changefreq: "weekly", priority: 0.8 },
+    { path: "/trust", lastmod: trustLastmod, changefreq: "weekly", priority: 0.9 },
     { path: "/news", lastmod: newsLastmod, changefreq: "daily", priority: 0.8 },
-    { path: "/best", lastmod: today, changefreq: "weekly", priority: 0.9 },
-    { path: "/compare", lastmod: today, changefreq: "weekly", priority: 0.7 },
+    { path: "/best", lastmod: catalogLastmod, changefreq: "weekly", priority: 0.9 },
+    { path: "/compare", lastmod: catalogLastmod, changefreq: "weekly", priority: 0.7 },
   ];
 
   const bestData = JSON.parse(readFileSync(BEST_PATH, "utf8"));
   const bestRoutes = bestData.categories.map((c) => ({
     path: `/best/${c.slug}`,
-    lastmod: today,
+    lastmod: catalogLastmod,
     changefreq: "weekly",
     priority: 0.9,
   }));
 
   const categoryRoutes = categoryPaths.map((path) => ({
     path,
-    lastmod: today,
+    lastmod: newestVerified(toolsByCategory.get(path.replace("/category/", "")) || []),
     changefreq: "weekly",
     priority: 0.7,
   }));
@@ -127,7 +166,7 @@ function generateSitemap() {
 
   const tagRoutes = tagPaths.map((path) => ({
     path,
-    lastmod: today,
+    lastmod: newestVerified(toolsByTag.get(decodeURIComponent(path.replace("/tag/", ""))) || []),
     changefreq: "weekly",
     priority: 0.5,
   }));
@@ -163,11 +202,14 @@ function generateSitemap() {
       }
     }
   }
+  const toolBySlug = new Map(tools.map((tool) => [tool.slug, tool]));
   const vsRoutes = Array.from(vsPairKeys)
     .slice(0, 80)
     .map((pair) => {
       const [a, b] = pair.split("|");
-      return { path: `/compare/${a}/vs/${b}`, lastmod: today, changefreq: "monthly", priority: 0.6 };
+      // A comparison changes when either of the two tools it compares does.
+      const lastmod = newestVerified([toolBySlug.get(a), toolBySlug.get(b)].filter(Boolean));
+      return { path: `/compare/${a}/vs/${b}`, lastmod, changefreq: "monthly", priority: 0.6 };
     });
 
   const routes = [...staticRoutes, ...bestRoutes, ...categoryRoutes, ...toolRoutes, ...tagRoutes, ...vsRoutes, ...trustRoutes];
