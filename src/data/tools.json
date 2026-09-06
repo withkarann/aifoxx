@@ -52156,4 +52156,54 @@
       "Career Services"
     ]
   }
+,
+  {
+    "id": "1016",
+    "name": "PopUGC",
+    "slug": "popugc",
+    "category": "Video",
+    "subcategory": "Video Generation",
+    "description": "PopUGC is a browser-based creative suite for generating images from text, editing images, and creating short video drafts from text prompts or source images.",
+    "url": "https://popugc.com",
+    "tags": [
+      "text to video",
+      "image to video",
+      "text to image",
+      "image editing",
+      "content creation"
+    ],
+    "pricing": "Free",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-08-25",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": false
+    },
+    "pricing_detail": {
+      "free_tier": "Browser-based image and video creation tools are available from the public website",
+      "paid_plans": null,
+      "api_cost": null
+    },
+    "use_cases": [
+      "Drafting short videos from text prompts",
+      "Animating source images into short video drafts",
+      "Generating and editing images for content workflows"
+    ],
+    "not_good_for": [],
+    "industries": [
+      "Content Creation",
+      "Marketing"
+    ]
+  }
 ]
