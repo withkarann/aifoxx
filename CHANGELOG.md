@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.3](https://github.com/withkarann/aifoxx/compare/v1.2.2...v1.2.3) (2026-09-06)
+
+
+### Bug Fixes
+
+* let the release pull request merge itself once checks pass ([#275](https://github.com/withkarann/aifoxx/issues/275)) ([6657edd](https://github.com/withkarann/aifoxx/commit/6657eddc874070efb83cc461613362b28d162f36))
+* stop anything merging itself except the daily news update ([#278](https://github.com/withkarann/aifoxx/issues/278)) ([95c1473](https://github.com/withkarann/aifoxx/commit/95c1473f17bf2be889766c9737d25cd20540e616))
+
 ## [1.2.2](https://github.com/withkarann/aifoxx/compare/v1.2.1...v1.2.2) (2026-08-15)
 
 
