@@ -15,7 +15,7 @@
       "writing"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -76,7 +76,7 @@
       "ai assistant"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -137,7 +137,7 @@
       "reasoning"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -197,7 +197,7 @@
       "research"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-02",
@@ -256,7 +256,7 @@
       "enterprise"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
@@ -317,7 +317,7 @@
       "real-time"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -636,7 +636,7 @@
       "open source"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1107,7 +1107,7 @@
       "iot"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -1160,7 +1160,7 @@
       "google services"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1215,7 +1215,7 @@
       "on-device ai"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1269,7 +1269,7 @@
       "creative writing"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1380,7 +1380,7 @@
       "enterprise"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1654,7 +1654,7 @@
       "proofreading"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1766,7 +1766,7 @@
       "citation generator"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1977,7 +1977,7 @@
       "summarization"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -3372,7 +3372,7 @@
       "ai coding"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -3429,7 +3429,7 @@
       "refactoring"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -3485,7 +3485,7 @@
       "code generation"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "acquired",
     "last_verified": "2026-06-02",
@@ -3594,7 +3594,7 @@
       "code generation"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -3914,7 +3914,7 @@
       "deployment"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -4338,7 +4338,7 @@
       "ai coding"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -5125,7 +5125,7 @@
       "python"
     ],
     "pricing": "Open Source",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -5239,7 +5239,7 @@
       "datasets"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -5723,7 +5723,7 @@
       "data engineering"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
@@ -6001,7 +6001,7 @@
       "ai design"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -6060,7 +6060,7 @@
       "design system"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -6119,7 +6119,7 @@
       "creative cloud"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -6937,7 +6937,7 @@
       "ai diagrams"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -7105,7 +7105,7 @@
       "content generation"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-29",
@@ -7419,7 +7419,7 @@
       "photorealistic"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -7469,7 +7469,7 @@
       "api"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -7527,7 +7527,7 @@
       "image generation"
     ],
     "pricing": "Open Source",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -7584,7 +7584,7 @@
       "ai art"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -10236,7 +10236,7 @@
       "generative ai"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -10293,7 +10293,7 @@
       "video generation"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -10350,7 +10350,7 @@
       "personalized video"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -10406,7 +10406,7 @@
       "cinematic video"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -10606,7 +10606,7 @@
       "screen recording"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -11551,7 +11551,7 @@
       "social media"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -13090,7 +13090,7 @@
       "enterprise ai"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -13299,7 +13299,7 @@
       "multilingual"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -14026,7 +14026,7 @@
       "music ai"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -15784,7 +15784,7 @@
       "lead scoring"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -15893,7 +15893,7 @@
       "content marketing"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -16207,7 +16207,7 @@
       "small business"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -16374,7 +16374,7 @@
       "customer data"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -17102,7 +17102,7 @@
       "saas"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -18859,7 +18859,7 @@
       "generative crm"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
@@ -18917,7 +18917,7 @@
       "hubspot"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -18976,7 +18976,7 @@
       "call analytics"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19086,7 +19086,7 @@
       "ai sales"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19146,7 +19146,7 @@
       "sales automation"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19205,7 +19205,7 @@
       "b2b prospecting"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19262,7 +19262,7 @@
       "account intelligence"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19750,7 +19750,7 @@
       "ai prospecting"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19963,7 +19963,7 @@
       "ai transcription"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -20021,7 +20021,7 @@
       "routing"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -20132,7 +20132,7 @@
       "clf"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -20519,7 +20519,7 @@
       "collaboration"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -21738,7 +21738,7 @@
       "apps"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -22218,7 +22218,7 @@
       "workflow"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -22333,7 +22333,7 @@
       "goals"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -25675,7 +25675,7 @@
       "enterprise"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -27506,7 +27506,7 @@
       "salesforce"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -27562,7 +27562,7 @@
       "reporting"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -30947,7 +30947,7 @@
       "ai tutor"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -30999,7 +30999,7 @@
       "multilingual"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
@@ -31055,7 +31055,7 @@
       "universities"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -34889,7 +34889,7 @@
       "due diligence"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -36409,7 +36409,7 @@
       "institutional finance"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -36975,7 +36975,7 @@
       "fintech"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -37296,7 +37296,7 @@
       "tax"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -38910,7 +38910,7 @@
       "dropshipping"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -40402,7 +40402,7 @@
       "multilingual"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -40460,7 +40460,7 @@
       "133 languages"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -41731,7 +41731,7 @@
       "zero-day threats"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -41783,7 +41783,7 @@
       "xdr"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -42458,7 +42458,7 @@
       "threat detection"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-02",
@@ -43526,7 +43526,7 @@
       "multi-cloud"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -43840,7 +43840,7 @@
       "ai agent"
     ],
     "pricing": "Open Source",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -46066,7 +46066,7 @@
       "devops"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -46288,7 +46288,7 @@
       "enterprise"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -47809,7 +47809,7 @@
       "market analysis"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -47963,7 +47963,7 @@
       "real estate"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -50094,7 +50094,7 @@
       "developer tools"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -50306,7 +50306,7 @@
       "cpaas"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -50961,7 +50961,7 @@
       "collaboration"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -51020,7 +51020,7 @@
       "microsoft 365"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -51080,7 +51080,7 @@
       "enterprise"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
@@ -51141,7 +51141,7 @@
       "developer community"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",

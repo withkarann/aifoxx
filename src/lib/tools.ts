@@ -52,6 +52,21 @@ export const CATEGORIES: CategoryTaxonomyItem[] = Array.from(
   })
 ).sort((a, b) => a.name.localeCompare(b.name));
 
+/**
+ * Tools shown in the homepage spotlight, in display order. The two entries
+ * below always lead the row; the rest follow in catalog order.
+ */
+const FEATURED_LEAD_SLUGS = ["answerdeck", "briksync-propos"] as const;
+
+export const FEATURED_TOOLS: Tool[] = (() => {
+  const featured = allTools.filter((tool) => tool.featured);
+  const lead = FEATURED_LEAD_SLUGS.map((slug) =>
+    featured.find((tool) => tool.slug === slug)
+  ).filter((tool): tool is Tool => tool !== undefined);
+  const leadSlugs = new Set(lead.map((tool) => tool.slug));
+  return [...lead, ...featured.filter((tool) => !leadSlugs.has(tool.slug))];
+})();
+
 export const TOOL_COUNTS = {
   total: allTools.length,
   categories: CATEGORIES.length,
