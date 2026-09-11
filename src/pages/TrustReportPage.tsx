@@ -330,6 +330,7 @@ export default function TrustReportPage() {
                 websiteUrl={site}
                 accent={ACCENT}
                 className="w-12 h-12 sm:w-14 sm:h-14 rounded-[6px]"
+                size={48}
                 letterClassName="text-lg sm:text-xl"
               />
               <div className="min-w-0 flex-1">
