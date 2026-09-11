@@ -4625,22 +4625,6 @@
     "confidence": "medium"
   },
   {
-    "slug": "coqui",
-    "vendor": "Coqui (Defunct)",
-    "product_family": "Open-source text-to-speech and voice synthesis toolkit (XTTS V2). The commercial SaaS service (Coqui Studio, API) shut down in January 2024. The open-source GitHub projects continue to be maintained by the community.",
-    "maturity": "unknown",
-    "has_trust_center": false,
-    "last_verified": "2026-07-06",
-    "certs_held": [],
-    "top_certs": [],
-    "certs_held_count": 0,
-    "trains_on_customer_data": null,
-    "self_hostable": true,
-    "dpa": false,
-    "flags_count": 6,
-    "confidence": "low"
-  },
-  {
     "slug": "corelogic",
     "vendor": "CoreLogic, Inc. (operating as Cotality since March 2025)",
     "product_family": "Real estate property data, analytics, AI, and SaaS for real estate professionals, insurance, mortgage, and government. Key products: Matrix (MLS platform), OneHome (buyer portal), DASH/MICA/SettleAssist (insurance/restoration), Trestle (data marketplace), CoreAI (AI analytics), RiskMeter, and Hazard HQ Command Central.",
@@ -8787,32 +8771,6 @@
     "confidence": "high"
   },
   {
-    "slug": "hatchful-by-shopify",
-    "vendor": "Shopify Inc.",
-    "product_family": "Shopify (Hatchful / Shopify Logo Maker is a free brand tool within the Shopify commerce platform)",
-    "maturity": "enterprise",
-    "has_trust_center": true,
-    "last_verified": "2026-06-27",
-    "certs_held": [
-      "PCI DSS Level 1 (Service Provider)",
-      "PCI DSS Attestation of Compliance (AoC), QSA-signed",
-      "PCI External ASV Vulnerability Scan (AoSC, quarterly)",
-      "SOC 2 Type II",
-      "SOC 3 (publicly downloadable)"
-    ],
-    "top_certs": [
-      "PCI DSS Level 1",
-      "SOC 2 Type II",
-      "SOC 3"
-    ],
-    "certs_held_count": 5,
-    "trains_on_customer_data": "unknown",
-    "self_hostable": false,
-    "dpa": true,
-    "flags_count": 4,
-    "confidence": "high"
-  },
-  {
     "slug": "headshotpro",
     "vendor": "HeadshotPro",
     "product_family": "AI professional headshot generator (consumer, teams/corporate, and API)",
@@ -10877,22 +10835,6 @@
     "confidence": "high"
   },
   {
-    "slug": "lateral",
-    "vendor": "Lateral GmbH",
-    "product_family": "AI-powered document navigation and research collaboration tool for organizing and discovering insights across documents. Sunsetted as of June 26, 2025. Transitioning users to coordination.network.",
-    "maturity": "startup",
-    "has_trust_center": false,
-    "last_verified": "2026-07-06",
-    "certs_held": [],
-    "top_certs": [],
-    "certs_held_count": 0,
-    "trains_on_customer_data": false,
-    "self_hostable": false,
-    "dpa": true,
-    "flags_count": 6,
-    "confidence": "high"
-  },
-  {
     "slug": "lavender",
     "vendor": "Sorter, Inc. (doing business as Lavender)",
     "product_family": "Lavender Email Coach (browser extension for individuals/teams that scores and improves sales emails) plus Ora, a newer autonomous AI sales agent that drafts and sends outbound email; both share the same underlying compliance posture.",
@@ -11064,26 +11006,6 @@
     "dpa": true,
     "flags_count": 0,
     "confidence": "high"
-  },
-  {
-    "slug": "lensa-ai",
-    "vendor": "Prisma Labs, Inc.",
-    "product_family": "Lensa — a consumer photo editing mobile app with AI-powered features including Magic Avatars, Art Styles, portrait retouching, background replacement, and effects. Owned by Prisma Labs, Inc. (Sunnyvale, CA).",
-    "maturity": "growth",
-    "has_trust_center": false,
-    "last_verified": "2026-07-07",
-    "certs_held": [
-      "GDPR Compliance (Posture)"
-    ],
-    "top_certs": [
-      "GDPR Compliance (posture only; not a formal certification)"
-    ],
-    "certs_held_count": 1,
-    "trains_on_customer_data": false,
-    "self_hostable": false,
-    "dpa": false,
-    "flags_count": 10,
-    "confidence": "medium"
   },
   {
     "slug": "leonardo-ai",
@@ -14377,26 +14299,6 @@
     "confidence": "medium"
   },
   {
-    "slug": "pablo-by-buffer",
-    "vendor": "Buffer, Inc.",
-    "product_family": "Pablo by Buffer is a discontinued AI image generator for social media (sunset November 10, 2024). Previously offered quick image creation optimized for social platforms. Now redirects to Buffer's main blog.",
-    "maturity": "startup",
-    "has_trust_center": false,
-    "last_verified": "2026-07-06",
-    "certs_held": [
-      "GDPR"
-    ],
-    "top_certs": [
-      "GDPR (verified on buffer.com/security)"
-    ],
-    "certs_held_count": 1,
-    "trains_on_customer_data": null,
-    "self_hostable": false,
-    "dpa": true,
-    "flags_count": 5,
-    "confidence": "medium"
-  },
-  {
     "slug": "paddle",
     "vendor": "Paddle.com Market Ltd.",
     "product_family": "Merchant of Record platform for digital product companies. Key sub-products: Paddle Billing (MoR payments, subscriptions, localized checkout, tax compliance), ProfitWell Metrics (subscription/revenue analytics), Retain (failed payment recovery and churn reduction), Paddle Classic (legacy platform).",
@@ -16143,26 +16045,6 @@
     "confidence": "high"
   },
   {
-    "slug": "querium",
-    "vendor": "Querium Corporation",
-    "product_family": "AI-powered educational platform with StepWise AI virtual tutor (math K-12 and college) and Smarter enterprise chatbot platform for corporate AI data integration",
-    "maturity": "growth",
-    "has_trust_center": false,
-    "last_verified": "2026-07-09",
-    "certs_held": [
-      "FERPA Compliance"
-    ],
-    "top_certs": [
-      "FERPA (education sector compliance)"
-    ],
-    "certs_held_count": 1,
-    "trains_on_customer_data": null,
-    "self_hostable": true,
-    "dpa": false,
-    "flags_count": 7,
-    "confidence": "medium"
-  },
-  {
     "slug": "quickbooks-ai",
     "vendor": "Intuit Inc.",
     "product_family": "QuickBooks Online with integrated AI features; includes Accounting Agent, Payments Agent, Customer Agent, Payroll Agent, Sales Tax Agent, and Business Tax Agent (beta). QuickBooks AI is not a standalone product but rather AI capabilities embedded within QuickBooks Online.",
@@ -17553,22 +17435,6 @@
     "self_hostable": false,
     "dpa": false,
     "flags_count": 6,
-    "confidence": "medium"
-  },
-  {
-    "slug": "ross-intelligence",
-    "vendor": "ROSS Intelligence, Inc.",
-    "product_family": "AI-powered legal research platform (case law / statutes search) for law firms; also offered an academic-access tier. Company ceased commercial operations on January 31, 2021 after settlement/litigation costs from a Thomson Reuters copyright suit over Westlaw training data; the corporate website and legacy policy pages remain online but are not being maintained.",
-    "maturity": "unknown",
-    "has_trust_center": false,
-    "last_verified": "2026-07-09",
-    "certs_held": [],
-    "top_certs": [],
-    "certs_held_count": 0,
-    "trains_on_customer_data": null,
-    "self_hostable": false,
-    "dpa": false,
-    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -19003,26 +18869,6 @@
     "confidence": "medium"
   },
   {
-    "slug": "socratic-by-google",
-    "vendor": "Google LLC",
-    "product_family": "Socratic was a standalone AI homework-help app (iOS/Android, socratic.org) acquired by Google in 2018. Google discontinued it in October 2024 and folded its functionality into Google Lens's 'Homework' feature. socratic.org now HTTP 302-redirects to lens.google/#homework; there is no independent Socratic product, brand, or trust page anymore.",
-    "maturity": "enterprise",
-    "has_trust_center": false,
-    "last_verified": "2026-06-27",
-    "certs_held": [
-      "GDPR (compliance posture)"
-    ],
-    "top_certs": [
-      "GDPR (compliance posture)"
-    ],
-    "certs_held_count": 1,
-    "trains_on_customer_data": true,
-    "self_hostable": false,
-    "dpa": false,
-    "flags_count": 4,
-    "confidence": "medium"
-  },
-  {
     "slug": "softr",
     "vendor": "Softr Platforms GmbH",
     "product_family": "No-code AI business app platform: portals, dashboards, internal tools, built-in database, workflow automation, AI Agents (GPT/Claude/Gemini), mobile apps, and forms",
@@ -19665,22 +19511,6 @@
     "dpa": false,
     "flags_count": 6,
     "confidence": "medium"
-  },
-  {
-    "slug": "stencil",
-    "vendor": "Anchor Labs Inc.",
-    "product_family": "Online graphic design tool (getstencil.com) for creating social media graphics, blog headers, and ads; browser extensions for Chrome and Firefox; WordPress plugin. NOTE: service is being permanently shut down on July 10, 2026.",
-    "maturity": "startup",
-    "has_trust_center": false,
-    "last_verified": "2026-06-29",
-    "certs_held": [],
-    "top_certs": [],
-    "certs_held_count": 0,
-    "trains_on_customer_data": null,
-    "self_hostable": false,
-    "dpa": false,
-    "flags_count": 7,
-    "confidence": "high"
   },
   {
     "slug": "steve-ai",
