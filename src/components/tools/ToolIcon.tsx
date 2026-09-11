@@ -14,6 +14,12 @@ interface ToolIconProps {
   accent: string;
   /** Tailwind size + radius classes for the square icon (e.g. "w-8 h-8"). */
   className?: string;
+  /**
+   * Edge length in pixels the icon is drawn at, written onto the image so the
+   * browser reserves the space before the file arrives and the surrounding text
+   * does not jump. Match it to the className size.
+   */
+  size?: number;
   /** Font-size classes for the fallback letter. */
   letterClassName?: string;
 }
@@ -32,6 +38,7 @@ export function ToolIcon({
   accent,
   className = "w-8 h-8",
   letterClassName = "text-sm",
+  size = 32,
 }: ToolIconProps) {
   void websiteUrl;
   const localIcon = slug && hasToolIcon(slug) ? toolIconUrl(slug) : null;
@@ -43,6 +50,8 @@ export function ToolIcon({
       <img
         src={src}
         alt={`${name} logo`}
+        width={size}
+        height={size}
         loading="lazy"
         decoding="async"
         referrerPolicy="no-referrer"

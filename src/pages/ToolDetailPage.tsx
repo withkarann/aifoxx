@@ -294,6 +294,7 @@ export default function ToolDetailPage() {
               websiteUrl={tool.url}
               accent={color.accent}
               className="w-14 h-14 sm:w-16 sm:h-16"
+              size={56}
               letterClassName="text-xl sm:text-2xl"
             />
             <div className="min-w-0 flex-1">
