@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import bestData from "@/data/best-categories.json";
 const bestCategories = bestData.categories;
-import { allTools } from "@/lib/tools";
+import { allTools, FEATURED_TOOLS } from "@/lib/tools";
 import { useToolFilters } from "@/hooks/useToolFilters";
 import { useFilteredTools } from "@/hooks/useFilteredTools";
 import { searchTools } from "@/lib/search";
@@ -18,7 +18,7 @@ import Brand from "@/lib/brand";
 
 // Organization + WebSite JSON-LD are emitted globally from index.html so every SSG'd page carries them.
 
-const featuredTools = allTools.filter((t) => t.featured);
+const featuredTools = FEATURED_TOOLS;
 const TOOLS_PER_PAGE = 24;
 
 const categoryCount = new Set(allTools.map((t) => t.category)).size;
