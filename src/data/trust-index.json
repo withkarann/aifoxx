@@ -252,7 +252,7 @@
   {
     "slug": "adaptive-planning",
     "vendor": "Workday, Inc.",
-    "product_family": "Workday Adaptive Planning — enterprise performance management (EPM) software for financial planning, workforce planning, operational planning, and close/consolidation. Part of the Workday suite of cloud applications.",
+    "product_family": "Workday Adaptive Planning: enterprise performance management (EPM) software for financial planning, workforce planning, operational planning, and close/consolidation. Part of the Workday suite of cloud applications.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-06",
@@ -729,7 +729,7 @@
   {
     "slug": "algolia",
     "vendor": "Algolia, Inc.",
-    "product_family": "AI search and retrieval platform — includes AI Search (keyword + vector hybrid), NeuralSearch, Agent Studio (AI agent builder), Algolia Crawler, and Algolia Vault (security add-on)",
+    "product_family": "AI search and retrieval platform: includes AI Search (keyword + vector hybrid), NeuralSearch, Agent Studio (AI agent builder), Algolia Crawler, and Algolia Vault (security add-on)",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-06-29",
@@ -1254,7 +1254,7 @@
   {
     "slug": "anyword-ecommerce",
     "vendor": "Keywee Inc. (d.b.a. Anyword)",
-    "product_family": "Anyword — AI-powered content generation platform for e-commerce, social media, ads, and copywriting with performance prediction scoring. Sub-products include Amazon product description generator, social post creator, ad copy generator, and API for enterprise integration.",
+    "product_family": "Anyword: AI-powered content generation platform for e-commerce, social media, ads, and copywriting with performance prediction scoring. Sub-products include Amazon product description generator, social post creator, ad copy generator, and API for enterprise integration.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -1340,7 +1340,7 @@
   {
     "slug": "apple-health-ai",
     "vendor": "Apple Inc.",
-    "product_family": "Apple Health — built-in health and fitness tracking across iOS, watchOS, macOS, iPadOS, and Vision Pro. Includes Heart Rate, Sleep, Activity Rings, Cycle Tracking, Mental Health, Hearing Health (with AirPods Pro), Health Records (sharing with healthcare providers), and Research app. AI features: on-device processing; no cloud AI training on personal health data.",
+    "product_family": "Apple Health: built-in health and fitness tracking across iOS, watchOS, macOS, iPadOS, and Vision Pro. Includes Heart Rate, Sleep, Activity Rings, Cycle Tracking, Mental Health, Hearing Health (with AirPods Pro), Health Records (sharing with healthcare providers), and Research app. AI features: on-device processing; no cloud AI training on personal health data.",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -1495,7 +1495,7 @@
   {
     "slug": "aria-by-opera",
     "vendor": "Opera Norway AS (Opera Limited, parent - NASDAQ: OPRA)",
-    "product_family": "Opera AI (formerly Aria) — a free, browser-integrated AI assistant with image generation, file analysis, YouTube transcription, and web summarization. Available in Opera browser (desktop and mobile) with no account required; optional login for extended features.",
+    "product_family": "Opera AI (formerly Aria): a free, browser-integrated AI assistant with image generation, file analysis, YouTube transcription, and web summarization. Available in Opera browser (desktop and mobile) with no account required; optional login for extended features.",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -2623,7 +2623,7 @@
   {
     "slug": "braze",
     "vendor": "Braze, Inc.",
-    "product_family": "Braze Customer Engagement Platform — a cloud-based SaaS platform with cross-channel messaging, AI-powered journey orchestration, and data unification. Includes BrazeAI (decisioning & agents), Braze Data Platform, and HIPAA-compliant offerings.",
+    "product_family": "Braze Customer Engagement Platform: a cloud-based SaaS platform with cross-channel messaging, AI-powered journey orchestration, and data unification. Includes BrazeAI (decisioning & agents), Braze Data Platform, and HIPAA-compliant offerings.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-06",
@@ -3109,7 +3109,7 @@
   {
     "slug": "caption-health",
     "vendor": "GE HealthCare",
-    "product_family": "Caption AI – AI-powered guidance for cardiac ultrasound imaging. Includes Vscan Air SL with Caption AI (handheld device), Venue Family with Caption Guidance (point-of-care systems), and AutoEF (automatic ejection fraction calculation). FDA 510(k) cleared.",
+    "product_family": "Caption AI: AI-powered guidance for cardiac ultrasound imaging. Includes Vscan Air SL with Caption AI (handheld device), Venue Family with Caption Guidance (point-of-care systems), and AutoEF (automatic ejection fraction calculation). FDA 510(k) cleared.",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -4245,7 +4245,7 @@
   {
     "slug": "colorize",
     "vendor": "PALETTE FM, UNIPESSOAL LDA",
-    "product_family": "Colorize (palette.fm) — AI photo colorization tool that converts black & white photos to color using neural networks. Single product offering with free tier, subscription ($72/year), and one-time credit options.",
+    "product_family": "Colorize (palette.fm): AI photo colorization tool that converts black & white photos to color using neural networks. Single product offering with free tier, subscription ($72/year), and one-time credit options.",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -4287,7 +4287,7 @@
   {
     "slug": "compass-ai",
     "vendor": "Compass (compassapp.ai) — Financial Intelligence, Inc.",
-    "product_family": "Compass AI is an AI-powered financial operating system for fractional CFOs, CPA firms, and small-to-mid-sized businesses ($500K–$20M revenue). Integrates with QuickBooks, Xero, FreshBooks for automated cash flow forecasting, custom dashboards, and financial analysis. Founded 2024, 9 employees, early-stage startup.",
+    "product_family": "Compass AI is an AI-powered financial operating system for fractional CFOs, CPA firms, and small-to-mid-sized businesses ($500K to $20M revenue). Integrates with QuickBooks, Xero, FreshBooks for automated cash flow forecasting, custom dashboards, and financial analysis. Founded 2024, 9 employees, early-stage startup.",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -4763,7 +4763,7 @@
   {
     "slug": "craiyon",
     "vendor": "Craiyon LLC",
-    "product_family": "Craiyon is a free and paid AI text-to-image generation platform (formerly DALL-E mini, 2021–2022). The product offers tiered pricing: free tier with basic quality and square format only; Supporter, Professional, and Ultra tiers with higher quality outputs, more generation credits, private image generation, and faster processing. Users can generate images via text prompts, use style presets (Artistic, Photo, Anime, Illustration, Vector, Raw), and browse a public gallery of community-created images.",
+    "product_family": "Craiyon is a free and paid AI text-to-image generation platform (formerly DALL-E mini, 2021 to 2022). The product offers tiered pricing: free tier with basic quality and square format only; Supporter, Professional, and Ultra tiers with higher quality outputs, more generation credits, private image generation, and faster processing. Users can generate images via text prompts, use style presets (Artistic, Photo, Anime, Illustration, Vector, Raw), and browse a public gallery of community-created images.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-06",
@@ -4949,7 +4949,7 @@
   {
     "slug": "crowdstrike",
     "vendor": "CrowdStrike Holdings, Inc.",
-    "product_family": "Falcon Platform — unified AI-native cybersecurity suite spanning next-gen endpoint protection (antivirus, EDR, device control, firewall, IT hygiene), next-gen SIEM, identity security (ITDR, PAM, SaaS identity), cloud security (infrastructure, apps, data, AI models), and managed detection & response (MDR). All modules share a common agent and cloud-native architecture.",
+    "product_family": "Falcon Platform: unified AI-native cybersecurity suite spanning next-gen endpoint protection (antivirus, EDR, device control, firewall, IT hygiene), next-gen SIEM, identity security (ITDR, PAM, SaaS identity), cloud security (infrastructure, apps, data, AI models), and managed detection & response (MDR). All modules share a common agent and cloud-native architecture.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-06",
@@ -5748,7 +5748,7 @@
   {
     "slug": "devin",
     "vendor": "Cognition Labs",
-    "product_family": "Devin – The AI Software Engineer. Multi-product suite including Devin Cloud (SaaS), Devin Desktop (IDE), Devin Enterprise (self-hosted VPC), Devin Review (code review), and CLI tools. Positioned for code migration, refactoring, and autonomous engineering tasks.",
+    "product_family": "Devin: The AI Software Engineer. Multi-product suite including Devin Cloud (SaaS), Devin Desktop (IDE), Devin Enterprise (self-hosted VPC), Devin Review (code review), and CLI tools. Positioned for code migration, refactoring, and autonomous engineering tasks.",
     "maturity": "growth",
     "has_trust_center": true,
     "last_verified": "2026-07-06",
@@ -6021,7 +6021,7 @@
   {
     "slug": "docusaurus",
     "vendor": "Meta Platforms, Inc.",
-    "product_family": "Docusaurus is an open-source static site generator and documentation framework (MIT-licensed) maintained by Meta. It enables developers to build, version, and deploy documentation websites using Markdown/MDX, React components, and built-in features like i18n, search, and versioning. Not a SaaS platform—users self-host on their chosen infrastructure (GitHub Pages, Vercel, Netlify, etc.).",
+    "product_family": "Docusaurus is an open-source static site generator and documentation framework (MIT-licensed) maintained by Meta. It enables developers to build, version, and deploy documentation websites using Markdown/MDX, React components, and built-in features like i18n, search, and versioning. Not a SaaS platform; users self-host on their chosen infrastructure (GitHub Pages, Vercel, Netlify, etc.).",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-07-07",
@@ -6285,7 +6285,7 @@
   {
     "slug": "dynamic-yield",
     "vendor": "Mastercard International Incorporated (Dynamic Yield subsidiary)",
-    "product_family": "Experience OS — personalization and experimentation platform for content recommendations, A/B testing, and customer journey optimization across e-commerce, financial services, travel, and media verticals. Gartner Leader 8x consecutive.",
+    "product_family": "Experience OS: personalization and experimentation platform for content recommendations, A/B testing, and customer journey optimization across e-commerce, financial services, travel, and media verticals. Gartner Leader 8x consecutive.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-07",
@@ -6686,7 +6686,7 @@
   {
     "slug": "eraser-io",
     "vendor": "Eraser Labs, Inc.",
-    "product_family": "AI co-pilot for technical design and documentation — generates and maintains diagrams (architecture, entity relationships, flow charts, sequences). Includes markdown support, version history, API, and GitHub integration. Available in multi-tenant, single-tenant, and private cloud (BYOC) deployments.",
+    "product_family": "AI co-pilot for technical design and documentation: generates and maintains diagrams (architecture, entity relationships, flow charts, sequences). Includes markdown support, version history, API, and GitHub integration. Available in multi-tenant, single-tenant, and private cloud (BYOC) deployments.",
     "maturity": "growth",
     "has_trust_center": true,
     "last_verified": "2026-07-07",
@@ -7708,7 +7708,7 @@
   {
     "slug": "freshdesk",
     "vendor": "Freshworks Inc.",
-    "product_family": "Freshdesk (AI-powered customer service / help desk) — part of the Freshworks platform alongside Freshservice, Freshchat, Freshsales, Freshmarketer, Freshdesk Omni and Freddy AI",
+    "product_family": "Freshdesk (AI-powered customer service / help desk), part of the Freshworks platform alongside Freshservice, Freshchat, Freshsales, Freshmarketer, Freshdesk Omni and Freddy AI",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
@@ -7961,7 +7961,7 @@
   {
     "slug": "genesys-ai",
     "vendor": "Genesys Corporation",
-    "product_family": "Genesys Cloud CX — enterprise AI-powered experience orchestration platform with omnichannel contact center (voice, email, chat, text, social), AI agents and automation, analytics, and workforce management.",
+    "product_family": "Genesys Cloud CX: enterprise AI-powered experience orchestration platform with omnichannel contact center (voice, email, chat, text, social), AI agents and automation, analytics, and workforce management.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-07",
@@ -8064,7 +8064,7 @@
   {
     "slug": "github-copilot",
     "vendor": "GitHub, Inc. (subsidiary of Microsoft)",
-    "product_family": "GitHub Copilot — AI code assistant with multiple tiers (Free, Pro, Pro+, Max for individuals; Business and Enterprise for organizations) including IDE integrations, CLI, cloud agents, and MCP server support.",
+    "product_family": "GitHub Copilot: AI code assistant with multiple tiers (Free, Pro, Pro+, Max for individuals; Business and Enterprise for organizations) including IDE integrations, CLI, cloud agents, and MCP server support.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-07",
@@ -8994,7 +8994,7 @@
   {
     "slug": "hiredscore",
     "vendor": "Workday, Inc. (HiredScore AI Division)",
-    "product_family": "HiredScore AI for Recruiting and HiredScore AI for Talent Mobility — AI-driven talent acquisition and employee mobility tools integrated with Workday's talent management suite. Provides candidate prioritization, sourcing, and hiring guidance using machine learning.",
+    "product_family": "HiredScore AI for Recruiting and HiredScore AI for Talent Mobility: AI-driven talent acquisition and employee mobility tools integrated with Workday's talent management suite. Provides candidate prioritization, sourcing, and hiring guidance using machine learning.",
     "maturity": "enterprise",
     "has_trust_center": false,
     "last_verified": "2026-07-07",
@@ -9322,7 +9322,7 @@
   {
     "slug": "humata",
     "vendor": "Tilda Technologies Inc. (DBA Humata)",
-    "product_family": "Humata AI — document/PDF question-answering assistant",
+    "product_family": "Humata AI: document/PDF question-answering assistant",
     "maturity": "growth",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
@@ -9395,7 +9395,7 @@
   {
     "slug": "ibm-watson-assistant",
     "vendor": "International Business Machines Corporation (IBM)",
-    "product_family": "Watson Assistant — conversational AI/chatbot platform for building enterprise-grade virtual agents. Deployable on IBM Cloud (public), on-premises, or hybrid. Variants include Standard, Premium, and Dedicated deployment tiers.",
+    "product_family": "Watson Assistant: conversational AI/chatbot platform for building enterprise-grade virtual agents. Deployable on IBM Cloud (public), on-premises, or hybrid. Variants include Standard, Premium, and Dedicated deployment tiers.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-07",
@@ -10637,7 +10637,7 @@
   {
     "slug": "kvcore",
     "vendor": "INSIDERE, LLC",
-    "product_family": "BoldTrail/kvCORE — all-in-one real estate CRM platform combining IDX website, lead engine, AI-powered CRM, marketing automation, listing/transaction management, and business intelligence. Rebranded from kvCORE to BoldTrail in June 2024.",
+    "product_family": "BoldTrail/kvCORE: all-in-one real estate CRM platform combining IDX website, lead engine, AI-powered CRM, marketing automation, listing/transaction management, and business intelligence. Rebranded from kvCORE to BoldTrail in June 2024.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-07",
@@ -11104,7 +11104,7 @@
   {
     "slug": "lex-machina",
     "vendor": "Lex Machina, Inc. (LexisNexis division, RELX Inc.)",
-    "product_family": "Lex Machina Legal Analytics—a comprehensive legal analytics platform delivering case analytics, judge behavior, attorney/party insights, and settlement data across federal and select state courts. Integrates LexisNexis Protégé AI for generative legal research. Sub-products: Federal Court Analytics (94 district courts, 13 courts of appeal), State Court Analytics (enhanced coverage), Patent Litigation Analytics, Class Action Analytics, Appeals Analytics, and API integration option.",
+    "product_family": "Lex Machina Legal Analytics: a comprehensive legal analytics platform delivering case analytics, judge behavior, attorney/party insights, and settlement data across federal and select state courts. Integrates LexisNexis Protégé AI for generative legal research. Sub-products: Federal Court Analytics (94 district courts, 13 courts of appeal), State Court Analytics (enhanced coverage), Patent Litigation Analytics, Class Action Analytics, Appeals Analytics, and API integration option.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-07",
@@ -11955,7 +11955,7 @@
   {
     "slug": "luminar-neo",
     "vendor": "Shinyfields Limited (operating as Skylum)",
-    "product_family": "Luminar Neo — AI-powered photo editing software for desktop, tablet, and mobile with on-device editing, generative AI features, and creative tools for photographers and designers.",
+    "product_family": "Luminar Neo: AI-powered photo editing software for desktop, tablet, and mobile with on-device editing, generative AI features, and creative tools for photographers and designers.",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-07",
@@ -13616,7 +13616,7 @@
   {
     "slug": "notion-ai",
     "vendor": "Notion Labs, Inc.",
-    "product_family": "Notion AI — AI-powered workspace features including Notion Agent, Custom Agents, AI Meeting Notes, Enterprise Search, and core AI capabilities for document generation, summarization, and task automation.",
+    "product_family": "Notion AI: AI-powered workspace features including Notion Agent, Custom Agents, AI Meeting Notes, Enterprise Search, and core AI capabilities for document generation, summarization, and task automation.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-06",
@@ -14325,7 +14325,7 @@
   {
     "slug": "page-optimizer-pro",
     "vendor": "PageOptimizer Pro LLC",
-    "product_family": "On-page SEO and content optimization tool suite (POP) — Rank Engine, AI Writer, Content Brief/Editor, AI-powered Schema, EEAT auditing, Keyword Insights/Strategy, Watchdog monitoring, Chrome Extension, API access, and a separate white-label 'POP White Glove' done-for-you SEO service for agencies.",
+    "product_family": "On-page SEO and content optimization tool suite (POP): Rank Engine, AI Writer, Content Brief/Editor, AI-powered Schema, EEAT auditing, Keyword Insights/Strategy, Watchdog monitoring, Chrome Extension, API access, and a separate white-label 'POP White Glove' done-for-you SEO service for agencies.",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-07-08",
@@ -14642,7 +14642,7 @@
   {
     "slug": "pardot",
     "vendor": "Salesforce, Inc.",
-    "product_family": "Salesforce Marketing Cloud Account Engagement (formerly Pardot) — B2B marketing automation, part of the Salesforce Marketing Cloud / Customer 360 platform",
+    "product_family": "Salesforce Marketing Cloud Account Engagement (formerly Pardot): B2B marketing automation, part of the Salesforce Marketing Cloud / Customer 360 platform",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
@@ -15083,7 +15083,7 @@
   {
     "slug": "picsart",
     "vendor": "PicsArt, Inc.",
-    "product_family": "PicsArt Create Editor — an AI-powered creative platform for photo editing, design, image generation, and video creation serving 130M+ creators with 140+ AI models across free, premium, and enterprise tiers.",
+    "product_family": "PicsArt Create Editor: an AI-powered creative platform for photo editing, design, image generation, and video creation serving 130M+ creators with 140+ AI models across free, premium, and enterprise tiers.",
     "maturity": "growth",
     "has_trust_center": true,
     "last_verified": "2026-07-06",
@@ -15132,7 +15132,7 @@
   {
     "slug": "pieces",
     "vendor": "Mesh Intelligent Technologies, Inc. (Pieces)",
-    "product_family": "Pieces for Developers — on-device AI long-term memory / context engine for developers (LTM-2)",
+    "product_family": "Pieces for Developers: on-device AI long-term memory / context engine for developers (LTM-2)",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-06-27",
@@ -17392,7 +17392,7 @@
   {
     "slug": "rocket-lawyer",
     "vendor": "Rocket Lawyer Incorporated",
-    "product_family": "Online legal services platform for consumers and small businesses — personalized legal document creation and e-signature, Ask a Legal Pro / Consult a Legal Pro Live attorney network, business formation and registered agent services, Rocket Copilot AI legal assistant, and an Enterprise/API tier for larger organizations",
+    "product_family": "Online legal services platform for consumers and small businesses: personalized legal document creation and e-signature, Ask a Legal Pro / Consult a Legal Pro Live attorney network, business formation and registered agent services, Rocket Copilot AI legal assistant, and an Enterprise/API tier for larger organizations",
     "maturity": "growth",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
@@ -19538,7 +19538,7 @@
   {
     "slug": "stormboard-ai",
     "vendor": "Edistorm Inc.",
-    "product_family": "Stormboard — data-first digital whiteboard and collaborative workflow platform; sub-products include StormAI (Azure OpenAI-backed AI co-collaborator), Stormboard for Agile (Jira/Azure DevOps/Rally integrations), and Single Tenant Edition for enterprise data residency",
+    "product_family": "Stormboard: data-first digital whiteboard and collaborative workflow platform; sub-products include StormAI (Azure OpenAI-backed AI co-collaborator), Stormboard for Agile (Jira/Azure DevOps/Rally integrations), and Single Tenant Edition for enterprise data residency",
     "maturity": "growth",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
@@ -19648,7 +19648,7 @@
   {
     "slug": "submagic",
     "vendor": "TURBO STUDIO S.A.S. (Submagic)",
-    "product_family": "Submagic — AI short-form video editor (captions, Magic clips, AI B-roll, AI avatars, scheduling/publishing, team workspace)",
+    "product_family": "Submagic: AI short-form video editor (captions, Magic clips, AI B-roll, AI avatars, scheduling/publishing, team workspace)",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-06-27",
@@ -20703,7 +20703,7 @@
   {
     "slug": "things-3",
     "vendor": "Cultured Code GmbH & Co. KG",
-    "product_family": "Things 3 — personal task management app for Mac, iPhone, iPad, Apple Watch, and Vision Pro; includes Things Cloud sync service (free with app purchase)",
+    "product_family": "Things 3: personal task management app for Mac, iPhone, iPad, Apple Watch, and Vision Pro; includes Things Cloud sync service (free with app purchase)",
     "maturity": "startup",
     "has_trust_center": false,
     "last_verified": "2026-06-29",
@@ -23382,7 +23382,7 @@
   {
     "slug": "zebra-medical-vision",
     "vendor": "Nano-X Imaging Ltd.",
-    "product_family": "Medical imaging devices (Nanox.ARC, Nanox.ARC X — FDA-cleared digital tomosynthesis systems) and AI-powered diagnostic software (Nanox.AI with HealthCCS cardiac, HealthFLD liver, HealthOST bone solutions; Nanox.MARKETPLACE teleradiology; Nanox.Health IT infrastructure services)",
+    "product_family": "Medical imaging devices (Nanox.ARC, Nanox.ARC X; FDA-cleared digital tomosynthesis systems) and AI-powered diagnostic software (Nanox.AI with HealthCCS cardiac, HealthFLD liver, HealthOST bone solutions; Nanox.MARKETPLACE teleradiology; Nanox.Health IT infrastructure services)",
     "maturity": "growth",
     "has_trust_center": false,
     "last_verified": "2026-07-09",
@@ -23466,7 +23466,7 @@
   {
     "slug": "zoho-projects-ai",
     "vendor": "Zoho Corporation Pvt. Ltd.",
-    "product_family": "Zoho Projects — cloud-based project management platform with collaboration, task tracking, time logging, Gantt charts, and AI-powered features (Zia). Available in multiple editions (free, standard, professional, business). Includes mobile apps and third-party integrations.",
+    "product_family": "Zoho Projects: cloud-based project management platform with collaboration, task tracking, time logging, Gantt charts, and AI-powered features (Zia). Available in multiple editions (free, standard, professional, business). Includes mobile apps and third-party integrations.",
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-07-09",
