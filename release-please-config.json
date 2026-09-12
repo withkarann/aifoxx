@@ -8,6 +8,7 @@
         { "type": "feat", "section": "Features" },
         { "type": "fix", "section": "Bug Fixes" },
         { "type": "perf", "section": "Performance" },
+        { "type": "data", "section": "Catalog and data" },
         { "type": "revert", "section": "Reverts" },
         { "type": "refactor", "section": "Refactors" },
         { "type": "docs", "section": "Documentation", "hidden": true },
