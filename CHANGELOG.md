@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.4](https://github.com/withkarann/aifoxx/compare/v1.2.3...v1.2.4) (2026-09-12)
+
+
+### Catalog and data
+
+* add seven tools submitted by the community ([0432771](https://github.com/withkarann/aifoxx/commit/0432771fbf3bf0a984deb7c995f8c8d5b1a544cf))
+* add seven tools submitted by the community ([#330](https://github.com/withkarann/aifoxx/issues/330)) ([a8d102c](https://github.com/withkarann/aifoxx/commit/a8d102c76fc792babc1cffe21837876d9f8b4b79))
+* give every vendor one description, and drop em dashes from our own copy ([#335](https://github.com/withkarann/aifoxx/issues/335)) ([f8c5230](https://github.com/withkarann/aifoxx/commit/f8c5230a19d7fb6db88032a16306a61ed76b6f7f))
+
 ## [1.2.3](https://github.com/withkarann/aifoxx/compare/v1.2.2...v1.2.3) (2026-09-12)
 
 
