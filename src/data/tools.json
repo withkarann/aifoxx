@@ -15,7 +15,7 @@
       "writing"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -76,7 +76,7 @@
       "ai assistant"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -137,7 +137,7 @@
       "reasoning"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -197,7 +197,7 @@
       "research"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-02",
@@ -256,7 +256,7 @@
       "enterprise"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
@@ -317,7 +317,7 @@
       "real-time"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -636,7 +636,7 @@
       "open source"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1107,7 +1107,7 @@
       "iot"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -1160,7 +1160,7 @@
       "google services"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1215,7 +1215,7 @@
       "on-device ai"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1269,7 +1269,7 @@
       "creative writing"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1380,7 +1380,7 @@
       "enterprise"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1654,7 +1654,7 @@
       "proofreading"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1766,7 +1766,7 @@
       "citation generator"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -1977,7 +1977,7 @@
       "summarization"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -3372,7 +3372,7 @@
       "ai coding"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -3429,7 +3429,7 @@
       "refactoring"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -3485,7 +3485,7 @@
       "code generation"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "acquired",
     "last_verified": "2026-06-02",
@@ -3594,7 +3594,7 @@
       "code generation"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -3914,7 +3914,7 @@
       "deployment"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -4338,7 +4338,7 @@
       "ai coding"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -5125,7 +5125,7 @@
       "python"
     ],
     "pricing": "Open Source",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -5239,7 +5239,7 @@
       "datasets"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -5723,7 +5723,7 @@
       "data engineering"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
@@ -6001,7 +6001,7 @@
       "ai design"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -6060,7 +6060,7 @@
       "design system"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -6119,7 +6119,7 @@
       "creative cloud"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -6515,59 +6515,6 @@
     "compliance_sources": {}
   },
   {
-    "id": "126",
-    "name": "Hatchful by Shopify",
-    "slug": "hatchful-by-shopify",
-    "category": "Design",
-    "subcategory": "Logo Design",
-    "description": "Hatchful is Shopify's free AI-powered logo maker that creates professional logos for businesses, e-commerce stores, and social media profiles based on industry and style preferences.",
-    "url": "https://hatchful.shopify.com",
-    "tags": [
-      "free logo maker",
-      "shopify",
-      "e-commerce",
-      "brand design",
-      "small business"
-    ],
-    "pricing": "Free",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-05-29",
-    "access_methods": [
-      "Web App",
-      "iOS App"
-    ],
-    "compliance": {
-      "soc2": true,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": "US",
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Completely free to use",
-      "paid_plans": null,
-      "api_cost": null
-    },
-    "use_cases": [
-      "Creating free logos for Shopify stores",
-      "Building brand identity for new businesses",
-      "Generating social media profile logos",
-      "E-commerce store branding",
-      "Quick logo creation without design skills"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {
-      "soc2": "https://www.shopify.com/de/security",
-      "region": "https://www.shopify.com/legal/privacy"
-    }
-  },
-  {
     "id": "127",
     "name": "Playground AI",
     "slug": "playground-ai",
@@ -6937,7 +6884,7 @@
       "ai diagrams"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -7105,7 +7052,7 @@
       "content generation"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-29",
@@ -7419,7 +7366,7 @@
       "photorealistic"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -7469,7 +7416,7 @@
       "api"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -7527,7 +7474,7 @@
       "image generation"
     ],
     "pricing": "Open Source",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -7584,7 +7531,7 @@
       "ai art"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -9208,59 +9155,6 @@
     }
   },
   {
-    "id": "181",
-    "name": "Lensa AI",
-    "slug": "lensa-ai",
-    "category": "Image Generation",
-    "subcategory": "Avatar Generation",
-    "description": "Lensa AI by Prisma is a mobile photo editing app famous for its Magic Avatars feature that transforms selfies into artistic AI portraits in various artistic styles using Stable Diffusion.",
-    "url": "https://prisma-ai.com/lensa",
-    "tags": [
-      "magic avatars",
-      "mobile photo editing",
-      "ai portraits",
-      "selfie art",
-      "prisma"
-    ],
-    "pricing": "Freemium",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-05-29",
-    "access_methods": [
-      "iOS App",
-      "Android App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": true,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": "US",
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Free with basic editing tools",
-      "paid_plans": "Magic Avatars from $3.99, Pro at $29.99/year",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Creating AI art portraits from selfies",
-      "Mobile photo editing and enhancement",
-      "Generating magic avatar packs",
-      "Background blur and face retouching",
-      "Creating artistic profile pictures for social media"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {
-      "gdpr": "https://prisma-ai.com/privacy",
-      "region": "https://prisma-ai.com/privacy"
-    }
-  },
-  {
     "id": "182",
     "name": "FaceApp",
     "slug": "faceapp",
@@ -10236,7 +10130,7 @@
       "generative ai"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -10293,7 +10187,7 @@
       "video generation"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -10350,7 +10244,7 @@
       "personalized video"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -10406,7 +10300,7 @@
       "cinematic video"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -10606,7 +10500,7 @@
       "screen recording"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -11551,7 +11445,7 @@
       "social media"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -13090,7 +12984,7 @@
       "enterprise ai"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -13299,7 +13193,7 @@
       "multilingual"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -13553,56 +13447,6 @@
       "gdpr": "https://trust.resemble.ai/",
       "hipaa": "https://trust.resemble.ai/"
     }
-  },
-  {
-    "id": "267",
-    "name": "Coqui",
-    "slug": "coqui",
-    "category": "Audio & Music",
-    "subcategory": "Voice Synthesis",
-    "description": "Coqui was an open-source text-to-speech and voice cloning platform offering the TTS library and Studio tool for creating and managing AI voices with emotional range and multilingual support. While Coqui AI shut down in early 2024, the open-source TTS models remain active on GitHub.",
-    "url": "https://coqui.ai",
-    "tags": [
-      "open source tts",
-      "voice cloning",
-      "emotional voice",
-      "multilingual",
-      "developer tools"
-    ],
-    "pricing": "Open Source",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "API",
-      "CLI"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Free open-source models",
-      "paid_plans": null,
-      "api_cost": null
-    },
-    "use_cases": [
-      "Building open-source TTS applications",
-      "Self-hosting voice synthesis for privacy",
-      "Research and development of voice AI models",
-      "Creating multilingual TTS pipelines",
-      "Training custom voice models on your own data"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
   },
   {
     "id": "268",
@@ -14026,7 +13870,7 @@
       "music ai"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -15784,7 +15628,7 @@
       "lead scoring"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -15893,7 +15737,7 @@
       "content marketing"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -16207,7 +16051,7 @@
       "small business"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -16374,7 +16218,7 @@
       "customer data"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -17102,7 +16946,7 @@
       "saas"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -18859,7 +18703,7 @@
       "generative crm"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
@@ -18917,7 +18761,7 @@
       "hubspot"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -18976,7 +18820,7 @@
       "call analytics"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19086,7 +18930,7 @@
       "ai sales"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19146,7 +18990,7 @@
       "sales automation"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19205,7 +19049,7 @@
       "b2b prospecting"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19262,7 +19106,7 @@
       "account intelligence"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19750,7 +19594,7 @@
       "ai prospecting"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -19963,7 +19807,7 @@
       "ai transcription"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -20021,7 +19865,7 @@
       "routing"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -20132,7 +19976,7 @@
       "clf"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -20519,7 +20363,7 @@
       "collaboration"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -21738,7 +21582,7 @@
       "apps"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -22218,7 +22062,7 @@
       "workflow"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -22333,7 +22177,7 @@
       "goals"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -25609,57 +25453,6 @@
     "compliance_sources": {}
   },
   {
-    "id": "500",
-    "name": "Lateral",
-    "slug": "lateral",
-    "category": "Research",
-    "subcategory": "Academic Research",
-    "description": "Lateral is an AI research and analysis tool that helps researchers find themes and connections across large collections of documents and papers. Users can upload PDFs and use AI to surface patterns, extract information, and generate research notes.",
-    "url": "https://lateral.io",
-    "tags": [
-      "document analysis",
-      "thematic research",
-      "pattern extraction",
-      "pdf",
-      "ai"
-    ],
-    "pricing": "Freemium",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-06-02",
-    "access_methods": [
-      "Web App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": true,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Free with limited projects",
-      "paid_plans": "Pro $15/month",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Finding thematic patterns across research papers",
-      "Competitive intelligence from document collections",
-      "Market research synthesis",
-      "Qualitative analysis of large document sets",
-      "Connecting insights across uploaded sources"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {
-      "gdpr": "https://www.lateral.io/privacy-policy/version-1-2"
-    }
-  },
-  {
     "id": "501",
     "name": "Zendesk AI",
     "slug": "zendesk-ai",
@@ -25675,7 +25468,7 @@
       "enterprise"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -27506,7 +27299,7 @@
       "salesforce"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -27562,7 +27355,7 @@
       "reporting"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -30947,7 +30740,7 @@
       "ai tutor"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -30999,7 +30792,7 @@
       "multilingual"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
@@ -31055,7 +30848,7 @@
       "universities"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -31453,56 +31246,6 @@
       "Learning differential and integral calculus techniques",
       "Verifying trigonometry and geometry answers",
       "Linear algebra problem solving for college students"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
-  },
-  {
-    "id": "611",
-    "name": "Socratic by Google",
-    "slug": "socratic-by-google",
-    "category": "Education",
-    "subcategory": "Tutoring",
-    "description": "Socratic by Google is a free AI learning app that helps students understand homework questions by snapping a photo and receiving curated explanations, videos, and step-by-step guides. It covers math, science, history, English, and more using Google AI.",
-    "url": "https://socratic.org",
-    "tags": [
-      "homework help",
-      "ai tutor",
-      "google",
-      "stem",
-      "free"
-    ],
-    "pricing": "Free",
-    "featured": false,
-    "status": "acquired",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "iOS App",
-      "Android App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Completely free",
-      "paid_plans": null,
-      "api_cost": null
-    },
-    "use_cases": [
-      "High school students getting homework explanations",
-      "Understanding science and history concepts",
-      "Breaking down complex math problems with visual aids",
-      "Finding credible educational resources for assignments",
-      "Learning at their own pace with curated video explanations"
     ],
     "not_good_for": [],
     "industries": [],
@@ -32858,55 +32601,6 @@
       "Targeted intervention before key stage assessments",
       "Schools supplementing classroom teaching with specialist tutors",
       "AI-driven diagnostic reports to guide tutor sessions"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
-  },
-  {
-    "id": "640",
-    "name": "Querium",
-    "slug": "querium",
-    "category": "Education",
-    "subcategory": "Tutoring",
-    "description": "Querium is an AI-powered STEM tutoring platform that provides step-by-step guidance for math and science problems using intelligent tutoring and analytics to help students master standardized test content. It is designed to support college readiness and workforce development programs.",
-    "url": "https://querium.com",
-    "tags": [
-      "stem tutoring",
-      "standardized tests",
-      "math",
-      "college readiness",
-      "ai tutor"
-    ],
-    "pricing": "Paid",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "Web App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": null,
-      "paid_plans": "Institutional and workforce program pricing on request",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Students preparing for SAT, ACT, and other standardized tests",
-      "College readiness programs for underprepared students",
-      "Workforce development STEM skill building",
-      "Community college developmental math courses",
-      "Step-by-step math problem solving with AI guidance"
     ],
     "not_good_for": [],
     "industries": [],
@@ -34889,7 +34583,7 @@
       "due diligence"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -35432,55 +35126,6 @@
       "Patent litigation strategy based on historical outcomes",
       "Business development by identifying litigation trends",
       "Settlement decisions informed by case value analytics"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {}
-  },
-  {
-    "id": "692",
-    "name": "ROSS Intelligence",
-    "slug": "ross-intelligence",
-    "category": "Legal",
-    "subcategory": "Legal Research",
-    "description": "ROSS Intelligence was an AI-powered legal research platform that used natural language processing to answer legal research questions with cited case law, though it ceased operations in 2021 following a lawsuit from Thomson Reuters. It pioneered AI-native legal research before its closure.",
-    "url": "https://rossintelligence.com",
-    "tags": [
-      "legal research",
-      "ai search",
-      "case law",
-      "natural language",
-      "defunct"
-    ],
-    "pricing": "Paid",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-03-13",
-    "access_methods": [
-      "Web App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": null,
-      "paid_plans": "Service discontinued in 2021",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Natural language legal research queries returning cited cases",
-      "Bankruptcy and litigation research across federal courts",
-      "Finding relevant precedents without manual keyword searching",
-      "Accelerating legal research for associate attorneys",
-      "Building AI-first workflows in legal research teams"
     ],
     "not_good_for": [],
     "industries": [],
@@ -36409,7 +36054,7 @@
       "institutional finance"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -36975,7 +36620,7 @@
       "fintech"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -37296,7 +36941,7 @@
       "tax"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -38910,7 +38555,7 @@
       "dropshipping"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -40402,7 +40047,7 @@
       "multilingual"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -40460,7 +40105,7 @@
       "133 languages"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -41731,7 +41376,7 @@
       "zero-day threats"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -41783,7 +41428,7 @@
       "xdr"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -42458,7 +42103,7 @@
       "threat detection"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-02",
@@ -43526,7 +43171,7 @@
       "multi-cloud"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -43840,7 +43485,7 @@
       "ai agent"
     ],
     "pricing": "Open Source",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -46066,7 +45711,7 @@
       "devops"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -46288,7 +45933,7 @@
       "enterprise"
     ],
     "pricing": "Paid",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -47640,57 +47285,6 @@
     }
   },
   {
-    "id": "928",
-    "name": "Pablo by Buffer",
-    "slug": "pablo-by-buffer",
-    "category": "Social Media",
-    "subcategory": "Content Scheduling",
-    "description": "Pablo by Buffer is a free, simple online tool for creating social media images quickly with text overlays on photos from a curated library. It is designed for quick social media image creation without needing design skills, and integrates directly with Buffer for immediate scheduling.",
-    "url": "https://pablo.buffer.com",
-    "tags": [
-      "social media images",
-      "quick design",
-      "buffer integration",
-      "free tool",
-      "visual content"
-    ],
-    "pricing": "Free",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-05-29",
-    "access_methods": [
-      "Web App"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": true,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Completely free",
-      "paid_plans": null,
-      "api_cost": null
-    },
-    "use_cases": [
-      "Quick social media quote images",
-      "Twitter card creation",
-      "Facebook post images",
-      "Instagram visual content",
-      "Inspirational post graphics"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {
-      "gdpr": "https://buffer.com/legal"
-    }
-  },
-  {
     "id": "929",
     "name": "Crello (VistaCreate)",
     "slug": "crello-vistacreate",
@@ -47742,58 +47336,6 @@
     "compliance_sources": {}
   },
   {
-    "id": "930",
-    "name": "Stencil",
-    "slug": "stencil",
-    "category": "Social Media",
-    "subcategory": "Content Scheduling",
-    "description": "Stencil is a fast, simple graphic design tool for creating social media graphics, blog images, and marketing visuals using thousands of templates and a large stock photo library. It is designed for marketers and bloggers who need to create professional-quality social images quickly without design expertise.",
-    "url": "https://getstencil.com",
-    "tags": [
-      "social media graphics",
-      "quick design",
-      "templates",
-      "blog images",
-      "marketing visuals"
-    ],
-    "pricing": "Freemium",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-05-29",
-    "access_methods": [
-      "Web App",
-      "Browser Extension"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": true,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": null
-    },
-    "pricing_detail": {
-      "free_tier": "Free plan with 10 images/month",
-      "paid_plans": "Pro from $15/month, Unlimited from $20/month",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Social media image creation",
-      "Blog featured image design",
-      "Quote graphic creation",
-      "Marketing banner design",
-      "Twitter and Facebook visuals"
-    ],
-    "not_good_for": [],
-    "industries": [],
-    "compliance_sources": {
-      "gdpr": "https://getstencil.com/privacy"
-    }
-  },
-  {
     "id": "931",
     "name": "Zillow AI",
     "slug": "zillow-ai",
@@ -47809,7 +47351,7 @@
       "market analysis"
     ],
     "pricing": "Free",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-03-13",
@@ -47963,7 +47505,7 @@
       "real estate"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -50094,7 +49636,7 @@
       "developer tools"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -50306,7 +49848,7 @@
       "cpaas"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -50961,7 +50503,7 @@
       "collaboration"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -51020,7 +50562,7 @@
       "microsoft 365"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -51080,7 +50622,7 @@
       "enterprise"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-27",
@@ -51141,7 +50683,7 @@
       "developer community"
     ],
     "pricing": "Freemium",
-    "featured": false,
+    "featured": true,
     "popular": true,
     "status": "active",
     "last_verified": "2026-06-11",
@@ -51664,65 +51206,6 @@
     "compliance_sources": {
       "self_hostable": "https://github.com/Simon-He95/markstream-vue"
     }
-  },
-  {
-    "id": "1007",
-    "name": "Better Agent",
-    "slug": "better-agent",
-    "category": "Coding",
-    "subcategory": "IDE Assistant",
-    "description": "Local workspace for running parallel Claude, Codex, and Gemini coding-agent sessions in one place, with per-session provider and model choice, delegation and forking across providers, approvals, and restart recovery for sessions that outlive a closed tab.",
-    "url": "https://github.com/ofekron/better-agent",
-    "tags": [
-      "coding agents",
-      "claude",
-      "codex",
-      "gemini",
-      "local workspace",
-      "self-hosted"
-    ],
-    "pricing": "Free",
-    "featured": false,
-    "status": "active",
-    "last_verified": "2026-07-20",
-    "access_methods": [
-      "Web App",
-      "Desktop App",
-      "Mobile App",
-      "Source Code",
-      "CLI"
-    ],
-    "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
-    },
-    "data_storage": {
-      "region": null,
-      "trains_on_data": null,
-      "self_hostable": true
-    },
-    "compliance_sources": {
-      "self_hostable": "https://github.com/ofekron/better-agent"
-    },
-    "pricing_detail": {
-      "free_tier": "Free for non-commercial use (personal, educational, research, evaluation, hobby)",
-      "paid_plans": "Commercial use requires prior written permission from the maintainer under the Source-Available Non-Commercial License",
-      "api_cost": null
-    },
-    "use_cases": [
-      "Running parallel Claude, Codex, and Gemini coding sessions in one workspace",
-      "Recovering agent sessions after a crash or closed tab",
-      "Delegating and forking coding-agent work across providers"
-    ],
-    "not_good_for": [
-      "Hosted or cloud-managed agent runs, since it runs on your own machine",
-      "Commercial use without prior written permission from the maintainer"
-    ],
-    "industries": [
-      "Software Development"
-    ]
   },
   {
     "id": "1008",

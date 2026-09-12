@@ -21,7 +21,7 @@ export function Footer() {
               <li key={cat.name}>
                 <Link
                   to={`/category/${toSlug(cat.name)}`}
-                  className="font-mono text-[11px] sm:text-[10px] text-text-secondary hover:text-accent-green transition-colors duration-150"
+                  className="font-mono text-[11px] sm:text-[10px] text-text-secondary hover:text-accent-green transition-colors duration-150 inline-flex items-center min-h-[24px] px-1"
                 >
                   {cat.name}
                 </Link>
@@ -30,10 +30,10 @@ export function Footer() {
           </ul>
         </nav>
         <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
-          <Link to="/best" className="font-mono text-xs text-accent-green hover:text-text-primary transition-colors tracking-wider">
+          <Link to="/best" className="font-mono text-xs text-accent-green hover:text-text-primary transition-colors tracking-wider inline-flex items-center min-h-[24px] py-1">
             &gt; BEST AI TOOLS BY CATEGORY
           </Link>
-          <Link to="/trust" className="font-mono text-xs text-accent-green hover:text-text-primary transition-colors tracking-wider">
+          <Link to="/trust" className="font-mono text-xs text-accent-green hover:text-text-primary transition-colors tracking-wider inline-flex items-center min-h-[24px] py-1">
             &gt; AI VENDOR TRUST REPORTS
           </Link>
         </div>
@@ -60,7 +60,7 @@ export function Footer() {
             href={Brand.product.repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent-blue hover:text-text-primary transition-colors duration-150"
+            className="text-accent-blue underline underline-offset-2 hover:text-text-primary transition-colors duration-150"
           >
             GitHub
           </a>
@@ -72,7 +72,7 @@ export function Footer() {
             href={`${Brand.product.repo}#what-we-list`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent-blue hover:text-text-primary transition-colors duration-150"
+            className="text-accent-blue underline underline-offset-2 hover:text-text-primary transition-colors duration-150"
           >
             what we list
           </a>
@@ -81,7 +81,7 @@ export function Footer() {
             href={Brand.contact.sponsor}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent-blue hover:text-text-primary transition-colors duration-150"
+            className="text-accent-blue underline underline-offset-2 hover:text-text-primary transition-colors duration-150"
           >
             sponsor the work
           </a>
@@ -93,7 +93,7 @@ export function Footer() {
             href={Brand.creators.primary.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent-blue hover:text-text-primary transition-colors duration-150"
+            className="text-accent-blue underline underline-offset-2 hover:text-text-primary transition-colors duration-150"
           >
             @{Brand.creators.primary.name}
           </a>{" "}
@@ -102,7 +102,7 @@ export function Footer() {
             href={Brand.creators.co_creator.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent-blue hover:text-text-primary transition-colors duration-150"
+            className="text-accent-blue underline underline-offset-2 hover:text-text-primary transition-colors duration-150"
           >
             @{Brand.creators.co_creator.name}
           </a>

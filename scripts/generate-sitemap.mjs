@@ -99,6 +99,7 @@ function generateSitemap() {
     { path: "/news", lastmod: newsLastmod, changefreq: "daily", priority: 0.8 },
     { path: "/best", lastmod: today, changefreq: "weekly", priority: 0.9 },
     { path: "/compare", lastmod: today, changefreq: "weekly", priority: 0.7 },
+    { path: "/privacy", lastmod: today, changefreq: "yearly", priority: 0.3 },
   ];
 
   const bestData = JSON.parse(readFileSync(BEST_PATH, "utf8"));

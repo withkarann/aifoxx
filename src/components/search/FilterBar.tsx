@@ -28,31 +28,7 @@ export function FilterBar({
     <div className="flex items-center gap-3 flex-wrap">
       <span className="font-mono text-xs text-text-muted shrink-0">PRICING:</span>
 
-      {/* Mobile: native multi-select for reliable touch interactions */}
-      <select
-        multiple
-        value={activePricing}
-        onChange={(e) => {
-          const chosen = [...e.target.selectedOptions].map((o) => o.value);
-          // Reconcile the browser's whole-list selection with the toggle API.
-          pricingOptions.forEach((p) => {
-            const wasOn = activePricing.includes(p);
-            const isOn = chosen.includes(p);
-            if (wasOn !== isOn) onTogglePricing(p);
-          });
-        }}
-        aria-label="Filter tools by pricing model"
-        size={Math.min(pricingOptions.length, 5)}
-        className="sm:hidden bg-bg-overlay border border-border-default rounded-[4px] px-2.5 py-1 font-mono text-xs text-text-primary"
-      >
-        {pricingOptions.map((p) => (
-          <option key={p} value={p}>
-            {p}
-          </option>
-        ))}
-      </select>
-
-      <div className="hidden sm:flex flex-wrap gap-1.5 min-w-0">
+      <div className="flex flex-wrap gap-1.5 min-w-0">
         {pricingOptions.map((p) => {
           const isActive = activePricing.includes(p);
           return (
@@ -63,6 +39,7 @@ export function FilterBar({
               onClick={() => onTogglePricing(p)}
               className={cn(
                 "font-mono text-xs px-2.5 py-1 rounded-[4px] whitespace-nowrap transition-all duration-150",
+                "inline-flex items-center min-h-[24px]",
                 isActive
                   ? "bg-accent-green text-primary-foreground font-semibold"
                   : "bg-bg-overlay border border-border-default text-text-secondary hover:text-text-primary"

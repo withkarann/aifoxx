@@ -1,6 +1,6 @@
 import { useParams, useLoaderData, Link } from "react-router-dom";
 import { ExternalLink, ShieldCheck, ArrowUpRight, Info } from "lucide-react";
-import { complianceKeys, heldCertNames, CANONICAL_CERTS } from "@/lib/trust";
+import { complianceKeys, heldCertNames, CANONICAL_CERTS, isHeld } from "@/lib/trust";
 import { trustProductName, trustOperator } from "@/lib/trust-name";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PageMeta } from "@/components/seo/PageMeta";
@@ -8,7 +8,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { ToolIcon } from "@/components/tools/ToolIcon";
 import { isSafeHttpUrl } from "@/lib/utils";
 import Brand from "@/lib/brand";
-import type { TrustReport, Certification } from "@/types/trust";
+import type { TrustReport, Certification, TrustRelatedVendor } from "@/types/trust";
 
 // The --accent-green token stores raw HSL components ("26 86% 52%"), so inline
 // uses must wrap it in hsl() exactly like the Tailwind color mapping does.
@@ -77,7 +77,7 @@ function StatTile({ label, value, tone = "default" }: { label: string; value: st
 
 /** The signature element: a certification with its verbatim, sourced proof. */
 function CertLedgerRow({ cert }: { cert: Certification }) {
-  const held = cert.held;
+  const held = isHeld(cert);
   const sourceHost = hostOf(cert.source);
   const linkable = isSafeHttpUrl(cert.source);
   return (
@@ -154,7 +154,9 @@ function SectionHeader({ children }: { children: React.ReactNode }) {
 export default function TrustReportPage() {
   const { slug } = useParams<{ slug: string }>();
   // The route loader resolves this vendor's report (only its own data loads).
-  const report = useLoaderData() as TrustReport | null;
+  const data = useLoaderData() as { report: TrustReport; related: TrustRelatedVendor[] } | null;
+  const report = data?.report ?? null;
+  const related = data?.related ?? [];
 
   if (!report) {
     return (
@@ -178,12 +180,12 @@ export default function TrustReportPage() {
   const site = vendorSite(report);
   const held = complianceKeys(heldCertNames(report), report.privacy?.dpa === true);
   const trains = trainsOnData(report);
-  const certsHeldCount = (report.certifications || []).filter((c) => c.held).length;
+  const certsHeldCount = (report.certifications || []).filter(isHeld).length;
   const marquee = marqueeCerts(held);
   const pageUrl = `https://${Brand.product.domain}/trust/${report.slug}`;
 
-  const heldCerts = (report.certifications || []).filter((c) => c.held);
-  const notHeldCerts = (report.certifications || []).filter((c) => !c.held);
+  const heldCerts = (report.certifications || []).filter(isHeld);
+  const notHeldCerts = (report.certifications || []).filter((c) => !isHeld(c));
 
   // A report is named after the product it covers, not the legal entity that
   // owns it, so pages for sibling products stay distinct from each other.
@@ -210,15 +212,17 @@ export default function TrustReportPage() {
   // strictly from the verified report data.
   const faq: { q: string; a: string }[] = [];
   const certAnswer = (key: string, label: string) => {
-    const isHeld = held.has(key);
-    const cert = (report.certifications || []).find((c) => c.held && CANONICAL_CERTS.find((cc) => cc.key === key)?.match(c.name));
-    if (isHeld && cert?.proof_quote) {
+    const confirmed = held.has(key);
+    const cert = (report.certifications || []).find(
+      (c) => isHeld(c) && CANONICAL_CERTS.find((cc) => cc.key === key)?.match(c.name)
+    );
+    if (confirmed && cert?.proof_quote) {
       return `Yes. Per ${report.vendor}: "${cert.proof_quote}"`.slice(0, 300);
     }
-    if (isHeld && key === "gdpr" && !cert) {
+    if (confirmed && key === "gdpr" && !cert) {
       return `Yes. ${report.vendor} provides a GDPR data processing agreement (DPA) covering how customer data is handled.`;
     }
-    if (isHeld) return `Yes, ${report.vendor} lists ${label} compliance.`;
+    if (confirmed) return `Yes, ${report.vendor} lists ${label} compliance.`;
     return `We could not confirm ${label} for ${report.vendor} from its public trust or security pages. This does not necessarily mean the vendor lacks it. Confirm directly with the vendor.`;
   };
   faq.push({ q: `Is ${product} SOC 2 compliant?`, a: certAnswer("soc2", "SOC 2") });
@@ -326,6 +330,7 @@ export default function TrustReportPage() {
                 websiteUrl={site}
                 accent={ACCENT}
                 className="w-12 h-12 sm:w-14 sm:h-14 rounded-[6px]"
+                size={48}
                 letterClassName="text-lg sm:text-xl"
               />
               <div className="min-w-0 flex-1">
@@ -540,6 +545,27 @@ export default function TrustReportPage() {
               <Link to="/trust" className="text-accent-green hover:underline">&gt; Browse all vendor trust reports</Link>
             </p>
           </section>
+
+          {related.length > 0 && (
+            <section className="space-y-3">
+              <SectionHeader>Trust reports for comparable tools</SectionHeader>
+              <p className="font-mono text-[11px] text-text-muted">
+                Other tools in the same category, each with its own sourced report.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {related.map((peer) => (
+                  <Link
+                    key={peer.slug}
+                    to={`/trust/${peer.slug}`}
+                    className="flex items-center justify-between gap-2 bg-bg-surface border border-border-default rounded-[6px] px-4 py-3 hover:border-accent-green/60 transition-colors duration-150 min-h-[48px]"
+                  >
+                    <span className="font-display font-black text-sm text-text-primary truncate">{peer.name}</span>
+                    <ArrowUpRight size={14} className="text-text-muted shrink-0" />
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           <div className="h-10" aria-hidden="true" />
         </div>

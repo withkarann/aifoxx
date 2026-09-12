@@ -106,6 +106,8 @@ function ToolHeader({ tool, onRemove }: { tool: Tool; onRemove?: (slug: string) 
           <img
             src={tool.logo_url}
             alt=""
+            width={28}
+            height={28}
             loading="lazy"
             decoding="async"
             referrerPolicy="no-referrer"

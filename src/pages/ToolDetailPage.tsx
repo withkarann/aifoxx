@@ -3,6 +3,7 @@ import { useParams, useLoaderData, Link, useNavigate } from "react-router-dom";
 import { Star, ExternalLink, Scale, ShieldCheck, ArrowUpRight } from "lucide-react";
 import { GithubLogo } from "phosphor-react";
 import { getToolBySlug, getRelatedTools } from "@/lib/tools";
+import { hasTagPage } from "@/lib/tags";
 import { getToolSkills } from "@/lib/skills";
 import { hasTrustReport } from "@/lib/trust";
 import { getTrustBadges } from "@/lib/trust-badges";
@@ -293,6 +294,7 @@ export default function ToolDetailPage() {
               websiteUrl={tool.url}
               accent={color.accent}
               className="w-14 h-14 sm:w-16 sm:h-16"
+              size={56}
               letterClassName="text-xl sm:text-2xl"
             />
             <div className="min-w-0 flex-1">
@@ -597,16 +599,22 @@ export default function ToolDetailPage() {
           {/* Tags */}
           {tool.tags.length > 0 && (
             <div className="flex flex-wrap gap-2">
-              {tool.tags.map((tag) => (
-                <Link
-                  key={tag}
-                  to={`/tag/${tag}`}
-                  className="tag-pill-link inline-flex items-center text-xs font-mono px-2.5 py-1 rounded-[3px] transition-colors duration-150 whitespace-nowrap"
-                  style={{ "--cat-accent": color.accent, "--cat-text": color.text } as React.CSSProperties}
-                >
-                  #{tag}
-                </Link>
-              ))}
+              {tool.tags.map((tag) => {
+                const pillClass =
+                  "inline-flex items-center text-xs font-mono px-2.5 py-1 rounded-[3px] transition-colors duration-150 whitespace-nowrap";
+                const pillStyle = { "--cat-accent": color.accent, "--cat-text": color.text } as React.CSSProperties;
+                // Only tags with a page of their own become links. The rest stay
+                // plain text so no tag ever leads to a missing page.
+                return hasTagPage(tag) ? (
+                  <Link key={tag} to={`/tag/${encodeURIComponent(tag)}`} className={`tag-pill-link ${pillClass}`} style={pillStyle}>
+                    #{tag}
+                  </Link>
+                ) : (
+                  <span key={tag} className={`tag-pill ${pillClass}`} style={pillStyle}>
+                    #{tag}
+                  </span>
+                );
+              })}
             </div>
           )}
 
