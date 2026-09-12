@@ -31,11 +31,16 @@ const swap = (pattern, replacement) => {
   html = html.replace(pattern, replacement);
 };
 
-swap(/<title\b[^>]*>[\s\S]*?<\/title>/i, "<title>Page not found | AIFOXX</title>");
+// The app shows this same wording, so a crawler and a visitor read one page.
+const TITLE = "404 | Page Not Found | AIFOXX";
+const DESCRIPTION =
+  "That page does not exist. Browse the AI tools directory to find what you need.";
+
+swap(/<title\b[^>]*>[\s\S]*?<\/title>/i, `<title>${TITLE}</title>`);
 
 swap(
   /(<meta\b[^>]*\bname=["']description["'][^>]*\bcontent=")[^"]*"/i,
-  '$1That page does not exist. Browse the AI tools directory to find what you need."'
+  `$1${DESCRIPTION}"`
 );
 
 swap(
@@ -46,6 +51,36 @@ swap(
 // A missing page has no canonical of its own, and inheriting the home page's
 // would tell search engines to fold every unknown URL into the home page.
 swap(/<link\b[^>]*\brel=["']canonical["'][^>]*>\s*/i, "");
+
+// The tags a social card is built from would otherwise advertise the directory
+// on a link that leads nowhere, so they say the same thing as the page title
+// and description above. The address is dropped rather than rewritten, because
+// a missing page has no address of its own to name.
+for (const [attr, key, value] of [
+  ["property", "og:title", TITLE],
+  ["property", "og:description", DESCRIPTION],
+  ["property", "og:image:alt", TITLE],
+  ["name", "twitter:title", TITLE],
+  ["name", "twitter:description", DESCRIPTION],
+  ["name", "twitter:image:alt", TITLE],
+]) {
+  swap(
+    new RegExp(`(<meta\\b[^>]*\\b${attr}=["']${key}["'][^>]*\\bcontent=")[^"]*"`, "i"),
+    `$1${value}"`
+  );
+}
+swap(/<meta\b[^>]*\bproperty=["']og:url["'][^>]*>\s*/i, "");
+
+// The copy also carries the home page's rendered markup, and the marker that
+// tells the app to reuse it. A visitor on a missing page would be served the
+// whole home page, see it for an instant, and then watch it be replaced by the
+// missing-page notice the app actually wants to show. Emptying the container
+// and dropping the marker lets the app draw the page itself, which is both the
+// right page from the first paint and around 690 KB less to download.
+swap(
+  /<div id="root" data-server-rendered="true">[\s\S]*?<\/div>(?=\s*<script)/i,
+  '<div id="root"></div>'
+);
 
 writeFileSync(fallback, html);
 console.log("spa fallback written: dist/404.html");
