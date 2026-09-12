@@ -106,6 +106,10 @@ scripts/report-trust.mjs
 scripts/strip-weak-sources.mjs
 scripts/verify-*.mjs
 scripts/fetch-catalog.mjs
+scripts/monitor-vendors.mjs
+scripts/monitor-vendors-browser.mjs
+scripts/discover-trust-pages.mjs
+scripts/extract-certifications.mjs
 scripts/recapture-slugs.txt
 scripts/trust-daily.sh
 .gstack/
@@ -118,3 +122,11 @@ scripts/vendor-assessment/
 src/data/tools-index.json
 src/data/tools/
 src/data/trust-related/
+
+# Findings from the daily vendor page check (local only)
+src/data/trust-monitor.json
+src/lib/monitor.ts
+src/lib/monitor.test.ts
+.github/workflows/monitor-vendors.yml
+monitor-run.log
+commit-msg.txt

@@ -11,31 +11,47 @@
       "name": "SOC 2",
       "held": false,
       "proof_quote": "Trust center overview (verbatim): 'This portal provides real-time access to our latest security certifications, compliance reports, and legal documentation (including SOC 2 and GDPR).' The vendor's own trust center thus names SOC 2 as a report it holds, but the report sits behind 'Request access' and could not be independently retrieved; the public homepage hedges the posture as 'SOC 2 & ISO Aligned' rather than 'SOC 2 certified'. Held kept as 'unknown' (a SOC 2 report is plausibly held but the gated report and audit period/type could not be verified); no public copy was found via web search.",
-      "source": "https://trust.invideo.io/ (overview text) and https://invideo.io/ ('SOC 2 & ISO Aligned')"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [
+        "https://invideo.io/"
+      ],
+      "source_note": "overview text) ('SOC 2 & ISO Aligned'"
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "The homepage badge reads (verbatim): 'Private & Secure / SOC 2 & ISO Aligned / GDPR Compliant.' 'Aligned' denotes following the framework's controls, not holding an accredited certificate (a certified vendor would state 'ISO 27001 certified'). The trust center, when enumerating the reports it makes available, names only 'SOC 2 and GDPR' and does not reference any ISO 27001 certificate, and no ISO certificate appears in the public control list. No published ISO 27001 certificate for Invideo was found.",
-      "source": "https://invideo.io/ ('SOC 2 & ISO Aligned') and https://trust.invideo.io/ (reports list names SOC 2 + GDPR, no ISO)"
+      "source": "https://invideo.io/",
+      "source_urls": [
+        "https://trust.invideo.io/"
+      ],
+      "source_note": "'SOC 2 & ISO Aligned') (reports list names SOC 2 + GDPR no ISO"
     },
     {
       "name": "GDPR",
       "held": true,
       "proof_quote": "GDPR Compliant — homepage trust badge; Privacy Policy enumerates Data Subject rights (access, rectification, erasure, restriction, portability, complaint to a supervisory authority) and lawful bases of processing.",
-      "source": "https://invideo.io/ and https://invideo.io/legal/privacy/"
+      "source": "https://invideo.io/",
+      "source_urls": [
+        "https://invideo.io/legal/privacy/"
+      ],
+      "source_note": "legal/privacy/"
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "No mention of HIPAA anywhere on the trust center, security pages, or privacy policy; service is consumer/creator video tooling, not health data.",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "PCI DSS",
       "held": false,
       "proof_quote": "Payments are handled by Stripe (listed subprocessor: 'Stripe • Finance and payments'); no direct PCI claim by Invideo.",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "privacy": {
@@ -56,47 +72,65 @@
     {
       "name": "Encryption in transit",
       "value": "Stated — 'Data transmission encrypted' control listed under Product security.",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Encryption / key management",
       "value": "Stated — 'Encryption key access restricted' and 'Unique production database authentication enforced' under Infrastructure security.",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Vulnerability monitoring",
       "value": "Stated — 'Vulnerability and system monitoring procedures established' under Product security.",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Penetration testing",
       "value": "unknown — not explicitly named in the public (ungated) control list; full control set and audit reports are behind 'Request access.'",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Bug bounty / vulnerability disclosure",
       "value": "No public HackerOne or Bugcrowd program found. Security contact is security@invideo.io. (An internal/in-house bounty effort has been referenced historically by an Invideo engineer, but no public program.)",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Org security controls",
       "value": "Stated — 'Employee background checks performed', 'Anti-malware technology utilized', 'Production inventory maintained'.",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Business continuity / DR",
       "value": "Stated — 'Continuity and Disaster Recovery plans established' and 'tested'.",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Subprocessors",
       "value": "Disclosed: Amazon Web Services (cloud), Stripe (payments), OpenAI (data storage/processing), Anthropic (data storage/processing).",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Trust center platform",
       "value": "Hosted, gated trust portal (Vanta-style) with live control list; full reports require requesting access.",
-      "source": "https://trust.invideo.io/"
+      "source": "https://trust.invideo.io/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

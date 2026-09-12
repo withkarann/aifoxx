@@ -6,11 +6,29 @@ import { z } from "zod";
  * the /trust/:slug pages. Report data lives in src/data/trust/<slug>.json.
  */
 
+/**
+ * Where a fact came from. It must be a single web address and nothing else:
+ * an address with a second address, a page name or an aside appended cannot be
+ * opened, which means the fact behind it can never be checked again. Anything
+ * that is not an address belongs in the note, and any further addresses belong
+ * in the list beside it.
+ */
+const SourceUrl = z
+  .string()
+  .default("")
+  .refine((value) => value === "" || /^https?:\/\/[^\s"'<>]+$/.test(value), {
+    message: "source must be a single http(s) address with nothing appended",
+  });
+
 export const CertificationSchema = z.object({
   name: z.string(),
   held: z.boolean(),
   proof_quote: z.string().default(""),
-  source: z.string().default(""),
+  source: SourceUrl,
+  /** Any further addresses that back the same fact. */
+  source_urls: z.array(SourceUrl).default([]),
+  /** Wording that came with the source, such as which part of the page to read. */
+  source_note: z.string().default(""),
 });
 export type Certification = z.infer<typeof CertificationSchema>;
 
@@ -28,7 +46,9 @@ export type Privacy = z.infer<typeof PrivacySchema>;
 export const SecurityItemSchema = z.object({
   name: z.string(),
   value: z.string().default(""),
-  source: z.string().default(""),
+  source: SourceUrl,
+  source_urls: z.array(SourceUrl).default([]),
+  source_note: z.string().default(""),
 });
 export type SecurityItem = z.infer<typeof SecurityItemSchema>;
 

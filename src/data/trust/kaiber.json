@@ -11,25 +11,33 @@
       "name": "SOC 2",
       "held": false,
       "proof_quote": "",
-      "source": "No SOC 2 claim found. kaiber.ai/security, kaiber.ai/trust, kaiber.ai/trust-center, and kaiber.ai/compliance all return 404; no SOC 2 mention in privacy policy or terms."
+      "source": "",
+      "source_urls": [],
+      "source_note": "No SOC 2 claim found. kaiber.ai/security kaiber.ai/trust kaiber.ai/trust-center kaiber.ai/compliance all return 404 no SOC 2 mention in privacy policy terms."
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "",
-      "source": "No ISO 27001 claim found on kaiber.ai or in published policies."
+      "source": "",
+      "source_urls": [],
+      "source_note": "No ISO 27001 claim found on kaiber.ai in published policies."
     },
     {
       "name": "GDPR",
       "held": false,
       "proof_quote": "If you are an individual in the United Kingdom or European Economic Area (EEA), we collect and process information about you only where we have legal bases for doing so under applicable United Kingdom and/or EU laws.",
-      "source": "https://kaiber.ai/privacy"
+      "source": "https://kaiber.ai/privacy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "",
-      "source": "Not applicable / no claim. Consumer creative tool, not positioned for PHI."
+      "source": "",
+      "source_urls": [],
+      "source_note": "Not applicable / no claim. Consumer creative tool not positioned for PHI."
     }
   ],
   "privacy": {
@@ -48,32 +56,44 @@
     {
       "name": "Stated security measures",
       "value": "Organizational, technical and administrative measures to protect against unauthorized access, misuse, loss, disclosure, alteration and destruction; no specifics (no named encryption standard, no SOC2/pentest evidence).",
-      "source": "https://kaiber.ai/privacy"
+      "source": "https://kaiber.ai/privacy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Bug bounty program",
       "value": "None found (no HackerOne or Bugcrowd program located).",
-      "source": "kaiber.ai (no security.txt or trust page found)"
+      "source": "",
+      "source_urls": [],
+      "source_note": "kaiber.ai (no security.txt trust page found"
     },
     {
       "name": "Penetration testing",
       "value": "unknown / not disclosed",
-      "source": "No public statement on kaiber.ai"
+      "source": "",
+      "source_urls": [],
+      "source_note": "No public statement on kaiber.ai"
     },
     {
       "name": "Data residency",
       "value": "Data processed in the United States; cross-border transfers acknowledged with 'appropriate safeguards' but no specific mechanism (SCCs/DPF) named.",
-      "source": "https://kaiber.ai/privacy"
+      "source": "https://kaiber.ai/privacy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Payment data handling",
       "value": "Card data handled by third-party processor; Kaiber states it does not have direct access to credit card information.",
-      "source": "https://kaiber.ai/privacy"
+      "source": "https://kaiber.ai/privacy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Age restriction",
       "value": "Services not intended for users under 18; minors not permitted to register.",
-      "source": "https://kaiber.ai/terms"
+      "source": "https://kaiber.ai/terms",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

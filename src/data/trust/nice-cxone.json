@@ -11,91 +11,121 @@
       "name": "SOC 2 Type II + HITRUST",
       "held": true,
       "proof_quote": "NiCE demonstrates its commitment to compliance by maintaining industry-leading certifications for CXone and undergoing regular third-party audits including PCI-DSS, ISO 27001, SOC 2+ HITRUST, IRAP, FedRAMP, and more.",
-      "source": "https://www.nice.com/company/trust-center"
+      "source": "https://www.nice.com/company/trust-center",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 27001",
       "held": true,
       "proof_quote": "ISO 27001 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 27017",
       "held": true,
       "proof_quote": "ISO 27017 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 27018",
       "held": true,
       "proof_quote": "ISO 27018 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 27701",
       "held": true,
       "proof_quote": "ISO 27701 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 9001",
       "held": true,
       "proof_quote": "ISO 9001 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "FedRAMP Moderate",
       "held": true,
       "proof_quote": "FedRAMP - Authorization, North America. Package ID: FR1704655535. Level: Moderate Impact Level.",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "PCI DSS",
       "held": true,
       "proof_quote": "PCI DSS - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "IRAP",
       "held": true,
       "proof_quote": "IRAP - Authorization, APAC",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "C5 (BSI Cloud Computing Compliance Criteria Catalogue)",
       "held": true,
       "proof_quote": "C5 - Certification, EU Sovereign Cloud",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Cyber Essentials Plus",
       "held": true,
       "proof_quote": "Cyber Essentials Plus - Certification, EMEA",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "HIPAA - Law, North America (listed as a compliance framework; no specific BAA or HIPAA attestation type confirmed on public-facing pages)",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "EU-US Data Privacy Framework (DPF)",
       "held": true,
       "proof_quote": "NICE Systems, Inc., Mattersight Corporation, Nexidia Inc., Actimize Inc., Arcaris Inc., NICE Systems Technologies Inc. adhere to the EU-U.S. Data Privacy Framework Principles",
-      "source": "https://www.nice.com/company/legal/privacy-policy"
+      "source": "https://www.nice.com/company/legal/privacy-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "WCAG 2.2",
       "held": true,
       "proof_quote": "WCAG 2.2 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Sarbanes-Oxley (SOX)",
       "held": true,
       "proof_quote": "Sarbanes-Oxley - Certification, North America",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "privacy": {
@@ -116,52 +146,72 @@
     {
       "name": "Encryption at rest and in transit",
       "value": "AES encryption at rest; TLS in transit",
-      "source": "https://www.nice.com/company/trust-center"
+      "source": "https://www.nice.com/company/trust-center",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Security Operations Center",
       "value": "24/7 Cybersecurity Operations Center (CSOC) with SIEM monitoring",
-      "source": "https://www.nice.com/company/trust-center"
+      "source": "https://www.nice.com/company/trust-center",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Access controls",
       "value": "Role-based access control (RBAC), multi-factor authentication (MFA), quarterly account reviews",
-      "source": "https://www.nice.com/company/trust-center"
+      "source": "https://www.nice.com/company/trust-center",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Incident response",
       "value": "Formal Information Security Incident Response Plan with client notification obligations",
-      "source": "https://www.nice.com/company/trust-center"
+      "source": "https://www.nice.com/company/trust-center",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Uptime SLA",
       "value": "99.99% monthly availability guaranteed with multi-region redundancy; historical availability 99.99-100% across all regions (Jan-May 2026)",
-      "source": "https://www.nice.com/company/trust-center/availability-uptime"
+      "source": "https://www.nice.com/company/trust-center/availability-uptime",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Bug bounty / vulnerability disclosure",
       "value": "No public bug bounty program found on HackerOne, Bugcrowd, or the NICE website as of 2026-06-27",
-      "source": "Web search and https://www.nice.com/company/trust-center"
+      "source": "https://www.nice.com/company/trust-center",
+      "source_urls": [],
+      "source_note": "Web search"
     },
     {
       "name": "Penetration testing",
       "value": "Not explicitly confirmed on public-facing pages; referenced indirectly via third-party audits and compliance program",
-      "source": "https://www.nice.com/company/trust-center"
+      "source": "https://www.nice.com/company/trust-center",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Sub-processor list",
       "value": "Available on request via NICE Customer portal (not publicly listed); 10-day advance notice of sub-processor changes per DPA",
-      "source": "https://www.nice.com/company/legal/data-processing-agreement"
+      "source": "https://www.nice.com/company/legal/data-processing-agreement",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Customer audit rights",
       "value": "Customers may audit once per 12-month period with 60 days written notice, at their own expense (regulators or post-incident may trigger additional audits)",
-      "source": "https://www.nice.com/company/legal/data-processing-agreement"
+      "source": "https://www.nice.com/company/legal/data-processing-agreement",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Data deletion",
       "value": "Data destroyed on termination or expiry of Master Relationship Agreement; archived backup data isolated until deletion is possible",
-      "source": "https://www.nice.com/company/legal/data-processing-agreement"
+      "source": "https://www.nice.com/company/legal/data-processing-agreement",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

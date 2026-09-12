@@ -4,8 +4,8 @@
   "product_family": "Crayon AI: Competitive Intelligence Platform",
   "last_verified": "2026-06-27",
   "maturity": "enterprise",
-  "has_trust_center": false,
-  "trust_center_url": "",
+  "has_trust_center": true,
+  "trust_center_url": "https://app.vanta.com/crayon/trust/vabogpy2n3q9cp9hicshd",
   "certifications": [
     {
       "name": "SOC 2 Type II",
