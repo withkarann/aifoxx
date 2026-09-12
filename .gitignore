@@ -19,8 +19,8 @@ dist-ssr
 .vite/
 *.tsbuildinfo
 
-# Test & QA run output — never commit. The E2E setup itself (playwright.config.ts,
-# playwright-fixture.ts, src/test/) IS committed; only its generated output is ignored.
+# Output produced by running the tests. The test setup itself (playwright.config.ts,
+# playwright-fixture.ts, src/test/) is committed; only what a run generates is ignored.
 /test-results/
 /playwright-report/
 /blob-report/
@@ -29,12 +29,12 @@ dist-ssr
 .playwright-mcp/
 *.trace.zip
 
-# Local QA / dogfooding scratch — keep ad-hoc Playwright scripts & screenshots here
+# Scratch space for anything a test run leaves behind
 .scratch/
 /tmp/
 screenshots/
 
-# Loose screenshots / images at the repo root (committed assets live in public/ or src/)
+# Stray images at the repo root (committed assets live in public/ or src/)
 /*.png
 /*.jpg
 /*.jpeg
@@ -77,42 +77,6 @@ screenshots/
 *.crt
 *.p12
 *.pfx
-
-# Internal documents — keep these out of the public repo
-.lovable/
-docs/superpowers/
-SEO_PLAN.md
-CLAUDE.md
-AGENTS.md
-.remember/
-
-# Local data-pipeline artifacts under scripts/ — never publish.
-# Note: scripts/generate-sitemap.mjs and scripts/scrape-news.mjs are tracked
-# build/data scripts and are intentionally NOT matched by the rules below.
-scripts/*.log
-scripts/compliance-*
-scripts/trust-*
-scripts/model-input/
-scripts/model-verdicts/
-scripts/*-slugs.txt
-scripts/needs-better-trust-url.json
-scripts/TRUST-CENTERS.md
-scripts/compliance-research-prompt.md
-scripts/prep-model-review.mjs
-scripts/judge-trust.mjs
-scripts/merge-*.mjs
-scripts/aggregate-model.mjs
-scripts/report-trust.mjs
-scripts/strip-weak-sources.mjs
-scripts/verify-*.mjs
-scripts/fetch-catalog.mjs
-scripts/recapture-slugs.txt
-scripts/trust-daily.sh
-.gstack/
-
-# Local vendor research working files (not part of the published catalog)
-scripts/vendor-assessment/
-.vendor-data/
 
 # Generated from tools.json by the split step (rebuilt each dev/build)
 src/data/tools-index.json
