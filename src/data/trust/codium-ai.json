@@ -11,31 +11,44 @@
       "name": "SOC 2 Type II",
       "held": true,
       "proof_quote": "SOC 2 Type II certified — Independently audited security controls, not just a self-attestation. (Homepage Security & Compliance section). Trust Center lists certification 'SOC 2' and a document 'SOC 2 Type II — Request access'. Blog: 'our security measures include SOC2 Type II certification'.",
-      "source": "https://trust.qodo.ai/; https://www.qodo.ai/; https://www.qodo.ai/blog/qodo-security-our-commitment-to-data-privacy-and-security/"
+      "source": "https://trust.qodo.ai/",
+      "source_urls": [
+        "https://www.qodo.ai/",
+        "https://www.qodo.ai/blog/qodo-security-our-commitment-to-data-privacy-and-security/"
+      ],
+      "source_note": "blog/qodo-security-our-commitment-to-data-privacy- -security/"
     },
     {
       "name": "Penetration Test (third-party report)",
       "held": true,
       "proof_quote": "Trust Center Documents section lists: 'PDF Penetration Test — Request access'. This confirms a pentest report exists and is shared under NDA, though it is not a certification.",
-      "source": "https://trust.qodo.ai/"
+      "source": "https://trust.qodo.ai/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "No mention of ISO 27001 on the Qodo Trust Center, homepage, security blog, or privacy policy. Only SOC 2 is listed as a certification.",
-      "source": "https://trust.qodo.ai/"
+      "source": "https://trust.qodo.ai/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "No HIPAA reference found on any Qodo-owned page reviewed (developer-tooling vendor; no healthcare data processing claimed).",
-      "source": "https://trust.qodo.ai/"
+      "source": "https://trust.qodo.ai/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "GDPR (regulatory posture, not a certification)",
       "held": false,
       "proof_quote": "Privacy Policy describes GDPR-style legal bases ('Processing is necessary for our legitimate interests...', 'Consent (with regards to marketing communications)') and data-subject rights (access, erasure, objection, restriction, portability). Vendor is EU-facing and Israel-based, but no formal GDPR/adequacy certification is asserted.",
-      "source": "https://www.qodo.ai/privacy-policy/"
+      "source": "https://www.qodo.ai/privacy-policy/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "privacy": {
@@ -55,32 +68,44 @@
     {
       "name": "Encryption",
       "value": "2-way encryption and secrets obfuscation. Vendor cites TLS/SSL specifically for secure payment; code is described as securely transmitted to the Qodo backend (no explicit general data-in-transit TLS statement on owned pages).",
-      "source": "https://www.qodo.ai/blog/qodo-security-our-commitment-to-data-privacy-and-security/"
+      "source": "https://www.qodo.ai/blog/qodo-security-our-commitment-to-data-privacy-and-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Zero data retention (enterprise)",
       "value": "Code analyzed and discarded; nothing stored, logged, or used to train models. Paid data deleted within 48h (immediate zero-retention on request).",
-      "source": "https://www.qodo.ai/"
+      "source": "https://www.qodo.ai/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Deployment isolation",
       "value": "On-premises deployment and single-tenant dedicated instance available for enterprise (no shared infrastructure).",
-      "source": "https://www.qodo.ai/"
+      "source": "https://www.qodo.ai/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Responsible disclosure / bug bounty",
       "value": "Trust Center App Security controls list 'Responsible Disclosure'. Qodo has run a self-managed Bug Bounty Program (terms page; not on a managed HackerOne/Bugcrowd platform that could be confirmed). No HackerOne/Bugcrowd program verified.",
-      "source": "https://trust.qodo.ai/"
+      "source": "https://trust.qodo.ai/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Trust Center controls",
       "value": "Access monitoring, data backups, data erasure, credential management, code analysis, audit logging, anti-DDoS, BC/DR, status monitoring, password security. Powered by SecurityPal AI.",
-      "source": "https://trust.qodo.ai/"
+      "source": "https://trust.qodo.ai/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Penetration testing",
       "value": "Third-party penetration test report available under NDA via Trust Center document request.",
-      "source": "https://trust.qodo.ai/"
+      "source": "https://trust.qodo.ai/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

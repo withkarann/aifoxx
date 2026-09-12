@@ -11,31 +11,49 @@
       "name": "SOC 2 Type II",
       "held": true,
       "proof_quote": "We have received our SOC 2 Type II report, certifying that a third party auditor has confirmed over an extended period of observation that we back our security and privacy stance, complete with vulnerability scans and penetration tests. ... performed by Prescient Assurance.",
-      "source": "https://devin.ai/blog/codeium-is-soc2-type2-compliant (also docs.devin.ai/admin/security: 'Cognition obtained SOC 2 Type II certification... in March 2024'; trust.windsurf.com lists 'SOC2 (2026)')"
+      "source": "https://devin.ai/blog/codeium-is-soc2-type2-compliant",
+      "source_urls": [],
+      "source_note": "also docs.devin.ai/admin/security: 'Cognition obtained SOC 2 Type II certification... in March 2024' trust.windsurf.com lists 'SOC2 (2026)'"
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "No ISO 27001 certification is claimed or listed on the vendor trust center, security docs, or SOC 2 blog.",
-      "source": "https://trust.windsurf.com/, https://docs.devin.ai/admin/security"
+      "source": "https://trust.windsurf.com/",
+      "source_urls": [
+        "https://docs.devin.ai/admin/security"
+      ],
+      "source_note": ""
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "HIPAA is not listed on the vendor trust center or current security documentation that could be directly verified. Third-party reports mention HIPAA BAA availability for enterprise, but no vendor-domain proof was confirmed.",
-      "source": "https://trust.windsurf.com/, https://docs.devin.ai/admin/security"
+      "source": "https://trust.windsurf.com/",
+      "source_urls": [
+        "https://docs.devin.ai/admin/security"
+      ],
+      "source_note": ""
     },
     {
       "name": "FedRAMP High (Windsurf/Codeium Extensions, IL5, ITAR)",
       "held": true,
       "proof_quote": "Windsurf Extensions (previously Exafunction Codeium) have achieved FedRAMP High authorization. Windsurf Extensions are IL5 (Impact Level 5) compliant for the Department of Defense (DoD). Windsurf's FedRAMP solution and processes around access enable us to handle ITAR data. Listed on the FedRAMP Marketplace (FR2315464863); announced March 10, 2025. The trust center also lists downloadable 'FedRAMP Accreditation and ATO Artifacts' and a 'FedRAMP NIST SP 800-53 CRM & CIS Workbook' consistent with an active authorization.",
-      "source": "https://windsurf.com/blog/fedramp-certification (redirects to https://devin.ai/blog/fedramp-certification); corroborated by https://www.businesswire.com/news/home/20250317975276/en/ and the AWS Marketplace 'Windsurf Enterprise FedRAMP' listing; https://trust.windsurf.com/"
+      "source": "https://windsurf.com/blog/fedramp-certification",
+      "source_urls": [
+        "https://devin.ai/blog/fedramp-certification",
+        "https://www.businesswire.com/news/home/20250317975276/en/",
+        "https://trust.windsurf.com/"
+      ],
+      "source_note": "redirects to ) corroborated by the AWS Marketplace 'Windsurf Enterprise FedRAMP' listing"
     },
     {
       "name": "CMMC 2.0 / NIST SP 800-171",
       "held": false,
       "proof_quote": "Trust center lists 'CMMC 2.0 CRM: NIST SP 800-171 Control Mapping' — this is a Customer Responsibility Matrix / control mapping document, not a CMMC certification or assessment award.",
-      "source": "https://trust.windsurf.com/"
+      "source": "https://trust.windsurf.com/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "privacy": {
@@ -55,27 +73,39 @@
     {
       "name": "Penetration testing",
       "value": "Yes — third-party pen tests conducted; trust center lists 'Pen Test 2025' as a downloadable report, and the SOC 2 blog cites 'vulnerability scans and penetration tests.'",
-      "source": "https://trust.windsurf.com/, https://devin.ai/blog/codeium-is-soc2-type2-compliant"
+      "source": "https://trust.windsurf.com/",
+      "source_urls": [
+        "https://devin.ai/blog/codeium-is-soc2-type2-compliant"
+      ],
+      "source_note": ""
     },
     {
       "name": "Bug bounty / vulnerability disclosure",
       "value": "No public HackerOne or Bugcrowd program. Private coordinated disclosure via email (security@windsurf.com) with GPG encryption required; reports must not be filed through public channels like GitHub issues.",
-      "source": "https://docs.devin.ai/desktop/security/reporting"
+      "source": "https://docs.devin.ai/desktop/security/reporting",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Encryption",
       "value": "All data transmission is encrypted in transit and at rest.",
-      "source": "https://docs.devin.ai/admin/security"
+      "source": "https://docs.devin.ai/admin/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Data retention",
       "value": "Data retained only for the duration of the customer relationship unless otherwise specified; legacy paid seats marketed with zero data retention.",
-      "source": "https://docs.devin.ai/admin/security"
+      "source": "https://docs.devin.ai/admin/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Trust center platform",
       "value": "Powered by Drata; SOC 2 report access gated behind a confidentiality/NDA request.",
-      "source": "https://trust.windsurf.com/"
+      "source": "https://trust.windsurf.com/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

@@ -11,31 +11,41 @@
       "name": "ISO 27001",
       "held": true,
       "proof_quote": "100% European hosting, ISO 27001 compliance and SecNumCloud certification",
-      "source": "https://www.corporate-translation.reverso.com/"
+      "source": "https://www.corporate-translation.reverso.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "SecNumCloud (ANSSI, France)",
       "held": true,
       "proof_quote": "100% European hosting, ISO 27001 compliance and SecNumCloud certification",
-      "source": "https://www.corporate-translation.reverso.com/"
+      "source": "https://www.corporate-translation.reverso.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "SOC 2",
       "held": false,
       "proof_quote": "Referenced in third-party reviews and comparison articles (e.g., 'they meet very high standards in terms of data security (GDPR, ISO 27001, SOC2)') but no direct attestation report or quote confirmed on a vendor-owned domain.",
-      "source": "https://www.adverbum.com/post/best-secure-ai-translation-tools-for-confidential-enterprise-content-6 (third-party, not vendor-owned)"
+      "source": "https://www.adverbum.com/post/best-secure-ai-translation-tools-for-confidential-enterprise-content-6",
+      "source_urls": [],
+      "source_note": "third-party not vendor-owned"
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "",
-      "source": ""
+      "source": "",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "GDPR Compliance (EU Regulation 2016/679)",
       "held": true,
       "proof_quote": "As a European company, Reverso complies with the GDPR, which has been applicable since May 2018.",
-      "source": "https://www.reverso.net/privacy/en"
+      "source": "https://www.reverso.net/privacy/en",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "privacy": {
@@ -54,42 +64,60 @@
     {
       "name": "Data Residency",
       "value": "100% European hosting; personal data hosted in Europe",
-      "source": "https://www.reverso.net/privacy/en and https://www.corporate-translation.reverso.com/"
+      "source": "https://www.reverso.net/privacy/en",
+      "source_urls": [
+        "https://www.corporate-translation.reverso.com/"
+      ],
+      "source_note": ""
     },
     {
       "name": "Data Protection Officer (DPO)",
       "value": "Designated DPO reachable at dpo@reverso.com",
-      "source": "https://www.reverso.net/privacy/en"
+      "source": "https://www.reverso.net/privacy/en",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Encryption / Technical Measures",
       "value": "Privacy policy states 'Reverso implements appropriate technical and organizational measures to ensure the security and confidentiality of personal data.' No specific encryption standards (AES-256, TLS version) are cited in public documentation.",
-      "source": "https://www.reverso.net/privacy/en"
+      "source": "https://www.reverso.net/privacy/en",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Bug Bounty Program",
       "value": "None found. No listing on HackerOne, Bugcrowd, or vendor website.",
-      "source": "Web search conducted 2026-06-27; no results returned."
+      "source": "",
+      "source_urls": [],
+      "source_note": "Web search conducted 2026-06-27 no results returned."
     },
     {
       "name": "Penetration Testing",
       "value": "Not disclosed publicly.",
-      "source": "No public documentation found."
+      "source": "",
+      "source_urls": [],
+      "source_note": "No public documentation found."
     },
     {
       "name": "Cookie / Advertising Partners",
       "value": "Consumer site works with 1038 advertising/analytics partners for personalised advertising and audience measurement (IAB TCF consent model). Users can withdraw consent via Privacy Settings.",
-      "source": "https://www.reverso.net/text-translation (cookie consent banner)"
+      "source": "https://www.reverso.net/text-translation",
+      "source_urls": [],
+      "source_note": "cookie consent banner"
     },
     {
       "name": "Subprocessors",
       "value": "Payment handled by Braintree, Google, Apple. Google Analytics used for audience measurement. Full subprocessor list not published.",
-      "source": "https://www.reverso.net/privacy/en"
+      "source": "https://www.reverso.net/privacy/en",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "On-Premise Deployment (Corporate)",
       "value": "Available for Corporate product: 'cloud or on-premise deployment depending on IT and security requirements'",
-      "source": "https://www.corporate-translation.reverso.com/products"
+      "source": "https://www.corporate-translation.reverso.com/products",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

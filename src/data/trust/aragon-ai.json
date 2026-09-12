@@ -11,25 +11,35 @@
       "name": "SOC 2 Type II",
       "held": true,
       "proof_quote": "SOC 2 Type II compliant ... Unlike Type I (which evaluates controls at a single point in time), Type II involves a months-long audit. (Audited by Prescient Security via Vanta per Aragon's compliance blog: 'our partners at Vanta and Prescient Security for helping us achieve this milestone.')",
-      "source": "https://www.aragon.ai/security-policy; https://www.aragon.ai/blog/soc2-type-2-compliance"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [
+        "https://www.aragon.ai/blog/soc2-type-2-compliance"
+      ],
+      "source_note": ""
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "No ISO 27001 certification is claimed anywhere on the security policy or trust pages; only SOC 2 Type II is listed.",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "No HIPAA compliance is claimed; the service is a consumer/business headshot generator and does not advertise handling of PHI.",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "GDPR",
       "held": false,
       "proof_quote": "Aragon honors GDPR data-subject rights ('You may request access to, rectification of, or erasure of your Personal Data ... request restriction of processing, object to processing, and request data portability.') but does not claim a formal GDPR certification (GDPR has no certification body); they reference a DPA and subprocessor list.",
-      "source": "https://www.aragon.ai/privacy"
+      "source": "https://www.aragon.ai/privacy",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "privacy": {
@@ -49,47 +59,65 @@
     {
       "name": "Encryption in transit",
       "value": "TLS 1.2 or higher; all API and application endpoints TLS/SSL only",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Encryption at rest",
       "value": "AES-256",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Penetration testing",
       "value": "Yes - 'Periodic penetration testing is conducted by independent security professionals.'",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Bug bounty program",
       "value": "None found (no HackerOne/Bugcrowd program disclosed). Note: customers are contractually prohibited from running unauthorized pen tests/security assessments.",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Vulnerability management",
       "value": "Continuous automated vulnerability scanning across production; findings triaged and remediated by severity",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Access control",
       "value": "Least-privilege RBAC, MFA enforced on GitHub/AWS/Heroku/Vercel, session timeouts, strong password policy",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Incident response",
       "value": "Formal incident response plan; Sentry monitoring; written post-mortems; written breach notification to affected customers",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Hosting / infrastructure",
       "value": "AWS, Heroku, Vercel; multi-tenant datastores with logical separation; automated backups + tested DR",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Payment security",
       "value": "No card data stored; processing via Stripe, Paddle, RevenueCat",
-      "source": "https://www.aragon.ai/security-policy"
+      "source": "https://www.aragon.ai/security-policy",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

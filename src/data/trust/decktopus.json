@@ -11,37 +11,51 @@
       "name": "SOC 2",
       "held": false,
       "proof_quote": "No SOC 2 report, attestation, or claim is published on any decktopus.com property. A third-party aggregator (Nudge Security) lists Decktopus as 'SOC 2 Compliant', but this is automated/inferred data with no vendor-domain proof, so it cannot be treated as held.",
-      "source": "https://www.decktopus.com/privacy (no mention); third-party only: https://security-profiles.nudgesecurity.com/app/decktopus-com"
+      "source": "https://www.decktopus.com/privacy",
+      "source_urls": [
+        "https://security-profiles.nudgesecurity.com/app/decktopus-com"
+      ],
+      "source_note": "no mention) third-party only:"
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "No ISO 27001 certificate or claim appears on decktopus.com, the help center, the privacy policy, or terms. Only a third-party aggregator lists it; no vendor evidence.",
-      "source": "https://security-profiles.nudgesecurity.com/app/decktopus-com"
+      "source": "https://security-profiles.nudgesecurity.com/app/decktopus-com",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "No HIPAA/BAA capability is claimed anywhere on the vendor's own site. The product is a general-purpose presentation tool not positioned for PHI. Third-party 'HIPAA Compliant' label is not vendor-backed.",
-      "source": "https://www.decktopus.com/privacy"
+      "source": "https://www.decktopus.com/privacy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "PCI DSS",
       "held": false,
       "proof_quote": "Card data is handled by a third-party processor: 'the payment information ... that you submit when you register may be used and shared with our payment processing services provider'. No direct Decktopus PCI attestation is published.",
-      "source": "https://www.decktopus.com/terms"
+      "source": "https://www.decktopus.com/terms",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "FedRAMP",
       "held": false,
       "proof_quote": "No FedRAMP authorization exists for Decktopus (not in the FedRAMP marketplace and implausible for a consumer presentation SaaS). The third-party aggregator's 'FedRamp Compliant' label is a clear false positive and undermines the reliability of that source.",
-      "source": "https://security-profiles.nudgesecurity.com/app/decktopus-com"
+      "source": "https://security-profiles.nudgesecurity.com/app/decktopus-com",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "GDPR",
       "held": true,
       "proof_quote": "GDPR Compliance. Any information containing personal data shall be handled in accordance with all applicable privacy laws and regulations, including without limitation the GDPR and equivalent laws and regulations.",
-      "source": "https://www.decktopus.com/terms"
+      "source": "https://www.decktopus.com/terms",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "privacy": {
@@ -61,37 +75,51 @@
     {
       "name": "Encryption in transit",
       "value": "TLS. Help center states data is 'encrypted during transmission to servers using TLS (Transport Layer Security)'.",
-      "source": "https://help.decktopus.com/en/articles/77-is-my-data-safe"
+      "source": "https://help.decktopus.com/en/articles/77-is-my-data-safe",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Encryption at rest",
       "value": "AES-256. Help center states data 'remains encrypted while stored using AES (Advanced Encryption Standard) 256-bit encryption'.",
-      "source": "https://help.decktopus.com/en/articles/77-is-my-data-safe"
+      "source": "https://help.decktopus.com/en/articles/77-is-my-data-safe",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Access control / MFA",
       "value": "MFA required for administrative access; 'all access to data is logged and monitored in real-time'.",
-      "source": "https://help.decktopus.com/en/articles/77-is-my-data-safe"
+      "source": "https://help.decktopus.com/en/articles/77-is-my-data-safe",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Data handling posture",
       "value": "'We do not sell or rent personal information.' Physical, electronic, and administrative security measures stated in privacy policy; acknowledges no internet transmission is 100% secure.",
-      "source": "https://www.decktopus.com/privacy"
+      "source": "https://www.decktopus.com/privacy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Bug bounty program",
       "value": "None found. No HackerOne, Bugcrowd, or security.txt / vulnerability disclosure program located on the vendor domain.",
-      "source": "https://www.decktopus.com/"
+      "source": "https://www.decktopus.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Penetration testing",
       "value": "Not mentioned anywhere on the vendor's own site.",
-      "source": "https://www.decktopus.com/"
+      "source": "https://www.decktopus.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Hosting infrastructure",
       "value": "Vendor-stated: runs on DigitalOcean server infrastructure with Auth0 for authentication, per the vendor's own help center ('Is my data safe?'). Login credentials and presentation data are held in encrypted databases, with secure connections via Let's Encrypt/TLS. Independently corroborated, though no specific data-center region is disclosed.",
-      "source": "https://help.decktopus.com/en/articles/77-is-my-data-safe"
+      "source": "https://help.decktopus.com/en/articles/77-is-my-data-safe",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

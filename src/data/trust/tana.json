@@ -11,25 +11,35 @@
       "name": "SOC 2 Type 2",
       "held": false,
       "proof_quote": "SOC2 Compliant * ... * In progress. ETA Q3 2026. (homepage). Trust center Resources list shows only 'Letter Of Intent - Audit SOC2 Type 2' and 'Engagement Letter - Vanta'; no completed report.",
-      "source": "https://tana.inc/ and https://trust.tana.inc/"
+      "source": "https://tana.inc/",
+      "source_urls": [
+        "https://trust.tana.inc/"
+      ],
+      "source_note": ""
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "HIPAA Compliant * ... * In progress. ETA Q3 2026.",
-      "source": "https://tana.inc/"
+      "source": "https://tana.inc/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "GDPR",
       "held": false,
       "proof_quote": "GDPR Compliant (homepage badge, no asterisk). Privacy Policy: 'Tana is also committed to ensuring that the processing of your personal data is carried out in accordance with applicable data protection legislation' and cites GDPR legal bases (e.g. 'GDPR Art. 6(1)(f)'). GDPR is a self-attested regulatory posture, not a third-party-audited certification.",
-      "source": "https://tana.inc/privacy"
+      "source": "https://tana.inc/privacy",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "No mention of ISO 27001 found on homepage, trust center, privacy policy, or terms.",
-      "source": "https://trust.tana.inc/"
+      "source": "https://trust.tana.inc/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "privacy": {
@@ -49,42 +59,60 @@
     {
       "name": "Trust center (Vanta-hosted)",
       "value": "Public trust center at trust.tana.inc backed by Vanta continuous monitoring; documents controls across Infrastructure security, Organizational security, Product security, Internal security procedures, and Data and privacy. Covers both Tana and Tana Outliner.",
-      "source": "https://trust.tana.inc/"
+      "source": "https://trust.tana.inc/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Encryption",
       "value": "Encryption in transit ('Data transmission encrypted'); encryption key access restricted. At-rest encryption is implied via GCP but not explicitly quoted.",
-      "source": "https://trust.tana.inc/"
+      "source": "https://trust.tana.inc/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Access control",
       "value": "Unique production database authentication enforced; unique account authentication enforced; SSO offered ('SSO' badge on homepage).",
-      "source": "https://trust.tana.inc/ and https://tana.inc/"
+      "source": "https://trust.tana.inc/",
+      "source_urls": [
+        "https://tana.inc/"
+      ],
+      "source_note": ""
     },
     {
       "name": "Vulnerability management",
       "value": "'Vulnerability and system monitoring procedures established'; 'Anti-malware technology utilized'. No bug bounty platform (HackerOne/Bugcrowd) found. No explicit penetration-test attestation found in captured controls.",
-      "source": "https://trust.tana.inc/"
+      "source": "https://trust.tana.inc/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Org / operational security",
       "value": "Employee background checks performed; production inventory maintained; Business Continuity and Disaster Recovery plans established and tested; configuration management system established; data retention and classification policies; 'Customer data deleted upon leaving'.",
-      "source": "https://trust.tana.inc/"
+      "source": "https://trust.tana.inc/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Bug bounty",
       "value": "none (no HackerOne or Bugcrowd program found)",
-      "source": "https://trust.tana.inc/"
+      "source": "https://trust.tana.inc/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Penetration testing",
       "value": "unknown (not explicitly attested in available evidence)",
-      "source": "https://trust.tana.inc/"
+      "source": "https://trust.tana.inc/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Microsoft app verification",
       "value": "'Verified Microsoft app' badge claimed on homepage.",
-      "source": "https://tana.inc/"
+      "source": "https://tana.inc/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

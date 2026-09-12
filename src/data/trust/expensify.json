@@ -11,49 +11,65 @@
       "name": "SOC 1 Type 2",
       "held": true,
       "proof_quote": "SOC 1 Type 2 Report [listed as downloadable report in Trust Center Reports section; annual audit by qualified independent third-party auditors confirmed]",
-      "source": "https://trust.expensify.com/"
+      "source": "https://trust.expensify.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "SOC 2 Type 2",
       "held": true,
       "proof_quote": "Undergoing annual SOC 1 Type 2 and SOC 2 Type 2 audits by qualified, independent third-party auditors",
-      "source": "https://help.expensify.com/articles/new-expensify/settings/Encryption-and-Data-Security"
+      "source": "https://help.expensify.com/articles/new-expensify/settings/Encryption-and-Data-Security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "PCI DSS 4.0.1",
       "held": true,
       "proof_quote": "PCI DSS 4.0.1 [listed under Compliance section of Trust Center; geographically redundant, PCI-compliant data center architecture confirmed]",
-      "source": "https://trust.expensify.com/"
+      "source": "https://trust.expensify.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "GDPR",
       "held": true,
       "proof_quote": "GDPR [listed as COMPLIANT in Trust Center compliance section; EU-U.S. Data Privacy Framework and Standard Contractual Clauses in place for EEA transfers]",
-      "source": "https://trust.expensify.com/"
+      "source": "https://trust.expensify.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "CCPA",
       "held": true,
       "proof_quote": "CCPA COMPLIANT [explicitly listed in Trust Center Compliance section with detailed California rights provisions in Privacy Policy]",
-      "source": "https://trust.expensify.com/"
+      "source": "https://trust.expensify.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Digital Operational Resilience Act (DORA)",
       "held": false,
       "proof_quote": "Digital Operational Resilience Act [listed in Trust Center compliance section; EU financial services clients may request supporting documentation]",
-      "source": "https://trust.expensify.com/"
+      "source": "https://trust.expensify.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "",
-      "source": "Not mentioned in trust center, help documentation, SEC filings, or web searches reviewed. Cannot confirm this certification is held."
+      "source": "",
+      "source_urls": [],
+      "source_note": "Not mentioned in trust center help documentation SEC filings web searches reviewed. Cannot confirm this certification is held."
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "",
-      "source": "Not mentioned in any public documentation. Product handles financial and expense data, not protected health information (PHI). HIPAA not applicable to core use case."
+      "source": "",
+      "source_urls": [],
+      "source_note": "Not mentioned in any public documentation. Product handles financial expense data not protected health information (PHI). HIPAA not applicable to core use case."
     }
   ],
   "privacy": {
@@ -74,52 +90,72 @@
     {
       "name": "Encryption in transit",
       "value": "HTTPS + TLS enforced for all web connections",
-      "source": "https://help.expensify.com/articles/new-expensify/settings/Encryption-and-Data-Security"
+      "source": "https://help.expensify.com/articles/new-expensify/settings/Encryption-and-Data-Security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Encryption at rest",
       "value": "Dual-control key system: encryption key split into two parts stored in separate secure locations, managed by different employees",
-      "source": "https://help.expensify.com/articles/new-expensify/settings/Encryption-and-Data-Security"
+      "source": "https://help.expensify.com/articles/new-expensify/settings/Encryption-and-Data-Security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Cloud infrastructure",
       "value": "Amazon Web Services (cloud infrastructure), Cloudflare (CDN and security), DocuSign (document management), GitHub (version control) - all listed as subprocessors",
-      "source": "https://trust.expensify.com/"
+      "source": "https://trust.expensify.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Penetration testing",
       "value": "Annual third-party penetration tests conducted by external experts",
-      "source": "https://help.expensify.com/articles/new-expensify/settings/Encryption-and-Data-Security"
+      "source": "https://help.expensify.com/articles/new-expensify/settings/Encryption-and-Data-Security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Bug bounty / vulnerability disclosure",
       "value": "No formal bug bounty platform (HackerOne or Bugcrowd not confirmed). Responsible disclosure via security@expensify.com with PGP public key published at use.expensify.com/keys",
-      "source": "https://use.expensify.com/keys"
+      "source": "https://use.expensify.com/keys",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Vulnerability monitoring",
       "value": "Vulnerability and system monitoring procedures established; control self-assessments conducted",
-      "source": "https://trust.expensify.com/"
+      "source": "https://trust.expensify.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Employee security",
       "value": "Background checks for all employees and contractors, refreshed annually; NDAs required; ongoing security and privacy training mandatory",
-      "source": "https://help.expensify.com/articles/new-expensify/settings/Encryption-and-Data-Security"
+      "source": "https://help.expensify.com/articles/new-expensify/settings/Encryption-and-Data-Security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Endpoint management",
       "value": "MDM system utilized; remote access encryption enforced",
-      "source": "https://trust.expensify.com/"
+      "source": "https://trust.expensify.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Business continuity",
       "value": "Continuity and Disaster Recovery plans established; Change management and Whistleblower policies in place",
-      "source": "https://trust.expensify.com/"
+      "source": "https://trust.expensify.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Data governance",
       "value": "Data retention procedures and data classification policy established; DPAs signed with all subprocessor vendors",
-      "source": "https://trust.expensify.com/"
+      "source": "https://trust.expensify.com/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

@@ -11,37 +11,49 @@
       "name": "SOC 2 Type II",
       "held": true,
       "proof_quote": "SOC 2 Type II — SOC 2 Type II Compliant",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO/IEC 27001:2022",
       "held": true,
       "proof_quote": "ISO 27001 — ISO/IEC 27001:2022 Certification",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO/IEC 27701:2019",
       "held": true,
       "proof_quote": "ISO 27701 — ISO/IEC 27701:2019 Certification",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "HIPAA",
       "held": true,
       "proof_quote": "HIPAA — Health Insurance Portability and Accountability Act",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "PCI-DSS v4.0.1",
       "held": true,
       "proof_quote": "PCI-DSS V 4.0.1 — Compliant as a Service Provider*",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO/IEC 27018:2019",
       "held": false,
       "proof_quote": "Yellow.ai is ISO 27001:2013 and ISO 27018:2019 certified regarding the security of Information management.",
-      "source": "https://yellow.ai/privacy-policy/ (NOTE: privacy policy references 27018 while security page references 27701 — possible documentation lag; both may be held or 27018 may have been superseded by 27701)"
+      "source": "https://yellow.ai/privacy-policy/",
+      "source_urls": [],
+      "source_note": "NOTE: privacy policy references 27018 while security page references 27701 — possible documentation lag both may be held 27018 may have been superseded by 27701"
     }
   ],
   "privacy": {
@@ -62,52 +74,72 @@
     {
       "name": "Encryption in transit",
       "value": "TLS/SSL 256-bit (HTTPS) for all data in transit",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Credential storage",
       "value": "Credentials encrypted using salted hash (SHA-256)",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Key management",
       "value": "Keys maintained in Vaults, recycled every quarter",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Penetration testing",
       "value": "Annual third-party penetration tests: 'Every year, we engage third-party security experts to perform detailed penetration tests on the chatbot platform.'",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Vulnerability scanning",
       "value": "Continuous scanning with third-party security tools",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Bug bounty / VDP",
       "value": "Vulnerability Disclosure Program (VDP) via HackerOne embedded form. No monetary rewards. Scope limited to cloud.yellow.ai. 3-5 business day acknowledgment SLA.",
-      "source": "https://yellow.ai/vulnerability-disclosure-program/"
+      "source": "https://yellow.ai/vulnerability-disclosure-program/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "SSO and authentication",
       "value": "Google SSO, Microsoft SSO, ADFS, Azure AD at platform level; AD, LDAP, SAML, OAuth2 at bot level",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Infrastructure",
       "value": "Virtual Private Cloud (VPC) with access control lists; N+1 availability zone redundancy across all data center regions",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Data hosting",
       "value": "US, EU, Singapore, India, Indonesia, UAE",
-      "source": "https://yellow.ai/platform/enterprise-grade-security/"
+      "source": "https://yellow.ai/platform/enterprise-grade-security/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "GDPR / DPO",
       "value": "Dedicated Data Protection Officer reachable at dpo@yellow.ai. DPA available at yellow.ai/dpa. EEA transfers via Data Privacy Framework and EU SCCs.",
-      "source": "https://yellow.ai/privacy-policy/"
+      "source": "https://yellow.ai/privacy-policy/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

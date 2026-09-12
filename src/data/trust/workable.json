@@ -11,49 +11,65 @@
       "name": "ISO/IEC 27001",
       "held": true,
       "proof_quote": "ISO/IEC 27001 — Information Security Management System (ISMS) — Download certificate",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO/IEC 27017",
       "held": true,
       "proof_quote": "ISO/IEC 27017 — Security Controls for the Provision and Use of Cloud Services — Download certificate",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "SOC 2 Type II",
       "held": true,
       "proof_quote": "SOC 2 (Type II) — Trust Services Principles — Contact us for access",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "SOC 3",
       "held": true,
       "proof_quote": "SOC 3 — Service organization controls — Download certificate",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "GDPR Compliance",
       "held": true,
       "proof_quote": "Workable automates privacy policy distribution, data retention, and candidate data deletion requests.",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "CCPA Compliance",
       "held": true,
       "proof_quote": "Workable automatically manages data handling and privacy policy access in line with CCPA requirements.",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "",
-      "source": "Not mentioned on https://www.workable.com/security or any vendor page. Workable is an HR/recruiting platform and does not process protected health information."
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": "Not mentioned on any vendor page. Workable is an HR/recruiting platform does not process protected health information."
     },
     {
       "name": "EU AI Act Compliance",
       "held": false,
       "proof_quote": "Workable Agent has been developed to be fully compliant with upcoming AI regulations such as the EU AI Act, and is transparent by design.",
-      "source": "https://www.workable.com/workable-ai"
+      "source": "https://www.workable.com/workable-ai",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "privacy": {
@@ -74,42 +90,58 @@
     {
       "name": "24/7 Monitoring",
       "value": "24/7/365 security monitoring of all production resources with automated alerts ensuring immediate response to security events.",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Web Application Firewall",
       "value": "Industry-leading protection through web application firewalls, DDoS prevention, and hardened TLS configuration.",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "CI/CD Vulnerability Scanning",
       "value": "All new features undergo security validation with automated vulnerability scanning in the CI/CD pipeline.",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Partner Security Assessments",
       "value": "Annual scoped technical assessments conducted by Google, LinkedIn, ADP, and Zoom to maintain integration partnerships.",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Vulnerability Disclosure Program",
       "value": "Internal VDP at vdp.workable.com. 'We welcome external feedback and encourage everyone to report bugs. All reports are then processed internally.' Not hosted on HackerOne or Bugcrowd.",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Penetration Testing",
       "value": "Not explicitly disclosed on public security page. Security team operates 'security assessment and simulation' as one of four stated pillars, which may include pen testing, but no public cadence or third-party attestation is stated.",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Audit Trail",
       "value": "Full audit trail: every agent action logged, permissioned and reviewable. Model, agent, or human actions all write to the same trail.",
-      "source": "https://www.workable.com/"
+      "source": "https://www.workable.com/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Security White Paper",
       "value": "Available for download from the security page.",
-      "source": "https://www.workable.com/security"
+      "source": "https://www.workable.com/security",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [

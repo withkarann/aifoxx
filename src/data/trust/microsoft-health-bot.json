@@ -11,73 +11,97 @@
       "name": "HIPAA / HITECH",
       "held": true,
       "proof_quote": "The healthcare agent service is HIPAA-ready and has also the following list of certification... [including HITRUST, ISO 27001:2013, SOC 2 Type 2, GDPR Compliant]",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 27001:2013",
       "held": true,
       "proof_quote": "ISO 27001:2013",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 27017:2015",
       "held": true,
       "proof_quote": "ISO 27017:2015",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "ISO 27018:2014",
       "held": true,
       "proof_quote": "ISO 27018, and CSA Gold certified",
-      "source": "https://www.microsoft.com/en-us/research/project/health-bot/"
+      "source": "https://www.microsoft.com/en-us/research/project/health-bot/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "SOC 1 Type 2",
       "held": true,
       "proof_quote": "SOC 1 Type 2",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "SOC 2 Type 2",
       "held": true,
       "proof_quote": "SOC 2 Type 2",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "SOC 3",
       "held": true,
       "proof_quote": "SOC 3",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "HITRUST CSF",
       "held": true,
       "proof_quote": "HITRUST",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "CSA STAR Attestation",
       "held": true,
       "proof_quote": "CSA STAR Attestation",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "CSA STAR Certification",
       "held": true,
       "proof_quote": "CSA STAR Certification",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "GDPR",
       "held": true,
       "proof_quote": "GDPR Compliant",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "FedRAMP",
       "held": false,
       "proof_quote": "",
-      "source": "Not explicitly listed in Health Bot compliance list; covered under general Azure FedRAMP authorization"
+      "source": "",
+      "source_urls": [],
+      "source_note": "Not explicitly listed in Health Bot compliance list covered under general Azure FedRAMP authorization"
     }
   ],
   "privacy": {
@@ -98,37 +122,51 @@
     {
       "name": "Encryption at rest",
       "value": "All customer data stored in Azure Storage and Azure Cosmos DB is always encrypted at rest. Encryption keys managed by Microsoft and rotated periodically.",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Encryption in transit",
       "value": "All incoming and outgoing data connections use HTTPS only; data in transit is always encrypted.",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Bug bounty",
       "value": "Microsoft Security Response Center (MSRC) runs a proprietary bug bounty program at https://www.microsoft.com/en-us/msrc/bounty-microsoft-azure. Azure services listed on azure.microsoft.com/services are in-scope. Rewards range from $1,250 to $60,000 USD for Critical/Important severity findings. Not hosted on HackerOne or Bugcrowd.",
-      "source": "https://www.microsoft.com/en-us/msrc/bounty-microsoft-azure"
+      "source": "https://www.microsoft.com/en-us/msrc/bounty-microsoft-azure",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Penetration testing policy",
       "value": "Microsoft publishes Security Testing Rules of Engagement for security researchers and customers performing testing against Microsoft Online Assets.",
-      "source": "https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement"
+      "source": "https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Healthcare Safeguards",
       "value": "All AI-generated outputs pass through Healthcare Safeguards: evidence detection, provenance tracking, clinical code validation, clear disclaimer, evidence attribution, feedback mechanisms, and abuse monitoring.",
-      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+      "source": "https://learn.microsoft.com/en-us/azure/health-bot/overview",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "Audit trails",
       "value": "Built-in compliance constructs including end-user consent collection, data retention policies, audit trails, and conversation timeout.",
-      "source": "https://www.microsoft.com/en-us/research/project/health-bot/"
+      "source": "https://www.microsoft.com/en-us/research/project/health-bot/",
+      "source_urls": [],
+      "source_note": ""
     },
     {
       "name": "MSRC vulnerability disclosure",
       "value": "Known vulnerabilities in Azure Health Bot (including SSRF/tenant isolation issues) were disclosed in 2024 and patched by Microsoft. MSRC maintains the responsible disclosure process.",
-      "source": "https://www.hipaajournal.com/vulnerabilities-identified-in-azure-health-bot-service/"
+      "source": "https://www.hipaajournal.com/vulnerabilities-identified-in-azure-health-bot-service/",
+      "source_urls": [],
+      "source_note": ""
     }
   ],
   "products": [
