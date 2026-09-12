@@ -86,6 +86,19 @@ issues rather than direct file edits, and ship in the next data refresh.
 - Include before/after screenshots for any UI change.
 - Note any change to the data schema.
 
+Your title decides what happens after the merge. `feat:` ships a minor release,
+`fix:`, `perf:` and `data:` ship a patch release, and everything else ships with
+the next release without moving the version. Whichever you use, the title is
+what appears in the release notes, so write it for someone reading the changelog
+rather than for the diff.
+
+## Credit
+
+Your commits keep your name. When several submissions are gathered into one
+change, every submitter is listed as a co-author on it, so the contributor graph
+records the work rather than only the person who pressed merge. If you are ever
+left off one, say so on the pull request and it will be corrected.
+
 ## Questions
 
 Open a thread in [Discussions](https://github.com/withkarann/aifoxx/discussions).
