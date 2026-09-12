@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.3](https://github.com/withkarann/aifoxx/compare/v1.2.2...v1.2.3) (2026-09-12)
+
+
+### Bug Fixes
+
+* let the release pull request merge itself once checks pass ([#275](https://github.com/withkarann/aifoxx/issues/275)) ([6657edd](https://github.com/withkarann/aifoxx/commit/6657eddc874070efb83cc461613362b28d162f36))
+* put catalog and data changes in the release notes ([#333](https://github.com/withkarann/aifoxx/issues/333)) ([cd26236](https://github.com/withkarann/aifoxx/commit/cd26236389fe1f000f824cbc17d915263ff22d94))
+* stop anything merging itself except the daily news update ([#278](https://github.com/withkarann/aifoxx/issues/278)) ([95c1473](https://github.com/withkarann/aifoxx/commit/95c1473f17bf2be889766c9737d25cd20540e616))
+* take the security patches that exist inside the versions this project can run ([#331](https://github.com/withkarann/aifoxx/issues/331)) ([67ef901](https://github.com/withkarann/aifoxx/commit/67ef9019e2d6107e03532cc7976125479753834a))
+
+
+### Catalog and data
+
+* make every trust report source openable, and correct one certification ([#326](https://github.com/withkarann/aifoxx/issues/326)) ([d18d68e](https://github.com/withkarann/aifoxx/commit/d18d68eeff1b81decf7c6b60ede85b9b4efe42c6))
+
 ## [1.2.2](https://github.com/withkarann/aifoxx/compare/v1.2.1...v1.2.2) (2026-08-15)
 
 
