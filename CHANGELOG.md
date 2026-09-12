@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.5](https://github.com/withkarann/aifoxx/compare/v1.2.4...v1.2.5) (2026-09-12)
+
+
+### Bug Fixes
+
+* show the missing page first, instead of the home page then the notice ([#337](https://github.com/withkarann/aifoxx/issues/337)) ([e518af2](https://github.com/withkarann/aifoxx/commit/e518af2dd1e8f29e34cb9a88cf765fdd909a7f60))
+
 ## [1.2.4](https://github.com/withkarann/aifoxx/compare/v1.2.3...v1.2.4) (2026-09-12)
 
 
