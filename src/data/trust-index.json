@@ -569,10 +569,9 @@
     "product_family": "Cloud-based AI-powered customer communications platform with unified voice, SMS, and messaging. Features AI agents for 24/7 customer coverage, AI assistants for real-time coaching and automation, call center management, integrations with 250+ business tools (Salesforce, HubSpot, Zendesk, etc.), and healthcare-specific compliance (HIPAA BAA available).",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-12",
     "certs_held": [
       "SOC 2 Type II",
-      "ISO 27001",
       "GDPR",
       "HIPAA",
       "CCPA",
@@ -583,12 +582,11 @@
     ],
     "top_certs": [
       "SOC 2 Type II",
-      "ISO 27001",
       "GDPR",
       "HIPAA (with BAA)",
       "CCPA"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
