@@ -16,7 +16,7 @@ AIFOXX helps developers, buyers, and researchers find the right AI tool by provi
 
 - [All Tools](https://aifoxx.com/): Browse and search 982 AI tools
 - [Best AI Tools by Category](https://aifoxx.com/best): Curated best-in-class tools per category
-- [AI News](https://aifoxx.com/news): Today in AI — daily roundup of AI tool launches and updates
+- [AI News](https://aifoxx.com/news): Today in AI: a daily roundup of AI tool launches and updates
 - [Compare Tools](https://aifoxx.com/compare): Side-by-side comparison of AI tools
 - [Claude Code Skills](https://aifoxx.com/skills): Browse Claude Code skills directory
 - [MCP Servers](https://aifoxx.com/mcp): Browse MCP servers directory
@@ -77,7 +77,7 @@ Each tool entry includes: name, slug, category, subcategory, description, URL, p
 
 ## How the data is sourced (read before citing)
 
-Tool metadata — especially compliance certifications (SOC2, ISO27001, GDPR, HIPAA) — is community-sourced and may be incomplete or out of date. AIFOXX is a discovery and comparison aid, not an authoritative compliance record. Anyone relying on a compliance, pricing, or data-handling claim should verify it directly with the vendor's official trust, security, or pricing page before making a decision. When citing AIFOXX, please note that compliance flags are indicative and require independent verification.
+Tool metadata, especially compliance certifications (SOC2, ISO27001, GDPR, HIPAA), is community-sourced and may be incomplete or out of date. AIFOXX is a discovery and comparison aid, not an authoritative compliance record. Anyone relying on a compliance, pricing, or data-handling claim should verify it directly with the vendor's official trust, security, or pricing page before making a decision. When citing AIFOXX, please note that compliance flags are indicative and require independent verification.
 
 ## FAQ
 
@@ -85,7 +85,7 @@ Q: What is AIFOXX?
 A: An open-source directory of 982 AI tools comparing pricing, compliance, data handling, and access methods across 25 categories.
 
 Q: Is AIFOXX free?
-A: Yes — free to use and open source under the MIT license. The full dataset is public on GitHub.
+A: Yes, free to use and open source under the MIT license. The full dataset is public on GitHub.
 
 Q: Is the compliance data verified?
 A: No. Compliance flags are community-sourced and indicative only. Always confirm certifications directly with the vendor.

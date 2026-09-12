@@ -1,4 +1,4 @@
-name: Scrape AI News
+name: Daily AI news
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:        # allow manual trigger from the Actions tab
 
 # main is guarded by the `main-protection-prod` ruleset (PR + 1 approval, no
-# bot bypass), so the scraper CANNOT push straight to main. Instead it opens a
+# bot bypass), so this job cannot push straight to main. Instead it opens a
 # PR from a short-lived branch and merges it with an admin token. news.json is
 # bundled at build time, so the squash-merge (a real commit on main) is what
 # triggers the Vercel production redeploy that surfaces the fresh data.
@@ -20,7 +20,7 @@ permissions:
   contents: read
 
 jobs:
-  scrape:
+  news:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -29,14 +29,14 @@ jobs:
 
       - uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: 24
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Run news scraper
-        run: node scripts/scrape-news.mjs
+      - name: Collect the latest AI news
+        run: node scripts/fetch-news.mjs
 
       - name: Open & auto-merge data PR (if changed)
         env:
@@ -48,12 +48,12 @@ jobs:
           fi
           BRANCH="chore/news-$(date -u +%Y%m%d-%H%M%S)"
           git config user.name 'AIFoxx Bot'
-          git config user.email 'bot@aifox.com'
+          git config user.email 'bot@aifoxx.com'
           git checkout -b "$BRANCH"
           git add src/data/news.json src/data/new-tools.json
-          git commit -m 'chore: daily news scrape'
+          git commit -m 'chore: daily news update'
           git push origin "$BRANCH"
           gh pr create --base main --head "$BRANCH" \
-            --title 'chore: daily news scrape' \
+            --title 'chore: daily news update' \
             --body 'Automated daily AI-news refresh. Data-only; auto-merged.'
           gh pr merge "$BRANCH" --squash --admin --delete-branch
