@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * Scrapes AI news from multiple sources and writes to src/data/news.json.
- * Run manually: node scripts/scrape-news.mjs
- * Run via CI:   .github/workflows/scrape-news.yml (daily at 6am UTC)
+ * Run manually: node scripts/fetch-news.mjs
+ * Run via CI:   .github/workflows/news.yml (daily at 6am UTC)
  */
 
 import { writeFileSync } from 'node:fs'

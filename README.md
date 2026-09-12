@@ -143,7 +143,7 @@ Facts are compiled from each vendor's own public pages: trust centers, security 
 
 ## Support this work
 
-Every entry here is read and checked by hand against the vendor's own trust, security, and privacy pages. Nothing is scraped and published unverified, which is slow, and it is the whole reason the data is worth anything.
+Every entry here is read and checked by hand against the vendor's own trust, security, and privacy pages. Nothing is collected automatically and published unchecked, which is slow, and it is the whole reason the data is worth anything.
 
 If that saves you time, three things help, in order of how much they help:
 

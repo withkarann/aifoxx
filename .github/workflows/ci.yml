@@ -3,8 +3,8 @@ name: CI | Validate & Build
 on:
   push:
     branches: [main, dev]
-    # The news scraper squash-merges data-only commits to main; they don't need
-    # a full CI build (Vercel still redeploys them to surface the data).
+    # The daily news job squash-merges data-only commits to main; they do not
+    # need a full build, and the deploy that surfaces the data still runs.
     paths-ignore:
       - 'src/data/news.json'
       - 'src/data/new-tools.json'
@@ -22,7 +22,7 @@ jobs:
 
       - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - run: npm ci
