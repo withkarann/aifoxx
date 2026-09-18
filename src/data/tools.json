@@ -52002,5 +52002,41 @@
       "Publishing",
       "Education"
     ]
+  },
+  {
+    "id": "1023",
+    "name": "StudyArena",
+    "slug": "studyarena",
+    "category": "Education",
+    "subcategory": "Study Tools",
+    "description": "StudyArena lets students compare three anonymous AI answers to a study question, vote for the most useful response, then reveal the models.",
+    "url": "https://studyarena.com",
+    "tags": [
+      "study tools",
+      "answer comparison",
+      "AI learning"
+    ],
+    "pricing": "Freemium",
+    "status": "active",
+    "last_verified": "2026-09-17",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": null
+    },
+    "pricing_detail": {
+      "free_tier": "Three-model comparisons with voting and model reveals; a free account is required to ask a question.",
+      "paid_plans": "Supporter adds model choice and six-model comparisons.",
+      "api_cost": null
+    }
   }
 ]
