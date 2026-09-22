@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.7](https://github.com/withkarann/aifoxx/compare/v1.2.6...v1.2.7) (2026-09-22)
+
+
+### Bug Fixes
+
+* harden URLs and slugs, repair filters and layout, speed up the first load ([#355](https://github.com/withkarann/aifoxx/issues/355)) ([1fd131a](https://github.com/withkarann/aifoxx/commit/1fd131ac78ed57f666fcf5c6ec53139e28fbffe3))
+
 ## [1.2.6](https://github.com/withkarann/aifoxx/compare/v1.2.5...v1.2.6) (2026-09-22)
 
 
