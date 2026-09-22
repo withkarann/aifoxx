@@ -22,6 +22,7 @@ import BestCategoryPage from "./pages/BestCategoryPage";
 import bestData from "./data/best-categories.json";
 import { allTools, normalizeTaxonomyValue } from "./lib/tools";
 import { tagPagePaths } from "./lib/tags";
+import { vsPagePaths } from "./lib/compare-pairs";
 
 // Pre-compute all static paths at build time
 const toolPaths = allTools.map((t) => `ai/${t.slug}`);
@@ -35,33 +36,8 @@ const categoryPaths = [...new Set(allTools.map((t) => t.category))].map(
 // tag page that was never built.
 const tagPaths = tagPagePaths();
 
-// Pre-render "vs" comparison pages only for widely used tools within the same
-// category (sensible head-to-heads like "ChatGPT vs Claude"). Canonicalised so
-// a<b (we never ship both a-vs-b and b-vs-a, duplicate content) and bounded
-// to keep this to a few dozen high-intent pages, not a combinatorial explosion.
-const vsGroups = new Map<string, string[]>();
-allTools
-  .filter((t) => t.popular)
-  .forEach((t) => {
-    const group = vsGroups.get(t.category) ?? [];
-    group.push(t.slug);
-    vsGroups.set(t.category, group);
-  });
-const vsPairKeys = new Set<string>();
-for (const group of vsGroups.values()) {
-  const sorted = [...group].sort();
-  for (let i = 0; i < sorted.length; i++) {
-    for (let j = i + 1; j < sorted.length; j++) {
-      vsPairKeys.add(`${sorted[i]}|${sorted[j]}`);
-    }
-  }
-}
-const vsPaths = Array.from(vsPairKeys)
-  .slice(0, 80)
-  .map((pair) => {
-    const [a, b] = pair.split("|");
-    return `compare/${a}/vs/${b}`;
-  });
+// Head-to-head pages for widely used tools in the same category.
+const vsPaths = vsPagePaths();
 
 export const routes: RouteRecord[] = [
   {

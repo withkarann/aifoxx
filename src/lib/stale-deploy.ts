@@ -24,20 +24,15 @@ export function isStaleDeployError(error: unknown): boolean {
 export function reloadOnceForStaleDeploy(): boolean {
   if (typeof window === "undefined") return false;
   const KEY = "staleDeployReloadAt";
-  let last = 0;
   try {
-    last = Number(sessionStorage.getItem(KEY) || 0);
+    const last = Number(sessionStorage.getItem(KEY) || 0);
+    if (Date.now() - last <= 10_000) return false;
+    sessionStorage.setItem(KEY, String(Date.now()));
   } catch {
-    /* sessionStorage unavailable; fall through and reload */
+    // Without storage the reload cannot be limited to once, and an endless
+    // reload is worse than showing the error, so do not reload at all.
+    return false;
   }
-  if (Date.now() - last > 10_000) {
-    try {
-      sessionStorage.setItem(KEY, String(Date.now()));
-    } catch {
-      /* ignore */
-    }
-    window.location.reload();
-    return true;
-  }
-  return false;
+  window.location.reload();
+  return true;
 }

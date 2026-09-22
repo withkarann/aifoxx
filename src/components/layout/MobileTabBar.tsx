@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { LayoutGrid, Code2, ShieldCheck, Newspaper, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { isActivePath } from "./NavBar";
 
 const TABS = [
   { to: "/",       label: "TOOLS",  Icon: LayoutGrid },
@@ -17,11 +18,12 @@ export function MobileTabBar() {
     <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-bg-surface border-t border-border-default">
       <div className="flex items-stretch h-14" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
         {TABS.map(({ to, label, Icon }) => {
-          const active = pathname === to;
+          const active = isActivePath(pathname, to);
           return (
             <Link
               key={to}
               to={to}
+              aria-current={active ? "page" : undefined}
               className={cn(
                 "flex-1 flex flex-col items-center justify-center gap-0.5 relative transition-colors duration-150",
                 active ? "text-accent-green" : "text-text-muted hover:text-text-secondary"

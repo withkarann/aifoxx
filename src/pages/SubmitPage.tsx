@@ -1,29 +1,44 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { Copy, Check } from "lucide-react";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
 
 function CodeBlock({ children }: { children: string }) {
-  const [copied, setCopied] = useState(false);
+  const [status, setStatus] = useState<"idle" | "copied" | "failed">("idle");
+  const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
-  const handleCopy = useCallback(() => {
-    navigator.clipboard.writeText(children);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  useEffect(() => () => clearTimeout(timerRef.current), []);
+
+  // Clipboard access is missing on insecure pages and some in-app browsers,
+  // and can be refused, so success is only shown once the copy really worked.
+  const handleCopy = useCallback(async () => {
+    let next: "copied" | "failed" = "failed";
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(children);
+        next = "copied";
+      }
+    } catch {
+      next = "failed";
+    }
+    setStatus(next);
+    clearTimeout(timerRef.current);
+    timerRef.current = setTimeout(() => setStatus("idle"), 2000);
   }, [children]);
+  const copied = status === "copied";
 
   return (
     <div className="relative mt-3">
       <button
         type="button"
         onClick={handleCopy}
-        aria-label={copied ? "Code copied to clipboard" : "Copy code to clipboard"}
-        className="absolute top-2 right-2 flex items-center gap-1 font-mono text-xs text-text-muted hover:text-text-primary transition-colors duration-150"
+        aria-label={copied ? "Code copied to clipboard" : status === "failed" ? "Copy failed, select the code to copy it" : "Copy code to clipboard"}
+        className="absolute top-2 right-2 flex items-center justify-center gap-1 min-w-9 min-h-9 px-2 rounded-[4px] bg-bg-base font-mono text-xs text-text-muted hover:text-text-primary transition-colors duration-150"
       >
-        {copied ? <><Check size={12} /> COPIED!</> : <Copy size={12} />}
+        {copied ? <><Check size={12} /> COPIED!</> : status === "failed" ? "COPY FAILED" : <Copy size={12} />}
       </button>
-      <pre className="bg-bg-base border border-border-dim rounded-[6px] p-4 font-mono text-sm text-accent-green overflow-x-auto whitespace-pre">
+      <pre className="bg-bg-base border border-border-dim rounded-[6px] p-4 pr-14 font-mono text-sm text-accent-green overflow-x-auto whitespace-pre">
         {children}
       </pre>
     </div>
@@ -34,8 +49,8 @@ const STEPS = [
   {
     num: "01",
     title: "FORK THE REPO",
-    desc: "Clone the repository and set up your local environment.",
-    code: `git clone ${Brand.product.repo}\ncd aifoxx`,
+    desc: "Fork the repository on GitHub, then clone your fork.",
+    code: "git clone https://github.com/<your-username>/aifoxx\ncd aifoxx",
   },
   {
     num: "02",
@@ -48,7 +63,7 @@ const STEPS = [
   "description": "One line description (max 200 chars).",
   "url": "https://yourtool.com",
   "tags": ["tag1", "tag2"],
-  "pricing": "Free | Freemium | Paid | Open Source",
+  "pricing": "Free | Freemium | Paid | Open Source | Usage Based | Contact Sales | Pay-as-you-go",
   "logo_url": "https://... (optional)",
   "featured": false
 }`,
@@ -70,7 +85,7 @@ const RULES = [
   "Tool name must be unique (enforced by validator)",
   "No affiliate links",
   "Description max 200 characters",
-  "pricing must be exactly: Free, Freemium, Paid, or Open Source",
+  "pricing must be exactly one of: Free, Freemium, Paid, Open Source, Usage Based, Contact Sales, Pay-as-you-go",
   "URL must be a valid https:// link",
 ];
 

@@ -3,6 +3,28 @@ import { useTheme } from "@/contexts/ThemeContext";
 
 const STORAGE_KEY = "aifoxx-crt";
 
+// Browsers that block site storage throw on any access. The toggle then still
+// works for the visit, it just is not remembered.
+function readSetting(): string | null {
+  try {
+    return localStorage.getItem(STORAGE_KEY);
+  } catch {
+    return null;
+  }
+}
+
+function saveSetting(value: boolean) {
+  try {
+    localStorage.setItem(STORAGE_KEY, String(value));
+  } catch {
+    // Not remembered, see readSetting.
+  }
+}
+
+function prefersReducedMotion(): boolean {
+  return typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches === true;
+}
+
 export function CRTOverlay() {
   const { theme } = useTheme();
   // The first client render must match the prerendered HTML exactly, so the
@@ -12,7 +34,7 @@ export function CRTOverlay() {
   const [enabled, setEnabled] = useState(true);
 
   useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
+    const stored = readSetting();
     if (stored !== null) {
       setEnabled(stored !== "false");
     }
@@ -22,15 +44,16 @@ export function CRTOverlay() {
   // Visitors who never used the toggle follow the theme: scanlines on for the
   // dark theme, off otherwise.
   useEffect(() => {
-    if (localStorage.getItem(STORAGE_KEY) === null) {
-      setEnabled(theme === "dark");
+    if (readSetting() === null) {
+      // Visitors who ask for reduced motion never get the flickering overlay by default.
+      setEnabled(theme === "dark" && !prefersReducedMotion());
     }
   }, [theme]);
 
   const toggle = () => {
     setEnabled((value) => {
       const next = !value;
-      localStorage.setItem(STORAGE_KEY, String(next));
+      saveSetting(next);
       return next;
     });
   };
@@ -68,7 +91,9 @@ export function CRTOverlay() {
       )}
       <button
         id="crt-toggle"
+        type="button"
         onClick={toggle}
+        aria-pressed={enabled}
         className="font-mono text-[10px] uppercase tracking-tighter text-text-muted hover:text-accent-green transition-colors duration-150"
       >
         CRT {enabled ? "ON" : "OFF"}

@@ -95,20 +95,36 @@ export function getToolsByCategory(category: string): Tool[] {
   return allTools.filter((t) => matchesTaxonomyValue(t.category, category));
 }
 
+/**
+ * The tools that come after this one in catalog order, wrapping around to the
+ * start. Each tool therefore links to its own neighbours instead of every page
+ * pointing at the same first few tools in the list.
+ */
+function neighbours(group: Tool[], tool: Tool): Tool[] {
+  const position = allTools.indexOf(tool);
+  const others = group.filter((t) => t.slug !== tool.slug);
+  const after = others.filter((t) => allTools.indexOf(t) > position);
+  const before = others.filter((t) => allTools.indexOf(t) < position);
+  return [...after, ...before];
+}
+
+/**
+ * Tools to suggest on a tool page: same subcategory first, then the rest of
+ * the same category. Never crosses into another category, even where two
+ * categories share a subcategory name.
+ */
 export function getRelatedTools(slug: string, limit = 4): Tool[] {
   const tool = getToolBySlug(slug);
   if (!tool) return [];
-  // First: same subcategory
-  const sameSubcat = allTools.filter(
-    (t) => t.slug !== slug && matchesTaxonomyValue(t.subcategory, tool.subcategory)
+  const inCategory = allTools.filter((t) => matchesTaxonomyValue(t.category, tool.category));
+  const sameSubcat = neighbours(
+    inCategory.filter((t) => matchesTaxonomyValue(t.subcategory, tool.subcategory)),
+    tool
   );
   if (sameSubcat.length >= limit) return sameSubcat.slice(0, limit);
-  // Fill with same category (different subcategory)
-  const sameCat = allTools.filter(
-    (t) =>
-      t.slug !== slug &&
-      matchesTaxonomyValue(t.category, tool.category) &&
-      !matchesTaxonomyValue(t.subcategory, tool.subcategory)
+  const sameCat = neighbours(
+    inCategory.filter((t) => !matchesTaxonomyValue(t.subcategory, tool.subcategory)),
+    tool
   );
   return [...sameSubcat, ...sameCat].slice(0, limit);
 }

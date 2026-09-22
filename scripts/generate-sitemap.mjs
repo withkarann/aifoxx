@@ -145,7 +145,7 @@ function generateSitemap() {
     .sort((a, b) => a.path.localeCompare(b.path));
 
   // "vs" comparison pages: widely used + same-category pairs, canonicalised (a<b).
-  // Mirrors getStaticPaths in src/routes.tsx so the sitemap matches what's built.
+  // Mirrors src/lib/compare-pairs.ts so the sitemap matches what's built.
   // Both sides must filter on the same field, or the sitemap silently drops
   // pages that are still being built.
   const vsGroups = new Map();
@@ -165,7 +165,6 @@ function generateSitemap() {
     }
   }
   const vsRoutes = Array.from(vsPairKeys)
-    .slice(0, 80)
     .map((pair) => {
       const [a, b] = pair.split("|");
       return { path: `/compare/${a}/vs/${b}`, lastmod: today, changefreq: "monthly", priority: 0.6 };

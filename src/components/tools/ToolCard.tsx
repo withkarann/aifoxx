@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { hasTagPage } from "@/lib/tags";
 import { Scale, ShieldCheck } from "lucide-react";
 import { type Tool } from "@/types/tool";
@@ -16,7 +16,6 @@ interface ToolCardProps {
 }
 
 export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
-  const navigate = useNavigate();
   const color = getCategoryColor(tool.category);
   const vars = getCategoryVars(tool.category);
   const { isSelected, toggle, isFull } = useCompare();
@@ -145,33 +144,19 @@ export function ToolCard({ tool, variant = "default" }: ToolCardProps) {
             // Only tags with a page of their own are clickable. The rest render
             // as plain labels so no tag ever leads to a missing page.
             const linkable = hasTagPage(tag);
-            const goToTag = () => navigate(`/tag/${encodeURIComponent(tag)}`);
-            return (
-            <span
-              key={tag}
-              {...(linkable
-                ? {
-                    role: "link" as const,
-                    tabIndex: 0,
-                    onClick: (e: React.MouseEvent) => { e.preventDefault(); e.stopPropagation(); goToTag(); },
-                    onKeyDown: (e: React.KeyboardEvent) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        goToTag();
-                      }
-                    },
-                  }
-                : {})}
-              className={cn(
-                // inline-block, not inline-flex: an ellipsis is never drawn for
-                // the text inside a flex container, so a long tag was being cut
-                // mid-word with no sign that anything had been left off.
-                "tag-pill inline-block align-middle shrink-0 text-[10px] font-mono px-1.5 py-0.5 rounded-[3px] transition-colors duration-150 max-w-[120px] truncate",
-                linkable && "cursor-pointer",
-                i === 2 && "hidden sm:inline-block"
-              )}
-            >
+            const pillClass = cn(
+              // inline-block, not inline-flex: an ellipsis is never drawn for
+              // the text inside a flex container, so a long tag was being cut
+              // mid-word with no sign that anything had been left off.
+              "tag-pill inline-block align-middle shrink-0 text-[10px] font-mono px-1.5 py-0.5 rounded-[3px] transition-colors duration-150 max-w-[120px] truncate",
+              i === 2 && "hidden sm:inline-block"
+            );
+            return linkable ? (
+              <Link key={tag} to={`/tag/${encodeURIComponent(tag)}`} className={pillClass}>
+                #{tag}
+              </Link>
+            ) : (
+            <span key={tag} className={pillClass}>
               #{tag}
             </span>
             );

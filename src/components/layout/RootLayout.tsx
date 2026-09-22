@@ -10,9 +10,9 @@ interface RootLayoutProps {
 
 export function RootLayout({ children }: RootLayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col bg-bg-base text-text-primary overflow-x-hidden">
+    <div className="min-h-screen flex flex-col bg-bg-base text-text-primary overflow-x-clip pb-[calc(3.5rem+env(safe-area-inset-bottom))] md:pb-0">
       <NavBar />
-      <main className="flex-1 flex flex-col pb-14 md:pb-0">
+      <main className="flex-1 flex flex-col">
         {children}
       </main>
       <Footer />

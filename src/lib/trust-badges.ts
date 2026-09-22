@@ -32,7 +32,8 @@ const badges = trustBadges as Record<string, RawBadges>;
 
 export function getTrustBadges(slug: string | undefined): TrustBadges | undefined {
   if (!slug) return undefined;
-  const b = badges[slug];
+  // Own keys only: a slug such as "constructor" must not resolve to a built-in.
+  const b = Object.prototype.hasOwnProperty.call(badges, slug) ? badges[slug] : undefined;
   if (!b) return undefined;
   return {
     certs: b.certs || [],

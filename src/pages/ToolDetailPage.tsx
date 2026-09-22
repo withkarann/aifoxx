@@ -14,7 +14,8 @@ import { ToolCard } from "@/components/tools/ToolCard";
 import { ToolIcon } from "@/components/tools/ToolIcon";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { normalizeTaxonomyValue } from "@/lib/tools";
+import { normalizeTaxonomyValue, matchesTaxonomyValue } from "@/lib/tools";
+import { vsPagePath } from "@/lib/compare-pairs";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { isSafeHttpUrl } from "@/lib/utils";
 import { DataStatus } from "@/components/ui/DataStatus";
@@ -54,8 +55,9 @@ function SkillsSection({ skills }: { skills: Skill[] }) {
               <span className="font-mono text-[10px] text-text-muted border border-border-dim px-1.5 py-0.5 rounded-[3px]">
                 {skill.skill_type === "mcp-server" ? "MCP Server" : "Claude Code"}
               </span>
+              {isSafeHttpUrl(skill.github_url) && (
               <a
-                href={isSafeHttpUrl(skill.github_url) ? skill.github_url : undefined}
+                href={skill.github_url}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="flex items-center gap-1 font-mono text-[10px] text-accent-green hover:underline"
@@ -63,6 +65,7 @@ function SkillsSection({ skills }: { skills: Skill[] }) {
                 <ExternalLink size={10} />
                 GitHub
               </a>
+              )}
             </div>
           </div>
         ))}
@@ -89,7 +92,27 @@ export default function ToolDetailPage() {
   // (rules-of-hooks); the ref is only attached when a tool renders, so the
   // observer no-ops on the 404 branch.
   const navigate = useNavigate();
-  const { add: addCompare } = useCompare();
+  const { selected: compareSelected, setSelected: setCompareSelected, max: compareMax } = useCompare();
+
+  // Put this tool in the tray. When the tray is full the oldest pick makes
+  // room, so the button never silently does nothing.
+  const compareThisTool = (slug: string) => {
+    const others = compareSelected.filter((s) => s !== slug);
+    setCompareSelected([...others.slice(-(compareMax - 1)), slug]);
+    navigate("/compare");
+  };
+
+  // Compare exactly these two tools: their head-to-head page when one is
+  // published, otherwise the comparison view with just the pair.
+  const compareWith = (a: string, b: string) => {
+    const page = vsPagePath(a, b);
+    if (page) {
+      navigate(page);
+      return;
+    }
+    setCompareSelected([a, b]);
+    navigate(`/compare?tools=${encodeURIComponent(a)},${encodeURIComponent(b)}`);
+  };
   const ctaRef = useRef<HTMLAnchorElement>(null);
   const [ctaScrolledOut, setCtaScrolledOut] = useState(false);
   const [footerVisible, setFooterVisible] = useState(false);
@@ -126,7 +149,6 @@ export default function ToolDetailPage() {
         <div className="flex-1 flex items-start justify-center px-4">
           <div className="bg-bg-elevated border border-border-default rounded-[6px] p-8 max-w-lg w-full mt-16 font-mono space-y-2">
             <p className="text-accent-red font-black">&gt; ERROR_404: TOOL_NOT_FOUND</p>
-            <p className="text-text-secondary">&gt; SLUG: {slug}</p>
             <Link to="/" className="block text-accent-green hover:underline mt-4">&gt; cd ~/ [HOME]</Link>
           </div>
         </div>
@@ -275,12 +297,12 @@ export default function ToolDetailPage() {
       <PageWrapper mobileFilter={false}>
         <div className="space-y-6">
           {/* Breadcrumbs */}
-          <nav className="font-mono text-xs text-text-muted flex gap-2 items-center flex-wrap">
+          <nav aria-label="Breadcrumb" className="font-mono text-xs text-text-muted flex gap-2 items-center flex-wrap">
             <Link to="/" className="hover:text-text-primary transition-colors duration-150">HOME</Link>
             <span style={{ color: color.accent }}>&gt;</span>
-            <Link to={`/?category=${encodeURIComponent(tool.category)}`} className="hover:text-text-primary transition-colors duration-150">{tool.category}</Link>
+            <Link to={`/category/${normalizeTaxonomyValue(tool.category)}`} className="hover:text-text-primary transition-colors duration-150">{tool.category}</Link>
             <span style={{ color: color.accent }}>&gt;</span>
-            <Link to={`/?category=${encodeURIComponent(tool.category)}&subcategory=${encodeURIComponent(tool.subcategory)}`} className="hover:text-text-primary transition-colors duration-150">{tool.subcategory}</Link>
+            <Link to={`/category/${normalizeTaxonomyValue(tool.category)}?subcategory=${encodeURIComponent(tool.subcategory)}`} className="hover:text-text-primary transition-colors duration-150">{tool.subcategory}</Link>
             <span style={{ color: color.accent }}>&gt;</span>
             <span className="text-text-primary">{tool.name}</span>
           </nav>
@@ -328,7 +350,7 @@ export default function ToolDetailPage() {
             </a>
             <button
               type="button"
-              onClick={() => { addCompare(tool.slug); navigate("/compare"); }}
+              onClick={() => compareThisTool(tool.slug)}
               aria-label={`Compare ${tool.name} with other tools`}
               className="flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-2 font-mono text-xs tracking-widest border border-border-default text-text-secondary hover:text-accent-green hover:border-accent-green/60 px-5 rounded-[6px] transition-colors duration-150 min-h-[48px]"
             >
@@ -575,14 +597,14 @@ export default function ToolDetailPage() {
           {related.length > 0 && (
             <section className="mt-8 space-y-4">
               <div className="h-px w-full" style={{ background: `linear-gradient(to right, ${color.accent}, transparent)` }} />
-              <h2 className="font-mono text-xs text-text-muted tracking-widest">// MORE IN {tool.subcategory.toUpperCase()}</h2>
+              <h2 className="font-mono text-xs text-text-muted tracking-widest">// MORE IN {(related.every((r) => matchesTaxonomyValue(r.subcategory, tool.subcategory)) ? tool.subcategory : tool.category).toUpperCase()}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {related.map((r) => (
                   <div key={r.id} className="flex flex-col gap-2">
                     <ToolCard tool={r} variant="compact" />
                     <button
                       type="button"
-                      onClick={() => { addCompare(tool.slug); addCompare(r.slug); navigate("/compare"); }}
+                      onClick={() => compareWith(tool.slug, r.slug)}
                       className="inline-flex items-center justify-center gap-1.5 font-mono text-[11px] text-text-muted hover:text-accent-green border border-border-dim hover:border-accent-green/60 rounded-[4px] px-2 min-h-11 transition-colors duration-150"
                     >
                       <Scale size={12} /> Compare with {r.name}

@@ -5,6 +5,8 @@ import { ToolCard } from "@/components/tools/ToolCard";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
+import { hasTagPage } from "@/lib/tags";
+import NotFoundPage from "./NotFoundPage";
 
 export default function TagPage() {
   const { tag } = useParams<{ tag: string }>();
@@ -29,6 +31,10 @@ export default function TagPage() {
       })),
     },
   }), [encodedTag, tagValue, tools]);
+
+  // A tag with no page of its own gets the normal 404, so a made-up tag in the
+  // address cannot produce a branded page showing whatever text was typed.
+  if (!hasTagPage(tagValue)) return <NotFoundPage />;
 
   return (
     <>

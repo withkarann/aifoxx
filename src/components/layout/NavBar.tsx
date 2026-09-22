@@ -7,6 +7,23 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import Brand from "@/lib/brand";
 
+const NAV_LINKS: { to: string; label: string; primary?: boolean }[] = [
+  { to: "/", label: "AI DIRECTORY" },
+  { to: "/skills", label: "SKILLS" },
+  { to: "/mcp", label: "MCP" },
+  { to: "/trust", label: "TRUST" },
+  { to: "/compare", label: "COMPARE" },
+  { to: "/best", label: "BEST OF" },
+  { to: "/news", label: "NEWS" },
+  { to: "/submit", label: "SUBMIT TOOL", primary: true },
+];
+
+/** A section stays highlighted on its sub-pages, e.g. TRUST on /trust/notion. */
+export function isActivePath(pathname: string, to: string): boolean {
+  if (to === "/") return pathname === "/" || pathname.startsWith("/ai/") || pathname.startsWith("/category/") || pathname.startsWith("/tag/");
+  return pathname === to || pathname.startsWith(`${to}/`);
+}
+
 export function NavBar() {
   const { theme, cycleTheme } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -20,7 +37,7 @@ export function NavBar() {
     <header className="sticky top-0 z-40 bg-bg-surface border-b border-border-default">
       <div className="flex items-center justify-between px-4 h-14">
         <div className="flex items-center gap-3">
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
               <SheetTrigger asChild>
                 <button
@@ -34,7 +51,25 @@ export function NavBar() {
                 </button>
               </SheetTrigger>
               <SheetContent side="left" className="w-[280px] bg-bg-surface p-0">
-                <SheetTitle className="sr-only">Categories</SheetTitle>
+                <SheetTitle className="sr-only">Site navigation</SheetTitle>
+                <nav aria-label="Pages" className="p-4 pb-0 grid grid-cols-2 gap-2">
+                  {NAV_LINKS.map(({ to, label }) => (
+                    <Link
+                      key={to}
+                      to={to}
+                      onClick={() => setMobileOpen(false)}
+                      aria-current={isActivePath(pathname, to) ? "page" : undefined}
+                      className={cn(
+                        "font-mono text-xs tracking-widest border px-3 py-2.5 rounded-[4px] text-center transition-colors duration-150",
+                        isActivePath(pathname, to)
+                          ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
+                          : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
+                      )}
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </nav>
                 <div className="p-4">
                   <Sidebar onMobileClose={() => setMobileOpen(false)} />
                 </div>
@@ -67,90 +102,26 @@ export function NavBar() {
             </span>
           </button>
 
-          <Link
-            to="/"
-            className={cn(
-              "hidden sm:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150",
-              pathname === "/"
-                ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
-                : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
-            )}
-          >
-            AI DIRECTORY
-          </Link>
-
-          <Link
-            to="/skills"
-            className={cn(
-              "hidden sm:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150",
-              pathname === "/skills"
-                ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
-                : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
-            )}
-          >
-            SKILLS
-          </Link>
-
-          <Link
-            to="/mcp"
-            className={cn(
-              "hidden sm:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150",
-              pathname === "/mcp"
-                ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
-                : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
-            )}
-          >
-            MCP
-          </Link>
-
-          <Link
-            to="/trust"
-            className={cn(
-              "hidden sm:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150",
-              pathname.startsWith("/trust")
-                ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
-                : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
-            )}
-          >
-            TRUST
-          </Link>
-
-          <Link
-            to="/compare"
-            className={cn(
-              "hidden sm:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150",
-              pathname === "/compare"
-                ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
-                : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
-            )}
-          >
-            COMPARE
-          </Link>
-
-          <Link
-            to="/news"
-            className={cn(
-              "hidden sm:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150",
-              pathname === "/news"
-                ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
-                : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
-            )}
-          >
-            NEWS
-          </Link>
-
-
-          <Link
-            to="/submit"
-            className={cn(
-              "hidden sm:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150",
-              pathname === "/submit"
-                ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
-                : "border-accent-green text-accent-green hover:bg-accent-green hover:text-primary-foreground"
-            )}
-          >
-            SUBMIT TOOL
-          </Link>
+          {NAV_LINKS.map(({ to, label, primary }) => {
+            const active = isActivePath(pathname, to);
+            return (
+              <Link
+                key={to}
+                to={to}
+                aria-current={active ? "page" : undefined}
+                className={cn(
+                  "hidden lg:inline-flex font-mono text-xs tracking-widest border px-3 py-1.5 rounded-[4px] transition-colors duration-150 whitespace-nowrap",
+                  active
+                    ? "bg-accent-green text-primary-foreground border-accent-green font-bold"
+                    : primary
+                      ? "border-accent-green text-accent-green hover:bg-accent-green hover:text-primary-foreground"
+                      : "border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay"
+                )}
+              >
+                {label}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </header>

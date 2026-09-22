@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode, useRef } from "react";
 
 export type Theme = "dark" | "light" | "notebook";
 
@@ -43,7 +43,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
+  // The saved theme is already on the page from the script in index.html.
+  // Skipping the first pass keeps the default from overwriting it for a frame.
+  const firstApplyRef = useRef(true);
   useEffect(() => {
+    if (firstApplyRef.current) {
+      firstApplyRef.current = false;
+      if (readStoredTheme() !== null) return;
+    }
     document.documentElement.setAttribute("data-theme", theme);
     try {
       localStorage.setItem(STORAGE_KEY, theme);

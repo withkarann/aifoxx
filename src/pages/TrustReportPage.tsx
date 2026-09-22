@@ -310,7 +310,7 @@ export default function TrustReportPage() {
       <PageWrapper mobileFilter={false}>
         <div className="space-y-6">
           {/* Breadcrumbs */}
-          <nav className="font-mono text-xs text-text-muted flex gap-2 items-center flex-wrap">
+          <nav aria-label="Breadcrumb" className="font-mono text-xs text-text-muted flex gap-2 items-center flex-wrap">
             <Link to="/" className="hover:text-text-primary transition-colors duration-150">HOME</Link>
             <span style={{ color: ACCENT }}>&gt;</span>
             <Link to="/trust" className="hover:text-text-primary transition-colors duration-150">TRUST</Link>

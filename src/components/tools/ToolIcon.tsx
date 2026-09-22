@@ -44,7 +44,10 @@ export function ToolIcon({
   void websiteUrl;
   const localIcon = slug && hasToolIcon(slug) ? toolIconUrl(slug) : null;
   const src = (isSafeHttpUrl(logoUrl) ? logoUrl : null) || localIcon || null;
-  const [failed, setFailed] = useState(false);
+  // Remember which image failed, so a failure never carries over to another
+  // tool's icon when this component is reused for a different tool.
+  const [failedSrc, setFailedSrc] = useState<string | null>(null);
+  const failed = failedSrc !== null && failedSrc === src;
 
   if (src && !failed) {
     return (
@@ -56,7 +59,12 @@ export function ToolIcon({
         loading="lazy"
         decoding="async"
         referrerPolicy="no-referrer"
-        onError={() => setFailed(true)}
+        onError={() => setFailedSrc(src)}
+        // An image that already failed before the page came to life never
+        // fires onError, so check once when it is attached.
+        ref={(el) => {
+          if (el && el.complete && el.naturalWidth === 0 && failedSrc !== src) setFailedSrc(src);
+        }}
         className={`${className} rounded-[4px] object-cover shrink-0 bg-bg-elevated`}
       />
     );
