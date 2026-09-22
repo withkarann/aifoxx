@@ -5,6 +5,7 @@ import { PricingBadge } from "@/components/tools/PricingBadge";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { getTrustBadges } from "@/lib/trust-badges";
 import { complianceKeys, type CanonicalCertKey } from "@/lib/trust";
+import { isSafeHttpUrl } from "@/lib/utils";
 
 // Resolve compliance + data-handling from the verified trust assessment (the
 // same source as the /trust report), falling back to legacy tool fields only
@@ -102,7 +103,7 @@ function ToolHeader({ tool, onRemove }: { tool: Tool; onRemove?: (slug: string) 
   return (
     <div className="flex flex-col gap-1.5">
       <div className="flex items-center gap-2">
-        {tool.logo_url ? (
+        {isSafeHttpUrl(tool.logo_url) ? (
           <img
             src={tool.logo_url}
             alt=""

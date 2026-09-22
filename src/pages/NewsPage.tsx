@@ -11,7 +11,7 @@ import { type NewsCategory } from "@/types/news";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
-import { cn } from "@/lib/utils";
+import { cn, isSafeHttpUrl } from "@/lib/utils";
 
 const PAGE_SIZE = 20;
 
@@ -63,14 +63,9 @@ function sourceColor(id: string) {
   return SOURCE_COLORS[id] ?? "text-text-muted";
 }
 
-// Only allow http/https URLs. Prevents javascript: protocol XSS via RSS feed data.
+// Only allow http/https URLs, so a feed entry can never become a javascript: link.
 function safeUrl(url: string): string {
-  try {
-    const parsed = new URL(url);
-    return parsed.protocol === "https:" || parsed.protocol === "http:" ? url : "#";
-  } catch {
-    return "#";
-  }
+  return isSafeHttpUrl(url) ? url : "#";
 }
 
 type Tab = "all" | NewsCategory;

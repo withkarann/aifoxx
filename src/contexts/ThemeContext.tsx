@@ -14,6 +14,16 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
 const STORAGE_KEY = "aifoxx-theme";
 
+// Browsers that block site storage throw on any access, so a missing saved
+// theme must fall back to the default rather than stop the page from loading.
+function readStoredTheme(): Theme | "sepia" | null {
+  try {
+    return localStorage.getItem(STORAGE_KEY) as Theme | "sepia" | null;
+  } catch {
+    return null;
+  }
+}
+
 export function ThemeProvider({ children }: { children: ReactNode }) {
   // Starts on the same theme the prerendered HTML was built with; the saved
   // theme is applied after mount so the first client render always matches
@@ -21,7 +31,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem(STORAGE_KEY) as Theme | "sepia" | null;
+    const storedTheme = readStoredTheme();
     if (storedTheme === "sepia") {
       // Reading the saved theme during render would make the first client
       // render differ from the prerendered HTML, so it must happen here even
@@ -35,7 +45,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem(STORAGE_KEY, theme);
+    try {
+      localStorage.setItem(STORAGE_KEY, theme);
+    } catch {
+      // Storage is blocked in this browser: the theme still applies, it just is not remembered.
+    }
   }, [theme]);
 
   const cycleTheme = useCallback(() => {

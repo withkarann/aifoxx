@@ -18,3 +18,10 @@ export const HttpUrl = z
     },
     { message: "Only http(s) URLs are allowed" }
   );
+
+// Shared validation primitive: a tool slug. It becomes both a URL segment and a
+// file name, so only lowercase letters and digits joined by single hyphens are
+// allowed. Keep in sync with scripts/slug.mjs.
+export const Slug = z
+  .string()
+  .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "Slug must be lowercase letters and digits joined by single hyphens");

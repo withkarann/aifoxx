@@ -5,6 +5,7 @@
 import sharp from "sharp";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { resolve } from "node:path";
+import { isValidSlug } from "./slug.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const tools = JSON.parse(readFileSync(resolve(root, "src/data/tools.json"), "utf8"));
@@ -31,7 +32,7 @@ async function worker() {
   while (i < tools.length) {
     const tool = tools[i++];
     const host = hostOf(tool.url);
-    if (!host || !tool.slug) continue;
+    if (!host || !isValidSlug(tool.slug)) continue;
     try {
       const buf = await fetchIcon(host);
       await sharp(buf)

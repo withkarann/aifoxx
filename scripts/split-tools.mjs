@@ -14,6 +14,7 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { assertValidSlug } from "./slug.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA = join(__dirname, "..", "src", "data");
@@ -50,6 +51,7 @@ function main() {
     }
     index.push(light);
     if (Object.keys(heavy).length > 0) {
+      assertValidSlug(tool.slug);
       writeFileSync(join(DETAIL_DIR, `${tool.slug}.json`), JSON.stringify(heavy) + "\n", "utf8");
       keep.add(`${tool.slug}.json`);
     }

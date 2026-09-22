@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { hasToolIcon, toolIconUrl } from "@/lib/tool-icons";
+import { isSafeHttpUrl } from "@/lib/utils";
 
 interface ToolIconProps {
   /** Tool name. Its first letter is the fallback when no favicon loads. */
@@ -42,7 +43,7 @@ export function ToolIcon({
 }: ToolIconProps) {
   void websiteUrl;
   const localIcon = slug && hasToolIcon(slug) ? toolIconUrl(slug) : null;
-  const src = logoUrl || localIcon || null;
+  const src = (isSafeHttpUrl(logoUrl) ? logoUrl : null) || localIcon || null;
   const [failed, setFailed] = useState(false);
 
   if (src && !failed) {

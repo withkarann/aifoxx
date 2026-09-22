@@ -17,6 +17,7 @@ import { readFileSync, readdirSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, resolve, join } from 'path';
 import { GUARD_RE, findEditorialVoice, findBannedDashes } from './editorial-voice.mjs';
+import { isValidSlug } from './slug.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, '../src/data/tools.json');
@@ -266,6 +267,14 @@ if (!Array.isArray(tools)) {
 
 let failed = false;
 
+// --- Hard check: slug format ---
+const badSlugs = tools.filter(t => !isValidSlug(t.slug));
+if (badSlugs.length > 0) {
+  console.error(`FAIL invalid slugs (${badSlugs.length}), expected lowercase letters, digits and single hyphens:`);
+  badSlugs.forEach(t => console.error(`  ${JSON.stringify(t.slug)} (${t.name ?? 'unnamed'})`));
+  failed = true;
+}
+
 // --- Hard check: duplicate slugs ---
 const dupeSlugs = checkDuplicateSlugs(tools);
 if (dupeSlugs.length > 0) {
@@ -368,9 +377,15 @@ function checkTrustReportShape() {
   ];
 
   for (const file of readdirSync(TRUST_DIR).filter((f) => f.endsWith('.json'))) {
-    const report = JSON.parse(readFileSync(resolve(TRUST_DIR, file), 'utf8'));
     const slug = file.slice(0, -5);
     reports += 1;
+    let report;
+    try {
+      report = JSON.parse(readFileSync(resolve(TRUST_DIR, file), 'utf8'));
+    } catch (err) {
+      hits.push({ slug, field: '(parse)', value: err.message });
+      continue;
+    }
     for (const [group, key] of TRISTATE) {
       const value = report[group]?.[key];
       if (value === true || value === false || value === null || value === undefined) continue;
@@ -410,8 +425,14 @@ function checkCertificationHeldValues() {
   let reports = 0;
   if (!existsSync(TRUST_DIR)) return { hits, count, reports };
   for (const file of readdirSync(TRUST_DIR).filter((f) => f.endsWith('.json'))) {
-    const report = JSON.parse(readFileSync(resolve(TRUST_DIR, file), 'utf8'));
     reports += 1;
+    let report;
+    try {
+      report = JSON.parse(readFileSync(resolve(TRUST_DIR, file), 'utf8'));
+    } catch (err) {
+      hits.push({ slug: file.slice(0, -5), name: '(parse)', value: err.message });
+      continue;
+    }
     for (const cert of report.certifications || []) {
       count += 1;
       if (typeof cert.held !== 'boolean') {

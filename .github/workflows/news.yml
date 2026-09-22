@@ -23,11 +23,14 @@ jobs:
   news:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      # Actions are pinned to commits and the checkout keeps no credentials:
+      # the admin token is only handed to the final step, so dependency
+      # install scripts and the news fetch never run with it available.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          token: ${{ secrets.NEWS_BOT_TOKEN }}
+          persist-credentials: false
 
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 24
           cache: 'npm'
@@ -47,6 +50,7 @@ jobs:
             exit 0
           fi
           BRANCH="chore/news-$(date -u +%Y%m%d-%H%M%S)"
+          gh auth setup-git
           git config user.name 'AIFoxx Bot'
           git config user.email 'bot@aifoxx.com'
           git checkout -b "$BRANCH"

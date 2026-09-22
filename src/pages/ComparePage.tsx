@@ -39,7 +39,13 @@ export default function ComparePage() {
     seededRef.current = true;
     const raw = searchParams.get("tools");
     if (raw) {
-      const urlSlugs = raw.split(",").map((s) => s.trim()).filter(Boolean).slice(0, max);
+      // Unknown slugs from a stale or edited link are dropped, so they cannot
+      // take up compare slots that the visitor has no way to clear.
+      const urlSlugs = raw
+        .split(",")
+        .map((s) => s.trim())
+        .filter((s) => Boolean(s) && Boolean(getToolBySlug(s)))
+        .slice(0, max);
       setSelected(urlSlugs);
     } else if (selected.length) {
       writeUrl(selected);
@@ -59,8 +65,8 @@ export default function ComparePage() {
   };
 
   const addTool = (slug: string) => {
-    if (selected.includes(slug) || selected.length >= max) return;
-    commit([...selected, slug]);
+    if (tools.some((t) => t.slug === slug) || tools.length >= max) return;
+    commit([...tools.map((t) => t.slug), slug]);
     setQuery("");
   };
   const removeTool = (slug: string) => commit(selected.filter((s) => s !== slug));

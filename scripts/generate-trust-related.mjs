@@ -6,6 +6,7 @@
 // alongside that vendor's report so the list costs no extra page weight.
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
 import { resolve } from "node:path";
+import { assertValidSlug } from "./slug.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const read = (p) => JSON.parse(readFileSync(resolve(root, p), "utf8"));
@@ -75,7 +76,7 @@ let linkCount = 0;
 for (const tool of withReports) {
   const peers = relatedFor(tool);
   if (peers.length === 0) continue;
-  writeFileSync(resolve(outDir, `${tool.slug}.json`), `${JSON.stringify(peers)}\n`);
+  writeFileSync(resolve(outDir, `${assertValidSlug(tool.slug)}.json`), `${JSON.stringify(peers)}\n`);
   files += 1;
   linkCount += peers.length;
 }

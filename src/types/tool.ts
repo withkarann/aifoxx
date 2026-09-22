@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { HttpUrl } from "./primitives";
+import { HttpUrl, Slug } from "./primitives";
 
 export const PricingEnum = z.enum([
   "Free", "Freemium", "Paid", "Open Source", "Usage Based", "Contact Sales", "Pay-as-you-go"
@@ -47,14 +47,14 @@ export const PricingDetailSchema = z.object({
 export const ToolSchema = z.object({
   id: z.string(),
   name: z.string(),
-  slug: z.string(),
+  slug: Slug,
   category: z.string(),
   subcategory: z.string(),
   description: z.string(),
   url: HttpUrl,
   tags: z.array(z.string()),
   pricing: PricingEnum,
-  logo_url: z.string().optional(),
+  logo_url: HttpUrl.optional(),
   /** Editorial spotlight: shown as featured on the site. Kept deliberately small. */
   featured: z.boolean().optional(),
   /**
