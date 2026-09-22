@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.8](https://github.com/withkarann/aifoxx/compare/v1.2.7...v1.2.8) (2026-09-22)
+
+
+### Bug Fixes
+
+* forward retired tag and tool addresses instead of returning 404 ([#357](https://github.com/withkarann/aifoxx/issues/357)) ([7ababae](https://github.com/withkarann/aifoxx/commit/7ababaef7a8c58bc0b2cd2127828d78fa80c6a46))
+
 ## [1.2.7](https://github.com/withkarann/aifoxx/compare/v1.2.6...v1.2.7) (2026-09-22)
 
 
