@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.6](https://github.com/withkarann/aifoxx/compare/v1.2.5...v1.2.6) (2026-09-22)
+
+
+### Catalog and data
+
+* add StudyArena to study tools ([d6d84c7](https://github.com/withkarann/aifoxx/commit/d6d84c767835a13a9d47af3465725aed618e18c3))
+* add YYLO ([#354](https://github.com/withkarann/aifoxx/issues/354)) ([8c50e9b](https://github.com/withkarann/aifoxx/commit/8c50e9b201441447e611b66fdd5f7d3edc2f1710))
+* follow the published counts for StudyArena ([ce3743b](https://github.com/withkarann/aifoxx/commit/ce3743b65097d9c1be7e92413d938c0a8e977226))
+
 ## [1.2.5](https://github.com/withkarann/aifoxx/compare/v1.2.4...v1.2.5) (2026-09-22)
 
 
