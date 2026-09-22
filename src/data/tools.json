@@ -52002,5 +52002,118 @@
       "Publishing",
       "Education"
     ]
+  },
+  {
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-09-22",
+    "access_methods": [
+      "Desktop App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": true,
+      "hipaa": null
+    },
+    "compliance_sources": {
+      "gdpr": "https://usealmanac.com/privacy",
+      "trains_on_data": "https://usealmanac.com/privacy",
+      "self_hostable": "https://usealmanac.com/privacy"
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": false,
+      "self_hostable": false
+    },
+    "id": "1023",
+    "name": "Almanac",
+    "slug": "almanac",
+    "category": "Productivity",
+    "subcategory": "Task Management",
+    "description": "Almanac is a Mac workspace that keeps tasks, projects and a source-backed wiki in one place, picking up follow-ups from connected accounts such as Gmail and Google Calendar and preparing drafts for you to review.",
+    "url": "https://usealmanac.com",
+    "tags": [
+      "task management",
+      "personal wiki",
+      "ai assistant",
+      "email",
+      "calendar"
+    ],
+    "pricing": "Paid",
+    "pricing_detail": {
+      "free_tier": null,
+      "paid_plans": "$20 per month, after a seven-day trial that requires a card",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Keeping tasks, projects and notes together in one desktop workspace",
+      "Turning email and meeting follow-ups into tracked work",
+      "Building a personal wiki that links people, projects and decisions"
+    ],
+    "not_good_for": [
+      "Teams needing Windows or a browser, it ships as a Mac app",
+      "Anyone without a ChatGPT subscription, which this version requires at setup"
+    ],
+    "industries": [
+      "Software",
+      "Startups"
+    ]
+  },
+  {
+    "featured": false,
+    "status": "beta",
+    "last_verified": "2026-09-22",
+    "access_methods": [
+      "CLI",
+      "API"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "compliance_sources": {
+      "self_hostable": "https://github.com/Hebbian-Robotics/hflow#hosting-and-scale"
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": true
+    },
+    "id": "1024",
+    "name": "HFlow",
+    "slug": "hflow",
+    "category": "Data & Analytics",
+    "subcategory": "Data Preparation",
+    "description": "HFlow is an Apache-2.0 Python SDK for robotics and physical AI teams that runs quality checks, transforms and enrichments over multimodal recordings, then records the results in a queryable catalog so a training set can be traced back to how it was produced.",
+    "url": "https://github.com/Hebbian-Robotics/hflow",
+    "tags": [
+      "robotics",
+      "data quality",
+      "physical ai",
+      "python sdk",
+      "open source"
+    ],
+    "pricing": "Open Source",
+    "pricing_detail": {
+      "free_tier": "The full SDK under Apache-2.0, run on your own infrastructure",
+      "paid_plans": null,
+      "api_cost": null
+    },
+    "use_cases": [
+      "Checking robot and egocentric recordings for dropped frames or drifting streams",
+      "Building a reproducible training set from a large multimodal corpus",
+      "Querying recording metadata and quality measurements without opening the files"
+    ],
+    "not_good_for": [
+      "Teams wanting a hosted service, the published version runs on your own infrastructure",
+      "Anyone needing user accounts or role-based access, which it does not provide"
+    ],
+    "industries": [
+      "Robotics",
+      "Software"
+    ]
   }
 ]
