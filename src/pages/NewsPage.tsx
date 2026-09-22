@@ -116,8 +116,12 @@ export default function NewsPage() {
   );
 
   const shown = useMemo(() => filteredItems.slice(0, visible), [filteredItems, visible]);
-  // Group relative to the newest story's date (see groupNewsByDate).
-  const groups = useMemo(() => groupNewsByDate(shown), [shown]);
+  // "Today" always means the day of the newest story on the whole page, so a
+  // filtered view never labels an old story as today's.
+  const groups = useMemo(
+    () => groupNewsByDate(shown, latestDate ? new Date(latestDate).getTime() : undefined),
+    [shown, latestDate]
+  );
   const hasMore = visible < filteredItems.length;
 
   function handleTabChange(next: Tab) {
@@ -169,6 +173,7 @@ export default function NewsPage() {
               key={id}
               type="button"
               onClick={() => handleTabChange(id)}
+              aria-pressed={tab === id}
               className={cn(
                 "font-mono text-xs tracking-widest px-4 py-2 -mb-px border-b-2 transition-colors duration-150",
                 tab === id
@@ -284,8 +289,8 @@ export default function NewsPage() {
                                   href={safeUrl(item.url)}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-100 text-text-muted hover:text-accent-green"
-                                  aria-label="Open link"
+                                  className="ml-auto opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition-opacity duration-100 text-text-muted hover:text-accent-green"
+                                  aria-label={`Open "${item.title}" in a new tab`}
                                 >
                                   <ExternalLink size={11} />
                                 </a>

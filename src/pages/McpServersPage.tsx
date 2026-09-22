@@ -60,8 +60,9 @@ function McpServerCard({ skill }: { skill: Skill }) {
             </Link>
           )}
         </div>
+        {isSafeHttpUrl(skill.github_url) && (
         <a
-          href={isSafeHttpUrl(skill.github_url) ? skill.github_url : undefined}
+          href={skill.github_url}
           target="_blank"
           rel="noopener noreferrer nofollow"
           className="flex items-center gap-1 font-mono text-[10px] text-text-primary hover:text-accent-green hover:drop-shadow-[0_0_6px_currentColor] transition-all duration-150 shrink-0"
@@ -70,6 +71,7 @@ function McpServerCard({ skill }: { skill: Skill }) {
           <ExternalLink size={10} />
           GitHub
         </a>
+        )}
       </div>
     </div>
   );
@@ -78,6 +80,11 @@ function McpServerCard({ skill }: { skill: Skill }) {
 export default function McpServersPage() {
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
+  // Moving between pages starts the visitor at the top of the new page.
+  const changePage = (next: number | ((current: number) => number)) => {
+    setPage(next);
+    requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+  };
 
   const { data: servers = [], isLoading } = useQuery({
     queryKey: ["mcp-servers"],
@@ -139,6 +146,7 @@ export default function McpServersPage() {
         {/* Search */}
         <div className="max-w-md mx-auto mt-8">
           <input
+            maxLength={200}
             type="text"
             value={query}
             onChange={(e) => handleQueryChange(e.target.value)}
@@ -190,9 +198,9 @@ export default function McpServersPage() {
             <div className="pt-2 flex items-center justify-center gap-1.5 flex-wrap">
               <button
                 type="button"
-                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                onClick={() => changePage((p) => Math.max(1, p - 1))}
                 disabled={pageSafe <= 1}
-                className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-[0.95] disabled:cursor-not-allowed"
+                className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 PREV
               </button>
@@ -205,7 +213,7 @@ export default function McpServersPage() {
                   <button
                     key={item}
                     type="button"
-                    onClick={() => setPage(item)}
+                    onClick={() => changePage(item)}
                     aria-current={item === pageSafe ? "page" : undefined}
                     className={`font-mono text-xs min-w-8 px-2 py-1.5 rounded-[4px] border transition-all ${
                       item === pageSafe
@@ -219,9 +227,9 @@ export default function McpServersPage() {
               )}
               <button
                 type="button"
-                onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                onClick={() => changePage((p) => Math.min(totalPages, p + 1))}
                 disabled={pageSafe >= totalPages}
-                className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-[0.95] disabled:cursor-not-allowed"
+                className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 NEXT
               </button>

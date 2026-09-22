@@ -102,7 +102,28 @@ describe("hasUsableFreeTier", () => {
   it("detects a published free tier on a paid tool", () => {
     const tool = makeTool({
       pricing: "Paid",
-      pricing_detail: { free_tier: "14-day trial", paid_plans: "$20/mo", api_cost: null },
+      pricing_detail: { free_tier: "Free plan with 3 projects", paid_plans: "$20/mo", api_cost: null },
+    });
+
+    expect(hasUsableFreeTier(tool)).toBe(true);
+  });
+
+  it.each(["14-day free trial", "5-day trial for $1", "7-day money-back guarantee", "Free trial available"])(
+    "does not count %j as a free tier",
+    (value) => {
+      const tool = makeTool({
+        pricing: "Paid",
+        pricing_detail: { free_tier: value, paid_plans: "$20/mo", api_cost: null },
+      });
+
+      expect(hasUsableFreeTier(tool)).toBe(false);
+    }
+  );
+
+  it("keeps a lasting free plan that is mentioned next to a trial", () => {
+    const tool = makeTool({
+      pricing: "Paid",
+      pricing_detail: { free_tier: "Free trial available, free plan for up to 500MB/day", paid_plans: "$20/mo", api_cost: null },
     });
 
     expect(hasUsableFreeTier(tool)).toBe(true);
@@ -133,7 +154,7 @@ describe("hasUsableFreeTier", () => {
 describe("matchesPricingFilters", () => {
   const paidWithTrial = makeTool({
     pricing: "Paid",
-    pricing_detail: { free_tier: "14-day trial", paid_plans: "$20/mo", api_cost: null },
+    pricing_detail: { free_tier: "Free plan with limited credits", paid_plans: "$20/mo", api_cost: null },
   });
   const paidNoTrial = makeTool({
     pricing: "Paid",

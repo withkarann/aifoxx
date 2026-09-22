@@ -1,6 +1,7 @@
 import { type Skill } from "@/types/skill";
 import counts from "@/data/skill-counts.json";
 import toolSkillsIndex from "@/data/tool-skills-index.json";
+import { normalizeQuery } from "./query";
 
 /**
  * Counts are kept in a tiny generated file (skill-counts.json) so pages can put
@@ -19,19 +20,24 @@ export const SKILL_COUNTS = counts as {
 // browser only downloads on the pages that actually list them, instead of being
 // baked into every page's JavaScript. Each catalog is fetched at most once and
 // then cached for the session.
+/** Most-starred first, as the pages promise; ties fall back to name. */
+function byStars(list: Skill[]): Skill[] {
+  return [...list].sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0) || a.name.localeCompare(b.name));
+}
+
 let mcpCache: Skill[] | null = null;
 let skillsCache: Skill[] | null = null;
 
 export async function loadMcpServers(): Promise<Skill[]> {
   if (!mcpCache) {
-    mcpCache = (await import("@/data/mcp-servers.json")).default as Skill[];
+    mcpCache = byStars((await import("@/data/mcp-servers.json")).default as Skill[]);
   }
   return mcpCache;
 }
 
 export async function loadClaudeCodeSkills(): Promise<Skill[]> {
   if (!skillsCache) {
-    skillsCache = (await import("@/data/claude-code-skills.json")).default as Skill[];
+    skillsCache = byStars((await import("@/data/claude-code-skills.json")).default as Skill[]);
   }
   return skillsCache;
 }
@@ -44,12 +50,13 @@ const toolSkills = toolSkillsIndex as Record<string, Skill[]>;
 
 /** Skills (of either kind) associated with a specific directory tool. */
 export function getToolSkills(slug: string): Skill[] {
-  return toolSkills[slug] ?? [];
+  // Own keys only: a slug such as "constructor" must not resolve to a built-in.
+  return Object.prototype.hasOwnProperty.call(toolSkills, slug) ? toolSkills[slug] : [];
 }
 
 /** Substring match across the fields a visitor would search by. */
 export function skillMatch(s: Skill, query: string): boolean {
-  const q = query.trim().toLowerCase();
+  const q = normalizeQuery(query).toLowerCase();
   if (!q) return true;
   return (
     s.name.toLowerCase().includes(q) ||
@@ -61,6 +68,6 @@ export function skillMatch(s: Skill, query: string): boolean {
 
 /** Filters an already-loaded list by query; an empty query returns it as-is. */
 export function filterSkills(list: Skill[], query: string): Skill[] {
-  const q = query.trim().toLowerCase();
+  const q = normalizeQuery(query).toLowerCase();
   return q ? list.filter((s) => skillMatch(s, q)) : list;
 }

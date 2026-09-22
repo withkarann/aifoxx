@@ -15,6 +15,10 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
+import { useHydrated } from "@/hooks/useHydrated";
+import { useDebounce } from "@/hooks/useDebounce";
+
+const EMPTY_PARAMS = new URLSearchParams();
 
 // Organization + WebSite JSON-LD are emitted globally from index.html so every SSG'd page carries them.
 
@@ -55,23 +59,26 @@ const homeFaqLd = {
 };
 
 export default function HomePage() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [liveParams, setSearchParams] = useSearchParams();
+  const hydrated = useHydrated();
+  const searchParams = hydrated ? liveParams : EMPTY_PARAMS;
   const { filters, setFilter, togglePricing, clearFilters, activeFilterCount } = useToolFilters();
   const nonSearchFilters = useMemo(
     () => ({ ...filters, search: "" }),
     [filters]
   );
   const { tools: filteredTools } = useFilteredTools(nonSearchFilters);
-  const tools = searchTools(filters.search, filteredTools);
+  const debouncedSearch = useDebounce(filters.search, 150);
+  const tools = useMemo(() => searchTools(debouncedSearch, filteredTools), [debouncedSearch, filteredTools]);
   const total = tools.length;
   const isEmpty = total === 0;
   const hasActiveFilters = activeFilterCount > 0;
 
   const [displayText, setDisplayText] = useState("");
-  const [parallax, setParallax] = useState({ x: 0, y: 0 });
+  const heroRef = useRef<HTMLElement | null>(null);
+  const parallaxFrameRef = useRef(0);
   const fullText = Brand.product.name_styled;
   const resultsRef = useRef<HTMLDivElement | null>(null);
-  const previousFilterSignatureRef = useRef("");
 
   // Featured carousel: track scroll position so edge fades and arrows only show
   // when there's actually more content to reach in that direction.
@@ -130,18 +137,6 @@ export default function HomePage() {
     [setSearchParams]
   );
 
-  const filterSignature = useMemo(
-    () =>
-      JSON.stringify({
-        search: filters.search,
-        category: filters.category,
-        subcategory: filters.subcategory,
-        pricing: filters.pricing,
-        tags: [...filters.tags].sort(),
-      }),
-    [filters.category, filters.pricing, filters.search, filters.subcategory, filters.tags]
-  );
-
   const currentPageSafe = Math.min(currentPage, totalPages);
 
   const paginatedTools = useMemo(() => {
@@ -165,13 +160,6 @@ export default function HomePage() {
   }, [fullText]);
 
   useEffect(() => {
-    if (previousFilterSignatureRef.current && previousFilterSignatureRef.current !== filterSignature) {
-      setPage(1);
-    }
-    previousFilterSignatureRef.current = filterSignature;
-  }, [filterSignature, setPage]);
-
-  useEffect(() => {
     if (currentPage > totalPages) {
       setPage(totalPages);
     }
@@ -187,14 +175,24 @@ export default function HomePage() {
     [currentPageSafe, setPage, totalPages]
   );
 
-  const handleHeroMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const nx = (e.clientX - rect.left) / rect.width - 0.5;
-    const ny = (e.clientY - rect.top) / rect.height - 0.5;
-    setParallax({ x: nx, y: ny });
+  // The hero drifts with the pointer. It writes CSS variables once per frame
+  // instead of re-rendering the page on every mouse move.
+  const setHeroParallax = (x: number, y: number) => {
+    cancelAnimationFrame(parallaxFrameRef.current);
+    parallaxFrameRef.current = requestAnimationFrame(() => {
+      heroRef.current?.style.setProperty("--px", x.toFixed(3));
+      heroRef.current?.style.setProperty("--py", y.toFixed(3));
+    });
   };
 
-  const resetHeroParallax = () => setParallax({ x: 0, y: 0 });
+  useEffect(() => () => cancelAnimationFrame(parallaxFrameRef.current), []);
+
+  const handleHeroMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setHeroParallax((e.clientX - rect.left) / rect.width - 0.5, (e.clientY - rect.top) / rect.height - 0.5);
+  };
+
+  const resetHeroParallax = () => setHeroParallax(0, 0);
 
   return (
     <>
@@ -215,6 +213,7 @@ export default function HomePage() {
       {/* HERO: compact logo + wordmark + value prop + search, sized so the
           category sidebar and first tool cards stay above the fold on desktop */}
       <section
+        ref={heroRef}
         className="hero-shell py-6 md:py-10 text-center px-4 border-b border-border-muted/30 relative overflow-hidden"
         onMouseMove={handleHeroMouseMove}
         onMouseLeave={resetHeroParallax}
@@ -224,14 +223,14 @@ export default function HomePage() {
         <div
           className="hero-orb"
           style={{
-            transform: `translate3d(${parallax.x * 16}px, ${parallax.y * 12}px, 0)`,
+            transform: "translate3d(calc(var(--px, 0) * 16px), calc(var(--py, 0) * 12px), 0)",
           }}
         />
 
         <div
           className="flex flex-col items-center justify-center gap-3 md:gap-4 relative z-10"
           style={{
-            transform: `translate3d(${parallax.x * 8}px, ${parallax.y * 6}px, 0)`,
+            transform: "translate3d(calc(var(--px, 0) * 8px), calc(var(--py, 0) * 6px), 0)",
           }}
         >
           <div className="flex items-center justify-center gap-3 md:gap-4">
@@ -258,7 +257,7 @@ export default function HomePage() {
         <div
           className="max-w-xl mx-auto mt-4 md:mt-6 relative z-10"
           style={{
-            transform: `translate3d(${parallax.x * 5}px, ${parallax.y * 4}px, 0)`,
+            transform: "translate3d(calc(var(--px, 0) * 5px), calc(var(--py, 0) * 4px), 0)",
           }}
         >
           <SearchBar
@@ -270,7 +269,7 @@ export default function HomePage() {
 
       {/* MAIN CONTENT */}
       <PageWrapper>
-        <div className="flex flex-col gap-4" ref={resultsRef}>
+        <div className="flex flex-col gap-4 scroll-mt-16" ref={resultsRef}>
           <div className="order-1">
             <FilterBar
               activePricing={filters.pricing}
@@ -290,7 +289,7 @@ export default function HomePage() {
               <p className="hidden md:block font-sans text-sm text-text-secondary leading-relaxed max-w-3xl">
                 AIFOXX curates the best AI tools across every major category, from AI coding assistants
                 to image generators, marketing platforms, and writing tools. Browse our hand-picked guides
-                below, or search 900+ tools above.
+                below, or search all {allTools.length.toLocaleString()} tools above.
               </p>
               <div className="flex gap-2 overflow-x-auto flex-nowrap md:flex-wrap pb-1 -mx-1 px-1 scrollbar-thin">
                 {bestCategories.map((c) => (

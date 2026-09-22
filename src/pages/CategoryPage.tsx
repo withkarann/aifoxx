@@ -12,6 +12,7 @@ import { getCategoryColor } from "@/lib/categoryColors";
 import { getCategoryIcon } from "@/lib/categoryIcons";
 import { CATEGORIES, matchesTaxonomyValue, normalizeTaxonomyValue } from "@/lib/tools";
 import { getTrustBadges } from "@/lib/trust-badges";
+import { hasUsableFreeTier } from "@/lib/tool-filters";
 import { complianceKeys } from "@/lib/trust";
 import { cn } from "@/lib/utils";
 import Brand from "@/lib/brand";
@@ -36,6 +37,9 @@ export default function CategoryPage() {
     const inCategory = allTools.filter((t) => {
       if (t.category !== cat.name) return false;
       if (filters.subcategory && !matchesTaxonomyValue(t.subcategory, filters.subcategory)) return false;
+      // Count with the free-tier toggle applied, so every suggested pricing
+      // chip leads to the number of tools it shows.
+      if (filters.freeTierOnly && !hasUsableFreeTier(t)) return false;
       return true;
     });
     const buckets = new Map<string, number>();
@@ -43,7 +47,7 @@ export default function CategoryPage() {
     return [...buckets.entries()]
       .map(([pricing, count]) => ({ pricing, count }))
       .sort((a, b) => b.count - a.count);
-  }, [cat, filters.subcategory]);
+  }, [cat, filters.subcategory, filters.freeTierOnly]);
 
   // Canonical (unfiltered) category facts for visible copy + FAQ structured data.
   const categoryFacts = useMemo(() => {
@@ -223,7 +227,7 @@ export default function CategoryPage() {
               <p className="font-display font-black" style={{ color: color.accent }}>&gt; NO_RESULTS_FOUND</p>
               <p className="font-mono text-text-secondary text-sm mt-2">
                 {filters.pricing.length > 0 && pricingBreakdown.length > 0
-                  ? `No ${filters.pricing.join(" or ")} tools in ${cat.name}${activeSub ? ` / ${activeSub}` : ""}.`
+                  ? `No ${filters.freeTierOnly ? "free-tier " : ""}${filters.pricing.join(" or ")} tools in ${cat.name}${activeSub ? ` / ${activeSub}` : ""}.`
                   : "No tools match these filters"}
               </p>
               {filters.pricing.length > 0 && pricingBreakdown.length > 0 && (
@@ -243,7 +247,7 @@ export default function CategoryPage() {
                     ))}
                     <button
                       type="button"
-                      onClick={() => setFilter("pricing", "")}
+                      onClick={() => setFilter("pricing", [])}
                       className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-dashed border-border-dim text-text-muted hover:text-text-primary hover:border-border-default transition-colors duration-150"
                     >
                       Clear filter

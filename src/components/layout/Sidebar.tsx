@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { CATEGORIES, allTools, matchesTaxonomyValue } from "@/lib/tools";
+import { CATEGORIES, allTools, matchesTaxonomyValue, normalizeTaxonomyValue } from "@/lib/tools";
 import { useToolFilters } from "@/hooks/useToolFilters";
 import { getCategoryColor } from "@/lib/categoryColors";
 import { getCategoryIcon } from "@/lib/categoryIcons";
@@ -25,8 +25,9 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
       setFilters({ category: "", subcategory: "" });
       navigate("/");
     } else {
+      // Category pages have no search box, so a search is not carried over:
+      // it would shorten the list with nothing on screen to explain why.
       const params = new URLSearchParams();
-      if (filters.search) params.set("search", filters.search);
       for (const pricing of filters.pricing) {
         params.append("pricing", pricing);
       }
@@ -37,7 +38,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
       if (subcategory) params.set("subcategory", subcategory);
 
       const qs = params.toString();
-      navigate(`/category/${encodeURIComponent(category)}${qs ? `?${qs}` : ""}`);
+      navigate(`/category/${normalizeTaxonomyValue(category)}${qs ? `?${qs}` : ""}`);
     }
 
     if (closeOnMobile) {
@@ -56,7 +57,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
         onClick={() => handleSelect("", undefined, true)}
         className={cn(
           "w-full text-left font-display text-sm font-black uppercase py-2 px-2 mb-1 rounded-[4px] transition-colors duration-150",
-          !filters.category
+          !selectedCategory
             ? "border-l-2 border-accent-green text-accent-green"
             : "text-text-secondary hover:text-text-primary"
         )}

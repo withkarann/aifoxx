@@ -66,6 +66,11 @@ export default function TrustIndexPage() {
   const [certs, setCerts] = useState<CanonicalCertKey[]>([]);
   const [noTrain, setNoTrain] = useState(false);
   const [page, setPage] = useState(1);
+  // Moving between pages starts the visitor at the top of the new page.
+  const changePage = (next: number | ((current: number) => number)) => {
+    setPage(next);
+    requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+  };
 
   const filtered = useMemo(() => filterTrustIndex({ query, certs, noTrain }), [query, certs, noTrain]);
 
@@ -149,6 +154,7 @@ export default function TrustIndexPage() {
         {/* Search */}
         <div className="max-w-md mx-auto mt-8">
           <input
+            maxLength={200}
             type="text"
             value={query}
             onChange={(e) => {
@@ -238,7 +244,7 @@ export default function TrustIndexPage() {
             <div className="pt-2 flex items-center justify-center gap-1.5 flex-wrap">
               <button
                 type="button"
-                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                onClick={() => changePage((p) => Math.max(1, p - 1))}
                 disabled={pageSafe <= 1}
                 className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
               >
@@ -249,7 +255,7 @@ export default function TrustIndexPage() {
               </span>
               <button
                 type="button"
-                onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                onClick={() => changePage((p) => Math.min(totalPages, p + 1))}
                 disabled={pageSafe >= totalPages}
                 className="font-mono text-xs px-3 py-1.5 rounded-[4px] border border-border-default text-text-secondary hover:text-text-primary hover:bg-bg-overlay transition-all disabled:opacity-40 disabled:cursor-not-allowed"
               >

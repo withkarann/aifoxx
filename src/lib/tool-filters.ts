@@ -18,6 +18,14 @@ import type { Tool } from "@/types/tool";
 const EMPTY_FREE_TIER = /^(none|no free tier|not available|n\/a|-)$/i;
 
 /**
+ * Free-tier strings that only describe a time-limited trial, a demo or a refund
+ * window. Those let you try a paid product, they are not a free tier, unless
+ * the text also names a lasting free plan.
+ */
+const TRIAL_ONLY = /\b(trial|money-back|guarantee|refund|demo)\b/i;
+const LASTING_FREE = /\bfree (plan|tier|version|forever|account)\b|\bforever free\b|\bfree for up to\b/i;
+
+/**
  * Pricing models that never cost anything, regardless of tier text.
  */
 const ALWAYS_FREE: ReadonlySet<string> = new Set(["Free", "Open Source"]);
@@ -54,7 +62,8 @@ export function hasUsableFreeTier(tool: Tool): boolean {
   if (ALWAYS_FREE.has(tool.pricing)) return true;
 
   const freeTier = tool.pricing_detail?.free_tier?.trim() ?? "";
-  return freeTier.length > 0 && !EMPTY_FREE_TIER.test(freeTier);
+  if (freeTier.length === 0 || EMPTY_FREE_TIER.test(freeTier)) return false;
+  return !TRIAL_ONLY.test(freeTier) || LASTING_FREE.test(freeTier);
 }
 
 /**

@@ -42,6 +42,7 @@ export const SearchBar = forwardRef<SearchBarHandle, SearchBarProps>(
           <input
             ref={inputRef}
             type="search"
+            maxLength={200}
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder="search_tools..."
@@ -53,7 +54,7 @@ export const SearchBar = forwardRef<SearchBarHandle, SearchBarProps>(
               type="button"
               onClick={() => onChange("")}
               aria-label="Clear search"
-              className="text-text-muted hover:text-text-primary transition-colors duration-150 text-sm"
+              className="-mr-2 flex items-center justify-center w-9 h-9 rounded-[4px] text-text-muted hover:text-text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-green transition-colors duration-150 text-sm"
             >
               ✕
             </button>

@@ -44,9 +44,11 @@ export default function ComparePage() {
       const urlSlugs = raw
         .split(",")
         .map((s) => s.trim())
-        .filter((s) => Boolean(s) && Boolean(getToolBySlug(s)))
-        .slice(0, max);
-      setSelected(urlSlugs);
+        .filter((s) => Boolean(s) && Boolean(getToolBySlug(s)));
+      // Repeats are removed before the cap, so ?tools=a,a,a,b still keeps b.
+      const cleaned = [...new Set(urlSlugs)].slice(0, max);
+      setSelected(cleaned);
+      if (cleaned.join(",") !== raw) writeUrl(cleaned);
     } else if (selected.length) {
       writeUrl(selected);
     }
@@ -113,9 +115,17 @@ export default function ComparePage() {
         {canAdd ? (
           <div className="relative max-w-md">
             <input
+              maxLength={200}
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Escape") setQuery("");
+                if (e.key === "Enter" && suggestions[0]) {
+                  e.preventDefault();
+                  addTool(suggestions[0].slug);
+                }
+              }}
               placeholder="Add a tool to compare…"
               aria-label="Add a tool to compare"
               className="w-full bg-bg-elevated border border-border-default rounded-[6px] px-4 py-2.5 font-mono text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent-green/60 transition-colors"

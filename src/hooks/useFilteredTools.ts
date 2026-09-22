@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { allTools, getCanonicalCategoryName, getCanonicalSubcategoryName, matchesTaxonomyValue } from "@/lib/tools";
 import { matchesPricingFilters } from "@/lib/tool-filters";
+import { searchTools } from "@/lib/search";
 import { useDebounce } from "./useDebounce";
 import type { ToolFilters } from "./useToolFilters";
 
@@ -12,17 +13,7 @@ export function useFilteredTools(filters: ToolFilters) {
     : filters.subcategory;
 
   const tools = useMemo(() => {
-    return allTools.filter((tool) => {
-      // Search
-      if (debouncedSearch) {
-        const q = debouncedSearch.toLowerCase();
-        const matches =
-          tool.name.toLowerCase().includes(q) ||
-          tool.description.toLowerCase().includes(q) ||
-          tool.tags.some((t) => t.toLowerCase().includes(q));
-        if (!matches) return false;
-      }
-
+    const matching = allTools.filter((tool) => {
       if (canonicalCategory && !matchesTaxonomyValue(tool.category, canonicalCategory)) return false;
       if (canonicalSubcategory && !matchesTaxonomyValue(tool.subcategory, canonicalSubcategory)) return false;
 
@@ -40,6 +31,8 @@ export function useFilteredTools(filters: ToolFilters) {
 
       return true;
     });
+    // Same ranked search as the home page, so a query gives the same tools everywhere.
+    return searchTools(debouncedSearch, matching);
   }, [
     canonicalCategory,
     canonicalSubcategory,
