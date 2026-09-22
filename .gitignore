@@ -81,4 +81,6 @@ screenshots/
 # Generated from tools.json by the split step (rebuilt each dev/build)
 src/data/tools-index.json
 src/data/tools/
+src/data/trust-badges-light.json
+src/data/trust-regions.json
 src/data/trust-related/

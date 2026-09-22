@@ -45,7 +45,7 @@ const homeFaq = [
   },
   {
     q: "Is the compliance data on AIFOXX verified?",
-    a: "Compliance flags (SOC 2, ISO 27001, GDPR, HIPAA) are community-sourced and may be incomplete or out of date. Treat them as a starting point and always verify certifications directly with the vendor's trust or security page before relying on them.",
+    a: "Certifications (SOC 2, ISO 27001, GDPR, HIPAA and more) come from each vendor's Trust & Security Report, where every certification is backed by a quote from the vendor's own website and a last-verified date. Compliance changes over time, so confirm with the vendor before relying on it for a purchase or audit.",
   },
 ];
 const homeFaqLd = {

@@ -60,6 +60,23 @@ function patch(path, edits) {
 // "<n> AI tools" anywhere (drops any trailing + so the count stays exact).
 const aiTools = [/\b[\d,]+\+?\s+AI tools\b/g, `${N} AI tools`];
 
+// Categories, largest first, each described by its most common subcategories.
+const byCategory = new Map();
+for (const t of tools) {
+  const entry = byCategory.get(t.category) || { count: 0, subs: new Map() };
+  entry.count += 1;
+  entry.subs.set(t.subcategory, (entry.subs.get(t.subcategory) || 0) + 1);
+  byCategory.set(t.category, entry);
+}
+const categoriesBySize = [...byCategory.entries()].sort((a, b) => b[1].count - a[1].count || a[0].localeCompare(b[0]));
+const categoryLines = categoriesBySize
+  .map(([name, { count, subs }]) => {
+    const top = [...subs.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 4).map(([s]) => s);
+    return `- ${name} (${count}): ${top.join(", ")}`;
+  })
+  .join("\n");
+const largest = categoriesBySize.slice(0, 6).map(([name]) => name).join(", ");
+
 patch("src/data/brand.json", [aiTools]);
 patch("index.html", [aiTools]);
 patch("public/llms.txt", [
@@ -67,6 +84,11 @@ patch("public/llms.txt", [
   [/\b[\d,]+ AI tools cataloged across \d+ categories/, `${N} AI tools cataloged across ${C} categories`],
   [/\b[\d,]+ tools offer a free/, `${F} tools offer a free`],
   [/\b[\d,]+ tools provide API access; [\d,]+ are self-hostable/, `${A} tools provide API access; ${S} are self-hostable`],
+  [/Largest categories: [^\r\n]*/, `Largest categories: ${largest}.`],
+  [/\b[\d,]+ MCP servers and [\d,]+ Claude Code skills indexed/, `${group(M)} MCP servers and ${group(K)} Claude Code skills indexed`],
+  [/reports for [\d,]+ AI vendors/g, `reports for ${T} AI vendors`],
+  [/\b[\d,]+ vendors have a Trust and Security Report/g, `${T} vendors have a Trust and Security Report`],
+  [/(## Categories\r?\n\r?\n)[\s\S]*?(\r?\n\r?\n## )/, `$1${categoryLines}$2`],
 ]);
 // The summary table is the number readers actually see, so it is patched by
 // matching the row label rather than the old value. Anchoring on the label

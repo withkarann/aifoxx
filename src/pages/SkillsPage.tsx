@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { Star, ExternalLink } from "lucide-react";
 import { GithubLogo } from "phosphor-react";
 import { useQuery } from "@tanstack/react-query";
-import { loadClaudeCodeSkills, filterSkills, SKILL_COUNTS } from "@/lib/skills";
+import { FIRST_PAGE_SIZE, loadClaudeCodeSkills, filterSkills, SKILL_COUNTS } from "@/lib/skills";
 import { paginationItems } from "@/lib/pagination";
 import { isSafeHttpUrl } from "@/lib/utils";
 import { type Skill } from "@/types/skill";
@@ -11,7 +11,7 @@ import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
 import Brand from "@/lib/brand";
 
-const SKILLS_PER_PAGE = 18;
+const SKILLS_PER_PAGE = FIRST_PAGE_SIZE;
 
 function SkillCard({ skill }: { skill: Skill }) {
   return (
@@ -86,10 +86,14 @@ export default function SkillsPage() {
     requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
   };
 
-  const { data: skills = [], isLoading } = useQuery({
+  // The first page arrives with the page itself; the full list loads after.
+  const firstPage = (useLoaderData() as Skill[] | null) ?? undefined;
+  const { data: skills = [], isLoading: loadingFull, isPlaceholderData } = useQuery({
     queryKey: ["claude-code-skills"],
     queryFn: loadClaudeCodeSkills,
+    placeholderData: firstPage,
   });
+  const isLoading = loadingFull && skills.length === 0;
 
   const schema = useMemo(() => ({
     "@context": "https://schema.org",
@@ -162,7 +166,7 @@ export default function SkillsPage() {
           {/* Result count */}
           <div className="flex items-center justify-end">
             <span className="font-mono text-xs text-text-muted">
-              {isLoading ? "Loading..." : `${filtered.length} result${filtered.length !== 1 ? "s" : ""}`}
+              {isLoading ? "Loading..." : isPlaceholderData && !query ? `${SKILL_COUNTS.claudeCodeSkills.toLocaleString()} results` : `${filtered.length} result${filtered.length !== 1 ? "s" : ""}`}
             </span>
           </div>
 

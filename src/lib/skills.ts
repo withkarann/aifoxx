@@ -20,6 +20,9 @@ export const SKILL_COUNTS = counts as {
 // browser only downloads on the pages that actually list them, instead of being
 // baked into every page's JavaScript. Each catalog is fetched at most once and
 // then cached for the session.
+/** Entries per page on /skills and /mcp. */
+export const FIRST_PAGE_SIZE = 18;
+
 /** Most-starred first, as the pages promise; ties fall back to name. */
 function byStars(list: Skill[]): Skill[] {
   return [...list].sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0) || a.name.localeCompare(b.name));

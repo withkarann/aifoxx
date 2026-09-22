@@ -9,6 +9,7 @@ import { ToolIcon } from "@/components/tools/ToolIcon";
 import { isSafeHttpUrl } from "@/lib/utils";
 import Brand from "@/lib/brand";
 import type { TrustReport, Certification, TrustRelatedVendor } from "@/types/trust";
+import { fitTitle } from "@/lib/page-title";
 
 // The --accent-green token stores raw HSL components ("26 86% 52%"), so inline
 // uses must wrap it in hsl() exactly like the Tailwind color mapping does.
@@ -193,7 +194,14 @@ export default function TrustReportPage() {
   const operator = trustOperator(product, report.vendor);
 
   const certLine = marquee.length > 0 ? marquee.slice(0, 4).join(", ") : "certification status";
-  const title = `${product} Security & Compliance (${marquee.length ? marquee.slice(0, 3).join(", ") : "SOC 2, GDPR, HIPAA"}) | ${Brand.product.name_styled}`;
+  const brandName = Brand.product.name_styled;
+  const title = fitTitle([
+    `${product} Security & Compliance (${marquee.length ? marquee.slice(0, 3).join(", ") : "SOC 2, GDPR, HIPAA"}) | ${brandName}`,
+    ...(marquee.length > 1 ? [`${product} Security & Compliance (${marquee.slice(0, 2).join(", ")}) | ${brandName}`] : []),
+    ...(marquee.length > 0 ? [`${product} Security & Compliance (${marquee[0]}) | ${brandName}`] : []),
+    `${product} Security & Compliance | ${brandName}`,
+    `${product} Security Report | ${brandName}`,
+  ]);
   const description = (() => {
     const base =
       certsHeldCount > 0

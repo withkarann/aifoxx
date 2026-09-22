@@ -1,5 +1,6 @@
 import { TrustReportSchema } from "@/types/trust";
 import type { TrustReport, TrustRelatedVendor } from "@/types/trust";
+import { openPublishedPage } from "./tool-detail";
 
 /**
  * Per-vendor report data. Vite turns this glob into one lazily-loaded chunk per
@@ -7,10 +8,18 @@ import type { TrustReport, TrustRelatedVendor } from "@/types/trust";
  * every vendor's. The report route's data loader awaits this at build time (so
  * the full report is still pre-rendered into static HTML) and on navigation.
  */
-const modules = import.meta.glob("../data/trust/*.json");
+//
+// Published pages read this data from the pre-rendered page data instead, so
+// the browser build leaves both lookup tables out (see tool-detail.ts).
+const includeTables = import.meta.env.SSR || import.meta.env.DEV || import.meta.env.MODE === "test";
+const modules: Record<string, () => Promise<unknown>> = includeTables
+  ? import.meta.glob("../data/trust/*.json")
+  : {};
 
 /** Comparable vendors, kept per slug so the list adds no weight to the page. */
-const relatedModules = import.meta.glob("../data/trust-related/*.json");
+const relatedModules: Record<string, () => Promise<unknown>> = includeTables
+  ? import.meta.glob("../data/trust-related/*.json")
+  : {};
 
 export interface TrustReportData {
   report: TrustReport;
@@ -29,7 +38,10 @@ export async function loadTrustReport(
 ): Promise<TrustReportData | undefined> {
   if (!slug) return undefined;
   const load = modules[`../data/trust/${slug}.json`];
-  if (!load) return undefined;
+  if (!load) {
+    openPublishedPage(`/trust/${slug}`);
+    return undefined;
+  }
   const mod = (await load()) as { default: unknown };
 
   // Checked, not assumed. The pages read these fields directly, so a value of

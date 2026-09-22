@@ -1,4 +1,4 @@
-import { type ReactNode } from "react";
+import { type ReactNode, useMemo } from "react";
 import { X, ExternalLink } from "lucide-react";
 import type { Tool } from "@/types/tool";
 import { PricingBadge } from "@/components/tools/PricingBadge";
@@ -6,6 +6,8 @@ import { getCategoryColor } from "@/lib/categoryColors";
 import { getTrustBadges } from "@/lib/trust-badges";
 import { complianceKeys, type CanonicalCertKey } from "@/lib/trust";
 import { isSafeHttpUrl } from "@/lib/utils";
+import { useQuery } from "@tanstack/react-query";
+import { loadTrustRegions, regionFor, type TrustRegions } from "@/lib/trust-regions";
 
 // Resolve compliance + data-handling from the verified trust assessment (the
 // same source as the /trust report), falling back to legacy tool fields only
@@ -21,10 +23,8 @@ function trainsValue(tool: Tool): boolean | null {
   if (b) return b.trains;
   return tool.data_storage?.trains_on_data ?? null;
 }
-function regionValue(tool: Tool): string {
-  const b = getTrustBadges(tool.slug);
-  if (b && b.data_region) return b.data_region;
-  return tool.data_storage?.region ?? "";
+function regionValue(tool: Tool, regions: TrustRegions | undefined): string {
+  return regionFor(regions, tool.slug) || (tool.data_storage?.region ?? "");
 }
 function selfHostValue(tool: Tool): boolean | null {
   const b = getTrustBadges(tool.slug);
@@ -75,7 +75,7 @@ interface Attribute {
   key: (tool: Tool) => string;
 }
 
-const ATTRIBUTES: Attribute[] = [
+const buildAttributes = (regions: TrustRegions | undefined): Attribute[] => [
   { label: "Pricing", get: (t) => <PricingBadge pricing={t.pricing} />, key: (t) => t.pricing },
   { label: "Free Tier", get: (t) => text(t.pricing_detail?.free_tier), key: (t) => t.pricing_detail?.free_tier ?? "" },
   { label: "Paid Plans", get: (t) => text(t.pricing_detail?.paid_plans), key: (t) => t.pricing_detail?.paid_plans ?? "" },
@@ -85,7 +85,7 @@ const ATTRIBUTES: Attribute[] = [
   { label: "ISO 27001", get: (t) => complianceDot(certValue(t, "iso27001")), key: (t) => String(certValue(t, "iso27001")) },
   { label: "GDPR", get: (t) => complianceDot(certValue(t, "gdpr")), key: (t) => String(certValue(t, "gdpr")) },
   { label: "HIPAA", get: (t) => complianceDot(certValue(t, "hipaa")), key: (t) => String(certValue(t, "hipaa")) },
-  { label: "Data Region", get: (t) => text(regionValue(t)), key: (t) => regionValue(t) },
+  { label: "Data Region", get: (t) => text(regionValue(t, regions)), key: (t) => regionValue(t, regions) },
   { label: "Trains on Data", get: (t) => yesNo(trainsValue(t)), key: (t) => String(trainsValue(t)) },
   { label: "Self-hostable", get: (t) => yesNo(selfHostValue(t)), key: (t) => String(selfHostValue(t)) },
   { label: "Category", get: (t) => text(t.category), key: (t) => t.category },
@@ -148,13 +148,21 @@ interface ComparisonViewProps {
   tools: Tool[];
   /** When provided, each tool shows a remove control. Omit for read-only (e.g. SEO vs-pages). */
   onRemove?: (slug: string) => void;
+  /** Data regions for these tools. When omitted they load after the table appears. */
+  regions?: TrustRegions;
 }
 
 /**
  * Read-only side-by-side comparison: a table on desktop, stacked-by-attribute on
  * mobile (no horizontal scroll). Rows where the tools differ are highlighted.
  */
-export function ComparisonView({ tools, onRemove }: ComparisonViewProps) {
+export function ComparisonView({ tools, onRemove, regions }: ComparisonViewProps) {
+  const { data: loadedRegions } = useQuery({
+    queryKey: ["trust-regions"],
+    queryFn: loadTrustRegions,
+    enabled: !regions,
+  });
+  const attributes = useMemo(() => buildAttributes(regions ?? loadedRegions), [regions, loadedRegions]);
   return (
     <>
       {/* ── Desktop: side-by-side table ── */}
@@ -173,7 +181,7 @@ export function ComparisonView({ tools, onRemove }: ComparisonViewProps) {
             </tr>
           </thead>
           <tbody>
-            {ATTRIBUTES.map((attr) => {
+            {attributes.map((attr) => {
               const diff = attributeDiffers(attr, tools);
               return (
                 <tr key={attr.label} className={diff ? "bg-accent-amber/5" : ""}>
@@ -217,7 +225,7 @@ export function ComparisonView({ tools, onRemove }: ComparisonViewProps) {
           ))}
         </div>
 
-        {ATTRIBUTES.map((attr) => {
+        {attributes.map((attr) => {
           const diff = attributeDiffers(attr, tools);
           return (
             <div

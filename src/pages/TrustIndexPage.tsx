@@ -123,7 +123,7 @@ export default function TrustIndexPage() {
     <>
       <PageMeta
         title={`AI Vendor Trust & Security Reports: SOC 2, GDPR, HIPAA | ${Brand.product.name_styled}`}
-        description={`Compliance and security reports for ${TRUST_STATS.total} AI vendors. Check SOC 2, ISO 27001, GDPR, HIPAA and whether a tool trains AI on your data, each backed by a sourced quote.`}
+        description={`Compliance and security reports for ${TRUST_STATS.total} AI vendors. Check SOC 2, ISO 27001, GDPR, HIPAA and whether a tool trains on your data, each with a sourced quote.`}
         url={`https://${Brand.product.domain}/trust`}
         keywords={["AI vendor compliance", "SOC 2 AI tools", "GDPR AI tools", "HIPAA AI tools", "does AI train on my data", "AI security certifications"]}
       />

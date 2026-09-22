@@ -99,7 +99,7 @@ export default function CategoryPage() {
     },
     {
       q: `Which ${cat.name} AI tools are SOC 2 or GDPR compliant?`,
-      a: `${categoryFacts.soc2} ${cat.name} tools are marked SOC 2 and ${categoryFacts.gdpr} GDPR-ready here. Compliance data is community-sourced; always verify it directly with the vendor before relying on it.`,
+      a: `${categoryFacts.soc2} ${cat.name} tools hold SOC 2 and ${categoryFacts.gdpr} are GDPR-ready, according to each vendor's Trust & Security Report on ${Brand.product.name_styled}. Each report quotes the vendor's own website and gives a last-verified date; confirm with the vendor before relying on it for a purchase or audit.`,
     },
     {
       q: `What does the ${cat.name} category include?`,

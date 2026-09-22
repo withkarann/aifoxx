@@ -1,4 +1,5 @@
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Link, Navigate, useLoaderData } from "react-router-dom";
+import type { TrustRegions } from "@/lib/trust-regions";
 import { getToolBySlug, normalizeTaxonomyValue } from "@/lib/tools";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -7,6 +8,7 @@ import NotFoundPage from "./NotFoundPage";
 import Brand from "@/lib/brand";
 import { hasUsableFreeTier } from "@/lib/tool-filters";
 import type { Tool } from "@/types/tool";
+import { fitTitle } from "@/lib/page-title";
 
 const DOMAIN = `https://${Brand.product.domain}`;
 
@@ -33,6 +35,7 @@ function pricingPhrase(tool: Tool): string {
  */
 export default function CompareVsPage() {
   const { slugA, slugB } = useParams<{ slugA: string; slugB: string }>();
+  const regions = (useLoaderData() as TrustRegions | null) ?? undefined;
   const a = slugA ? getToolBySlug(slugA) : undefined;
   const b = slugB ? getToolBySlug(slugB) : undefined;
 
@@ -65,7 +68,12 @@ export default function CompareVsPage() {
   return (
     <>
       <PageMeta
-        title={`${heading}: Pricing, Compliance & Features Compared | ${Brand.product.name_styled}`}
+        title={fitTitle([
+          `${heading}: Pricing, Compliance & Features Compared | ${Brand.product.name_styled}`,
+          `${heading}: Pricing & Compliance | ${Brand.product.name_styled}`,
+          `${heading} Compared | ${Brand.product.name_styled}`,
+          `${heading} | ${Brand.product.name_styled}`,
+        ])}
         description={`${a.name} vs ${b.name}: compare pricing, compliance, access methods, and data handling side by side.`}
         url={pageUrl}
         keywords={[
@@ -121,7 +129,7 @@ export default function CompareVsPage() {
           <p className="font-mono text-sm text-text-secondary max-w-2xl leading-relaxed">{intro}</p>
         </header>
 
-        <ComparisonView tools={tools} />
+        <ComparisonView tools={tools} regions={regions} />
 
         {/* Add a third tool */}
         <Link

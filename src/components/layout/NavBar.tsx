@@ -79,8 +79,10 @@ export function NavBar() {
 
           <Link to="/" className="flex items-center gap-2" aria-label="AIFOXX home">
             <img
-              src="/aifoxx.png"
+              src="/aifoxx-48.webp"
               alt="AIFOXX AI Tools Directory Logo"
+              width={24}
+              height={24}
               className="w-6 h-6 select-none pointer-events-none"
             />
             <span className="font-display font-black tracking-widest text-text-primary text-lg">

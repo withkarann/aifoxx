@@ -1,4 +1,4 @@
-import trustBadges from "@/data/trust-badges.json";
+import trustBadges from "@/data/trust-badges-light.json";
 
 /**
  * Compact per-tool compliance summary derived from the verified trust
@@ -15,7 +15,6 @@ export interface TrustBadges {
   certs: string[];
   /** Whether the product trains AI on customer data (null when not stated). */
   trains: boolean | null;
-  data_region: string;
   self_hostable: boolean | null;
   dpa: boolean | null;
 }
@@ -23,7 +22,6 @@ export interface TrustBadges {
 interface RawBadges {
   certs: string[];
   trains: boolean | null;
-  region: string;
   self_hostable: boolean | null;
   dpa: boolean | null;
 }
@@ -38,7 +36,6 @@ export function getTrustBadges(slug: string | undefined): TrustBadges | undefine
   return {
     certs: b.certs || [],
     trains: b.trains ?? null,
-    data_region: b.region || "",
     self_hostable: b.self_hostable ?? null,
     dpa: b.dpa ?? null,
   };

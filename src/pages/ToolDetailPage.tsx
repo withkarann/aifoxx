@@ -24,6 +24,7 @@ import { StickyOpenBar } from "@/components/tools/StickyOpenBar";
 import { useCompare } from "@/contexts/CompareContext";
 import Brand from "@/lib/brand";
 import type { Skill } from "@/types/skill";
+import { fitTitle } from "@/lib/page-title";
 
 const SKILLS_PER_PAGE = 6;
 
@@ -251,7 +252,11 @@ export default function ToolDetailPage() {
   return (
     <>
       <PageMeta
-        title={`${tool.name} Pricing, Compliance & Use Cases | ${Brand.product.name_styled}`}
+        title={fitTitle([
+          `${tool.name} Pricing, Compliance & Use Cases | ${Brand.product.name_styled}`,
+          `${tool.name} Pricing & Compliance | ${Brand.product.name_styled}`,
+          `${tool.name} Pricing | ${Brand.product.name_styled}`,
+        ])}
         description={seoDescription}
         url={pageUrl}
         type="article"
@@ -466,10 +471,10 @@ export default function ToolDetailPage() {
                   </Link>
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-                  {trustBadges.data_region && (
+                  {detail.trust_region && (
                     <div className="bg-bg-surface border border-border-default rounded-[6px] p-3">
                       <p className="font-mono text-xs text-text-muted">Region</p>
-                      <p className="font-mono text-sm text-text-primary mt-1">{trustBadges.data_region}</p>
+                      <p className="font-mono text-sm text-text-primary mt-1">{detail.trust_region}</p>
                     </div>
                   )}
                   {trustBadges.trains !== null && (

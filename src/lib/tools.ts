@@ -36,7 +36,11 @@ export function validateTools(): Tool[] {
   return tools;
 }
 
-export const allTools: Tool[] = validateTools();
+// Every tool is checked against the schema when pages are built and in tests.
+// The published site ships the same, already-checked data, so visitors'
+// browsers skip repeating the check on every load.
+export const allTools: Tool[] =
+  import.meta.env.PROD && !import.meta.env.SSR ? (toolsData as unknown as Tool[]) : validateTools();
 
 export const CATEGORIES: CategoryTaxonomyItem[] = Array.from(
   allTools.reduce((map, tool) => {
