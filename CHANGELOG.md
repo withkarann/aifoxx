@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.9](https://github.com/withkarann/aifoxx/compare/v1.2.8...v1.2.9) (2026-09-22)
+
+
+### Performance
+
+* notify search engines only about pages that changed ([#359](https://github.com/withkarann/aifoxx/issues/359)) ([aa7d441](https://github.com/withkarann/aifoxx/commit/aa7d44182f14bec0498440f9c8ea2d3e36879a4b))
+
 ## [1.2.8](https://github.com/withkarann/aifoxx/compare/v1.2.7...v1.2.8) (2026-09-22)
 
 
