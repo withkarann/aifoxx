@@ -52172,5 +52172,60 @@
     "industries": [
       "Education"
     ]
+  },
+  {
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-09-22",
+    "access_methods": [
+      "CLI"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "compliance_sources": {
+      "trains_on_data": "https://yylo.dev/privacy",
+      "self_hostable": "https://yylo.dev/privacy"
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": false,
+      "self_hostable": true
+    },
+    "id": "1026",
+    "name": "YYLO",
+    "slug": "yylo",
+    "category": "Agentic & Automation",
+    "subcategory": "AI Agents",
+    "description": "YYLO is an MIT-licensed command-line tool that coordinates coding agents such as Claude Code, Codex CLI and Gemini CLI, running each task in its own worktree and keeping the task, session, review and test evidence in your repository.",
+    "url": "https://yylo.dev",
+    "tags": [
+      "coding agents",
+      "cli",
+      "worktrees",
+      "task tracking",
+      "open source"
+    ],
+    "pricing": "Open Source",
+    "pricing_detail": {
+      "free_tier": "The full toolset under the MIT License, installed from npm and run on your own machine",
+      "paid_plans": null,
+      "api_cost": null
+    },
+    "use_cases": [
+      "Delegating a bounded coding task to an agent and reviewing what it changed",
+      "Keeping the reasoning and test evidence behind a change in the repository",
+      "Comparing how different agents or models handle the same task"
+    ],
+    "not_good_for": [
+      "Anyone wanting a hosted service, it is a command-line tool with no accounts",
+      "Work where the model provider must be fixed, it coordinates whichever agent you configure"
+    ],
+    "industries": [
+      "Software"
+    ]
   }
 ]
