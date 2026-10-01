@@ -11,41 +11,31 @@
       "name": "SOC 2 Type II (Kayako's own product/org)",
       "held": false,
       "proof_quote": "Enterprise security & compliance — SOC 2 Type II, GDPR, SSO/SAML, role-based access, and audit logs built in from day one.",
-      "source": "https://kayako.com/",
-      "source_urls": [],
-      "source_note": "homepage marketing claim no audit report attestation letter trust center is published to substantiate that Kayako itself holds a current SOC 2 Type II report. The dedicated /security/ page does NOT repeat this claim instead attributes SOC certifications to the data-center provider."
+      "source": "https://kayako.com/ (homepage marketing claim; no audit report, attestation letter, or trust center is published to substantiate that Kayako itself holds a current SOC 2 Type II report. The dedicated /security/ page does NOT repeat this claim and instead attributes SOC certifications to the data-center provider.)"
     },
     {
       "name": "SOC 1 / SOC 2 / SOC 3 (SSAE-16) — data-center / hosting provider only",
       "held": false,
       "proof_quote": "Core Kayako infrastructure is hosted at SSAE-16 (SOC 1, SOC 2, SOC 3), PCI DSS, ISO 27001, ISO 27017, ISO 27018 and Cloud Security Alliance compliant data facilities.",
-      "source": "https://kayako.com/security/",
-      "source_urls": [],
-      "source_note": "these certifications belong to the underlying data-center/cloud facilities NOT to Kayako as an audited organization no report is linked"
+      "source": "https://kayako.com/security/ (these certifications belong to the underlying data-center/cloud facilities, NOT to Kayako as an audited organization; no report is linked)"
     },
     {
       "name": "ISO 27001 / ISO 27017 / ISO 27018 — data-center / hosting provider only",
-      "held": false,
+      "held": true,
       "proof_quote": "Core Kayako infrastructure is hosted at SSAE-16 (SOC 1, SOC 2, SOC 3), PCI DSS, ISO 27001, ISO 27017, ISO 27018 and Cloud Security Alliance compliant data facilities.",
-      "source": "https://kayako.com/security/",
-      "source_urls": [],
-      "source_note": "attributed to hosting facilities not Kayako's own ISMS"
+      "source": "https://kayako.com/security/"
     },
     {
       "name": "PCI DSS — data-center / hosting provider only",
-      "held": false,
+      "held": true,
       "proof_quote": "Core Kayako infrastructure is hosted at SSAE-16 (SOC 1, SOC 2, SOC 3), PCI DSS, ISO 27001, ISO 27017, ISO 27018 and Cloud Security Alliance compliant data facilities.",
-      "source": "https://kayako.com/security/",
-      "source_urls": [],
-      "source_note": "facility-level not a Kayako PCI attestation"
+      "source": "https://kayako.com/security/"
     },
     {
       "name": "GDPR compliance posture",
       "held": true,
       "proof_quote": "With respect to personal data of individuals from the European Economic Area ('EEA'), the United Kingdom ('UK') or Switzerland, our legal basis for collecting and using the personal data will depend on the personal data concerned... we have your consent... we need the personal data to perform a contract... or where the processing is in our or a third party's legitimate interests.",
-      "source": "https://kayako.com/about/privacy/",
-      "source_urls": [],
-      "source_note": "documented GDPR legal-basis framework EEA/UK/Swiss rights note: GDPR is a regulation not a certification"
+      "source": "https://kayako.com/about/privacy/ (documented GDPR legal-basis framework and EEA/UK/Swiss rights; note: GDPR is a regulation, not a certification)"
     }
   ],
   "privacy": {

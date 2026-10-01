@@ -16,13 +16,13 @@
     {
       "name": "SOC 2 Type II (trust center report listing)",
       "held": true,
-      "proof_quote": "Resources ... Penetration Test ... Penetration Test Remediation ... SOC 2 Type II ... AI Governance Policy",
-      "source": "https://trust.sapling.ai/"
+      "proof_quote": "Sapling is SOC 2 Type II certified and undergoes annual third-party vulnerability assessment and penetration testing (VAPT), on top of its HIPAA and BAA support.",
+      "source": "https://sapling.ai/hipaa"
     },
     {
       "name": "GDPR (compliance posture, not a certification)",
       "held": true,
-      "proof_quote": "is also GDPR compliant and SOC 2 Type II certified.",
+      "proof_quote": "Sapling undergoes annual external vulnerability assessment and penetration testing (VAPT), and is also GDPR compliant and SOC 2 Type II certified.",
       "source": "https://sapling.ai/security"
     },
     {
@@ -32,10 +32,10 @@
       "source": "https://sapling.ai/security"
     },
     {
-      "name": "HIPAA (supports HIPAA-scoped customers; not a certification)",
-      "held": false,
-      "proof_quote": "Sapling additionally supports customers who require HIPAA and/or PCI compliance.",
-      "source": "https://sapling.ai/security"
+      "name": "HIPAA",
+      "held": true,
+      "proof_quote": "HIPAA Compliant AI Writing Assistant",
+      "source": "https://sapling.ai/hipaa"
     },
     {
       "name": "ISO 27001",

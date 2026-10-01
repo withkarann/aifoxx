@@ -2,7 +2,7 @@
   "slug": "designs-ai",
   "vendor": "Pixlr Pte. Ltd. (Designs.ai by Pixlr)",
   "product_family": "Designs.ai all-in-one AI content creation platform (branding/logo, image, video, chat/copy, slides, audio) under the Pixlr Group",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": false,
   "trust_center_url": "https://designs.ai/security",
@@ -28,8 +28,8 @@
     {
       "name": "GDPR (regulatory alignment, not a certification)",
       "held": true,
-      "proof_quote": "Privacy Policy demonstrates an active GDPR-compliance posture: it maps every processing purpose to a GDPR legal basis (e.g. 'Art. 6(1)(b) of the GDPR'), names an EU representative RIVACY GmbH (Mexikoring 33, 22297 Hamburg, Germany) and a UK representative RIVACY Ltd. (West Sussex), provides a designated Data Protection Officer at dpo@pixlr.com, enumerates full data-subject rights (access, rectification, erasure, restriction, objection, portability, complaint to a supervisory authority), and applies standard contractual clauses / binding corporate rules to EEA transfers. This reflects a demonstrable GDPR alignment, not an independently audited certification, so it is recorded as regulatory alignment rather than a SOC 2 / ISO-style attestation.",
-      "source": "https://designs.ai/en/privacy"
+      "proof_quote": "by your brand. Start Creating Now Talk to sales Make design easy for everyone. GDPR Compliant SOC Compliant Products Chats Branding Image Video Storyboard Slides Audio Agents Designs Claw Workflows",
+      "source": "https://designs.ai/en"
     }
   ],
   "privacy": {

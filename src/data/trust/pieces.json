@@ -10,8 +10,8 @@
     {
       "name": "SOC 2",
       "held": true,
-      "proof_quote": "We maintain SOC 2 compliance, a gold standard for managing customer data with strict controls across security, availability, and confidentiality. This ensures our infrastructure is built to meet the rigorous demands of enterprise environments.",
-      "source": "https://pieces.app/legal/security"
+      "proof_quote": "SOC 2 Type II certification, regular security audits, and independent third-party penetration testing.",
+      "source": "https://pieces.app/legal/privacy"
     },
     {
       "name": "ISO 27001",

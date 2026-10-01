@@ -10,8 +10,8 @@
     {
       "name": "SOC 2 Type 1",
       "held": true,
-      "proof_quote": "Listed under Certifications on the trust center: 'SOC 2 Type 1, GDPR, CCPA.' Supporting context: 'Our security program is built on industry-standard practices, including enterprise-grade encryption, continuous monitoring, and browser-level isolation to safeguard customer intellectual property.' Note: SOC 2 Type 1 is a point-in-time design attestation, weaker than a Type II operating-effectiveness report.",
-      "source": "https://trust.bolt.new/"
+      "proof_quote": "07:10.670613+00:00 Last updated 2026-07-08T16:17:29.323767+00:00 Certifications SOC 2 Type 2 GDPR CCPA Skip to main content Overview Controls Documents Access Control Application Security Business",
+      "source": "https://trust.bolt.new/controls"
     },
     {
       "name": "SOC 2 Type 2",
@@ -22,8 +22,8 @@
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Listed under Certifications on the trust center: 'SOC 2 Type 1, GDPR, CCPA.' Vendor self-attests GDPR compliance; this is a regulatory/compliance framework, not a third-party audit certification.",
-      "source": "https://trust.bolt.new/"
+      "proof_quote": "00:00 Last updated 2026-07-08T16:17:29.323767+00:00 Certifications SOC 2 Type 2 GDPR CCPA Skip to main content Overview Controls Documents Access Control Application Security Business Continuity and",
+      "source": "https://trust.bolt.new/controls"
     },
     {
       "name": "CCPA",

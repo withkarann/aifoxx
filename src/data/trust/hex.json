@@ -10,13 +10,13 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "We are audited annually for SOC 2 Type II and HIPAA compliance and are dedicated to safeguarding your data. As evidence of this, we have obtained our SOC 2 Type II report, which attests to the effectiveness and our adherence to security controls and processes.",
-      "source": "https://hex.tech/security/"
+      "proof_quote": "LINKS Website URL Report a Vulnerability Badges CCPA EU-US DPF GDPR HIPAA PCI SOC 2 Type II Swiss-US DPF UK-US DPF Quick Summary One or more annual third-party audit(s) Has a formal mobile device",
+      "source": "https://trust.hex.tech/"
     },
     {
       "name": "HIPAA",
       "held": true,
-      "proof_quote": "HIPAA badge listed on trust center. HIPAA add-on available at Enterprise tier. Business Associate Agreements (BAA) signed. Hex introduced HIPAA Multi-Tenant in March 2026 alongside the existing single-tenant HIPAA option.",
+      "proof_quote": "QUICK LINKS Website URL Report a Vulnerability Badges CCPA EU-US DPF GDPR HIPAA PCI SOC 2 Type II Swiss-US DPF UK-US DPF Quick Summary One or more annual third-party audit(s) Has a formal mobile",
       "source": "https://trust.hex.tech/"
     },
     {
@@ -28,8 +28,8 @@
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Hex Technologies Inc. is the controller in respect of the processing of your personal information covered by this Privacy Policy for purposes of European data protection legislation. GDPR badge listed on trust center.",
-      "source": "https://learn.hex.tech/docs/legal/privacy"
+      "proof_quote": "8 Badges QUICK LINKS Website URL Report a Vulnerability Badges CCPA EU-US DPF GDPR HIPAA PCI SOC 2 Type II Swiss-US DPF UK-US DPF Quick Summary One or more annual third-party audit(s) Has a formal",
+      "source": "https://trust.hex.tech/"
     },
     {
       "name": "CCPA",

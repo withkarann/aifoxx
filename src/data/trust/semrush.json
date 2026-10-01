@@ -10,7 +10,7 @@
     {
       "name": "PCI DSS Level 1",
       "held": true,
-      "proof_quote": "We have fully implemented and support all processes related to PCI DSS compliance. Once a year, we confirm our compliance by passing an independent QSA audit. As a result, we have achieved a PCI DSS Level 1 certificate.",
+      "proof_quote": "nt response Security management and compliance Security policies and procedures PCI DSS compliance Risk management Cybersecurity rating If you have any questions about Semrush’s security, contact us at secur",
       "source": "https://www.semrush.com/company/security/"
     },
     {
@@ -21,9 +21,9 @@
     },
     {
       "name": "SOC 2 Type II",
-      "held": false,
-      "proof_quote": "Not stated on Semrush's own security/legal pages as reviewed (2026-06-27). Third-party aggregators (Nudge Security, UpGuard) describe Semrush as SOC 2 audited, but no SOC 2 claim or report link was found on the vendor's own domain to confirm with a direct quote.",
-      "source": "https://www.semrush.com/company/security/"
+      "held": true,
+      "proof_quote": "Enterprise-ready governance, security (SOC2 certification), and performance are designed for teams that think big.",
+      "source": "https://enterprise.semrush.com/partner-program/"
     },
     {
       "name": "ISO/IEC 27001",

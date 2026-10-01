@@ -79,7 +79,7 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -90,7 +90,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": true
+      "hipaa": null
     },
     "data_storage": {
       "region": "US, EU",
@@ -115,7 +115,6 @@
       "soc2": "https://cloud.google.com/compliance",
       "iso27001": "https://cloud.google.com/compliance",
       "gdpr": "https://cloud.google.com/compliance",
-      "hipaa": "https://cloud.google.com/compliance",
       "trains_on_data": "https://workspace.google.com/security/ai-privacy/",
       "self_hostable": "https://gemini.google.com",
       "region": "https://workspace.google.com/security/ai-privacy/"
@@ -200,7 +199,7 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -210,9 +209,9 @@
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": false,
+      "iso27001": true,
       "gdpr": true,
-      "hipaa": true
+      "hipaa": null
     },
     "data_storage": {
       "region": null,
@@ -236,8 +235,8 @@
     "compliance_sources": {
       "soc2": "https://trust.perplexity.ai/",
       "gdpr": "https://trust.perplexity.ai/",
-      "hipaa": "https://trust.perplexity.ai/",
-      "trains_on_data": "https://docs.perplexity.ai/docs/resources/privacy-security"
+      "trains_on_data": "https://docs.perplexity.ai/docs/resources/privacy-security",
+      "iso27001": "https://trust.perplexity.ai/resources"
     }
   },
   {
@@ -478,15 +477,15 @@
     "pricing": "Free",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -508,7 +507,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://huggingface.co/docs/hub/en/security",
+      "gdpr": "https://huggingface.co/docs/hub/en/security"
+    }
   },
   {
     "id": "10",
@@ -584,15 +586,15 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
-      "gdpr": null,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -617,7 +619,9 @@
     "compliance_sources": {
       "soc2": "https://cohere.com/security",
       "trains_on_data": "https://cohere.com/enterprise-data-commitments",
-      "region": "https://cohere.com/privacy"
+      "region": "https://cohere.com/privacy",
+      "iso27001": "https://cohere.com/blog/iso-42001-and-iso-27001-certifications",
+      "gdpr": "https://cohere-inc.secureframetrust.com/"
     }
   },
   {
@@ -1003,7 +1007,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Browser Extension",
       "Desktop App",
@@ -1011,9 +1015,9 @@
       "Android App"
     ],
     "compliance": {
-      "soc2": true,
+      "soc2": null,
       "iso27001": null,
-      "gdpr": true,
+      "gdpr": null,
       "hipaa": null
     },
     "data_storage": {
@@ -1036,8 +1040,6 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.brave.app/",
-      "gdpr": "https://trust.brave.app/",
       "trains_on_data": "https://brave.com/leo/"
     }
   },
@@ -1110,7 +1112,7 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -1120,7 +1122,7 @@
     "compliance": {
       "soc2": false,
       "iso27001": false,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -1142,7 +1144,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://developer.amazon.com/support/legal/alexa_dpa"
+    }
   },
   {
     "id": "22",
@@ -1218,14 +1222,14 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "iOS App",
       "Desktop App"
     ],
     "compliance": {
       "soc2": false,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": false
     },
@@ -1250,7 +1254,8 @@
     "industries": [],
     "compliance_sources": {
       "trains_on_data": "https://www.apple.com/legal/privacy/data/en/ask-siri-dictation/",
-      "region": "https://www.apple.com/legal/privacy/en-ww/"
+      "region": "https://www.apple.com/legal/privacy/en-ww/",
+      "iso27001": "https://support.apple.com/guide/certifications/apple-internet-services-security-apc34d2c0468b/web"
     }
   },
   {
@@ -1383,7 +1388,7 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "Browser Extension",
@@ -1391,7 +1396,7 @@
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": false,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": false
     },
@@ -1418,7 +1423,8 @@
       "soc2": "https://www.jasper.ai/trust",
       "gdpr": "https://www.jasper.ai/trust",
       "trains_on_data": "https://www.jasper.ai/terms",
-      "region": "https://www.jasper.ai/security"
+      "region": "https://www.jasper.ai/security",
+      "iso27001": "https://security.jasper.ai/"
     }
   },
   {
@@ -1601,14 +1607,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": true
     },
@@ -1635,7 +1641,8 @@
       "soc2": "https://www.anyword.com/security",
       "gdpr": "https://www.anyword.com/security",
       "hipaa": "https://www.anyword.com/blog",
-      "region": "https://anyword.com/privacy-policy"
+      "region": "https://anyword.com/privacy-policy",
+      "iso27001": "https://www.anyword.com/anyword-dpa-agreement"
     }
   },
   {
@@ -1717,15 +1724,15 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "Browser Extension",
       "iOS App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -1748,7 +1755,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.ai21.com/",
+      "iso27001": "https://trust.ai21.com/"
+    }
   },
   {
     "id": "33",
@@ -1980,7 +1990,7 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -1991,7 +2001,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": "US, EU",
@@ -2017,7 +2027,8 @@
       "iso27001": "https://www.notion.com/security",
       "gdpr": "https://www.notion.com/security",
       "trains_on_data": "https://www.notion.com/help/notion-ai-security-practices",
-      "region": "https://www.notion.com/enterprise"
+      "region": "https://www.notion.com/enterprise",
+      "hipaa": "https://trust.notion.com/notion-security-trust"
     }
   },
   {
@@ -2248,7 +2259,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "Browser Extension"
@@ -2256,7 +2267,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -2278,7 +2289,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://surferseo.com/legal/privacy-policy-customers/"
+    }
   },
   {
     "id": "43",
@@ -2350,14 +2363,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -2379,7 +2392,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://www.scalenut.com/privacy-policy"
+    }
   },
   {
     "id": "46",
@@ -2960,17 +2975,17 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -2992,7 +3007,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "trains_on_data": "https://coda.io/trust"
+      "trains_on_data": "https://coda.io/trust",
+      "soc2": "https://coda.io/trust/security",
+      "gdpr": "https://coda.io/trust/security",
+      "hipaa": "https://coda.io/trust/security"
     }
   },
   {
@@ -3211,7 +3229,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API",
@@ -3220,7 +3238,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -3243,7 +3261,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://gptzero.me/cyber-security"
+      "soc2": "https://gptzero.me/cyber-security",
+      "gdpr": "https://gptzero.me/privacy-and-security"
     }
   },
   {
@@ -3320,7 +3339,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Browser Extension",
       "API"
@@ -3329,7 +3348,7 @@
       "soc2": true,
       "iso27001": null,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": "US",
@@ -3353,7 +3372,8 @@
     "compliance_sources": {
       "soc2": "https://trust.sapling.ai/",
       "gdpr": "https://sapling.ai/security",
-      "region": "https://sapling.ai/privacy"
+      "region": "https://sapling.ai/privacy",
+      "hipaa": "https://sapling.ai/hipaa"
     }
   },
   {
@@ -3432,13 +3452,13 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Desktop App"
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": false,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": false
     },
@@ -3466,7 +3486,8 @@
       "gdpr": "https://cursor.com/enterprise",
       "trains_on_data": "https://www.cursor.com/privacy",
       "region": "https://www.cursor.com/privacy",
-      "self_hostable": "https://cursor.com/enterprise"
+      "self_hostable": "https://cursor.com/enterprise",
+      "iso27001": "https://trust.cursor.com/resources"
     }
   },
   {
@@ -3542,15 +3563,15 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "VS Code Extension",
       "Plugin",
       "Desktop App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": null
     },
@@ -3575,7 +3596,9 @@
     "industries": [],
     "compliance_sources": {
       "gdpr": "https://trust.tabnine.com/",
-      "trains_on_data": "https://www.tabnine.com/code-privacy"
+      "trains_on_data": "https://www.tabnine.com/code-privacy",
+      "soc2": "https://trust.tabnine.com/?itemName=overview&source=click",
+      "iso27001": "https://trust.tabnine.com/?itemName=overview&source=click"
     }
   },
   {
@@ -3654,7 +3677,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "VS Code Extension",
       "Plugin"
@@ -3662,7 +3685,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -3684,7 +3707,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://aws.amazon.com/trust-center/?nc1=f_cc"
+    }
   },
   {
     "id": "72",
@@ -3704,16 +3729,16 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "VS Code Extension",
       "Plugin",
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -3735,7 +3760,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://security.sourcegraph.com/?itemUid=09c4e3f5-b611-4b56-8728-bc2b8d0d4603&source=click",
+      "iso27001": "https://security.sourcegraph.com/?itemUid=09c4e3f5-b611-4b56-8728-bc2b8d0d4603&source=click",
+      "gdpr": "https://sourcegraph.com/blog/sourcegraph-is-iso-27001-certified"
+    }
   },
   {
     "id": "73",
@@ -4450,15 +4479,15 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -4479,7 +4508,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://v0.app/docs/security",
+      "iso27001": "https://vercel.com/docs/security/compliance",
+      "gdpr": "https://v0.app/docs/security",
+      "hipaa": "https://security.vercel.com/?amp%3BitemUid=f4951085-df2e-4fac-9d43-60b796478b2e&amp%3Bsource=click&export_settings=1&itemName=internal_practices&itemUid=382f924d-54f3-43a8-a9df-c39e6c959958&source=click"
+    }
   },
   {
     "id": "87",
@@ -4551,7 +4585,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "CLI",
       "VS Code Extension",
@@ -4559,8 +4593,8 @@
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -4582,7 +4616,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://aws.amazon.com/compliance/iso-27001-faqs/",
+      "gdpr": "https://aws.amazon.com/trust-center/?nc1=f_cc"
+    }
   },
   {
     "id": "89",
@@ -4974,14 +5011,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "VS Code Extension",
       "Plugin",
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -5005,7 +5042,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.codiga.io/blog/soc2-compliance/"
+    }
   },
   {
     "id": "98",
@@ -5025,14 +5064,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -5056,7 +5095,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://kombai.trust.site/",
-      "trains_on_data": "https://kombai.com/pricing/"
+      "trains_on_data": "https://kombai.com/pricing/",
+      "gdpr": "https://sprinto.com/autonomous-trust-center/"
     }
   },
   {
@@ -5077,7 +5117,7 @@
     "pricing": "Open Source",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "API",
       "CLI"
@@ -5085,7 +5125,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -5107,7 +5147,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://vercel.com/security"
+    }
   },
   {
     "id": "100",
@@ -5128,16 +5170,16 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "API",
       "CLI"
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": false,
+      "iso27001": true,
       "gdpr": true,
-      "hipaa": true
+      "hipaa": null
     },
     "data_storage": {
       "region": "US, EU",
@@ -5161,10 +5203,10 @@
     "compliance_sources": {
       "soc2": "https://trust.langchain.com/",
       "gdpr": "https://trust.langchain.com/",
-      "hipaa": "https://trust.langchain.com/",
       "trains_on_data": "https://www.langchain.com/pricing",
       "region": "https://www.langchain.com/pricing",
-      "self_hostable": "https://www.langchain.com/pricing"
+      "self_hostable": "https://www.langchain.com/pricing",
+      "iso27001": "https://trust.langchain.com/resources"
     }
   },
   {
@@ -5838,14 +5880,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "CLI",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -5870,7 +5912,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "region": "https://lightning.ai/legal/subprocessors"
+      "region": "https://lightning.ai/legal/subprocessors",
+      "soc2": "https://lightning.ai/docs/platform/security/security-features"
     }
   },
   {
@@ -6434,14 +6477,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -6463,7 +6506,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://designs.ai/en"
+    }
   },
   {
     "id": "125",
@@ -6784,7 +6829,7 @@
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -6809,7 +6854,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://uxpilot.ai/privacy"
+      "gdpr": "https://uxpilot.ai/privacy",
+      "soc2": "https://uxpilot.ai/enterprise#soc2"
     }
   },
   {
@@ -7534,13 +7580,13 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": false,
+      "soc2": true,
       "iso27001": false,
       "gdpr": false,
       "hipaa": false
@@ -7564,7 +7610,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://leonardo.ai/"
+    }
   },
   {
     "id": "150",
@@ -7791,13 +7839,13 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -7821,7 +7869,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.stability.ai/"
+    }
   },
   {
     "id": "155",
@@ -8354,14 +8404,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-29",
     "access_methods": [
       "Desktop App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -8383,7 +8433,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.topazlabs.com/enterprise",
+      "gdpr": "https://www.topazlabs.com/enterprise"
+    }
   },
   {
     "id": "166",
@@ -8509,16 +8562,16 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -8540,7 +8593,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://picsart.io/trust/",
+      "iso27001": "https://picsart.io/trust/",
+      "gdpr": "https://picsart.io/trust/"
+    }
   },
   {
     "id": "169",
@@ -8909,7 +8966,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API",
@@ -8919,7 +8976,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": true,
+      "gdpr": null,
       "hipaa": null
     },
     "data_storage": {
@@ -8942,7 +8999,6 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://clipdrop.co/privacy",
       "region": "https://clipdrop.co/privacy"
     }
   },
@@ -9982,14 +10038,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -10011,7 +10067,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://www.magnific.com/ai/docs/enterprise-plan"
+    }
   },
   {
     "id": "199",
@@ -10031,14 +10089,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -10060,7 +10118,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.dzine.ai/security/",
+      "gdpr": "https://www.dzine.ai/security/"
+    }
   },
   {
     "id": "200",
@@ -10080,12 +10141,12 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -10111,7 +10172,8 @@
     "industries": [],
     "compliance_sources": {
       "gdpr": "https://www.recraft.ai/legal/privacy",
-      "trains_on_data": "https://www.recraft.ai/privacy"
+      "trains_on_data": "https://www.recraft.ai/privacy",
+      "soc2": "https://www.recraft.ai/blog/recraft-is-soc-2-type-2-certified"
     }
   },
   {
@@ -10133,14 +10195,14 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-07-05",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": false,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": false
     },
@@ -10165,7 +10227,7 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://trust.runwayml.com/",
-      "iso27001": "https://runwayml.com/data-security",
+      "iso27001": "https://trust.runwayml.com/",
       "gdpr": "https://runwayml.com/data-security",
       "trains_on_data": "https://runwayml.com/terms-of-use",
       "region": "https://runwayml.com/privacy-policy/"
@@ -10303,12 +10365,12 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": false,
+      "soc2": true,
       "iso27001": false,
       "gdpr": false,
       "hipaa": false
@@ -10332,7 +10394,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.openai.com/"
+    }
   },
   {
     "id": "205",
@@ -10558,14 +10622,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": true,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -10591,7 +10655,8 @@
       "soc2": "https://pictory-corp.trust.site/",
       "iso27001": "https://pictory-corp.trust.site/",
       "trains_on_data": "https://pictory.ai/terms-of-service",
-      "region": "https://pictory.ai/privacy-policy"
+      "region": "https://pictory.ai/privacy-policy",
+      "gdpr": "https://pictory.ai/privacy-policy?el=6611&htrafficsource=featurepage"
     }
   },
   {
@@ -10767,14 +10832,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -10798,7 +10863,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://trust.veed.io/",
-      "trains_on_data": "https://www.veed.io/privacy"
+      "trains_on_data": "https://www.veed.io/privacy",
+      "gdpr": "https://support.veed.io/en/articles/10406942-veed-security-faqs"
     }
   },
   {
@@ -10871,15 +10937,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -10901,7 +10967,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://www.steve.ai/terms-policy",
+      "gdpr": "https://www.steve.ai/faq/en/articles/8531919-how-secure-is-steve-ai"
+    }
   },
   {
     "id": "216",
@@ -10974,14 +11043,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -11003,7 +11072,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.colossyan.com/security/",
+      "gdpr": "https://security.colossyan.com/"
+    }
   },
   {
     "id": "218",
@@ -11023,7 +11095,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
@@ -11031,7 +11103,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -11056,7 +11128,8 @@
     "compliance_sources": {
       "soc2": "https://app.drata.com/trust/5c74bafb-e7ff-41fd-aa43-f7a091d9d851",
       "iso27001": "https://app.drata.com/trust/5c74bafb-e7ff-41fd-aa43-f7a091d9d851",
-      "region": "https://aistudios.com/privacy-policy"
+      "region": "https://aistudios.com/privacy-policy",
+      "gdpr": "https://app.drata.com/trust/5c74bafb-e7ff-41fd-aa43-f7a091d9d851"
     }
   },
   {
@@ -11292,14 +11365,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -11321,7 +11394,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://help.lumen5.com/en/article/gdpr-compliance-1yoybf4/"
+    }
   },
   {
     "id": "225",
@@ -11606,15 +11681,15 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": null
     },
@@ -11638,7 +11713,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://riverside.com/privacy-policy"
+      "gdpr": "https://riverside.com/privacy-policy",
+      "soc2": "https://riverside.com/blog/riverside-fm-is-soc-2-type-2-compliant",
+      "iso27001": "https://riverside.com/business"
     }
   },
   {
@@ -11820,7 +11897,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -11828,10 +11905,10 @@
       "Browser Extension"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -11852,7 +11929,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://otter.ai/blog/otter-ai-achieves-soc-2-type-ii-attestation-report",
+      "hipaa": "https://otter.ai/blog/otter-ai-achieves-hipaa-compliance"
+    }
   },
   {
     "id": "235",
@@ -12189,12 +12269,12 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-29",
     "access_methods": [
       "Desktop App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -12219,7 +12299,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://www.topazlabs.com/privacy-policy"
+      "gdpr": "https://www.topazlabs.com/privacy-policy",
+      "soc2": "https://www.topazlabs.com/enterprise"
     }
   },
   {
@@ -12639,13 +12720,13 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -12669,7 +12750,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://deepdub.ai/legal/privacy"
+      "gdpr": "https://deepdub.ai/legal/privacy",
+      "soc2": "https://deepdub.ai/post/strengthening-our-commitment-to-security-deepdubs-successful-soc-2-audit"
     }
   },
   {
@@ -13253,7 +13335,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App",
       "API"
@@ -13262,7 +13344,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -13286,7 +13368,8 @@
     "compliance_sources": {
       "soc2": "https://murf.ai/security",
       "iso27001": "https://murf.ai/security",
-      "gdpr": "https://murf.ai/security"
+      "gdpr": "https://murf.ai/security",
+      "hipaa": "https://murf.ai/legal/hipaa-compliance"
     }
   },
   {
@@ -13307,7 +13390,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "iOS App",
       "Android App",
@@ -13316,7 +13399,7 @@
       "Desktop App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -13340,7 +13423,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://speechify.com/blog/speechify-soc2-compliant/"
+    }
   },
   {
     "id": "265",
@@ -13413,14 +13498,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": true
     },
@@ -13445,7 +13530,8 @@
     "industries": [],
     "compliance_sources": {
       "gdpr": "https://trust.resemble.ai/",
-      "hipaa": "https://trust.resemble.ai/"
+      "hipaa": "https://trust.resemble.ai/",
+      "iso27001": "https://trust.resemble.ai/"
     }
   },
   {
@@ -13669,7 +13755,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-29",
     "access_methods": [
       "Web App",
       "API"
@@ -13677,7 +13763,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -13699,7 +13785,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://www.narakeet.com/docs/data-security/"
+    }
   },
   {
     "id": "273",
@@ -13719,14 +13807,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -13751,7 +13839,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://async.com/privacy"
+      "gdpr": "https://async.com/privacy",
+      "soc2": "https://async.com/privacy"
     }
   },
   {
@@ -14946,7 +15035,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "API"
     ],
@@ -14954,7 +15043,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -14978,7 +15067,8 @@
     "compliance_sources": {
       "soc2": "https://app.vanta.com/assemblyai/trust/7n80syl8zln1bn1qm3x8eg",
       "gdpr": "https://app.vanta.com/assemblyai/trust/7n80syl8zln1bn1qm3x8eg",
-      "iso27001": "https://app.vanta.com/assemblyai/trust/7n80syl8zln1bn1qm3x8eg"
+      "iso27001": "https://app.vanta.com/assemblyai/trust/7n80syl8zln1bn1qm3x8eg",
+      "hipaa": "https://app.vanta.com/assemblyai/trust/7n80syl8zln1bn1qm3x8eg"
     }
   },
   {
@@ -14999,12 +15089,12 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -15029,7 +15119,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://deepgram.com/privacy"
+      "gdpr": "https://deepgram.com/privacy",
+      "soc2": "https://developers.deepgram.com/trust-security/data-privacy-compliance"
     }
   },
   {
@@ -16586,7 +16677,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "API"
@@ -16594,7 +16685,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -16616,7 +16707,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://www.adcreative.ai/privacy-policy"
+    }
   },
   {
     "id": "330",
@@ -16795,12 +16888,12 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -16824,7 +16917,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://unbounce.com/product/security/"
+    }
   },
   {
     "id": "335",
@@ -17007,14 +17102,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -17036,7 +17131,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://manychat.com/security",
+      "iso27001": "https://manychat.com/security",
+      "gdpr": "https://manychat.com/security"
+    }
   },
   {
     "id": "339",
@@ -17107,15 +17206,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "acquired",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -17137,7 +17236,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.adobe.com/trust/compliance/compliance-list.html",
+      "iso27001": "https://www.adobe.com/trust/compliance/compliance-list.html",
+      "gdpr": "https://www.adobe.com/trust/compliance/compliance-list.html"
+    }
   },
   {
     "id": "341",
@@ -17320,15 +17423,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -17350,7 +17453,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.braze.com/docs/developer_guide/disclosures/security_qualifications#hipaa",
+      "iso27001": "https://www.braze.com/docs/developer_guide/disclosures/security_qualifications#hipaa",
+      "gdpr": "https://www.braze.com/resources/articles/data-protection-complicance-privacy-security-at-scale"
+    }
   },
   {
     "id": "345",
@@ -17425,16 +17532,16 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -17456,7 +17563,10 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://useinsider.com/soc-2-examination-for-insider-growth-management-platform/"
+      "soc2": "https://useinsider.com/soc-2-examination-for-insider-growth-management-platform/",
+      "iso27001": "https://academy.insiderone.com/docs/insider-one-trust-center",
+      "gdpr": "https://insiderone.com/soc-2-examination-for-insider-growth-management-platform/",
+      "hipaa": "https://academy.insiderone.com/docs/insider-one-trust-center"
     }
   },
   {
@@ -17477,7 +17587,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "API"
@@ -17485,7 +17595,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": true
     },
     "data_storage": {
@@ -17510,7 +17620,8 @@
     "compliance_sources": {
       "soc2": "https://trust.moengage.com/",
       "iso27001": "https://trust.moengage.com/",
-      "hipaa": "https://trust.moengage.com/"
+      "gdpr": "https://www.moengage.com/blog/moengage-achieves-soc-2-type-2-and-csa-star-attestations/",
+      "hipaa": "https://www.moengage.com/scale-and-security/"
     }
   },
   {
@@ -18006,7 +18117,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "API"
@@ -18014,7 +18125,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -18036,7 +18147,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://help.buzzsumo.com/en/articles/1940575-does-buzzsumo-comply-with-gdpr"
+    }
   },
   {
     "id": "358",
@@ -18361,14 +18474,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Plugin"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -18390,7 +18503,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://rankmath.com/terms-and-conditions/"
+    }
   },
   {
     "id": "365",
@@ -18459,14 +18574,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Desktop App"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -18488,7 +18603,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://www.screamingfrog.co.uk/privacy/"
+    }
   },
   {
     "id": "367",
@@ -18558,7 +18675,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "API",
@@ -18567,7 +18684,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -18589,7 +18706,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://serpstat.com/users/privacy-policy/"
+    }
   },
   {
     "id": "369",
@@ -19755,7 +19874,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "Browser Extension",
@@ -19765,7 +19884,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": false,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -19788,7 +19907,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.vidyard.com/security/"
+      "soc2": "https://www.vidyard.com/security/",
+      "gdpr": "https://trust.vidyard.com/"
     }
   },
   {
@@ -20632,13 +20752,13 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "Desktop App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -20662,7 +20782,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.tana.inc/"
+    }
   },
   {
     "id": "407",
@@ -20733,7 +20855,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -20743,7 +20865,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -20765,7 +20887,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://docs.capacities.io/more/data-protection-memo"
+    }
   },
   {
     "id": "409",
@@ -20838,7 +20962,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -20848,7 +20972,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": true,
+      "gdpr": null,
       "hipaa": true
     },
     "data_storage": {
@@ -20872,8 +20996,7 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://slite.slite.page/p/S1TSuHnZf/Security-at-Slite",
-      "hipaa": "https://slite.slite.page/p/S1TSuHnZf/Security-at-Slite",
-      "gdpr": "https://slite.slite.page/p/S1TSuHnZf/Security-at-Slite"
+      "hipaa": "https://slite.slite.page/p/S1TSuHnZf/Security-at-Slite"
     }
   },
   {
@@ -20893,7 +21016,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "Slack Integration"
@@ -20901,7 +21024,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -20923,7 +21046,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://tettra.com/privacy-policy/"
+    }
   },
   {
     "id": "412",
@@ -21476,14 +21601,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-29",
     "access_methods": [
       "Desktop App",
       "iOS App",
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -21508,7 +21633,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://flexibits.com/privacy/faq"
+      "gdpr": "https://flexibits.com/privacy/faq",
+      "soc2": "https://trust.flexibits.com/"
     }
   },
   {
@@ -21641,14 +21767,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -21671,7 +21797,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.make.com/en/security",
+      "iso27001": "https://www.make.com/en/security"
+    }
   },
   {
     "id": "426",
@@ -21907,7 +22036,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -21915,9 +22044,9 @@
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -21939,7 +22068,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-soc-2",
+      "iso27001": "https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-iso-27001",
+      "gdpr": "https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-iso-27701"
+    }
   },
   {
     "id": "431",
@@ -22250,7 +22383,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -22274,7 +22407,8 @@
     "compliance_sources": {
       "gdpr": "https://clickup.com/terms/security-policy",
       "soc2": "https://clickup.com/security",
-      "iso27001": "https://clickup.com/security"
+      "iso27001": "https://clickup.com/security",
+      "hipaa": "https://clickup.com/security"
     }
   },
   {
@@ -22574,7 +22708,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -22584,7 +22718,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -22608,7 +22742,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://hive.com/policy-documents/security",
-      "iso27001": "https://hive.com/policy-documents/security"
+      "iso27001": "https://hive.com/policy-documents/security",
+      "gdpr": "https://hive.com/policy-documents/gdpr"
     }
   },
   {
@@ -22740,7 +22875,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -22748,7 +22883,7 @@
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": null
     },
@@ -22773,7 +22908,8 @@
     "industries": [],
     "compliance_sources": {
       "gdpr": "https://superhuman.com/legal/dpa",
-      "soc2": "https://trust.superhuman.com/"
+      "soc2": "https://trust.superhuman.com/",
+      "iso27001": "https://superhuman.com/legal/dpa"
     }
   },
   {
@@ -22847,15 +22983,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -22876,7 +23012,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://www.sanebox.com/help/332-sanebox-s-preparation-for-gdpr-compliance",
+      "hipaa": "https://www.sanebox.com/help/31-is-sanebox-hipaa-compliant"
+    }
   },
   {
     "id": "449",
@@ -23338,7 +23477,7 @@
       "soc2": true,
       "iso27001": null,
       "gdpr": true,
-      "hipaa": true
+      "hipaa": null
     },
     "data_storage": {
       "region": null,
@@ -23361,8 +23500,7 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://www.jotform.com/blog/announcing-soc-2-type-ii-compliance-for-jotform-enterprise/",
-      "gdpr": "https://www.jotform.com/security/",
-      "hipaa": "https://www.jotform.com/enterprise/security/"
+      "gdpr": "https://www.jotform.com/security/"
     }
   },
   {
@@ -23588,14 +23726,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Browser Extension"
     ],
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": true
     },
     "data_storage": {
@@ -23619,7 +23757,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://www.getmagical.com/trust",
-      "hipaa": "https://www.getmagical.com/trust"
+      "hipaa": "https://www.getmagical.com/trust",
+      "gdpr": "https://trust.getmagical.com/"
     }
   },
   {
@@ -23693,7 +23832,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "Desktop App"
@@ -23701,7 +23840,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -23724,7 +23863,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://fibery.com/security"
+      "soc2": "https://fibery.com/security",
+      "gdpr": "https://fibery.com/security"
     }
   },
   {
@@ -24548,7 +24688,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "Browser Extension"
@@ -24557,7 +24697,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -24581,7 +24721,8 @@
     "compliance_sources": {
       "gdpr": "https://trust.anara.com/",
       "soc2": "https://trust.anara.com/",
-      "iso27001": "https://trust.anara.com/"
+      "iso27001": "https://trust.anara.com/",
+      "hipaa": "https://anara.com/security"
     }
   },
   {
@@ -24919,14 +25060,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Desktop App",
       "Web App",
       "iOS App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -24950,7 +25091,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://clarivate.com/trust-center/security-compliance/"
+    }
   },
   {
     "id": "489",
@@ -25071,13 +25214,13 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -25100,7 +25243,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://www.elsevier.com/en-gb/security"
+    }
   },
   {
     "id": "492",
@@ -25269,12 +25414,12 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -25298,7 +25443,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.ithaka.org/privacypolicy"
+    }
   },
   {
     "id": "496",
@@ -25370,7 +25517,7 @@
     "pricing": "Free",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "API"
@@ -25378,7 +25525,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -25400,7 +25547,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://about.lens.org/privacy/"
+    }
   },
   {
     "id": "498",
@@ -25420,14 +25569,14 @@
     "pricing": "Free",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Browser Extension",
       "Web App"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -25450,7 +25599,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://clarivate.com/trust-center/"
+    }
   },
   {
     "id": "501",
@@ -25539,7 +25690,7 @@
     ],
     "compliance": {
       "soc2": false,
-      "iso27001": false,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": null
     },
@@ -25563,7 +25714,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://kayako.com/about/privacy/ (documented GDPR legal-basis framework and EEA/UK/Swiss rights; note: GDPR is a regulation, not a certification)"
+      "gdpr": "https://kayako.com/about/privacy/ (documented GDPR legal-basis framework and EEA/UK/Swiss rights; note: GDPR is a regulation, not a certification)",
+      "iso27001": "https://kayako.com/security/"
     }
   },
   {
@@ -25695,16 +25847,16 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": false,
-      "gdpr": null,
-      "hipaa": null
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -25725,7 +25877,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://security.ada.cx/",
+      "gdpr": "https://www.ada.cx/platform/trust/",
+      "hipaa": "https://www.ada.cx/platform/trust/"
+    }
   },
   {
     "id": "506",
@@ -25858,7 +26014,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -25868,7 +26024,7 @@
     "compliance": {
       "soc2": false,
       "iso27001": false,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -25890,7 +26046,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://trust.text.com/"
+    }
   },
   {
     "id": "509",
@@ -26017,13 +26175,13 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": false,
+      "soc2": true,
       "iso27001": false,
       "gdpr": true,
       "hipaa": false
@@ -26048,7 +26206,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://www.chatbot.com/help/overview/set-up-your-chatbot-for-consent-compliance/"
+      "soc2": "https://www.chatbot.com/blog/ai-agent-security/",
+      "gdpr": "https://trust.text.com/"
     }
   },
   {
@@ -26230,7 +26389,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
@@ -26238,7 +26397,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -26262,7 +26421,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://docs.cloud.google.com/dialogflow/docs/compliance-security-controls",
-      "iso27001": "https://docs.cloud.google.com/dialogflow/docs/compliance-security-controls"
+      "iso27001": "https://docs.cloud.google.com/dialogflow/docs/compliance-security-controls",
+      "gdpr": "https://cloud.google.com/privacy/gdpr?hl=en"
     }
   },
   {
@@ -26283,7 +26443,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "API",
@@ -26291,9 +26451,9 @@
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -26315,7 +26475,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://aws.amazon.com/compliance/gdpr-center/"
+      "gdpr": "https://aws.amazon.com/compliance/gdpr-center/",
+      "iso27001": "https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-lex-achieves-iso-compliance/",
+      "hipaa": "https://docs.aws.amazon.com/lexv2/latest/dg/compliance.html"
     }
   },
   {
@@ -26336,14 +26498,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": false,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -26366,7 +26528,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.ibm.com/products/cloud/compliance/soc-2",
+      "iso27001": "https://www.ibm.com/support/pages/ibm-iso-27001-certifications-cloud"
+    }
   },
   {
     "id": "518",
@@ -26606,14 +26771,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "acquired",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": true,
-      "iso27001": true,
+      "soc2": null,
+      "iso27001": null,
       "gdpr": false,
       "hipaa": true
     },
@@ -26637,8 +26802,6 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.zendesk.com/trust-center/",
-      "iso27001": "https://www.zendesk.com/trust-center/",
       "hipaa": "https://www.zendesk.com/trust-center/"
     }
   },
@@ -26660,15 +26823,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -26691,7 +26854,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "iso27001": "https://poly.ai/security"
+      "iso27001": "https://poly.ai/security",
+      "soc2": "https://docs.poly.ai/legal/compliance",
+      "gdpr": "https://docs.poly.ai/legal/compliance"
     }
   },
   {
@@ -26931,16 +27096,16 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -26961,7 +27126,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.genesys.com/trust/soc-2-type-2",
+      "iso27001": "https://www.genesys.com/trust/iso-270012022",
+      "gdpr": "https://www.genesys.com/trust-center/compliance",
+      "hipaa": "https://www.genesys.com/trust/hipaa"
+    }
   },
   {
     "id": "530",
@@ -26981,16 +27151,16 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API",
       "Desktop App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -27012,7 +27182,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.talkdesk.com/blog/talkdesk-achieves-soc2-typeii-certification/",
+      "iso27001": "https://www.talkdesk.com/news-and-press/press-releases/talkdesk-first-to-earn-iso-277012019-security-certification/",
+      "gdpr": "https://www.talkdesk.com/news-and-press/press-releases/talkdesk-first-to-earn-iso-277012019-security-certification/"
+    }
   },
   {
     "id": "531",
@@ -27417,7 +27591,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
@@ -27426,7 +27600,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": false,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -27449,7 +27623,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://cloud.google.com/trust-center",
-      "iso27001": "https://cloud.google.com/trust-center"
+      "iso27001": "https://cloud.google.com/trust-center",
+      "hipaa": "https://cloud.google.com/looker/product/security"
     }
   },
   {
@@ -27642,16 +27817,16 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -27672,7 +27847,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.sisense.com/",
+      "iso27001": "https://trust.sisense.com/",
+      "hipaa": "https://trust.sisense.com/"
+    }
   },
   {
     "id": "543",
@@ -27692,7 +27871,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -27701,9 +27880,9 @@
       "Android App"
     ],
     "compliance": {
-      "soc2": false,
-      "iso27001": false,
-      "gdpr": false,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -27725,7 +27904,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://community.ibm.com/community/user/blogs/towfiqa-yasmeen/2021/03/08/ibm-cognos-cloud-soc2",
+      "iso27001": "https://www.ibm.com/support/pages/ibm-iso-27001-certifications",
+      "gdpr": "https://www.ibm.com/support/pages/gdpr-process-automation-cognos-analytics"
+    }
   },
   {
     "id": "544",
@@ -27802,7 +27985,7 @@
     "pricing": "Open Source",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "API"
@@ -27810,7 +27993,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": false,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -27833,7 +28016,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.metabase.com/"
+      "soc2": "https://trust.metabase.com/",
+      "gdpr": "https://www.metabase.com/security"
     }
   },
   {
@@ -28477,16 +28661,16 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -28507,7 +28691,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.zams.com/security",
+      "gdpr": "https://www.zams.com/security",
+      "hipaa": "https://zams.com/security"
+    }
   },
   {
     "id": "559",
@@ -28740,7 +28928,7 @@
     "pricing": "Open Source",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API",
@@ -28748,7 +28936,7 @@
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": false,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": false
     },
@@ -28773,7 +28961,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://docs.h2o.ai/haic-documentation/security-guarantees-model",
-      "gdpr": "https://h2o.ai/legal/dpa/"
+      "gdpr": "https://h2o.ai/legal/dpa/",
+      "iso27001": "https://trust.h2o.ai/"
     }
   },
   {
@@ -28960,17 +29149,17 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API",
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -28991,7 +29180,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.domino.ai/",
+      "iso27001": "https://trust.domino.ai/",
+      "gdpr": "https://domino.ai/blog/domino-cloud-hipaa-gdpr",
+      "hipaa": "https://domino.ai/blog/domino-cloud-hipaa-gdpr"
+    }
   },
   {
     "id": "568",
@@ -29063,16 +29257,16 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "acquired",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -29093,7 +29287,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.medallia.com/data-protection/",
+      "iso27001": "https://www.medallia.com/data-protection/",
+      "gdpr": "https://www.medallia.com/data-protection/",
+      "hipaa": "https://trust.medallia.com/"
+    }
   },
   {
     "id": "571",
@@ -29227,13 +29426,13 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": true,
+      "soc2": null,
       "iso27001": true,
       "gdpr": true,
       "hipaa": false
@@ -29258,7 +29457,6 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.heap.io/platform/security",
       "iso27001": "https://www.heap.io/platform/security",
       "gdpr": "https://www.heap.io/platform/security"
     }
@@ -29338,14 +29536,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API",
       "Browser Extension"
     ],
     "compliance": {
-      "soc2": false,
+      "soc2": true,
       "iso27001": true,
       "gdpr": true,
       "hipaa": false
@@ -29371,7 +29569,8 @@
     "industries": [],
     "compliance_sources": {
       "gdpr": "https://www.hotjar.com/legal/compliance/gdpr-commitment/",
-      "iso27001": "https://trust.contentsquare.com/?product=hotjar"
+      "iso27001": "https://trust.contentsquare.com/?product=hotjar",
+      "soc2": "https://trust.contentsquare.com/"
     }
   },
   {
@@ -29392,7 +29591,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -29400,9 +29599,9 @@
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -29424,7 +29623,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.workday.com/en-us/why-workday/trust/compliance.html",
+      "iso27001": "https://www.workday.com/en-us/why-workday/trust/compliance.html",
+      "gdpr": "https://www.workday.com/en-us/why-workday/trust/compliance.html"
+    }
   },
   {
     "id": "577",
@@ -29499,7 +29702,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -29507,7 +29710,7 @@
       "API"
     ],
     "compliance": {
-      "soc2": false,
+      "soc2": true,
       "iso27001": false,
       "gdpr": false,
       "hipaa": false
@@ -29531,7 +29734,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://support.gusto.com/article/105983845100000/request-access-to-soc-reports-and-bridge-letters"
+    }
   },
   {
     "id": "579",
@@ -29935,7 +30140,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -29945,7 +30150,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -29969,7 +30174,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://trust.smartrecruiters.com/",
-      "iso27001": "https://trust.smartrecruiters.com/"
+      "iso27001": "https://trust.smartrecruiters.com/",
+      "gdpr": "https://trust.smartrecruiters.com/"
     }
   },
   {
@@ -29990,7 +30196,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-29",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -30001,7 +30207,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -30025,7 +30231,8 @@
     "compliance_sources": {
       "gdpr": "https://www.icims.com/company/newsroom/icims-achieves-leading-international-privacy-and-information-security-certifications/",
       "soc2": "https://www.icims.com/company/newsroom/icims-achieves-leading-international-privacy-and-information-security-certifications/",
-      "iso27001": "https://www.icims.com/company/newsroom/icims-achieves-leading-international-privacy-and-information-security-certifications/"
+      "iso27001": "https://www.icims.com/company/newsroom/icims-achieves-leading-international-privacy-and-information-security-certifications/",
+      "hipaa": "https://trust.icims.com/"
     }
   },
   {
@@ -30046,7 +30253,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
@@ -30054,7 +30261,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": false,
-      "gdpr": false,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -30077,7 +30284,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.ashbyhq.com/resources/security"
+      "soc2": "https://www.ashbyhq.com/resources/security",
+      "gdpr": "https://www.ashbyhq.com/resources/gdpr"
     }
   },
   {
@@ -30370,15 +30578,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "acquired",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": false,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -30400,7 +30608,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.workday.com/en-us/why-workday/trust/compliance.html",
+      "iso27001": "https://www.workday.com/en-us/why-workday/trust/compliance.html",
+      "gdpr": "https://www.workday.com/en-us/why-workday/trust/compliance.html"
+    }
   },
   {
     "id": "595",
@@ -30420,14 +30632,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API",
       "Browser Extension"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": true,
       "gdpr": true,
       "hipaa": null
@@ -30453,7 +30665,8 @@
     "industries": [],
     "compliance_sources": {
       "iso27001": "https://textio.com/security",
-      "gdpr": "https://textio.com/security"
+      "gdpr": "https://textio.com/security",
+      "soc2": "https://textio.com/security"
     }
   },
   {
@@ -30474,15 +30687,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
-      "gdpr": null,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -30505,7 +30718,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.phenom.com/soc2"
+      "soc2": "https://www.phenom.com/soc2",
+      "iso27001": "https://www.phenom.com/iso-27001-2022",
+      "gdpr": "https://trust.phenom.com/"
     }
   },
   {
@@ -30689,14 +30904,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API",
       "Browser Extension"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -30721,7 +30936,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://fetcher.ai/privacy"
+      "gdpr": "https://fetcher.ai/privacy",
+      "soc2": "https://fetcher.ai/blog/fetcher-soc-2-type-2-certification"
     }
   },
   {
@@ -30743,14 +30959,14 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": false,
+      "soc2": true,
       "iso27001": false,
       "gdpr": false,
       "hipaa": false
@@ -30774,7 +30990,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://support.khanacademy.org/hc/en-us/articles/4406593496077-What-are-Khan-Academy-s-security-practices"
+    }
   },
   {
     "id": "602",
@@ -30907,15 +31125,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -30938,7 +31156,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://about.udemy.com/udemy-business/enhancing-customer-trust-through-security-udemy-business-is-now-iso-27001-certified/",
+      "iso27001": "https://about.udemy.com/udemy-business/enhancing-customer-trust-through-security-udemy-business-is-now-iso-27001-certified/"
+    }
   },
   {
     "id": "605",
@@ -31475,7 +31696,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -31483,8 +31704,8 @@
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -31506,7 +31727,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://wayground.com/home/privacy-center",
+      "gdpr": "https://wayground.com/home/privacy-center"
+    }
   },
   {
     "id": "617",
@@ -31686,13 +31910,13 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "Plugin"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -31717,7 +31941,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://guides.turnitin.com/hc/en-us/articles/27377195682317-Turnitin-Services-Privacy-Policy"
+      "gdpr": "https://guides.turnitin.com/hc/en-us/articles/27377195682317-Turnitin-Services-Privacy-Policy",
+      "soc2": "https://guides.turnitin.com/hc/en-us/articles/27377195682317-Turnitin-Services-Privacy-Policy"
     }
   },
   {
@@ -32051,12 +32276,12 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -32080,7 +32305,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.thinkific.com/security-overview/"
+    }
   },
   {
     "id": "629",
@@ -32575,14 +32802,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -32604,7 +32831,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://thirdspacelearning.com/trust-compliance/"
+    }
   },
   {
     "id": "642",
@@ -32778,7 +33007,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API",
@@ -32786,7 +33015,7 @@
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": true,
       "gdpr": true,
       "hipaa": true
@@ -32813,7 +33042,8 @@
     "compliance_sources": {
       "iso27001": "https://infermedica.com/regulatory-compliance",
       "gdpr": "https://infermedica.com/regulatory-compliance",
-      "hipaa": "https://infermedica.com/regulatory-compliance"
+      "hipaa": "https://infermedica.com/regulatory-compliance",
+      "soc2": "https://security.infermedica.com/"
     }
   },
   {
@@ -32834,13 +33064,13 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -32863,7 +33093,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://www.pathai.com/resources/pathai-earns-iso-27001-security-certification"
+    }
   },
   {
     "id": "647",
@@ -32945,7 +33177,7 @@
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": true
     },
@@ -32971,7 +33203,8 @@
     "compliance_sources": {
       "soc2": "https://www.aidoc.com/platform/systems-integrations/",
       "gdpr": "https://aidoc.com/faq",
-      "hipaa": "https://aidoc.com/faq"
+      "hipaa": "https://aidoc.com/faq",
+      "iso27001": "https://aidoc.safebase.us/"
     }
   },
   {
@@ -33536,14 +33769,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -33565,7 +33798,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://www.gehealthcare.com/en-gb/about/sustainability/safe-and-secure-products",
+      "gdpr": "https://landing1.gehealthcare.com/GDPR_EUR-EU-GDPR201801-landingpage.html"
+    }
   },
   {
     "id": "661",
@@ -33749,14 +33985,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "iOS App",
       "Android App",
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": true
@@ -33781,7 +34017,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "hipaa": "https://trust.abridge.com/"
+      "hipaa": "https://trust.abridge.com/",
+      "soc2": "https://trust.abridge.com/"
     }
   },
   {
@@ -33858,13 +34095,13 @@
     "pricing": "Free",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": true
@@ -33890,7 +34127,8 @@
     "industries": [],
     "compliance_sources": {
       "gdpr": "https://woebothealth.com/security/",
-      "hipaa": "https://woebothealth.com/security/"
+      "hipaa": "https://woebothealth.com/security/",
+      "soc2": "https://woebothealth.com/achievements/"
     }
   },
   {
@@ -33911,14 +34149,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "iOS App",
       "Android App"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -33941,7 +34179,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://legal.wysa.io/privacy-policy"
+    }
   },
   {
     "id": "668",
@@ -33961,7 +34201,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -33971,7 +34211,7 @@
       "soc2": null,
       "iso27001": null,
       "gdpr": null,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -33992,7 +34232,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "hipaa": "https://www.talkiatry.com/help-center-articles/what-is-hipaa"
+    }
   },
   {
     "id": "669",
@@ -34277,13 +34519,13 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "iOS App"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -34306,7 +34548,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://support.apple.com/guide/certifications/apple-internet-services-security-apc34d2c0468b/web"
+    }
   },
   {
     "id": "675",
@@ -34378,15 +34622,15 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App",
       "API",
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -34409,7 +34653,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.nvidia.com/en-us/ai-trust-center/security-compliance/",
+      "iso27001": "https://www.nvidia.com/en-us/ai-trust-center/security-compliance/"
+    }
   },
   {
     "id": "677",
@@ -34586,7 +34833,7 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
@@ -34594,7 +34841,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": false
+      "hipaa": true
     },
     "data_storage": {
       "region": "US / EU / AU",
@@ -34620,7 +34867,8 @@
       "iso27001": "https://trust.harvey.ai",
       "gdpr": "https://www.harvey.ai/security",
       "trains_on_data": "https://harvey.ai/security",
-      "region": "https://harvey.ai/security"
+      "region": "https://harvey.ai/security",
+      "hipaa": "https://trust.harvey.ai/"
     }
   },
   {
@@ -34641,12 +34889,12 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -34670,7 +34918,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://legal.thomsonreuters.com/blog/responsible-ai-in-courts-the-answer-is-cocounsel-legal/"
+    }
   },
   {
     "id": "683",
@@ -34690,13 +34940,13 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -34719,7 +34969,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.luminance.com/security",
+      "iso27001": "https://www.luminance.com/security"
+    }
   },
   {
     "id": "684",
@@ -34739,14 +34992,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "acquired",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -34768,7 +35021,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.litera.com/",
+      "iso27001": "https://trust.litera.com/",
+      "gdpr": "https://trust.litera.com/"
+    }
   },
   {
     "id": "685",
@@ -34850,7 +35107,7 @@
       "soc2": true,
       "iso27001": null,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -34873,7 +35130,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://leahai.com/blog/ai-contract-management-data-security",
-      "gdpr": "https://leahai.com/legal"
+      "gdpr": "https://leahai.com/legal",
+      "hipaa": "https://leahai.com/blog/ai-contract-management-data-security"
     }
   },
   {
@@ -34946,7 +35204,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
@@ -34954,7 +35212,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -34978,7 +35236,8 @@
     "compliance_sources": {
       "gdpr": "https://www.spotdraft.com/security",
       "soc2": "https://www.spotdraft.com/why-spotdraft",
-      "iso27001": "https://www.spotdraft.com/why-spotdraft"
+      "iso27001": "https://www.spotdraft.com/why-spotdraft",
+      "hipaa": "https://trustcenter.spotdraft.com/"
     }
   },
   {
@@ -35100,15 +35359,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -35129,7 +35388,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.lexisnexis.com/",
+      "iso27001": "https://trust.lexisnexis.com/",
+      "gdpr": "https://trust.lexisnexis.com/",
+      "hipaa": "https://trust.lexisnexis.com/"
+    }
   },
   {
     "id": "693",
@@ -35250,14 +35514,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -35279,7 +35543,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://www.thomsonreuters.com/en/trust-center",
+      "gdpr": "https://www.thomsonreuters.com/en/trust-center"
+    }
   },
   {
     "id": "696",
@@ -35299,15 +35566,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -35328,7 +35595,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.lexisnexis.com/",
+      "iso27001": "https://trust.lexisnexis.com/",
+      "gdpr": "https://trust.lexisnexis.com/",
+      "hipaa": "https://trust.lexisnexis.com/"
+    }
   },
   {
     "id": "697",
@@ -35348,15 +35620,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -35377,7 +35649,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.relativity.com/calder7-security/compliance-privacy/",
+      "iso27001": "https://www.relativity.com/calder7-security/compliance-privacy/",
+      "hipaa": "https://www.relativity.com/calder7-security/compliance-privacy/"
+    }
   },
   {
     "id": "698",
@@ -35707,15 +35983,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -35736,7 +36012,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.clio.com/",
+      "gdpr": "https://trust.clio.com/",
+      "hipaa": "https://trust.clio.com/"
+    }
   },
   {
     "id": "705",
@@ -35956,14 +36236,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-29",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -35986,7 +36266,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/josef-legal-q"
+      "soc2": "https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/josef-legal-q",
+      "gdpr": "https://joseflegal.com/security/"
     }
   },
   {
@@ -36057,13 +36338,13 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Desktop App",
       "Web App"
     ],
     "compliance": {
-      "soc2": false,
+      "soc2": true,
       "iso27001": false,
       "gdpr": false,
       "hipaa": false
@@ -36087,7 +36368,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://professional.bloomberg.com/support/operational-resilience/#dora"
+    }
   },
   {
     "id": "712",
@@ -36211,14 +36494,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "API"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -36240,7 +36523,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://trust.quantexa.com/",
+      "gdpr": "https://trust.quantexa.com/"
+    }
   },
   {
     "id": "715",
@@ -36519,7 +36805,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -36527,7 +36813,7 @@
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -36550,7 +36836,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://www.wealthfront.com/blog/thoughts-security/"
+    }
   },
   {
     "id": "722",
@@ -36732,7 +37020,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -36740,7 +37028,7 @@
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -36764,7 +37052,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://www.brex.com/trust"
+      "soc2": "https://www.brex.com/trust",
+      "iso27001": "https://trust-portal.brex.com/"
     }
   },
   {
@@ -36785,7 +37074,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -36793,7 +37082,7 @@
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -36817,7 +37106,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://ramp.com/security"
+      "soc2": "https://ramp.com/security",
+      "iso27001": "https://trust.ramp.com/"
     }
   },
   {
@@ -36838,16 +37128,16 @@
     "pricing": "Free",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -36869,7 +37159,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.bill.com/legal/security",
+      "gdpr": "https://www.bill.com/legal/infosec-dpa"
+    }
   },
   {
     "id": "728",
@@ -37002,15 +37295,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -37033,7 +37326,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.xero.com/us/security/",
+      "iso27001": "https://www.xero.com/us/security/"
+    }
   },
   {
     "id": "731",
@@ -37373,7 +37669,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": true
+      "hipaa": null
     },
     "data_storage": {
       "region": null,
@@ -37397,8 +37693,7 @@
     "compliance_sources": {
       "soc2": "https://get.coupa.com/Compliance-Reports.html",
       "iso27001": "https://success.coupa.com/Trust/Security_and_Compliance/Compliance_Certifications/ISO_27001_Certification",
-      "gdpr": "https://compass.coupa.com/en-us/trust/data-privacy/quick-guide-data-processing-agreement",
-      "hipaa": "https://get.coupa.com/Compliance-Reports.html"
+      "gdpr": "https://compass.coupa.com/en-us/trust/data-privacy/quick-guide-data-processing-agreement"
     }
   },
   {
@@ -37472,14 +37767,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -37501,7 +37796,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.workday.com/en-us/why-workday/trust/compliance.html",
+      "iso27001": "https://www.workday.com/en-us/why-workday/trust/compliance.html",
+      "gdpr": "https://www.workday.com/en-us/why-workday/trust/compliance.html"
+    }
   },
   {
     "id": "740",
@@ -37728,14 +38027,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -37757,7 +38056,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://help.liveplan.com/liveplan-basics/managing-your-account/palo-alto-software-s-gdpr-compliance"
+    }
   },
   {
     "id": "745",
@@ -37989,12 +38290,12 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -38018,7 +38319,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust-portal.angellist.com/"
+    }
   },
   {
     "id": "750",
@@ -38038,12 +38341,12 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -38068,7 +38371,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://visible.vc/gdpr/"
+      "gdpr": "https://visible.vc/gdpr/",
+      "soc2": "https://visible.vc/for-investors/"
     }
   },
   {
@@ -38142,14 +38446,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -38172,7 +38476,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://newsroom.avalara.com/2023-01-31-Avalara-AvaTax,-Returns,-and-Exemption-Certificate-Management-Achieve-SOC-2-Type-2-Compliance",
+      "iso27001": "https://www.avalara.com/us/en/products/ai-compliance.html"
+    }
   },
   {
     "id": "754",
@@ -38192,7 +38499,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "API"
@@ -38201,7 +38508,7 @@
       "soc2": true,
       "iso27001": null,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -38224,7 +38531,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://trust.recurly.com/",
-      "gdpr": "https://docs.recurly.com/docs/gdpr"
+      "gdpr": "https://docs.recurly.com/docs/gdpr",
+      "hipaa": "https://recurly.com/product/security-compliance/"
     }
   },
   {
@@ -38353,16 +38661,16 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -38384,7 +38692,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://wise.com/us/blog/is-wise-business-safe",
+      "iso27001": "https://wise.com/us/blog/is-wise-business-safe",
+      "gdpr": "https://wise.com/us/blog/is-wise-business-safe"
+    }
   },
   {
     "id": "758",
@@ -38507,14 +38819,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -38537,7 +38849,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trustfinance.paylocity.com/"
+    }
   },
   {
     "id": "761",
@@ -38614,13 +38928,13 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": true,
       "gdpr": null,
       "hipaa": null
@@ -38645,7 +38959,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "iso27001": "https://security.bigcommerce.com/"
+      "iso27001": "https://security.bigcommerce.com/",
+      "soc2": "https://www.bigcommerce.com/press/releases/bigcommerce-achieves-soc-1-and-soc-2-compliance-verifying-data-security-practices-and-procedures/"
     }
   },
   {
@@ -38718,14 +39033,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -38748,7 +39063,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://experienceleague.adobe.com/en/docs/commerce/cloud-service/security/compliance",
+      "iso27001": "https://experienceleague.adobe.com/en/docs/commerce/cloud-service/security/compliance"
+    }
   },
   {
     "id": "765",
@@ -38869,14 +39187,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-09-29",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": null
     },
@@ -38900,7 +39218,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://trust.clerk.io/"
+      "gdpr": "https://trust.clerk.io/",
+      "soc2": "https://trust.clerk.io/",
+      "iso27001": "https://trust.clerk.io/"
     }
   },
   {
@@ -39338,14 +39658,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -39368,7 +39688,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.vue.ai/trust/",
+      "iso27001": "https://www.vue.ai/trust/"
+    }
   },
   {
     "id": "777",
@@ -39591,14 +39914,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": null
     },
@@ -39621,7 +39944,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://www.anyword.com/security"
+      "gdpr": "https://www.anyword.com/security",
+      "soc2": "https://www.anyword.com/security",
+      "iso27001": "https://www.anyword.com/anyword-dpa-agreement"
     }
   },
   {
@@ -39691,7 +40016,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "API"
@@ -39699,7 +40024,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -39722,7 +40047,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://trust.copysmith.ai/"
+      "soc2": "https://trust.copysmith.ai/",
+      "gdpr": "https://www.copysmith.ai/"
     }
   },
   {
@@ -39946,12 +40272,12 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -39975,7 +40301,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://returngo.ai/returngo-soc-2-compliant/"
+    }
   },
   {
     "id": "790",
@@ -40108,7 +40436,7 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -40116,9 +40444,9 @@
       "API"
     ],
     "compliance": {
-      "soc2": false,
-      "iso27001": false,
-      "gdpr": false,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": false
     },
     "data_storage": {
@@ -40142,7 +40470,10 @@
     "industries": [],
     "compliance_sources": {
       "trains_on_data": "https://policies.google.com/privacy",
-      "self_hostable": "https://cloud.google.com/translate"
+      "self_hostable": "https://cloud.google.com/translate",
+      "soc2": "https://cloud.google.com/security/compliance/soc-2",
+      "iso27001": "https://cloud.google.com/security/compliance/iso-27001",
+      "gdpr": "https://cloud.google.com/privacy/gdpr"
     }
   },
   {
@@ -40220,13 +40551,13 @@
     "pricing": "Free",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "iOS App"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -40249,7 +40580,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://www.apple.com/legal/privacy/en-ww/governance/"
+    }
   },
   {
     "id": "795",
@@ -40592,15 +40925,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -40622,7 +40955,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.translated.com/",
+      "iso27001": "https://trust.translated.com/",
+      "gdpr": "https://trust.translated.com/"
+    }
   },
   {
     "id": "802",
@@ -41017,14 +41354,14 @@
     "pricing": "Free",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -41046,7 +41383,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.translated.com/",
+      "iso27001": "https://trust.translated.com/",
+      "gdpr": "https://trust.translated.com/"
+    }
   },
   {
     "id": "810",
@@ -41275,7 +41616,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "API",
@@ -41283,8 +41624,8 @@
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -41306,7 +41647,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://www.systransoft.com/data-sovereignty-safety/",
+      "gdpr": "https://www.systransoft.com/data-sovereignty-safety/"
+    }
   },
   {
     "id": "815",
@@ -41379,14 +41723,14 @@
     "featured": true,
     "popular": true,
     "status": "active",
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-06-29",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": false,
       "iso27001": true,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -41409,7 +41753,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "iso27001": "https://www.darktrace.com/trust"
+      "iso27001": "https://www.darktrace.com/trust",
+      "gdpr": "https://trust.darktrace.com/"
     }
   },
   {
@@ -41485,14 +41830,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": null
     },
@@ -41516,7 +41861,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://trust.sentinelone.com/"
+      "gdpr": "https://trust.sentinelone.com/",
+      "soc2": "https://trust.sentinelone.com/",
+      "iso27001": "https://trust.sentinelone.com/"
     }
   },
   {
@@ -41546,7 +41893,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": true
+      "hipaa": null
     },
     "data_storage": {
       "region": null,
@@ -41570,8 +41917,7 @@
     "compliance_sources": {
       "soc2": "https://www.paloaltonetworks.com/legal-notices/trust-center/certifications",
       "iso27001": "https://www.paloaltonetworks.com/legal-notices/trust-center/iso-27000-series",
-      "gdpr": "https://www.paloaltonetworks.com/legal-notices/trust-center/privacy",
-      "hipaa": "https://www.paloaltonetworks.com/legal-notices/trust-center/soc"
+      "gdpr": "https://www.paloaltonetworks.com/legal-notices/trust-center/privacy"
     }
   },
   {
@@ -41693,16 +42039,16 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -41723,7 +42069,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.sophos.com/en-us/trust/business-certifications",
+      "iso27001": "https://www.sophos.com/en-us/trust/business-certifications",
+      "hipaa": "https://www.sophos.com/en-us/trust/business-certifications"
+    }
   },
   {
     "id": "823",
@@ -41743,14 +42093,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": null
     },
@@ -41774,7 +42124,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://www.fortinet.com/corporate/about-us/gdpr"
+      "gdpr": "https://www.fortinet.com/corporate/about-us/gdpr",
+      "soc2": "https://trust.fortinet.com/",
+      "iso27001": "https://www.fortinet.com/corporate/about-us/product-certifications/iso27001-compliance"
     }
   },
   {
@@ -41795,15 +42147,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -41825,7 +42177,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.checkpoint.com/about-us/product-certifications/soc-2-compliance/",
+      "iso27001": "https://sase.checkpoint.com/solutions/compliance/iso-27001-27002",
+      "gdpr": "https://www.checkpoint.com/trust-point/"
+    }
   },
   {
     "id": "825",
@@ -41845,14 +42201,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -41875,7 +42231,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://www.recordedfuture.com/legal/faq"
+    }
   },
   {
     "id": "826",
@@ -41945,15 +42303,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "acquired",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -41975,7 +42333,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.dataminr.com/dataminr-trust-services/",
+      "iso27001": "https://www.dataminr.com/resources/blog/dataminr-attains-new-iso-27701-privacy-certification/",
+      "gdpr": "https://www.dataminr.com/dataminr-trust-services/"
+    }
   },
   {
     "id": "828",
@@ -42219,15 +42581,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "acquired",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": true,
+      "soc2": null,
       "iso27001": true,
-      "gdpr": true,
+      "gdpr": null,
       "hipaa": true
     },
     "data_storage": {
@@ -42250,9 +42612,7 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://exabeam.securitypal.com/",
       "hipaa": "https://exabeam.securitypal.com/",
-      "soc2": "https://exabeam.securitypal.com/",
       "iso27001": "https://exabeam.securitypal.com/"
     }
   },
@@ -42381,13 +42741,13 @@
     "pricing": "Paid",
     "featured": false,
     "status": "acquired",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": true
     },
@@ -42412,7 +42772,9 @@
     "industries": [],
     "compliance_sources": {
       "hipaa": "https://www.proofpoint.com/us/legal/trust/contracts",
-      "gdpr": "https://www.proofpoint.com/us/legal/trust/contracts"
+      "gdpr": "https://www.proofpoint.com/us/legal/trust/contracts",
+      "soc2": "https://www.proofpoint.com/us/legal/trust/product-certifications",
+      "iso27001": "https://www.proofpoint.com/us/legal/trust/product-certifications"
     }
   },
   {
@@ -42486,14 +42848,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -42515,7 +42877,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.material.security/",
+      "gdpr": "https://trust.material.security/"
+    }
   },
   {
     "id": "838",
@@ -42534,7 +42899,7 @@
     "pricing": "Free",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API",
@@ -42542,9 +42907,9 @@
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -42565,7 +42930,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/accessing-compliance-reports-for-your-organization",
+      "iso27001": "https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/accessing-compliance-reports-for-your-organization",
+      "gdpr": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    }
   },
   {
     "id": "839",
@@ -42639,16 +43008,16 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "API",
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -42670,7 +43039,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.semgrep.dev/",
+      "gdpr": "https://trust.semgrep.dev/"
+    }
   },
   {
     "id": "841",
@@ -42690,7 +43062,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "API",
@@ -42698,9 +43070,9 @@
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -42722,7 +43094,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.veracode.com/about/certifications/",
+      "gdpr": "https://trust.veracode.com/"
+    }
   },
   {
     "id": "842",
@@ -43068,13 +43443,13 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": true,
       "gdpr": null,
       "hipaa": null
@@ -43099,7 +43474,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "iso27001": "https://www.bugcrowd.com/bugcrowd-security/"
+      "iso27001": "https://www.bugcrowd.com/bugcrowd-security/",
+      "soc2": "https://trust.bugcrowd.com/"
     }
   },
   {
@@ -43228,17 +43604,17 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "API",
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -43259,7 +43635,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.fortinet.com/",
+      "iso27001": "https://trust.fortinet.com/",
+      "gdpr": "https://www.fortinet.com/corporate/about-us/gdpr",
+      "hipaa": "https://trust.fortinet.com/"
+    }
   },
   {
     "id": "852",
@@ -43334,15 +43715,15 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API",
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -43365,7 +43746,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.sysdig.com/trust-center",
+      "iso27001": "https://www.sysdig.com/legal/customerdpa"
+    }
   },
   {
     "id": "854",
@@ -43385,15 +43769,15 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -43415,7 +43799,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.tenable.com/trust/assurance",
+      "iso27001": "https://www.tenable.com/trust/assurance",
+      "gdpr": "https://www.tenable.com/gdpr-alignment"
+    }
   },
   {
     "id": "855",
@@ -43435,14 +43823,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": null
     },
@@ -43466,7 +43854,9 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://www.qualys.com/company/privacy"
+      "gdpr": "https://www.qualys.com/company/privacy",
+      "soc2": "https://success.qualys.com/support/s/compliance-fileshare/a34Kd000002t3N6IAI/soc-2-type-ii-report",
+      "iso27001": "https://success.qualys.com/support/s/compliance-fileshare/a34Kd000003JkMIIA0/star-level-2-certification-isoiec-27001"
     }
   },
   {
@@ -44006,14 +44396,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": true
     },
     "data_storage": {
@@ -44037,7 +44427,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://app.drata.com/trust/9cb791f0-0c38-11ee-865f-029d78a187d9",
-      "hipaa": "https://app.drata.com/trust/9cb791f0-0c38-11ee-865f-029d78a187d9"
+      "hipaa": "https://app.drata.com/trust/9cb791f0-0c38-11ee-865f-029d78a187d9",
+      "gdpr": "https://www.lindy.ai/security"
     }
   },
   {
@@ -44532,7 +44923,7 @@
     "pricing": "Open Source",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "API",
@@ -44541,7 +44932,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": true
     },
     "data_storage": {
@@ -44565,7 +44956,8 @@
     "industries": [],
     "compliance_sources": {
       "soc2": "https://trust.prefect.io/",
-      "hipaa": "https://trust.prefect.io/"
+      "hipaa": "https://trust.prefect.io/",
+      "gdpr": "https://www.prefect.io/security"
     }
   },
   {
@@ -44747,13 +45139,13 @@
     "pricing": "Open Source",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -44777,7 +45169,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.appsmith.com/"
+    }
   },
   {
     "id": "881",
@@ -45275,15 +45669,15 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API",
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -45306,7 +45700,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://firebase.google.com/support/privacy",
+      "iso27001": "https://firebase.google.com/support/privacy"
+    }
   },
   {
     "id": "891",
@@ -46205,7 +46602,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-08",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -46214,7 +46611,7 @@
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -46237,7 +46634,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "iso27001": "https://publer.com/de/trust-center"
+    }
   },
   {
     "id": "908",
@@ -46413,7 +46812,7 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -46424,7 +46823,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -46448,7 +46847,8 @@
     "compliance_sources": {
       "soc2": "https://www.sprinklr.com/trust/",
       "iso27001": "https://www.sprinklr.com/trust/",
-      "gdpr": "https://www.sprinklr.com/trust/"
+      "gdpr": "https://www.sprinklr.com/trust/",
+      "hipaa": "https://trust.sprinklr.com/"
     }
   },
   {
@@ -46577,7 +46977,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -46585,7 +46985,7 @@
       "Browser Extension"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": true,
       "hipaa": null
@@ -46610,7 +47010,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://www.socialpilot.co/privacy-policy"
+      "gdpr": "https://www.socialpilot.co/privacy-policy",
+      "soc2": "https://www.socialpilot.co/soc-2-type-2-certified"
     }
   },
   {
@@ -46996,14 +47397,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -47025,7 +47426,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://missinglettr.com/legal/gdpr/"
+    }
   },
   {
     "id": "923",
@@ -47095,14 +47498,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "Browser Extension"
     ],
     "compliance": {
       "soc2": null,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": null
     },
@@ -47126,7 +47529,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "gdpr": "https://authoredup.com/privacy"
+      "gdpr": "https://authoredup.com/privacy",
+      "iso27001": "https://help.authoredup.com/articles/iso-27001"
     }
   },
   {
@@ -47867,14 +48271,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
+      "soc2": true,
+      "iso27001": true,
       "gdpr": null,
       "hipaa": null
     },
@@ -47897,7 +48301,10 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.housecanary.com/blog/ensuring-trustworthy-valuations",
+      "iso27001": "https://www.housecanary.com/blog/ensuring-trustworthy-valuations"
+    }
   },
   {
     "id": "943",
@@ -48070,12 +48477,12 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Web App"
     ],
     "compliance": {
-      "soc2": null,
+      "soc2": true,
       "iso27001": null,
       "gdpr": null,
       "hipaa": null
@@ -48099,7 +48506,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.ylopo.com/"
+    }
   },
   {
     "id": "947",
@@ -48440,16 +48849,16 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "iOS App",
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -48471,7 +48880,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.zoho.com/compliance.html",
+      "iso27001": "https://www.zoho.com/compliance.html",
+      "gdpr": "https://www.zoho.com/trust.html"
+    }
   },
   {
     "id": "955",
@@ -48491,7 +48904,7 @@
     "pricing": "Free",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "iOS App",
@@ -48499,10 +48912,10 @@
       "Desktop App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -48523,7 +48936,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.notion.com/security",
+      "iso27001": "https://trust.notion.com/",
+      "gdpr": "https://trust.notion.com/",
+      "hipaa": "https://trust.notion.com/"
+    }
   },
   {
     "id": "956",
@@ -48757,7 +49175,7 @@
     "pricing": "Free",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-07",
     "access_methods": [
       "Web App",
       "Desktop App",
@@ -48766,7 +49184,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -48788,7 +49206,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://www.drawio.com/trust/"
+    }
   },
   {
     "id": "961",
@@ -49587,16 +50007,16 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Web App",
       "CLI",
       "Desktop App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -49618,7 +50038,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.smartbear.com/",
+      "iso27001": "https://trust.smartbear.com/",
+      "gdpr": "https://trust.smartbear.com/"
+    }
   },
   {
     "id": "977",
@@ -49697,15 +50121,15 @@
     "pricing": "Open Source",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-03-13",
+    "last_verified": "2026-09-28",
     "access_methods": [
       "Desktop App",
       "CLI"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -49727,7 +50151,11 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://trust.konghq.com/",
+      "iso27001": "https://trust.konghq.com/",
+      "gdpr": "https://trust.konghq.com/"
+    }
   },
   {
     "id": "979",
@@ -49960,7 +50388,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "API"
@@ -49969,7 +50397,7 @@
       "soc2": true,
       "iso27001": true,
       "gdpr": true,
-      "hipaa": null
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -49993,7 +50421,8 @@
     "compliance_sources": {
       "soc2": "https://trust.sinch.com/?product=mailgun",
       "iso27001": "https://trust.sinch.com/?product=mailgun",
-      "gdpr": "https://trust.sinch.com/?product=mailgun"
+      "gdpr": "https://trust.sinch.com/?product=mailgun",
+      "hipaa": "https://trust.sinch.com/?product=mailgun"
     }
   },
   {
@@ -50014,7 +50443,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-06-27",
     "access_methods": [
       "Web App",
       "API"
@@ -50022,7 +50451,7 @@
     "compliance": {
       "soc2": true,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -50045,7 +50474,8 @@
     "not_good_for": [],
     "industries": [],
     "compliance_sources": {
-      "soc2": "https://resend.com/security/soc-2"
+      "soc2": "https://resend.com/security/soc-2",
+      "gdpr": "https://resend.com/security"
     }
   },
   {
@@ -50232,14 +50662,14 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API"
     ],
     "compliance": {
       "soc2": true,
-      "iso27001": null,
+      "iso27001": true,
       "gdpr": true,
       "hipaa": true
     },
@@ -50265,7 +50695,8 @@
     "compliance_sources": {
       "soc2": "https://ably.com/security-and-compliance",
       "gdpr": "https://ably.com/security-and-compliance",
-      "hipaa": "https://ably.com/security-and-compliance"
+      "hipaa": "https://ably.com/security-and-compliance",
+      "iso27001": "https://ably.com/data-processing-addendum"
     }
   },
   {
@@ -50286,7 +50717,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-02",
+    "last_verified": "2026-07-06",
     "access_methods": [
       "Web App",
       "API",
@@ -50294,10 +50725,10 @@
       "Android App"
     ],
     "compliance": {
-      "soc2": null,
-      "iso27001": null,
-      "gdpr": null,
-      "hipaa": null
+      "soc2": true,
+      "iso27001": true,
+      "gdpr": true,
+      "hipaa": true
     },
     "data_storage": {
       "region": null,
@@ -50318,7 +50749,12 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "soc2": "https://www.agora.io/en/compliance/",
+      "iso27001": "https://www.agora.io/en/compliance/",
+      "gdpr": "https://www.agora.io/en/compliance/",
+      "hipaa": "https://www.agora.io/en/compliance/"
+    }
   },
   {
     "id": "990",
@@ -50896,14 +51332,14 @@
     "pricing": "Paid",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-05-29",
+    "last_verified": "2026-09-27",
     "access_methods": [
       "Desktop App"
     ],
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -50925,7 +51361,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://tuple.app/privacy"
+    }
   },
   {
     "id": "1001",
@@ -50945,7 +51383,7 @@
     "pricing": "Freemium",
     "featured": false,
     "status": "active",
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-07-09",
     "access_methods": [
       "Desktop App",
       "Mobile App",
@@ -50954,7 +51392,7 @@
     "compliance": {
       "soc2": null,
       "iso27001": null,
-      "gdpr": null,
+      "gdpr": true,
       "hipaa": null
     },
     "data_storage": {
@@ -50976,7 +51414,9 @@
     ],
     "not_good_for": [],
     "industries": [],
-    "compliance_sources": {}
+    "compliance_sources": {
+      "gdpr": "https://www.remio.ai/privacy-policy"
+    }
   },
   {
     "id": "1002",

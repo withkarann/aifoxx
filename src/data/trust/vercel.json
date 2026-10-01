@@ -16,8 +16,8 @@
     {
       "name": "ISO 27001:2022",
       "held": true,
-      "proof_quote": "Vercel is ISO 27001:2022 certified. Our certificate is available here (Schellman certificate directory, certificate number 1868222-1).",
-      "source": "https://vercel.com/docs/security/compliance"
+      "proof_quote": "SpaceX Generative AI services United States Trust Center Updates Subscribe ISO 27001 Certification Compliance August 25, 2026 Vercel completed its recertification audit for ISO 27001:2022. Our updated ISO",
+      "source": "https://security.vercel.com/"
     },
     {
       "name": "PCI DSS v4.0",
@@ -28,13 +28,13 @@
     {
       "name": "HIPAA Business Associate",
       "held": true,
-      "proof_quote": "Vercel supports HIPAA compliance as a business associate by committing to: Implementing and maintaining appropriate technical and organizational security measures designed to safeguard a customer's Protected Health Information (PHI); Notifying customers of any data breaches without undue delay; Signing Business Associate Agreements (BAAs) with eligible Pro and Enterprise customers.",
-      "source": "https://vercel.com/docs/security/compliance"
+      "proof_quote": "and Company LLC and covers our audit period July 1, 2022 to June 30, 2023. HIPAA Compliance Compliance August 25, 2026 We completed our annual audit to support compliance with the the HIPAA Security",
+      "source": "https://security.vercel.com/"
     },
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Vercel supports GDPR compliance, which means that we commit to: Implement and maintain appropriate technical and organizational security measures surrounding customer data; Notify our customers without undue delay of any data breaches; Impose similar data protection obligations on our sub-processors as we do for ourselves.",
+      "proof_quote": "Vercel supports GDPR compliance, which means that we commit to the following:",
       "source": "https://vercel.com/docs/security/compliance"
     },
     {
@@ -54,6 +54,12 @@
       "held": true,
       "proof_quote": "Applicable Data Protection Laws means all applicable privacy and data protection laws and regulations including...the California Consumer Privacy Act of 2018 (CCPA).",
       "source": "https://vercel.com/legal/dpa"
+    },
+    {
+      "name": "SOC 3",
+      "held": true,
+      "proof_quote": "PRA EU-US DPF Swiss-US DPF UK Extension to EU-US DPF PIPEDA DSA NIS2 DORA nFADP SOC 3 TISAX Vercel is reviewed and trusted by OpenAI Under Armour HashiCorp Adobe The Washington Post Okta Documents All Publ",
+      "source": "https://security.vercel.com/"
     }
   ],
   "privacy": {

@@ -2,7 +2,7 @@
   "slug": "anyscale",
   "vendor": "Anyscale, Inc.",
   "product_family": "Anyscale Platform (managed Ray for distributed AI/ML training, inference, batch data, and post-training), built by the creators of the open-source Ray compute engine.",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://trust.anyscale.com/",
@@ -10,14 +10,14 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "CERTIFICATIONS — SOC 2 Type II Report ... Jun 13, 2025 SOC 2 Type II Report",
-      "source": "https://trust.anyscale.com/?tab=overview"
+      "proof_quote": "ontrols Subprocessors Updates Documentation Download available 1 Certifications SOC 2 Type II Report Request access ISO/IEC 27001 Certificate Request access Security Anyscale Architecture Overview Request",
+      "source": "https://trust.anyscale.com/documentation"
     },
     {
       "name": "ISO/IEC 27001",
       "held": true,
-      "proof_quote": "ISO/IEC 27001 Certificate ... Oct 8, 2025 Anyscale, Inc. Successfully Achieves ISO/IEC 27001 Certification",
-      "source": "https://trust.anyscale.com/?tab=overview"
+      "proof_quote": "ntation Download available 1 Certifications SOC 2 Type II Report Request access ISO/IEC 27001 Certificate Request access Security Anyscale Architecture Overview Request access Shared Responsibility Security Model",
+      "source": "https://trust.anyscale.com/documentation"
     },
     {
       "name": "HIPAA",

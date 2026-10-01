@@ -10,14 +10,14 @@
     {
       "name": "SOC 2 (AICPA SOC)",
       "held": true,
-      "proof_quote": "AICPA SOC (compliance certification listed on Atlassian's compliance page); \"Our cloud apps regularly undergo independent verification of their security, privacy, and compliance controls to ensure they meet global standards.\"",
-      "source": "https://www.atlassian.com/trust/compliance"
+      "proof_quote": "relevant to customers’ internal control over financial reporting. Learn more SOC 2 System and Organization Controls (SOC) 2 reports are independent third-party examination reports that demonstrate how",
+      "source": "https://www.atlassian.com/trust/compliance/resources"
     },
     {
       "name": "ISO/IEC 27001",
       "held": true,
-      "proof_quote": "ISO 27001 (listed as a current certification on Atlassian's compliance page)",
-      "source": "https://www.atlassian.com/trust/compliance"
+      "proof_quote": "curity controls in Australian government agencies and organizations. Learn more ISO/IEC27001:2022 The International Organization for Standardization (ISO) is an independent, non-governmental international organiz",
+      "source": "https://www.atlassian.com/trust/compliance/resources"
     },
     {
       "name": "PCI DSS",
@@ -32,10 +32,10 @@
       "source": "https://www.atlassian.com/trust/compliance/resources"
     },
     {
-      "name": "HIPAA (via Business Associate Agreement)",
+      "name": "HIPAA",
       "held": true,
-      "proof_quote": "\"Unless the parties have entered into a 'Business Associate Agreement,' Customer must not (and must not permit anyone else to) upload to the Cloud Products (or use the Cloud Products to process) any patient, medical or other protected health information regulated by the Health Insurance Portability and Accountability Act.\"",
-      "source": "https://www.atlassian.com/legal/atlassian-customer-agreement"
+      "proof_quote": "requirements in the Unites States around cloud service providers. Learn more HIPAA Atlassian has implemented the physical, technical, and administrative safeguards required by HIPAA to support our role",
+      "source": "https://www.atlassian.com/trust/compliance/resources"
     },
     {
       "name": "ISO/IEC 27017, 27018, 27701, SOC 3, CSA STAR",

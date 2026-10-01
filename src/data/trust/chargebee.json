@@ -8,7 +8,7 @@
   "trust_center_url": "https://www.chargebee.com/security/",
   "certifications": [
     {
-      "name": "PCI DSS Level 1 (v4.0.1)",
+      "name": "PCI DSS",
       "held": true,
       "proof_quote": "Chargebee is PCI DSS Level 1 certified – the highest standard of PCI compliance, and is listed on the VISA Global Registry of Service Providers. We are subject to an annual external audit by a Qualified Security Assessor (QSA) to achieve this certification.",
       "source": "https://www.chargebee.com/security/"
@@ -28,7 +28,7 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "Chargebee's SOC 2 Type II compliance confirms our robust data security, availability, and confidentiality practices. Annual assessments by third party auditors validate our operational controls.",
+      "proof_quote": "Chargebee’s SOC 1 and SOC 2 reports typically cover a 12 month audit period, specifically  from December 1 of the previous year to November 30 of the current year.",
       "source": "https://www.chargebee.com/security/"
     },
     {

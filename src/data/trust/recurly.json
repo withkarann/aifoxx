@@ -28,8 +28,8 @@
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Trust Center lists GDPR badge under certifications. Privacy policy includes a full 'General Data Protection Regulation (GDPR)' section. A Data Processing Agreement (DPA) is publicly available.",
-      "source": "https://trust.recurly.com/"
+      "proof_quote": "the highest quality standards. SOC II Type 2 compliant PSD 2 compliant CCPA and GDPR compliant HIPAA compliant Experience matters. Enjoy unmatched, proven scalability with Recurly. 30+ integrated partners",
+      "source": "https://recurly.com/product/security-compliance/"
     },
     {
       "name": "CCPA",
@@ -45,9 +45,9 @@
     },
     {
       "name": "HIPAA",
-      "held": false,
-      "proof_quote": "Recurly states 'Recurly's compliance with HIPAA guidelines allows us to securely manage health information' but describes this as 'guidelines' alignment, not a formal certification. Privacy policy explicitly states 'Recurly's website is not intended to collect or process health information protected under HIPAA unless you have a separate agreement with Recurly for HIPAA-covered services.'",
-      "source": "https://docs.recurly.com/recurly-subscriptions/docs/hipaa-guidelines"
+      "held": true,
+      "proof_quote": "standards. SOC II Type 2 compliant PSD 2 compliant CCPA and GDPR compliant HIPAA compliant Experience matters. Enjoy unmatched, proven scalability with Recurly. 30+ integrated partners and gateways 2",
+      "source": "https://recurly.com/product/security-compliance/"
     },
     {
       "name": "ISO 27001",

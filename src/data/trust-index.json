@@ -137,7 +137,7 @@
       "GDPR (compliance posture)",
       "EU-US Data Privacy Framework (DPF)",
       "CCPA",
-      "HIPAA (BAA available on eligible plans)",
+      "HIPAA",
       "Google CASA Tier 2"
     ],
     "top_certs": [
@@ -264,8 +264,12 @@
       "ISO 27701",
       "ISO 42001 (AI Management System)",
       "GDPR",
+      "FedRAMP",
       "CSA STAR Level 1",
-      "Data Privacy Framework Certification"
+      "Data Privacy Framework Certification",
+      "SOC 3",
+      "TISAX",
+      "Cyber Essentials"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -274,7 +278,7 @@
       "ISO 27018",
       "ISO 27701"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 13,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -287,7 +291,7 @@
     "product_family": "AdCreative.ai is an AI-powered ad creative platform for generating high-converting ad assets including static creatives, product photography, video ads, and ad copy using proprietary AI models trained on performance data. Targets e-commerce brands, agencies, and small-to-mid-market businesses with tiered subscription plans (Starter, Professional, Ultimate).",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR Compliance"
     ],
@@ -313,7 +317,8 @@
       "ISO 27001:2022",
       "ISO 27017:2015 (Cloud Security)",
       "ISO 27018:2019 (Personal Data Protection in Cloud)",
-      "PCI DSS 4.0"
+      "PCI DSS 4.0",
+      "GDPR (General Data Protection Regulation)"
     ],
     "top_certs": [
       "SOC 2 Type 2 (Security, Availability, Confidentiality)",
@@ -322,7 +327,7 @@
       "ISO 27018:2019",
       "PCI DSS 4.0"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -347,7 +352,9 @@
       "FedRAMP Tailored",
       "GDPR",
       "GLBA",
-      "FERPA"
+      "FERPA",
+      "TISAX",
+      "CSA STAR"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -356,7 +363,7 @@
       "GDPR (with DPA)",
       "ISO 27017 & ISO 27018"
     ],
-    "certs_held_count": 11,
+    "certs_held_count": 13,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -368,7 +375,7 @@
     "vendor": "Adobe Inc.",
     "product_family": "Adobe Podcast is a web-based AI audio recording, transcription, editing, and enhancement tool available as a standalone freemium product ($0 free, $9.99/month premium) and included with Creative Cloud subscriptions. Features include Enhance Speech, transcription, Studio for remote recording, and Generative Fill with custom voice models.",
     "maturity": "growth",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-07-06",
     "certs_held": [
       "GDPR Compliance"
@@ -423,7 +430,8 @@
       "GDPR Compliance",
       "HIPAA Business Associate",
       "CCPA Compliance",
-      "COPPA Compliance"
+      "COPPA Compliance",
+      "ISO 42001 (AI Governance)"
     ],
     "top_certs": [
       "SOC 2 Type 2 (Deloitte-verified)",
@@ -432,7 +440,7 @@
       "ISO/IEC 27018:2019 (Privacy)",
       "ISO/IEC 27701:2019 (PIMS)"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 10,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -445,7 +453,7 @@
     "product_family": "Social media management SaaS platform: Publishing, Inbox, Listening, Reporting, ROI tracking, and AI Social Media Sidekick (writing assistant, sentiment analysis, hashtag suggestions, best-time-to-publish, alt-text generator)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "ISO 27001:2022",
@@ -516,6 +524,11 @@
       "HIPAA",
       "GDPR",
       "SOC 2",
+      "ISO/IEC 27001:2022",
+      "ISO/IEC 27017",
+      "ISO/IEC 27018",
+      "CSA STAR",
+      "Cyber Essentials",
       "NIST CSF",
       "EU-U.S. Data Privacy Framework (DPF)",
       "ISO 13485:2016",
@@ -530,7 +543,7 @@
       "ISO 13485:2016",
       "MDSAP"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 14,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -547,7 +560,6 @@
     "certs_held": [
       "SOC 2 Type II",
       "SOC 1 Type II",
-      "ISO 27001:2022",
       "GDPR"
     ],
     "top_certs": [
@@ -556,7 +568,7 @@
       "ISO 27001:2022",
       "GDPR"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -584,7 +596,8 @@
       "SOC 2 Type II",
       "GDPR",
       "HIPAA (with BAA)",
-      "CCPA"
+      "CCPA",
+      "CPNI"
     ],
     "certs_held_count": 8,
     "trains_on_customer_data": false,
@@ -646,7 +659,7 @@
       "CSA STAR Level 1"
     ],
     "certs_held_count": 8,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 4,
@@ -657,7 +670,7 @@
     "vendor": "Aiva Technologies SARL",
     "product_family": "AIVA, an AI music generation assistant for individual creators (Free / Standard / Pro tiers) with a separately-negotiated custom Enterprise licensing track; no distinct security/enterprise product exists outside the consumer web/desktop app.",
     "maturity": "startup",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-06-27",
     "certs_held": [],
     "top_certs": [],
@@ -769,7 +782,7 @@
       "SOC 2 Type II",
       "GDPR",
       "EU-US Data Privacy Framework",
-      "CSA STAR Level 1 (Self-Assessment)",
+      "CSA STAR",
       "ICO Data Protection Registration (UK)",
       "FINRA Member",
       "SIPC Member"
@@ -853,7 +866,7 @@
     "certs_held": [],
     "top_certs": [],
     "certs_held_count": 0,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 6,
@@ -894,7 +907,7 @@
     "product_family": "Alexa consumer voice assistant ecosystem: Alexa/Alexa+ (voice assistant on Echo devices, Fire TV, and browser), the Alexa Skills Kit (third-party developer platform), and Alexa Smart Properties for Healthcare (enterprise, HIPAA-eligible hidden skills for Covered Entities/Business Associates).",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (compliance posture / DPA)"
     ],
@@ -950,8 +963,11 @@
       "ISO 27001",
       "ISO 27017 (cloud security)",
       "ISO 27018 (PII in cloud)",
+      "ISO 27701 (privacy information management)",
+      "ISO 42001",
+      "CSA STAR",
       "PCI DSS Level 1",
-      "HIPAA (eligible service, BAA required)",
+      "HIPAA",
       "FedRAMP"
     ],
     "top_certs": [
@@ -961,7 +977,7 @@
       "SOC 1/2/3",
       "FedRAMP Moderate"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 10,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -1056,6 +1072,7 @@
       "ISO 27017",
       "ISO 27018",
       "ISO 27701",
+      "ISO 42001 (AI Management System)",
       "CSA STAR Level 1",
       "CSA Trusted Cloud Provider",
       "GDPR (posture)",
@@ -1078,7 +1095,7 @@
       "ISO 27017",
       "ISO 27018"
     ],
-    "certs_held_count": 20,
+    "certs_held_count": 21,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -1129,7 +1146,7 @@
     "product_family": "Cloud-based video creation and editing platform for marketing, social media, training, and business communications. Includes features for drag-and-drop editing, screen recording, collaboration, and AI-powered video generation.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR Compliance"
     ],
@@ -1140,7 +1157,7 @@
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 8,
+    "flags_count": 7,
     "confidence": "medium"
   },
   {
@@ -1209,7 +1226,7 @@
     "product_family": "Anyscale Platform (managed Ray for distributed AI/ML training, inference, batch data, and post-training), built by the creators of the open-source Ray compute engine.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "ISO/IEC 27001"
@@ -1259,6 +1276,8 @@
     "has_trust_center": false,
     "last_verified": "2026-07-06",
     "certs_held": [
+      "ISO/IEC 27001:2022",
+      "SOC 2",
       "GDPR",
       "CCPA"
     ],
@@ -1268,7 +1287,7 @@
       "ISO/IEC 27001:2022 — self-attested compliance, not certified",
       "SOC 2 — referenced in marketing, no attestation report published"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -1398,6 +1417,8 @@
     "has_trust_center": false,
     "last_verified": "2026-07-06",
     "certs_held": [
+      "ISO/IEC 27001",
+      "ISO/IEC 27018",
       "GDPR Compliance Posture",
       "FIPS 140-3",
       "Common Criteria",
@@ -1411,7 +1432,7 @@
       "Global CBPR (since 2014)",
       "Global Privacy Recognition for Processors"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 7,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -1424,7 +1445,7 @@
     "product_family": "Open-source low-code application platform for building internal tools (admin panels, dashboards, portals). Ships as free self-hosted Community Edition (Apache 2.0), paid self-hosted Business/Enterprise Editions with SSO/RBAC/audit logging, and a hosted Appsmith Cloud SaaS offering.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type II (trust center corroboration)"
@@ -1478,7 +1499,7 @@
     "product_family": "AI headshot and portrait generation (consumer + teams), AI photo editing tools",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II"
     ],
@@ -1544,7 +1565,7 @@
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": false,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -1696,7 +1717,7 @@
     "product_family": "Voice AI infrastructure platform: real-time and pre-recorded speech-to-text APIs, voice agent APIs, speech understanding, guardrails, and LLM gateway routing. Enterprise-grade infrastructure serving developers and enterprises.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 1",
       "SOC 2 Type 2",
@@ -1798,7 +1819,7 @@
     "product_family": "AuthoredUp - LinkedIn content creation and analytics platform with Chrome extension, dashboard, editor, drafts, calendar, and advanced analytics. No AI content generation; focuses on content scheduling, formatting, and performance measurement.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001",
       "GDPR Compliance"
@@ -1940,14 +1961,20 @@
     "product_family": "News API (aggregated multi-lingual news/content from 80,000+ sources) and Text Analysis / Text API (NLP entity extraction, sentiment, classification); Aylien was acquired by Quantexa (London) in February 2023 and its News API is now also marketed as Quantexa's 'News Intelligence' solution, while aylien.com continues to operate as a distinct product brand/site.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
-      "GDPR (regulatory posture)"
+      "ISO/IEC 27001:2022",
+      "ISO/IEC 27017:2015 (cloud security controls)",
+      "GDPR (regulatory posture)",
+      "Cyber Essentials"
     ],
     "top_certs": [
-      "GDPR (regulatory posture)"
+      "ISO/IEC 27001:2022",
+      "ISO/IEC 27017:2015 (cloud security controls)",
+      "GDPR (regulatory posture)",
+      "Cyber Essentials"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": false,
@@ -2147,8 +2174,7 @@
     "certs_held": [
       "SOC 2 Type II",
       "GDPR",
-      "CCPA",
-      "PCI DSS"
+      "CCPA"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -2156,7 +2182,7 @@
       "CCPA",
       "PCI DSS"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -2169,14 +2195,15 @@
     "product_family": "Online bookkeeping and tax services for US small businesses. Sub-products: Bench Bookkeeping (software + dedicated human bookkeeper), Bench Tax (preparation, filing, year-round advisory). Now bundled with Mainstreet banking and entity formation.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
-      "SOC 2 Type 1"
+      "SOC 2 Type 1",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type 1 (2025)"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": false,
@@ -2250,7 +2277,8 @@
       "PCI DSS",
       "GDPR",
       "CCPA",
-      "CPRA"
+      "CPRA",
+      "CSA STAR"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -2259,7 +2287,7 @@
       "PCI DSS Level 1",
       "ISO 27017/27018/27701"
     ],
-    "certs_held_count": 14,
+    "certs_held_count": 15,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -2451,7 +2479,7 @@
     ],
     "certs_held_count": 3,
     "trains_on_customer_data": true,
-    "self_hostable": "unknown",
+    "self_hostable": null,
     "dpa": true,
     "flags_count": 6,
     "confidence": "medium"
@@ -2481,6 +2509,7 @@
     "last_verified": "2026-06-29",
     "certs_held": [
       "SOC 2 Type II",
+      "HIPAA",
       "GDPR (compliance posture)",
       "EU-US Data Privacy Framework",
       "Penetration Testing (KPMG)"
@@ -2490,7 +2519,7 @@
       "GDPR (DPA available)",
       "EU-US Data Privacy Framework"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 5,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -2581,7 +2610,7 @@
     "product_family": "Social media management, consumer intelligence, influencer marketing, search intelligence, and media intelligence platform. Key sub-products: Consumer Research, Social Media Management Suite (Publish, Listen, Engage, Measure, Benchmark, Advertise, Influence/Paladin), Vizia, Brandwatch Reviews, Iris AI (generative AI assistant).",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001:2022",
       "GDPR Compliance Posture"
@@ -2603,17 +2632,13 @@
     "maturity": "enterprise",
     "has_trust_center": true,
     "last_verified": "2026-06-27",
-    "certs_held": [
-      "SOC 2 Type 2",
-      "GDPR",
-      "PCI DSS (SAQ A)"
-    ],
+    "certs_held": [],
     "top_certs": [
       "SOC 2 Type 2",
       "GDPR",
       "PCI DSS (SAQ A)"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 0,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -2730,16 +2755,17 @@
     "product_family": "No-code and AI-powered app builder platform for web and mobile applications; sub-products include AI agent for app generation, native mobile builder, and Bubble for Enterprise with dedicated infrastructure",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
-      "GDPR (posture)"
+      "GDPR (posture)",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
       "GDPR DPA (SCCs)"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -2752,7 +2778,7 @@
     "product_family": "Open-source AI workflow platform with agents, automations, apps, and internal tools builder. Supports both cloud (Budibase Cloud) and self-hosted deployment options.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001:2022",
       "GDPR Compliance"
@@ -2775,7 +2801,7 @@
     "product_family": "Social media management and scheduling platform with support for 11+ channels (Facebook, Instagram, TikTok, LinkedIn, X, Threads, Pinterest, Bluesky, YouTube, Mastodon, Google Business Profile). Core features include publish, create, community management, analytics, and optional AI assistant (via OpenAI API).",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR"
     ],
@@ -2832,7 +2858,7 @@
     "product_family": "AI-powered symptom checker and healthcare navigation platform. Primary product is Buoy Assistant, an AI chatbot for self-diagnosis, symptom triage, and care guidance based on user-reported symptoms.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "HITRUST CSF Certified"
     ],
@@ -2883,7 +2909,7 @@
     "product_family": "Content research, influencer discovery, and media monitoring platform for marketers. Includes content analyzer, influencer database (700K+ journalists), media outreach tools, trending analysis, and browser extension. Offered in tiers: Content Creation, PR & Comms, Suite, and Enterprise.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR"
     ],
@@ -2936,7 +2962,8 @@
       "SOC 2 Type II",
       "ISO 27001",
       "SOC 3",
-      "GDPR"
+      "GDPR",
+      "CSA STAR"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -2944,7 +2971,7 @@
       "GDPR compliant",
       "PCI compliant (via Stripe)"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 5,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -2994,7 +3021,8 @@
       "GDPR",
       "CCPA",
       "Digital Services Act (DSA)",
-      "VPAT (Accessibility)"
+      "VPAT (Accessibility)",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -3003,7 +3031,7 @@
       "GDPR",
       "PCI DSS"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 9,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -3022,7 +3050,9 @@
       "ISO 27001",
       "GDPR",
       "FERPA",
-      "COPPA"
+      "COPPA",
+      "PCI DSS",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -3031,7 +3061,7 @@
       "FERPA Certified (Education tier)",
       "COPPA Certified by iKeepSafe (Education tier)"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 7,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -3052,7 +3082,8 @@
       "GDPR",
       "CCPA",
       "DSA (Digital Services Act)",
-      "VPAT (Voluntary Product Accessibility Template)"
+      "VPAT (Voluntary Product Accessibility Template)",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -3061,11 +3092,11 @@
       "GDPR",
       "EU-US Data Privacy Framework"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 8,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 4,
+    "flags_count": 5,
     "confidence": "high"
   },
   {
@@ -3074,7 +3105,7 @@
     "product_family": "Capacities - knowledge management platform with object-based note-taking, AI assistant features, and integrations (web, desktop, mobile)",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR"
     ],
@@ -3262,7 +3293,7 @@
     "has_trust_center": true,
     "last_verified": "2026-06-27",
     "certs_held": [
-      "PCI DSS Level 1 (v4.0.1)",
+      "PCI DSS",
       "ISO 27001:2022",
       "SOC 1 Type II",
       "SOC 2 Type II",
@@ -3278,7 +3309,7 @@
       "EU-U.S. Data Privacy Framework"
     ],
     "certs_held_count": 7,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 4,
@@ -3292,7 +3323,7 @@
     "has_trust_center": true,
     "last_verified": "2026-07-06",
     "certs_held": [
-      "SOC 2 (Type II recommended)",
+      "SOC 2",
       "GDPR",
       "CCPA/CPRA (California Consumer Privacy Act)",
       "PCI DSS",
@@ -3371,7 +3402,9 @@
       "FedRAMP Moderate",
       "GDPR Compliance",
       "HIPAA Compliance",
-      "CCPA/CPRA Compliance"
+      "CCPA/CPRA Compliance",
+      "SOC 3",
+      "CSA STAR"
     ],
     "top_certs": [
       "SOC 2 Type 2 (Jan-Jun 2025)",
@@ -3380,7 +3413,7 @@
       "FedRAMP Moderate",
       "HIPAA (with BAA)"
     ],
-    "certs_held_count": 11,
+    "certs_held_count": 13,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -3406,7 +3439,8 @@
       "PCI DSS v4.0.1",
       "FedRAMP",
       "CSA STAR",
-      "TX-RAMP"
+      "TX-RAMP",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -3415,7 +3449,7 @@
       "ISO 27018",
       "ISO 27701"
     ],
-    "certs_held_count": 12,
+    "certs_held_count": 13,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -3481,7 +3515,6 @@
     "certs_held": [
       "ISO/IEC 27001:2022",
       "SOC 2 Type II",
-      "FedRAMP (Moderate Level, Government variant)",
       "GDPR Compliance",
       "NIST Secure Software Development Framework (SSDF)",
       "ACN Level 2 (Italy - Agenzia per la Cybersicurezza Nazionale)"
@@ -3493,7 +3526,7 @@
       "GDPR",
       "NIST SSDF"
     ],
-    "certs_held_count": 6,
+    "certs_held_count": 5,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -3628,13 +3661,13 @@
       "SOC 2 Type 2",
       "SOC 3",
       "ISO/IEC 27001:2022",
-      "ISO/IEC 42001:2023 (AI management system)",
+      "ISO 42001",
       "CSA STAR Level 2",
       "HIPAA (BAA available)",
       "NIST 800-171",
-      "FedRAMP High",
-      "DoD IL4 / IL5",
-      "UK Cyber Essentials"
+      "UK Cyber Essentials",
+      "ISO 27017",
+      "ISO 27018"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -3662,7 +3695,8 @@
       "SOC 2 Type 1",
       "ISO 27001:2022",
       "GDPR",
-      "CCPA"
+      "CCPA",
+      "ISO 42001"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -3670,7 +3704,7 @@
       "GDPR",
       "CCPA"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -3699,7 +3733,7 @@
     "product_family": "AI podcast/audio + video editor (filler-word, noise, silence, mouth-sound removal, transcription, summaries) offered as a web app and as an editing API; on-premise deployment available on request",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (compliance posture, not a certification)"
     ],
@@ -3758,9 +3792,11 @@
     "product_family": "AI-powered e-commerce personalization platform (Search, Recommendations, Chat, Audience, Email)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
-      "GDPR"
+      "GDPR",
+      "ISO/IEC 27001",
+      "SOC 2 Type II"
     ],
     "top_certs": [
       "GDPR (DPA available)",
@@ -3768,7 +3804,7 @@
       "SOC 2 Type II (self-declared, no third-party audit)",
       "EU AI Act (self-declared)"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -3791,7 +3827,8 @@
       "CPRA / CCPA",
       "CSA STAR",
       "EU-U.S. Data Privacy Framework (formerly Privacy Shield)",
-      "India DPDPA (Digital Personal Data Protection Act) Compliance Framework"
+      "India DPDPA (Digital Personal Data Protection Act) Compliance Framework",
+      "ISO 27017"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -3800,11 +3837,11 @@
       "HIPAA",
       "GDPR"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 10,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "high"
   },
   {
@@ -3824,6 +3861,7 @@
       "ISO 27701:2019",
       "ISO 42001 (AI Management System)",
       "PCI DSS",
+      "HIPAA",
       "GDPR"
     ],
     "top_certs": [
@@ -3833,7 +3871,7 @@
       "ISO 27701",
       "PCI DSS"
     ],
-    "certs_held_count": 10,
+    "certs_held_count": 11,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -3898,8 +3936,6 @@
     "has_trust_center": false,
     "last_verified": "2026-07-06",
     "certs_held": [
-      "SOC 2 Type II",
-      "GDPR",
       "PCI DSS",
       "CCPA",
       "DPA (Data Protection Agreement)"
@@ -3911,7 +3947,7 @@
       "CCPA",
       "DPA"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 3,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -3963,7 +3999,7 @@
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 8,
+    "flags_count": 7,
     "confidence": "medium"
   },
   {
@@ -3979,7 +4015,10 @@
       "ISO 27018:2019",
       "ISO 27701:2019",
       "GDPR (EU compliance posture)",
-      "PCI DSS Level 1 (Service Provider)"
+      "PCI DSS Level 1 (Service Provider)",
+      "FedRAMP",
+      "CSA STAR",
+      "Cyber Essentials"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -3988,7 +4027,7 @@
       "ISO 27701",
       "PCI DSS Level 1"
     ],
-    "certs_held_count": 6,
+    "certs_held_count": 9,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -4019,7 +4058,7 @@
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "high"
   },
   {
@@ -4088,19 +4127,20 @@
     "product_family": "AI code review (PR reviews, IDE, CLI, self-hosted Enterprise)",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type 2 (Trust Center report available)",
       "ISO 27001:2022",
-      "GDPR"
+      "GDPR",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
       "ISO 27001:2022",
       "GDPR"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 5,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -4113,7 +4153,7 @@
     "product_family": "Static Code Analysis (SAST), IDE plugins (VS Code, JetBrains, Visual Studio), code snippets platform, and coding assistant. Codiga was acquired by Datadog on April 4, 2023, with standalone products shut down May 4, 2023.",
     "maturity": "startup",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type I"
     ],
@@ -4268,7 +4308,7 @@
     "product_family": "Colossyan Creator: AI avatar video generator for corporate training and enablement (video creation, courses, localization, delivery, analytics), with self-serve Free/Starter/Business tiers and a separate Enterprise tier (SSO, custom avatars, multi-workspace, SCORM export).",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (compliance posture, not a certification)"
@@ -4289,7 +4329,7 @@
     "vendor": "Compass (compassapp.ai) — Financial Intelligence, Inc.",
     "product_family": "Compass AI is an AI-powered financial operating system for fractional CFOs, CPA firms, and small-to-mid-sized businesses ($500K to $20M revenue). Integrates with QuickBooks, Xero, FreshBooks for automated cash flow forecasting, custom dashboards, and financial analysis. Founded 2024, 9 employees, early-stage startup.",
     "maturity": "startup",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-07-06",
     "certs_held": [
       "GDPR",
@@ -4334,7 +4374,7 @@
       "ISO/IEC 27001",
       "PCI DSS",
       "FedRAMP",
-      "HIPAA (via Business Associate Agreement)"
+      "HIPAA"
     ],
     "top_certs": [
       "SOC 2",
@@ -4344,7 +4384,7 @@
       "HIPAA (via BAA)"
     ],
     "certs_held_count": 5,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": true,
     "dpa": true,
     "flags_count": 4,
@@ -4455,14 +4495,15 @@
     "certs_held": [
       "SOC 1 Type 2 (SSAE-18)",
       "SOC 2 Type 2 (SSAE-18)",
-      "GDPR (compliance posture)"
+      "GDPR (compliance posture)",
+      "HIPAA"
     ],
     "top_certs": [
       "SOC 2 Type II",
       "SOC 1 Type II",
       "GDPR (DPA with EU SCCs)"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -4488,7 +4529,7 @@
       "Bugcrowd bug bounty + VDP"
     ],
     "certs_held_count": 2,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 5,
@@ -4500,7 +4541,7 @@
     "product_family": "Backend database platform with realtime updates, authentication, file storage, vector search, cron jobs, and AI code generation. Designed as a TypeScript-first alternative to Firebase/Supabase.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "HIPAA",
@@ -4604,7 +4645,7 @@
     "product_family": "AI content infrastructure platform with three specialized products: Frase (SEO & AI search optimization), Describely (eCommerce product content generation), and Rytr (conversational AI writing assistant). Built as integrated GEO (Generative Engine Optimization) ecosystem.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 3",
@@ -4678,7 +4719,6 @@
       "ISO/IEC 27701:2019",
       "ISO/IEC 42001:2023 (AI Management System)",
       "PCI DSS",
-      "HIPAA",
       "FedRAMP Moderate",
       "GDPR (DPA available)",
       "Global Privacy Recognition for Processor (Global/PRP)"
@@ -4690,7 +4730,7 @@
       "ISO 42001:2023",
       "PCI DSS"
     ],
-    "certs_held_count": 10,
+    "certs_held_count": 9,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -4728,7 +4768,7 @@
     "product_family": "Craft is a privacy-first productivity app (notes, tasks, docs, calendar, whiteboards) with integrated AI assistant (GPT-4o, LLaMa, DeepSeek) and extensive integrations (Claude, ChatGPT, VS Code, Raycast, Apple Shortcuts, Lovable, Replit). Multi-platform: iOS, iPad, Mac, Windows, Vision Pro, Android, and web.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "GDPR"
@@ -4781,8 +4821,8 @@
     "vendor": "Crayon, Inc.",
     "product_family": "Crayon AI: Competitive Intelligence Platform",
     "maturity": "enterprise",
-    "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "has_trust_center": true,
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type I",
@@ -4874,10 +4914,8 @@
     "product_family": "AI-powered omnichannel customer support platform with live chat, helpdesk, shared inbox, knowledge base, and AI agent (Hugo). Core product: unified messaging across web, email, WhatsApp, Messenger and 8+ other channels.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
-      "ISO/IEC 27001:2022",
-      "ISO/IEC 27017:2015",
       "GDPR"
     ],
     "top_certs": [
@@ -4885,7 +4923,7 @@
       "ISO/IEC 27017:2015",
       "GDPR compliant"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -4900,12 +4938,6 @@
     "has_trust_center": true,
     "last_verified": "2026-07-06",
     "certs_held": [
-      "SOC 2 Type II",
-      "ISO 27001",
-      "ISO 27701",
-      "ISO 27017",
-      "ISO 27018",
-      "GDPR",
       "BSI C5"
     ],
     "top_certs": [
@@ -4915,7 +4947,7 @@
       "ISO 27017",
       "ISO 27018"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -4928,11 +4960,11 @@
     "product_family": "AI-powered localization and translation management platform",
     "maturity": "enterprise",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO/IEC 27001:2022",
       "GDPR Compliance",
-      "HIPAA (BAA Available)"
+      "HIPAA"
     ],
     "top_certs": [
       "ISO/IEC 27001:2022",
@@ -4962,8 +4994,6 @@
       "ISO 22301:2019",
       "PCI DSS v4.0.1",
       "GDPR",
-      "HIPAA",
-      "FedRAMP High",
       "DoD Impact Level 5",
       "CSA STAR Level 2",
       "Cyber Essentials",
@@ -4980,7 +5010,7 @@
       "FedRAMP High",
       "GDPR + EU-US Data Privacy Framework"
     ],
-    "certs_held_count": 18,
+    "certs_held_count": 16,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -4993,7 +5023,7 @@
     "product_family": "Agentic FP&A platform with AI agents, bi-directional spreadsheet sync, and financial data management",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "HIPAA"
@@ -5015,14 +5045,18 @@
     "product_family": "Cursor (AI coding agent / IDE, CLI, Cloud Agents, Slack/GitHub integrations, Cursor SDK)",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
-      "SOC 2 Type II"
+      "SOC 2 Type II",
+      "ISO 27001",
+      "GDPR",
+      "ISO 42001",
+      "AIUC-1"
     ],
     "top_certs": [
       "SOC 2 Type II"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 5,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": null,
@@ -5139,7 +5173,7 @@
     "product_family": "Dagster: AI-native DataOps orchestration platform with open-source core (Dagster), cloud SaaS (Dagster+), and hybrid/serverless deployment options. Key modules: data orchestration, asset-based pipelines, data catalog, data quality, cost insights, and Compass (AI-assisted workflows).",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type I",
       "SOC 2 Type II",
@@ -5201,10 +5235,10 @@
       "ISO 27018 (PII Protection in Cloud)",
       "ISO 27701:2019 (Privacy Management)",
       "ISO 42001:2023 (AI Management System)",
-      "PCI DSS",
-      "FedRAMP Moderate",
       "GDPR Compliance (DPA Available)",
-      "HIPAA Compliance (BAA Available)"
+      "HIPAA Compliance (BAA Available)",
+      "SOC 3",
+      "CSA STAR"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -5232,7 +5266,8 @@
       "ISO 27018:2019",
       "ISO 42001:2023 (AI Management System)",
       "Cyber Essentials",
-      "FedRAMP High ATO"
+      "FedRAMP High ATO",
+      "GDPR"
     ],
     "top_certs": [
       "ISO 27001:2022",
@@ -5241,7 +5276,7 @@
       "FedRAMP High ATO (Federal entity)",
       "Cyber Essentials"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -5314,7 +5349,8 @@
       "HIPAA",
       "GxP",
       "GDPR",
-      "CCPA"
+      "CCPA",
+      "ISO/IEC 42001 (AI Management System)"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -5323,7 +5359,7 @@
       "ISO 27701:2019",
       "ISO 9001:2015"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 10,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -5362,7 +5398,7 @@
     "product_family": "Data visualization platform for creating charts, maps, and tables without coding. Products: Free tier (core features), Custom tier ($599/month team plan), Enterprise tier (self-hosting, SSO, SLAs).",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001",
       "GDPR (Compliance Posture, not a cert)"
@@ -5383,7 +5419,7 @@
     "product_family": "Decktopus AI (AI presentation generator / DecktoGPT)",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR"
     ],
@@ -5391,7 +5427,7 @@
       "GDPR (stated in Terms)"
     ],
     "certs_held_count": 1,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 6,
@@ -5413,7 +5449,9 @@
       "CCPA",
       "CSA STAR Level 1",
       "EU-US Data Privacy Framework (DPF)",
-      "EU AI Act Compliance"
+      "EU AI Act Compliance",
+      "ISO 42001",
+      "SOC 3"
     ],
     "top_certs": [
       "ISO 27001",
@@ -5422,7 +5460,7 @@
       "SOC 1 Type II",
       "GDPR"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 11,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -5482,13 +5520,15 @@
     "vendor": "DeepBrain AI (Deep Brain Inc.)",
     "product_family": "AI Studios: all-in-one AI video generation, avatar creation, video translation/dubbing, and conversational AI avatar platform. Key products: AI Studios (video), AI Human (conversational avatars), AI Detector (deepfake detection). Serves 2M+ users globally across content creators, enterprises, and Fortune 500 companies.",
     "maturity": "enterprise",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-07-07",
     "certs_held": [
       "SOC 2 Type II",
       "ISO 27001",
       "GDPR",
-      "HIPAA"
+      "HIPAA",
+      "ISO 42001",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -5496,7 +5536,7 @@
       "GDPR Compliant",
       "Content Authenticity Initiative Member"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -5657,7 +5697,8 @@
       "ISMAP (Japan)",
       "ENS High (Spain)",
       "Global Cross-Border Privacy Rules (CBPR)",
-      "Global Privacy Recognition for Processors (PRP)"
+      "Global Privacy Recognition for Processors (PRP)",
+      "TISAX"
     ],
     "top_certs": [
       "SOC 2+ (Type II)",
@@ -5666,7 +5707,7 @@
       "ISO 27701",
       "ISO 42001"
     ],
-    "certs_held_count": 21,
+    "certs_held_count": 22,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -5719,11 +5760,15 @@
     "product_family": "Designs.ai all-in-one AI content creation platform (branding/logo, image, video, chat/copy, slides, audio) under the Pixlr Group",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
-    "certs_held": [],
-    "top_certs": [],
-    "certs_held_count": 0,
-    "trains_on_customer_data": "unknown",
+    "last_verified": "2026-09-30",
+    "certs_held": [
+      "GDPR (regulatory alignment, not a certification)"
+    ],
+    "top_certs": [
+      "GDPR (regulatory alignment, not a certification)"
+    ],
+    "certs_held_count": 1,
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 7,
@@ -5786,8 +5831,9 @@
       "ISO 27701",
       "GDPR",
       "HIPAA",
-      "PCI DSS",
-      "FedRAMP High"
+      "FedRAMP High",
+      "ISO/IEC 42001 (AI Governance)",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -5796,7 +5842,7 @@
       "HIPAA (with BAA)",
       "PCI DSS Level 1"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 10,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -5809,7 +5855,7 @@
     "product_family": "Dify is an open-source agentic workflow builder platform for building, deploying, and scaling AI applications. Key features include RAG pipeline support, multi-LLM integration (OpenAI, Anthropic, Google, local models), workflow automation, no-code interface, and marketplace for plugins. Deployment options: Cloud (SaaS) and self-hosted (Community/Premium/Enterprise editions).",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "ISO 27001:2022",
@@ -5852,7 +5898,7 @@
     "last_verified": "2026-07-07",
     "certs_held": [
       "ISO/IEC 27001:2022",
-      "ISO/IEC 27701:2019 (Privacy Information Management)",
+      "ISO 27701",
       "GDPR Compliance"
     ],
     "top_certs": [
@@ -5937,7 +5983,7 @@
       "GDPR/DPA"
     ],
     "certs_held_count": 3,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 4,
@@ -5968,13 +6014,14 @@
     "last_verified": "2026-06-29",
     "certs_held": [
       "SOC 2 Type II",
+      "SOC 3",
       "GDPR (Data Processor Compliance via DPA)",
       "CCPA Compliance"
     ],
     "top_certs": [
       "SOC 2 Type II"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -6048,12 +6095,10 @@
       "SOC 2 Type II",
       "SOC 1 Type II",
       "PCI DSS v4.0",
-      "FedRAMP Agency Authorization",
       "GovRAMP",
-      "DoD IL4 (Impact Level 4)",
       "HIPAA (BAA available)",
       "GDPR (Binding Corporate Rules + EU SCCs)",
-      "CSA STAR (CAIQ Level 1 self-assessment)",
+      "CSA STAR",
       "BSI C5 Type II (German cloud security)",
       "IRAP PROTECTED (Australia)",
       "APEC Privacy Recognition for Processor (PRP)"
@@ -6065,7 +6110,7 @@
       "SOC 2 Type II",
       "SOC 1 Type II"
     ],
-    "certs_held_count": 15,
+    "certs_held_count": 13,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -6087,7 +6132,10 @@
       "HIPAA (compliance posture)",
       "FIPS 140-2",
       "GxP (Good Practice Guidelines for regulated industries)",
-      "21 CFR Part 11 (FDA pharmaceutical compliance)"
+      "21 CFR Part 11 (FDA pharmaceutical compliance)",
+      "DoD Impact Level",
+      "DoD Impact Level",
+      "DoD Impact Level"
     ],
     "top_certs": [
       "SOC 2 Type II (September 2025)",
@@ -6096,7 +6144,7 @@
       "GDPR compliant (October 2023)",
       "HIPAA compliant (October 2023)"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 11,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -6116,7 +6164,7 @@
       "ISO 27001",
       "ISO 27018",
       "HIPAA",
-      "HITRUST (Risk-based, 2-year)",
+      "HITRUST",
       "GDPR",
       "CCPA"
     ],
@@ -6155,7 +6203,7 @@
     "vendor": "draw.io Ltd (JGraph)",
     "product_family": "Security-first diagramming platform with privacy-first architecture. Products include: web app (diagrams.net), desktop app (Electron), Atlassian Confluence/Jira apps (Cloud Fortified and Zero-Egress variants), Microsoft Teams app, and cloud storage integrations (Google Drive, OneDrive, SharePoint, GitHub).",
     "maturity": "enterprise",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-07-07",
     "certs_held": [
       "GDPR",
@@ -6322,6 +6370,7 @@
     "has_trust_center": true,
     "last_verified": "2026-07-07",
     "certs_held": [
+      "SOC 2 Type II",
       "GDPR",
       "CCPA/CPRA",
       "ISO/IEC 27035"
@@ -6331,7 +6380,7 @@
       "CCPA/CPRA",
       "SOC 2 Type II (claimed but unverified)"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -6422,8 +6471,6 @@
     "has_trust_center": true,
     "last_verified": "2026-07-07",
     "certs_held": [
-      "ISO 27001:2022",
-      "SOC 2 Type II",
       "GDPR"
     ],
     "top_certs": [
@@ -6432,7 +6479,7 @@
       "GDPR Compliant (with DPA and SCCs)",
       "CPRA/CCPA Compliant"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -6576,7 +6623,7 @@
       "PCI DSS 4.0.1 L1"
     ],
     "certs_held_count": 19,
-    "trains_on_customer_data": "true",
+    "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 5,
@@ -6644,7 +6691,7 @@
       "ISO 27701 (Privacy Information Management System)",
       "ISO 22301 (Business Continuity Management)",
       "SOC 2 Type II",
-      "PCI DSS (Payment Card Industry Data Security Standard)",
+      "PCI DSS",
       "FedRAMP (U.S. Federal Cloud Security Authorization)",
       "GDPR Compliance (via Standard Contractual Clauses)"
     ],
@@ -6795,16 +6842,17 @@
     "product_family": "Excalidraw (open-source whiteboard) + Excalidraw+ (paid collaborative workspace with AI)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 1",
-      "SOC 2 Type 2"
+      "SOC 2 Type 2",
+      "GDPR (adequacy/SCCs)"
     ],
     "top_certs": [
       "SOC 2 Type 1",
       "SOC 2 Type 2"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -6849,7 +6897,6 @@
     "certs_held": [
       "GDPR",
       "CCPA / CPRA",
-      "PCI DSS Level 1 (payment processor)",
       "FERPA",
       "COPPA",
       "SOPPA",
@@ -6862,7 +6909,7 @@
       "COPPA",
       "SOPPA"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": null,
@@ -6932,13 +6979,14 @@
     "last_verified": "2026-06-29",
     "certs_held": [
       "Microsoft 365 Certified",
+      "SOC 2 Type II",
       "GDPR"
     ],
     "top_certs": [
       "Microsoft 365 Certified",
       "GDPR (DPA + SCCs)"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -7035,7 +7083,7 @@
     "product_family": "No-code work management and project management platform with relational databases, automations, AI-assisted brainstorming (Fibery AI), and integrations. Available in Standard, Pro, and Enterprise tiers with workspace and group-level access controls.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR"
@@ -7062,8 +7110,13 @@
       "SOC 2 Type 1/2/3",
       "ISO 27001",
       "GDPR Compliant",
+      "ISO 42001",
       "PCI DSS",
-      "FedRAMP"
+      "FedRAMP",
+      "ISO 27017",
+      "ISO 27018",
+      "ISO 27701",
+      "CSA STAR"
     ],
     "top_certs": [
       "SOC 2 Type 1/2/3",
@@ -7072,7 +7125,7 @@
       "FedRAMP",
       "GDPR Compliant"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 10,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -7096,7 +7149,9 @@
       "ISO 42001:2023",
       "FedRAMP Moderate Authorization",
       "C5 Accreditation",
-      "GDPR Compliance"
+      "TISAX",
+      "GDPR Compliance",
+      "PCI DSS"
     ],
     "top_certs": [
       "SOC 2 Type II (January 28, 2020)",
@@ -7105,7 +7160,7 @@
       "FedRAMP Moderate ATO",
       "C5 Accreditation (German BSI)"
     ],
-    "certs_held_count": 10,
+    "certs_held_count": 12,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -7131,7 +7186,8 @@
       "EU Cloud Code of Conduct",
       "C5 (Cloud Computing Compliance Catalogue)",
       "TISAX (Trusted Information Security Assessment Exchange)",
-      "GDPR"
+      "GDPR",
+      "PCI DSS"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -7140,7 +7196,7 @@
       "FedRAMP Moderate (government variant)",
       "ISO 27017/27018/27701"
     ],
-    "certs_held_count": 12,
+    "certs_held_count": 13,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -7180,7 +7236,8 @@
       "SOC 1",
       "ISO 27017",
       "ISO 27018",
-      "GDPR"
+      "GDPR",
+      "SOC 3"
     ],
     "top_certs": [
       "ISO 27001",
@@ -7189,7 +7246,7 @@
       "SOC 3",
       "ISO 27017 (select)"
     ],
-    "certs_held_count": 6,
+    "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -7261,7 +7318,7 @@
       "SOC 2 Type 2",
       "ISO/IEC 27001:2022",
       "ISO/IEC 27017:2015",
-      "PCI DSS v4.0.1 (Level 1 Service Provider)",
+      "PCI DSS",
       "HIPAA",
       "HITECH",
       "GDPR",
@@ -7292,7 +7349,7 @@
     "product_family": "Real-time speech-native voice AI agents and developer API platform (Ultravox)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type I"
     ],
@@ -7398,7 +7455,7 @@
     "certs_held": [],
     "top_certs": [],
     "certs_held_count": 0,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 6,
@@ -7451,7 +7508,7 @@
     "product_family": "FLUX generative image models (Playground, FLUX API, Open Weights / self-hosted, Enterprise)",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001:2022",
       "SOC 2 Type II",
@@ -7641,7 +7698,7 @@
     "product_family": "Content operating system for AI search. Single integrated platform handling research, writing, optimization, publishing, and monitoring across Google and AI platforms (ChatGPT, Perplexity, Claude, Gemini, Google AI). Includes Frase Answers, AI Agent, SEO/GEO optimization, Content Guard, and FraseCMS publishing.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR Compliance"
@@ -7662,7 +7719,7 @@
     "vendor": "Freenome Holdings, Inc.",
     "product_family": "Blood-based multiomics cancer screening platform using AI/ML for early detection; includes SimpleScreen CRC (colorectal), PREEMPT CRC (prospective study), and PROACT LUNG (lung cancer study) with clinical-grade testing via CLIA-certified laboratory.",
     "maturity": "growth",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-07-07",
     "certs_held": [
       "CLIA (Clinical Laboratory Improvement Amendments)",
@@ -7699,7 +7756,7 @@
       "CCPA (self-declared)"
     ],
     "certs_held_count": 4,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 6,
@@ -7765,7 +7822,7 @@
       "SOC 3"
     ],
     "certs_held_count": 9,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 4,
@@ -7855,7 +7912,7 @@
     "product_family": "AI-powered presentation, website, and document creation platform",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (DPA available)"
@@ -7877,7 +7934,7 @@
     "product_family": "Virtual workspace platform for remote and hybrid teams (video-based virtual office + AI meeting notes)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "GDPR (as data processor)"
@@ -7898,7 +7955,7 @@
     "product_family": "Gavel (AI Contract Review and Document Automation for Legal Teams)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type I"
     ],
@@ -7983,7 +8040,8 @@
       "NIST SP 800-53 Privacy Control Baseline",
       "GDPR",
       "CCPA",
-      "LGPD"
+      "LGPD",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -7992,7 +8050,7 @@
       "HIPAA",
       "FedRAMP"
     ],
-    "certs_held_count": 18,
+    "certs_held_count": 19,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -8021,7 +8079,7 @@
     "product_family": "AI-native documentation platform; sub-products include GitBook AI (writing assistance), GitBook Agent (stale content detection), GitBook Assistant (ask-your-docs chatbot), and Git Sync (repo-linked doc updates)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "ISO 27001:2022",
@@ -8045,7 +8103,7 @@
     "product_family": "Secrets security and non-human identity (NHI) governance platform for developers and enterprises",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR"
@@ -8202,7 +8260,6 @@
     "certs_held": [
       "SOC 2 Type II",
       "SOC 1 Type II",
-      "SOC 3",
       "ISO/IEC 27001",
       "ISO/IEC 27017",
       "ISO/IEC 27018",
@@ -8212,7 +8269,6 @@
       "FERPA",
       "COPPA",
       "HIPAA",
-      "FedRAMP High",
       "CSA STAR Level 2 (Attestation)",
       "PCI DSS",
       "SIIA (Software and Information Industry Association) CODiE"
@@ -8224,7 +8280,7 @@
       "SOC 2 Type II",
       "FedRAMP High"
     ],
-    "certs_held_count": 16,
+    "certs_held_count": 14,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -8241,7 +8297,6 @@
     "certs_held": [
       "SOC 2 (Type 1/2)",
       "ISO 27001",
-      "HIPAA",
       "GDPR (Data Processor Agreement)",
       "PCI-DSS",
       "FedRAMP",
@@ -8255,7 +8310,7 @@
       "HIPAA (BAA available on Workspace/Cloud)",
       "FedRAMP High (Gemini app + Workspace)"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 7,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -8307,7 +8362,7 @@
     "product_family": "Google Translate: free web-based translation tool (translate.google.com) and enterprise Cloud Translation API (Basic & Advanced editions) using Neural Machine Translation.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type I",
@@ -8315,10 +8370,7 @@
       "ISO/IEC 27017",
       "ISO/IEC 27018",
       "ISO/IEC 27701",
-      "GDPR",
-      "HIPAA",
-      "FedRAMP High",
-      "PCI DSS"
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -8327,7 +8379,7 @@
       "ISO 27018",
       "GDPR (DPA)"
     ],
-    "certs_held_count": 10,
+    "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -8344,6 +8396,7 @@
     "certs_held": [
       "SOC 2 Type II",
       "HIPAA",
+      "GDPR",
       "CCPA"
     ],
     "top_certs": [
@@ -8352,7 +8405,7 @@
       "CCPA",
       "GDPR-compliant DPA"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -8442,7 +8495,7 @@
     "product_family": "AI meeting notetaker and transcript enrichment platform for teams",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR"
@@ -8531,7 +8584,7 @@
     "product_family": "Grok (Chat, Build, Imagine, Voice, Grokipedia), xAI API, Grok for Business/Enterprise, Grok for Government",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2"
     ],
@@ -8611,7 +8664,8 @@
     "certs_held": [
       "SOC 2 Type 2",
       "HIPAA/HITECH",
-      "IRAP (Australian Compliance)"
+      "IRAP (Australian Compliance)",
+      "ISO 27001"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -8619,7 +8673,7 @@
       "IRAP",
       "FedRAMP High (In Process)"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -8638,7 +8692,7 @@
       "ISO 27001",
       "ISO 27701",
       "PCI DSS",
-      "FedRAMP (Tailored LI-SaaS)",
+      "FedRAMP",
       "UK Cyber Essentials Plus",
       "ISO 29147 (Vulnerability Disclosure)",
       "ISO 30111 (Vulnerability Handling)",
@@ -8674,7 +8728,7 @@
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -8683,7 +8737,7 @@
     "product_family": "AI transcription, meeting notes, subtitles, and translation platform",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR"
@@ -8751,8 +8805,10 @@
       "ISO 42001 (AI Management Systems)",
       "GDPR Compliance",
       "CCPA (California Consumer Privacy Act)",
+      "HIPAA",
       "IRAP (Australian Compliance)",
-      "WCAG 2.2 AA (Accessibility)"
+      "WCAG 2.2 AA (Accessibility)",
+      "AIUC-1"
     ],
     "top_certs": [
       "SOC 2 Type II (annual)",
@@ -8761,7 +8817,7 @@
       "GDPR",
       "CCPA"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 10,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -8796,7 +8852,7 @@
     "product_family": "Mental Health and Mindfulness Platform",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "HITRUST",
@@ -8812,7 +8868,7 @@
       "GDPR Compliant"
     ],
     "certs_held_count": 5,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 6,
@@ -8826,8 +8882,6 @@
     "has_trust_center": true,
     "last_verified": "2026-07-07",
     "certs_held": [
-      "SOC 2 Type I",
-      "SOC 2 Type II",
       "ISO 27001",
       "ISO 27017",
       "ISO 27018",
@@ -8842,7 +8896,7 @@
       "ISO 27017",
       "ISO 27018"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 6,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -9000,10 +9054,12 @@
     "last_verified": "2026-07-07",
     "certs_held": [
       "SOC 2 Type II",
+      "ISO 27001",
       "GDPR Compliance",
-      "CSA STAR Level 1",
       "TRUSTe Enterprise Privacy & Data Privacy Governance",
-      "EU-U.S. Data Privacy Framework"
+      "EU-U.S. Data Privacy Framework",
+      "ISO 27017 (Cloud Security)",
+      "ISO 27018 (Personal Data Protection in Cloud)"
     ],
     "top_certs": [
       "SOC 2 Type II (Workday-level)",
@@ -9012,7 +9068,7 @@
       "EU-U.S. Data Privacy Framework (HiredScore explicitly listed)",
       "CSA STAR Level 1 (Workday-level self-assessment)"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 7,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -9093,7 +9149,8 @@
       "GDPR",
       "HIPAA",
       "FedRAMP Tailored Li-SaaS",
-      "Cyber Essentials"
+      "Cyber Essentials",
+      "CSA STAR"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -9102,7 +9159,7 @@
       "HIPAA",
       "FedRAMP Tailored"
     ],
-    "certs_held_count": 11,
+    "certs_held_count": 12,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -9179,8 +9236,8 @@
     "vendor": "HouseCanary, Inc.",
     "product_family": "AI-powered real estate data, valuations, analytics, and brokerage platform. Products include: Property valuations and CMAs, Market forecasts and analytics, Property data APIs, Real Estate Agent Solutions (CanaryAI), Customer Engagement Platform for lenders, and 50-state investment property search platform. Operates as a licensed real estate brokerage under HouseCanary and ComeHome brands.",
     "maturity": "enterprise",
-    "has_trust_center": false,
-    "last_verified": "2026-07-07",
+    "has_trust_center": true,
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "ISO/IEC 27001:2013"
@@ -9207,7 +9264,7 @@
       "SOC 2 Type II",
       "SOC 3",
       "SOC 1 Type II",
-      "HIPAA (attestation)",
+      "HIPAA",
       "GDPR",
       "CCPA",
       "EU Cloud Code of Conduct",
@@ -9264,7 +9321,7 @@
     "product_family": "AI Model Hub and Inference Platform. Core products: Hub (model/dataset repository), Inference Endpoints (serverless deployment), Inference Providers (45k+ models via unified API), Spaces (app hosting), HuggingChat (consumer AI assistant), Storage Buckets (data storage). Enterprise tiers include SSO, SCIM, audit logs, data residency controls.",
     "maturity": "enterprise",
     "has_trust_center": false,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR Compliance"
@@ -9287,7 +9344,7 @@
     "product_family": "HuggingChat is a free, open-source AI chat application powered by open source large language models (Llama 2 and other models available via Hugging Face Inference Endpoints). Omni feature automatically selects the best model for each request. Available via web interface at huggingface.co/chat.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "GDPR Compliance"
@@ -9325,7 +9382,7 @@
     "product_family": "Humata AI: document/PDF question-answering assistant",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type II (corroboration)"
@@ -9376,7 +9433,8 @@
       "ISO 27017 (Cloud Services)",
       "ISO 27018 (PII in Public Cloud)",
       "ISO 27701 (Privacy Management)",
-      "GDPR"
+      "GDPR",
+      "ISO 42001 (AI Governance)"
     ],
     "top_certs": [
       "SOC 2 Type 2 (Cloud Hosted)",
@@ -9385,7 +9443,7 @@
       "ISO 27017",
       "ISO 27018"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -9406,8 +9464,9 @@
       "ISO 27017 (Cloud Services Security)",
       "ISO 27701 (Privacy Information Management)",
       "GDPR (Data Protection Regulation)",
-      "CSA STAR Level 2",
-      "FedRAMP (Federal Government Cloud)"
+      "PCI DSS",
+      "FedRAMP (Federal Government Cloud)",
+      "ISO 42001"
     ],
     "top_certs": [
       "SOC 2 Type 1 & Type 2",
@@ -9416,11 +9475,11 @@
       "GDPR compliant",
       "CSA STAR Level 2"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 9,
     "trains_on_customer_data": true,
     "self_hostable": true,
     "dpa": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "high"
   },
   {
@@ -9445,7 +9504,8 @@
       "TRUSTe Responsible AI Certification",
       "TX-RAMP",
       "Microsoft SSPA",
-      "APEC PRP"
+      "APEC PRP",
+      "HIPAA"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -9454,7 +9514,7 @@
       "TRUSTe Responsible AI",
       "CSA STAR Level 1"
     ],
-    "certs_held_count": 15,
+    "certs_held_count": 16,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -9467,7 +9527,7 @@
     "product_family": "Analytics-first social media management platform with scheduling, analytics, reporting, team collaboration, social listening, and AI-powered caption generation across Instagram, TikTok, Facebook, LinkedIn, X/Twitter, Pinterest, YouTube, and Threads.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR Compliance"
     ],
@@ -9487,7 +9547,7 @@
     "product_family": "AI image generation and visual design platform (consumer app, API, enterprise custom models)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2"
     ],
@@ -9553,7 +9613,7 @@
     "product_family": "Free online image editor and converter with 27+ tools including AI photo editor, upscaler, colorizer, background remover, art generator, compression, format conversion, and effects (browser-based, no downloads required)",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR"
     ],
@@ -9689,12 +9749,13 @@
     "has_trust_center": false,
     "last_verified": "2026-07-07",
     "certs_held": [
-      "GDPR"
+      "GDPR",
+      "ISO 27001"
     ],
     "top_certs": [
       "GDPR compliant"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 2,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": false,
@@ -9707,17 +9768,19 @@
     "product_family": "Kong Insomnia is a collaborative API development platform for designing, testing, mocking, and debugging APIs. Core offerings include free tier (local/Git storage, unlimited projects), Team plan (shared workspace collaboration), and Enterprise plan (SOC 2 access, SSO, SCIM, vault integrations, SLAs). Includes native Kong Konnect integration, MCP server testing support, and AI-powered features (AI Runner).",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
-      "CSA STAR Level 1"
+      "CSA STAR Level 1",
+      "ISO 27001",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type II (under Kong audit, includes Insomnia)",
       "CSA STAR Level 1",
       "NIST 800-218 (self-attestation mentioned for AI Runner)"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": true,
     "dpa": true,
@@ -9809,16 +9872,17 @@
     "product_family": "AI video creation platform: Invideo AI / Agent One (agentic AI video generation), Invideo Studio (online video editor), Talking Avatar by Videocreek, plus Team & Enterprise tiers",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
+      "SOC 2",
       "GDPR"
     ],
     "top_certs": [
       "SOC 2 (claimed/aligned, report gated)",
       "GDPR (self-asserted)"
     ],
-    "certs_held_count": 1,
-    "trains_on_customer_data": "unknown",
+    "certs_held_count": 2,
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 6,
@@ -9843,7 +9907,7 @@
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": null,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "high"
   },
   {
@@ -9889,7 +9953,7 @@
     "certs_held": [
       "SOC 2 Type II",
       "ISO 27001",
-      "HIPAA (core platform only)",
+      "HIPAA",
       "GDPR (compliance posture, not a certification)",
       "EU-US Data Privacy Framework (DPF)",
       "Global Cross-Border Privacy Rules (CBPR) / Privacy Recognition for Processors (PRP)"
@@ -9942,14 +10006,15 @@
       "GDPR",
       "PCI DSS",
       "CCPA",
-      "DPA (Data Processing Agreement)"
+      "DPA (Data Processing Agreement)",
+      "ISO 27001"
     ],
     "top_certs": [
       "SOC 2 Type II",
       "GDPR compliant",
       "PCI DSS compliant"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -9978,7 +10043,7 @@
     "product_family": "JetBrains AI (AI Assistant, Junie, AI Enterprise, Mellum, Koog)",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (DPA + SCCs)"
@@ -10047,14 +10112,15 @@
     "product_family": "Legal AI SaaS platform offering AI Q&A (Josef Q), contract automation, and workflow automation for in-house legal teams and law firms",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
-      "SOC 2 Type II"
+      "SOC 2 Type II",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type II"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": false,
@@ -10073,7 +10139,6 @@
       "SOC 2 Type II",
       "GDPR compliance",
       "CCPA compliance",
-      "HIPAA (BAA available)",
       "FERPA compliance",
       "HECVAT (higher-ed self-assessment)",
       "UK G-Cloud 14 (Crown Commercial Service supplier)"
@@ -10085,7 +10150,7 @@
       "HIPAA (BAA, Enterprise)",
       "FERPA"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -10102,14 +10167,15 @@
     "certs_held": [
       "SOC 2",
       "GDPR Compliance",
-      "TRUSTe"
+      "TRUSTe",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 (with annual audits)",
       "GDPR compliant (Standard Contractual Clauses)",
       "TRUSTe dispute resolution"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -10160,7 +10226,7 @@
     "product_family": "AI-native contract lifecycle management (CLM) platform enabling automated drafting, review, negotiation, and execution of contracts with integrated e-signature and AI-powered analytics.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "Cyber Essentials (IASME)"
@@ -10296,6 +10362,8 @@
     "has_trust_center": false,
     "last_verified": "2026-06-27",
     "certs_held": [
+      "ISO 27001 / ISO 27017 / ISO 27018 — data-center / hosting provider only",
+      "PCI DSS — data-center / hosting provider only",
       "GDPR compliance posture"
     ],
     "top_certs": [
@@ -10303,9 +10371,9 @@
       "SOC 2 Type II (marketing claim, unverified)",
       "Hosting facilities: SOC 1/2/3, PCI DSS, ISO 27001/27017/27018 (provider-level, not Kayako's own)"
     ],
-    "certs_held_count": 1,
-    "trains_on_customer_data": "unknown",
-    "self_hostable": "unknown",
+    "certs_held_count": 3,
+    "trains_on_customer_data": true,
+    "self_hostable": null,
     "dpa": null,
     "flags_count": 7,
     "confidence": "medium"
@@ -10379,7 +10447,8 @@
       "SOC 3",
       "GDPR Compliance",
       "NIS 2 Alignment",
-      "DORA Alignment"
+      "DORA Alignment",
+      "ISO/IEC 42001 (AI Management System)"
     ],
     "top_certs": [
       "ISO/IEC 27001:2022",
@@ -10388,7 +10457,7 @@
       "GDPR Compliant",
       "NIS 2 Aligned"
     ],
-    "certs_held_count": 6,
+    "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -10496,7 +10565,7 @@
     "product_family": "AI design engineer for frontend development. Unified platform combining design canvas, code generation, and browser editing for React, Vue, Angular, and other frontend stacks. Generates production-ready UI code from design with built-in best practices for 400+ frontend libraries.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2",
       "SOC 2 Type II",
@@ -10544,13 +10613,16 @@
     "last_verified": "2026-07-07",
     "certs_held": [
       "ISO 27001",
+      "ISO 27017",
+      "ISO 27018",
+      "ISO 27701",
       "GDPR"
     ],
     "top_certs": [
       "ISO 27001 (Clarivate corporate ISMS, A&G segment scope covers EndNote)",
       "GDPR compliant (Clarivate corporate posture)"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 5,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": false,
@@ -10563,7 +10635,7 @@
     "product_family": "AI creative suite for image, video, and 3D generation/editing (Krea app, Krea 2 realtime/native models, upscaling, LoRA fine-tuning) plus a pay-per-use API, a Business/Enterprise tier with contractual data protections, and separately licensed open-weight Krea 2 models distributed on Hugging Face.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2"
     ],
@@ -10583,7 +10655,7 @@
     "product_family": "Voice AI platform: AI Meeting Assistant (noise cancellation, transcription, recording, AI notes), Call Center AI / Agent Assist, and Developer SDKs/APIs (Voice Isolation, Noise Cancellation, Voice Translation, Accent Conversion)",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "PCI-DSS v4.0",
@@ -10616,7 +10688,7 @@
       "ISO/IEC 27701:2019 (Privacy Information Management)",
       "ISO/IEC 42001:2023 (AI Management System)",
       "GDPR (posture, not a certification)",
-      "HIPAA (Business Associate, paid add-on)",
+      "HIPAA",
       "CCPA compliance posture",
       "EU-US / Swiss-US Data Privacy Framework (DPF) Self-Certification"
     ],
@@ -10669,9 +10741,11 @@
       "ISO 27017:2015",
       "ISO 27018:2019",
       "GDPR",
+      "HIPAA",
       "CSA STAR",
       "ISO 9001:2015",
-      "Common Criteria (ISO/IEC 15408)"
+      "Common Criteria (ISO/IEC 15408)",
+      "TISAX"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -10680,7 +10754,7 @@
       "ISO 27018",
       "GDPR"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 10,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -10730,11 +10804,11 @@
     "product_family": "LangSmith agent engineering platform (Observability/tracing, Evaluation, Deployment/agent server, Fleet enterprise agent orchestration, LangSmith Engine, Sandboxes) plus the open-source LangChain, LangGraph and deepagents frameworks",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
-      "GDPR (compliance posture, not a certification)",
-      "HIPAA"
+      "ISO 27001",
+      "GDPR (compliance posture, not a certification)"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -10794,7 +10868,7 @@
     "product_family": "Lately is a single AI content/social-media marketing platform (AI Social Content Writer, Social Media Marketing, Social Selling, Social Media Analytics, Employee Advocacy modules) sold as one product tier per organization; the vendor is previewing a new conversational agent, \"Kately,\" currently waitlist/pre-launch.",
     "maturity": "startup",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (posture)"
     ],
@@ -10838,7 +10912,7 @@
     "product_family": "Lavender Email Coach (browser extension for individuals/teams that scores and improves sales emails) plus Ora, a newer autonomous AI sales agent that drafts and sends outbound email; both share the same underlying compliance posture.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (compliance posture)"
@@ -10887,7 +10961,6 @@
       "ISO 27001",
       "GDPR",
       "HIPAA",
-      "PCI DSS",
       "PIPEDA",
       "TX-RAMP"
     ],
@@ -10897,7 +10970,7 @@
       "GDPR",
       "HIPAA"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -10931,7 +11004,7 @@
     "product_family": "AI-powered Learning Management System (LMS)",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001",
       "GDPR Compliant"
@@ -10969,7 +11042,7 @@
     "product_family": "Legal AI Workspace for contract lifecycle management, including legal agent, AI contract review, contract playbook creation, and contract insights. Multi-language support across European languages.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001",
       "GDPR"
@@ -10991,7 +11064,7 @@
     "product_family": "Patent and scholarly research search, analysis, and discovery platform. Integrates 171.8M patents, 315M+ scholarly works, and 560.9M biological sequences with advanced search, visualization, portfolio management, and institutional toolkits for research institutions, academics, and patent professionals.",
     "maturity": "enterprise",
     "has_trust_center": false,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR"
     ],
@@ -11270,7 +11343,7 @@
     "vendor": "Lindy AI (Lindy Inc.)",
     "product_family": "Lindy is an AI executive assistant SaaS platform that automates email triage, meeting scheduling, note-taking, and task management via iMessage/SMS. Available in free (7-day trial), Plus ($49.99/month), and Enterprise (custom pricing with SSO/SCIM/BAA) tiers.",
     "maturity": "growth",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-07-07",
     "certs_held": [
       "SOC 2 Type II",
@@ -11297,7 +11370,7 @@
     "product_family": "Product development / issue-tracking system \"Linear\" for teams and AI agents: core issue tracking, cycles, and roadmaps, plus AI-driven features (Triage Intelligence, Linear Agents, Linear MCP, Insights, Coding Sessions) and mobile/desktop apps. Single core product sold across Free, Basic, Business, and Enterprise plans with security features gated by tier.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "ISO/IEC 27001:2022",
@@ -11472,10 +11545,10 @@
     "product_family": "LivePlan is a SaaS business planning platform for entrepreneurs and small business owners, featuring AI-assisted plan creation (Idea Canvas, Plan Builder with AI review), market research, financial forecasting, pitch deck generation, and performance tracking via Plan vs Actuals integration with accounting software.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR Compliance",
-      "PCI DSS (SAQ A self-assessment)"
+      "PCI DSS"
     ],
     "top_certs": [
       "GDPR Compliance with DPA (Model Clauses)",
@@ -11522,7 +11595,7 @@
     "product_family": "AI-powered real estate CRM platform with lead generation, IDX websites, marketing automation, and agentic AI for agents, teams, and brokers. Includes mobile apps, power dialer, transaction management, and social studio.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001",
       "ISO 27701",
@@ -11563,7 +11636,7 @@
       "CSA STAR Level 1"
     ],
     "certs_held_count": 6,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 4,
@@ -11577,11 +11650,7 @@
     "has_trust_center": true,
     "last_verified": "2026-07-07",
     "certs_held": [
-      "SOC 2 Type II",
       "ISO 27001",
-      "ISO 27017",
-      "ISO 27018",
-      "GDPR",
       "PCI DSS",
       "CCPA",
       "IRAP (Australian)",
@@ -11595,11 +11664,11 @@
       "ISO 27018",
       "GDPR Compliance"
     ],
-    "certs_held_count": 10,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
-    "flags_count": 3,
+    "flags_count": 2,
     "confidence": "high"
   },
   {
@@ -11679,7 +11748,6 @@
       "ISO 27001",
       "HIPAA",
       "GDPR",
-      "FedRAMP",
       "PCI DSS"
     ],
     "top_certs": [
@@ -11689,7 +11757,7 @@
       "GDPR (with DPA)",
       "FedRAMP High"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -11799,18 +11867,19 @@
     "product_family": "AI app builder / vibe-coding platform (text-to-app, full-stack web app and website generation)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type I",
       "ISO 27001:2022",
-      "GDPR"
+      "GDPR",
+      "AIUC-1"
     ],
     "top_certs": [
       "SOC 2 Type I",
       "ISO 27001:2022",
       "GDPR"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -11849,12 +11918,14 @@
     "certs_held": [
       "SOC 2 Type II",
       "ISO 27001",
-      "ISO 27701 (privacy information management)",
+      "ISO 27701",
       "PCI (merchant certification)",
       "FedRAMP Authorized (Moderate) - Lucid GovSuite only",
       "IRAP (Australia) - Assessed at PROTECTED level",
       "CASA (Cloud Application Security Assessment)",
-      "EU-U.S. and Swiss-U.S. Data Privacy Framework"
+      "EU-U.S. and Swiss-U.S. Data Privacy Framework",
+      "ISO 42001",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -11862,7 +11933,7 @@
       "ISO 27701",
       "FedRAMP Authorized (GovSuite only)"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 10,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -11936,7 +12007,7 @@
     "product_family": "Legal-Grade AI for contract automation, negotiation, analysis, compliance, investigation, and collaboration. Serves legal, compliance, procurement, finance, HR, sales, and marketing teams. Enterprise-focused with 1000+ customers across 70 countries.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001:2022",
       "SOC 2 Type 2"
@@ -11958,7 +12029,7 @@
     "product_family": "Luminar Neo: AI-powered photo editing software for desktop, tablet, and mobile with on-device editing, generative AI features, and creative tools for photographers and designers.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR Compliance"
     ],
@@ -12013,15 +12084,16 @@
     "product_family": "Two distinct product lines under one brand: (1) the original Magical browser extension for text expansion / autofill for individuals and teams, and (2) 'Magical Agentic AI' - a newer enterprise platform of specialized AI agents for healthcare operations (prior authorization, benefits verification, referrals, payment posting, revenue integrity, records requests) targeted at healthcare providers and payers.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
-      "GDPR (contractual posture)"
+      "GDPR (contractual posture)",
+      "HIPAA"
     ],
     "top_certs": [
       "SOC 2 Type II"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -12093,7 +12165,7 @@
     "certs_held": [
       "SOC 2 Type II",
       "ISO/IEC 27001",
-      "ISO/IEC 27701 (privacy information management)",
+      "ISO 27701",
       "GDPR (compliance posture, not a certification)",
       "EU-U.S. Data Privacy Framework",
       "HIPAA (Business Associate Addendum available, not a certification)"
@@ -12229,7 +12301,7 @@
       "ISO 9001:2015",
       "GDPR",
       "CCPA (California Consumer Privacy Act)",
-      "HIPAA"
+      "TISAX"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -12242,7 +12314,7 @@
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "high"
   },
   {
@@ -12349,14 +12421,15 @@
       "GDPR DPA",
       "CCPA DPA",
       "UK GDPR DPA",
-      "PIPEDA DPA"
+      "PIPEDA DPA",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II (annual audits by Frank, Rimerman + Co. LLP)",
       "DPA/SCC (GDPR, CCPA, UK GDPR, PIPEDA)",
       "Annual Penetration Testing"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 6,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -12398,7 +12471,7 @@
     "product_family": "Mem (also marketed as get.mem.ai) is a consumer/prosumer personal notes and AI thought-partner app (notes, meeting transcription, web capture, Q&A over your notes); single product line, no separate enterprise/API tier identified.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type II (corroborating source)"
@@ -12513,7 +12586,7 @@
     "vendor": "Meta Platforms, Inc.",
     "product_family": "Meta AI is Meta's free consumer generative AI assistant (chat, image, and video generation) available at meta.ai and embedded inside Facebook, Instagram, Messenger, and WhatsApp, built on Meta's Llama models. This is a distinct product/legal scope from Meta's B2B offerings (Workplace, Meta Horizon / Meta for Work, Llama API for developers), which carry their own separate compliance posture.",
     "maturity": "enterprise",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-06-27",
     "certs_held": [
       "GDPR (posture)"
@@ -12581,9 +12654,7 @@
       "ISO/IEC 27018 (cloud privacy)",
       "ISO/IEC 27701 (privacy information management)",
       "HIPAA Business Associate Agreement (BAA)",
-      "HITRUST CSF",
       "PCI DSS",
-      "CSA STAR",
       "FedRAMP (government cloud offerings)"
     ],
     "top_certs": [
@@ -12593,7 +12664,7 @@
       "ISO/IEC 27018",
       "ISO/IEC 27701"
     ],
-    "certs_held_count": 10,
+    "certs_held_count": 8,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -12649,8 +12720,7 @@
       "HIPAA BAA",
       "GDPR",
       "EU Data Boundary",
-      "FedRAMP",
-      "CSA STAR"
+      "FedRAMP"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -12659,7 +12729,7 @@
       "ISO 42001",
       "HIPAA BAA"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -12756,7 +12826,7 @@
     "vendor": "Nanonoble Pte. Ltd. (operating as MiniMax / Hailuo AI)",
     "product_family": "MiniMax is a foundation-model company (M-series LLMs) whose consumer-facing brands include Hailuo AI (hailuoai.video: text/image-to-video and image generation, 'Hailuo Agent'), MiniMax Chat/Agent, MiniMax Audio (speech/music models), MiniMax Talkie, and a developer API platform (platform.minimax.io) for enterprise/programmatic access.",
     "maturity": "growth",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-07-08",
     "certs_held": [],
     "top_certs": [],
@@ -12773,7 +12843,7 @@
     "product_family": "Documentation-as-a-platform for developer docs and AI agent knowledge bases: core docs hosting (Starter/Pro/Enterprise tiers), an AI Assistant/agent chat layer over docs, MCP server generation, API playground, and enterprise add-ons (SSO/SCIM/RBAC, audit logs, BYOK).",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "GDPR (compliance posture, not a certification)"
@@ -12826,13 +12896,15 @@
     "has_trust_center": false,
     "last_verified": "2026-06-27",
     "certs_held": [
+      "GDPR Compliance (self-attested)",
       "PIPEDA / BC PIPA (Canadian privacy law)"
     ],
     "top_certs": [
+      "GDPR Compliance (self-attested)",
       "PIPEDA / BC PIPA (Canadian privacy law)"
     ],
-    "certs_held_count": 1,
-    "trains_on_customer_data": "unknown",
+    "certs_held_count": 2,
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 8,
@@ -12844,7 +12916,7 @@
     "product_family": "Missive is a shared-inbox / email collaboration app for teams (Mac, Windows, Linux, iOS, Android, web). Notable sub-feature: an optional AI assistant / AI rules layer that routes selected email content to a third-party LLM provider (OpenAI, Anthropic, or Google) chosen by the customer.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (compliance posture)"
@@ -12857,7 +12929,7 @@
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "high"
   },
   {
@@ -12881,7 +12953,7 @@
       "GDPR"
     ],
     "certs_held_count": 5,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": true,
     "dpa": true,
     "flags_count": 5,
@@ -12942,13 +13014,14 @@
     "certs_held": [
       "SOC 2 Type I",
       "SOC 2 Type II",
-      "HIPAA"
+      "HIPAA",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type II",
       "HIPAA (BAA, Enterprise plan)"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -12987,7 +13060,7 @@
       "ISO 27001:2022",
       "ISO 27701:2019 (PIMS)",
       "ISO 22301:2019 (BCMS)",
-      "CSA STAR (Level 2 Attestation)",
+      "CSA STAR",
       "GDPR (compliance posture)",
       "HIPAA",
       "CCPA (compliance posture)"
@@ -13080,7 +13153,6 @@
       "GDPR (posture / SCCs)",
       "PCI DSS",
       "FedRAMP",
-      "CSA STAR (Level 1)",
       "EU-US Data Privacy Framework / Privacy Shield"
     ],
     "top_certs": [
@@ -13090,7 +13162,7 @@
       "ISO/IEC 42001",
       "HIPAA / HITRUST"
     ],
-    "certs_held_count": 13,
+    "certs_held_count": 12,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -13111,7 +13183,7 @@
       "GDPR (regulatory compliance, not a certification)"
     ],
     "certs_held_count": 1,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 6,
@@ -13237,7 +13309,7 @@
     "product_family": "Workflow automation / AI agent orchestration platform, available as n8n Cloud (managed SaaS) and self-hosted (open-source and licensed Enterprise editions), with tiers spanning Starter, Pro, Business and Enterprise.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 3",
@@ -13293,7 +13365,7 @@
     "product_family": "Text-to-speech and AI narrated-video tool family: browser-based Text to Speech (documents/scripts to audio), Slides to Video (PowerPoint/Markdown to narrated video), subtitle-to-audio dubbing, plus a Developer API and command-line client for CI/CD-driven video automation.",
     "maturity": "startup",
     "has_trust_center": false,
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (posture)"
     ],
@@ -13318,7 +13390,7 @@
       "SOC 2 Type 2",
       "SOC 2 Type 1",
       "COPPA / FERPA (contractual compliance posture, not independently certified)",
-      "Cyber Essentials (UK NCSC-backed scheme)",
+      "Cyber Essentials",
       "GDPR (posture)"
     ],
     "top_certs": [
@@ -13435,7 +13507,7 @@
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -13455,7 +13527,7 @@
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -13479,7 +13551,8 @@
       "Cyber Essentials Plus",
       "EU-US Data Privacy Framework (DPF)",
       "WCAG 2.2",
-      "Sarbanes-Oxley (SOX)"
+      "Sarbanes-Oxley (SOX)",
+      "HITRUST"
     ],
     "top_certs": [
       "SOC 2 Type II + HITRUST",
@@ -13488,8 +13561,8 @@
       "ISO 27018",
       "ISO 27701"
     ],
-    "certs_held_count": 14,
-    "trains_on_customer_data": "unknown",
+    "certs_held_count": 15,
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 5,
@@ -13595,7 +13668,7 @@
       "ISO 27701",
       "ISO 27017",
       "ISO 27018",
-      "HIPAA (BAA available)",
+      "HIPAA",
       "BSI C5",
       "GDPR"
     ],
@@ -13630,7 +13703,8 @@
       "HIPAA",
       "PCI DSS",
       "K-FSI",
-      "GDPR"
+      "GDPR",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -13639,7 +13713,7 @@
       "HIPAA (Enterprise + BAA)",
       "ISO 27017"
     ],
-    "certs_held_count": 10,
+    "certs_held_count": 11,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -13661,7 +13735,8 @@
       "ISO 27701",
       "BSI C5",
       "GDPR",
-      "HIPAA"
+      "HIPAA",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -13670,7 +13745,7 @@
       "ISO 27018",
       "ISO 27701"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 9,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -13711,7 +13786,7 @@
     "product_family": "Open-source notification/communication infrastructure (novu.co) for developers and product teams, spanning a self-hosted open-source core (MIT), a managed multi-tenant cloud (Novu Cloud), an enterprise Hybrid-Cloud deployment, and a newer 'Novu Connect' agent-to-channel feature that lets AI agents send notifications across Slack, Email, SMS, Push, Chat, Teams, Telegram, etc.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "ISO 27001",
@@ -13747,7 +13822,8 @@
       "C5 Type II (Germany)",
       "NEN7510/2/3 (Netherlands)",
       "GDPR",
-      "PIPEDA"
+      "PIPEDA",
+      "Cyber Essentials"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -13756,7 +13832,7 @@
       "FedRAMP",
       "C5 Type II"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 10,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -13840,7 +13916,7 @@
     "vendor": "Observable, Inc.",
     "product_family": "Reactive JavaScript notebook platform for data visualization/exploration (Observable Notebooks, Free/Pro/Enterprise), plus the open-source, self-hostable Observable Framework static-site generator for data apps. Observable Cloud (hosted deployment for Framework apps) was deprecated April 2025 and discontinued October 2025.",
     "maturity": "growth",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-07-08",
     "certs_held": [
       "SOC 2 Type 2"
@@ -13867,8 +13943,8 @@
       "ISO/IEC 27001:2022",
       "ISO/IEC 42001:2023 (AI Management System)",
       "PCI DSS (Level 1 Service Provider, v4.0.1)",
-      "HITRUST r2 (HIPAA)",
-      "HIPAA (safeguards for PHI)",
+      "HITRUST",
+      "HIPAA",
       "GDPR / CCPA (privacy compliance posture, not a certification)",
       "EU AI Act conformance"
     ],
@@ -14001,7 +14077,7 @@
     "product_family": "Email and SMS marketing automation platform for ecommerce (campaigns, automation workflows, segmentation, forms/popups, push notifications, and Omnisend AI copy/segmentation assistant, plus a newer MCP integration for AI agents)",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (compliance posture, not a certification)"
     ],
@@ -14029,7 +14105,8 @@
       "HIPAA (BAA available)",
       "GDPR (compliance capability)",
       "CCPA (compliance capability)",
-      "EU-U.S. Data Privacy Framework (DPF)"
+      "EU-U.S. Data Privacy Framework (DPF)",
+      "Cyber Essentials"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -14038,8 +14115,8 @@
       "HIPAA BAA (Enterprise)",
       "EU-U.S. Data Privacy Framework"
     ],
-    "certs_held_count": 7,
-    "trains_on_customer_data": "unknown",
+    "certs_held_count": 8,
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 5,
@@ -14059,9 +14136,9 @@
       "ISO/IEC 27018:2019 (PII in public cloud)",
       "ISO/IEC 27701:2019 (privacy information management)",
       "ISO/IEC 42001:2023 (AI management system)",
-      "PCI DSS v4.0.1",
       "HIPAA (via BAA, not a certification)",
-      "GDPR (posture via DPA + SCCs, not a certification)"
+      "GDPR (posture via DPA + SCCs, not a certification)",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -14115,7 +14192,7 @@
     "product_family": "AI video clipping, repurposing, and editing platform (web app + API)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "SOC 3",
@@ -14186,7 +14263,7 @@
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -14198,7 +14275,7 @@
     "last_verified": "2026-07-08",
     "certs_held": [
       "SOC 2 Type II",
-      "HIPAA compliance / BAA (Enterprise only)",
+      "HIPAA",
       "GDPR compliance posture (not a certification)",
       "CCPA compliance posture",
       "VPAT / Section 508 accessibility"
@@ -14224,14 +14301,15 @@
     "certs_held": [
       "SOC 2 Type II",
       "HIPAA",
-      "GDPR"
+      "GDPR",
+      "HITRUST"
     ],
     "top_certs": [
       "SOC 2 Type II",
       "HIPAA (with BAA for enterprise)",
       "GDPR (EU-US Data Privacy Framework)"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -14383,7 +14461,6 @@
       "FedRAMP Moderate",
       "StateRAMP",
       "CSA STAR",
-      "HIPAA (regulatory compliance posture)",
       "GDPR (regulatory compliance posture)",
       "Germany C5",
       "IRAP (Australia)",
@@ -14410,7 +14487,7 @@
       "ISO 27018",
       "ISO 27701"
     ],
-    "certs_held_count": 31,
+    "certs_held_count": 30,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -14491,18 +14568,19 @@
     "product_family": "AI dubbing / voice synthesis technology, now part of the RWS enterprise localization stack (Language Weaver, Trados, TrainAI)",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001:2022",
-      "SOC 2 Type II"
+      "SOC 2 Type II",
+      "Cyber Essentials"
     ],
     "top_certs": [
       "ISO 27001:2022",
       "SOC 2 Type II"
     ],
-    "certs_held_count": 2,
-    "trains_on_customer_data": "unknown",
-    "self_hostable": "unknown",
+    "certs_held_count": 3,
+    "trains_on_customer_data": null,
+    "self_hostable": null,
     "dpa": true,
     "flags_count": 5,
     "confidence": "high"
@@ -14535,6 +14613,7 @@
       "ISO/IEC 42001:2023 (AI Management System)",
       "CSA STAR Level 1",
       "Penetration Testing (VAPT)",
+      "HIPAA",
       "GDPR (regulatory posture, not a certification)"
     ],
     "top_certs": [
@@ -14542,7 +14621,7 @@
       "ISO/IEC 42001:2023",
       "CSA STAR Level 1"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": null,
@@ -14559,8 +14638,6 @@
     "certs_held": [
       "SOC 2 Type II",
       "SOC 3 Type II",
-      "ISO 27001",
-      "PCI DSS",
       "CSA STAR (Level 1)",
       "GDPR (posture)"
     ],
@@ -14571,7 +14648,7 @@
       "CSA STAR Level 1",
       "GDPR (posture)"
     ],
-    "certs_held_count": 6,
+    "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -14663,7 +14740,7 @@
       "UK Cyber Essentials Plus"
     ],
     "certs_held_count": 7,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 3,
@@ -14861,10 +14938,10 @@
     "last_verified": "2026-06-27",
     "certs_held": [
       "SOC 2 Type 2",
-      "HIPAA",
       "GDPR",
-      "PCI DSS (SAQ A)",
+      "PCI DSS",
       "FedRAMP 20x Low",
+      "ISO 27001",
       "CSA CAIQ / VSA self-assessment"
     ],
     "top_certs": [
@@ -15019,7 +15096,7 @@
     "product_family": "Phrase Localization Platform: enterprise translation/localization management (Phrase Platform / TMS), a translator workbench (Phrase Studio, on GCP), developer-focused in-context string management (Phrase Strings), and AI machine-translation engines (NextMT, Next GenMT, Custom NextMT) plus an AI quality-estimation feature (QPS).",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-05",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type I",
       "ISO 27001:2022",
@@ -15091,7 +15168,8 @@
       "SOC 2 Type 2",
       "ISO/IEC 27001:2022",
       "GDPR",
-      "CCPA/CPRA"
+      "CCPA/CPRA",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -15099,7 +15177,7 @@
       "GDPR Compliant",
       "CCPA/CPRA Compliant"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 5,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -15112,7 +15190,7 @@
     "product_family": "AI text-to-video generation platform (Pictory.ai): script/blog/URL/PPT/image-to-video, AI avatars, AI Studio image/video generation, plus a separate Pictory API product and an Enterprise tier with Pictory Central video hosting.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2",
       "ISO 27001",
@@ -15145,7 +15223,7 @@
     ],
     "certs_held_count": 2,
     "trains_on_customer_data": false,
-    "self_hostable": "unknown",
+    "self_hostable": null,
     "dpa": null,
     "flags_count": 6,
     "confidence": "medium"
@@ -15213,7 +15291,7 @@
       "SOC 2 Type II",
       "SOC 2 Type I (Confidentiality & Availability)",
       "GDPR (compliance posture / DPA)",
-      "HIPAA (BAA available)"
+      "HIPAA"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -15262,7 +15340,7 @@
     "product_family": "Pitch: cloud presentation/slide-design workspace with Free, Plus, Team, and Business tiers, plus an AI feature (Pitch Agent) that generates on-brand slides from prompts. A public API is announced but not yet released (waitlist only at time of review).",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (compliance posture)"
     ],
@@ -15351,7 +15429,7 @@
     "certs_held": [
       "SOC 1 Type 2",
       "SOC 2 Type 2",
-      "PCI DSS 4.0 (Level 1 Service Provider)",
+      "PCI DSS",
       "HIPAA",
       "GDPR (posture)",
       "CCPA"
@@ -15382,7 +15460,7 @@
       "SOC 1 Type 2",
       "ISO 27001:2022",
       "ISO 27701:2019",
-      "HIPAA (Business Associate Addendum)",
+      "HIPAA",
       "GDPR (compliance posture / DPA with SCCs)"
     ],
     "top_certs": [
@@ -15441,7 +15519,7 @@
     "product_family": "AI assistant for creating and editing presentations directly inside Google Slides and Microsoft PowerPoint; also offers a Presentations API, a Presentation Agent API, a Plus AI MCP server, and \"Live Snapshots\" (shareable, encrypted presentation links)",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II"
     ],
@@ -15461,7 +15539,7 @@
     "product_family": "AI creative-content suite for video/podcast/audio editing (Async Creator: video editing, podcast recording, voiceover generation, translation & dubbing, thumbnail generation) plus a separate developer-facing Async Voice API (text-to-speech, instant voice cloning). Podcastle.ai now 308-redirects permanently to async.com; this is a rebrand of the same legal entity, not a different company.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2",
       "GDPR (compliance posture)"
@@ -15521,7 +15599,6 @@
       "SOC 2 Type II",
       "GDPR (compliance posture, not a certification)",
       "HIPAA",
-      "PCI DSS",
       "UK NCSC Cyber Essentials / Cyber Essentials Plus"
     ],
     "top_certs": [
@@ -15529,7 +15606,7 @@
       "SOC 2 Type II",
       "UK Cyber Essentials Plus"
     ],
-    "certs_held_count": 6,
+    "certs_held_count": 5,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -15568,7 +15645,7 @@
       "HIPAA",
       "GDPR (posture, not a certification)",
       "PCI DSS",
-      "CSA STAR (Cloud Security Alliance)",
+      "CSA STAR",
       "CCPA (posture, not a certification)",
       "TX-RAMP (Texas state risk/authorization program)"
     ],
@@ -15632,7 +15709,8 @@
       "GDPR (posture / DPA)",
       "HIPAA / HITECH (BAA)",
       "FedRAMP (US government cloud, GCC / GCC High)",
-      "CSA STAR"
+      "SOC 3",
+      "ISO 27017"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -15641,7 +15719,7 @@
       "HIPAA BAA",
       "GDPR (DPA/SCCs)"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -15654,7 +15732,7 @@
     "product_family": "AI ad/creative generator and social media content suite: static and video ad creatives, UGC-style product ads, multi-platform post generation, and scheduling/auto-posting, offered on Core (individual), Rise (growing teams/agencies), and Enterprise+ plans, plus a separate developer API.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (posture, not a certification)"
     ],
@@ -15674,7 +15752,7 @@
     "product_family": "Workflow orchestration and AI infrastructure platform: open-source Prefect (self-hosted Python workflow orchestration, Apache 2.0), Prefect Cloud (managed orchestration with SSO/RBAC/governance), Prefect Horizon (managed AI infrastructure: MCP gateway, server registry, agent governance), and FastMCP (open-source framework for building MCP servers)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II (Prefect Cloud)",
       "SOC 2 Type 2 audit report (2025, listed in trust center documents)",
@@ -15698,7 +15776,7 @@
     "product_family": "Prezi is an AI-assisted presentation platform. Core products: Prezi AI (prompt-to-deck generator, the surface captured in evidence), Prezi Present (classic zooming-canvas presentations), Prezi Video, and Prezi Design, sold as Individual/Pro and Team/Business tiers. Prezi, Inc. also owns Infogram, a separate infographic/data-visualization product with its own privacy policy addendum, not assessed here.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (posture, not a certification)"
@@ -15731,7 +15809,7 @@
       "CCPA service provider"
     ],
     "certs_held_count": 3,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 7,
@@ -15763,19 +15841,18 @@
     "product_family": "Proposal, quoting, contract and e-signature software for sales teams",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
-      "GDPR",
-      "PCI-DSS (Service Provider Level 1, via Stripe)"
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type 2",
       "GDPR",
       "PCI-DSS via Stripe"
     ],
-    "certs_held_count": 3,
-    "trains_on_customer_data": "unknown",
+    "certs_held_count": 2,
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 6,
@@ -15789,7 +15866,6 @@
     "has_trust_center": true,
     "last_verified": "2026-06-27",
     "certs_held": [
-      "PCI DSS Level 1",
       "GDPR",
       "CCPA / LGPD (privacy regulation adherence)"
     ],
@@ -15798,7 +15874,7 @@
       "GDPR",
       "CCPA/LGPD adherence"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -15885,7 +15961,7 @@
     "product_family": "Cap table and equity management platform for founders and finance teams (409A valuations, SAFEs/fundraising modeling, ASC 718/GAAP-IFRS reporting, equity liquidity via Nasdaq Private Market). Single core product with Startup, Growth, and Enterprise pricing tiers rather than distinct sub-products.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (compliance posture, not a certification)"
@@ -15898,7 +15974,7 @@
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -15945,7 +16021,7 @@
       "NYC Local Law 144 bias audit"
     ],
     "certs_held_count": 6,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 6,
@@ -15967,10 +16043,12 @@
       "ISO 27018 (cloud PII/privacy)",
       "HIPAA",
       "HITRUST CSF",
-      "FedRAMP",
       "IRAP (Australia)",
       "C5 (Germany BSI)",
-      "TISAX"
+      "ISO/IEC 42001:2023 (AI management system)",
+      "TISAX",
+      "Cyber Essentials",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -15979,7 +16057,7 @@
       "ISO 27018",
       "HIPAA/HITRUST"
     ],
-    "certs_held_count": 12,
+    "certs_held_count": 14,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -16021,8 +16099,6 @@
       "SOC 2 Type II",
       "ISO 27001",
       "ISO 27017",
-      "FedRAMP High",
-      "FedRAMP Moderate",
       "CSA STAR Level 2",
       "GDPR",
       "HIPAA",
@@ -16035,7 +16111,7 @@
       "GDPR",
       "HIPAA"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -16052,7 +16128,6 @@
     "certs_held": [
       "SOC 2 (Type 1/2)",
       "ISO 27001",
-      "PCI DSS",
       "GDPR"
     ],
     "top_certs": [
@@ -16061,7 +16136,7 @@
       "PCI DSS",
       "GDPR-compliant with DPA"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 3,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -16170,7 +16245,7 @@
     "product_family": "AI Hospital Operations Platform",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "HIPAA"
@@ -16180,7 +16255,7 @@
       "HIPAA"
     ],
     "certs_held_count": 2,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 6,
@@ -16253,7 +16328,7 @@
     "product_family": "WordPress SEO plugin (Rank Math SEO, free + PRO/Business tiers) plus cloud add-ons: Content AI (AI writing/optimization assistant) and the newly launched AI Visibility brand-monitoring tool; also offers free web tools (Meta Tag Analyzer, SEO Analyzer, Robots.txt Tester). Owned by group.one, which also owns WP Rocket, Imagify, RocketCDN, Termly and SocialPilot.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (compliance posture, not a certification)"
     ],
@@ -16523,7 +16598,7 @@
     "last_verified": "2026-07-08",
     "certs_held": [
       "SOC 2 Type II",
-      "AIUC-1 (AI Underwriting Company)",
+      "AIUC-1",
       "GDPR (regulatory alignment, not a certification)",
       "CCPA"
     ],
@@ -16546,7 +16621,7 @@
     "product_family": "AI-native ATS and CRM platform for recruitment and staffing agencies; sub-products include AIRA (AI agent suite with Notetaker, Matchmaker, Field Updates Agent, Submission Agent, Task Agent), multichannel sequences, workflow automation, and Recruiterflow BI",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 1",
       "ISO 27001",
@@ -16577,7 +16652,8 @@
       "SOC 2 Type II",
       "GDPR",
       "CCPA",
-      "PSD2"
+      "PSD2",
+      "HIPAA"
     ],
     "top_certs": [
       "PCI-DSS Level 1",
@@ -16586,7 +16662,7 @@
       "GDPR/DPA",
       "CCPA"
     ],
-    "certs_held_count": 6,
+    "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -16723,7 +16799,6 @@
       "SOC 2 Type II",
       "SOC 3",
       "HIPAA",
-      "FedRAMP",
       "IRAP (Australian)",
       "CSA CAIQ",
       "GDPR"
@@ -16735,7 +16810,7 @@
       "FedRAMP (Moderate)",
       "GDPR (EU-U.S. Data Privacy Framework)"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 8,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -16764,7 +16839,7 @@
     "product_family": "Agentic AI platform (\"AI Workforce\") for building, deploying, and governing autonomous AI agents; includes a no-code/low-code agent builder, \"Invent\" AI-assisted agent generation, an agent marketplace of pre-built templates, an evals/monitoring layer, and API/MCP access for programmatic agent building, with a separate gated Enterprise tier (SSO/SAML, RBAC, fine-grained access control, dedicated data residency).",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR"
@@ -16844,7 +16919,7 @@
     "product_family": "Global employment infrastructure (Employer of Record, Global Payroll, Contractor of Record/Management, PEO) plus a REST API and 'Remote MCP', an MCP server that gives AI agents live access to payroll, contract, compliance, and org-structure data.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "ISO 27001",
@@ -17077,8 +17152,9 @@
     "product_family": "Generative AI voice + deepfake detection platform (Generate / Verify / Detect)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
+      "ISO 27001",
       "GDPR",
       "HIPAA"
     ],
@@ -17088,11 +17164,11 @@
       "SOC 2 Type 2 (in observation, audit Aug 2026)",
       "ISO 27001 (in progress, expected Jul 2026)"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "high"
   },
   {
@@ -17199,7 +17275,8 @@
       "HIPAA",
       "GDPR (compliance posture, not a certification)",
       "PCI DSS",
-      "CJIS"
+      "CJIS",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -17207,7 +17284,7 @@
       "CJIS (enterprise)",
       "PCI DSS (payments only)"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 6,
     "trains_on_customer_data": true,
     "self_hostable": true,
     "dpa": true,
@@ -17235,7 +17312,7 @@
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": null,
-    "flags_count": 6,
+    "flags_count": 5,
     "confidence": "medium"
   },
   {
@@ -17373,7 +17450,7 @@
     "last_verified": "2026-07-09",
     "certs_held": [
       "SOC 2 Type II",
-      "HIPAA (BAA available)",
+      "HIPAA",
       "PCI DSS",
       "GDPR (posture)"
     ],
@@ -17398,7 +17475,7 @@
     "last_verified": "2026-06-27",
     "certs_held": [
       "SOC 2 Type 2",
-      "PCI DSS (SAQ A)",
+      "PCI DSS",
       "CCPA",
       "GDPR (compliance posture)"
     ],
@@ -17421,7 +17498,7 @@
     "product_family": "AI-powered lead engagement chatbot for real estate brokerages: an \"AI Assistant\" website widget that qualifies buyer intent, captures and routes leads to agents/CRM, plus natural-language property search and automated follow-up campaigns. Single product line marketed under Solutions/Features (AI Assistant, AI Search, AI Conversations, Follow-up); no separate consumer, enterprise, or API tiers documented.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (posture)"
     ],
@@ -17441,15 +17518,16 @@
     "product_family": "Post-purchase platform for e-commerce merchants, providing AI-powered package protection, shipment tracking, and returns/exchanges management. Integrates with Shopify, BigCommerce, Salesforce Commerce Cloud, and other platforms.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
-      "SOC 2 Type 1"
+      "SOC 2 Type 1",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type 1 (AICPA)",
       "Department of Insurance License (all 50 US states)"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 2,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -17462,7 +17540,7 @@
     "product_family": "Rows is an AI-powered spreadsheet / data-analyst tool (core product), with a browser extension (RowsX) for extracting web data into spreadsheets and a public API. Rows was acquired by Superhuman (formerly Grammarly) in February 2026; per the vendor's announcement, the standalone product was scheduled to be sunset by May 31, 2026, with its capabilities folded into Superhuman's Coda product. As of July 2026, rows.com is still live and displays a banner confirming the acquisition.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (compliance posture, not a certification)"
@@ -17486,12 +17564,13 @@
     "last_verified": "2026-07-05",
     "certs_held": [
       "SOC 2 Type II",
+      "ISO 27001",
       "GDPR (compliance posture, not a certification)"
     ],
     "top_certs": [
       "SOC 2 Type II"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": false,
@@ -17667,6 +17746,7 @@
       "SOC 2 Type II (trust center report listing)",
       "GDPR (compliance posture, not a certification)",
       "PCI DSS (SAQ AoC available; supports PCI-scoped customers)",
+      "HIPAA",
       "Penetration testing (annual VAPT, report + remediation in trust center)",
       "AI Governance Policy"
     ],
@@ -17677,8 +17757,8 @@
       "Annual VAPT / Penetration Test",
       "AI Governance Policy"
     ],
-    "certs_held_count": 6,
-    "trains_on_customer_data": "unknown",
+    "certs_held_count": 7,
+    "trains_on_customer_data": null,
     "self_hostable": true,
     "dpa": true,
     "flags_count": 4,
@@ -17690,7 +17770,7 @@
     "product_family": "Two product generations on saturncloud.io: (1) a legacy hosted data-science / ML platform (Jupyter, VS Code, Dask, GPU notebooks, deployable into a customer's own AWS account) and (2) a newer 'Control Plane for GPU Clouds' / Token Factory product aimed at GPU cloud operators and BMaaS resellers (white-label console for bare metal, Kubernetes, Slurm, and per-token managed inference). Both are marketed on the same domain and same legal entity.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 1"
     ],
@@ -17710,7 +17790,7 @@
     "product_family": "AI-powered SEO / GEO (Generative Engine Optimization) content platform: article writer, content optimizer, content audit, AI visibility tracker, GEO Action Center, Social UpReach (Reddit engagement), and a Backlinks Marketplace, sold both self-serve (DIY software) and as an expert-managed done-for-you service.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (posture, not a certification)"
     ],
@@ -17835,7 +17915,7 @@
     "product_family": "UK-based SEO software and agency: SEO Spider (desktop website crawler, local data storage), Log File Analyser (desktop server-log tool), plus a separate SEO/digital-marketing agency service line (technical SEO, PPC, content, digital PR, AI search optimisation).",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (posture)"
     ],
@@ -17910,7 +17990,7 @@
     "product_family": "AI SEO and GEO (generative engine optimization) platform: rank tracking, keyword/backlink research, site audit, and AI visibility monitoring (SE Visible - tracks brand mentions across ChatGPT, Gemini, Perplexity, AI Overviews). Also includes an API/MCP data connector for pulling SEO data into third-party tools and AI assistants, and Planable, a social media scheduling/collaboration platform acquired by SE Ranking in August 2025 and operated as a related but distinct product with its own site (planable.io).",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (compliance posture, not a certification)"
     ],
@@ -17950,7 +18030,7 @@
     "product_family": "B2B sales intelligence and revenue automation platform: Data Engine (Prospector, Buyer Intent, Job Changes, CRM Enrich, Pitch Intelligence), Engagement Hub (Connect, Emailing, Calling, Social Selling, Integrations), AI Agents (Outbound, Inbound, Ops, Marketing, Customer Success, Recruiting), and Automation Network (AI Assistant, MCPs, Connectors, API, Bulk Credits, Autopilot)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type I",
       "SOC 2 Type II",
@@ -18000,14 +18080,15 @@
       "ISO/IEC 42001:2023 (AI Management System)",
       "ISO/IEC 23894:2023 (AI risk management guidance)",
       "GDPR",
-      "CCPA"
+      "CCPA",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
       "ISO/IEC 42001:2023 (AI governance)",
       "GDPR/CCPA compliant posture"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -18047,7 +18128,6 @@
       "FedRAMP High",
       "HIPAA BAA",
       "ISO/IEC 27018",
-      "CSA STAR",
       "GDPR DPA"
     ],
     "top_certs": [
@@ -18057,7 +18137,7 @@
       "HIPAA BAA",
       "CSA STAR"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 6,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -18090,7 +18170,7 @@
     "product_family": "Semgrep AppSec Platform - unified static application security testing (SAST), software composition analysis (SCA / Supply Chain), and secrets scanning, plus Semgrep Assistant (AI-assisted triage/autofix) and a Semgrep MCP server for AI coding agents. Semgrep Code, Supply Chain, and Secrets are sold together as the AppSec Platform; the underlying Semgrep CLI/engine is also available as a free, open-source, locally-run scanner.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (posture)"
@@ -18115,13 +18195,14 @@
     "last_verified": "2026-06-27",
     "certs_held": [
       "PCI DSS Level 1",
-      "GDPR"
+      "GDPR",
+      "SOC 2 Type II"
     ],
     "top_certs": [
       "PCI DSS Level 1",
       "GDPR"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -18220,7 +18301,7 @@
     "product_family": "All-in-one SEO and content marketing platform: keyword research, rank tracking, backlink analysis, site/page audit, competitor analysis, SERP scraper, keyword clustering, and a public API/data solutions tier for bulk/programmatic access.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR"
     ],
@@ -18293,7 +18374,7 @@
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -18302,7 +18383,7 @@
     "product_family": "Shopify AI / Sidekick / Shopify Magic",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "PCI DSS Level 1",
       "SOC 2 Type II",
@@ -18364,7 +18445,7 @@
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -18388,7 +18469,7 @@
       "CCPA"
     ],
     "certs_held_count": 5,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 5,
@@ -18509,7 +18590,7 @@
       "SOC 3",
       "FedRAMP Moderate",
       "FedRAMP JAB High (GovSlack)",
-      "HIPAA (configurable)",
+      "HIPAA",
       "FINRA 17a-4 (configurable)",
       "TISAX",
       "IRAP (Australia)",
@@ -18541,7 +18622,7 @@
     "product_family": "AI pitch deck builder + financial modeling SaaS, plus a human pitch-deck design & financial modeling agency service",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (compliance posture, not a certification)"
     ],
@@ -18549,7 +18630,7 @@
       "GDPR (compliance posture, not a certification)"
     ],
     "certs_held_count": 1,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 6,
@@ -18577,18 +18658,17 @@
     "product_family": "AI knowledge base (Slite), AI Agent, AI/Enterprise Search (Super), and Slite MCP server",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
-      "HIPAA (Enterprise tier, with BAA)",
-      "GDPR (compliance posture, not a certification)"
+      "HIPAA"
     ],
     "top_certs": [
       "SOC 2 Type II",
       "HIPAA (Enterprise/BAA)",
       "GDPR"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -18662,7 +18742,7 @@
     "product_family": "AI advertising platform with three integrated suites: Smartly Creative (ad creative production/personalization), Smartly Media (cross-channel campaign management/buying), and Smartly Intelligence (analytics/insights), plus Smartly Synapse, a newly announced (2026) AI orchestration/memory layer that spans all three suites.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001",
       "GDPR / CCPA compliance posture"
@@ -18693,6 +18773,7 @@
       "TISAX",
       "UK Cyber Essentials",
       "CCPA (compliance posture, not a certification body)",
+      "ISO/IEC 42001 (AI management system)",
       "GDPR (regulatory posture, not a certification)"
     ],
     "top_certs": [
@@ -18702,7 +18783,7 @@
       "TISAX",
       "UK Cyber Essentials"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 8,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -18786,7 +18867,7 @@
       "ISO 27001:2022",
       "ISO 27017:2015",
       "SOC 2 Type II",
-      "PCI DSS (SAQ A)",
+      "PCI DSS",
       "FedRAMP Rev. 5",
       "GDPR",
       "Secure by Design Pledge (CISA)"
@@ -18811,7 +18892,7 @@
     "product_family": "SocialBee is an AI-assisted social media management SaaS (content creation, scheduling/publishing, analytics, engagement, team collaboration) sold in three tiers (Bootstrap, Accelerate, Pro) with a single shared data-handling model; no separate consumer/enterprise product line was found.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (compliance posture)"
     ],
@@ -18852,7 +18933,7 @@
     "product_family": "Developer-first open-source supply chain security platform: Socket CLI and GitHub App/Action for dependency risk scanning (npm, PyPI, Go, etc.), Socket Firewall (registry-level malware interception, self-hosted or client/server), and Socket Firewall Enterprise (org-wide policy enforcement). Free for open source; paid Team/Business/Enterprise tiers add SSO/SAML, SCIM, SBOM, and reachability analysis.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II"
     ],
@@ -18899,7 +18980,7 @@
       "SOC 2 Type II",
       "ISO/IEC 27001:2022",
       "ISO/IEC 27018:2019 (PII protection in public cloud)",
-      "CSA STAR (Level 1, self-assessment)",
+      "CSA STAR",
       "PCI DSS (SAQ-A self-assessment)",
       "GDPR (compliance posture, not a certification)"
     ],
@@ -18922,16 +19003,17 @@
     "product_family": "AI-powered audio/video transcription, translation, and subtitling platform with an add-on \"Medical Sonix\" offering for HIPAA-covered healthcare use and enterprise plans (SSO/SCIM, unlimited API access, granular permissions); also offers a consumer/prosumer web app, mobile capture app, and public API.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
-      "HIPAA"
+      "HIPAA",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type II",
       "HIPAA (Medical Sonix, BAA)"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -18952,6 +19034,7 @@
       "ISO 27018:2019 (cloud PII protection)",
       "CSA STAR",
       "PCI DSS",
+      "HIPAA",
       "TX-RAMP",
       "C5 (Germany, BSI)"
     ],
@@ -18962,7 +19045,7 @@
       "ISO 27018",
       "CSA STAR"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 9,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -18977,12 +19060,23 @@
     "has_trust_center": true,
     "last_verified": "2026-07-09",
     "certs_held": [
-      "GDPR (posture / DPA availability)"
+      "SOC 2 Type 2",
+      "ISO/IEC 27017:2015 (cloud security)",
+      "ISO/IEC 27018:2019 (PII in public cloud)",
+      "ISO/IEC 27701:2019 (privacy information management)",
+      "ISO 42001",
+      "CSA STAR",
+      "GDPR (posture / DPA availability)",
+      "SOC 3"
     ],
     "top_certs": [
-      "GDPR (posture / DPA availability)"
+      "SOC 2 Type 2",
+      "ISO/IEC 27017:2015 (cloud security)",
+      "ISO/IEC 27018:2019 (PII in public cloud)",
+      "ISO/IEC 27701:2019 (privacy information management)",
+      "ISO 42001"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 8,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -19011,7 +19105,7 @@
     "product_family": "SOUNDRAW AI Music Generator (royalty-free AI music generation, browser-based mixer, stems/WAV export, plus API and enterprise/store-BGM offerings)",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR compliance (self-declared, not a certification)"
     ],
@@ -19202,7 +19296,9 @@
       "Common Criteria (NIAP)",
       "DoD CC SRG IL5",
       "IRAP (Australia, Protected level)",
-      "ISMAP (Japan)"
+      "ISMAP (Japan)",
+      "TISAX",
+      "Cyber Essentials"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -19211,7 +19307,7 @@
       "ISO 27018",
       "FedRAMP High"
     ],
-    "certs_held_count": 17,
+    "certs_held_count": 19,
     "trains_on_customer_data": true,
     "self_hostable": true,
     "dpa": true,
@@ -19224,7 +19320,7 @@
     "product_family": "AI-native contract lifecycle management (CLM) platform. Core products: SpotDraft AI (primary CLM with AI features), VerifAI (AI contract review), eSignatures (electronic signature execution), Workflows (contract automation), Repository & Analytics (contract storage and reporting), Legal Hub (integrated legal operations).",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001 (Information Security Management)",
       "SOC 2 Type II",
@@ -19258,7 +19354,10 @@
       "FedRAMP (LI-SaaS)",
       "GDPR (posture)",
       "HIPAA",
-      "TISAX / C5 / Cyber Essentials / ENS / DORA (regional attestations)"
+      "CSA STAR",
+      "TISAX / C5 / Cyber Essentials / ENS / DORA (regional attestations)",
+      "SOC 3",
+      "Cyber Essentials"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -19267,7 +19366,7 @@
       "PCI DSS",
       "FedRAMP LI-SaaS"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 11,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -19286,7 +19385,7 @@
       "ISO/IEC 27001",
       "ISO/IEC 27701",
       "PCI DSS",
-      "CSA STAR (Level 1, CAIQ)",
+      "CSA STAR",
       "HECVAT",
       "VPAT / Accessibility Conformance",
       "GDPR (posture)"
@@ -19378,7 +19477,7 @@
     "trains_on_customer_data": true,
     "self_hostable": true,
     "dpa": false,
-    "flags_count": 4,
+    "flags_count": 3,
     "confidence": "medium"
   },
   {
@@ -19480,10 +19579,14 @@
     "product_family": "AI image generator with text-to-image, image enhancement, background removal, and upscaling capabilities. Available as web app and iOS/Android mobile app.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-06",
-    "certs_held": [],
-    "top_certs": [],
-    "certs_held_count": 0,
+    "last_verified": "2026-09-30",
+    "certs_held": [
+      "GDPR"
+    ],
+    "top_certs": [
+      "GDPR"
+    ],
+    "certs_held_count": 1,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": false,
@@ -19541,7 +19644,7 @@
     "product_family": "Stormboard: data-first digital whiteboard and collaborative workflow platform; sub-products include StormAI (Azure OpenAI-backed AI co-collaborator), Stormboard for Agile (Jira/Azure DevOps/Rally integrations), and Single Tenant Edition for enterprise data residency",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (compliance posture)"
@@ -19659,7 +19762,7 @@
       "GDPR-aligned (EU/CNIL, France)"
     ],
     "certs_held_count": 1,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 7,
@@ -19768,11 +19871,12 @@
     "product_family": "Postgres development platform (managed database, Auth, Storage, Edge Functions, Realtime, Vector) plus self-hostable open-source stack",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "ISO/IEC 27001:2022",
       "HIPAA",
+      "PCI DSS",
       "GDPR"
     ],
     "top_certs": [
@@ -19781,7 +19885,7 @@
       "HIPAA",
       "GDPR"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 5,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -19844,7 +19948,7 @@
     "product_family": "Superhuman is a suite of AI productivity tools including Superhuman Mail (email), Grammarly (AI writing partner), Superhuman Docs (formerly Coda, all-in-one workspace), and Superhuman Go (AI assistant). Products work together as an integrated suite.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "ISO/IEC 27001:2022",
@@ -19916,7 +20020,8 @@
       "SOC 2 Type II",
       "ISO/IEC 27001",
       "GDPR",
-      "CCPA"
+      "CCPA",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -19924,7 +20029,7 @@
       "GDPR",
       "CCPA"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 5,
     "trains_on_customer_data": null,
     "self_hostable": true,
     "dpa": true,
@@ -20043,7 +20148,7 @@
     "product_family": "Machine translation software family: free web translator (SYSTRAN Translate), paid Pro tier, Enterprise/API translation platform, on-premise/air-gapped Server deployment, Model Studio for custom model training, and Anonymizer for GDPR-oriented PII redaction. Owned by French data-processing group ChapsVision (acquired SYSTRAN S.A. in January 2024).",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001",
       "ISO 27001 (corroborating)",
@@ -20094,7 +20199,6 @@
       "ISO/IEC 27001:2022",
       "ISO/IEC 27017:2015 (cloud security controls)",
       "ISO/IEC 27018:2019 (cloud PII protection)",
-      "ISO/IEC 42001:2023 (AI management system)",
       "HIPAA",
       "PCI DSS 4.0",
       "TISAX (automotive-industry ISO 27001-based assessment)",
@@ -20108,7 +20212,7 @@
       "ISO 27018",
       "ISO 42001"
     ],
-    "certs_held_count": 10,
+    "certs_held_count": 9,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -20175,10 +20279,11 @@
       "PCI DSS Level 1",
       "HIPAA",
       "GDPR (posture / SCC-based DPA)",
-      "FedRAMP (Government Edition only)",
+      "FedRAMP",
       "CSA STAR",
       "BSI C5",
-      "APEC CBPR / PRP (Cross-Border Privacy Rules / Privacy Recognition for Processors)"
+      "APEC CBPR / PRP (Cross-Border Privacy Rules / Privacy Recognition for Processors)",
+      "ISO 27701"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -20187,7 +20292,7 @@
       "ISO 22301",
       "ISO/IEC 42001 (AI governance)"
     ],
-    "certs_held_count": 14,
+    "certs_held_count": 15,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -20222,7 +20327,7 @@
     "product_family": "Tally.so - a free-first online form builder (single core product) with Free, Pro, and Business pricing tiers; includes an AI form-generation feature and an MCP server that connects Tally forms/submissions to AI assistants (Claude, ChatGPT, Cursor).",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR"
     ],
@@ -20242,14 +20347,16 @@
     "product_family": "Tana (agentic meeting platform) and Tana Outliner (note-taking outliner). Operated by Tana Labs, Inc., a Delaware corporation headquartered at 470 Ramona Street, Palo Alto, CA 94301. Public-facing brand 'Tana Inc.' / tana.inc.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
-    "certs_held": [],
+    "last_verified": "2026-09-30",
+    "certs_held": [
+      "SOC 2 Type 2"
+    ],
     "top_certs": [
       "GDPR (self-attested)",
       "SOC 2 Type 2 (in progress, ETA Q3 2026)",
       "HIPAA (in progress, ETA Q3 2026)"
     ],
-    "certs_held_count": 0,
+    "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -20343,7 +20450,7 @@
     "product_family": "Human computing / conversational video AI: Tavus CVI (Conversational Video Interface) developer API built on the Phoenix (rendering), Raven (perception), and Sparrow (turn-taking) models, an Enterprise tier with custom replicas and SLAs, and PALs, a consumer-facing always-on AI companion app.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "HIPAA",
@@ -20367,7 +20474,7 @@
     "product_family": "Free live-chat widget and customer-messaging platform (Live Chat, Ticketing, Knowledge Base, AI Assist chat bot beta), plus adjacent paid services: Video + Voice add-on, In-Chat Payments, hired Virtual Assistants, and a separately-branded FieldWorker product for field-service/social-work case management.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR compliance posture"
     ],
@@ -20387,7 +20494,7 @@
     "product_family": "Cloud-based sales tax compliance platform covering real-time tax calculation, nexus tracking, AutoFile filing/remittance, reporting, and a REST API; sold to small/mid-market e-commerce and SaaS sellers and integrated into Amazon, Shopify, WooCommerce, and Stripe Tax. Acquired by Stripe in 2021; the underlying legal entity remains TPS Unlimited, Inc.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type I",
@@ -20411,16 +20518,17 @@
     "product_family": "Online course platform with support for courses, coaching, memberships, and digital downloads. Part of Hotmart Company parent organization. Serves 150,000+ creators and 100M+ students globally.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-06",
+    "last_verified": "2026-09-30",
     "certs_held": [
-      "SOC 2 Type II"
+      "SOC 2 Type II",
+      "PCI DSS"
     ],
     "top_certs": [
       "SOC 2 Type II (annual)",
       "GDPR compliant",
       "PCI DSS SAQ Level 3 (gateways)"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 2,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -20481,7 +20589,7 @@
     "vendor": "Tempus AI, Inc. (operating clinical laboratory subsidiary Tempus Labs, Inc.)",
     "product_family": "AI-enabled precision medicine platform: CLIA-certified/CAP-accredited genomic and molecular diagnostic lab testing (oncology, cardiology, radiology, neuropsychiatry), the Tempus OS data/AI operating system, Tempus One (generative-AI clinical/research assistant), Tempus Next (care-gap/care-pathway intelligence), Tempus Lens (data/AI platform for biopharma drug development), and the TIME Trial clinical-trial-matching network. Distinct from the unrelated companies 'Tempus Technologies' (payments) and 'Tempus Resource' by ProSymmetry (project management software).",
     "maturity": "enterprise",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-07-09",
     "certs_held": [
       "HIPAA (posture, not a certification)",
@@ -20510,7 +20618,6 @@
     "certs_held": [
       "ISO 27001:2022",
       "SOC 2 Type II",
-      "FedRAMP Authorization to Operate (Moderate)",
       "StateRAMP Authorization",
       "Data Privacy Framework (DPF) Certified",
       "Cloud Security Alliance (CSA) STAR Member",
@@ -20524,7 +20631,7 @@
       "Data Privacy Framework (EU-US, Swiss-US, UK)",
       "StateRAMP"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -20587,7 +20694,7 @@
     "product_family": "AI-powered internal knowledge base and Slack Q&A bot (\"Kai\") for internal documentation, knowledge management, and repetitive-question deflection; single core product sold on Scaling and Enterprise tiers (Enterprise adds SSO/SCIM).",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (posture)"
     ],
@@ -20607,7 +20714,7 @@
     "product_family": "Enterprise AI agent infrastructure: AI writing assistant, browser extension, no-code Visual Agent Builder, Model Hub, Knowledge Search/Knowledge Bases, Workflow Automation, and API",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type I",
@@ -20621,7 +20728,7 @@
     ],
     "certs_held_count": 4,
     "trains_on_customer_data": true,
-    "self_hostable": "unknown",
+    "self_hostable": null,
     "dpa": true,
     "flags_count": 4,
     "confidence": "high"
@@ -20666,14 +20773,15 @@
     "certs_held": [
       "SOC 2 Type II",
       "ISO/IEC 27001:2022",
-      "CSA STAR (Level 1 self-assessment)"
+      "CSA STAR (Level 1 self-assessment)",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type II",
       "ISO/IEC 27001:2022",
       "CSA STAR (Level 1)"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -20752,7 +20860,7 @@
     "product_family": "UK-founded (2013) education platform providing 1-to-1 online maths tutoring to primary and secondary schools; core product has shifted from human tutors to \"Skye,\" a proprietary voice-based AI maths tutor, alongside a teacher/school admin portal and free public resources (Maths Hub, blog).",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "Cyber Essentials",
       "GDPR (compliance posture, not a certification)"
@@ -20815,7 +20923,8 @@
       "ISO 27701 (Privacy Information Management)",
       "ISO/IEC 42001 (AI Management System)",
       "NIST 800-171",
-      "UK Cyber Essentials Plus"
+      "UK Cyber Essentials Plus",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -20824,7 +20933,7 @@
       "ISO/IEC 42001",
       "NIST 800-171"
     ],
-    "certs_held_count": 6,
+    "certs_held_count": 7,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -20837,7 +20946,7 @@
     "product_family": "TickTick is a consumer/prosumer to-do list, calendar, and habit-tracking app (web, desktop, mobile) with a Premium subscription tier and a Team/Collaboration feature (shared lists, task assignment); no distinct enterprise/admin-governed tier or API product was found.",
     "maturity": "startup",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (posture, not a certification)"
     ],
@@ -20863,8 +20972,7 @@
       "GDPR",
       "CCPA / CPRA",
       "EU-US Data Privacy Framework (DPF)",
-      "Penetration testing (annual, third-party)",
-      "PCI-DSS (payment handling via Stripe)"
+      "Penetration testing (annual, third-party)"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -20872,7 +20980,7 @@
       "EU-US DPF",
       "Annual third-party pentest"
     ],
-    "certs_held_count": 6,
+    "certs_held_count": 5,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -20913,7 +21021,7 @@
     "product_family": "AI meeting notetaker/recorder for Zoom, Google Meet and Microsoft Teams (tl;dv), with add-on modules for CRM auto-fill, AI meeting reports/insights, and an AI-powered sales coaching platform built on the same recordings.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (compliance posture, not a certification)"
@@ -20980,7 +21088,7 @@
     "product_family": "AI-native low-code platform for building internal enterprise apps, AI agents, and workflows. Available as ToolJet Cloud (hosted SaaS), self-hosted / on-premise deployment (Docker, Kubernetes, air-gapped), and an open-source core (ToolJet on GitHub) that underlies the commercial \"ToolJet AI\" enterprise offering.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "ISO 27001",
@@ -20995,7 +21103,7 @@
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -21004,10 +21112,16 @@
     "product_family": "AI photo and video enhancement (upscale, denoise, sharpen, restore, frame interpolation) across desktop apps, browser/cloud web apps, and an enterprise API",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
-    "certs_held": [],
-    "top_certs": [],
-    "certs_held_count": 0,
+    "last_verified": "2026-09-30",
+    "certs_held": [
+      "SOC 2",
+      "GDPR"
+    ],
+    "top_certs": [
+      "SOC 2",
+      "GDPR"
+    ],
+    "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": null,
@@ -21020,15 +21134,16 @@
     "product_family": "Topaz Labs AI media enhancement suite (Topaz Video, Photo, Gigapixel, Studio, plus cloud/web apps and Enterprise/API)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
+      "SOC 2",
       "GDPR (compliance posture, not a certification)"
     ],
     "top_certs": [
       "GDPR posture (controller named, full EEA rights)",
       "SOC 2-compliant deployment claimed (enterprise, unverified report)"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": null,
@@ -21232,17 +21347,18 @@
     "product_family": "Trint AI transcription platform (transcription, live transcription, AI translation/summarization, collaboration, API/integrations)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001",
       "Cyber Essentials",
-      "PCI-DSS (payments, via processor)"
+      "PCI DSS",
+      "GDPR"
     ],
     "top_certs": [
       "ISO 27001",
       "Cyber Essentials"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 4,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -21255,7 +21371,7 @@
     "product_family": "Tuple is a native macOS/Windows/Linux (alpha) desktop app for remote pair programming, offering high-resolution screen sharing, seamless remote control, and a privacy feature called App Veil. Single product line with Teams and Enterprise pricing tiers plus Slack, Google Calendar, and Apple Calendar integrations and a Triggers API.",
     "maturity": "startup",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "GDPR (posture)"
     ],
@@ -21275,7 +21391,7 @@
     "product_family": "Academic integrity and assessment platform for education: Turnitin Feedback Studio / Similarity (plagiarism and text-similarity checking), Turnitin AI writing detection, Turnitin Clarity (AI-assisted writing feedback, built on third-party LLMs including Claude), iThenticate (research/publisher integrity checking), plus acquired sister products Gradescope (grading) and ExamSoft (secure digital exams) sold under the Turnitin corporate umbrella.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type I (historical)",
@@ -21357,7 +21473,7 @@
       "ISO/IEC 27017:2015",
       "ISO/IEC 27018:2019",
       "HIPAA",
-      "PCI DSS 4.0.1 (Service Provider + Merchant)",
+      "PCI DSS",
       "CSA STAR Level 1",
       "GDPR",
       "CCPA",
@@ -21430,7 +21546,7 @@
     "vendor": "Uncharted Labs, Inc. (d/b/a Udio)",
     "product_family": "Consumer AI music generation web app (udio.com). Single product line with tiered plans: Free, Standard, and Pro. No enterprise, team, or API/developer offering is published; no self-hosted or on-prem option.",
     "maturity": "startup",
-    "has_trust_center": false,
+    "has_trust_center": true,
     "last_verified": "2026-07-09",
     "certs_held": [],
     "top_certs": [],
@@ -21458,7 +21574,7 @@
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": false,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -21469,11 +21585,6 @@
     "has_trust_center": true,
     "last_verified": "2026-07-09",
     "certs_held": [
-      "SOC 2 Type II",
-      "ISO 27001:2022",
-      "ISO 27018:2019 (cloud PII)",
-      "ISO 27701:2019 (privacy)",
-      "ISO 42001:2023 (AI management system)",
       "GDPR posture",
       "HIPAA (BAA available)",
       "PCI DSS",
@@ -21487,7 +21598,7 @@
       "CSA STAR AI Levels 1 & 2",
       "HIPAA (BAA)"
     ],
-    "certs_held_count": 10,
+    "certs_held_count": 5,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -21503,14 +21614,15 @@
     "last_verified": "2026-07-09",
     "certs_held": [
       "ISO/IEC 27001",
-      "EU-U.S. Data Privacy Framework (DPF)"
+      "EU-U.S. Data Privacy Framework (DPF)",
+      "GDPR"
     ],
     "top_certs": [
       "ISO/IEC 27001",
       "EU-U.S. Data Privacy Framework",
       "GDPR posture"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": true,
@@ -21523,14 +21635,15 @@
     "product_family": "Unbounce landing page builder and conversion-rate optimization (CRO) platform (drag-and-drop builder, AI-assisted \"Smart Copy\" writing, A/B testing, \"Smart Traffic\" AI optimization); parent company of Insightly CRM (acquired July 2024), which is marketed and compliance-documented as a separate product/brand.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
+      "SOC 2",
       "PCI DSS"
     ],
     "top_certs": [
       "PCI DSS (Level 4 Merchant, SAQ A-EP)"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 2,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -21550,7 +21663,7 @@
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": false,
-    "flags_count": 7,
+    "flags_count": 6,
     "confidence": "medium"
   },
   {
@@ -21559,12 +21672,13 @@
     "product_family": "AI research assistant for scientific/document workflows (literature search, summarization, cited writing across up to 10,000 files)",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type I",
       "ISO/IEC 27001:2022",
-      "GDPR"
+      "GDPR",
+      "HIPAA"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -21572,7 +21686,7 @@
       "GDPR",
       "SOC 2 Type I"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 5,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -21630,13 +21744,14 @@
     "last_verified": "2026-06-27",
     "certs_held": [
       "GDPR (posture, not a certification)",
-      "CCPA (California, posture)"
+      "CCPA (California, posture)",
+      "SOC 2"
     ],
     "top_certs": [
       "GDPR posture",
       "CCPA posture"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": null,
@@ -21654,8 +21769,11 @@
       "SOC 2 Type II",
       "ISO 27001:2022",
       "GDPR (compliance posture)",
+      "HIPAA",
+      "PCI DSS",
       "EU-U.S. Data Privacy Framework",
-      "TISAX (AL2)"
+      "TISAX",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -21664,7 +21782,7 @@
       "EU-U.S. Data Privacy Framework",
       "TISAX AL2"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 8,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -21702,13 +21820,14 @@
       "SOC 2 Type 2",
       "SOC 2 (current attestation)",
       "CSA STAR",
+      "FedRAMP",
       "VPAT (accessibility)"
     ],
     "top_certs": [
       "SOC 2 Type 2",
       "CSA STAR Level 1"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 5,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -21721,7 +21840,7 @@
     "product_family": "Browser-based AI video creation and editing platform (VEED), including the core web video editor, AI subtitles/dubbing/avatars/image generation tools, a mobile app, an API, and a Business/Enterprise tier with additional legal and security terms",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR (compliance posture)"
@@ -21746,14 +21865,16 @@
     "certs_held": [
       "SOC 1 Type II",
       "SOC 2 Type II",
-      "TRUSTe Enterprise Privacy Certification"
+      "TRUSTe Enterprise Privacy Certification",
+      "SOC 3",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 1 Type II",
       "SOC 2 Type II",
       "TRUSTe Enterprise Privacy Certification"
     ],
-    "certs_held_count": 3,
+    "certs_held_count": 5,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": false,
@@ -21770,9 +21891,7 @@
     "certs_held": [
       "SOC 2 (Type 1/2, plus SOC 1 and SOC 3)",
       "ISO 27001 (plus ISO 27017, ISO 27018)",
-      "GDPR posture (Cloud Data Processing Addendum)",
       "HIPAA (Business Associate Agreement)",
-      "ISO/IEC 42001 (AI Management System)",
       "FedRAMP High",
       "CSA STAR"
     ],
@@ -21783,11 +21902,11 @@
       "FedRAMP High (Generative AI on Vertex AI)",
       "ISO/IEC 42001 (Google Cloud AI management system)"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 5,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
-    "flags_count": 5,
+    "flags_count": 4,
     "confidence": "medium"
   },
   {
@@ -21835,7 +21954,8 @@
       "GDPR",
       "EU-U.S. Data Privacy Framework (DPF)",
       "TISAX AL2",
-      "CCPA/CPRA"
+      "CCPA/CPRA",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type 2",
@@ -21844,8 +21964,8 @@
       "HIPAA BAA",
       "GDPR"
     ],
-    "certs_held_count": 8,
-    "trains_on_customer_data": "unknown",
+    "certs_held_count": 9,
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
     "flags_count": 5,
@@ -21859,13 +21979,10 @@
     "has_trust_center": true,
     "last_verified": "2026-07-09",
     "certs_held": [
-      "SOC 2 Type II",
-      "ISO/IEC 27001:2022",
-      "PCI DSS",
-      "HIPAA",
       "GDPR (posture)",
       "EU-U.S. / Swiss-U.S. Data Privacy Framework",
-      "TISAX (Assessment Level 2)"
+      "TISAX",
+      "SOC 3"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -21874,7 +21991,7 @@
       "GDPR",
       "PCI DSS"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 4,
     "trains_on_customer_data": true,
     "self_hostable": true,
     "dpa": true,
@@ -21895,7 +22012,7 @@
       "ISO/IEC 27001:2022"
     ],
     "certs_held_count": 1,
-    "trains_on_customer_data": "unknown",
+    "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": null,
     "flags_count": 7,
@@ -21963,7 +22080,7 @@
     "product_family": "Investor relationship / private-markets platform for founders and VCs. Founder side: fundraising pipelines, pitch decks, data rooms, investor updates. Investor side: portfolio monitoring, LP reporting, fund dashboards, and an AI/MCP layer (AI Inbox, AI Updates, AI Docs, MCP Server) for connecting portfolio data to LLMs.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2",
       "GDPR (posture, not a certification)"
@@ -22038,7 +22155,9 @@
       "ISO 27017 / ISO 27018 (Cloud security & data protection)",
       "ISO 27799 (Health informatics security)",
       "ISO 22301 (Business Continuity)",
-      "HIPAA"
+      "HIPAA",
+      "GDPR",
+      "ISO 27018"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -22046,7 +22165,7 @@
       "ISO/IEC 42001",
       "HIPAA"
     ],
-    "certs_held_count": 8,
+    "certs_held_count": 10,
     "trains_on_customer_data": null,
     "self_hostable": false,
     "dpa": true,
@@ -22075,7 +22194,7 @@
     "product_family": "AI legal research and intelligence platform: Vincent AI assistant (NLP legal research, contract analysis, litigation workflows), vLex Library (1B+ legal documents across 100+ countries), Docket Alarm (850M+ court records, litigation analytics), vLex Labs (custom enterprise AI), and Fastcase Library (US primary law database)",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "ISO/IEC 27001:2022",
@@ -22119,7 +22238,7 @@
     "product_family": "Enterprise conversational AI platform for building, launching, and scaling AI agents across chat, voice, and phone channels; includes the visual agent builder, observability suite, and production deployment environment",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-29",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "ISO/IEC 27001:2022",
@@ -22147,12 +22266,14 @@
     "has_trust_center": false,
     "last_verified": "2026-07-09",
     "certs_held": [
-      "Fairly Trained (AI training-data ethics certification, non-security)"
+      "Fairly Trained (AI training-data ethics certification, non-security)",
+      "GDPR"
     ],
     "top_certs": [
-      "Fairly Trained (AI training-data ethics certification, non-security)"
+      "Fairly Trained (AI training-data ethics certification, non-security)",
+      "GDPR"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": false,
@@ -22192,9 +22313,9 @@
     "certs_held": [
       "SOC 2 Type II",
       "ISO 27001:2022",
-      "ISO 27701:2019 (PIMS)",
-      "ISO 27017:2015 (Cloud Security)",
-      "ISO 27018:2019 (Cloud Privacy)",
+      "ISO 27701",
+      "ISO 27017",
+      "ISO 27018",
       "PCI DSS v4.0",
       "HIPAA",
       "CSA STAR",
@@ -22246,9 +22367,9 @@
     "product_family": "Wave (waveapps.com) - free/paid small-business accounting, invoicing, receipt scanning, payments processing, and payroll, plus a human bookkeeping/tax add-on called Wave Advisors. Toronto-based; acquired by H&R Block in 2019 and now operated as an H&R Block subsidiary.",
     "maturity": "growth",
     "has_trust_center": false,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
-      "PCI DSS (Level 1 Service Provider)"
+      "PCI DSS"
     ],
     "top_certs": [
       "PCI DSS Level 1"
@@ -22322,7 +22443,7 @@
     "product_family": "No-code website translation and multilingual SEO platform (JavaScript widget/proxy), with a self-serve tier and a separate Weglot for Enterprise tier; also offers a developer API",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "SOC 2 Type I",
@@ -22374,7 +22495,7 @@
     "product_family": "AI voice generation / text-to-speech platform: WellSaid Studio (web app for script-to-voiceover production, team workspaces), Developer API (real-time TTS integration for apps, LMS, IVR), and Adobe Express/Premiere Pro integrations. Sold on Online (self-serve/consumer) and Business & Enterprise (contracted) terms.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type I",
       "SOC 2 Type II",
@@ -22398,9 +22519,10 @@
     "product_family": "Westlaw suite of AI-powered legal research platforms: Westlaw Edge (with AI-Assisted Research), Westlaw Precision, and the newer agentic Westlaw Advantage, sold alongside related Thomson Reuters legal products (CoCounsel Legal, CoCounsel Essentials, Practical Law, Westlaw Form Builder)",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO/IEC 42001:2023 (AI Management System)",
+      "ISO 27001",
       "GDPR (compliance posture, not a certification)"
     ],
     "top_certs": [
@@ -22408,7 +22530,7 @@
       "FedRAMP In Process (Westlaw + Practical Law)",
       "GDPR compliance program + global DPA"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 3,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -22463,14 +22585,15 @@
     "product_family": "Whimsical is a whiteboard/diagramming SaaS for technical teams: flowcharts, wireframes, mind maps, boards, and an integrated \"Whimsical AI\" feature for generating diagrams and content from prompts. Single core product with Free, Pro, and Business subscription tiers (no separate consumer vs enterprise product line).",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
-      "SOC 2 Type II"
+      "SOC 2 Type II",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type II"
     ],
-    "certs_held_count": 1,
+    "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -22493,7 +22616,7 @@
       "ISO/IEC 27701:2019 (privacy information management)",
       "ISO/IEC 42001:2023 (AI management system)",
       "GDPR posture (DPA with SCCs)",
-      "PCI DSS v4.0.1",
+      "HIPAA",
       "CSA STAR",
       "FedRAMP 20x",
       "TX-RAMP"
@@ -22517,12 +22640,13 @@
     "product_family": "Mend AppSec platform: application security and software supply chain security, unified with AI security governance. Sub-products include Mend SCA (open source / software composition analysis, the original WhiteSource product), Mend SAST (proprietary code scanning), Mend Renovate (automated dependency updates), Mend AI (AI-BOM, model/agent/prompt inventory and AI risk governance), plus DAST, API Security, and Container Security modules.",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "ISO 27001:2013",
       "SOC 2 Type II (AICPA SSAE 18 / ISAE 3402)",
       "ISO 27017:2015 (cloud security)",
-      "ISO 27701 (privacy information management)"
+      "ISO 27701 (privacy information management)",
+      "GDPR"
     ],
     "top_certs": [
       "ISO 27001:2013",
@@ -22530,7 +22654,7 @@
       "ISO 27017",
       "ISO 27701"
     ],
-    "certs_held_count": 4,
+    "certs_held_count": 5,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": false,
@@ -22577,9 +22701,9 @@
     ],
     "certs_held_count": 2,
     "trains_on_customer_data": false,
-    "self_hostable": "yes (enterprise): Windsurf/Codeium Extensions are offered in self-hosted and hybrid deployments, which underpin the FedRAMP High / IL5 enterprise environment; the consumer Windsurf / Devin Desktop app is cloud-backed.",
+    "self_hostable": true,
     "dpa": null,
-    "flags_count": 5,
+    "flags_count": 6,
     "confidence": "high"
   },
   {
@@ -22667,7 +22791,7 @@
       "ISO/IEC 27018:2019",
       "ISO/IEC 27701",
       "PCI DSS v4.0.1",
-      "FedRAMP High (Wiz for Government)",
+      "FedRAMP",
       "CSA STAR Level 1",
       "HIPAA",
       "CCPA (California Consumer Privacy Act)",
@@ -22783,14 +22907,13 @@
     "has_trust_center": false,
     "last_verified": "2026-06-27",
     "certs_held": [
-      "GDPR (compliance posture)",
-      "PCI DSS"
+      "GDPR (compliance posture)"
     ],
     "top_certs": [
       "GDPR (DPA available)",
       "PCI DSS Level 1 (WooPayments, certified service provider)"
     ],
-    "certs_held_count": 2,
+    "certs_held_count": 1,
     "trains_on_customer_data": false,
     "self_hostable": true,
     "dpa": true,
@@ -22823,15 +22946,16 @@
     "certs_held": [
       "SOC 2",
       "ISO 27001",
-      "ISO 27017 (cloud security)",
+      "ISO 27017",
       "ISO 27018 (PII in cloud)",
+      "ISO 42001",
       "GDPR (posture)"
     ],
     "top_certs": [
       "SOC 2 (parent entity AI21 Labs Ltd, corporate scope - not confirmed Wordtune-specific)",
       "ISO 27001 / 27017 / 27018 (parent entity AI21 Labs Ltd, corporate scope - not confirmed Wordtune-specific)"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 6,
     "trains_on_customer_data": true,
     "self_hostable": false,
     "dpa": false,
@@ -22882,7 +23006,7 @@
       "ISO 42001 (AI Management System)",
       "GDPR",
       "HIPAA",
-      "PCI DSS (Level 1 Service Provider, v4.0.1)",
+      "PCI DSS",
       "IRAP (Australian Government ISM)",
       "NIST SP 800-171A Rev 2"
     ],
@@ -22920,7 +23044,7 @@
       "CSA STAR (Level 1, CAIQ self-assessment)",
       "HIPAA (third-party attestation, BAA available)",
       "GDPR (compliance posture, not a certification)",
-      "FedRAMP Moderate (Workday Government Cloud only)",
+      "FedRAMP",
       "EU-U.S. / Swiss-U.S. / UK Extension Data Privacy Framework",
       "TISAX",
       "Cyber Essentials Plus"
@@ -22955,7 +23079,8 @@
       "ISO/IEC 27701",
       "TX-RAMP Level 1",
       "HIPAA (Business Associate Agreement)",
-      "GDPR / CCPA compliance (DPA + SCCs)"
+      "GDPR / CCPA compliance (DPA + SCCs)",
+      "CSA STAR"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -22964,7 +23089,7 @@
       "ISO 27018",
       "ISO 27701"
     ],
-    "certs_held_count": 9,
+    "certs_held_count": 10,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -23094,7 +23219,7 @@
     "product_family": "AI Search Growth Engine (GEO/AEO visibility tracking + AI content agents). Historically an AI copywriting suite (Writesonic AI Article Writer, Chatsonic); now repositioned around AI-search visibility monitoring, an Action Center, AI agents, and analytics across 10+ AI platforms.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type II",
       "GDPR",
@@ -23156,7 +23281,7 @@
       "ISO 27001:2022",
       "ISO 27701",
       "ISO 9001:2015",
-      "HIPAA (BAA available)",
+      "HIPAA",
       "GDPR",
       "ISO 27701 / CPRA",
       "FERPA",
@@ -23211,11 +23336,6 @@
     "has_trust_center": true,
     "last_verified": "2026-07-06",
     "certs_held": [
-      "ISO/IEC 27001",
-      "ISO/IEC 27017",
-      "ISO/IEC 27018",
-      "ISO/IEC 42001:2023",
-      "PCI DSS 3.2.1",
       "Cloud Security Alliance STAR Level 1",
       "GDPR Compliance"
     ],
@@ -23226,7 +23346,7 @@
       "ISO/IEC 42001:2023",
       "PCI DSS 3.2.1"
     ],
-    "certs_held_count": 7,
+    "certs_held_count": 2,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -23245,7 +23365,9 @@
       "ISO/IEC 27001:2022",
       "ISO/IEC 27701:2019",
       "HIPAA",
-      "PCI-DSS v4.0.1"
+      "PCI-DSS v4.0.1",
+      "ISO/IEC 27018:2019",
+      "GDPR"
     ],
     "top_certs": [
       "SOC 2 Type II",
@@ -23254,7 +23376,7 @@
       "HIPAA",
       "PCI-DSS v4.0.1"
     ],
-    "certs_held_count": 5,
+    "certs_held_count": 7,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -23267,7 +23389,7 @@
     "product_family": "AI-driven digital marketing and lead-generation platform for real estate agents/teams: acquisition (Google/Facebook/Instagram ad campaigns), AI² conversational agents (AI Voice + AI Text follow-up and qualification), lead nurture, and CRM integration/websites.",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2"
     ],
@@ -23307,14 +23429,14 @@
     "product_family": "Ecommerce marketing platform for online retailers. Core products: Reviews & UGC (review collection/display, on-site galleries), Loyalty & Referrals (rewards, SMS/email retention), and Yotpo Discover (early-access 'AI Visibility' product that tracks/optimizes how brands appear in ChatGPT, Gemini and other AI answer engines). Also offers SMS & Email marketing and a first-party AI chat/shopping feature ('Ask Ben').",
     "maturity": "enterprise",
     "has_trust_center": true,
-    "last_verified": "2026-07-09",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "ISO/IEC 27001",
       "ISO/IEC 27701 (Privacy Information Management)",
       "ISO/IEC 27017:2015 (Cloud Security)",
       "ISO/IEC 27018:2019 (Cloud PII Protection)",
-      "CSA STAR (Level 1)",
+      "CSA STAR",
       "GDPR (compliance posture, not a certification)"
     ],
     "top_certs": [
@@ -23337,7 +23459,7 @@
     "product_family": "AI web search and research APIs (Search API, Contents API, Research API, Finance Research API) plus consumer/Team/Enterprise AI assistant at you.com",
     "maturity": "growth",
     "has_trust_center": true,
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-09-30",
     "certs_held": [
       "SOC 2 Type 2",
       "GDPR"
@@ -23422,7 +23544,6 @@
       "FedRAMP LI-SaaS",
       "Cyber Essentials Plus",
       "CSA STAR AI Levels 1 & 2",
-      "PCI-DSS",
       "HIPAA (BAA available)",
       "HDS (Health Data Hosting, France)",
       "CSA STAR (Cloud Security Alliance CAIQ)"
@@ -23434,7 +23555,7 @@
       "CSA STAR AI Levels 1 & 2",
       "FedRAMP LI-SaaS"
     ],
-    "certs_held_count": 13,
+    "certs_held_count": 12,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,
@@ -23518,15 +23639,13 @@
       "ISO 27701",
       "CSA STAR Level 2",
       "GDPR",
-      "HIPAA (via BAA)",
-      "PCI DSS",
+      "HIPAA",
       "FedRAMP Moderate",
       "UK Cyber Essentials Plus",
       "BSI C5 (Germany)",
       "iRAP (Australia)",
       "ISMAP (Japan)",
       "HDS (France)",
-      "DoD IL4",
       "CJIS"
     ],
     "top_certs": [
@@ -23536,7 +23655,7 @@
       "CSA STAR Level 2",
       "FedRAMP Moderate"
     ],
-    "certs_held_count": 18,
+    "certs_held_count": 16,
     "trains_on_customer_data": false,
     "self_hostable": false,
     "dpa": true,

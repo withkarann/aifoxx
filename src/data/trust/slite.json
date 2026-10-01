@@ -2,7 +2,7 @@
   "slug": "slite",
   "vendor": "Slite, Inc.",
   "product_family": "AI knowledge base (Slite), AI Agent, AI/Enterprise Search (Super), and Slite MCP server",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": true,
   "trust_center_url": "https://slite.slite.page/p/S1TSuHnZf/Security-at-Slite",
@@ -14,15 +14,15 @@
       "source": "https://slite.slite.page/p/S1TSuHnZf/Security-at-Slite"
     },
     {
-      "name": "HIPAA (Enterprise tier, with BAA)",
+      "name": "HIPAA",
       "held": true,
-      "proof_quote": "Slite complies with the Health Insurance Portability and Accountability Act (HIPAA) and supports customers in meeting their regulatory obligations when processing Protected Health Information (PHI). ... Slite provides HIPAA support, including execution of a Business Associate Agreement (BAA), for enterprise-tier customers.",
+      "proof_quote": "As a HIPAA-compliant service provider, Slite:",
       "source": "https://slite.slite.page/p/S1TSuHnZf/Security-at-Slite"
     },
     {
       "name": "GDPR (compliance posture, not a certification)",
-      "held": true,
-      "proof_quote": "Slite complies with the General Data Protection Regulation (GDPR) and implements the technical and organizational measures required to protect the personal data of individuals in the European Union. ... a comprehensive Data Processing Agreement (DPA) ... Standard Contractual Clauses (SCCs) for international data transfers ... a vetted and transparent list of sub-processors",
+      "held": false,
+      "proof_quote": "The vendor's pages state this for a different product or company, not for this product.",
       "source": "https://slite.slite.page/p/S1TSuHnZf/Security-at-Slite"
     },
     {

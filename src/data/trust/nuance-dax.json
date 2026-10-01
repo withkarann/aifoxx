@@ -16,7 +16,7 @@
     {
       "name": "HITRUST CSF",
       "held": true,
-      "proof_quote": "Azure meets HITRUST requirements. Specifically, the Microsoft Azure environment has been certified by the Health Information Trust Alliance (HITRUST) as meeting the HITRUST Common Security Framework (CSF), a set of industry-defined, risk-based and compliance-based security standards and controls tailored for the healthcare industry.",
+      "proof_quote": "Health Information Trust Alliance (HITRUST)",
       "source": "https://learn.microsoft.com/en-us/industry/healthcare/dragon-copilot/whitepapers/security"
     },
     {
@@ -72,6 +72,12 @@
       "held": true,
       "proof_quote": "Applications and associated environments have been built to support HIPAA, Personal Information Protection and Electronic Document Act (PIPEDA), GDPR, and GDPR-UK compliant standards.",
       "source": "https://learn.microsoft.com/en-us/industry/healthcare/dragon-copilot/about/faqs"
+    },
+    {
+      "name": "Cyber Essentials",
+      "held": true,
+      "proof_quote": "Hosting (HDS) – France Federal Act on Data Protection (revFADP) - Switzerland Cyber Essentials Plus - UK Nursing functionality is currently available only in the US. In the future, when the offering is expanded to",
+      "source": "https://learn.microsoft.com/en-us/industry/healthcare/dragon-copilot/whitepapers/security"
     }
   ],
   "privacy": {

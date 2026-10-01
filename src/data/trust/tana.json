@@ -2,44 +2,34 @@
   "slug": "tana",
   "vendor": "Tana Labs, Inc.",
   "product_family": "Tana (agentic meeting platform) and Tana Outliner (note-taking outliner). Operated by Tana Labs, Inc., a Delaware corporation headquartered at 470 Ramona Street, Palo Alto, CA 94301. Public-facing brand 'Tana Inc.' / tana.inc.",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": true,
   "trust_center_url": "https://trust.tana.inc/",
   "certifications": [
     {
       "name": "SOC 2 Type 2",
-      "held": false,
-      "proof_quote": "SOC2 Compliant * ... * In progress. ETA Q3 2026. (homepage). Trust center Resources list shows only 'Letter Of Intent - Audit SOC2 Type 2' and 'Engagement Letter - Vanta'; no completed report.",
-      "source": "https://tana.inc/",
-      "source_urls": [
-        "https://trust.tana.inc/"
-      ],
-      "source_note": ""
+      "held": true,
+      "proof_quote": "Opens in new tab Overview Resources Controls Subprocessors Updates Compliance SOC 2 Resources View all SOC 2 Type 2 Report (2026) Controls Updated about 1 hour ago View all Infrastructure security Unique",
+      "source": "https://trust.tana.inc/"
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "HIPAA Compliant * ... * In progress. ETA Q3 2026.",
-      "source": "https://tana.inc/",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://tana.inc/"
     },
     {
       "name": "GDPR",
       "held": false,
       "proof_quote": "GDPR Compliant (homepage badge, no asterisk). Privacy Policy: 'Tana is also committed to ensuring that the processing of your personal data is carried out in accordance with applicable data protection legislation' and cites GDPR legal bases (e.g. 'GDPR Art. 6(1)(f)'). GDPR is a self-attested regulatory posture, not a third-party-audited certification.",
-      "source": "https://tana.inc/privacy",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://tana.inc/privacy"
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "No mention of ISO 27001 found on homepage, trust center, privacy policy, or terms.",
-      "source": "https://trust.tana.inc/",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://trust.tana.inc/"
     }
   ],
   "privacy": {

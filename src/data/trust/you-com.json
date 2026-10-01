@@ -2,7 +2,7 @@
   "slug": "you-com",
   "vendor": "You.com (Su-Sea, Inc.)",
   "product_family": "AI web search and research APIs (Search API, Contents API, Research API, Finance Research API) plus consumer/Team/Enterprise AI assistant at you.com",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": true,
   "trust_center_url": "https://trust.you.com/",
@@ -10,14 +10,14 @@
     {
       "name": "SOC 2 Type 2",
       "held": true,
-      "proof_quote": "Compliance: SOC 2 ... Su-Sea SOC 2 TYPE 2 Report ... 2025 You.com - SOC2 Type 2 Audit Confirmation Letter.pdf",
-      "source": "https://trust.you.com/"
+      "proof_quote": "liance Policy (EN) Request accessGDPR Compliance Policy (EN) SuSea, Inc. - 2025 SOC 2 Type 2 Report.pdf Copy link for SuSea, Inc. - 2025 SOC 2 Type 2 Report.pdf Request accessSuSea, Inc. - 2025 SOC 2 Type",
+      "source": "https://trust.you.com/resources"
     },
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Compliance: SOC 2, GDPR ... Su-Sea, Inc. (dba you.com) complies with the EU-U.S. Data Privacy Framework.",
-      "source": "https://trust.you.com/"
+      "proof_quote": "OC 2 Type 2 Report.pdf Request accessSuSea, Inc. - 2025 SOC 2 Type 2 Report.pdf GDPR Incident Response Plan Copy link for GDPR Incident Response Plan Request accessGDPR Incident Response Plan Incident Res",
+      "source": "https://trust.you.com/resources"
     },
     {
       "name": "ISO 27001",

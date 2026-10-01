@@ -10,7 +10,7 @@
     {
       "name": "GDPR (posture, not a certification)",
       "held": true,
-      "proof_quote": "For users in the European Union, we process personal data in accordance with GDPR requirements. In addition to the rights already mentioned, you have: Right to restrict processing... Right to object... Right to withdraw consent... Right to lodge a complaint with a supervisory authority",
+      "proof_quote": "export your account data to a third party at any time upon your request. 8. GDPR Compliance For users in the European Union, we process personal data in accordance with GDPR requirements. In addition",
       "source": "https://uxpilot.ai/privacy"
     },
     {
@@ -21,9 +21,9 @@
     },
     {
       "name": "SOC 2",
-      "held": false,
-      "proof_quote": "No SOC 2 claim appears on UX Pilot's own site. Their /enterprise page only offers 'Security, SSO, and compliance answers' during a booked demo, with no certification language present. A third-party aggregator (Nudge Security) lists 'SOC 2 Compliant,' but this is not vendor-attested evidence, and the same aggregator lists seven conflicting certifications.",
-      "source": "https://security-profiles.nudgesecurity.com/app/uxpilot-ai"
+      "held": true,
+      "proof_quote": "SOC 2 TYPE 1 COMPLIANT, ENTERPRISE-READY",
+      "source": "https://uxpilot.ai/enterprise#soc2"
     },
     {
       "name": "ISO 27001",

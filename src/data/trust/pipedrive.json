@@ -22,14 +22,14 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "Trust Center lists 'SOC 2 Type 2' as an available compliance report; newsroom confirms 'Pipedrive has successfully renewed its SOC 2 Type II and SOC 3 Type II audits'",
-      "source": "https://trustcenter.pipedrive.com/"
+      "proof_quote": "Pipedrive Maintains the Highest Level of Data Security: Renewed ISO, SOC2 and SOC3 Certificates",
+      "source": "https://www.pipedrive.com/en/newsroom/pipedrive-maintains-the-highest-level-of-data-security-renewed-iso-soc2-and-soc3-certificates"
     },
     {
       "name": "SOC 3",
       "held": true,
-      "proof_quote": "Trust Center lists 'SOC 3' as a downloadable report; 'Pipedrive's ISO certifications and SOC 3 audit report are available in the company's Trust Center'",
-      "source": "https://trustcenter.pipedrive.com/"
+      "proof_quote": "Pipedrive Maintains the Highest Level of Data Security: Renewed ISO, SOC2 and SOC3 Certificates",
+      "source": "https://www.pipedrive.com/en/newsroom/pipedrive-maintains-the-highest-level-of-data-security-renewed-iso-soc2-and-soc3-certificates"
     },
     {
       "name": "EU-US Data Privacy Framework (incl. UK Extension)",
@@ -40,8 +40,8 @@
     {
       "name": "GDPR compliance posture",
       "held": true,
-      "proof_quote": "Trust Center lists 'GDPR'; homepage states 'DSGVO-konform und sicher' (GDPR-compliant and secure)",
-      "source": "https://trustcenter.pipedrive.com/"
+      "proof_quote": "ments Privacy and security FAQ How secure is my data in Pipedrive? Is Pipedrive GDPR compliant? Pipedrive and SOC? What security features does Pipedrive have? Sell more. Pay less. Try it free! Full access",
+      "source": "https://www.pipedrive.com/en/features/privacy-security"
     },
     {
       "name": "HIPAA",

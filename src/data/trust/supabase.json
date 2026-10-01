@@ -2,7 +2,7 @@
   "slug": "supabase",
   "vendor": "Supabase Inc",
   "product_family": "Postgres development platform (managed database, Auth, Storage, Edge Functions, Realtime, Vector) plus self-hostable open-source stack",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://trust.supabase.io/",
@@ -22,20 +22,20 @@
     {
       "name": "HIPAA",
       "held": true,
-      "proof_quote": "Supabase is HIPAA compliant. Protected Health Information storage requires a Business Associate Agreement and adherence to their shared responsibility model.",
+      "proof_quote": "erprise and Team customers can access our SOC 2 Type 2 report on the dashboard. HIPAA# Supabase is HIPAA compliant. You can store Protected Health Information (PHI) on our hosted platform once you enter in",
       "source": "https://supabase.com/security"
     },
     {
       "name": "PCI DSS",
-      "held": false,
-      "proof_quote": "Listed on the Supabase Trust Center certifications list (SOC 2 Type 2, ISO/IEC 27001:2022, HIPAA, PCI DSS, GDPR). On the security page PCI DSS is attributed to payment processor Stripe ('a certified PCI Service Provider Level 1'), so the certification covers payment handling via Stripe rather than a self-attested Supabase PCI certificate. Scope ambiguous.",
+      "held": true,
+      "proof_quote": "14T20:19:51.485900+00:00 Certifications SOC 2 Type 2 ISO/IEC 27001:2022 HIPAA PCI DSS GDPR Skip to main content Overview Controls Documents Supabase's Trust Center Supabase provides managed PostgreSQL",
       "source": "https://trust.supabase.io/"
     },
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Listed as 'GDPR' under Certifications on the Trust Center; a Data Processing Addendum is published at supabase.com/legal/dpa and Supabase 'processes such Customer Data on behalf of and under the instructions of the relevant customer, in accordance with their data processing addendum.'",
-      "source": "https://trust.supabase.io/"
+      "proof_quote": "prise and Team customers can access our ISO 27001 certificate on the dashboard. GDPR & European Compliance# Supabase supports GDPR-compliant deployments. Projects hosted in EU regions keep your primary da",
+      "source": "https://supabase.com/security"
     }
   ],
   "privacy": {

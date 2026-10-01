@@ -10,8 +10,8 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "SOC 2 Type II certified with an unqualified opinion covering controls around security, confidentiality, and privacy. Our SOC 2 Type II report is available by request on our Enterprise Plan.",
-      "source": "https://onesignal.com/privacy"
+      "proof_quote": "OneSignal 2025 SOC 2 Type II Final Report",
+      "source": "https://app.conveyor.com/profile/onesignal"
     },
     {
       "name": "ISO 27001",
@@ -22,8 +22,8 @@
     {
       "name": "ISO 27701",
       "held": true,
-      "proof_quote": "ISO 27701 extends ISO 27001 to include privacy information management...managing privacy controls to reduce the risk to privacy rights. Achieved March 19, 2025.",
-      "source": "https://onesignal.com/blog/onesignal-achieves-iso-27001-and-iso-27701-certifications/"
+      "proof_quote": "OneSignal Achieves ISO 27001 and ISO 27701 Certifications",
+      "source": "https://app.conveyor.com/profile/onesignal"
     },
     {
       "name": "HIPAA (BAA available)",
@@ -34,8 +34,8 @@
     {
       "name": "GDPR (compliance capability)",
       "held": true,
-      "proof_quote": "OneSignal provides the ability for all users to be GDPR compliant, however, you may need to modify your own privacy policy to be covered.",
-      "source": "https://onesignal.com/privacy"
+      "proof_quote": "Documents 14 Badges QUICK LINKS Website URL Report a Vulnerability Badges CCPA GDPR HECVAT HIPAA ISO 27001 ISO 27701 NIST 800-171 UK-US DPF Swiss-US DPF EU-US DPF SOC 2 Type II Cyber Essentials ICO",
+      "source": "https://app.conveyor.com/profile/onesignal"
     },
     {
       "name": "CCPA (compliance capability)",
@@ -48,6 +48,12 @@
       "held": true,
       "proof_quote": "Transfers to the US are permitted when OneSignal maintains active DPF certification, eliminating Restricted Transfer classification.",
       "source": "https://onesignal.com/dpa"
+    },
+    {
+      "name": "Cyber Essentials",
+      "held": true,
+      "proof_quote": "ISO 27001 ISO 27701 NIST 800-171 UK-US DPF Swiss-US DPF EU-US DPF SOC 2 Type II Cyber Essentials ICO Registered CSA Quick Summary One or more annual third-party audit(s) Has a formal mobile device management (MDM)",
+      "source": "https://app.conveyor.com/profile/onesignal"
     }
   ],
   "privacy": {

@@ -2,7 +2,7 @@
   "slug": "excalidraw",
   "vendor": "Excalidraw",
   "product_family": "Excalidraw (open-source whiteboard) + Excalidraw+ (paid collaborative workspace with AI)",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": true,
   "trust_center_url": "https://trust.excalidraw.com/",
@@ -10,13 +10,13 @@
     {
       "name": "SOC 2 Type 1",
       "held": true,
-      "proof_quote": "Passed SOC 2 Type I & Type II. We chose Insight Assurance for the audit process.",
-      "source": "https://plus.excalidraw.com/blog/excalidraw-soc2"
+      "proof_quote": "alidraw.com Privacy Policy Overview Resources Controls Subprocessors Compliance SOC 2 Type 1 SOC 2 Type 2 Resources View all Penetration tests [Excalidraw] Penetration testing certificate [2025] [Excalidra",
+      "source": "https://trust.excalidraw.com/"
     },
     {
       "name": "SOC 2 Type 2",
       "held": true,
-      "proof_quote": "SOC 2 Type 1 and SOC 2 Type 2 reports listed under Resources in trust center; both reports available for download under NDA.",
+      "proof_quote": "alidraw.com Privacy Policy Overview Resources Controls Subprocessors Compliance SOC 2 Type 1 SOC 2 Type 2 Resources View all Penetration tests [Excalidraw] Penetration testing certificate [2025] [Excalidra",
       "source": "https://trust.excalidraw.com/"
     },
     {
@@ -33,9 +33,9 @@
     },
     {
       "name": "GDPR (adequacy/SCCs)",
-      "held": false,
-      "proof_quote": "For transfers from EEA/UK, Excalidraw implements EU Standard Contractual Clauses (SCCs). Analytics uses GDPR-compliant SimpleAnalytics.",
-      "source": "https://plus.excalidraw.com/data-processing-agreement-dpa"
+      "held": true,
+      "proof_quote": "We prioritize privacy, using GDPR-compliant SimpleAnalytics for tracking and self-hosted Umami for in-app usage and tooling tracking.",
+      "source": "https://plus.excalidraw.com/security-and-compliance"
     },
     {
       "name": "PCI DSS",

@@ -2,7 +2,7 @@
   "slug": "grok",
   "vendor": "xAI Corp",
   "product_family": "Grok (Chat, Build, Imagine, Voice, Grokipedia), xAI API, Grok for Business/Enterprise, Grok for Government",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://trust.x.ai/",

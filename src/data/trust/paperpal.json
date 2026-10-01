@@ -16,14 +16,14 @@
     {
       "name": "ISO/IEC 42001:2023 (AI Management System)",
       "held": true,
-      "proof_quote": "Paperpal's Artificial Intelligence Management System (AIMS) is certified to the ISO/IEC 42001:2023 international standard. This certification applies across all CACTUS brands and solutions, including Paperpal.",
+      "proof_quote": "education records at institutions receiving US Department of Education funding. ISO/IEC 42001:2023 Certified Paperpal’s Artificial Intelligence Management System (AIMS) is certified to the ISO/IEC 42001:2023 inter",
       "source": "https://paperpal.com/data-security"
     },
     {
       "name": "CSA STAR Level 1",
       "held": true,
-      "proof_quote": "Paperpal is listed at Level 1 in the Cloud Security Alliance's Security, Trust, Assurance, and Risk (STAR) Registry",
-      "source": "https://paperpal.com/data-security"
+      "proof_quote": "SOC 2 & 3 Reports - AWS, Google Cloud, Azure Penetration Testing Certificate CSA STAR Level 1 HIPAA Compliance at CACTUS CACTUS is committed to providing a secure, compliance-ready platform for clients",
+      "source": "https://trust.paperpal.com/"
     },
     {
       "name": "Penetration Testing (VAPT)",
@@ -38,10 +38,10 @@
       "source": "https://trust.editage.com/"
     },
     {
-      "name": "HIPAA (conditional, BAA-gated)",
-      "held": false,
-      "proof_quote": "Use of the Services does not involve the collection, access, use, or processing of Protected Health Information (PHI) unless a duly executed Business Associate Addendum (BAA) is in place. ... CACTUS is committed to providing a secure, compliance-ready platform ... designed to support compliance with HIPAA, where required, subject to the execution of a formal Business Associate Addendum (BAA) process.",
-      "source": "https://trust.editage.com/"
+      "name": "HIPAA",
+      "held": true,
+      "proof_quote": "- AWS, Google Cloud, Azure Penetration Testing Certificate CSA STAR Level 1 HIPAA Compliance at CACTUS CACTUS is committed to providing a secure, compliance-ready platform for clients operating within",
+      "source": "https://trust.paperpal.com/"
     },
     {
       "name": "GDPR (regulatory posture, not a certification)",
