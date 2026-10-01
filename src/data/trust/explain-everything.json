@@ -33,8 +33,8 @@
     },
     {
       "name": "PCI DSS Level 1 (payment processor)",
-      "held": true,
-      "proof_quote": "Your payment details are safe with a validated Level 1 PCI DSS compliant service provider. [via Braintree payment processor — not a first-party Explain Everything certification]",
+      "held": false,
+      "proof_quote": "The vendor's pages state this for a different product or company, not for this product.",
       "source": "https://explaineverything.com/security/"
     },
     {

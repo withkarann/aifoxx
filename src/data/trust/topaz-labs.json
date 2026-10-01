@@ -2,15 +2,15 @@
   "slug": "topaz-labs",
   "vendor": "Topaz Labs LLC",
   "product_family": "AI photo and video enhancement (upscale, denoise, sharpen, restore, frame interpolation) across desktop apps, browser/cloud web apps, and an enterprise API",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": true,
   "trust_center_url": "https://trust.topazlabs.com/",
   "certifications": [
     {
       "name": "SOC 2",
-      "held": false,
-      "proof_quote": "SOC 2–compliant deployment and seamless SSO integration for secure authentication, centralized access control, and enterprise-ready governance.",
+      "held": true,
+      "proof_quote": "Satisfy strict security standards with SOC 2–compliant deployment and seamless SSO integration for secure authentication, centralized access control, and enterprise-ready governance.",
       "source": "https://www.topazlabs.com/enterprise"
     },
     {
@@ -20,10 +20,10 @@
       "source": "https://trust.topazlabs.com/"
     },
     {
-      "name": "GDPR posture",
-      "held": false,
-      "proof_quote": "Enterprise-grade infrastructure designed for secure, compliant deployment featuring SSO-enabled authentication and GDPR-compliant workflows. The EEA section of the privacy policy names Topaz as data controller and lists data-subject rights (access, erasure, restriction, objection).",
-      "source": "https://www.topazlabs.com/privacy-policy"
+      "name": "GDPR",
+      "held": true,
+      "proof_quote": "Enterprise-grade infrastructure designed for secure, compliant deployment featuring SSO-enabled authentication and GDPR-compliant workflows.",
+      "source": "https://www.topazlabs.com/enterprise"
     }
   ],
   "privacy": {

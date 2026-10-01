@@ -16,8 +16,8 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "Jotform is committed to upholding all five SOC 2 Trust Service Principles: security, confidentiality, availability, privacy, and processing integrity. We offer a SOC 2 compliance solution to our Enterprise customers. (A dedicated Jotform blog post, 'Announcing: SOC 2 Type II compliance for Jotform Enterprise,' confirms the attestation is scoped to Jotform Enterprise.)",
-      "source": "https://www.jotform.com/blog/announcing-soc-2-type-ii-compliance-for-jotform-enterprise/"
+      "proof_quote": "PCI Certification GDPR Compliance CCPA Compliance HIPAA-Enabled Forms StateRAMP SOC 2 Compliance FERPA Compliance General Legal Compliance Spam Protection Form Privacy HECVAT Form Encryption Privacy Settin",
+      "source": "https://www.jotform.com/security/"
     },
     {
       "name": "GDPR compliance",
@@ -33,9 +33,9 @@
     },
     {
       "name": "HIPAA (BAA available)",
-      "held": true,
-      "proof_quote": "With Jotform's HIPAA features, healthcare providers can collect patient information through forms that make HIPAA compliance easier. A Business Associate Agreement (BAA) is also available for our Enterprise customers.",
-      "source": "https://www.jotform.com/enterprise/security/"
+      "held": false,
+      "proof_quote": "The vendor's pages state this for a different product or company, not for this product.",
+      "source": "https://www.jotform.com/blog/announcing-soc-2-type-ii-compliance-for-jotform-enterprise/"
     },
     {
       "name": "FERPA compliance",

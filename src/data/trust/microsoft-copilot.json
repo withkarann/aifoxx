@@ -16,8 +16,8 @@
     {
       "name": "ISO/IEC 27001",
       "held": true,
-      "proof_quote": "Microsoft Copilot Studio is compliant with the ISO standards listed in the following table. ... ISO 27001:2013 ... Audit reports for each are available from the Microsoft Service Trust Portal.",
-      "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-certification"
+      "proof_quote": "Microsoft Commerce Experiences ISO 27001:2013 and ISO 27018:2019 Assessment Report",
+      "source": "https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports"
     },
     {
       "name": "ISO/IEC 27017 (cloud security controls)",
@@ -28,8 +28,8 @@
     {
       "name": "ISO/IEC 27018 (cloud privacy)",
       "held": true,
-      "proof_quote": "Microsoft Copilot Studio is compliant with the ISO standards listed in the following table. ... ISO 27018:2019 ... Audit reports for each are available from the Microsoft Service Trust Portal.",
-      "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-certification"
+      "proof_quote": "Microsoft Commerce Experiences ISO 27001:2013 and ISO 27018:2019 Assessment Report",
+      "source": "https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports"
     },
     {
       "name": "ISO/IEC 27701 (privacy information management)",
@@ -45,20 +45,20 @@
     },
     {
       "name": "HITRUST CSF",
-      "held": true,
-      "proof_quote": "Copilot Studio is designed with compliance at its core ... It is compliant with or covered by: ... Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)",
-      "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-certification"
+      "held": false,
+      "proof_quote": "The vendor's pages state this for a different product or company, not for this product.",
+      "source": "https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports"
     },
     {
       "name": "PCI DSS",
       "held": true,
-      "proof_quote": "Copilot Studio is designed with compliance at its core ... It is compliant with or covered by: ... Payment Card Industry (PCI) Data Security Standard (DSS)",
+      "proof_quote": "Compliance with PCI DSS is required for any organization that stores, processes, or transmits payment and card-holder data.",
       "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-certification"
     },
     {
       "name": "CSA STAR",
-      "held": true,
-      "proof_quote": "Microsoft Copilot Studio has been audited to be compliant with CSA STAR.",
+      "held": false,
+      "proof_quote": "The vendor's pages state this for a different product or company, not for this product.",
       "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-certification"
     },
     {

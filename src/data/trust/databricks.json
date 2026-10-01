@@ -16,31 +16,31 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "Databricks holds the following certifications: ISO 27001, ISO 27017, ISO 27018, and SOC 2 Type II. (SOC 2 Type II report available via the due diligence package)",
-      "source": "https://www.databricks.com/trust/trust"
+      "proof_quote": "For our SOC 2 Type II + HIPAA report, please ask your Databricks account team",
+      "source": "https://www.databricks.com/trust/compliance/hipaa"
     },
     {
       "name": "ISO/IEC 27017",
       "held": true,
-      "proof_quote": "Databricks holds the following certifications: ISO 27001, ISO 27017, ISO 27018, and SOC 2 Type II.",
+      "proof_quote": "We have offerings for PCI-DSS, HIPAA and FedRAMP compliance, and we are ISO 27001, ISO 27017, ISO 27018 and SOC 2 Type II compliant.",
       "source": "https://www.databricks.com/trust/trust"
     },
     {
       "name": "ISO/IEC 27018",
       "held": true,
-      "proof_quote": "Databricks holds the following certifications: ISO 27001, ISO 27017, ISO 27018, and SOC 2 Type II.",
+      "proof_quote": "We have offerings for PCI-DSS, HIPAA and FedRAMP compliance, and we are ISO 27001, ISO 27017, ISO 27018 and SOC 2 Type II compliant.",
       "source": "https://www.databricks.com/trust/trust"
     },
     {
       "name": "PCI DSS",
       "held": true,
-      "proof_quote": "The company also offers compliance options for PCI-DSS, HIPAA, and FedRAMP. (PCI DSS available as a deployment/compliance option, not blanket across all tiers)",
+      "proof_quote": "We have offerings for PCI-DSS, HIPAA and FedRAMP compliance, and we are ISO 27001, ISO 27017, ISO 27018 and SOC 2 Type II compliant.",
       "source": "https://www.databricks.com/trust/trust"
     },
     {
       "name": "HIPAA",
       "held": true,
-      "proof_quote": "The company also offers compliance options for PCI-DSS, HIPAA, and FedRAMP. (HIPAA compliance offered as a deployment option)",
+      "proof_quote": "For our SOC 2 Type II + HIPAA report, please ask your Databricks account team",
       "source": "https://www.databricks.com/trust/compliance/hipaa"
     },
     {

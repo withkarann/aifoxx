@@ -9,20 +9,20 @@
   "certifications": [
     {
       "name": "SOC 2 Type 2",
-      "held": true,
-      "proof_quote": "Compliance: SOC 2 ... Resources > Compliance: SOC 2 Type 2 Report",
-      "source": "https://trust.brave.app/"
+      "held": false,
+      "proof_quote": "The vendor's pages state this for a different product or company, not for this product.",
+      "source": "https://trust.brave.app/resources"
     },
     {
       "name": "GDPR",
-      "held": true,
-      "proof_quote": "Compliance: SOC 2, GDPR, PCI DSS - SAQ A",
+      "held": false,
+      "proof_quote": "The vendor's pages state this for a different product or company, not for this product.",
       "source": "https://trust.brave.app/"
     },
     {
       "name": "PCI DSS (SAQ A)",
-      "held": true,
-      "proof_quote": "Compliance: SOC 2, GDPR, PCI DSS - SAQ A",
+      "held": false,
+      "proof_quote": "The vendor's pages state this for a different product or company, not for this product.",
       "source": "https://trust.brave.app/"
     },
     {

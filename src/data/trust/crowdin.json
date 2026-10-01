@@ -2,7 +2,7 @@
   "slug": "crowdin",
   "vendor": "Crowdin",
   "product_family": "AI-powered localization and translation management platform",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": false,
   "trust_center_url": "https://crowdin.com/security",
@@ -11,41 +11,31 @@
       "name": "ISO/IEC 27001:2022",
       "held": true,
       "proof_quote": "Crowdin's Information Security Management System is certified under ISO/IEC 27001, ensuring strong protection and risk management for sensitive data.",
-      "source": "https://crowdin.com/security",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://crowdin.com/security"
     },
     {
       "name": "GDPR Compliance",
       "held": true,
       "proof_quote": "Crowdin complies with GDPR, protecting personal data of EU residents in line with European privacy standards.",
-      "source": "https://crowdin.com/security",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://crowdin.com/security"
     },
     {
-      "name": "HIPAA (BAA Available)",
+      "name": "HIPAA",
       "held": true,
       "proof_quote": "Customers that are subject to HIPAA and want to utilize Crowdin in connection with Protected Health Information (PHI) must sign Crowdin's Business Associate Agreement",
-      "source": "https://crowdin.com/security",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://crowdin.com/security"
     },
     {
       "name": "SOC 2 Type II",
       "held": false,
       "proof_quote": "",
-      "source": "",
-      "source_urls": [],
-      "source_note": "Not publicly documented on crowdin.com/security support.crowdin.com as of 2026-06-27"
+      "source": "Not publicly documented on crowdin.com/security or support.crowdin.com as of 2026-06-27"
     },
     {
       "name": "PCI DSS",
       "held": false,
       "proof_quote": "When you sign up for a paid Crowdin account, we do not store any of your billing information on our servers. All payments made to Crowdin are processed through our partner, FastSpring, which complies with the PCI Security Standard.",
-      "source": "https://crowdin.com/security",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://crowdin.com/security"
     }
   ],
   "privacy": {

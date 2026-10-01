@@ -11,73 +11,49 @@
       "name": "SOC 2 (Type I/II)",
       "held": false,
       "proof_quote": "No SOC 2 claim or report appears on any LOVO-owned page (lovo.ai homepage, privacy policy, terms of service, or the help/docs subdomains), and LOVO publishes no trust center or audit report. A 'SOC 2 Compliant' badge appears only on a third-party aggregator profile (Nudge Security), which is not vendor-published evidence and could not be independently corroborated.",
-      "source": "https://lovo.ai/privacy",
-      "source_urls": [
-        "https://security-profiles.nudgesecurity.com/app/lovo-ai"
-      ],
-      "source_note": "cross-checked against"
+      "source": "https://lovo.ai/privacy; cross-checked against https://security-profiles.nudgesecurity.com/app/lovo-ai"
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "Not mentioned anywhere on LOVO's own site, and no certificate or Statement of Applicability is published by the vendor. An 'ISO 27001 Compliant' badge appears only on the third-party Nudge Security aggregator, which is not vendor-published evidence and could not be independently corroborated.",
-      "source": "https://lovo.ai/privacy",
-      "source_urls": [
-        "https://security-profiles.nudgesecurity.com/app/lovo-ai"
-      ],
-      "source_note": "cross-checked against"
+      "source": "https://lovo.ai/privacy; cross-checked against https://security-profiles.nudgesecurity.com/app/lovo-ai"
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "Not referenced on any LOVO-owned page; this is a consumer voiceover/TTS product with no Business Associate Agreement (BAA) offering mentioned. A 'HIPAA Compliant' badge appears only on the third-party Nudge Security aggregator, with no vendor-domain evidence to corroborate it.",
-      "source": "https://lovo.ai/privacy",
-      "source_urls": [
-        "https://security-profiles.nudgesecurity.com/app/lovo-ai"
-      ],
-      "source_note": "cross-checked against"
+      "source": "https://lovo.ai/privacy; cross-checked against https://security-profiles.nudgesecurity.com/app/lovo-ai"
     },
     {
       "name": "PCI DSS",
       "held": false,
       "proof_quote": "LOVO takes card payments (ToS: 'your payment method will automatically be charged'), so cardholder data is handled, most likely by a third-party payment processor that carries its own PCI scope. LOVO publishes no PCI Attestation of Compliance and makes no PCI claim on its own domain. A 'PCI Compliant' badge appears only on the Nudge Security aggregator, which could not be independently corroborated.",
-      "source": "https://lovo.ai/tos",
-      "source_urls": [
-        "https://security-profiles.nudgesecurity.com/app/lovo-ai"
-      ],
-      "source_note": "cross-checked against"
+      "source": "https://lovo.ai/tos; cross-checked against https://security-profiles.nudgesecurity.com/app/lovo-ai"
     },
     {
       "name": "FedRAMP",
       "held": false,
       "proof_quote": "A 'FedRAMP Compliant' badge appears only on the third-party Nudge Security aggregator. FedRAMP is a US federal-government cloud authorization that is highly implausible for a consumer voice/TTS SaaS of this size, is not claimed anywhere on LOVO's own domain, and was not corroborated. Almost certainly aggregator noise.",
-      "source": "https://security-profiles.nudgesecurity.com/app/lovo-ai",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://security-profiles.nudgesecurity.com/app/lovo-ai"
     },
     {
       "name": "CSA STAR (Level 1)",
       "held": false,
       "proof_quote": "A 'CSA STAR Level 1 Compliant' badge appears only on the third-party Nudge Security aggregator. CSA STAR Level 1 is a self-assessment (CAIQ) submitted to the CSA STAR Registry; no such entry is referenced or linked from LOVO's own domain, and the claim could not be independently corroborated.",
-      "source": "https://security-profiles.nudgesecurity.com/app/lovo-ai",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://security-profiles.nudgesecurity.com/app/lovo-ai"
     },
     {
       "name": "GDPR / UK GDPR (compliance posture, not a certification)",
       "held": true,
       "proof_quote": "'The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases... Consent (legal basis: Art. 6 para. 1 p. 1 lit. a GDPR/UK-GDPR)... The data subject's consent is especially needed when processing voice samples within our Service.' The privacy policy also states a Data Protection Officer was appointed: 'For the protection of your data we appointed a data protection officer: Tom Lee'.",
-      "source": "https://lovo.ai/privacy",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://lovo.ai/privacy"
     },
     {
       "name": "CCPA / CPRA (California)",
       "held": true,
       "proof_quote": "'California Consumer Privacy Act (CCPA) Privacy Notice... California residents have the following privacy rights... The right to know what Personal Information we have collected... The right to request deletion of your Personal Information... We do not and will not sell your Personal Information.'",
-      "source": "https://lovo.ai/privacy",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://lovo.ai/privacy"
     }
   ],
   "privacy": {

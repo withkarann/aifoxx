@@ -10,45 +10,32 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "SOC 2 Type II certified — Independently audited security controls, not just a self-attestation. (Homepage Security & Compliance section). Trust Center lists certification 'SOC 2' and a document 'SOC 2 Type II — Request access'. Blog: 'our security measures include SOC2 Type II certification'.",
-      "source": "https://trust.qodo.ai/",
-      "source_urls": [
-        "https://www.qodo.ai/",
-        "https://www.qodo.ai/blog/qodo-security-our-commitment-to-data-privacy-and-security/"
-      ],
-      "source_note": "blog/qodo-security-our-commitment-to-data-privacy- -security/"
+      "proof_quote": "34:27.112711+00:00 Last updated 2026-06-17T10:36:29.592629+00:00 Certifications SOC 2 Skip to main content Overview Controls Documents Risk Profile Product Security Data Security App Security Data Privacy",
+      "source": "https://trust.qodo.ai/controls"
     },
     {
       "name": "Penetration Test (third-party report)",
       "held": true,
       "proof_quote": "Trust Center Documents section lists: 'PDF Penetration Test — Request access'. This confirms a pentest report exists and is shared under NDA, though it is not a certification.",
-      "source": "https://trust.qodo.ai/",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://trust.qodo.ai/"
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "No mention of ISO 27001 on the Qodo Trust Center, homepage, security blog, or privacy policy. Only SOC 2 is listed as a certification.",
-      "source": "https://trust.qodo.ai/",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://trust.qodo.ai/"
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "No HIPAA reference found on any Qodo-owned page reviewed (developer-tooling vendor; no healthcare data processing claimed).",
-      "source": "https://trust.qodo.ai/",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://trust.qodo.ai/"
     },
     {
       "name": "GDPR (regulatory posture, not a certification)",
       "held": false,
       "proof_quote": "Privacy Policy describes GDPR-style legal bases ('Processing is necessary for our legitimate interests...', 'Consent (with regards to marketing communications)') and data-subject rights (access, erasure, objection, restriction, portability). Vendor is EU-facing and Israel-based, but no formal GDPR/adequacy certification is asserted.",
-      "source": "https://www.qodo.ai/privacy-policy/",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.qodo.ai/privacy-policy/"
     }
   ],
   "privacy": {

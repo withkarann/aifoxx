@@ -2,7 +2,7 @@
   "slug": "textcortex",
   "vendor": "TextCortex AI (Text Cortex AI UG, Berlin, Germany)",
   "product_family": "Enterprise AI agent infrastructure: AI writing assistant, browser extension, no-code Visual Agent Builder, Model Hub, Knowledge Search/Knowledge Bases, Workflow Automation, and API",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://trust.textcortex.com/home",
@@ -10,26 +10,26 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "Certifications ... SOC 2 Type II · 1",
+      "proof_quote": "estowed in us. Search across Text Cortex AI’s security program 3 Certifications SOC 2 Type I · 1 Learn More Request Access SOC 2 Type II · 1 Learn More Request Access ISO 27001 · 1 Learn More Request Acces",
       "source": "https://trust.textcortex.com/home"
     },
     {
       "name": "SOC 2 Type I",
       "held": true,
-      "proof_quote": "Certifications ... SOC 2 Type I · 1",
+      "proof_quote": "estowed in us. Search across Text Cortex AI’s security program 3 Certifications SOC 2 Type I · 1 Learn More Request Access SOC 2 Type II · 1 Learn More Request Access ISO 27001 · 1 Learn More Request Acces",
       "source": "https://trust.textcortex.com/home"
     },
     {
       "name": "ISO 27001",
       "held": true,
-      "proof_quote": "Certifications ... ISO 27001 · 1",
-      "source": "https://trust.textcortex.com/home"
+      "proof_quote": "-> TextCortex — Search your company knowledge smarter with AI agents. SOC 2 & ISO 27001 Certified Company About Trust & Security Terms of Service Privacy Policy AI & Content Policy Refund Policy Imprint",
+      "source": "https://textcortex.com/post/how-we-handle-data-at-textcortex"
     },
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Built for European data sovereignty. GDPR-compliant, ISO and SOC2 certified ... Zero data training",
-      "source": "https://textcortex.com/"
+      "proof_quote": "gement Software? Will TextCortex use our data to train AI models? Is TextCortex GDPR-compliant? Which LLMs does TextCortex use? General Questions Deploy agents across your enterprise. Organize, deploy, an",
+      "source": "https://textcortex.com/post/how-we-handle-data-at-textcortex"
     },
     {
       "name": "HIPAA",

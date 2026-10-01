@@ -2,7 +2,7 @@
   "slug": "trint",
   "vendor": "Trint Limited",
   "product_family": "Trint AI transcription platform (transcription, live transcription, AI translation/summarization, collaboration, API/integrations)",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": true,
   "trust_center_url": "https://trint.com/security",
@@ -26,9 +26,15 @@
       "source": "https://trint.com/security"
     },
     {
-      "name": "PCI-DSS (payments, via processor)",
+      "name": "PCI DSS",
       "held": true,
       "proof_quote": "Transactions are processed through a PCI-DSS-certified third-party payment processor, Stripe, which uses high-level encryption to protect all payment details entered.",
+      "source": "https://trint.com/security"
+    },
+    {
+      "name": "GDPR",
+      "held": true,
+      "proof_quote": "Trint is fully GDPR compliant.",
       "source": "https://trint.com/security"
     }
   ],

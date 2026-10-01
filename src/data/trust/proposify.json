@@ -2,7 +2,7 @@
   "slug": "proposify",
   "vendor": "Proposify Inc.",
   "product_family": "Proposal, quoting, contract and e-signature software for sales teams",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": false,
   "trust_center_url": "https://www.proposify.com/platform/security",
@@ -10,19 +10,19 @@
     {
       "name": "SOC 2 Type 2",
       "held": true,
-      "proof_quote": "Proposify is SOC2 Type 2 certified to reflect our long-standing commitment to security. We have been audited against the AICPA Trust Services Criteria for Security, Availability, and Confidentiality. ... The certification effort was completed by the professional and independent third-party audit firm, 360 Advanced, Inc. We are happy to provide a report upon request.",
+      "proof_quote": "Policy, and Data Processing Addendum are reflective of our GDPR commitment. SOC2 Proposify is SOC2 Type 2 certified to reflect our long-standing commitment to security. We have been audited against",
       "source": "https://www.proposify.com/platform/security"
     },
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Proposify is committed to protecting our client's data and privacy. That is why we maintain our GDPR compliance and enable our customers to set their own compliance preferences as a controller. ... Our Terms of Use, Privacy Policy, and Data Processing Addendum are reflective of our GDPR commitment.",
+      "proof_quote": "ts, and 24/7 system monitoring to ensure we meet and exceed industry standards. GDPR Proposify is committed to protecting our client’s data and privacy. That is why we maintain our GDPR compliance and ena",
       "source": "https://www.proposify.com/platform/security"
     },
     {
       "name": "PCI-DSS (Service Provider Level 1, via Stripe)",
-      "held": true,
-      "proof_quote": "Proposify uses Stripe to process payments. Stripe has been audited by a PCI-certified auditor and is certified to PCI Service Provider Level 1. This is the most rigorous level of certification available in the industry.",
+      "held": false,
+      "proof_quote": "The vendor's pages state this for a different product or company, not for this product.",
       "source": "https://www.proposify.com/platform/security"
     },
     {

@@ -2,7 +2,7 @@
   "slug": "papercup",
   "vendor": "RWS Holdings plc (acquirer of Papercup's AI dubbing IP)",
   "product_family": "AI dubbing / voice synthesis technology, now part of the RWS enterprise localization stack (Language Weaver, Trados, TrainAI)",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://www.rws.com/legal/security/",
@@ -10,20 +10,26 @@
     {
       "name": "ISO 27001:2022",
       "held": true,
-      "proof_quote": "Our commitment to excellence has led us to achieve ISO 27001:2022 certification across many of our products, services, and supporting functions.",
-      "source": "https://www.rws.com/legal/security/"
+      "proof_quote": "archable and will continue to grow as our documentation expands. Certifications ISO/IEC 27001:2022 ISO/IEC 27001 SoA SOC 2 Type 2 Cyber Essentials Plus CMMC Certified EU-US DPF UK Extension to EU-US DPF Swiss-US D",
+      "source": "https://trust.rws.com/"
     },
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "RWS software hosted by RWS Cloud Operations is within the scope of their SOC 2 type II report. An executive summary of the SOC 2 report is available on request.",
-      "source": "https://www.rws.com/legal/security/"
+      "proof_quote": "our documentation expands. Certifications ISO/IEC 27001:2022 ISO/IEC 27001 SoA SOC 2 Type 2 Cyber Essentials Plus CMMC Certified EU-US DPF UK Extension to EU-US DPF Swiss-US DPF VPAT AI Governance AI",
+      "source": "https://trust.rws.com/"
     },
     {
       "name": "GDPR compliance",
       "held": false,
       "proof_quote": "We use the services of third parties both in and outside the EU that have signed data processing agreements to process your personal data.",
       "source": "https://www.rws.com/roles/legal-and-compliance/"
+    },
+    {
+      "name": "Cyber Essentials",
+      "held": true,
+      "proof_quote": "expands. Certifications ISO/IEC 27001:2022 ISO/IEC 27001 SoA SOC 2 Type 2 Cyber Essentials Plus CMMC Certified EU-US DPF UK Extension to EU-US DPF Swiss-US DPF VPAT AI Governance AI Policy & Risk Management AI",
+      "source": "https://trust.rws.com/"
     }
   ],
   "privacy": {

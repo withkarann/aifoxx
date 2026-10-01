@@ -2,7 +2,7 @@
   "slug": "cursor",
   "vendor": "Anysphere, Inc.",
   "product_family": "Cursor (AI coding agent / IDE, CLI, Cloud Agents, Slack/GitHub integrations, Cursor SDK)",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://trust.cursor.com/",
@@ -10,14 +10,14 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "Compliance: SOC 2 Type 2. Audit reports: Latest - SOC 2 Type 2 - Attestation Report. (Security page: \"A SOC 2 Type II attestation report is available on request at trust.cursor.com\")",
-      "source": "https://trust.cursor.com/"
+      "proof_quote": "Latest - SOC 2 Type 2 - Attestation Report",
+      "source": "https://trust.cursor.com/resources"
     },
     {
       "name": "ISO 27001",
-      "held": false,
-      "proof_quote": "No mention of ISO 27001 on the Cursor security page or Trust Center compliance list (only SOC 2 Type 2 is listed).",
-      "source": "https://cursor.com/security"
+      "held": true,
+      "proof_quote": "Certificate.pdf ISO42001 Certificate ViewCursor - ISO 42001 Certificate.pdf ISO 27001 Certificate.pdf Copy link for ISO 27001 Certificate.pdf ISO27001 Certificate covering SpaceXAI LLC , Anysphere inc and",
+      "source": "https://trust.cursor.com/resources"
     },
     {
       "name": "HIPAA",
@@ -27,9 +27,21 @@
     },
     {
       "name": "GDPR",
-      "held": false,
-      "proof_quote": "No explicit GDPR compliance statement surfaced on the security page; DPA/subprocessor disclosure exists in the Trust Center but a direct GDPR-compliance quote was not confirmed.",
-      "source": "https://trust.cursor.com/"
+      "held": true,
+      "proof_quote": "Compliant with the requirements of GDPR and CCPA.",
+      "source": "https://cursor.com/enterprise"
+    },
+    {
+      "name": "ISO 42001",
+      "held": true,
+      "proof_quote": "Cursor - ISO 42001 Certificate.",
+      "source": "https://trust.cursor.com/resources"
+    },
+    {
+      "name": "AIUC-1",
+      "held": true,
+      "proof_quote": "AIUC-1 Certificate for Cursor.",
+      "source": "https://trust.cursor.com/resources"
     }
   ],
   "privacy": {

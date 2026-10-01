@@ -2,7 +2,7 @@
   "slug": "lovable",
   "vendor": "Lovable (Lovable Labs)",
   "product_family": "AI app builder / vibe-coding platform (text-to-app, full-stack web app and website generation)",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": true,
   "trust_center_url": "https://trust.lovable.dev/",
@@ -10,8 +10,8 @@
     {
       "name": "SOC 2 Type I",
       "held": true,
-      "proof_quote": "SOC 2 Type 1 certification signed by Prescient Assurance verifies that our security controls are designed the right way to keep your data safe. ... Published June 10, 2026. (Trust Center also lists: 'SOC 2 Type I - 2026' and 'SOC 2 Bridge Letter')",
-      "source": "https://trust.lovable.dev/"
+      "proof_quote": "- Audit Report - 2026 Request accessAIUC-1 Certification - Audit Report - 2026 SOC 2 Type I - 2026 Copy link for SOC 2 Type I - 2026 Request accessSOC 2 Type I - 2026 SOC 2 Type II Copy link for SOC 2 Typ",
+      "source": "https://trust.lovable.dev/resources"
     },
     {
       "name": "SOC 2 Type II",
@@ -22,14 +22,20 @@
     {
       "name": "ISO 27001:2022",
       "held": true,
-      "proof_quote": "We've successfully renewed our ISO 27001 certification ... Published May 20, 2026. (Trust Center also lists 'ISO 27001:2022 - Certificate of Registration')",
-      "source": "https://trust.lovable.dev/"
+      "proof_quote": "ISO 27001:2022 - Certificate of Registration",
+      "source": "https://trust.lovable.dev/resources"
     },
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Trust Center Compliance section lists 'GDPR' alongside a published Privacy Policy, Data Processing Agreement, and Transfer Impact Assessment. Primary data region for customer applications/databases is EU (Google Cloud Platform - EU).",
+      "proof_quote": "Subprocessors FAQ Updates Compliance AIUC-1 SOC 2 Type I ISO 27001:2022 GDPR SOC 2 Type II Resources View all Certifications AIUC-1 Certification - Audit Report - 2026 SOC 2 Type I - 2026 SOC 2",
       "source": "https://trust.lovable.dev/"
+    },
+    {
+      "name": "AIUC-1",
+      "held": true,
+      "proof_quote": "AIUC-1 Certification - Audit Report - 2026",
+      "source": "https://trust.lovable.dev/resources"
     }
   ],
   "privacy": {

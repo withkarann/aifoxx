@@ -2,7 +2,7 @@
   "slug": "flux-by-black-forest-labs",
   "vendor": "Black Forest Labs, Inc.",
   "product_family": "FLUX generative image models (Playground, FLUX API, Open Weights / self-hosted, Enterprise)",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://trust.bfl.ai/",
@@ -10,19 +10,19 @@
     {
       "name": "ISO 27001:2022",
       "held": true,
-      "proof_quote": "Compliance: ISO 27001:2022 ... Certifications: Black Forest Labs ISO 27001:2022 Certificate",
+      "proof_quote": "Policy Opens in new tab Overview Resources Controls Subprocessors Compliance ISO 27001:2022 SOC 2 GDPR Resources View all Certifications Black Forest Labs ISO 27001:2022 Certificate Black Forest Labs Inc",
       "source": "https://trust.bfl.ai/"
     },
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "Compliance: SOC 2 ... Certifications: Black Forest Labs Inc Report SOC 2 Type 2 12.17.25.pdf (site footer also lists 'SOC 2 TYPE II')",
+      "proof_quote": "in new tab Overview Resources Controls Subprocessors Compliance ISO 27001:2022 SOC 2 GDPR Resources View all Certifications Black Forest Labs ISO 27001:2022 Certificate Black Forest Labs Inc Report SOC 2",
       "source": "https://trust.bfl.ai/"
     },
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Compliance: GDPR ... Resources: Black Forest Labs GDPR Compliance Audit Report.pdf",
+      "proof_quote": "tab Overview Resources Controls Subprocessors Compliance ISO 27001:2022 SOC 2 GDPR Resources View all Certifications Black Forest Labs ISO 27001:2022 Certificate Black Forest Labs Inc Report SOC 2 Type",
       "source": "https://trust.bfl.ai/"
     },
     {

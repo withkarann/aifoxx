@@ -2,7 +2,7 @@
   "slug": "soundraw",
   "vendor": "SOUNDRAW, Inc.",
   "product_family": "SOUNDRAW AI Music Generator (royalty-free AI music generation, browser-based mixer, stems/WAV export, plus API and enterprise/store-BGM offerings)",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": false,
   "trust_center_url": "",
@@ -34,7 +34,7 @@
     {
       "name": "GDPR compliance (self-declared, not a certification)",
       "held": true,
-      "proof_quote": "\"SOUNDRAW, Inc. ... will comply with the EU General Data Protection Regulation (GDPR) and other relevant laws and regulations in handling personal data (personal information) located in the EEA ... you have access to your personal information, right of correction, right of deletion, right to restrict processing, right of data portability, and right to object.\"",
+      "proof_quote": "(hereinafter referred to as the \"Company\") will comply with the EU General Data Protection Regulation (GDPR) and other relevant laws and regulations in handling personal data (personal information) located in the EEA (hereinafter referred to as the \"Regional Information Provider\") and use it appropriately in light of the cont",
       "source": "https://soundraw.io/gdpr_privacy"
     }
   ],

@@ -16,8 +16,8 @@
     {
       "name": "SOC 2 (Trust Center listing)",
       "held": true,
-      "proof_quote": "Compliance | SOC 2",
-      "source": "https://trust.warp.dev/"
+      "proof_quote": "Yes, Warp has obtained a SOC 2 Type 2 attestation from an accredited third party.",
+      "source": "https://www.warp.dev/legal/security"
     },
     {
       "name": "ISO 27001",

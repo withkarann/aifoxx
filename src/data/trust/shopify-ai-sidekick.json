@@ -2,7 +2,7 @@
   "slug": "shopify-ai-sidekick",
   "vendor": "Shopify Inc.",
   "product_family": "Shopify AI / Sidekick / Shopify Magic",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://www.shopify.com/security",
@@ -10,19 +10,19 @@
     {
       "name": "PCI DSS Level 1",
       "held": true,
-      "proof_quote": "We invested significant time and money to obtain our Level 1 PCI certification and that our certification covers your store, its shopping cart and web hosting. All Shopify stores using our platform are automatically PCI compliant by default.",
-      "source": "https://www.shopify.com/security/pci-compliant"
+      "proof_quote": "Shopify's ASV scan attestation for PCI DSS compliance.",
+      "source": "https://www.shopify.com/legal/compliance/reports"
     },
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "Shopify hat SOC 2 Typ II- und SOC 3-Berichte fur die Services erhalten, die es seinen Kunden bereitstellt. [Shopify has received SOC 2 Type II and SOC 3 reports for the services it provides to its customers.]",
-      "source": "https://www.shopify.com/security"
+      "proof_quote": "Shopify hat SOC 2 Typ II- und SOC 3-Berichte für die Services erhalten, die es seinen Kunden bereitstellt.",
+      "source": "https://www.shopify.com/de/security"
     },
     {
       "name": "SOC 3",
       "held": true,
-      "proof_quote": "SOC 3 Report (April 1, 2025 to March 31, 2026) - provides assurance over the organization's system and company-level controls. Publicly accessible.",
+      "proof_quote": "completes ASV scans quarterly. View Report  APRIL 1, 2025 - MARCH 31, 2026 SOC 3 Report This report provides assurance over the organization's system and company-level controls governing processes and",
       "source": "https://www.shopify.com/legal/compliance/reports"
     },
     {

@@ -2,7 +2,7 @@
   "slug": "headspace",
   "vendor": "Headspace Inc.",
   "product_family": "Mental Health and Mindfulness Platform",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://trust.headspace.com/",
@@ -10,13 +10,13 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "Certifications: Headspace SOC 2 Type II Report - 2025",
+      "proof_quote": "Headspace SOC 2 Type II Report - 2026",
       "source": "https://trust.headspace.com/"
     },
     {
       "name": "HITRUST",
       "held": true,
-      "proof_quote": "Certifications: Headspace HITRUST Certification - 2025; Headspace HITRUST Interim Letter - 2026",
+      "proof_quote": "Headspace HITRUST Certification - 2025",
       "source": "https://trust.headspace.com/"
     },
     {
@@ -28,14 +28,14 @@
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Compliance: SOC 2, HITRUST, HIPAA, GDPR, UK Cyber Essentials Plus",
+      "proof_quote": "our approach related to security and privacy. Compliance SOC 2 HITRUST HIPAA GDPR UK Cyber Essentials Pus Resources View all Reports Headspace Penetration Test Report - 2025 Headspace Pentest",
       "source": "https://trust.headspace.com/"
     },
     {
       "name": "UK Cyber Essentials Plus",
       "held": true,
-      "proof_quote": "Certifications: Headspace Cyber Essentials Plus - 2025",
-      "source": "https://trust.headspace.com/"
+      "proof_quote": "Headspace is officially certified in SOC2 Type II, HITRUST and UK Cyber Essentials Plus.",
+      "source": "https://www.headspace.com/enterprise-security"
     },
     {
       "name": "ISO 27001",

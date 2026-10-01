@@ -2,7 +2,7 @@
   "slug": "krisp",
   "vendor": "Krisp Technologies, Inc.",
   "product_family": "Voice AI platform: AI Meeting Assistant (noise cancellation, transcription, recording, AI notes), Call Center AI / Agent Assist, and Developer SDKs/APIs (Voice Isolation, Noise Cancellation, Voice Translation, Accent Conversion)",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://trust.krisp.ai/",
@@ -10,25 +10,25 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "Compliance: SOC 2 Type II ... Resources: 3rd Party Assessments and Certifications: SOC 2 Type 2 Report",
+      "proof_quote": "understanding of the measures we take to protect your data. Compliance SOC 2 Type II PCI-DSS 4.0 HIPAA GDPR Resources View all 3rd Party Assessments and Certifications SOC 2 Type 2 Report PCI-DSS",
       "source": "https://trust.krisp.ai/"
     },
     {
       "name": "PCI-DSS v4.0",
       "held": true,
-      "proof_quote": "Compliance: ... PCI-DSS 4.0 ... Resources: PCI-DSS V4.0.1 AOC",
+      "proof_quote": "Resources View all 3rd Party Assessments and Certifications SOC 2 Type 2 Report PCI-DSS V4.0.1 AOC HIPAA Compliance Executive Summary 3rd Party Penetration Test Reports Krisp Electron App & Dashboard Pentest",
       "source": "https://trust.krisp.ai/"
     },
     {
       "name": "HIPAA",
       "held": true,
-      "proof_quote": "Compliance: ... HIPAA ... Resources: HIPAA Compliance Executive Summary. Updates: The updated 2026 HIPAA Compliance Audit Report has been uploaded to Krisp's Trust Center.",
+      "proof_quote": "The updated 2026 HIPAA Compliance Audit Report has been uploaded to Krisp’s Trust Center (https://trust.",
       "source": "https://trust.krisp.ai/"
     },
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Compliance: ... GDPR. (Privacy Policy: 'Additional Information for Users in the EEA and the U.K.' details legal bases for processing; 2025 Data Processing Addendum (DPA) listed under Privacy and Confidentiality.)",
+      "proof_quote": "we take to protect your data. Compliance SOC 2 Type II PCI-DSS 4.0 HIPAA GDPR Resources View all 3rd Party Assessments and Certifications SOC 2 Type 2 Report PCI-DSS V4.0.1 AOC HIPAA Compliance",
       "source": "https://trust.krisp.ai/"
     },
     {

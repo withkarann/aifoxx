@@ -28,25 +28,25 @@
     {
       "name": "ISO 27001:2022",
       "held": true,
-      "proof_quote": "the ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, and ISO 27701:2019 certifications confirm that ClickUp meets the highest international standards for security, privacy, reliability, quality, and trust.",
+      "proof_quote": "ISO 27001:2022 is considered to be the highest international standard of information security as it relates to customer data.",
       "source": "https://clickup.com/security"
     },
     {
       "name": "ISO 27017:2015",
       "held": true,
-      "proof_quote": "the ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, and ISO 27701:2019 certifications confirm that ClickUp meets the highest international standards for security, privacy, reliability, quality, and trust.",
+      "proof_quote": "Following an extensive audit process the ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, and ISO 27701:2019 certifications confirm that ClickUp meets the highest international standards for security, privacy, reliability, quality, and trust.",
       "source": "https://clickup.com/security"
     },
     {
       "name": "ISO 27018:2019",
       "held": true,
-      "proof_quote": "the ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, and ISO 27701:2019 certifications confirm that ClickUp meets the highest international standards for security, privacy, reliability, quality, and trust.",
+      "proof_quote": "Following an extensive audit process the ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, and ISO 27701:2019 certifications confirm that ClickUp meets the highest international standards for security, privacy, reliability, quality, and trust.",
       "source": "https://clickup.com/security"
     },
     {
       "name": "ISO 27701:2019",
       "held": true,
-      "proof_quote": "the ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, and ISO 27701:2019 certifications confirm that ClickUp meets the highest international standards for security, privacy, reliability, quality, and trust.",
+      "proof_quote": "Following an extensive audit process the ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, and ISO 27701:2019 certifications confirm that ClickUp meets the highest international standards for security, privacy, reliability, quality, and trust.",
       "source": "https://clickup.com/security"
     },
     {
@@ -63,15 +63,15 @@
     },
     {
       "name": "HIPAA",
-      "held": false,
-      "proof_quote": "SOC 2 TYPE II / ISO 27001 / GDPR / HIPAA (compliance badges shown in the Enterprise-grade section and footer). HIPAA is a self-attested compliance posture, not a third-party certification; a signed BAA is typically required and should be confirmed with sales.",
-      "source": "https://clickup.com/"
+      "held": true,
+      "proof_quote": "Webinars Blog Research SOC 2 CERTIFIED ISO 27001 CERTIFIED GDPR COMPLIANT HIPAA COMPLIANT © 2026 ClickUp Status Security Privacy Terms Cookie Preferences",
+      "source": "https://clickup.com/security"
     },
     {
       "name": "GDPR",
       "held": true,
-      "proof_quote": "Under applicable data protection law (including GDPR), you have the following rights regarding your personal data: Right to Access... Right to Erasure... Right to Data Portability... You have the right to lodge a complaint with a supervisory authority.",
-      "source": "https://clickup.com/terms/privacy"
+      "proof_quote": "ClickUp University Webinars Blog Research SOC 2 CERTIFIED ISO 27001 CERTIFIED GDPR COMPLIANT HIPAA COMPLIANT © 2026 ClickUp Status Security Privacy Terms Cookie Preferences",
+      "source": "https://clickup.com/security"
     }
   ],
   "privacy": {

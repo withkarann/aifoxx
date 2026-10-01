@@ -2,7 +2,7 @@
   "slug": "aragon-ai",
   "vendor": "Aragon AI, Inc.",
   "product_family": "AI headshot and portrait generation (consumer + teams), AI photo editing tools",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "growth",
   "has_trust_center": true,
   "trust_center_url": "https://www.aragon.ai/security-policy",
@@ -10,36 +10,26 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "SOC 2 Type II compliant ... Unlike Type I (which evaluates controls at a single point in time), Type II involves a months-long audit. (Audited by Prescient Security via Vanta per Aragon's compliance blog: 'our partners at Vanta and Prescient Security for helping us achieve this milestone.')",
-      "source": "https://www.aragon.ai/security-policy",
-      "source_urls": [
-        "https://www.aragon.ai/blog/soc2-type-2-compliance"
-      ],
-      "source_note": ""
+      "proof_quote": "the data of our business customers and their end users. Effective: 1 March 2024 SOC 2 Type II OVERVIEW At Aragon, we take the protection of customer data extremely seriously. This Security Policy describes",
+      "source": "https://www.aragon.ai/security-policy"
     },
     {
       "name": "ISO 27001",
       "held": false,
       "proof_quote": "No ISO 27001 certification is claimed anywhere on the security policy or trust pages; only SOC 2 Type II is listed.",
-      "source": "https://www.aragon.ai/security-policy",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.aragon.ai/security-policy"
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "No HIPAA compliance is claimed; the service is a consumer/business headshot generator and does not advertise handling of PHI.",
-      "source": "https://www.aragon.ai/security-policy",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.aragon.ai/security-policy"
     },
     {
       "name": "GDPR",
       "held": false,
       "proof_quote": "Aragon honors GDPR data-subject rights ('You may request access to, rectification of, or erasure of your Personal Data ... request restriction of processing, object to processing, and request data portability.') but does not claim a formal GDPR certification (GDPR has no certification body); they reference a DPA and subprocessor list.",
-      "source": "https://www.aragon.ai/privacy",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.aragon.ai/privacy"
     }
   ],
   "privacy": {

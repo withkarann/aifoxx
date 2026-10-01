@@ -9,8 +9,8 @@
   "certifications": [
     {
       "name": "PCI DSS Level 1",
-      "held": true,
-      "proof_quote": "We have fully implemented and support all processes related to PCI DSS compliance. Once a year, we confirm our compliance by passing an independent QSA audit. As a result, we have achieved a PCI DSS Level 1 certificate.",
+      "held": false,
+      "proof_quote": "The vendor's pages state this for a different product or company, not for this product.",
       "source": "https://www.semrush.com/company/security/"
     },
     {

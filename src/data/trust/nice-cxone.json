@@ -10,122 +10,98 @@
     {
       "name": "SOC 2 Type II + HITRUST",
       "held": true,
-      "proof_quote": "NiCE demonstrates its commitment to compliance by maintaining industry-leading certifications for CXone and undergoing regular third-party audits including PCI-DSS, ISO 27001, SOC 2+ HITRUST, IRAP, FedRAMP, and more.",
-      "source": "https://www.nice.com/company/trust-center",
-      "source_urls": [],
-      "source_note": ""
+      "proof_quote": "et started\nLogin\nStatus\nSupport\nPartners\nPricing\nCareers\nNiCE Trust Center\nNiCE Compliance and Certifications\nCompliance and Certifications\nMeeting global standards, from industry-specific compliance to internationally recognized security and control frameworks.​\nFilters\nClear all\nCertificate type\nTerritorial relevance\nShowing 9 certifications\nISO 27701\nCertification type\nAttestation\nTerritorial r",
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "ISO 27001",
       "held": true,
-      "proof_quote": "ISO 27001 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "proof_quote": "Global ISO 27017 Certification type Certification Territorial relevance Global ISO 27001 Certification type Certification Territorial relevance Global Cyber Essentials Plus Certification type Certification Te",
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "ISO 27017",
       "held": true,
-      "proof_quote": "ISO 27017 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "proof_quote": "Global ISO 27018 Certification type Certification Territorial relevance Global ISO 27017 Certification type Certification Territorial relevance Global ISO 27001 Certification type Certification Territorial re",
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "ISO 27018",
       "held": true,
-      "proof_quote": "ISO 27018 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "proof_quote": "fications ISO 27701 Certification type Attestation Territorial relevance Global ISO 27018 Certification type Certification Territorial relevance Global ISO 27017 Certification type Certification Territorial re",
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "ISO 27701",
       "held": true,
-      "proof_quote": "ISO 27701 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "proof_quote": "lters Clear all Certificate type Territorial relevance Showing 9 certifications ISO 27701 Certification type Attestation Territorial relevance Global ISO 27018 Certification type Certification Territorial rele",
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "ISO 9001",
       "held": true,
       "proof_quote": "ISO 9001 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "FedRAMP Moderate",
       "held": true,
-      "proof_quote": "FedRAMP - Authorization, North America. Package ID: FR1704655535. Level: Moderate Impact Level.",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "proof_quote": "EA C5 Certification type Certification Territorial relevance EU Sovereign Cloud FedRAMP Certification type Authorization Territorial relevance North America IRAP Certification type Authorization Territorial",
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "PCI DSS",
       "held": true,
-      "proof_quote": "PCI DSS - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "proof_quote": "NiCE demonstrates its commitment to compliance by maintaining industry-leading certifications for CXone and undergoing regular third-party audits including PCI-DSS, ISO 27001, SOC 2+ HITRUST, IRAP, FedRAMP, and more.",
+      "source": "https://www.nice.com/company/trust-center"
     },
     {
       "name": "IRAP",
       "held": true,
       "proof_quote": "IRAP - Authorization, APAC",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "C5 (BSI Cloud Computing Compliance Criteria Catalogue)",
       "held": true,
       "proof_quote": "C5 - Certification, EU Sovereign Cloud",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "Cyber Essentials Plus",
       "held": true,
-      "proof_quote": "Cyber Essentials Plus - Certification, EMEA",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "proof_quote": "Global ISO 27001 Certification type Certification Territorial relevance Global Cyber Essentials Plus Certification type Certification Territorial relevance EMEA C5 Certification type Certification Territorial releva",
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "HIPAA",
       "held": false,
       "proof_quote": "HIPAA - Law, North America (listed as a compliance framework; no specific BAA or HIPAA attestation type confirmed on public-facing pages)",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "EU-US Data Privacy Framework (DPF)",
       "held": true,
       "proof_quote": "NICE Systems, Inc., Mattersight Corporation, Nexidia Inc., Actimize Inc., Arcaris Inc., NICE Systems Technologies Inc. adhere to the EU-U.S. Data Privacy Framework Principles",
-      "source": "https://www.nice.com/company/legal/privacy-policy",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.nice.com/company/legal/privacy-policy"
     },
     {
       "name": "WCAG 2.2",
       "held": true,
       "proof_quote": "WCAG 2.2 - Certification, Global",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     },
     {
       "name": "Sarbanes-Oxley (SOX)",
       "held": true,
       "proof_quote": "Sarbanes-Oxley - Certification, North America",
-      "source": "https://www.nice.com/company/trust-center/compliance-certifications",
-      "source_urls": [],
-      "source_note": ""
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
+    },
+    {
+      "name": "HITRUST",
+      "held": true,
+      "proof_quote": "merica IRAP Certification type Authorization Territorial relevance APAC SOC 2 + HITRUST Certification type Attestation Territorial relevance Global Ready to experience the power of one platform? Let us show",
+      "source": "https://www.nice.com/company/trust-center/compliance-certifications"
     }
   ],
   "privacy": {

@@ -2,7 +2,7 @@
   "slug": "jetbrains-ai-assistant",
   "vendor": "JetBrains s.r.o.",
   "product_family": "JetBrains AI (AI Assistant, Junie, AI Enterprise, Mellum, Koog)",
-  "last_verified": "2026-06-27",
+  "last_verified": "2026-09-30",
   "maturity": "enterprise",
   "has_trust_center": true,
   "trust_center_url": "https://trust-center.jetbrains.com/",
@@ -10,8 +10,8 @@
     {
       "name": "SOC 2 Type II",
       "held": true,
-      "proof_quote": "A SOC 2 Type II report evaluates the design and suitability of these controls. The SOC2 report, along with other supporting documents, such as penetration testing reports, are available at our Trust Center.",
-      "source": "https://blog.jetbrains.com/security/2024/02/jetbrains-has-received-its-soc2-audit-report/"
+      "proof_quote": "all SOC2 SOC2 Bridge Letter 2026.pdf JetBrains SOC 2 Scoping Letter 2026.pdf SOC2 Type II SOC2 Type II Junie View 1 more Penetration Testing Reports Datalore JetBrains AI JetBrains IDEs JetBrains .NET",
+      "source": "https://trust-center.jetbrains.com/"
     },
     {
       "name": "ISO/IEC 27001",
@@ -22,7 +22,7 @@
     {
       "name": "GDPR (DPA + SCCs)",
       "held": true,
-      "proof_quote": "JetBrains has prepared a Data Processing Addendum that includes Standard contractual clauses for the transfer of personal data to third countries to ensure GDPR compliance.",
+      "proof_quote": "the Standard contractual clauses for the transfer of personal data to third countries, has been prepared for JetBrains customers to ensure that JetBrains will process their personal data in a manner compliant with the General Data Protection Regulation, or GDPR in short.",
       "source": "https://www.jetbrains.com/legal/dpa/"
     },
     {
