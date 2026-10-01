@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.10](https://github.com/withkarann/aifoxx/compare/v1.2.9...v1.2.10) (2026-10-01)
+
+
+### Bug Fixes
+
+* **deps:** update brace-expansion to 5.0.12 ([#379](https://github.com/withkarann/aifoxx/issues/379)) ([8cf0ee6](https://github.com/withkarann/aifoxx/commit/8cf0ee602de0f038a6291cd204615deaff4d7ee8))
+* refresh vendor certifications on trust reports ([#377](https://github.com/withkarann/aifoxx/issues/377)) ([1d56fa9](https://github.com/withkarann/aifoxx/commit/1d56fa9a9b03728be1879f149b2d53d7d82d3430))
+
 ## [1.2.9](https://github.com/withkarann/aifoxx/compare/v1.2.8...v1.2.9) (2026-09-22)
 
 
