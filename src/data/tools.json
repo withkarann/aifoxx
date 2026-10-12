@@ -52667,5 +52667,58 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "Instinct AI",
+    "slug": "instinct-ai",
+    "category": "Video",
+    "subcategory": "Video Generation",
+    "description": "Instinct AI is an all-in-one creative suite for generating videos, images, character animations, voiceovers, music, and transparent PNG assets.",
+    "url": "https://instinctai.org/",
+    "tags": [
+      "text-to-video",
+      "text-to-image",
+      "image-to-video",
+      "AI music",
+      "AI voice"
+    ],
+    "pricing": "Paid",
+    "featured": false,
+    "popular": false,
+    "status": "active",
+    "last_verified": "2026-10-13",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": null
+    },
+    "pricing_detail": {
+      "free_tier": null,
+      "paid_plans": "Starting at $9.99/month",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Generating videos from text, images, or reference media",
+      "Creating images and character animations",
+      "Generating voiceovers and music",
+      "Creating transparent PNG assets"
+    ],
+    "not_good_for": [],
+    "industries": [
+      "Creative",
+      "Marketing",
+      "E-commerce",
+      "Agencies"
+    ]
   }
 ]
