@@ -22,7 +22,41 @@
     "access_methods": [
       "Web App",
       "iOS App",
-      "Android App",
+      "Android App",,
+
+  {
+    "id": "1027",
+    "name": "Project Moon Life",
+    "slug": "project-moon-life",
+    "category": "Content Creation",
+    "subcategory": "Storytelling",
+    "description": "Free browser-based urban life simulator with AI storytelling. Explore the Nest, Backstreets, or Outskirts through choices that shape careers, relationships, and endings.",
+    "url": "https://projectmoonlife.com",
+    "tags": [
+      "life simulation",
+      "interactive fiction",
+      "ai storytelling",
+      "browser game"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-10-18",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": false,
+      "self_hostable": null
+    }
+  }
       "API",
       "Desktop App"
     ],
@@ -52667,5 +52701,39 @@
     "industries": [
       "Software"
     ]
+  },
+
+  {
+    "id": "1027",
+    "name": "Project Moon Life",
+    "slug": "project-moon-life",
+    "category": "Content Creation",
+    "subcategory": "Storytelling",
+    "description": "Free browser-based urban life simulator with AI storytelling. Explore the Nest, Backstreets, or Outskirts through choices that shape careers, relationships, and endings.",
+    "url": "https://projectmoonlife.com",
+    "tags": [
+      "life simulation",
+      "interactive fiction",
+      "ai storytelling",
+      "browser game"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-10-18",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": false,
+      "self_hostable": null
+    }
   }
 ]
