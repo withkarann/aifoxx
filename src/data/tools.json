@@ -52667,5 +52667,58 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-10-17",
+    "access_methods": [
+      "Web App",
+      "CLI",
+      "Desktop App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": null
+    },
+    "id": "1027",
+    "name": "Aident Loadout",
+    "slug": "aident-loadout",
+    "category": "Agentic & Automation",
+    "subcategory": "Integration Platform",
+    "description": "Aident Loadout is a hosted MCP server and CLI that lets AI agents such as Claude Code, Codex, Cursor and ChatGPT use your connected apps and 400+ expert-built Skills through one setup, with credentials kept in a vault, a cost check before an action runs and an audit log of what ran.",
+    "url": "https://aident.ai",
+    "tags": [
+      "mcp server",
+      "ai agents",
+      "integrations",
+      "agent skills",
+      "audit log"
+    ],
+    "pricing": "Freemium",
+    "pricing_detail": {
+      "free_tier": "Pay-as-you-go plan at $0 a month, paying only for usage from a USD balance; actions that use your own OAuth account or API key can cost nothing on Aident's side",
+      "paid_plans": "Pro is $9.90 a month with a $5 monthly usage allowance, Team is $59 a month with a $30 monthly allowance and a shared team balance, and one-time Credit Boosts start at $10",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Connecting apps once and reusing them across several coding agents and chat clients",
+      "Giving an agent API access without handing the model raw credentials",
+      "Checking what an agent action will cost before it runs and reviewing what ran afterwards"
+    ],
+    "not_good_for": [
+      "Teams that need a self-hosted gateway, Loadout runs as a hosted service",
+      "Fully offline work, actions run through Aident's cloud"
+    ],
+    "industries": [
+      "Software"
+    ]
   }
 ]
