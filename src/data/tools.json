@@ -52667,5 +52667,53 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "Meme Video Maker",
+    "slug": "meme-video-maker",
+    "category": "Video",
+    "subcategory": "Video Generation",
+    "description": "Create short AI meme and trend videos from a photo, prompt, or template, with scene requirements, model settings, and estimated credit costs shown before generation.",
+    "url": "https://memevideomaker.com/",
+    "tags": [
+      "ai video",
+      "meme videos",
+      "photo to video",
+      "video templates",
+      "trend remakes"
+    ],
+    "pricing": "Paid",
+    "logo_url": "https://memevideomaker.com/apple-touch-icon.png",
+    "status": "active",
+    "last_verified": "2026-10-21",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": null
+    },
+    "pricing_detail": {
+      "free_tier": null,
+      "paid_plans": "Lite, Pro, and Ultra subscriptions; Lite starts at $149.99/year when billed yearly. One-time credit packs are also available.",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Creating short AI meme videos from photos or prompts",
+      "Adapting trend templates into short clips",
+      "Reviewing generated clips before sharing"
+    ],
+    "not_good_for": [
+      "Work that requires identical motion, timing, faces, or details across generations"
+    ],
+    "industries": []
   }
 ]
