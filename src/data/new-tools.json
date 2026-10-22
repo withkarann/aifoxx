@@ -1,5 +1,17 @@
 [
   {
+    "id": "launch-hn-50176908",
+    "title": "Alter (YC S25) – Access control for multi-user agents",
+    "url": "https://alterauth.com/",
+    "domain": "alterauth.com",
+    "source": "launch-hn",
+    "category": "new-tool",
+    "points": 58,
+    "date": "2026-10-21T06:42:12.000Z",
+    "age": "23h ago",
+    "score": 0
+  },
+  {
     "id": "launch-hn-49911995",
     "title": "Magnitude (YC S25) – Self-optimizing inference engine for agents",
     "url": "https://github.com/magnitudedev/magnitude",
@@ -8,7 +20,7 @@
     "category": "new-tool",
     "points": 194,
     "date": "2026-09-30T17:37:40.000Z",
-    "age": "20d ago",
+    "age": "21d ago",
     "score": 0
   },
   {
@@ -20,7 +32,7 @@
     "category": "new-tool",
     "points": 38,
     "date": "2026-09-28T17:34:36.000Z",
-    "age": "22d ago",
+    "age": "23d ago",
     "score": 0
   },
   {
@@ -32,7 +44,7 @@
     "category": "new-tool",
     "points": 54,
     "date": "2026-09-22T17:26:36.000Z",
-    "age": "28d ago",
+    "age": "29d ago",
     "score": 2
   }
 ]
