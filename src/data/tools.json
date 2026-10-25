@@ -52667,5 +52667,6 @@
     "industries": [
       "Software"
     ]
-  }
+  },
+  {"id":"1027","name":"ACE-Step","slug":"ace-step","category":"Audio & Music","subcategory":"Music Generation","description":"ACE-Step is an open-source foundation model for music generation that turns text prompts into complete, high-quality tracks with state-of-the-art performance.","url":"https://ace-step.club","tags":["music generation","open source","text-to-audio","foundation model","ai music"],"pricing":"Open Source","featured":false,"popular":false,"status":"active","last_verified":"2026-10-25","access_methods":["Web App"],"compliance":{"soc2":null,"iso27001":null,"gdpr":null,"hipaa":null},"data_storage":{"region":null,"trains_on_data":null,"self_hostable":true},"pricing_detail":{"free_tier":"Free and open source (Apache-2.0); self-host from the GitHub repo or use the web demo","paid_plans":null,"api_cost":null},"use_cases":["Generating original music tracks from text prompts","Prototyping song ideas and melodies quickly","Producing background music for videos and games","Exploring style-controlled music generation","Fine-tuning music generation on custom datasets"],"not_good_for":[],"industries":[],"compliance_sources":{}}
 ]
