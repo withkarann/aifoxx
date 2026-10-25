@@ -52667,5 +52667,44 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "DotCurio",
+    "slug": "dotcurio",
+    "category": "Productivity",
+    "subcategory": "Knowledge Management",
+    "description": "A high-signal directory for AI and creative products. Submit your product, compare alternatives, and make faster decisions.",
+    "url": "https://dotcurio.com",
+    "tags": [
+      "ai directory",
+      "product discovery",
+      "tool comparison",
+      "creative tools",
+      "curated directory"
+    ],
+    "pricing": "Free",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-10-25",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": null
+    },
+    "pricing_detail": {
+      "free_tier": "Free to browse; product submission is free.",
+      "paid_plans": null,
+      "api_cost": null
+    }
   }
 ]
