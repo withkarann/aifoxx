@@ -52667,5 +52667,20 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "name": "Quady3D AI",
+    "slug": "quady3d-ai",
+    "category": "Design",
+    "subcategory": "3D Generation",
+    "description": "Quady3D AI turns reference images into downloadable 3D models that users can preview and inspect in a browser workspace.",
+    "url": "https://quady3d.com/image-to-3d",
+    "tags": [
+      "image to 3d",
+      "3d model generation",
+      "game assets",
+      "3d design"
+    ],
+    "pricing": "Freemium"
   }
 ]
