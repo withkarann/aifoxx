@@ -52667,21 +52667,29 @@
     "industries": [
       "Software"
     ]
-  }
-,
+  },
   {
     "id": "1027",
-    "name": "Get Face Report",
-    "slug": "get-face-report",
-    "category": "Healthcare",
-    "subcategory": "Health Monitoring",
-    "description": "Free on-device face scan that analyses facial proportions and symmetry, then builds a personal plan to explore your style and improve your facial geometry.",
-    "url": "https://getfacereport.com",
-    "tags": ["face analysis", "facial symmetry", "face shape", "face scan"],
-    "pricing": "Free",
-    "logo_url": "https://getfacereport.com/apple-touch-icon.png",
-    "featured": false,
+    "name": "WayPointo",
+    "slug": "waypointo",
+    "category": "Productivity",
+    "subcategory": "Knowledge Management",
+    "description": "A high-signal directory for AI and creative products. Submit your product, compare alternatives, and make faster decisions.",
+    "url": "https://waypointo.com",
+    "tags": [
+      "AI products",
+      "creative tools",
+      "product discovery",
+      "tool comparison"
+    ],
+    "pricing": "Freemium",
+    "logo_url": "https://waypointo.com/favicon.ico",
     "status": "active",
-    "last_verified": "2026-11-03"
+    "last_verified": "2026-11-04",
+    "pricing_detail": {
+      "free_tier": "Free listing tier with standard review (typically 1-2 months), nofollow link, basic directory listing",
+      "paid_plans": "Optional one-time promotion plans: Fast Pass $29.9, Featured $39.9, Spotlight $49.9 with direct publication, dofollow links and better placement",
+      "api_cost": null
+    }
   }
 ]
