@@ -52667,5 +52667,20 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1028",
+    "name": "HackerTube",
+    "slug": "hackertube",
+    "category": "Video",
+    "subcategory": "Video Discovery",
+    "description": "Video discovery site that surfaces the videos recommended by Hacker News, with a fresh daily mix, topic browsing, watch later lists, and a watched history.",
+    "url": "https://hackertubes.com/",
+    "tags": ["hacker news", "video discovery", "tech talks", "daily mix", "watch later"],
+    "pricing": "Free",
+    "logo_url": "https://hackertubes.com/favicon.ico",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-11-06"
   }
 ]
