@@ -52667,5 +52667,23 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "Huobidex",
+    "slug": "huobidex",
+    "category": "Productivity",
+    "subcategory": "Knowledge Management",
+    "description": "A handpicked hub for the tools and products worth your time — searched, sorted, and ranked so you stop scrolling and start choosing.",
+    "url": "https://huobidex.com",
+    "tags": [
+      "tools directory",
+      "products directory",
+      "software discovery",
+      "tool comparison"
+    ],
+    "pricing": "Free",
+    "status": "active",
+    "last_verified": "2026-11-01"
   }
 ]
