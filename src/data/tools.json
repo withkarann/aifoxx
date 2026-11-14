@@ -52667,5 +52667,39 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "01Router",
+    "slug": "01router",
+    "category": "Video",
+    "subcategory": "Video Generation",
+    "description": "Access leading AI video and image models with one 01Router API key, plus text and audio. Choose models and providers to match your budget and quality needs.",
+    "url": "https://01router.com/",
+    "tags": [
+      "AI video generator",
+      "AI image generator",
+      "text to video",
+      "text to image",
+      "AI music"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-11-05",
+    "access_methods": [
+      "Web App",
+      "API"
+    ],
+    "pricing_detail": {
+      "paid_plans": "$10 for 1,000 credits"
+    },
+    "use_cases": [
+      "Generating AI videos and images in the web studio",
+      "Integrating leading video and image models into a product through APIs",
+      "Choosing AI models and providers to match budget and quality needs"
+    ],
+    "not_good_for": [],
+    "industries": []
   }
 ]
