@@ -52668,4 +52668,40 @@
       "Software"
     ]
   }
+,
+  {
+    "id": "1027",
+    "name": "Get Face Report",
+    "slug": "get-face-report",
+    "category": "Healthcare",
+    "subcategory": "Health Monitoring",
+    "description": "Free on-device face scan that analyses facial proportions and symmetry, then builds a personal plan to explore your style and improve your facial geometry.",
+    "url": "https://getfacereport.com",
+    "tags": ["face analysis", "facial symmetry", "face shape", "face scan"],
+    "pricing": "Free",
+    "logo_url": "https://getfacereport.com/apple-touch-icon.png",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-11-03"
+  }
+,
+  {
+    "id": 1027,
+    "name": "Magic Layers",
+    "slug": "magic-layers",
+    "category": "Image Generation",
+    "subcategory": "Image Editing",
+    "description": "Upload one flat image and get every element back as a separate transparent layer, each with a name and its position in the original. Export individual PNGs or a layered PSD.",
+    "url": "https://magiclayers.net/",
+    "tags": [
+      "image to layers",
+      "separate image layers",
+      "AI layer decomposition",
+      "editable image layers",
+      "psd export"
+    ],
+    "pricing": "Usage Based",
+    "featured": false,
+    "status": "active"
+  }
 ]
