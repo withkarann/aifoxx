@@ -52667,5 +52667,26 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "CurateClick",
+    "slug": "curateclick",
+    "category": "Coding",
+    "subcategory": "Developer Tools Directory",
+    "description": "Discover and share the best developer tools and products. A curated collection of amazing resources for developers.",
+    "url": "https://curateclick.com/",
+    "tags": [
+      "developer tools",
+      "product discovery",
+      "curation",
+      "software",
+      "tools"
+    ],
+    "pricing": "Free",
+    "featured": false,
+    "popular": false,
+    "status": "active",
+    "last_verified": "2026-11-01"
   }
 ]
