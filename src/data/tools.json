@@ -52668,4 +52668,20 @@
       "Software"
     ]
   }
+,
+  {
+    "id": "1028",
+    "name": "Face Rater",
+    "slug": "face-rater",
+    "category": "Healthcare",
+    "subcategory": "Health Monitoring",
+    "description": "AI face rater that scores your photo with detailed face analysis, visual feedback and styling tips. Choose from 9 report styles; your first report is free.",
+    "url": "https://facerater.net",
+    "tags": ["face rater", "face analysis", "face rating", "AI face analysis", "styling tips"],
+    "pricing": "Freemium",
+    "logo_url": "https://facerater.net/logo.svg",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-11-03"
+  }
 ]
