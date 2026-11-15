@@ -52667,5 +52667,44 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "Datacircle",
+    "slug": "datacircle",
+    "category": "Sales & CRM",
+    "subcategory": "Sales Intelligence",
+    "description": "Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website.",
+    "url": "https://datacircle.dev",
+    "tags": [
+      "gtm apis",
+      "api benchmark",
+      "rest api",
+      "openapi",
+      "sales data"
+    ],
+    "pricing": "Free",
+    "status": "active",
+    "featured": false,
+    "access_methods": [
+      "Web App",
+      "API"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": null
+    },
+    "pricing_detail": {
+      "free_tier": "Open API at https://api.datacircle.dev/v1 with no key",
+      "paid_plans": null,
+      "api_cost": null
+    }
   }
 ]
