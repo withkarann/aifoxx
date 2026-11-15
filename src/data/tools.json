@@ -52667,5 +52667,30 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "Songluna AI",
+    "slug": "songluna-ai",
+    "category": "Audio & Music",
+    "subcategory": "Music Generation",
+    "description": "Songluna AI turns ideas or lyrics into complete songs with vocals, then continues into covers, remixing, song extension, stem splitting, MIDI tools, audio analysis and multitrack editing.",
+    "url": "https://songluna.com",
+    "tags": [
+      "ai music",
+      "song generation",
+      "vocals",
+      "stem splitting",
+      "music editing"
+    ],
+    "pricing": "Freemium",
+    "logo_url": "https://songluna.com/android-chrome-512x512.png",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-11-16",
+    "access_methods": [
+      "Web App",
+      "API"
+    ]
   }
 ]
