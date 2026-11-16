@@ -52668,4 +52668,32 @@
       "Software"
     ]
   }
+  },
+  {
+    "id": "1027",
+    "name": "Face Swap AI",
+    "slug": "face-swap-ai",
+    "category": "Image Generation",
+    "subcategory": "Image Editing",
+    "description": "Free online AI face swap tool for photos, videos, and GIFs with fast and realistic results.",
+    "url": "https://faceswapai.com/",
+    "tags": [
+      "Face Swap",
+      "AI Tool",
+      "Image Editing",
+      "Video Face Swap",
+      "Free AI Tools",
+      "Deepfake",
+      "Online Tool",
+      "AI Image Generator"
+    ],
+    "pricing": "Freemium",
+    "privacy_policy_url": "https://faceswapai.com/privacy",
+    "terms_url": "https://faceswapai.com/terms",
+    "status": "active",
+    "last_verified": "2026-11-16",
+    "access_methods": [
+      "Web App"
+    ]
+  }
 ]
