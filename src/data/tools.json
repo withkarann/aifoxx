@@ -52667,5 +52667,40 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "TrendMe",
+    "slug": "trendme",
+    "category": "Video",
+    "subcategory": "Video Generation",
+    "description": "TrendMe turns viral TikTok, CapCut and Reels trends into your own vertical AI video. Pick a trend, upload one photo, and download an 8 or 15 second MP4.",
+    "url": "https://trendmeviral.com",
+    "tags": [
+      "ai video generator",
+      "tiktok trends",
+      "image to video",
+      "photo to video",
+      "short video"
+    ],
+    "pricing": "Paid",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-11-19",
+    "access_methods": [
+      "Web App"
+    ],
+    "pricing_detail": {
+      "free_tier": null,
+      "paid_plans": "One-time credit packs from 9.90 USD (20 credits). No subscription.",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Making trend videos from a single photo",
+      "Creating pet meme videos",
+      "Short vertical videos for TikTok and Reels"
+    ],
+    "not_good_for": [],
+    "industries": []
   }
 ]
