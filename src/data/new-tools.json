@@ -1,17 +1,5 @@
 [
   {
-    "id": "launch-hn-50536468",
-    "title": "StarSling (YC P25) – Self-improving CI for agent-volume repos",
-    "url": "https://starsling.dev",
-    "domain": "starsling.dev",
-    "source": "launch-hn",
-    "category": "new-tool",
-    "points": 64,
-    "date": "2026-11-17T19:01:43.000Z",
-    "age": "11h ago",
-    "score": 2
-  },
-  {
     "id": "launch-hn-50381687",
     "title": "Rivet (YC W23) – Scale and Orchestrate Agents on S3",
     "url": "https://github.com/rivet-dev/rivet",
@@ -20,7 +8,7 @@
     "category": "new-tool",
     "points": 123,
     "date": "2026-11-05T17:17:42.000Z",
-    "age": "12d ago",
+    "age": "13d ago",
     "score": 0
   },
   {
@@ -32,7 +20,7 @@
     "category": "new-tool",
     "points": 168,
     "date": "2026-11-02T17:05:25.000Z",
-    "age": "15d ago",
+    "age": "16d ago",
     "score": 0
   },
   {
@@ -44,7 +32,7 @@
     "category": "new-tool",
     "points": 69,
     "date": "2026-10-21T06:42:12.000Z",
-    "age": "27d ago",
+    "age": "28d ago",
     "score": 0
   }
 ]
