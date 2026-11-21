@@ -52667,5 +52667,52 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "PawMambo",
+    "slug": "pawmambo",
+    "category": "Video",
+    "subcategory": "Video Generation",
+    "description": "PawMambo creates short AI dog dance videos from a dog photo and a separate dance-reference clip.",
+    "url": "https://pawmambo.com/",
+    "tags": [
+      "dog dance",
+      "video generation",
+      "photo to video",
+      "reference video",
+      "pet videos"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-11-20",
+    "access_methods": [
+      "Web App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": null
+    },
+    "pricing_detail": {
+      "free_tier": "New accounts receive a one-time 20 credits, enough for a 10-second video",
+      "paid_plans": "One-time credit packs start at $6.99 for 60 credits",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Creating a short dog dance clip from one photo and a chosen dance video",
+      "Using an uploaded video as the motion reference for a dog clip"
+    ],
+    "not_good_for": [
+      "Users seeking a recurring free generation allowance",
+      "Video generation for subjects other than dogs"
+    ]
   }
 ]
