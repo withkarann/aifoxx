@@ -52668,4 +52668,20 @@
       "Software"
     ]
   }
+,
+  {
+    "id": "1027",
+    "name": "Qoves AI",
+    "slug": "qoves-ai",
+    "category": "Image Generation",
+    "subcategory": "Portrait Analysis",
+    "description": "AI portrait assessment and style previews: get a six-part analysis of how light, framing and styling shape your portrait, then preview alternate looks on your photo.",
+    "url": "https://quoves.net/",
+    "tags": ["portrait analysis", "style preview", "image analysis", "hair styling", "beauty"],
+    "pricing": "Paid",
+    "logo_url": "https://quoves.net/favicon.ico",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-11-22"
+  }
 ]
