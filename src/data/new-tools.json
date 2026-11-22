@@ -6,43 +6,10 @@
     "domain": "github.com",
     "source": "launch-hn",
     "category": "new-tool",
-    "points": 124,
+    "points": 125,
     "date": "2026-11-19T16:34:04.000Z",
-    "age": "1d ago",
+    "age": "2d ago",
     "score": 0
-  },
-  {
-    "id": "import-ai-1795241202965-0",
-    "title": "Import AI 481: AI sub-contractors; a wet lab for AI; and subterfuge during development",
-    "url": "https://importai.substack.com/p/import-ai-481-ai-sub-contractors",
-    "domain": "importai.substack.com",
-    "source": "import-ai",
-    "category": "new-tool",
-    "date": "2026-11-16T14:01:15.000Z",
-    "age": "4d ago",
-    "score": 1
-  },
-  {
-    "id": "lastweekinai-1795241203021-0",
-    "title": "Last Week (Month) in AI #347 - Nvidia's spy, Anthropic's $1.4T IPO, AI's blue wave",
-    "url": "https://lastweekin.ai/p/last-week-month-in-ai-347-nvidias",
-    "domain": "lastweekin.ai",
-    "source": "lastweekinai",
-    "category": "new-tool",
-    "date": "2026-11-11T14:21:42.000Z",
-    "age": "9d ago",
-    "score": 4
-  },
-  {
-    "id": "import-ai-1795241202965-1",
-    "title": "Import AI 480: Self-sustaining space economies; AI for science progress, and Meta builds perfect hands for a superintelligence",
-    "url": "https://importai.substack.com/p/import-ai-480-self-sustaining-space",
-    "domain": "importai.substack.com",
-    "source": "import-ai",
-    "category": "new-tool",
-    "date": "2026-11-09T13:31:34.000Z",
-    "age": "11d ago",
-    "score": 1
   },
   {
     "id": "launch-hn-50381687",
@@ -53,7 +20,7 @@
     "category": "new-tool",
     "points": 123,
     "date": "2026-11-05T17:17:42.000Z",
-    "age": "15d ago",
+    "age": "16d ago",
     "score": 0
   },
   {
@@ -65,29 +32,7 @@
     "category": "new-tool",
     "points": 168,
     "date": "2026-11-02T17:05:25.000Z",
-    "age": "18d ago",
+    "age": "19d ago",
     "score": 0
-  },
-  {
-    "id": "import-ai-1795241202965-2",
-    "title": "Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4",
-    "url": "https://importai.substack.com/p/import-ai-479-spacewar-low-latency",
-    "domain": "importai.substack.com",
-    "source": "import-ai",
-    "category": "new-tool",
-    "date": "2026-11-02T14:30:54.000Z",
-    "age": "18d ago",
-    "score": 3
-  },
-  {
-    "id": "import-ai-1795241202965-3",
-    "title": "Import AI 478: Math for alignment; ProgramBench; and Mirendil shows what RSI means",
-    "url": "https://importai.substack.com/p/import-ai-478-math-for-alignment",
-    "domain": "importai.substack.com",
-    "source": "import-ai",
-    "category": "new-tool",
-    "date": "2026-10-26T12:31:52.000Z",
-    "age": "25d ago",
-    "score": 1
   }
 ]
