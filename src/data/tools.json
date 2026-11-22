@@ -52667,5 +52667,20 @@
     "industries": [
       "Software"
     ]
-  }
+  },
+  {
+    "id": "1029",
+    "name": "Idol Max Dir",
+    "slug": "idol-max-dir",
+    "category": "Design",
+    "subcategory": "3D Modeling",
+    "description": "Creates a game-ready GLB from one image with UVs and 2K textures; add a rig, preview, and export a 360° GIF or video. Credits start at $10.",
+    "url": "https://idolmax.net/",
+    "tags": ["image to 3d", "3d modeling", "glb", "game assets"],
+    "pricing": "Pay-as-you-go",
+    "logo_url": "https://idolmax.net/logo.png",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-11-22"
+  },
 ]
