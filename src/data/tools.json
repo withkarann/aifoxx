@@ -52667,5 +52667,53 @@
     "industries": [
       "Software"
     ]
+  },
+  {
+    "id": "1027",
+    "name": "GeekLink",
+    "slug": "geeklink",
+    "category": "Video",
+    "subcategory": "Subtitles & Captions",
+    "description": "GeekLink is a desktop subtitle app for Mac and Windows that extracts hardcoded (burned-in) subtitles from video with OCR, transcribes speech with Whisper, and translates subtitles. OCR and speech recognition run locally on the user's computer, and results can be edited and exported as SRT or burned back into the video.",
+    "url": "https://geeklink.dev",
+    "tags": [
+      "hardcoded subtitle extraction",
+      "subtitle ocr",
+      "speech to text",
+      "subtitle translation",
+      "srt"
+    ],
+    "pricing": "Freemium",
+    "featured": false,
+    "status": "active",
+    "last_verified": "2026-11-25",
+    "access_methods": [
+      "Desktop App"
+    ],
+    "compliance": {
+      "soc2": null,
+      "iso27001": null,
+      "gdpr": null,
+      "hipaa": null
+    },
+    "data_storage": {
+      "region": null,
+      "trains_on_data": null,
+      "self_hostable": null
+    },
+    "pricing_detail": {
+      "free_tier": "Free plan includes local speech recognition, the subtitle editor and 60 minutes of OCR subtitle export per month",
+      "paid_plans": "Pro $12.99/mo, $99/yr or $129 lifetime",
+      "api_cost": null
+    },
+    "use_cases": [
+      "Extracting burned-in subtitles from videos into SRT files",
+      "Transcribing videos into subtitles",
+      "Translating subtitles into other languages",
+      "Batch processing a full season of episodes"
+    ],
+    "not_good_for": [],
+    "industries": [],
+    "compliance_sources": {}
   }
 ]
