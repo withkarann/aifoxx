@@ -52668,4 +52668,15 @@
       "Software"
     ]
   }
+,
+  {
+    "name": "Clean Voice",
+    "category": "Audio & Music",
+    "subcategory": "Noise Removal",
+    "description": "Online AI noise removal for audio and video recordings, helping creators clean podcasts, interviews, courses, voiceovers, and social videos.",
+    "url": "https://cleanvoice.app/",
+    "tags": ["audio", "video", "noise removal", "podcasts"],
+    "pricing": "Freemium",
+    "featured": false
+  }
 ]
